@@ -1,0 +1,30 @@
+### Traffic reflection table.
+GET http://localhost/api/snmp/zxAnTrafficReflectConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnTrafficReflectConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnTrafficReflectIfIndex": "",
+    "zxAnTrafficReflectSubIfIndex": "",
+    "zxAnTrafficReflectDuration": 15,
+    "zxAnTrafficReflectDirection": 1,
+    "zxAnTrafficReflectMode": 1,
+    "zxAnTrafficReflectSrcMacAddr": 0,
+    "zxAnTrafficReflectDestMacAddr": 0,
+    "zxAnTrafficReflectSrcIpAddrType": 1,
+    "zxAnTrafficReflectSrcIpAddr": 0,
+    "zxAnTrafficReflectDestIpAddrType": 1,
+    "zxAnTrafficReflectDestIpAddr": 0,
+    "zxAnTrafficReflectSVid": 0,
+    "zxAnTrafficReflectCVid": 0,
+    "zxAnTrafficReflectSrcUdpPort": 0,
+    "zxAnTrafficReflectDestUdpPort": 0,
+    "zxAnTrafficReflectDscp": 255,
+    "zxAnTrafficReflectVlanCos": 255,
+    "zxAnTrafficReflectRowStatus": ""
+}
+

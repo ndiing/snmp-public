@@ -1,0 +1,553 @@
+### XDSL line table.
+GET http://localhost/api/snmp/zxAnXdsl2LnTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnXdsl2LnTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnXdsl2LnCh1DsDataRateConfPrf": "VDDRPDEFVAL.PRF",
+    "zxAnXdsl2LnCh2DsDataRateConfPrf": "VDDRPDEFVAL.PRF",
+    "zxAnXdsl2LnCh3DsDataRateConfPrf": "VDDRPDEFVAL.PRF",
+    "zxAnXdsl2LnCh4DsDataRateConfPrf": "VDDRPDEFVAL.PRF",
+    "zxAnXdsl2LnCh1UsDataRateConfPrf": "VUDRPDEFVAL.PRF",
+    "zxAnXdsl2LnCh2UsDataRateConfPrf": "VUDRPDEFVAL.PRF",
+    "zxAnXdsl2LnCh3UsDataRateConfPrf": "VUDRPDEFVAL.PRF",
+    "zxAnXdsl2LnCh4UsDataRateConfPrf": "VUDRPDEFVAL.PRF",
+    "zxAnXdsl2LnSpectrumConfPrf": "VSPDEFVAL.PRF",
+    "zxAnXdsl2LnDpboConfPrf": "VDPDEFVAL.PRF",
+    "zxAnXdsl2LnUpboConfPrf": "VUPDEFVAL.PRF",
+    "zxAnXdsl2LnSnrMarginConfPrf": "VSMPDEFVAL.PRF",
+    "zxAnXdsl2LnCh1DelayInpConfPrf": "VIDPDEFVAL.PRF",
+    "zxAnXdsl2LnCh2DelayInpConfPrf": "VIDPDEFVAL.PRF",
+    "zxAnXdsl2LnCh3DelayInpConfPrf": "VIDPDEFVAL.PRF",
+    "zxAnXdsl2LnCh4DelayInpConfPrf": "VIDPDEFVAL.PRF",
+    "zxAnXdsl2LnRfiConfPrf": "VRPDEFVAL.PRF",
+    "zxAnXdsl2LnVirtualNoiseConfPrf": "VVNPDEFVAL.PRF",
+    "zxAnXdsl2LnSosConfPrf": "VSOSDEFVAL.PRF",
+    "zxAnXdsl2LnInmConfPrf": "VINMDEFVAL.PRF",
+    "zxAnXdsl2LnExtConfPrf": "VEXTDEFVAL.PRF",
+    "zxAnXdsl2LnAlmThreshPrf": "VDEFVAL.PRF",
+    "zxAnXdsl2LnStatusDataPathType": 4,
+    "zxAnXdsl2LnStatusBitswapDs": 1,
+    "zxAnXdsl2LnStatusBitswapUs": 1,
+    "zxAnXdsl2LnCmndPMReset": "",
+    "zxAnXdsl2LnFextCancellationDs": 1,
+    "zxAnXdsl2LnFextCancellationUs": 1
+}
+
+### XDSL2 line band table.
+GET http://localhost/api/snmp/zxAnXdsl2LnBandTable
+Authorization: Bearer {{token}}
+
+### xDSL line status table.
+GET http://localhost/api/snmp/zxAnXdsl2LnStatusTable
+Authorization: Bearer {{token}}
+
+### Downstream data rate configuration profile table.
+GET http://localhost/api/snmp/zxAnXdsl2DsDataRateConfPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnXdsl2DsDataRateConfPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnXdsl2ChConfChannRaRatioDs": 100,
+    "zxAnXdsl2ChConfMinDataRateDs": 32,
+    "zxAnXdsl2ChConfMaxDataRateDs": 150000,
+    "zxAnXdsl2ChConfMinResRateDs": 128,
+    "zxAnXdsl2ChConfMinRateLowPwrDs": 128,
+    "zxAnXdsl2ChConfMaxBerDs": 3,
+    "zxAnXdsl2ChConfDsDataRateDs": 0,
+    "zxAnXdsl2ChConfUsDataRateDs": 200000000,
+    "zxAnXdsl2ChConfMinSosBitRateDs": 32,
+    "zxAnXdsl2DsDataRatePrfRowStatus": ""
+}
+
+### Upstream data rate configuration profile table.
+GET http://localhost/api/snmp/zxAnXdsl2UsDataRateConfPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnXdsl2UsDataRateConfPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnXdsl2ChConfChannRaRatioUs": 100,
+    "zxAnXdsl2ChConfMinDataRateUs": 32,
+    "zxAnXdsl2ChConfMaxDataRateUs": 128000,
+    "zxAnXdsl2ChConfMinResRateUs": 128,
+    "zxAnXdsl2ChConfMinRateLowPwrUs": 128,
+    "zxAnXdsl2ChConfMaxBerUs": 3,
+    "zxAnXdsl2ChConfDsDataRateUs": 0,
+    "zxAnXdsl2ChConfUsDataRateUs": 200000000,
+    "zxAnXdsl2ChConfMinSosBitRateUs": 32,
+    "zxAnXdsl2UsDataRatePrfRowStatus": ""
+}
+
+### Spectrum configuration profile.
+GET http://localhost/api/snmp/zxAnXdsl2SpectrumConfPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnXdsl2SpectrumConfPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnXdsl2LConfXtuTransSysEna": "",
+    "zxAnXdsl2LConfScMaskDs": "",
+    "zxAnXdsl2LConfScMaskUs": "",
+    "zxAnXdsl2LConfVdsl2CarMask": "",
+    "zxAnXdsl2LConfMsgMinDs": 4,
+    "zxAnXdsl2LConfMsgMinUs": 4,
+    "zxAnXdsl2LConfCeFlag": "{",
+    "zxAnXdsl2LConfPmMode": "{",
+    "zxAnXdsl2LConfL0Time": 255,
+    "zxAnXdsl2LConfL2Time": 255,
+    "zxAnXdsl2LConfL2Atpr": 3,
+    "zxAnXdsl2LConfL2Atprt": 31,
+    "zxAnXdsl2LConfProfiles": "{ profile17a",
+    "zxAnXdsl2LConfUs0Mask": "",
+    "zxAnXdsl2SpectrumPrfRowStatus": ""
+}
+
+### DPBO configuration profile table.
+GET http://localhost/api/snmp/zxAnXdsl2DpboConfPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnXdsl2DpboConfPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnXdsl2LConfDpboEPsd": "",
+    "zxAnXdsl2LConfDpboEsEL": 0,
+    "zxAnXdsl2LConfDpboEscmA": 263,
+    "zxAnXdsl2LConfDpboEscmB": 509,
+    "zxAnXdsl2LConfDpboEscmC": 261,
+    "zxAnXdsl2LConfDpboMus": 190,
+    "zxAnXdsl2LConfDpboFMin": 32,
+    "zxAnXdsl2LConfDpboFMax": 511,
+    "zxAnXdsl2DpboConfPrfRowStatus": ""
+}
+
+### UPBO configuration profile table.
+GET http://localhost/api/snmp/zxAnXdsl2UpboConfPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnXdsl2UpboConfPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnXdsl2LConfUpboKL": 0,
+    "zxAnXdsl2LConfUpboKLF": 3,
+    "zxAnXdsl2LConfUpboU1bandPsdA": 5650,
+    "zxAnXdsl2LConfUpboU1bandPsdB": 1020,
+    "zxAnXdsl2LConfUpboU2bandPsdA": 5650,
+    "zxAnXdsl2LConfUpboU2bandPsdB": 615,
+    "zxAnXdsl2LConfUpboU3bandPsdA": 5650,
+    "zxAnXdsl2LConfUpboU3bandPsdB": 615,
+    "zxAnXdsl2LConfUpboU4bandPsdA": 4000,
+    "zxAnXdsl2LConfUpboU4bandPsdB": 0,
+    "zxAnXdsl2LConfUpboU1bandKLRef": 0,
+    "zxAnXdsl2LConfUpboU2bandKLRef": 0,
+    "zxAnXdsl2LConfUpboU3bandKLRef": 0,
+    "zxAnXdsl2LConfUpboU4bandKLRef": 0,
+    "zxAnXdsl2LUpboConfPrfRowStatus": ""
+}
+
+### SNR margin configuration profile table.
+GET http://localhost/api/snmp/zxAnXdsl2SnrMarginConfPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnXdsl2SnrMarginConfPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnXdsl2LConfTargetSnrmDs": 60,
+    "zxAnXdsl2LConfTargetSnrmUs": 60,
+    "zxAnXdsl2LConfMaxSnrmDs": 300,
+    "zxAnXdsl2LConfMaxSnrmUs": 300,
+    "zxAnXdsl2LConfMinSnrmDs": 0,
+    "zxAnXdsl2LConfMinSnrmUs": 0,
+    "zxAnXdsl2LConfRaUsNrmDs": 90,
+    "zxAnXdsl2LConfRaUsNrmUs": 90,
+    "zxAnXdsl2LConfRaUsTimeDs": 60,
+    "zxAnXdsl2LConfRaUsTimeUs": 60,
+    "zxAnXdsl2LConfRaDsNrmDs": 30,
+    "zxAnXdsl2LConfRaDsNrmUs": 30,
+    "zxAnXdsl2LConfRaDsTimeDs": 60,
+    "zxAnXdsl2LConfRaDsTimeUs": 60,
+    "zxAnXdsl2LConfSnrModeDs": 1,
+    "zxAnXdsl2LConfSnrModeUs": 1,
+    "zxAnXdsl2LConfRaModeDs": 2,
+    "zxAnXdsl2LConfRaModeUs": 2,
+    "zxAnXdsl2SnrMarginConfRowStatus": ""
+}
+
+### Delay and INP configuration profile table.
+GET http://localhost/api/snmp/zxAnXdsl2DelayInpConfPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnXdsl2DelayInpConfPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnXdsl2ChConfMaxDelayDs": "",
+    "zxAnXdsl2ChConfMaxDelayUs": "",
+    "zxAnXdsl2ChConfMinProtectDs": 1,
+    "zxAnXdsl2ChConfMinProtectUs": 1,
+    "zxAnXdsl2ChConfMinProtect8Ds": 1,
+    "zxAnXdsl2ChConfMinProtect8Us": 1,
+    "zxAnXdsl2ChConfForceInpDs": "",
+    "zxAnXdsl2ChConfForceInpUs": "",
+    "zxAnXdsl2ChConfMaxDelayVar": 255,
+    "zxAnXdsl2ChConfInitPolicy": 1,
+    "zxAnXdsl2DIConfPrfRowStatus": ""
+}
+
+### Virtual noise configuration profile table.
+GET http://localhost/api/snmp/zxAnXdsl2VNConfPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnXdsl2VNConfPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnXdsl2LConfTxRefVnDs": "",
+    "zxAnXdsl2LConfTxRefVnUs": "",
+    "zxAnXdsl2VNConfPrfRowStatus": ""
+}
+
+### RFI configuration profile table.
+GET http://localhost/api/snmp/zxAnXdsl2RfiConfPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnXdsl2RfiConfPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnXdsl2LConfRfiBands": "",
+    "zxAnXdsl2RfiConfPrfRowStatus": ""
+}
+
+### SOS configuration profile Table.
+GET http://localhost/api/snmp/zxAnXdsl2SosConfPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnXdsl2SosConfPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnXdsl2LConfSosTimeWindowDs": 0,
+    "zxAnXdsl2LConfSosTimeWindowUs": 0,
+    "zxAnXdsl2LConfSosNTonesDs": "",
+    "zxAnXdsl2LConfSosNTonesUs": "",
+    "zxAnXdsl2LConfSosCrcDs": "",
+    "zxAnXdsl2LConfSosCrcUs": "",
+    "zxAnXdsl2LConfMaximumSosDs": "",
+    "zxAnXdsl2LConfMaximumSosUs": "",
+    "zxAnXdsl2LConfSosSnrmOffsetRocDs": "",
+    "zxAnXdsl2LConfSosSnrmOffsetRocUs": "",
+    "zxAnXdsl2LConfSosMinInpRocDs": "",
+    "zxAnXdsl2LConfSosMinInpRocUs": "",
+    "zxAnXdsl2LConfSosPrfRowStatus": ""
+}
+
+### INM configuration profile table.
+GET http://localhost/api/snmp/zxAnXdsl2InmConfPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnXdsl2InmConfPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnXdsl2LConfInmInpEqModeUs": 0,
+    "zxAnXdsl2LConfInmInpEqModeDs": 0,
+    "zxAnXdsl2LConfInmIatoUs": 3,
+    "zxAnXdsl2LConfInmIatoDs": 3,
+    "zxAnXdsl2LConfInmIatsUs": 0,
+    "zxAnXdsl2LConfInmIatsDs": 0,
+    "zxAnXdsl2LConfInmCcUs": 0,
+    "zxAnXdsl2LConfInmCcDs": 0,
+    "zxAnXdsl2LConfInmPrfRowStatus": ""
+}
+
+### The table zxAnXdsl2ProfModeSpecTable extends the DSL line<br/><br/>configuration profile by xDSL Mode Specific parameters.<br/><br/>A row in this table that has an index of zxAnXdsl2LConfXdslMode ==<br/><br/>defMode(1), is called a 'mandatory' row.<br/><br/>A row in this table that has an index such that<br/><br/>xdsl2LConfProfXdslMode is not equal to defMode(1), is called an<br/><br/>'optional' row.<br/><br/>When a row in the zxAnXdsl2SpectrumConfPrfTable table (the parent<br/><br/>row) is created, the SNMP agent will automatically create a<br/><br/>'mandatory' row in this table.<br/><br/>When the parent row is deleted, the SNMP agent will automatically<br/><br/>delete all associated rows in this table. Any attempt to delete the<br/><br/>'mandatory' row using the zxAnXdsl2ProfModeSpecRowStatus attribute<br/><br/>will be rejected by the SNMP agent.<br/><br/>The manager MAY create an 'optional' row in this table using the<br/><br/>zxAnXdsl2ProfModeSpecRowStatus attribute if the parent row exists.<br/><br/>The manager MAY delete an 'optional' row in this table using the<br/><br/>zxAnXdsl2ProfModeSpecRowStatus attribute at any time.<br/><br/>If the actual transmission mode of a DSL line does not match one of<br/><br/>the 'optional' rows in this table, then the line will use the PSD<br/><br/>configuration from the 'mandatory' row.<br/><br/><br/><br/>Entries in this table MUST be maintained in a persistent manner.
+GET http://localhost/api/snmp/zxAnXdsl2ProfModeSpecTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnXdsl2ProfModeSpecTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnXdsl2LConfMaxNomPsdDs": -300,
+    "zxAnXdsl2LConfMaxNomPsdUs": -300,
+    "zxAnXdsl2LConfMaxNomAtpDs": 255,
+    "zxAnXdsl2LConfMaxNomAtpUs": 255,
+    "zxAnXdsl2LConfMaxAggRxPwrUs": 255,
+    "zxAnXdsl2LConfPsdMaskDs": "",
+    "zxAnXdsl2LConfPsdMaskUs": "",
+    "zxAnXdsl2LConfPsdMaskSelectUs": 7,
+    "zxAnXdsl2LConfClassMask": 7,
+    "zxAnXdsl2LConfLimitMask": "",
+    "zxAnXdsl2LConfUs0Disable": "",
+    "zxAnXdsl2LConfLREnable": "{",
+    "zxAnXdsl2ProfModeSpecRowStatus": ""
+}
+
+### Extend configuration profile table.
+GET http://localhost/api/snmp/zxAnXdsl2ExtConfPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnXdsl2ExtConfPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnXdsl2LConfInpMinEtrUs": "",
+    "zxAnXdsl2LConfInpMinEtrDs": "",
+    "zxAnXdsl2LConfInpMaxEtrUs": "",
+    "zxAnXdsl2LConfInpMaxEtrDs": "",
+    "zxAnXdsl2LConfInpMaxNetUs": "",
+    "zxAnXdsl2LConfInpMaxNetDs": "",
+    "zxAnXdsl2LConfInpShineRatioUs": 0,
+    "zxAnXdsl2LConfInpShineRatioDs": 0,
+    "zxAnXdsl2LConfInpMinReinUs": 0,
+    "zxAnXdsl2LConfInpMinReinDs": 0,
+    "zxAnXdsl2LConfInpIaReinFlagUs": 1,
+    "zxAnXdsl2LConfInpIaReinFlagDs": 1,
+    "zxAnXdsl2LConfInpMinDelayUs": 0,
+    "zxAnXdsl2LConfInpMinDelayDs": 0,
+    "zxAnXdsl2LConfInpRetxModeUs": 1,
+    "zxAnXdsl2LConfInpRetxModeDs": 1,
+    "zxAnXdsl2LConfInpMaxDelayUs": 16,
+    "zxAnXdsl2LConfInpMaxDelayDs": 16,
+    "zxAnXdsl2LConfChanInitPolicyUs": 0,
+    "zxAnXdsl2LConfChanInitPolicyDs": 0,
+    "zxAnXdsl2LFextCancelNotReqBandDs": "",
+    "zxAnXdsl2LFextCancelNotReqBandUs": "",
+    "zxAnXdsl2LConfInpMinShineUs": "",
+    "zxAnXdsl2LConfInpMinShineDs": "",
+    "zxAnXdsl2LConfInpMin8ShineUs": "",
+    "zxAnXdsl2LConfInpMin8ShineDs": "",
+    "zxAnXdsl2LConfInpMin8ReinUs": "",
+    "zxAnXdsl2LConfInpMin8ReinDs": "",
+    "zxAnXdsl2ExtConfPrfRowStatus": ""
+}
+
+### Alarm configuration profile table.
+GET http://localhost/api/snmp/zxAnXdsl2AlmThreshPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnXdsl2AlmThreshPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnXdsl2XtucThreshFecs": 0,
+    "zxAnXdsl2XtucThreshEs": 0,
+    "zxAnXdsl2XtucThreshSes": 0,
+    "zxAnXdsl2XtucThreshLoss": 0,
+    "zxAnXdsl2XtucThreshLofs": 0,
+    "zxAnXdsl2XtucThreshLols": 0,
+    "zxAnXdsl2XtucThreshLprs": 0,
+    "zxAnXdsl2XtucThreshUas": 0,
+    "zxAnXdsl2XtucThreshPtmCrcErrs": 0,
+    "zxAnXdsl2XtucThreshPtmCodViol": 0,
+    "zxAnXdsl2XturThreshFecs": 0,
+    "zxAnXdsl2XturThreshEs": 0,
+    "zxAnXdsl2XturThreshSes": 0,
+    "zxAnXdsl2XturThreshLoss": 0,
+    "zxAnXdsl2XturThreshLofs": 0,
+    "zxAnXdsl2XturThreshLprs": 0,
+    "zxAnXdsl2XturThreshUas": 0,
+    "zxAnXdsl2XturThreshPtmCrcErrs": 0,
+    "zxAnXdsl2XturThreshPtmCodViol": 0,
+    "zxAnXdsl2ThreshFailedFullInt": 0,
+    "zxAnXdsl2ThreshFailedShrtInt": 0,
+    "zxAnXdsl2Ch1XtucThrshCodeViol": 0,
+    "zxAnXdsl2Ch1XtucThrshCorrected": 0,
+    "zxAnXdsl2Ch1XturThrshCodeViol": 0,
+    "zxAnXdsl2Ch1XturThrshCorrected": 0,
+    "zxAnXdsl2Ch2XtucThrshCodeViol": 0,
+    "zxAnXdsl2Ch2XtucThrshCorrected": 0,
+    "zxAnXdsl2Ch2XturThrshCodeViol": 0,
+    "zxAnXdsl2Ch2XturThrshCorrected": 0,
+    "zxAnXdsl2XtucLowDataRateTol": 0,
+    "zxAnXdsl2XturLowDataRateTol": 0,
+    "zxAnXdsl2XtucLowDataRateThresh": 0,
+    "zxAnXdsl2XturLowDataRateThresh": 0,
+    "zxAnXdsl2XtucInitFailTrapEnable": "",
+    "zxAnXdsl2XturInitFailTrapEnable": "",
+    "zxAnXdsl2XtucThreshInpLeftr": 0,
+    "zxAnXdsl2XturThreshInpLeftr": 0,
+    "zxAnXdsl2XtucEsLossRatioThresh": 0,
+    "zxAnXdsl2XturEsLossRatioThresh": 0,
+    "zxAnXdsl2XtucThreshInpLeftrs": 0,
+    "zxAnXdsl2XturThreshInpLeftrs": 0,
+    "zxAnXdsl2AlmThreshPrfRowStatus": ""
+}
+
+### XDSL line current performance table.
+GET http://localhost/api/snmp/zxAnXdsl2PMLineCurrTable
+Authorization: Bearer {{token}}
+
+### XDSL line history 15 minutes performance table.
+GET http://localhost/api/snmp/zxAnXdsl2PMLineHist15MinTable
+Authorization: Bearer {{token}}
+
+### XDSL2 line history 1 day performance table.
+GET http://localhost/api/snmp/zxAnXdsl2PMLineHist1DayTable
+Authorization: Bearer {{token}}
+
+### XDSL channel current performance table.
+GET http://localhost/api/snmp/zxAnXdsl2PMChCurrTable
+Authorization: Bearer {{token}}
+
+### XDSL channel history 15 minutes performance table.
+GET http://localhost/api/snmp/zxAnXdsl2PMChHist15MinTable
+Authorization: Bearer {{token}}
+
+### XDSL channel history 1 day performance table.
+GET http://localhost/api/snmp/zxAnXdsl2PMChHist1DayTable
+Authorization: Bearer {{token}}
+
+### XDSL SELT configuration table.
+GET http://localhost/api/snmp/zxAnXdsl2SeltConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnXdsl2SeltConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnXdsl2LnSeltCmndConfLdsf": 0,
+    "zxAnXdsl2SeltUerMmd": "",
+    "zxAnXdsl2SeltQlnMmd": "",
+    "zxAnXdsl2SeltCece": "",
+    "zxAnXdsl2SeltCapSignalPsdDs": "",
+    "zxAnXdsl2SeltCapSignalPsdUs": "",
+    "zxAnXdsl2SeltCapNoisePsdDs": "",
+    "zxAnXdsl2SeltCapNoisePsdUs": "",
+    "zxAnXdsl2SeltCapTargetSnrmDs": "",
+    "zxAnXdsl2SeltCapTargetSnrmUs": "",
+    "zxAnXdsl2SeltUerMeasureEnableC": "",
+    "zxAnXdsl2SeltQlnMeasureEnableC": "",
+    "zxAnXdsl2SeltCalibrateCmd": 0,
+    "zxAnXdsl2SeltRawDataCmd": 0
+}
+
+### XDSL SELT line status table.
+GET http://localhost/api/snmp/zxAnXdsl2SeltLineStatusTable
+Authorization: Bearer {{token}}
+
+### XDSL SELT sub-carrierr status table.
+GET http://localhost/api/snmp/zxAnXdsl2SeltSCStatusTable
+Authorization: Bearer {{token}}
+
+### This table describes the result of SELT raw data test.
+GET http://localhost/api/snmp/zxAnXdsl2SeltRawDataTable
+Authorization: Bearer {{token}}
+
+### The metallic line testing configuration table.
+GET http://localhost/api/snmp/zxAnXdsl2MeltConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnXdsl2MeltConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnXdsl2MeltCmndConfLdsf": 1,
+    "zxAnXdsl2MeltPeakMetallicVtr": "",
+    "zxAnXdsl2MeltMaxFarendConductVtr": "",
+    "zxAnXdsl2MeltMinFarendConductVtr": "",
+    "zxAnXdsl2MeltPairIdToneCmd": "",
+    "zxAnXdsl2MeltPairIdToneFreq": "",
+    "zxAnXdsl2MeltWettingCurrentCmd": ""
+}
+
+### The metallic line testing status table.
+GET http://localhost/api/snmp/zxAnXdsl2MeltStatusTable
+Authorization: Bearer {{token}}
+
+### The vectoring card table.
+GET http://localhost/api/snmp/zxAnXdsl2VectoringCardTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnXdsl2VectoringCardTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnXdsl2VecCardConfigClear": "",
+    "zxAnXdsl2VecCardVectoringMode": 2,
+    "zxAnXdsl2VecCardTrackingEnable": 1,
+    "zxAnXdsl2VecCardBandPlanGrpId": 1,
+    "zxAnXdsl2VecCardLgcyCpeAccPolicy": 2
+}
+
+### The FEXT coefficient table.
+GET http://localhost/api/snmp/zxAnXdsl2FextCoefficientTable
+Authorization: Bearer {{token}}
+
+### The vectoring crosstalk table.
+GET http://localhost/api/snmp/zxAnXdsl2VectoringCrosstalkTable
+Authorization: Bearer {{token}}
+
+### The vectoring crosstalk logarithm sample table.
+GET http://localhost/api/snmp/zxAnXdsl2XlogSampleTable
+Authorization: Bearer {{token}}
+
+### The vectoring fast join interface configuration table.
+GET http://localhost/api/snmp/zxAnXdsl2FastJoinIfConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnXdsl2FastJoinIfConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnXdsl2FastJoinIfMode": 1,
+    "zxAnXdsl2FastJoinIfMaxSnrLossDs": 30,
+    "zxAnXdsl2FastJoinIfMaxSnrLossUs": 30
+}
+
+### VDSL Sub-carrier status table.
+GET http://localhost/api/snmp/zxAnXdsl2SCStatusTable
+Authorization: Bearer {{token}}
+
+### VDSL line inventory table.
+GET http://localhost/api/snmp/zxAnXdsl2LineInventoryTable
+Authorization: Bearer {{token}}
+

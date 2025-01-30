@@ -1,0 +1,316 @@
+### Contains the RMON-2 augmentations to RMON-1.
+GET http://localhost/api/snmp/etherStats2Table
+Authorization: Bearer {{token}}
+
+### Contains the RMON-2 augmentations to RMON-1.<br/><br/><br/><br/>This table has been deprecated, as it has not had enough<br/><br/>independent implementations to demonstrate interoperability<br/><br/>to meet the requirements of a Draft Standard.
+GET http://localhost/api/snmp/tokenRingMLStats2Table
+Authorization: Bearer {{token}}
+
+### Contains the RMON-2 augmentations to RMON-1.<br/><br/><br/><br/>This table has been deprecated, as it has not had enough<br/><br/>independent implementations to demonstrate interoperability<br/><br/>to meet the requirements of a Draft Standard.
+GET http://localhost/api/snmp/tokenRingPStats2Table
+Authorization: Bearer {{token}}
+
+### Contains the RMON-2 augmentations to RMON-1.
+GET http://localhost/api/snmp/historyControl2Table
+Authorization: Bearer {{token}}
+
+### Contains the RMON-2 augmentations to RMON-1.
+GET http://localhost/api/snmp/hostControl2Table
+Authorization: Bearer {{token}}
+
+### Contains the RMON-2 augmentations to RMON-1.
+GET http://localhost/api/snmp/matrixControl2Table
+Authorization: Bearer {{token}}
+
+### Contains the RMON-2 augmentations to RMON-1.
+GET http://localhost/api/snmp/channel2Table
+Authorization: Bearer {{token}}
+
+### Provides a variable-length packet filter feature to the<br/><br/>RMON-1 filter table.
+GET http://localhost/api/snmp/filter2Table
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/filter2Table/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "filterProtocolDirDataLocalIndex": 0,
+    "filterProtocolDirLocalIndex": 0
+}
+
+### Contains the RMON-2 augmentations to RMON-1.<br/><br/><br/><br/>This table has been deprecated, as it has not had enough<br/><br/>independent implementations to demonstrate interoperability<br/><br/>to meet the requirements of a Draft Standard.
+GET http://localhost/api/snmp/ringStationControl2Table
+Authorization: Bearer {{token}}
+
+### Contains the RMON-2 augmentations to RMON-1.<br/><br/><br/><br/>This table has been deprecated, as it has not had enough<br/><br/>independent implementations to demonstrate interoperability<br/><br/>to meet the requirements of a Draft Standard.
+GET http://localhost/api/snmp/sourceRoutingStats2Table
+Authorization: Bearer {{token}}
+
+### This table lists the protocols that this agent has the<br/><br/>capability to decode and count.  There is one entry in this<br/><br/>table for each such protocol.  These protocols represent<br/><br/>different network-layer, transport-layer, and higher-layer<br/><br/>protocols.  The agent should boot up with this table<br/><br/>preconfigured with those protocols that it knows about and<br/><br/>wishes to monitor.  Implementations are strongly encouraged to<br/><br/>support protocols higher than the network layer (at least for<br/><br/>the protocol distribution group), even for implementations<br/><br/>that don't support the application-layer groups.
+GET http://localhost/api/snmp/protocolDirTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/protocolDirTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "protocolDirDescr": "",
+    "protocolDirAddressMapConfig": "",
+    "protocolDirHostConfig": "",
+    "protocolDirMatrixConfig": "",
+    "protocolDirOwner": "",
+    "protocolDirStatus": ""
+}
+
+### Controls the setup of protocol type distribution statistics<br/><br/>tables.<br/><br/><br/><br/>Implementations are encouraged to add an entry per monitored<br/><br/>interface upon initialization so that a default collection<br/><br/>of protocol statistics is available.<br/><br/><br/><br/>Rationale:<br/><br/>This table controls collection of very basic statistics<br/><br/>for any or all of the protocols detected on a given interface.<br/><br/>An NMS can use this table to quickly determine bandwidth<br/><br/>allocation utilized by different protocols.<br/><br/><br/><br/>A media-specific statistics collection could also<br/><br/>be configured (e.g., etherStats, trPStats) to easily obtain<br/><br/>total frame, octet, and droppedEvents for the same<br/><br/>interface.
+GET http://localhost/api/snmp/protocolDistControlTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/protocolDistControlTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "protocolDistControlDataSource": "",
+    "protocolDistControlOwner": "",
+    "protocolDistControlStatus": ""
+}
+
+### An entry is made in this table for every protocol in the<br/><br/>protocolDirTable that has been seen in at least one packet.<br/><br/>Counters are updated in this table for every protocol type<br/><br/>that is encountered when parsing a packet, but no counters are<br/><br/>updated for packets with MAC-layer errors.<br/><br/><br/><br/>Note that if a protocolDirEntry is deleted, all associated<br/><br/>entries in this table are removed.
+GET http://localhost/api/snmp/protocolDistStatsTable
+Authorization: Bearer {{token}}
+
+### A table to control the collection of mappings from network<br/><br/>layer address to physical address to interface.<br/><br/><br/><br/>Note that this is not like the typical RMON<br/><br/>controlTable and dataTable in which each entry creates<br/><br/>its own data table.  Each entry in this table enables the<br/><br/>discovery of addresses on a new interface and the placement<br/><br/>of address mappings into the central addressMapTable.<br/><br/><br/><br/>Implementations are encouraged to add an entry per monitored<br/><br/>interface upon initialization so that a default collection<br/><br/>of address mappings is available.
+GET http://localhost/api/snmp/addressMapControlTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/addressMapControlTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "addressMapControlDataSource": "",
+    "addressMapControlOwner": "",
+    "addressMapControlStatus": ""
+}
+
+### A table of mappings from network layer address to physical<br/><br/>address to interface.<br/><br/><br/><br/>The probe will add entries to this table based on the source<br/><br/>MAC and network addresses seen in packets without MAC-level<br/><br/>errors.  The probe will populate this table for all protocols<br/><br/>in the protocol directory table whose value of<br/><br/>protocolDirAddressMapConfig is equal to supportedOn(3), and<br/><br/>will delete any entries whose protocolDirEntry is deleted or<br/><br/>has a protocolDirAddressMapConfig value of supportedOff(2).
+GET http://localhost/api/snmp/addressMapTable
+Authorization: Bearer {{token}}
+
+### A list of higher-layer (i.e., non-MAC) host table control<br/><br/>entries.<br/><br/><br/><br/>These entries will enable the collection of the network- and<br/><br/>application-level host tables indexed by network addresses.<br/><br/>Both the network- and application-level host tables are<br/><br/>controlled by this table so that they will both be created<br/><br/>and deleted at the same time, further increasing the ease with<br/><br/>which they can be implemented as a single datastore.  (Note that<br/><br/>if an implementation stores application-layer host records in<br/><br/>memory, it can derive network-layer host records from them.)<br/><br/><br/><br/>Entries in the nlHostTable will be created on behalf of each<br/><br/>entry in this table.  Additionally, if this probe implements<br/><br/>the alHostTable, entries in the alHostTable will be created on<br/><br/>behalf of each entry in this table.<br/><br/><br/><br/>Implementations are encouraged to add an entry per monitored<br/><br/>interface upon initialization so that a default collection<br/><br/>of host statistics is available.
+GET http://localhost/api/snmp/hlHostControlTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/hlHostControlTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "hlHostControlDataSource": "",
+    "hlHostControlNlMaxDesiredEntries": "",
+    "hlHostControlAlMaxDesiredEntries": "",
+    "hlHostControlOwner": "",
+    "hlHostControlStatus": ""
+}
+
+### A collection of statistics for a particular network layer<br/><br/>address that has been discovered on an interface of this<br/><br/>device.<br/><br/><br/><br/>The probe will populate this table for all network layer<br/><br/>protocols in the protocol directory table whose value of<br/><br/>protocolDirHostConfig is equal to supportedOn(3), and<br/><br/>will delete any entries whose protocolDirEntry is deleted or<br/><br/>has a protocolDirHostConfig value of supportedOff(2).<br/><br/><br/><br/>The probe will add to this table all addresses seen<br/><br/>as the source or destination address in all packets with no<br/><br/>MAC errors, and will increment octet and packet counts in the<br/><br/>table for all packets with no MAC errors.
+GET http://localhost/api/snmp/nlHostTable
+Authorization: Bearer {{token}}
+
+### A list of higher-layer (i.e., non-MAC) matrix control entries.<br/><br/><br/><br/>These entries will enable the collection of the network- and<br/><br/>application-level matrix tables containing conversation<br/><br/>statistics indexed by pairs of network addresses.<br/><br/>Both the network- and application-level matrix tables are<br/><br/>controlled by this table so that they will both be created<br/><br/>and deleted at the same time, further increasing the ease with<br/><br/>which they can be implemented as a single datastore.  (Note that<br/><br/>if an implementation stores application-layer matrix records<br/><br/>in memory, it can derive network-layer matrix records from<br/><br/>them.)<br/><br/><br/><br/>Entries in the nlMatrixSDTable and nlMatrixDSTable will be<br/><br/>created on behalf of each entry in this table.  Additionally,<br/><br/>if this probe implements the alMatrix tables, entries in the<br/><br/>alMatrix tables will be created on behalf of each entry in<br/><br/>this table.
+GET http://localhost/api/snmp/hlMatrixControlTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/hlMatrixControlTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "hlMatrixControlDataSource": "",
+    "hlMatrixControlNlMaxDesiredEntries": "",
+    "hlMatrixControlAlMaxDesiredEntries": "",
+    "hlMatrixControlOwner": "",
+    "hlMatrixControlStatus": ""
+}
+
+### A list of traffic matrix entries that collect statistics for<br/><br/>conversations between two network-level addresses.  This table<br/><br/>is indexed first by the source address and then by the<br/><br/>destination address to make it convenient to collect all<br/><br/>conversations from a particular address.<br/><br/><br/><br/>The probe will populate this table for all network layer<br/><br/>protocols in the protocol directory table whose value of<br/><br/>protocolDirMatrixConfig is equal to supportedOn(3), and<br/><br/>will delete any entries whose protocolDirEntry is deleted or<br/><br/>has a protocolDirMatrixConfig value of supportedOff(2).<br/><br/><br/><br/>The probe will add to this table all pairs of addresses<br/><br/>seen in all packets with no MAC errors and will increment<br/><br/>octet and packet counts in the table for all packets with no<br/><br/>MAC errors.<br/><br/><br/><br/>Further, this table will only contain entries that have a<br/><br/>corresponding entry in the nlMatrixDSTable with the same<br/><br/>source address and destination address.
+GET http://localhost/api/snmp/nlMatrixSDTable
+Authorization: Bearer {{token}}
+
+### A list of traffic matrix entries that collect statistics for<br/><br/>conversations between two network-level addresses.  This table<br/><br/>is indexed first by the destination address and then by the<br/><br/>source address to make it convenient to collect all<br/><br/>conversations to a particular address.<br/><br/><br/><br/>The probe will populate this table for all network layer<br/><br/>protocols in the protocol directory table whose value of<br/><br/>protocolDirMatrixConfig is equal to supportedOn(3), and<br/><br/>will delete any entries whose protocolDirEntry is deleted or<br/><br/>has a protocolDirMatrixConfig value of supportedOff(2).<br/><br/><br/><br/>The probe will add to this table all pairs of addresses<br/><br/>seen in all packets with no MAC errors and will increment<br/><br/>octet and packet counts in the table for all packets with no<br/><br/>MAC errors.<br/><br/><br/><br/>Further, this table will only contain entries that have a<br/><br/>corresponding entry in the nlMatrixSDTable with the same<br/><br/>source address and destination address.
+GET http://localhost/api/snmp/nlMatrixDSTable
+Authorization: Bearer {{token}}
+
+### A set of parameters that control the creation of a<br/><br/>report of the top N matrix entries according to<br/><br/>a selected metric.
+GET http://localhost/api/snmp/nlMatrixTopNControlTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/nlMatrixTopNControlTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "nlMatrixTopNControlMatrixIndex": "",
+    "nlMatrixTopNControlRateBase": "",
+    "nlMatrixTopNControlTimeRemaining": 1800,
+    "nlMatrixTopNControlRequestedSize": 150,
+    "nlMatrixTopNControlOwner": "",
+    "nlMatrixTopNControlStatus": ""
+}
+
+### A set of statistics for those network-layer matrix entries<br/><br/>that have counted the highest number of octets or packets.
+GET http://localhost/api/snmp/nlMatrixTopNTable
+Authorization: Bearer {{token}}
+
+### A collection of statistics for a particular protocol from a<br/><br/>particular network address that has been discovered on an<br/><br/>interface of this device.<br/><br/><br/><br/>The probe will populate this table for all protocols in the<br/><br/>protocol directory table whose value of<br/><br/>protocolDirHostConfig is equal to supportedOn(3), and<br/><br/>will delete any entries whose protocolDirEntry is deleted or<br/><br/>has a protocolDirHostConfig value of supportedOff(2).<br/><br/>The probe will add to this table all addresses<br/><br/>seen as the source or destination address in all packets with<br/><br/>no MAC errors and will increment octet and packet counts in<br/><br/>the table for all packets with no MAC errors.  Further,<br/><br/>entries will only be added to this table if their address<br/><br/>exists in the nlHostTable and will be deleted from this table<br/><br/>if their address is deleted from the nlHostTable.
+GET http://localhost/api/snmp/alHostTable
+Authorization: Bearer {{token}}
+
+### A list of application traffic matrix entries that collect<br/><br/>statistics for conversations of a particular protocol between<br/><br/>two network-level addresses.  This table is indexed first by<br/><br/>the source address and then by the destination address to make<br/><br/>it convenient to collect all statistics from a particular<br/><br/>address.<br/><br/><br/><br/>The probe will populate this table for all protocols in the<br/><br/>protocol directory table whose value of<br/><br/>protocolDirMatrixConfig is equal to supportedOn(3), and<br/><br/>will delete any entries whose protocolDirEntry is deleted or<br/><br/>has a protocolDirMatrixConfig value of supportedOff(2).<br/><br/><br/><br/>The probe will add to this table all pairs of addresses for<br/><br/>all protocols seen in all packets with no MAC errors and will<br/><br/>increment octet and packet counts in the table for all packets<br/><br/>with no MAC errors.  Further, entries will only be added to<br/><br/>this table if their address pair exists in the nlMatrixSDTable<br/><br/>and will be deleted from this table if the address pair is<br/><br/>deleted from the nlMatrixSDTable.
+GET http://localhost/api/snmp/alMatrixSDTable
+Authorization: Bearer {{token}}
+
+### A list of application traffic matrix entries that collect<br/><br/>statistics for conversations of a particular protocol between<br/><br/>two network-level addresses.  This table is indexed first by<br/><br/>the destination address and then by the source address to make<br/><br/>it convenient to collect all statistics to a particular<br/><br/>address.<br/><br/><br/><br/>The probe will populate this table for all protocols in the<br/><br/>protocol directory table whose value of<br/><br/>protocolDirMatrixConfig is equal to supportedOn(3), and<br/><br/>will delete any entries whose protocolDirEntry is deleted or<br/><br/>has a protocolDirMatrixConfig value of supportedOff(2).<br/><br/><br/><br/>The probe will add to this table all pairs of addresses for<br/><br/>all protocols seen in all packets with no MAC errors and will<br/><br/>increment octet and packet counts in the table for all packets<br/><br/>with no MAC errors.  Further, entries will only be added to<br/><br/>this table if their address pair exists in the nlMatrixDSTable<br/><br/>and will be deleted from this table if the address pair is<br/><br/>deleted from the nlMatrixDSTable.
+GET http://localhost/api/snmp/alMatrixDSTable
+Authorization: Bearer {{token}}
+
+### A set of parameters that control the creation of a<br/><br/>report of the top N matrix entries according to<br/><br/>a selected metric.
+GET http://localhost/api/snmp/alMatrixTopNControlTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/alMatrixTopNControlTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "alMatrixTopNControlMatrixIndex": "",
+    "alMatrixTopNControlRateBase": "",
+    "alMatrixTopNControlTimeRemaining": 1800,
+    "alMatrixTopNControlRequestedSize": 150,
+    "alMatrixTopNControlOwner": "",
+    "alMatrixTopNControlStatus": ""
+}
+
+### A set of statistics for those application-layer matrix<br/><br/>entries that have counted the highest number of octets or<br/><br/>packets.
+GET http://localhost/api/snmp/alMatrixTopNTable
+Authorization: Bearer {{token}}
+
+### A list of data-collection configuration entries.
+GET http://localhost/api/snmp/usrHistoryControlTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/usrHistoryControlTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "usrHistoryControlObjects": "",
+    "usrHistoryControlBucketsRequested": 50,
+    "usrHistoryControlInterval": 1800,
+    "usrHistoryControlOwner": "",
+    "usrHistoryControlStatus": ""
+}
+
+### A list of data-collection configuration entries.
+GET http://localhost/api/snmp/usrHistoryObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/usrHistoryObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "usrHistoryObjectVariable": "",
+    "usrHistoryObjectSampleType": ""
+}
+
+### A list of user-defined history entries.
+GET http://localhost/api/snmp/usrHistoryTable
+Authorization: Bearer {{token}}
+
+### A table of serial interface configuration entries.  This data<br/><br/>will be stored in non-volatile memory and preserved across<br/><br/>probe resets or power loss.<br/><br/><br/><br/>This table has been deprecated, as it has not had enough<br/><br/>independent implementations to demonstrate interoperability to<br/><br/>meet the requirements of a Draft Standard.
+GET http://localhost/api/snmp/serialConfigTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/serialConfigTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "serialMode": 1,
+    "serialProtocol": 2,
+    "serialTimeout": 300,
+    "serialModemInitString": "",
+    "serialModemHangUpString": "",
+    "serialModemConnectResp": "",
+    "serialModemNoConnectResp": "",
+    "serialDialoutTimeout": 20,
+    "serialStatus": ""
+}
+
+### A table of netConfigEntries.<br/><br/><br/><br/>This table has been deprecated, as it has not had enough<br/><br/>independent implementations to demonstrate interoperability to<br/><br/>meet the requirements of a Draft Standard.
+GET http://localhost/api/snmp/netConfigTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/netConfigTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "netConfigIPAddress": "",
+    "netConfigSubnetMask": "",
+    "netConfigStatus": ""
+}
+
+### A list of trap destination entries.
+GET http://localhost/api/snmp/trapDestTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/trapDestTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "trapDestCommunity": "",
+    "trapDestProtocol": "",
+    "trapDestAddress": "",
+    "trapDestOwner": "",
+    "trapDestStatus": ""
+}
+
+### A list of serialConnectionEntries.<br/><br/><br/><br/>This table has been deprecated, as it has not had enough<br/><br/>independent implementations to demonstrate interoperability<br/><br/>to meet the requirements of a Draft Standard.
+GET http://localhost/api/snmp/serialConnectionTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/serialConnectionTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "serialConnectDestIpAddress": "",
+    "serialConnectType": 1,
+    "serialConnectDialString": "",
+    "serialConnectSwitchConnectSeq": "",
+    "serialConnectSwitchDisconnectSeq": "",
+    "serialConnectSwitchResetSeq": "",
+    "serialConnectOwner": "",
+    "serialConnectStatus": ""
+}
+

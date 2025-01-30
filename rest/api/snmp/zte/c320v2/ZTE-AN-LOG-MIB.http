@@ -1,0 +1,13 @@
+### Log configuration table.
+GET http://localhost/api/snmp/zxAnLogConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnLogConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnLogEnable": 1
+}
+

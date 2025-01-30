@@ -1,0 +1,156 @@
+
+
+### Description
+GET http://localhost/api/snmp/signalProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/signalProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "signalName": "",
+    "mgcProtocolType": "",
+    "mgc1Address": "",
+    "mgc1Port": "",
+    "mgc2Address": "",
+    "mgc2Port": "",
+    "mgc3Address": "",
+    "mgc3Port": "",
+    "primaryDNS": "",
+    "secondaryDNS": "",
+    "sipRegistrationAddress": "",
+    "sipRegistrationPort": "",
+    "sipServerAddress": "",
+    "sipServerPort": "",
+    "sipTimeOut": "",
+    "keepAlive": "",
+    "aliveInterval": "",
+    "aliveTime": "",
+    "signalProfileAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/potsUserCfgTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/potsUserCfgTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "potsEnable": "",
+    "telNum": "",
+    "bindingSignalName": "",
+    "signalVlan": "",
+    "svlanEnable": "",
+    "svlanId": "",
+    "svlanCosFor5516": "",
+    "cvalnCosFor5516": "",
+    "voiceDomain": "",
+    "protocolPort": "",
+    "userNameSipTelNum": "",
+    "sipUserName": "",
+    "sipPassword": "",
+    "bindingPotsCfgProfileName": "",
+    "potsUserCfgAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/onuVoiceCfgTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/onuVoiceCfgTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "ipCfgType": "",
+    "staticIPAddress": "",
+    "staticIPMask": "",
+    "staticIPGateway": "",
+    "pppoeUserName": "",
+    "pppoePassword": "",
+    "dhcpOption60Enable": "",
+    "dhcpOption60Suffix": "",
+    "bindingVoicePlatformProfileName": "",
+    "voiceCfgAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/voicePlatformProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/voicePlatformProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "voicePlatformProfileName": "",
+    "rtpNameFiexedPart": "",
+    "rtpBeginValue": "",
+    "rtpEndValue": "",
+    "rtpStepValue": "",
+    "rtpNameFill": "",
+    "digitmapStartTimer": "",
+    "digitmapShortTimer": "",
+    "digitmapLongTimer": "",
+    "dialMapNotifyImmediately": "",
+    "vbdEnable": "",
+    "packetIntervalOut": "",
+    "packetIntervalIn": "",
+    "codeType": "",
+    "platformProfileAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/potsCfgProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/potsCfgProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "potsCfgProfileName": "",
+    "voiceCoder": "",
+    "faxMode": "",
+    "slienceSwitch": "",
+    "echoCancel": "",
+    "inputGain": "",
+    "outputGain": "",
+    "dtmfMode": "",
+    "faxCtrlMode": "",
+    "potsProfileAction": ""
+}
+
+
+
+
+
+

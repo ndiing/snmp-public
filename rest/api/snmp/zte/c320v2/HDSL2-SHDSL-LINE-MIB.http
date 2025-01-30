@@ -1,0 +1,123 @@
+### This table supports overall configuration of HDSL2/SHDSL<br/><br/>Spans.  Entries in this table MUST be maintained in a<br/><br/>persistent manner.
+GET http://localhost/api/snmp/hdsl2ShdslSpanConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/hdsl2ShdslSpanConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "hdsl2ShdslSpanConfNumRepeaters": "",
+    "hdsl2ShdslSpanConfProfile": "",
+    "hdsl2ShdslSpanConfAlarmProfile": ""
+}
+
+### This table provides overall status information of<br/><br/>HDSL2/SHDSL spans.  This table contains live data from<br/><br/>equipment.  As such, it is NOT persistent.
+GET http://localhost/api/snmp/hdsl2ShdslSpanStatusTable
+Authorization: Bearer {{token}}
+
+### This table supports retrieval of unit inventory information<br/><br/>available via the EOC from units in a HDSL2/SHDSL line.<br/><br/><br/><br/>Entries in this table are dynamically created during the<br/><br/>line discovery process.  The life cycle for these entries<br/><br/>is as follows:<br/><br/><br/><br/>- xtu discovers a device, either a far-end xtu or an xru<br/><br/>- an inventory table entry is created for the device<br/><br/>- the line goes down for whatever reason<br/><br/>- inventory table entries for unreachable devices are<br/><br/>destroyed.<br/><br/><br/><br/>As these entries are created/destroyed dynamically, they<br/><br/>are NOT persistent.
+GET http://localhost/api/snmp/hdsl2ShdslInventoryTable
+Authorization: Bearer {{token}}
+
+### This table supports configuration parameters for segment<br/><br/>endpoints in a HDSL2/SHDSL line.  As this table is indexed<br/><br/>by ifIndex, it MUST be maintained in a persistent manner.
+GET http://localhost/api/snmp/hdsl2ShdslEndpointConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/hdsl2ShdslEndpointConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "hdsl2ShdslEndpointAlarmConfProfile": ""
+}
+
+### This table contains current status and performance information<br/><br/>for segment endpoints in HDSL2/SHDSL Lines.  As with other<br/><br/>tables in this MIB indexed by ifIndex, entries in this table<br/><br/>MUST be maintained in a persistent manner.
+GET http://localhost/api/snmp/hdsl2ShdslEndpointCurrTable
+Authorization: Bearer {{token}}
+
+### This table provides one row for each HDSL2/SHDSL endpoint<br/><br/>performance data collection interval.  This table contains<br/><br/>live data from equipment.  As such, it is NOT persistent.
+GET http://localhost/api/snmp/hdsl2Shdsl15MinIntervalTable
+Authorization: Bearer {{token}}
+
+### This table provides one row for each HDSL2/SHDSL endpoint<br/><br/>performance data collection interval.  This table contains<br/><br/>live data from equipment.  As such, it is NOT persistent.
+GET http://localhost/api/snmp/hdsl2Shdsl1DayIntervalTable
+Authorization: Bearer {{token}}
+
+### This table supports maintenance operations (eg. loopbacks)<br/><br/>to be performed on HDSL2/SHDSL segment endpoints.  This table<br/><br/>contains live data from equipment.  As such, it is NOT<br/><br/>persistent.
+GET http://localhost/api/snmp/hdsl2ShdslEndpointMaintTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/hdsl2ShdslEndpointMaintTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "hdsl2ShdslMaintLoopbackConfig": "",
+    "hdsl2ShdslMaintPowerBackOff": "",
+    "hdsl2ShdslMaintSoftRestart": ""
+}
+
+### This table supports maintenance operations for units in a<br/><br/>HDSL2/SHDSL line.  Entries in this table MUST be maintained<br/><br/>in a persistent manner.
+GET http://localhost/api/snmp/hdsl2ShdslUnitMaintTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/hdsl2ShdslUnitMaintTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "hdsl2ShdslMaintLoopbackTimeout": ""
+}
+
+### This table supports definitions of span configuration<br/><br/>profiles for SHDSL lines.  HDSL2 does not support these<br/><br/>configuration options.  This table MUST be maintained<br/><br/>in a persistent manner.
+GET http://localhost/api/snmp/hdsl2ShdslSpanConfProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/hdsl2ShdslSpanConfProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "hdsl2ShdslSpanConfWireInterface": 1,
+    "hdsl2ShdslSpanConfMinLineRate": 1552000,
+    "hdsl2ShdslSpanConfMaxLineRate": 1552000,
+    "hdsl2ShdslSpanConfPSD": 1,
+    "hdsl2ShdslSpanConfTransmissionMode": "{ region1",
+    "hdsl2ShdslSpanConfRemoteEnabled": 1,
+    "hdsl2ShdslSpanConfPowerFeeding": 1,
+    "hdsl2ShdslSpanConfCurrCondTargetMarginDown": 0,
+    "hdsl2ShdslSpanConfWorstCaseTargetMarginDown": 0,
+    "hdsl2ShdslSpanConfCurrCondTargetMarginUp": 0,
+    "hdsl2ShdslSpanConfWorstCaseTargetMarginUp": 0,
+    "hdsl2ShdslSpanConfUsedTargetMargins": "{ currCondDown",
+    "hdsl2ShdslSpanConfReferenceClock": 1,
+    "hdsl2ShdslSpanConfLineProbeEnable": 1,
+    "hdsl2ShdslSpanConfProfileRowStatus": ""
+}
+
+### This table supports definitions of alarm configuration<br/><br/>profiles for HDSL2/SHDSL segment endpoints.  This table<br/><br/>MUST be maintained in a persistent manner.
+GET http://localhost/api/snmp/hdsl2ShdslEndpointAlarmConfProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/hdsl2ShdslEndpointAlarmConfProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "hdsl2ShdslEndpointThreshLoopAttenuation": 0,
+    "hdsl2ShdslEndpointThreshSNRMargin": 0,
+    "hdsl2ShdslEndpointThreshES": 0,
+    "hdsl2ShdslEndpointThreshSES": 0,
+    "hdsl2ShdslEndpointThreshCRCanomalies": 0,
+    "hdsl2ShdslEndpointThreshLOSWS": 0,
+    "hdsl2ShdslEndpointThreshUAS": 0,
+    "hdsl2ShdslEndpointAlarmConfProfileRowStatus": ""
+}
+

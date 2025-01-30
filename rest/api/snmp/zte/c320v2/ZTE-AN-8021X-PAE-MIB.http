@@ -1,0 +1,50 @@
+### A table that contains the authorized session objects for the<br/><br/>PAE associated with each port.
+GET http://localhost/api/snmp/zxAn8021XPaeAuthSessionTable
+Authorization: Bearer {{token}}
+
+### A table that contains the authenticator objects for the<br/><br/>PAE associated with each port.
+GET http://localhost/api/snmp/zxAn8021XPaeAuthenticatorTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAn8021XPaeAuthenticatorTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAn8021XPaeAuthenRspTimeout": 30,
+    "zxAn8021XPaeAuthenReauthenPeriod": 600,
+    "zxAn8021XPaeAuthenQuietPeriod": 60,
+    "zxAn8021XPaeAuthenReauthenEnable": 2,
+    "zxAn8021XPaeAuthenRowStatus": ""
+}
+
+### A table that contains the supplicant objects for the<br/><br/>PAE associated with each port.
+GET http://localhost/api/snmp/zxAn8021XPaeSupplicantTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAn8021XPaeSupplicantTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAn8021XPaeSuppMaxRetries": 3,
+    "zxAn8021XPaeSuppRspTimeout": 30,
+    "zxAn8021XPaeSuppMaxReqs": 2,
+    "zxAn8021XPaeSuppRowStatus": ""
+}
+
+### A table that contains the EAPOL statistics objects for the<br/><br/>PAE associated with each port.
+GET http://localhost/api/snmp/zxAn8021XPaeEapolIfStatsTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAn8021XPaeEapolIfStatsTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAn8021XEapolIfReset": ""
+}
+

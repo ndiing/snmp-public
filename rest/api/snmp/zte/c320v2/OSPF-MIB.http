@@ -1,0 +1,179 @@
+### Information describing the configured parameters and<br/><br/>cumulative statistics of the router's attached areas.<br/><br/>The interfaces and virtual links are configured<br/><br/>as part of these areas.  Area 0.0.0.0, by definition,<br/><br/>is the backbone area.
+GET http://localhost/api/snmp/ospfAreaTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/ospfAreaTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "ospfAuthType": 0,
+    "ospfImportAsExtern": 1,
+    "ospfAreaSummary": 1,
+    "ospfAreaStatus": "",
+    "ospfAreaNssaTranslatorRole": 2,
+    "ospfAreaNssaTranslatorStabilityInterval": 40
+}
+
+### The set of metrics that will be advertised<br/><br/>by a default Area Border Router into a stub area.
+GET http://localhost/api/snmp/ospfStubAreaTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/ospfStubAreaTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "ospfStubMetric": "",
+    "ospfStubStatus": "",
+    "ospfStubMetricType": 1
+}
+
+### The OSPF Process's link state database (LSDB).<br/><br/>The LSDB contains the link state advertisements<br/><br/>from throughout the areas that the device is attached to.
+GET http://localhost/api/snmp/ospfLsdbTable
+Authorization: Bearer {{token}}
+
+### The Address Range Table acts as an adjunct to the Area<br/><br/>Table.  It describes those Address Range Summaries that<br/><br/>are configured to be propagated from an Area to reduce<br/><br/>the amount of information about it that is known beyond<br/><br/>its borders.  It contains a set of IP address ranges<br/><br/>specified by an IP address/IP network mask pair.<br/><br/>For example, class B address range of X.X.X.X<br/><br/>with a network mask of 255.255.0.0 includes all IP<br/><br/>addresses from X.X.0.0 to X.X.255.255.<br/><br/><br/><br/>Note that this table is obsoleted and is replaced<br/><br/>by the Area Aggregate Table.
+GET http://localhost/api/snmp/ospfAreaRangeTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/ospfAreaRangeTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "ospfAreaRangeMask": "",
+    "ospfAreaRangeStatus": "",
+    "ospfAreaRangeEffect": 1
+}
+
+### The Host/Metric Table indicates what hosts are directly<br/><br/>attached to the router, what metrics and types<br/><br/>of service should be advertised for them,<br/><br/>and what areas they are found within.
+GET http://localhost/api/snmp/ospfHostTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/ospfHostTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "ospfHostMetric": "",
+    "ospfHostStatus": "",
+    "ospfHostCfgAreaID": ""
+}
+
+### The OSPF Interface Table describes the interfaces<br/><br/>from the viewpoint of OSPF.<br/><br/>It augments the ipAddrTable with OSPF specific information.
+GET http://localhost/api/snmp/ospfIfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/ospfIfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "ospfIfAreaId": 0,
+    "ospfIfType": "",
+    "ospfIfAdminStat": 1,
+    "ospfIfRtrPriority": 1,
+    "ospfIfTransitDelay": 1,
+    "ospfIfRetransInterval": 5,
+    "ospfIfHelloInterval": 10,
+    "ospfIfRtrDeadInterval": 40,
+    "ospfIfPollInterval": 120,
+    "ospfIfAuthKey": 0,
+    "ospfIfStatus": "",
+    "ospfIfMulticastForwarding": 1,
+    "ospfIfDemand": 2,
+    "ospfIfAuthType": 0
+}
+
+### The Metric Table describes the metrics to be advertised<br/><br/>for a specified interface at the various types of service.<br/><br/>As such, this table is an adjunct of the OSPF Interface<br/><br/>Table.<br/><br/><br/><br/>Types of service, as defined by RFC 791, have the ability<br/><br/>to request low delay, high bandwidth, or reliable linkage.<br/><br/><br/><br/>For the purposes of this specification, the measure of<br/><br/>bandwidth:<br/><br/><br/><br/>Metric = referenceBandwidth / ifSpeed<br/><br/><br/><br/>is the default value.<br/><br/>The default reference bandwidth is 10^8.<br/><br/>For multiple link interfaces, note that ifSpeed is the sum<br/><br/>of the individual link speeds.  This yields a number having<br/><br/>the following typical values:<br/><br/><br/><br/>Network Type/bit rate   Metric<br/><br/><br/><br/>>= 100 MBPS                 1<br/><br/>Ethernet/802.3             10<br/><br/>E1                         48<br/><br/>T1 (ESF)                   65<br/><br/>64 KBPS                    1562<br/><br/>56 KBPS                    1785<br/><br/>19.2 KBPS                  5208<br/><br/>9.6 KBPS                   10416<br/><br/><br/><br/>Routes that are not specified use the default<br/><br/>(TOS 0) metric.<br/><br/><br/><br/>Note that the default reference bandwidth can be configured<br/><br/>using the general group object ospfReferenceBandwidth.
+GET http://localhost/api/snmp/ospfIfMetricTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/ospfIfMetricTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "ospfIfMetricValue": "",
+    "ospfIfMetricStatus": ""
+}
+
+### Information about this router's virtual interfaces<br/><br/>that the OSPF Process is configured to carry on.
+GET http://localhost/api/snmp/ospfVirtIfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/ospfVirtIfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "ospfVirtIfTransitDelay": 1,
+    "ospfVirtIfRetransInterval": 5,
+    "ospfVirtIfHelloInterval": 10,
+    "ospfVirtIfRtrDeadInterval": 60,
+    "ospfVirtIfAuthKey": 0,
+    "ospfVirtIfStatus": "",
+    "ospfVirtIfAuthType": 0
+}
+
+### A table describing all non-virtual neighbors<br/><br/>in the locality of the OSPF router.
+GET http://localhost/api/snmp/ospfNbrTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/ospfNbrTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "ospfNbrPriority": 1,
+    "ospfNbmaNbrStatus": ""
+}
+
+### This table describes all virtual neighbors.<br/><br/>Since virtual links are configured<br/><br/>in the Virtual Interface Table, this table is read-only.
+GET http://localhost/api/snmp/ospfVirtNbrTable
+Authorization: Bearer {{token}}
+
+### The OSPF Process's external LSA link state database.<br/><br/><br/><br/>This table is identical to the OSPF LSDB Table<br/><br/>in format, but contains only external link state<br/><br/>advertisements.  The purpose is to allow external<br/><br/>LSAs to be displayed once for the router rather<br/><br/>than once in each non-stub area.<br/><br/><br/><br/>Note that external LSAs are also in the AS-scope link state<br/><br/>database.
+GET http://localhost/api/snmp/ospfExtLsdbTable
+Authorization: Bearer {{token}}
+
+### The Area Aggregate Table acts as an adjunct<br/><br/>to the Area Table.  It describes those address aggregates<br/><br/>that are configured to be propagated from an area.<br/><br/>Its purpose is to reduce the amount of information<br/><br/>that is known beyond an Area's borders.<br/><br/><br/><br/>It contains a set of IP address ranges<br/><br/>specified by an IP address/IP network mask pair.<br/><br/>For example, a class B address range of X.X.X.X<br/><br/>with a network mask of 255.255.0.0 includes all IP<br/><br/>addresses from X.X.0.0 to X.X.255.255.<br/><br/><br/><br/>Note that if ranges are configured such that one range<br/><br/>subsumes another range (e.g., 10.0.0.0 mask 255.0.0.0<br/><br/>and 10.1.0.0 mask 255.255.0.0),<br/><br/>the most specific match is the preferred one.
+GET http://localhost/api/snmp/ospfAreaAggregateTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/ospfAreaAggregateTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "ospfAreaAggregateStatus": "",
+    "ospfAreaAggregateEffect": 1,
+    "ospfAreaAggregateExtRouteTag": 0
+}
+
+### The OSPF Process's link-local link state database<br/><br/>for non-virtual links.<br/><br/>This table is identical to the OSPF LSDB Table<br/><br/>in format, but contains only link-local Link State<br/><br/>Advertisements for non-virtual links.  The purpose is<br/><br/>to allow link-local LSAs to be displayed for each<br/><br/>non-virtual interface.  This table is implemented to<br/><br/>support type-9 LSAs that are defined<br/><br/>in 'The OSPF Opaque LSA Option'.
+GET http://localhost/api/snmp/ospfLocalLsdbTable
+Authorization: Bearer {{token}}
+
+### The OSPF Process's link-local link state database<br/><br/>for virtual links.<br/><br/>This table is identical to the OSPF LSDB Table<br/><br/>in format, but contains only link-local Link State<br/><br/>Advertisements for virtual links.  The purpose is to<br/><br/>allow link-local LSAs to be displayed for each virtual<br/><br/>interface.  This table is implemented to support type-9 LSAs<br/><br/>that are defined in 'The OSPF Opaque LSA Option'.
+GET http://localhost/api/snmp/ospfVirtLocalLsdbTable
+Authorization: Bearer {{token}}
+
+### The OSPF Process's AS-scope LSA link state database.<br/><br/>The database contains the AS-scope Link State<br/><br/>Advertisements from throughout the areas that<br/><br/>the device is attached to.<br/><br/><br/><br/>This table is identical to the OSPF LSDB Table<br/><br/>in format, but contains only AS-scope Link State<br/><br/>Advertisements.  The purpose is to allow AS-scope<br/><br/>LSAs to be displayed once for the router rather<br/><br/>than once in each non-stub area.
+GET http://localhost/api/snmp/ospfAsLsdbTable
+Authorization: Bearer {{token}}
+
+### This table maintains per-area, per-LSA-type counters
+GET http://localhost/api/snmp/ospfAreaLsaCountTable
+Authorization: Bearer {{token}}
+

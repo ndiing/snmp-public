@@ -1,0 +1,71 @@
+### A table of config-copy requests.
+GET http://localhost/api/snmp/zxr10CopyTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxr10CopyTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxr10CopyProtocol": 2,
+    "zxr10CopySourceFileType": "",
+    "zxr10CopyDestFileType": "",
+    "zxr10CopyServerAddress": "",
+    "zxr10CopySrcFileName": "",
+    "zxr10CopyDstFileName": "",
+    "zxr10CopyUserName": "",
+    "zxr10CopyUserPassword": "",
+    "zxr10CopyNotificationOnCompletion": 2,
+    "zxr10CopyRowStatus": "",
+    "zxr10CopyVrfName": "",
+    "zxr10CopyMng": 2,
+    "zxr10CopyFileCheckSumType": 0,
+    "zxr10CopyFileCheckSumString": ""
+}
+
+### A table of tftp copy requests.
+GET http://localhost/api/snmp/zxr10TFTPCopyTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxr10TFTPCopyTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxr10TFTPCopySourceFileType": "",
+    "zxr10TFTPCopyDestFileType": "",
+    "zxr10TFTPCopyServerAddress": "",
+    "zxr10TFTPCopySrcFileName": "",
+    "zxr10TFTPCopyDstFileName": "",
+    "zxr10TFTPCopyFinishNotify": 2,
+    "zxr10TFTPCopyVrfName": "",
+    "zxr10TFTPCopyMng": 2,
+    "zxr10TFTPCopyFileCheckSumType": "none",
+    "zxr10TFTPCopyFileCheckSumString": "",
+    "zxr10TFTPCopyRowStatus": ""
+}
+
+### A table of SFTP copy requests.
+GET http://localhost/api/snmp/zxr10SftpCopyTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxr10SftpCopyTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxr10SftpCopySourceFileType": "",
+    "zxr10SftpCopyDestFileType": "",
+    "zxr10SftpCopyServerAddress": "",
+    "zxr10SftpCopySrcFileName": "",
+    "zxr10SftpCopyDstFileName": "",
+    "zxr10SftpCopyUserName": "",
+    "zxr10SftpCopyUserPassword": "",
+    "zxr10SftpCopyVrfName": "",
+    "zxr10SftpCopyMng": 2,
+    "zxr10SftpCopyRowStatus": ""
+}
+

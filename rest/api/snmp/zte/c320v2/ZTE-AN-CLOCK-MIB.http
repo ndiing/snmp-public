@@ -1,0 +1,67 @@
+### undefined
+GET http://localhost/api/snmp/zxAnClockSrcTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnClockSrcTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnClockSrcShelf": "",
+    "zxAnClockSrcSlot": "",
+    "zxAnClockSrcPort": "",
+    "zxAnClockSrcType": "",
+    "zxAnClockSrcPriority": "",
+    "zxAnClockSrcExtInQuality": 255,
+    "zxAnClockSrcExtInMode": "",
+    "zxAnClockSrcSwitchMode": "",
+    "zxAnClockSrcEntryStatus": ""
+}
+
+### SSM/QL-level overwriting management of clock tx port.
+GET http://localhost/api/snmp/zxAnClockSsmSendTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnClockSsmSendTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnClockSsmSendShelf": "",
+    "zxAnClockSsmSendSlot": "",
+    "zxAnClockSsmSendPort": "",
+    "zxAnClockSsmSendBytes": "",
+    "zxAnClockSsmSendRowStatus": ""
+}
+
+### This managed entity represents the<br/><br/>ESMC(Ethernet Synchronization Messaging Channel).
+GET http://localhost/api/snmp/zxAnClockEsmcTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnClockEsmcTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnClockEsmcShelf": "",
+    "zxAnClockEsmcSlot": "",
+    "zxAnClockEsmcPort": "",
+    "zxAnClockEsmcRowStatus": ""
+}
+
+### The card clock configuration table.
+GET http://localhost/api/snmp/zxAnClockCardClockConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnClockCardClockConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnClockCardClockConfType": 1
+}
+

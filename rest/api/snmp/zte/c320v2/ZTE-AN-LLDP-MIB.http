@@ -1,0 +1,13 @@
+### LLDP Interface configuration table.
+GET http://localhost/api/snmp/zxAnLldpIfConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnLldpIfConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnLldpIfConfMaxNeighbors": ""
+}
+

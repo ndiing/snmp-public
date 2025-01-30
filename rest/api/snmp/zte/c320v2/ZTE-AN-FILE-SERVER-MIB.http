@@ -1,0 +1,31 @@
+### File server group configuration table.
+GET http://localhost/api/snmp/zxAnFileServerGroupTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnFileServerGroupTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnFileServerGroupWorkMode": ""
+}
+
+### File server configuration table.
+GET http://localhost/api/snmp/zxAnFileServerTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnFileServerTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnFileServerIpAddressType": 1,
+    "zxAnFileServerIpAddress": "",
+    "zxAnFileServerProtocolType": 1,
+    "zxAnFileServerUserName": "",
+    "zxAnFileServerUserPwd": "",
+    "zxAnFileServerPath": ""
+}
+

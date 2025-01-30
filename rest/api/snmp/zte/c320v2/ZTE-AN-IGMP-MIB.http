@@ -1,0 +1,297 @@
+### A table that contains all IGMP protocol information of an user<br/><br/>interface.
+GET http://localhost/api/snmp/zxAnIgmpProtoIfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIgmpProtoIfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIgmpIfAdminStatus": 1,
+    "zxAnIgmpIfProtoVersion": 3,
+    "zxAnIgmpIfFastLeaveEnable": 1,
+    "zxAnIgmpIfBandwidth": "",
+    "zxAnIgmpIfMaxGroups": 8192
+}
+
+### A table that contains IGMP protocol information in Multicast<br/><br/>VLAN.
+GET http://localhost/api/snmp/zxAnIgmpProtoMVlanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIgmpProtoMVlanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIgmpMVlanIgmpAdminStatus": 1,
+    "zxAnIgmpMVlanIgmpV1OperMode": 1,
+    "zxAnIgmpMVlanIgmpV2OperMode": 1,
+    "zxAnIgmpMVlanIgmpV3OperMode": 1,
+    "zxAnIgmpMVlanIgmpWorkMode": 3,
+    "zxAnIgmpMVlanIgmpSsmCtrlMode": 3,
+    "zxAnIgmpMVlanIgmpSsmIpAddr": 8000000,
+    "zxAnIgmpMVlanIgmpSsmIpAddrMask": "F000000",
+    "zxAnIgmpMVlanIgmpCVid": 0,
+    "zxAnIgmpMvlanIgmpMaxGroups": 8192,
+    "zxAnIgmpMVlanGenQryPktTxGrpMode": 1
+}
+
+### A table that contains IGMP Snooping informations in multicast<br/><br/>VLAN.
+GET http://localhost/api/snmp/zxAnIgmpSnoopingMVlanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIgmpSnoopingMVlanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIgmpSnoopingMVlanAgingTime": 300
+}
+
+### A table that contains IGMP proxy informations in Multicast<br/><br/>VLAN.
+GET http://localhost/api/snmp/zxAnIgmpProxyMVlanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIgmpProxyMVlanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIgmpMVlanRobustnessVariable": 2,
+    "zxAnIgmpMVlanHostVersion": 1,
+    "zxAnIgmpMVlanHostIpAddr": "0A8020E",
+    "zxAnIgmpMVlanUnsolReportInterval": 1,
+    "zxAnIgmpMVlanRouterIpAddr": "0A8020E",
+    "zxAnIgmpMVlanQueryInterval": 125,
+    "zxAnIgmpMVlanQueryRespInterval": 100,
+    "zxAnIgmpMVlanLastMemberQryIntvl": 10,
+    "zxAnIgmpMVlanLastMemberQryCount": 2,
+    "zxAnIgmpMVlanStartUpQryInterval": 30,
+    "zxAnIgmpMVlanStartUpQryCount": 2,
+    "zxAnIgmpMVlanIgmpPacketPriority": 0,
+    "zxAnIgmpMVlanQryPktProtoVersion": 2,
+    "zxAnIgmpMVlanIgmpPktDscp": 48
+}
+
+### A table used to create or remove MVLAN.
+GET http://localhost/api/snmp/zxAnIgmpMgmtMVlanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIgmpMgmtMVlanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIgmpMVlanGroupFilterEnable": 1,
+    "zxAnIgmpMVlanRowStatus": ""
+}
+
+### A Table used to add or delete receiving port in a MVLAN.
+GET http://localhost/api/snmp/zxAnIgmpMgmtMVlanRecvIfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIgmpMgmtMVlanRecvIfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIgmpMgmtMVlanRecvIfRowStatus": ""
+}
+
+### A Table used to add or delete source port in a MVLAN.
+GET http://localhost/api/snmp/zxAnIgmpMgmtMVlanSrcIfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIgmpMgmtMVlanSrcIfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIgmpMVlanSrcIfRowStatus": ""
+}
+
+### A table that contains receiving ports information in a MVLAN.
+GET http://localhost/api/snmp/zxAnIgmpMVlanPortListTable
+Authorization: Bearer {{token}}
+
+### A table used to add or delete group-filter group segment.
+GET http://localhost/api/snmp/zxAnIgmpMgmtGroupFilterTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIgmpMgmtGroupFilterTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIgmpGroupFilterRowStatus": ""
+}
+
+### A table used to bind or unbind static receiving port to or from<br/><br/>multicast group.
+GET http://localhost/api/snmp/zxAnIgmpMgmtGroupStaticIfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIgmpMgmtGroupStaticIfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIgmpGroupStaticIfRowStatus": ""
+}
+
+### A table that contains the source filter mode of multicast group.
+GET http://localhost/api/snmp/zxAnIgmpMgmtGroupSrcListTable
+Authorization: Bearer {{token}}
+
+### A table that contains multicast forwarding port list<br/><br/>information.
+GET http://localhost/api/snmp/zxAnIgmpMgmtGroupForwardingTable
+Authorization: Bearer {{token}}
+
+### A table that contains dynamic group user information.
+GET http://localhost/api/snmp/zxAnIgmpMgmtGroupUserTable
+Authorization: Bearer {{token}}
+
+### A table used to add or delete multicast group prejoin<br/><br/>configuration.
+GET http://localhost/api/snmp/zxAnIgmpMgmtGroupPrejoinTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIgmpMgmtGroupPrejoinTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIgmpGroupPrejoinRowStatus": ""
+}
+
+### A table used to configure multicast group information.
+GET http://localhost/api/snmp/zxAnIgmpMgmtGroupConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIgmpMgmtGroupConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIgmpGroupBandwidth": 2048,
+    "zxAnIgmpGroupConfRowStatus": ""
+}
+
+### A table that contains receiving ports information in a MVLAN.
+GET http://localhost/api/snmp/zxAnIgmpMgmtMVlanPortListTable
+Authorization: Bearer {{token}}
+
+### A table used to show active multicast group list of the<br/><br/>user interface.
+GET http://localhost/api/snmp/zxAnIgmpMgmtIfActiveGroupTable
+Authorization: Bearer {{token}}
+
+### A table that contains IGMP span VLAN information for VLANs.<br/><br/>IGMP packets of this SVLAN will be processed.
+GET http://localhost/api/snmp/zxAnIgmpMgmtSpanVlanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIgmpMgmtSpanVlanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIgmpSpanVlanRowStatus": ""
+}
+
+### Multicast group source filter table.<br/><br/>The continuous group segments with the same group source IP will be<br/><br/>merged to one segment.<br/><br/>For example, with the same group source IP of 224.10.10.1, the<br/><br/>group segment [224.30.30.1-224.30.30.5], and group segment<br/><br/>[224.30.30.6-224.30.30.13], will be merged to one group segment<br/><br/>[224.30.30.1-224.30.30.13].
+GET http://localhost/api/snmp/zxAnIgmpMgmtGroupSrcFilterTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIgmpMgmtGroupSrcFilterTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIgmpGroupSrcFilterSourceIp": 0,
+    "zxAnIgmpGroupSrcFilterRowStatus": ""
+}
+
+### Multicast group SCB mode forwarding table.
+GET http://localhost/api/snmp/zxAnIgmpMgmtGroupScbFwdTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIgmpMgmtGroupScbFwdTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIgmpGroupScbFwdRowStatus": ""
+}
+
+### Multicast receiving ports list table.
+GET http://localhost/api/snmp/zxAnIgmpMgmtMVlanPortListIITable
+Authorization: Bearer {{token}}
+
+### A table used to add or delete source pseudo wire in a MVLAN.
+GET http://localhost/api/snmp/zxAnIgmpVplsMVlanSrcPwTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIgmpVplsMVlanSrcPwTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIgmpVplsMVlanSrcPwRowStatus": ""
+}
+
+### IGMP log servers table.
+GET http://localhost/api/snmp/zxAnIgmpLogServerTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIgmpLogServerTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIgmpLogServerUserName": "",
+    "zxAnIgmpLogServerPassword": "",
+    "zxAnIgmpLogServerFtpType": 1,
+    "zxAnIgmpLogVrfName": "",
+    "zxAnIgmpLogHostIpAddrType": 1,
+    "zxAnIgmpLogHostIpAddr": "",
+    "zxAnIgmpLogServerRowStatus": ""
+}
+
+### A table that contains IGMP packet statistics information.
+GET http://localhost/api/snmp/zxAnIgmpPktStatsTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIgmpPktStatsTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIgmpPktStatsReset": ""
+}
+
+### A table that contains IGMP group statistics information of an<br/><br/>user interface.
+GET http://localhost/api/snmp/zxAnIgmpIfStatsTable
+Authorization: Bearer {{token}}
+
+### A table that contains IGMP group statistics information in a<br/><br/>MVLAN.
+GET http://localhost/api/snmp/zxAnIgmpMVlanStatsTable
+Authorization: Bearer {{token}}
+
+### A table that contains interface statistics information in a<br/><br/>multicast group.
+GET http://localhost/api/snmp/zxAnIgmpGroupStatsTable
+Authorization: Bearer {{token}}
+

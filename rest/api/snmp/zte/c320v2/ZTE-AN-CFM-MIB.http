@@ -1,0 +1,117 @@
+### The complement of dot1agCfmMaNetTable.<br/><br/>This Table add some attributes to support the funtion that CFM PDUs<br/><br/>can pass through the L2VPN network,and some attributes to support<br/><br/>the requirement of potential customer.<br/><br/><br/><br/>This table uses two indices, the means of the index is same as the<br/><br/>dot1agCfmMaNetTable.<br/><br/><br/><br/>The writable objects in this table need to be persistent upon<br/><br/>reboot or restart of a device.
+GET http://localhost/api/snmp/zxAnCfmMaNetTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnCfmMaNetTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnCfmMaNetCcmDaType": 2,
+    "zxAnCfmMaNetProtectType": 2,
+    "zxAnCfmMaNetTunnelId": 1,
+    "zxAnCfmMaNetL2vpnVllInstance": 0,
+    "zxAnCfmMaNetPrimarySVid": "",
+    "zxAnCfmMaNetPrimaryCVid": "",
+    "zxAnCfmMaNetCcmTimeoutRatio": 35
+}
+
+### This table includes the mep attributes configuration.The variables<br/><br/>defined in this table are the complement of the dot1agCfmMepTable.<br/><br/>These variables mainly support LBM(with test tlv)test fuction and<br/><br/>DM LM AIS LCK ETH-TEST fucion etc.
+GET http://localhost/api/snmp/zxAnCfmLocalMepTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnCfmLocalMepTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnCfmMepCcCheckEnable": 1,
+    "zxAnCfmMepAttachCipIndex": 0,
+    "zxAnCfmMepLbmDaType": 1,
+    "zxAnCfmMepLbAppType": 1,
+    "zxAnCfmMepMultiLbResultAgingTime": 600,
+    "zxAnCfmMepLbTestServiceType": 2,
+    "zxAnCfmMepLbmTestTlvLength": 64,
+    "zxAnCfmMepLbmTestTlvTestPattern": 1,
+    "zxAnCfmMepLmEnable": 2,
+    "zxAnCfmMepLmmTargetMacAddress": 0,
+    "zxAnCfmMepLmTargetMepId": "",
+    "zxAnCfmMepLmTargetIsMepId": 2,
+    "zxAnCfmMepLmmDaType": 1,
+    "zxAnCfmMepLmAppType": 1,
+    "zxAnCfmMepLmInterval": 5,
+    "zxAnCfmMepLmDuration": 60,
+    "zxAnCfmMepLmmPriority": 7,
+    "zxAnCfmMepLmStatus": 2,
+    "zxAnCfmMepDmEnable": 2,
+    "zxAnCfmMepDmmTargetMacAddress": 0,
+    "zxAnCfmMepDmTargetMepId": 0,
+    "zxAnCfmMepDmTargetIsMepId": 2,
+    "zxAnCfmMepDmmDaType": 1,
+    "zxAnCfmMepDmAppType": 2,
+    "zxAnCfmMepDmInterval": 1,
+    "zxAnCfmMepDmDuration": 60,
+    "zxAnCfmMepDmmPriority": 7,
+    "zxAnCfmMepDmStatus": 2,
+    "zxAnCfmMepEthTestEnable": 2,
+    "zxAnCfmMepEthTestAppType": 2,
+    "zxAnCfmMepEthTestDestMacAddress": "",
+    "zxAnCfmMepEthTestDestMepId": "",
+    "zxAnCfmMepEthTestDestIsMepId": 2,
+    "zxAnCfmMepEthTestTransmitRate": 10,
+    "zxAnCfmMepEthTestDuration": 60,
+    "zxAnCfmMepEthTestTlvEnable": 1,
+    "zxAnCfmMepEthTestTlvLength": 64,
+    "zxAnCfmMepEthTestPriority": 7,
+    "zxAnCfmMepEthTestDaType": 1,
+    "zxAnCfmMepEthTestTlvTestPattern": 1,
+    "zxAnCfmMepEthTestStatus": 2,
+    "zxAnCfmMepEthTestResultAgingTime": 600,
+    "zxAnCfmMepAisEnable": 2,
+    "zxAnCfmMepLckEnable": 2,
+    "zxAnCfmMepClientMegLevel": "",
+    "zxAnCfmMepAisLckInterval": 1,
+    "zxAnCfmMepAisPriority": 7,
+    "zxAnCfmMepLckPriority": 7,
+    "zxAnCfmMepAisDaType": 2,
+    "zxAnCfmMepLckDaType": 2,
+    "zxAnCfmMepCcmDaType": 2,
+    "zxAnCfmMepCcmRdiSendEnable": 2,
+    "zxAnCfmMepCcmRdiTrustEnable": 2
+}
+
+### This table includes remote mep configuration.A remote mep is a MEP,<br/><br/>it can use in all the cfm test,it represents the destination of<br/><br/>the test when the test uses mepId as its destination.
+GET http://localhost/api/snmp/zxAnCfmRemoteMepTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnCfmRemoteMepTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnCfmRemoteMepMacAddress": "",
+    "zxAnCfmRemoteMepRowStatus": ""
+}
+
+### This table includes mip configuration. A MIP can be used in all the<br/><br/>cfm test. MIP is a cfm entry, associated with a single Maintenance<br/><br/>Domain, and thus with single MD level, it can generate CFM PDUs,<br/><br/>but only in response to received CFM PDUs.
+GET http://localhost/api/snmp/zxAnCfmMipTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnCfmMipTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnCfmMipIfIndex": 0,
+    "zxAnCfmMipAttachCipIndex": 0,
+    "zxAnCfmMipRowStatus": ""
+}
+
+### This table includes multicast loopback result. Before start a<br/><br/>mulitcast LBM user must first get all the entry of this table, and<br/><br/>after the LBM is over, user must get all the entry of this table<br/><br/>again, and compare all the entry to get the result of multicast<br/><br/>LBM.
+GET http://localhost/api/snmp/zxAnCfmMultiLbResultTable
+Authorization: Bearer {{token}}
+

@@ -1,0 +1,29 @@
+### Statistics for a collection of ethernet-like<br/><br/>interfaces attached to a particular system.<br/><br/>There will be one row in this table for each<br/><br/>ethernet-like interface in the system.
+GET http://localhost/api/snmp/dot3StatsTable
+Authorization: Bearer {{token}}
+
+### A collection of collision histograms for a<br/><br/>particular set of interfaces.
+GET http://localhost/api/snmp/dot3CollTable
+Authorization: Bearer {{token}}
+
+### A table of descriptive and status information<br/><br/>about the MAC Control sublayer on the<br/><br/>ethernet-like interfaces attached to a<br/><br/>particular system.  There will be one row in<br/><br/>this table for each ethernet-like interface in<br/><br/>the system which implements the MAC Control<br/><br/>sublayer.  If some, but not all, of the<br/><br/>ethernet-like interfaces in the system implement<br/><br/>the MAC Control sublayer, there will be fewer<br/><br/>rows in this table than in the dot3StatsTable.
+GET http://localhost/api/snmp/dot3ControlTable
+Authorization: Bearer {{token}}
+
+### A table of descriptive and status information<br/><br/>about the MAC Control PAUSE function on the<br/><br/>ethernet-like interfaces attached to a<br/><br/>particular system. There will be one row in<br/><br/>this table for each ethernet-like interface in<br/><br/>the system which supports the MAC Control PAUSE<br/><br/>function (i.e., the 'pause' bit in the<br/><br/>corresponding instance of<br/><br/>dot3ControlFunctionsSupported is set).  If some,<br/><br/>but not all, of the ethernet-like interfaces in<br/><br/>the system implement the MAC Control PAUSE<br/><br/>function (for example, if some interfaces only<br/><br/>support half-duplex), there will be fewer rows<br/><br/>in this table than in the dot3StatsTable.
+GET http://localhost/api/snmp/dot3PauseTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/dot3PauseTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "dot3PauseAdminMode": ""
+}
+
+### A table containing 64-bit versions of error<br/><br/>counters from the dot3StatsTable.  The 32-bit<br/><br/>versions of these counters may roll over quite<br/><br/>quickly on higher speed ethernet interfaces.<br/><br/>The counters that have 64-bit versions in this<br/><br/>table are the counters that apply to full-duplex<br/><br/>interfaces, since 10 Gb/s and faster<br/><br/>ethernet-like interfaces do not support<br/><br/>half-duplex, and very few 1000 Mb/s<br/><br/>ethernet-like interfaces support half-duplex.<br/><br/><br/><br/>Entries in this table are recommended for<br/><br/>interfaces capable of operating at 1000 Mb/s or<br/><br/>faster, and are required for interfaces capable<br/><br/>of operating at 10 Gb/s or faster.  Lower speed<br/><br/>ethernet-like interfaces do not need entries in<br/><br/>this table, in which case there may be fewer<br/><br/>entries in this table than in the<br/><br/>dot3StatsTable. However, implementations<br/><br/>containing interfaces with a mix of speeds may<br/><br/>choose to implement entries in this table for<br/><br/>all ethernet-like interfaces.
+GET http://localhost/api/snmp/dot3HCStatsTable
+Authorization: Bearer {{token}}
+

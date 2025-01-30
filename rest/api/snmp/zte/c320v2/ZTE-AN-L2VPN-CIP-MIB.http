@@ -1,0 +1,38 @@
+### A list of cip table information.
+GET http://localhost/api/snmp/zxAnCipTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnCipTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnCipSrvType": 1,
+    "zxAnCipClassMapName": 0,
+    "zxAnCipTdmRelayPsnLocalLabel": 0,
+    "zxAnCipTdmRelayPsnRemoteLabel": 16,
+    "zxAnCipTdmRelayPwLocalLabel": 0,
+    "zxAnCipTdmRelayPwRemoteLabel": 16,
+    "zxAnCipTdmRelayOnuMac": "",
+    "zxAnCipTdmRelayAcVlan": 2,
+    "zxAnCipTdmRelayLabelAllocateMode": 1,
+    "zxAnCipEthernetUplinkPort": "",
+    "zxAnCipUserSideSlot": "",
+    "zxAnCipRowStatus": ""
+}
+
+### A list of class map information.
+GET http://localhost/api/snmp/zxAnClassMapTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnClassMapTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnClassMapSvlanID": "",
+    "zxAnClassMapRowStatus": ""
+}
+

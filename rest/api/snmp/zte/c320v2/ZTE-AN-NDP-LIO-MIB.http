@@ -1,0 +1,28 @@
+### NDP-LIO function vlan switch table.<br/><br/>When NDP-LIO function on the vlan is activated,<br/><br/>the RS/RA packets with this vlan will be processed.
+GET http://localhost/api/snmp/zxAnNdpLioVlanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnNdpLioVlanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnNdpLioVlanRowStatus": ""
+}
+
+### NDP-LIO function interface configuration table.
+GET http://localhost/api/snmp/zxAnNdpLioIfConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnNdpLioIfConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnNdpLioIfConfEnable": 2,
+    "zxAnNdpLioIfConfTrust": 2,
+    "zxAnNdpLioIfConfPolicy": 4
+}
+

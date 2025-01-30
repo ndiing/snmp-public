@@ -1,0 +1,548 @@
+### EPON up bandwidth profile table
+GET http://localhost/api/snmp/zxEponBwProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxEponBwProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "upBwProfileFixedBw": "",
+    "upBwProfileAssuredBw": "",
+    "upBwProfileMaximumBw": "",
+    "upBwProfileMaxBurstSize": "",
+    "upBwProfilePri": "",
+    "upBwProfileFixedPacketSize": "",
+    "downBwProfileMaximumBw": "",
+    "downBwProfileMaxBurstSize": "",
+    "bwProfileRowStatus": ""
+}
+
+### undefined
+GET http://localhost/api/snmp/sysAttrObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/sysAttrObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "sysOnuAdminAuthMode": "",
+    "sysAttrAutoAuthEnable": "",
+    "macHwAuthOnuState": "",
+    "zxAnEponOnuSilenceEnable": 1
+}
+
+### undefined
+GET http://localhost/api/snmp/oltLinkAdminTestObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/oltLinkAdminTestObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "testControlMode": ""
+}
+
+### undefined
+GET http://localhost/api/snmp/oltLoopbackObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/oltLoopbackObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "loopbackStation": "",
+    "loopbackDirection": "",
+    "loopbackAdministration": "",
+    "loopbackState": ""
+}
+
+### undefined
+GET http://localhost/api/snmp/onuAdminObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/onuAdminObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "onuDescript": "",
+    "onuSplitterSn": "",
+    "onuOpticalLineSn": "",
+    "onuUserInfo": "",
+    "onuType": "",
+    "onuAdminState": "",
+    "onuAuthMACAddress": "",
+    "onuAuthMACSn": "",
+    "onuActiveStatus": "",
+    "onuMgmtEntryStatus": "",
+    "onuMgmtIpCfgMode": "",
+    "onuAuthLoid": "",
+    "onuAuthPassword": "",
+    "zxAnEponOnuName": ""
+}
+
+### undefined
+GET http://localhost/api/snmp/oltEncryAdminObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/oltEncryAdminObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "encryptArithmetic": "",
+    "keyUpdateTime": "",
+    "keyUpdateTimeout": "",
+    "startEncryptThreshold": ""
+}
+
+### undefined
+GET http://localhost/api/snmp/lineEncryAdminObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/lineEncryAdminObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "encryptMode": "",
+    "encrypeState": ""
+}
+
+### undefined
+GET http://localhost/api/snmp/slaUpAdminObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/slaUpAdminObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "upFixedBw": "",
+    "upAssuredBw": "",
+    "upMaximumBw": "",
+    "upMaxBurstSize": "",
+    "upPri": "",
+    "upMaxTimeDelay": "",
+    "upMaxDrift": "",
+    "upFixedPacketSize": ""
+}
+
+### undefined
+GET http://localhost/api/snmp/slaDownAdminObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/slaDownAdminObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "downAssuredBw": "",
+    "downMaximumBw": "",
+    "downMaxBurstSize": "",
+    "downPri": "",
+    "downMaxTimeDelay": "",
+    "downMaxDrift": ""
+}
+
+### undefined
+GET http://localhost/api/snmp/slaP2pAdminObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/slaP2pAdminObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "p2pAssuredBw": "",
+    "p2pMaximumBw": "",
+    "p2pMaxBurstSize": "",
+    "p2pPri": "",
+    "p2pMaxTimeDelay": "",
+    "p2pMaxDrift": ""
+}
+
+### undefined
+GET http://localhost/api/snmp/p2pModeAdminObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/p2pModeAdminObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "eponP2pMode": ""
+}
+
+### undefined
+GET http://localhost/api/snmp/p2pGroupAdminObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/p2pGroupAdminObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "eponP2pGroupName": "",
+    "eponP2pGroupOnus": "",
+    "eponP2pGroupAdminStatus": "",
+    "eponP2pGroupRowStatus": ""
+}
+
+### undefined
+GET http://localhost/api/snmp/p2pTransmitAdminObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/p2pTransmitAdminObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "eponP2pCfgAddressNotFoundEnableFlood": "",
+    "eponP2pCfgBroadcastEnableFlood": ""
+}
+
+### undefined
+GET http://localhost/api/snmp/onuUnPassedAdminAuthInfoTable
+Authorization: Bearer {{token}}
+
+### undefined
+GET http://localhost/api/snmp/onuConfigAdminObjectTable
+Authorization: Bearer {{token}}
+
+### undefined
+GET http://localhost/api/snmp/oltPonAttrObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/oltPonAttrObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "oltPonAttrName": "",
+    "oltPonPonAttrDesc": "",
+    "oltPonAttrReset": "",
+    "oltPonAttrResetCounters": "",
+    "oltPonAttrMultiLlidState": "",
+    "zxAnEponOnuMaxLlidNumber": "",
+    "oltPonDualRate": "",
+    "zxAnEponIsUseOamCtc2Dot1OrMore": 1,
+    "zxAnEponOltPonDownstreamFecMode": 2
+}
+
+### undefined
+GET http://localhost/api/snmp/onuUpStreamPriorityObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/onuUpStreamPriorityObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxEponOnuUpstreamPriority": "",
+    "zxEponOnuUpstreamDefaultVlan": "",
+    "zxEponOnuUpStreamPriorityRegenerate": ""
+}
+
+### undefined
+GET http://localhost/api/snmp/onuDownStreamPriorityObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/onuDownStreamPriorityObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxEponOnuDownstreamPriority": "",
+    "zxEponOnuDownstreamDefaultVlan": "",
+    "zxEponOnuDownStreamPriorityRegenerate": ""
+}
+
+### undefined
+GET http://localhost/api/snmp/zxEponOnuDbaPriorityObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxEponOnuDbaPriorityObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxCyccleTime": ""
+}
+
+### EPON ONU optical power measure
+GET http://localhost/api/snmp/zxEponOnuOpticalPowerMeasureObjectTable
+Authorization: Bearer {{token}}
+
+### EPON OLT optical power measure
+GET http://localhost/api/snmp/zxEponOltOpticalPowerMeasureObjectTable
+Authorization: Bearer {{token}}
+
+### undefined
+GET http://localhost/api/snmp/zxEponHighPriorityFrameObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxEponHighPriorityFrameObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "priority0": "",
+    "priority1": "",
+    "priority2": "",
+    "priority3": "",
+    "priority4": "",
+    "priority5": "",
+    "priority6": "",
+    "priority7": ""
+}
+
+### EPON OLT Maxrtt
+GET http://localhost/api/snmp/zxEponMaxrttObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxEponMaxrttObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "maxrtt": ""
+}
+
+### EPON OLT priority queue map
+GET http://localhost/api/snmp/zxEponPriorityQueueMapObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxEponPriorityQueueMapObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "downstreampri0Que": "",
+    "downstreampri1Que": "",
+    "downstreampri2Que": "",
+    "downstreampri3Que": "",
+    "downstreampri4Que": "",
+    "downstreampri5Que": "",
+    "downstreampri6Que": "",
+    "downstreampri7Que": "",
+    "upstreampri0Que": "",
+    "upstreampri1Que": "",
+    "upstreampri2Que": "",
+    "upstreampri3Que": "",
+    "upstreampri4Que": "",
+    "upstreampri5Que": "",
+    "upstreampri6Que": "",
+    "upstreampri7Que": ""
+}
+
+### EPON OLT rxhec
+GET http://localhost/api/snmp/zxEponRxHecObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxEponRxHecObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "rxhec": ""
+}
+
+### EPON Onu AutoCfg
+GET http://localhost/api/snmp/zxEponOnuAutoCfgObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxEponOnuAutoCfgObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "onuBindStatus": "",
+    "onuAutoCfgStatus": ""
+}
+
+### EPON Ip Pool
+GET http://localhost/api/snmp/zxEponIpPoolObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxEponIpPoolObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxEponIpPoolIpBegin": "",
+    "zxEponIpPoolIpEnd": "",
+    "zxEponIpPoolMask": "",
+    "zxEponIpPoolpriority": "",
+    "zxEponIpPoolVlan": "",
+    "zxEponIpPoolNetIp": "",
+    "zxEponIpPoolNetMask": "",
+    "zxEponIpPoolGateway": "",
+    "zxEponIpPoolRowStatus": ""
+}
+
+### EPON Run Ip
+GET http://localhost/api/snmp/zxEponRunIpObjectTable
+Authorization: Bearer {{token}}
+
+### EPON Ip PoolConjPon
+GET http://localhost/api/snmp/zxEponIpPoolConjPonObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxEponIpPoolConjPonObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxEponIpPoolConjPonName": "",
+    "zxEponIpPoolConjRowStatus": ""
+}
+
+### EPON onu bandwidth profile config table
+GET http://localhost/api/snmp/zxEponOnuBwCfgTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxEponOnuBwCfgTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "onuCfgBwProfileName": ""
+}
+
+### EPON Onu Ip Configure table
+GET http://localhost/api/snmp/zxEponOnuIpCfgTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxEponOnuIpCfgTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxEponOnuIpCfgOperator": ""
+}
+
+### Determin if config is automaticly send to onu when onu online.
+GET http://localhost/api/snmp/zxEponOnuAutoConfigTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxEponOnuAutoConfigTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxEponOnuAutoConfigStatus": "",
+    "zxEponOnuVoipAutoConfigStatus": ""
+}
+
+### undefined
+GET http://localhost/api/snmp/onuCustomObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/onuCustomObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "onuOnlineForwardAction": ""
+}
+
+### EPON vport management table.
+GET http://localhost/api/snmp/zxAnEponOnuVportMgmtTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnEponOnuVportMgmtTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnEponOnuVportMacAddress": ""
+}
+
+### Epon Queue Buffer Size Config table. This table contains<br/><br/>information about buffer size configured of ifIndex.<br/><br/>The level of the ifIndex is card number of OLT.
+GET http://localhost/api/snmp/zxEponQueueBufferObjectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxEponQueueBufferObjectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxEponQueueBufferSize": 128
+}
+
+### ONU extended attribute configuration table.
+GET http://localhost/api/snmp/zxEponOnuExtendedAttrTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxEponOnuExtendedAttrTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxEponOnu1ppsAndTodEnable": 2
+}
+
+### ifIndex table.
+GET http://localhost/api/snmp/zxEponIfIndexTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxEponIfIndexTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxEponEntryStatus": ""
+}
+
+### The ONU Auto-discovery configuration table.
+GET http://localhost/api/snmp/zxEponIfOnuAutoDiscoverTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxEponIfOnuAutoDiscoverTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxEponIfOnuAutoDiscoverOneGEn": 1,
+    "zxEponIfOnuAutoDiscoverTenGSyEn": 1,
+    "zxEponIfOnuAutoDiscoverTenGAsyEn": 1
+}
+

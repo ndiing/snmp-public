@@ -1,0 +1,32 @@
+### The LSP traceroute table.
+GET http://localhost/api/snmp/zxAnLspTraceTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnLspTraceTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnLspTraceType": "",
+    "zxAnLspTraceRmIpAddrType": 0,
+    "zxAnLspTraceRmIpAddr": "",
+    "zxAnLspTraceRmIpAddrPfxLen": 32,
+    "zxAnLspTraceOption": 1,
+    "zxAnLspTraceTimeout": 2,
+    "zxAnLspTraceMaxTtl": 30,
+    "zxAnLspTraceVcTtl": 1,
+    "zxAnLspTraceActiveStatus": 2,
+    "zxAnLspTraceTestName": 0,
+    "zxAnLspTracePwName": 0,
+    "zxAnLspTraceRowStatus": ""
+}
+
+### The LSP traceroute results table.<br/><br/><br/><br/>An entry is added to the zxAnLspTraceResultTable when an<br/><br/>zxAnLspTraceEntry is started by successful setting<br/><br/>zxAnLspTraceActiveStatus to activate(1).
+GET http://localhost/api/snmp/zxAnLspTraceResultTable
+Authorization: Bearer {{token}}
+
+### The LSP traceroute hop table for<br/><br/>keeping track of the results of LSP traceroute tests on<br/><br/>a per hop basis.
+GET http://localhost/api/snmp/zxAnLspTraceHopsTable
+Authorization: Bearer {{token}}
+

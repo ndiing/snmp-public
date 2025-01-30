@@ -1,0 +1,65 @@
+### This entity's IP Routing table.
+GET http://localhost/api/snmp/inetCidrRouteTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/inetCidrRouteTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "inetCidrRouteIfIndex": "",
+    "inetCidrRouteType": "",
+    "inetCidrRouteNextHopAS": 0,
+    "inetCidrRouteMetric1": -1,
+    "inetCidrRouteMetric2": -1,
+    "inetCidrRouteMetric3": -1,
+    "inetCidrRouteMetric4": -1,
+    "inetCidrRouteMetric5": -1,
+    "inetCidrRouteStatus": ""
+}
+
+### This entity's IP Routing table.  This table has been<br/><br/>deprecated in favor of the IP version neutral<br/><br/>inetCidrRouteTable.
+GET http://localhost/api/snmp/ipCidrRouteTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/ipCidrRouteTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "ipCidrRouteIfIndex": 0,
+    "ipCidrRouteType": "",
+    "ipCidrRouteInfo": "",
+    "ipCidrRouteNextHopAS": 0,
+    "ipCidrRouteMetric1": -1,
+    "ipCidrRouteMetric2": -1,
+    "ipCidrRouteMetric3": -1,
+    "ipCidrRouteMetric4": -1,
+    "ipCidrRouteMetric5": -1,
+    "ipCidrRouteStatus": ""
+}
+
+### This entity's IP Routing table.
+GET http://localhost/api/snmp/ipForwardTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/ipForwardTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "ipForwardMask": 0,
+    "ipForwardIfIndex": 0,
+    "ipForwardType": 2,
+    "ipForwardInfo": "",
+    "ipForwardNextHopAS": 0,
+    "ipForwardMetric1": -1,
+    "ipForwardMetric2": -1,
+    "ipForwardMetric3": -1,
+    "ipForwardMetric4": -1,
+    "ipForwardMetric5": -1
+}
+

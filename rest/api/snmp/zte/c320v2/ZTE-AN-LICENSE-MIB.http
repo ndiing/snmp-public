@@ -1,0 +1,12 @@
+### This table includes the license file information.
+GET http://localhost/api/snmp/zxAnLicenseFileTable
+Authorization: Bearer {{token}}
+
+### This table includes license feature information.
+GET http://localhost/api/snmp/zxAnLicenseFeatureTable
+Authorization: Bearer {{token}}
+
+### This table includes the running license feature information.
+GET http://localhost/api/snmp/zxAnLicenseRunningFeatureTable
+Authorization: Bearer {{token}}
+

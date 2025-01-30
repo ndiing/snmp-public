@@ -1,0 +1,13 @@
+### Multicast group traffic table.
+GET http://localhost/api/snmp/zxAnMcastGrpTrafficTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnMcastGrpTrafficTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnMCastGrpTrafficRowStatus": ""
+}
+

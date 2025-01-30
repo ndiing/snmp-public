@@ -1,0 +1,135 @@
+### This table is to provide traffic-limit configuration<br/><br/>based on the ACL rule.
+GET http://localhost/api/snmp/zxAnQosAclTrafficLimitTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosAclTrafficLimitTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosAclTrafficLimitCir": "",
+    "zxAnQosAclTrafficLimitPir": 0,
+    "zxAnQosAclTrafficLimitCbs": "",
+    "zxAnQosAclTrafficLimitEbs": 0,
+    "zxAnQosAclTrafficLimitPbs": 0,
+    "zxAnQosAclTrafficLimitMode": "",
+    "zxAnQosAclTrafficDropYellow": 2,
+    "zxAnQosAclTrafficForwardRed": 2,
+    "zxAnQosAclTrafficRemarkRedDp": 255,
+    "zxAnQosAclTrafficRemarkRedDscp": 255,
+    "zxAnQosAclTrafficRemarkYellDp": 255,
+    "zxAnQosAclTrafficRemarkYellDscp": 255,
+    "zxAnQosAclTrafficRowStatus": ""
+}
+
+### This table is to provide priority-mark configuration<br/><br/>based on the ACL rule.
+GET http://localhost/api/snmp/zxAnQosAclPriorityMarkTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosAclPriorityMarkTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosAclPriMarkDscp": 255,
+    "zxAnQosAclPriMarkCos": 255,
+    "zxAnQosAclPriMarkPrecedence": 255,
+    "zxAnQosAclPriMarkLocalPrecedence": 255,
+    "zxAnQosAclPriMarkDropPrecedence": 255,
+    "zxAnQosAclPriMarkTrafficClass": 65535,
+    "zxAnQosAclPriMarkRowStatus": ""
+}
+
+### This table is to provide vlan-mark configuration<br/><br/>based on the ACL rule.
+GET http://localhost/api/snmp/zxAnQosAclVlanMarkTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosAclVlanMarkTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosAclVlanMarkVid": "",
+    "zxAnQosAclVlanMarkRowStatus": ""
+}
+
+### This table is to provide traffic-redirect configuration<br/><br/>based on the ACL rule.
+GET http://localhost/api/snmp/zxAnQosAclRedirectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosAclRedirectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosAclRedirectType": "",
+    "zxAnQosAclRedirectIf": 0,
+    "zxAnQosAclRedirectNextHopIpType": 0,
+    "zxAnQosAclRedirectNextHopIp": 0,
+    "zxAnQosAclRedirectSubIf": 0,
+    "zxAnQosAclRedirectRowStatus": ""
+}
+
+### This table is to provide traffic-mirror configuration<br/><br/>based on the ACL rule.
+GET http://localhost/api/snmp/zxAnQosAclTrafficMirrorTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosAclTrafficMirrorTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosAclTrafficMirrorType": "",
+    "zxAnQosAclTrafficMirrorIf": 0,
+    "zxAnQosAclTrafficMirrorVid": 65535,
+    "zxAnQosAclTrafficMirrorCos": 0,
+    "zxAnQosAclTrafficMirrorTpid": 33024,
+    "zxAnQosAclTrafficMirrorDstIpType": 1,
+    "zxAnQosAclTrafficMirrorDstIpAddr": 0,
+    "zxAnQosAclTrafficMirrorSrcIpType": 1,
+    "zxAnQosAclTrafficMirrorSrcIpAddr": 0,
+    "zxAnQosAclTrafficMirrorTtl": 128,
+    "zxAnQosAclTrafficMirrorDscp": 0,
+    "zxAnQosAclTrafficMirrorSubIf": 0,
+    "zxAnQosAclTrafficMirrorRowStatus": ""
+}
+
+### This table is to provide traffic-statistics configuration<br/><br/>based on the ACL rule.
+GET http://localhost/api/snmp/zxAnQosAclTrafficStatsTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosAclTrafficStatsTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosAclTrafficStatsPktColor": "",
+    "zxAnQosAclTrafficStatsType": "",
+    "zxAnQosAclTrafficStatsReset": "",
+    "zxAnQosAclTrafficStatsRowStatus": ""
+}
+
+### This table is to provide traffic burst detection configuration<br/><br/>based on the ACL rule.
+GET http://localhost/api/snmp/zxAnTrafficBurstDetectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnTrafficBurstDetectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnTrafficBurstDetectAclNum": "",
+    "zxAnTrafficBurstDetectRuleId": "",
+    "zxAnTrafficBurstDetectPeriod": "",
+    "zxAnTrafficBurstDetectDuration": "",
+    "zxAnTrafficBurstDetectAction": "",
+    "zxAnTrafficBurstDetectRowStatus": ""
+}
+

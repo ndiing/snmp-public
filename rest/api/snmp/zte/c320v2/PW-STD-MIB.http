@@ -1,0 +1,67 @@
+### This table specifies information for configuring and<br/><br/>status monitoring that is common to all service types<br/><br/>and PSN types.
+GET http://localhost/api/snmp/pwTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/pwTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "pwType": "",
+    "pwOwner": "",
+    "pwPsnType": "",
+    "pwSetUpPriority": 0,
+    "pwHoldingPriority": 0,
+    "pwPeerAddrType": 1,
+    "pwPeerAddr": "",
+    "pwAttachedPwIndex": 0,
+    "pwIfIndex": 0,
+    "pwID": "",
+    "pwLocalGroupID": "",
+    "pwGroupAttachmentID": "",
+    "pwLocalAttachmentID": "",
+    "pwRemoteAttachmentID": "",
+    "pwCwPreference": 2,
+    "pwLocalIfMtu": 0,
+    "pwLocalIfString": 2,
+    "pwLocalCapabAdvert": "",
+    "pwFragmentCfgSize": 0,
+    "pwFcsRetentionCfg": 1,
+    "pwOutboundLabel": "",
+    "pwInboundLabel": "",
+    "pwName": "",
+    "pwDescr": "",
+    "pwAdminStatus": "",
+    "pwRowStatus": "",
+    "pwStorageType": 3,
+    "pwOamEnable": 1,
+    "pwGenAGIType": 0,
+    "pwGenLocalAIIType": 0,
+    "pwGenRemoteAIIType": 0
+}
+
+### This table provides per-PW performance information for<br/><br/>the current interval.
+GET http://localhost/api/snmp/pwPerfCurrentTable
+Authorization: Bearer {{token}}
+
+### This table provides per-PW performance information for<br/><br/>each interval.
+GET http://localhost/api/snmp/pwPerfIntervalTable
+Authorization: Bearer {{token}}
+
+### This table provides per-PW performance information for<br/><br/>the current day's measurement and the previous day's<br/><br/>interval.
+GET http://localhost/api/snmp/pwPerf1DayIntervalTable
+Authorization: Bearer {{token}}
+
+### This table enables the reverse mapping of the unique<br/><br/>PWid parameters [peer IP, PW type, and PW ID] and the<br/><br/>pwIndex.  The table is not applicable for PWs created<br/><br/>manually or by using the generalized FEC.
+GET http://localhost/api/snmp/pwIndexMappingTable
+Authorization: Bearer {{token}}
+
+### This table provides reverse mapping of the existing PW<br/><br/>based on PW type and PW ID ordering.  This table is<br/><br/>typically useful for the element management system (EMS)<br/><br/>ordered query of existing PWs.
+GET http://localhost/api/snmp/pwPeerMappingTable
+Authorization: Bearer {{token}}
+
+### This table enables the reverse mapping of the unique<br/><br/>PWid parameters [GroupAttachmentID, LocalAttachmentID,<br/><br/>and PeerAttachmentID] and the pwIndex.  The table is<br/><br/>only applicable for PW using the generalized FEC.
+GET http://localhost/api/snmp/pwGenFecIndexMappingTable
+Authorization: Bearer {{token}}
+

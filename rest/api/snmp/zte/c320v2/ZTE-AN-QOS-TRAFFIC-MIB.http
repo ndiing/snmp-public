@@ -1,0 +1,115 @@
+### Traffic flow profile table.
+GET http://localhost/api/snmp/zxAnQosTrafficFlowPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosTrafficFlowPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosTrafficFlowPrfMode": 1,
+    "zxAnQosTrafficFlowPrfRowStatus": ""
+}
+
+### Traffic flow rule of the profile table.
+GET http://localhost/api/snmp/zxAnQosTrafficFlowRulePrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosTrafficFlowRulePrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosTrafficFlowRuleCosList": "",
+    "zxAnQosTrafficFlowRuleTrafficPrf": "",
+    "zxAnQosTrafficFlowRuleCarThresh": 5,
+    "zxAnQosTrafficFlowRuleRowStatus": ""
+}
+
+### Traffic flow interface group configuration information table<br/><br/>for ethernet interface.
+GET http://localhost/api/snmp/zxAnQosTrafficFlowIfGrpConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosTrafficFlowIfGrpConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosTrafficFlowIfGrpFlowPrf": "",
+    "zxAnQosTrafficFlowIfGrpSvlanList": "",
+    "zxAnQosTrafficFlowIfGrpCvlanList": "",
+    "zxAnQosTrafficFlowIfGrpTrffcPrf": "",
+    "zxAnQosTrafficFlowIfGrpMode": "",
+    "zxAnQosTrafficFlowIfGrpRowStatus": ""
+}
+
+### This table contains information about traffic controlling.<br/><br/>An entry in this table reflects a profile defined which can be<br/><br/>used to configure an interface.
+GET http://localhost/api/snmp/zxAnQosTrafficPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosTrafficPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosTrafficPrfCir": "",
+    "zxAnQosTrafficPrfCbs": "",
+    "zxAnQosTrafficPrfPir": "",
+    "zxAnQosTrafficPrfPbs": "",
+    "zxAnQosTrafficPrfDiscardMode": "",
+    "zxAnQosTrafficPrfColorMode": 2,
+    "zxAnQosTrafficPrfPolicerType": 1,
+    "zxAnQosTrafficPrfCouplingEn": 1,
+    "zxAnQosTrafficPrfRowStatus": ""
+}
+
+### This table contains interface's traffic configuration.
+GET http://localhost/api/snmp/zxAnQosTrafficIfConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosTrafficIfConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosTrafficIfConfPrf": "",
+    "zxAnQosTrafficIfRowStatus": ""
+}
+
+### Interface traffic statistics table.
+GET http://localhost/api/snmp/zxAnQosTrafficIfStatsTable
+Authorization: Bearer {{token}}
+
+### Traffic configuration based on the queue of the interface table.
+GET http://localhost/api/snmp/zxAnQosTrafficIfQueueConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosTrafficIfQueueConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosTrafficIfQueueConfPrf": "",
+    "zxAnQosTrafficIfQueueRowStatus": ""
+}
+
+### Traffic shaping configuration based on the interface table.
+GET http://localhost/api/snmp/zxAnQosTrafficIfShapingConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosTrafficIfShapingConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosTrafficIfShapingConfPrf": "",
+    "zxAnQosTrafficIfShapingRowStatus": ""
+}
+

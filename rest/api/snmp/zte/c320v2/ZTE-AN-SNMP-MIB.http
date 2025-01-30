@@ -1,0 +1,29 @@
+### A table of SNMPv1/v2c community string configuration.
+GET http://localhost/api/snmp/zxAnSnmpCommunityConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnSnmpCommunityConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnSnmpCommunityConfPermission": 1,
+    "zxAnSnmpCommunityConfRowStatus": ""
+}
+
+### A table of SNMPv1/v2c access-list name/number with ro/rw/all<br/><br/>option configuration.
+GET http://localhost/api/snmp/zxAnSnmpAccesslistConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnSnmpAccesslistConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnSnmpAccesslistAclNumber": "",
+    "zxAnSnmpAccesslistAclName": "",
+    "zxAnSnmpAccesslistConfRowStatus": ""
+}
+

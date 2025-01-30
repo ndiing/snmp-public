@@ -1,0 +1,34 @@
+### Syslog host configuration table.
+GET http://localhost/api/snmp/zxAnSyslogServerTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnSyslogServerTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnSyslogSvrDestPort": 514,
+    "zxAnSyslogSvrType": "{ cmdLog,snmpLog,debugMsg,alarmLog",
+    "zxAnSyslogSvrMinAlarmLevel": 6,
+    "zxAnSyslogSvrEnable": 1,
+    "zxAnSyslogSvrSnmpOperType": 1,
+    "zxAnSyslogSvrSourcePort": 514,
+    "zxAnSyslogSvrFacility": "{local0",
+    "zxAnSyslogSvrRowStatus": ""
+}
+
+### Syslog event id mappint to the facility configuration table.
+GET http://localhost/api/snmp/zxAnSyslogEventMapTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnSyslogEventMapTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnSyslogEventMapFacility": "",
+    "zxAnSyslogEventMapRowStatus": ""
+}
+

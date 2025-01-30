@@ -1,0 +1,47 @@
+### IS-IS circuit configuration table.
+GET http://localhost/api/snmp/zxAnIsisCircuitConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIsisCircuitConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIsisCircuitConfAdminStatus": "",
+    "zxAnIsisCircuitConfLevel": 3,
+    "zxAnIsisCircuitConfBfdSupport": 2,
+    "zxAnIsisCircuitConfRowStatus": ""
+}
+
+### IS-IS authentication table.
+GET http://localhost/api/snmp/zxAnIsisAuthenticationTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIsisAuthenticationTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIsisAuthType": 1,
+    "zxAnIsisAuthPlainPassword": "",
+    "zxAnIsisAuthMd5Password": ""
+}
+
+### IS-IS redistribution configuration table.
+GET http://localhost/api/snmp/zxAnIsisRedistributeTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIsisRedistributeTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIsisRedistributeLevel": 2,
+    "zxAnIsisRedistributeMetricType": 1,
+    "zxAnIsisRedistributeMetric": "",
+    "zxAnIsisRedistributeRowStatus": ""
+}
+

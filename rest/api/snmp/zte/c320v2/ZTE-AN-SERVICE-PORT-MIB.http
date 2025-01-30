@@ -1,0 +1,40 @@
+### This table includes interface service port configuration.<br/><br/>It uses  in user's traffic scene, a service port indicates<br/><br/>an user's service,for example VOIP/CATV/POTS/DATA service.<br/><br/>We can create a service port as the same time finished some<br/><br/>functions which are QinQ and translate etc.
+GET http://localhost/api/snmp/zxAnSrvPortConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnSrvPortConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnSrvPortDesc": 0,
+    "zxAnSrvPortAdminStatus": "",
+    "zxAnSrvPortServiceMode": 1,
+    "zxAnSrvPortBrgIfId": 1,
+    "zxAnSrvPortUserVid": 0,
+    "zxAnSrvPortUserSVid": 0,
+    "zxAnSrvPortUserCos": 255,
+    "zxAnSrvPortUserStagCos": 255,
+    "zxAnSrvPortStartUserVid": 0,
+    "zxAnSrvPortEndUserVid": 0,
+    "zxAnSrvPortUserEthType": 1,
+    "zxAnSrvPortUserDefinedEthType": "",
+    "zxAnSrvPortCVid": 0,
+    "zxAnSrvPortSVid": 0,
+    "zxAnSrvPortCtagCos": 255,
+    "zxAnSrvPortStagCos": 255,
+    "zxAnSrvPortTlsSVid": 0,
+    "zxAnSrvPortIngressTrafficPrf": "",
+    "zxAnSrvPortEgressTrafficPrf": "",
+    "zxAnSrvPortQueueId": 255,
+    "zxAnSrvPortTlsCVid": 0,
+    "zxAnSrvPortCosList": "",
+    "zxAnSrvPortCarThresh": 5,
+    "zxAnSrvPortUserVidExpandMode": 255,
+    "zxAnSrvPortCvidExpandMode": 255,
+    "zxAnSrvPortSvidExpandMode": 255,
+    "zxAnSrvPortExpandNumber": 0,
+    "zxAnSrvPortRowStatus": ""
+}
+

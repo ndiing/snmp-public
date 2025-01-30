@@ -1,0 +1,2030 @@
+### Table of ONU equipment entries.
+GET http://localhost/api/snmp/zxAnGponRmOnuTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmOnuTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmOnuBatteryMonitor": "",
+    "zxAnGponRmOnuAdminState": "",
+    "zxAnGponRmOnuSecurityMode": "",
+    "zxAnGponRmOnuAlias": ""
+}
+
+### Operations for ONU.
+GET http://localhost/api/snmp/zxAnGponRmOnuOperTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmOnuOperTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmOnuReboot": "",
+    "zxAnGponRmOnuSyncTime": "",
+    "zxAnGponRmOnuRestore": "",
+    "zxAnGponRmOnuRestoreFactory": "",
+    "zxAnGponRmOnuWifiRestoreFactory": ""
+}
+
+### This managed entity models the ONU's ability to shed services<br/><br/>when the ONU goes into battery operation mode after AC power<br/><br/>failure.
+GET http://localhost/api/snmp/zxAnGponRmPowerShedTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmPowerShedTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmShedRestoreIntvl": "",
+    "zxAnGponRmDataShedIntvl": "",
+    "zxAnGponRmVoiceShedIntvl": "",
+    "zxAnGponRmVideoOverlayShedIntvl": "",
+    "zxAnGponRmVideoReturnShedIntvl": "",
+    "zxAnGponRmDslShedIntvl": "",
+    "zxAnGponRmAtmShedIntvl": "",
+    "zxAnGponRmCesShedIntvl": "",
+    "zxAnGponRmFrameShedIntvl": "",
+    "zxAnGponRmSonetShedIntvl": ""
+}
+
+### Configuration of ONU system parameters.
+GET http://localhost/api/snmp/zxAnGponRmOnuSysResourceTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmOnuSysResourceTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmOnuSysCpuLoadThresh": "",
+    "zxAnGponRmOnuSysMemUsageThresh": ""
+}
+
+### GPON ONU capability table.
+GET http://localhost/api/snmp/zxAnGponRmOnuCapabilityTable
+Authorization: Bearer {{token}}
+
+### The ONU holdover function configuration table.<br/><br/>The ONU has seven states, including initial-state(O1),<br/><br/>standby-state(O2), serial-number-state(O3),<br/><br/>ranging-state(O4), operation-state(O5),<br/><br/>popup-state(O6), emergency-stop-state(O7).<br/><br/>When OLT has detected the ONU LOS alarm, OLT can control the<br/><br/>duration time of the ONU O5 state and O6 state by configuring<br/><br/>holdover function.
+GET http://localhost/api/snmp/zxAnGponRmOnuHoldoverTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmOnuHoldoverTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmOnuHoldoverEnable": 2,
+    "zxAnGponRmOnuHoldoverO5StateTime": 0,
+    "zxAnGponRmOnuHoldoverO6StateTime": 100
+}
+
+### This managed entity is used to organize data associated with the<br/><br/>Access Network Interface supported by the ONU.<br/><br/>One instance of this managed entity exists for each PON physical<br/><br/>port.<br/><br/>One or more instance of this managed entity are contained in an<br/><br/>instance of a circuit pack that supports a PON IF function.
+GET http://localhost/api/snmp/zxAnGponRmAniTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmAniTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmAniGemBlockLen": "",
+    "zxAnGponRmAniSfThresh": "",
+    "zxAnGponRmAniSdThresh": "",
+    "zxAnGponRmAniArcEnable": "",
+    "zxAnGponRmAniArcInterval": "",
+    "zxAnGponRmAniLowerRxOptThresh": "",
+    "zxAnGponRmAniUpperRxOptThresh": "",
+    "zxAnGponRmAniLowerTxOptThresh": "",
+    "zxAnGponRmAniUpperTxOptThresh": ""
+}
+
+### This managed entity represents the points at an Ethernet UNI in<br/><br/>the ONU where physical paths terminate and physical path level<br/><br/>functions (e.g., Ethernet function) are performed.One or more<br/><br/>instances of this managed entity shall be contained in an instance<br/><br/>of a Circuit Pack managed entity classified as a native LAN type<br/><br/>(e.g., Ethernet).
+GET http://localhost/api/snmp/zxAnGponRmEthUniTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmEthUniTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmEthUniExpectedType": "",
+    "zxAnGponRmEthUniIfSpeedConf": "",
+    "zxAnGponRmEthUniLoopbackConf": "",
+    "zxAnGponRmEthUniAdminState": "",
+    "zxAnGponRmEthUniMaxFrameSize": "",
+    "zxAnGponRmEthUniDteOrDceInd": 1,
+    "zxAnGponRmEthUniPauseTime": "",
+    "zxAnGponRmEthUniBridgeOrIpInd": "",
+    "zxAnGponRmEthUniArcEnable": "",
+    "zxAnGponRmEthUniArcInterval": "",
+    "zxAnGponRmEthUniPppoeFilter": "",
+    "zxAnGponRmEthUniPowerFeed": "",
+    "zxAnGponRmEthUniLoopDetect": ""
+}
+
+### PPTP Ethernet UNI's DHCP control table.
+GET http://localhost/api/snmp/zxAnGponRmUniDhcpIpRetrieveTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmUniDhcpIpRetrieveTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmUniDhcpIpRetrieveMode": 1
+}
+
+### This managed entity is used to organize data that affects all<br/><br/>ports on a MAC Bridge at a bridged LAN Ethernet UNI interface on<br/><br/>the ONU. Zero or more instances of this managed entity shall be<br/><br/>referred to by the Physical Path Termination Point Ethernet UNI<br/><br/>managed entity.
+GET http://localhost/api/snmp/zxAnGponRmBrgConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmBrgConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmBrgStpEnable": "",
+    "zxAnGponRmBrgLearningEnable": "",
+    "zxAnGponRmBrgLocalBridgeEnable": "",
+    "zxAnGponRmBrgPri": "",
+    "zxAnGponRmBrgMaxAge": "",
+    "zxAnGponRmBrgHelloTime": "",
+    "zxAnGponRmBrgForwardDelay": "",
+    "zxAnGponRmBrgUnknownMacDiscard": "",
+    "zxAnGponRmBrgMacLearningDepth": "",
+    "zxAnGponRmBrgAgingTime": ""
+}
+
+### This managed entity is used to organize and record data that is<br/><br/>associated with a bridge port. Some of the data is volatile.<br/><br/>Zero or more instances of this managed entity shall be contained<br/><br/>in an instance of the MacBridgeServicePrf. The index<br/><br/>'zxAnPonRmOnuIfIndex' of this table supports Ethernet UNI,<br/><br/>WiFi UNI, IP host and VEIP.
+GET http://localhost/api/snmp/zxAnGponRmBpConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmBpConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmBpConfBridgeId": "",
+    "zxAnGponRmBpConfPortPri": 0,
+    "zxAnGponRmBpConfPortPathCost": 1,
+    "zxAnGponRmBpConfPortStpEnable": 1,
+    "zxAnGponRmBpConfOutPrfName": "",
+    "zxAnGponRmBpConfInPrfName": "",
+    "zxAnGponRmBpConfAddrLearnDepth": 0,
+    "zxAnGponRmBpConfEntryRowStatus": ""
+}
+
+### The MAC address list table associated with a bridge port.
+GET http://localhost/api/snmp/zxAnGponRmBpMacAddrListTable
+Authorization: Bearer {{token}}
+
+### This managed entity is used to organize and record data that is<br/><br/>associated with a bridge port.
+GET http://localhost/api/snmp/zxAnGponRmBpMacFilterTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmBpMacFilterTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmBpMacFilterFilterMode": 2,
+    "zxAnGponRmBpMacFilterType": 2,
+    "zxAnGponRmBpMacFilterRowStatus": ""
+}
+
+### This managed entity provides an alternate approach to destination<br/><br/>address filtering from that supported through the MAC bridge port<br/><br/>filter table data ME. This alternate approach is useful when all<br/><br/>groups of addresses are stored beforehand in the ONU, and the MAC<br/><br/>bridge port filter preassign table managed entity designates which<br/><br/>groups are valid or invalid for filtering. On a circuit pack in<br/><br/>which all groups of addresses are preassigned and stored locally,<br/><br/>the ONU creates or deletes an instance of this managed entity<br/><br/>automatically upon creation or deletion of a MAC bridge port<br/><br/>configuration data ME.
+GET http://localhost/api/snmp/zxAnGponRmBpEthFilterTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmBpEthFilterTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmBpEthIpv4McastFilter": "",
+    "zxAnGponRmBpEthIpv6McastFilter": "",
+    "zxAnGponRmBpEthIpv4BcastFilter": "",
+    "zxAnGponRmBpEthRarpFilter": "",
+    "zxAnGponRmBpEthIpxFilter": "",
+    "zxAnGponRmBpEthNetBeuiFilter": "",
+    "zxAnGponRmBpEthAppleTalkFilter": "",
+    "zxAnGponRmBpEthBpduFilter": "",
+    "zxAnGponRmBpEthArpFilter": "",
+    "zxAnGponRmBpEthPppoeFilter": ""
+}
+
+### This managed entity is used to configure the VLAN of multicast.
+GET http://localhost/api/snmp/zxAnGponRmMVlanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmMVlanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmMVlanRowStatus": ""
+}
+
+### This table controls the VLAN tagging of downstream multicast data<br/><br/>flow and IGMP.
+GET http://localhost/api/snmp/zxAnGponRmUniMVlanCtrlTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmUniMVlanCtrlTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmUniMVlanTagMode": 2
+}
+
+### A table entry containing ONU UNI multicast VLAN translation<br/><br/>information. The index 'zxAnGponRmMVid' is the multicast<br/><br/>VLAN before translated.
+GET http://localhost/api/snmp/zxAnGponRmUniMVlanTransTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmUniMVlanTransTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmUniMVlanTranslated": "",
+    "zxAnGponRmUniMVlanTransRowStatus": ""
+}
+
+### This managed entity organizes data associated with multicast<br/><br/>management at subscriber ports of 802.1 bridges, including 802.1p<br/><br/>mappers when the provisioning model is mapper-based rather than<br/><br/>bridge-based.<br/><br/>Instances of this managed entity are created and deleted by the<br/><br/>OLT.
+GET http://localhost/api/snmp/zxAnGponRmIgmpConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmIgmpConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmIgmpUsedPrfName": "",
+    "zxAnGponRmIgmpMaxGroups": 0,
+    "zxAnGponRmIgmpMaxBw": 0,
+    "zxAnGponRmIgmpBwEnforce": 2,
+    "zxAnGponRmIgmpConfRowStatus": ""
+}
+
+### This managed entity provides the current status of each<br/><br/>port with respect to its multicast subscriptions. It may<br/><br/>be useful for status monitoring or debugging purposes.<br/><br/>The status table includes all groups currently subscribed<br/><br/>by the port, both dynamic and static.
+GET http://localhost/api/snmp/zxAnGponRmIgmpMonitorTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmIgmpMonitorTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmIgmpMonitorRowStatus": ""
+}
+
+### This table lists the groups from the dynamic access control list<br/><br/>that are currently being actively forwarded, along with the actual<br/><br/>bandwidth of each.
+GET http://localhost/api/snmp/zxAnGponRmIgmpDynGroupTable
+Authorization: Bearer {{token}}
+
+### An instance of this managed entity represents a set of attributes<br/><br/>that control an ONU's IEEE 802.1X operation with regard to IEEE<br/><br/>802 services.
+GET http://localhost/api/snmp/zxAnGponRmDot1xTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmDot1xTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmDot1xCidPrefix": "",
+    "zxAnGponRmDot1xFallbackPolicy": 1,
+    "zxAnGponRmDot1xAuthSvr1": "",
+    "zxAnGponRmDot1xSharedSecretAuth1": "",
+    "zxAnGponRmDot1xAuthSvr2": "",
+    "zxAnGponRmDot1xSharedSecretAuth2": "",
+    "zxAnGponRmDot1xAuthSvr3": "",
+    "zxAnGponRmDot1xSharedSecretAuth3": "",
+    "zxAnGponRmDot1xOltProxyAddrType": 1,
+    "zxAnGponRmDot1xOltProxyAddr": ""
+}
+
+### An instance of this managed entity represents a set of attributes<br/><br/>that control a port's IEEE 802.1X operation. An instance of this<br/><br/>managed entity is associated with a physical path termination<br/><br/>point that performs IEEE 802 authentication (ie Ethernet or DSL).
+GET http://localhost/api/snmp/zxAnGponRmDot1xUniTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmDot1xUniTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmDot1xEnable": "",
+    "zxAnGponRmDot1xAdminCtrlDirect": "",
+    "zxAnGponRmDot1xQuietPeriod": "",
+    "zxAnGponRmDot1xSvrTimeoutPeriod": "",
+    "zxAnGponRmDot1xKeyTxEnable": ""
+}
+
+### This table defines a set of actions that can be performed on the<br/><br/>port associated with a physical path termination point that<br/><br/>performs IEEE 802 authentication (ie Ethernet or DSL).
+GET http://localhost/api/snmp/zxAnGponRmDot1xUniRegActionTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmDot1xUniRegActionTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmDot1xUniRegisterAction": ""
+}
+
+### This managed entity organizes data associated with VLAN tagging.<br/><br/>Instances of this managed entity are created and deleted by the OLT.<br/><br/>An instance of this managed entity is associated with an instance of<br/><br/>a MAC bridge port configuration data managed entity.<br/><br/>The index 'zxAnPonRmOnuIfIndex' of this table supports<br/><br/>Ethernet UNI, WiFi UNI, IP host and VEIP.
+GET http://localhost/api/snmp/zxAnGponRmVlanFilterModeTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmVlanFilterModeTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmVlanFiltModeFwdOper": "",
+    "zxAnGponRmVlanFiltModeRowStatus": ""
+}
+
+### This managed entity organizes data associated with VLAN tagging.<br/><br/>Instances of this managed entity are created and deleted by the OLT.<br/><br/>An instance of this managed entity is associated with an instance of<br/><br/>a MAC bridge port configuration data managed entity.<br/><br/>The index 'zxAnPonRmOnuIfIndex' of this table supports<br/><br/>Ethernet UNI, WiFi UNI, IP host and VEIP.
+GET http://localhost/api/snmp/zxAnGponRmVlanFilterTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmVlanFilterTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmVlanFilterRowStatus": ""
+}
+
+### This managed entity is used to organize data associated with VLAN<br/><br/>tagging. Instances of this managed entity are created/deleted at<br/><br/>the request of the OLT. Zero or one instance of this managed entity<br/><br/>may exist for an instance of any managed entity that can terminate<br/><br/>or modify an Ethernet stream. The index 'zxAnPonRmOnuIfIndex' of<br/><br/>this table supports Ethernet UNI, WiFi UNI,IP host and VEIP.
+GET http://localhost/api/snmp/zxAnGponRmVlanTagTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmVlanTagTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmVlanTagUsTagOperMode": "",
+    "zxAnGponRmVlanTagUsTagTciVal": "",
+    "zxAnGponRmVlanTagDsTagOperMode": "",
+    "zxAnGponRmVlanTagRowStatus": ""
+}
+
+### This managed entity organizes data associated with VLAN tagging.<br/><br/>Regardless of its point of attachment, the specified tagging<br/><br/>operations refer to the upstream direction. Instances of this<br/><br/>managed entity are created and deleted by the OLT. The index<br/><br/>'zxAnPonRmOnuIfIndex' of this table supports Ethernet UNI,<br/><br/>WiFi UNI, IP host and VEIP.
+GET http://localhost/api/snmp/zxAnGponRmExtVlanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmExtVlanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmExtVlanInputTpid": 100,
+    "zxAnGponRmExtVlanOutputTpid": 100,
+    "zxAnGponRmExtVlanDsMode": 1,
+    "zxAnGponRmExtVlanDscp2CosPrf": "",
+    "zxAnGponRmExtVlanRowStatus": ""
+}
+
+### This managed entity organizes data associated with VLAN tagging.<br/><br/>Regardless of its point of attachment, the specified tagging<br/><br/>operations refer to the upstream direction. Instances of this<br/><br/>managed entity are created and deleted by the OLT. The index<br/><br/>'zxAnPonRmOnuIfIndex' of this table supports Ethernet UNI,<br/><br/>WiFi UNI, IP host and VEIP.
+GET http://localhost/api/snmp/zxAnGponRmExtVlanRuleConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmExtVlanRuleConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmExtVlanConfTreatRule": "",
+    "zxAnGponRmExtVlanConfRowStatus": ""
+}
+
+### A table containing VLAN port information for VLANs<br/><br/>configured into the bridge by (local or network)<br/><br/>management,  specifying the set of<br/><br/>ports to which frames received on a VLAN for this FDB<br/><br/>and containing a specific Group destination address are<br/><br/>allowed to be forwarded.<br/><br/><br/><br/>When a manager wants to create a VLAN port,it must comply<br/><br/>with the multi-variables usage rule that all the mib variables<br/><br/>related to same fuction must be in one snmp set operation, the<br/><br/>variables have two type: mandatory and optional.<br/><br/><br/><br/>Mandatory variables must be in the one snmp set operation.<br/><br/>Optional variables may be in the one snmp set operation with the<br/><br/>mandatory variables, but must not be used alone.<br/><br/><br/><br/>To modify a service port,  there are several cases base on the<br/><br/>variable zxAnGponRmVlanPortMode, and the mandatory and optional<br/><br/>variables for each case are different.<br/><br/><br/><br/>Case 1: to modify a VLAN port when zxAnGponRmVlanPortMode is<br/><br/>access(1):<br/><br/>- mandatoty:<br/><br/>zxAnGponRmVlanPortMode,<br/><br/>- optional :<br/><br/>zxAnGponRmVlanPortDefaultVid,<br/><br/>zxAnGponRmVlanPortDefaultCos,<br/><br/><br/><br/>Case 2: to modify a service port when zxAnGponRmVlanPortMode is<br/><br/>trunk(2):<br/><br/>- mandatoty:<br/><br/>zxAnGponRmVlanPortMode,<br/><br/>- optional :<br/><br/><br/><br/>Case 3: to modify a service port when zxAnGponRmVlanPortMode is<br/><br/>hybrid(3):<br/><br/>- mandatoty:<br/><br/>zxAnGponRmVlanPortMode,<br/><br/>- optional :<br/><br/>zxAnGponRmVlanPortDefaultVid,<br/><br/>zxAnGponRmVlanPortDefaultCos,<br/><br/><br/><br/>Case 4: to modify a service port when zxAnGponRmVlanPortMode is<br/><br/>transparent(4):<br/><br/>- mandatoty:<br/><br/>zxAnGponRmVlanPortMode,<br/><br/>- optional :<br/><br/><br/><br/>Case 5: to modify a service port when zxAnGponRmVlanPortMode is<br/><br/>none(5):<br/><br/>- mandatoty:<br/><br/>zxAnGponRmVlanPortMode,<br/><br/>- optional :
+GET http://localhost/api/snmp/zxAnGponRmVlanPortTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmVlanPortTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmVlanPortMode": 5,
+    "zxAnGponRmVlanPortDefaultVid": 1,
+    "zxAnGponRmVlanPortDefaultCos": 0
+}
+
+### Operation command table for VLAN configuration of port.
+GET http://localhost/api/snmp/zxAnGponRmVlanPortCmdTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmVlanPortCmdTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmVlanPortCmd": "",
+    "zxAnGponRmVlanPortVid": ""
+}
+
+### A table containing VLAN translate information for VLANs<br/><br/>configured into the bridge by (local or network) management.
+GET http://localhost/api/snmp/zxAnGponRmVlanTransTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmVlanTransTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmVlanTransCVid": 0,
+    "zxAnGponRmVlanTransCtagCos": 8,
+    "zxAnGponRmVlanTransSVid": 0,
+    "zxAnGponRmVlanTransStagCos": 8,
+    "zxAnGponRmVlanTransRowStatus": ""
+}
+
+### The ONU CPU broadcast packet rate limit table.
+GET http://localhost/api/snmp/zxAnGponRmCpuBcastRateLimitTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmCpuBcastRateLimitTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmCpuBcastRateLimit": 100
+}
+
+### The ONU port broadcast packet rate limit table.
+GET http://localhost/api/snmp/zxAnGponRmUniBcastRateLimitTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmUniBcastRateLimitTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmUniBcastRateLimit": 100
+}
+
+### This managed entity represents the point at the video UNI in the<br/><br/>ONU where physical paths terminate and physical path level<br/><br/>functions are performed. One or more instances of this managed<br/><br/>entity shall be contained in an instance of a Circuit Pack managed<br/><br/>entity classified as video type.
+GET http://localhost/api/snmp/zxAnGponRmVideoUniTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmVideoUniTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmVideoUniAdminState": "",
+    "zxAnGponRmVideoUniArcEnable": "",
+    "zxAnGponRmVideoUniArcInterval": "",
+    "zxAnGponRmVideoUniPowerFeed": ""
+}
+
+### This managed entity represents an RF video ANI in the ONU,<br/><br/>where physical paths terminate and physical path level<br/><br/>functions are performed. An instance of this managed entity<br/><br/>is associated with each instance of a real or preprovisioned<br/><br/>video ANI port.
+GET http://localhost/api/snmp/zxAnGponRmVideoAniTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmVideoAniTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmVideoAniAdminState": "",
+    "zxAnGponRmVideoAniArcEnable": "",
+    "zxAnGponRmVideoAniArcInterval": "",
+    "zxAnGponRmVideoAniPilotFreq": "",
+    "zxAnGponRmVideoAniAgcMode": "",
+    "zxAnGponRmVideoAniAgcValue": "",
+    "zxAnGponRmVideoAniLowerOptThresh": "",
+    "zxAnGponRmVideoAniUpperOptThresh": ""
+}
+
+### This managed entity represents the local craft terminal UNI,<br/><br/>where physical paths terminate and physical path level<br/><br/>functions are performed.An instance of this managed entity<br/><br/>is associated with an instance of a real or virtual circuit<br/><br/>pack managed entity classified as LCT type.
+GET http://localhost/api/snmp/zxAnGponRmLctUniTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmLctUniTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmLctUniAdminState": ""
+}
+
+### This managed entity models an RF video return path. The ONT<br/><br/>creates an instance autonomously if it supports this function.<br/><br/>Further description of the video return path (VRP) feature appears<br/><br/>in Appendix IV/G.984.4, that defines transport methods required to<br/><br/>support the video return path function. This includes a brief<br/><br/>description of the relevant aspects of the two return path<br/><br/>specifications supported. It also includes formatting for carriage<br/><br/>of VRP data over the PON data path.
+GET http://localhost/api/snmp/zxAnGponRmVrpTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmVrpTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmVrpAdminState": 1,
+    "zxAnGponRmVrpArcActivation": 2,
+    "zxAnGponRmVrpArcInterval": 0,
+    "zxAnGponRmVrpMode": 1,
+    "zxAnGponRmVrpFreqUsed": "",
+    "zxAnGponRmVrpMode1PhyConfMode": "",
+    "zxAnGponRmVrpHeadendServerIpType": "",
+    "zxAnGponRmVrpHeadendServerIp": "",
+    "zxAnGponRmVrpUdpSourcePort": 0,
+    "zxAnGponRmVrpUdpDestinationPort": 0
+}
+
+### An instance of this managed entity is referenced by the<br/><br/>TrafficScheulerUNI.
+GET http://localhost/api/snmp/zxAnGponRmTrafficSchedPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmTrafficSchedPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmTrffcSchedMode": 4,
+    "zxAnGponRmTrffcSchedQueueMap": "",
+    "zxAnGponRmTrffcSchedQueueWeight": "",
+    "zxAnGponRmTrffcSchedPrfRowStatus": ""
+}
+
+### This managed entity organizes data associated with IGMP profile.
+GET http://localhost/api/snmp/zxAnGponRmIgmpPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmIgmpPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmIgmpVersion": 2,
+    "zxAnGponRmIgmpWorkMode": 1,
+    "zxAnGponRmIgmpFastLeaveEnable": 2,
+    "zxAnGponRmIgmpUsTagMode": 1,
+    "zxAnGponRmIgmpUsVid": 0,
+    "zxAnGponRmIgmpUsPri": 0,
+    "zxAnGponRmIgmpDsTagMode": 1,
+    "zxAnGponRmIgmpDsVid": 0,
+    "zxAnGponRmIgmpDsPri": 0,
+    "zxAnGponRmIgmpUsMaxRate": 0,
+    "zxAnGponRmIgmpRobustness": 0,
+    "zxAnGponRmIgmpProxyAddrType": 1,
+    "zxAnGponRmIgmpProxyIpAddr": "",
+    "zxAnGponRmIgmpQueryInterval": 125,
+    "zxAnGponRmIgmpQueryMaxRspTime": 100,
+    "zxAnGponRmIgmpLastMembQueryIntvl": 10,
+    "zxAnGponRmIgmpUnauthJoinBehav": 2,
+    "zxAnGponRmIgmpIptvDynPkgNames": "",
+    "zxAnGponRmIgmpIptvStaticPkgNames": "",
+    "zxAnGponRmIgmpRowStatus": ""
+}
+
+### The traffic descriptor is a profile that allows<br/><br/>for traffic management.
+GET http://localhost/api/snmp/zxAnGponRmTrafficPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmTrafficPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmTrafficPrfCir": 0,
+    "zxAnGponRmTrafficPrfPir": 0,
+    "zxAnGponRmTrafficPrfCbs": 0,
+    "zxAnGponRmTrafficPrfPbs": 0,
+    "zxAnGponRmTrafficPrfColorMode": 1,
+    "zxAnGponRmTrafficPrfInColorMode": 1,
+    "zxAnGponRmTrafficPrfOutColorMode": 1,
+    "zxAnGponRmTrafficPrfMeterType": 1,
+    "zxAnGponRmTrafficPrfRowStatus": ""
+}
+
+### The pseudowire maintenance profile permits the configuration of<br/><br/>pseudowire service exception handling. It is created and deleted<br/><br/>by the OLT.
+GET http://localhost/api/snmp/zxAnGponRmPwPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmPwPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmPwMaxJtrBufDepth": 0,
+    "zxAnGponRmPwDesireJtrBufDepth": 0,
+    "zxAnGponRmPwFillPolicy": 1,
+    "zxAnGponRmPwMisconnPktDeclare": 0,
+    "zxAnGponRmPwMisconnPktClr": 255,
+    "zxAnGponRmPwLossPktDeclare": 0,
+    "zxAnGponRmPwLossPktClr": 255,
+    "zxAnGponRmPwBufDeclare": 0,
+    "zxAnGponRmPwBufClr": 255,
+    "zxAnGponRmPwMalformedPktDeclare": 0,
+    "zxAnGponRmPwMalformedPktClr": 255,
+    "zxAnGponRmPwRbitTxSet": 0,
+    "zxAnGponRmPwRbitTxClr": 0,
+    "zxAnGponRmPwRbitRx": 1,
+    "zxAnGponRmPwLbitRx": 1,
+    "zxAnGponRmPwSesThresh": 3,
+    "zxAnGponRmPwPrfRowStatus": ""
+}
+
+### This attribute specifies the profile that mapping from DSCP to<br/><br/>P-bits.
+GET http://localhost/api/snmp/zxAnGponRmDscp2CosPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmDscp2CosPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmDscp2CosMapping": "",
+    "zxAnGponRmDscp2CosPrfRowStatus": ""
+}
+
+### This managed entity organizes data associated with VoIP<br/><br/>media profile.
+GET http://localhost/api/snmp/zxAnGponRmVoipMediaPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmVoipMediaPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmVoipMediaFaxMode": 1,
+    "zxAnGponRmVoipMedia1stCodec": 1,
+    "zxAnGponRmVoipMedia1stPktPeriod": 10,
+    "zxAnGponRmVoipMedia1stSilence": 1,
+    "zxAnGponRmVoipMedia2ndCodec": 1,
+    "zxAnGponRmVoipMedia2ndPktPeriod": 10,
+    "zxAnGponRmVoipMedia2ndSilence": 1,
+    "zxAnGponRmVoipMedia3rdCodec": 1,
+    "zxAnGponRmVoipMedia3rdPktPeriod": 10,
+    "zxAnGponRmVoipMedia3rdSilence": 1,
+    "zxAnGponRmVoipMedia4thCodec": 1,
+    "zxAnGponRmVoipMedia4thPktPeriod": 10,
+    "zxAnGponRmVoipMedia4thSilence": 1,
+    "zxAnGponRmVoipMediaOobDtmf": 1,
+    "zxAnGponRmVoipMediaAnnounceType": 5,
+    "zxAnGponRmVoipMediaJitterTarget": 0,
+    "zxAnGponRmVoipMediaMaxJitterBuf": 0,
+    "zxAnGponRmVoipMediaEchoCancel": 1,
+    "zxAnGponRmVoipMediaCountryCode": 0,
+    "zxAnGponRmVoipMediaMinLocalPort": 50000,
+    "zxAnGponRmVoipMediaMaxLocalPort": 60000,
+    "zxAnGponRmVoipMediaDscpMark": 46,
+    "zxAnGponRmVoipMediaPiggybackEvnt": 2,
+    "zxAnGponRmVoipMediaToneEvents": 2,
+    "zxAnGponRmVoipMediaDtmfEvents": 2,
+    "zxAnGponRmVoipMediaCasEvents": 2,
+    "zxAnGponRmVoipMediaSignalPri": 8,
+    "zxAnGponRmVoipMediaMediaPri": 8,
+    "zxAnGponRmVoipMediaPrfRowStatus": ""
+}
+
+### The VoIP feature access codes managed entity defines administrable<br/><br/>feature access codes for the VoIP subscriber. It is optional for<br/><br/>ONUs that support VoIP service.
+GET http://localhost/api/snmp/zxAnGponRmVoipAppSrvPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmVoipAppSrvPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmCid": "",
+    "zxAnGponRmCallWaiting": "",
+    "zxAnGponRmCallProgress": "",
+    "zxAnGponRmCallPresentation": "",
+    "zxAnGponRmDirectConn": "",
+    "zxAnGponRmDirectConnUri": "",
+    "zxAnGponRmDirectConnValidation": 1,
+    "zxAnGponRmDirectConnUsername": "",
+    "zxAnGponRmDirectConnPassword": "",
+    "zxAnGponRmDirectConnRealm": "",
+    "zxAnGponRmBridgeLineAgentUri": "",
+    "zxAnGponRmBridgeValidation": 1,
+    "zxAnGponRmBridgeUsername": "",
+    "zxAnGponRmBridgePassword": "",
+    "zxAnGponRmBridgeRealm": "",
+    "zxAnGponRmConferenceFactoryUri": "",
+    "zxAnGponRmConferenceValidation": 1,
+    "zxAnGponRmConferenceUsername": "",
+    "zxAnGponRmConferencePassword": "",
+    "zxAnGponRmConferenceRealm": "",
+    "zxAnGponRmAppSrvPrfRowStatus": ""
+}
+
+### The VoIP application service profile defines attributes of<br/><br/>calling features used in conjunction with a VoIP line service.<br/><br/>It is optional for ONUs that support VoIP service.
+GET http://localhost/api/snmp/zxAnGponRmVoipAccessCodeTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmVoipAccessCodeTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponVoipCancelCallWaiting": "",
+    "zxAnGponVoipCallHold": "",
+    "zxAnGponVoipCallPark": "",
+    "zxAnGponVoipCidActivate": "",
+    "zxAnGponVoipCidDeactivate": "",
+    "zxAnGponVoipNotDisturbActivate": "",
+    "zxAnGponVoipNotDisturbDeactivate": "",
+    "zxAnGponVoipNotDisturbPinChange": "",
+    "zxAnGponVoipEmergencyServiceNum": "",
+    "zxAnGponVoipIntercomService": "",
+    "zxAnGponVoipUnattendedCallTrans": "",
+    "zxAnGponVoipAttendedCallTrans": "",
+    "zxAnGponVoipAccessCodeRowStatus": ""
+}
+
+### An instance of this managed entity may be associated with one or<br/><br/>more instances of the SIP User Data managed entity.
+GET http://localhost/api/snmp/zxAnGponRmDialPlanPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmDialPlanPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmDialPlanCritTimeout": 4000,
+    "zxAnGponRmDialPlanPartTimeout": 16000,
+    "zxAnGponRmDialPlanFormat": 2,
+    "zxAnGponRmDialPlanDigitMap": "",
+    "zxAnGponRmDialPlanPrfRowStatus": ""
+}
+
+### This table includes SIP profile configuration.
+GET http://localhost/api/snmp/zxAnGponRmSipPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmSipPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmSipProxyAddr": "",
+    "zxAnGponRmSipOutboundProxyAddr": "",
+    "zxAnGponRmSipPrimaryDnsType": 1,
+    "zxAnGponRmSipPrimaryDns": "",
+    "zxAnGponRmSipSecondaryDnsType": 1,
+    "zxAnGponRmSipSecondaryDns": "",
+    "zxAnGponRmSipUdpPort": 5060,
+    "zxAnGponRmSipRegExpTime": 3600,
+    "zxAnGponRmSipReregHeadStartTime": 360,
+    "zxAnGponRmSipHostPartUri": "",
+    "zxAnGponRmSipRegSvr": "",
+    "zxAnGponRmSipValidation": 1,
+    "zxAnGponRmSipRegUsername": "",
+    "zxAnGponRmSipRegPassword": "",
+    "zxAnGponRmSipRegRealm": "",
+    "zxAnGponRmSipSsVendor": "",
+    "zxAnGponRmSipNetworkDialPlanPrf": "",
+    "zxAnGponRmSipReleaseTimer": 10,
+    "zxAnGponRmSipRohTimer": 15,
+    "zxAnGponRmSipTosDscpOption": 1,
+    "zxAnGponRmSipTosDscpValue": 0,
+    "zxAnGponRmSipMediaUdpPort": 5060,
+    "zxAnGponRmSipMediaTosDscpOption": 1,
+    "zxAnGponRmSipMediaTosDscpValue": 0,
+    "zxAnGponRmSipHeartBeatEnable": 1,
+    "zxAnGponRmSipHeartBeatInterval": 20,
+    "zxAnGponRmSipAppSrvPrf": "",
+    "zxAnGponRmSipAccessCodePrf": "",
+    "zxAnGponRmSipPrfRowStatus": ""
+}
+
+### This table includes MGC profile configuration.
+GET http://localhost/api/snmp/zxAnGponRmMgcPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmMgcPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmMgcPrimarySvr": "",
+    "zxAnGponRmMgcPrimaryValidation": 1,
+    "zxAnGponRmMgcPrimaryUsername": "",
+    "zxAnGponRmMgcPrimaryPassword": "",
+    "zxAnGponRmMgcPrimaryRealm": "",
+    "zxAnGponRmMgcSecondarySvr": "",
+    "zxAnGponRmMgcSecondaryValidation": 1,
+    "zxAnGponRmMgcSecondaryUsername": "",
+    "zxAnGponRmMgcSecondaryPassword": "",
+    "zxAnGponRmMgcSecondaryRealm": "",
+    "zxAnGponRmMgcMessageFormat": 1,
+    "zxAnGponRmMgcUdpPort": "",
+    "zxAnGponRmMgcVersion": "",
+    "zxAnGponRmMgcMaxRetryTime": 0,
+    "zxAnGponRmMgcMaxRetryAttempts": 0,
+    "zxAnGponRmMgcServiceChangeDelay": 0,
+    "zxAnGponRmMgcSsVendor": "",
+    "zxAnGponRmMgcTidPrefix": "",
+    "zxAnGponRmMgcUserTidAssignPolicy": 1,
+    "zxAnGponRmMgcUserTidPrefix": "",
+    "zxAnGponRmMgcUserTidDigitLen": "",
+    "zxAnGponRmMgcUserTidDigitStartNo": 0,
+    "zxAnGponRmMgcRtpTidAssignPolicy": 1,
+    "zxAnGponRmMgcRtpTidPrefix": "",
+    "zxAnGponRmMgcRtpTidDigitLen": "",
+    "zxAnGponRmMgcRtpTidDigitStartNo": 0,
+    "zxAnGponRmMgcTosDscpOption": 1,
+    "zxAnGponRmMgcTosDscpValue": 0,
+    "zxAnGponRmMgcMediaUdpPort": "",
+    "zxAnGponRmMgcMediaTosDscpOption": 1,
+    "zxAnGponRmMgcMediaTosDscpValue": 0,
+    "zxAnGponRmMgcHeartBeatMsgType": 2,
+    "zxAnGponRmMgcHeartBeatInterval": 60000,
+    "zxAnGponRmMgcRtpLinkDetect": 2,
+    "zxAnGponRmMgcNumShortestMatch": 2,
+    "zxAnGponRmMgcDigitMapLongTimer": 20000,
+    "zxAnGponRmMgcDigitMapShortTimer": 5000,
+    "zxAnGponRmMgcDigitMapStartTimer": 10000,
+    "zxAnGponRmMgcMinReregTimer": 60000,
+    "zxAnGponRmMgcMaxReregTimer": 120000,
+    "zxAnGponRmMgcRegMsgRetranTimer": 2000,
+    "zxAnGponRmMgcTotalRetranTime": 10000,
+    "zxAnGponRmMgcPassiveHeartBeat": 2,
+    "zxAnGponRmMgcMinAvalancheTimer": 10000,
+    "zxAnGponRmMgcMaxAvalancheTimer": 60000,
+    "zxAnGponRmMgcPrfRowStatus": ""
+}
+
+### IP profile table.
+GET http://localhost/api/snmp/zxAnGponRmIpPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmIpPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmIpGatewayType": 1,
+    "zxAnGponRmIpGateway": 0,
+    "zxAnGponRmIpPrimaryDnsType": 1,
+    "zxAnGponRmIpPrimaryDns": 0,
+    "zxAnGponRmIpSecondaryDnsType": 1,
+    "zxAnGponRmIpSecondaryDns": 0,
+    "zxAnGponRmIpDefaultRouter": 0,
+    "zxAnGponRmIpPrfRowStatus": ""
+}
+
+### VLAN Profile table.
+GET http://localhost/api/snmp/zxAnGponRmVlanPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmVlanPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmVlanPrfTagMode": "",
+    "zxAnGponRmVlanPrfCVid": "",
+    "zxAnGponRmVlanPrfCtagCos": "",
+    "zxAnGponRmVlanPrfSVid": "",
+    "zxAnGponRmVlanPrfRowStatus": ""
+}
+
+### This managed entity organizes data associated with VLAN tagging.<br/><br/>Regardless of its point of attachment, the specified tagging<br/><br/>operations refer to the upstream direction. Instances of this<br/><br/>managed entity are created and deleted by the OLT.
+GET http://localhost/api/snmp/zxAnGponRmFilterRuleTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmFilterRuleTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmFiltRuleTagNum": 1,
+    "zxAnGponRmFiltRuleEthType": 1,
+    "zxAnGponRmFiltRuleInnerPri": 15,
+    "zxAnGponRmFiltRuleInnerVid": 4096,
+    "zxAnGponRmFiltRuleInnerTpid": 1,
+    "zxAnGponRmFiltRuleOuterPri": 15,
+    "zxAnGponRmFiltRuleOuterVid": 4096,
+    "zxAnGponRmFiltRuleOuterTpid": 1,
+    "zxAnGponRmFiltRuleFlowClassType": 1,
+    "zxAnGponRmFiltRuleFlowClassData": "",
+    "zxAnGponRmFiltRuleRowStatus": ""
+}
+
+### This managed entity organizes data associated with VLAN tagging.<br/><br/>Regardless of its point of attachment, the specified tagging<br/><br/>operations refer to the upstream direction. Instances of this<br/><br/>managed entity are created and deleted by the OLT.
+GET http://localhost/api/snmp/zxAnGponRmTreatRuleTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmTreatRuleTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmTrtRuleTagsRemove": 1,
+    "zxAnGponRmTrtRuleAddInnerTag": 2,
+    "zxAnGponRmTrtRuleAddOuterTag": 2,
+    "zxAnGponRmTrtRuleInnerPriAction": 1,
+    "zxAnGponRmTrtRuleInnerPriInsert": 0,
+    "zxAnGponRmTrtRuleInnerVidAction": 1,
+    "zxAnGponRmTrtRuleInnerVidInsert": 0,
+    "zxAnGponRmTrtRuleInnerTpid": 5,
+    "zxAnGponRmTrtRuleOuterPriAction": 1,
+    "zxAnGponRmTrtRuleOuterPriInsert": 0,
+    "zxAnGponRmTrtRuleOuterVidAction": 1,
+    "zxAnGponRmTrtRuleOuterVidInsert": 0,
+    "zxAnGponRmTrtRuleOuterTpid": 5,
+    "zxAnGponRmTrtRuleRowStatus": ""
+}
+
+### ONU ACL rule profile table.
+GET http://localhost/api/snmp/zxAnGponRmAclRulePrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmAclRulePrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmAclSrcIpAddrType": "",
+    "zxAnGponRmAclSrcIpAddr": "",
+    "zxAnGponRmAclSrcIpAddrPfxLen": "",
+    "zxAnGponRmAclDestIpAddrType": "",
+    "zxAnGponRmAclDestIpAddr": "",
+    "zxAnGponRmAclDestIpAddrPfxLen": "",
+    "zxAnGponRmAclMinSrcL4Port": "",
+    "zxAnGponRmAclMaxSrcL4Port": "",
+    "zxAnGponRmAclMinDestL4Port": "",
+    "zxAnGponRmAclMaxDestL4Port": "",
+    "zxAnGponRmAclVlan": "",
+    "zxAnGponRmAclCos": "",
+    "zxAnGponRmAclDscp": "",
+    "zxAnGponRmAclProtocol": "",
+    "zxAnGponRmAclMinIpPktSize": "",
+    "zxAnGponRmAclMaxIpPktSize": "",
+    "zxAnGponRmAclSrcMacAddr": "",
+    "zxAnGponRmAclSrcMacAddrMask": "",
+    "zxAnGponRmAclDestMacAddr": "",
+    "zxAnGponRmAclDestMacMask": "",
+    "zxAnGponRmAclEtherType": "",
+    "zxAnGponRmAclTcpAckClassifyEn": 2,
+    "zxAnGponRmAclMinL2PktSize": "",
+    "zxAnGponRmAclMaxL2PktSize": "",
+    "zxAnGponRmAclRuleRowStatus": ""
+}
+
+### ONU DHCP server profile table.
+GET http://localhost/api/snmp/zxAnGponRmDhcpSvrPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmDhcpSvrPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmDvIpAddrType": 1,
+    "zxAnGponRmDvIpAddr": "",
+    "zxAnGponRmDvIpPfxLen": "",
+    "zxAnGponRmDvIpPoolBeginAddrType": 1,
+    "zxAnGponRmDvIpPoolBeginAddr": "",
+    "zxAnGponRmDvIpPoolEndAddrType": 1,
+    "zxAnGponRmDvIpPoolEndAddr": "",
+    "zxAnGponRmDvPrimaryDnsType": 1,
+    "zxAnGponRmDvPrimaryDns": "",
+    "zxAnGponRmDvSecondaryDnsType": 1,
+    "zxAnGponRmDvSecondaryDns": "",
+    "zxAnGponRmDvGatewayAddrType": 1,
+    "zxAnGponRmDvGatewayAddr": "",
+    "zxAnGponRmDvLeaseTime": 86400,
+    "zxAnGponRmDvRowStatus": ""
+}
+
+### ONU DHCP pool profile table.
+GET http://localhost/api/snmp/zxAnGponRmDhcpPoolPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmDhcpPoolPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmDpIpHostId": "",
+    "zxAnGponRmDpBeginIpAddrType": 1,
+    "zxAnGponRmDpBeginIpAddr": "",
+    "zxAnGponRmDpEndIpAddrType": 1,
+    "zxAnGponRmDpEndIpAddr": "",
+    "zxAnGponRmDpPrimaryDnsType": 1,
+    "zxAnGponRmDpPrimaryDns": "",
+    "zxAnGponRmDpSecondaryDnsType": 1,
+    "zxAnGponRmDpSecondaryDns": "",
+    "zxAnGponRmDpRowStatus": ""
+}
+
+### ONU DHCP pool device vendor profile table.
+GET http://localhost/api/snmp/zxAnGponRmDpDevVendorPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmDpDevVendorPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmDpDevVendorIds": "",
+    "zxAnGponRmDpDevVendorRowStatus": ""
+}
+
+### ONU SNMP profile table.
+GET http://localhost/api/snmp/zxAnGponRmSnmpPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmSnmpPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmSnmpSystemName": 0,
+    "zxAnGponRmSnmpVersion": 2,
+    "zxAnGponRmSnmpReadCommunity": 0,
+    "zxAnGponRmSnmpWriteCommunity": 0,
+    "zxAnGponRmSnmpSecurityName": 0,
+    "zxAnGponRmSnmpPort": 161,
+    "zxAnGponRmSnmpTosOrDscp": 0,
+    "zxAnGponRmSnmpTrapServerIpType": 1,
+    "zxAnGponRmSnmpTrapServerIpAddr": "",
+    "zxAnGponRmSnmpTrapServerPort": 162,
+    "zxAnGponRmSnmpRowStatus": ""
+}
+
+### Configuration of service
+GET http://localhost/api/snmp/zxAnGponRmServiceMapTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmServiceMapTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmServiceGemPort": "",
+    "zxAnGponRmServiceIfId": "",
+    "zxAnGponRmServiceMapType": "",
+    "zxAnGponRmServiceMapCos": 0,
+    "zxAnGponRmServiceMapVid": "",
+    "zxAnGponRmServiceRowStatus": ""
+}
+
+### This managed entity is used to associate the priorities of 802.1P<br/><br/>priority tagged frames of a certain Ethernet UNI with a specific<br/><br/>connection. One instance of this ME may be associated with zero or<br/><br/>one instance of the PPTP UNI ME.
+GET http://localhost/api/snmp/zxAnGponRmDot1pMapTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmDot1pMapTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmDot1pMapUntagOption": "",
+    "zxAnGponRmDot1pMapDscp2PBitMap": "",
+    "zxAnGponRmDot1pMapDefPBitMark": ""
+}
+
+### This table includes ONU enhanced security control information.
+GET http://localhost/api/snmp/zxAnGponRmOnuSecurityCtrlTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmOnuSecurityCtrlTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmOnuSecCtrl": 2,
+    "zxAnGponRmOnuSecCtrlPsk": ""
+}
+
+### The IP Host Config Data contains the configuration for IP based<br/><br/>services that are offered on the ONU. This entity is conditionally<br/><br/>required for ONUs that offer IP services from the ONU itself, and<br/><br/>its presence allows additional features to be supported with the<br/><br/>ONU.Instances of this managed entity are automatically created by<br/><br/>the ONU after initialization if IP Host services are available.
+GET http://localhost/api/snmp/zxAnGponRmIphostConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmIphostConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmIphostIpOptions": "",
+    "zxAnGponRmIphostOnuIdentifier": "",
+    "zxAnGponRmIphostIpAddrType": "",
+    "zxAnGponRmIphostIpAddr": "",
+    "zxAnGponRmIphostIpPfxLen": "",
+    "zxAnGponRmIphostGatewayType": "",
+    "zxAnGponRmIphostGateway": "",
+    "zxAnGponRmIphostPriDnsType": "",
+    "zxAnGponRmIphostPriDns": "",
+    "zxAnGponRmIphostSecDnsType": "",
+    "zxAnGponRmIphostSecDns": "",
+    "zxAnGponRmIphostDefaultRouter": "",
+    "zxAnGponRmIphostOnLinkPrefix": ""
+}
+
+### The Extend IP host config data configures IP based services in<br/><br/>PPPoE mode offered on the ONU.
+GET http://localhost/api/snmp/zxAnGponRmPppoeConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmPppoeConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmPppoeNatEnable": 2,
+    "zxAnGponRmPppoeMode": 1,
+    "zxAnGponRmPppoeConnTrigger": 1,
+    "zxAnGponRmPppoeReleaseTimer": "",
+    "zxAnGponRmPppoeUsername": "",
+    "zxAnGponRmPppoePassword": "",
+    "zxAnGponRmPppoeServiceName": "",
+    "zxAnGponRmPppoeRowStatus": ""
+}
+
+### This table contains information of ONU IP static routes<br/><br/>configuration. This managed entity stores IP static routes.
+GET http://localhost/api/snmp/zxAnGponRmIpStaticRouteTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmIpStaticRouteTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmIpRouteNextHopType": "",
+    "zxAnGponRmIpRouteNextHop": "",
+    "zxAnGponRmIpRouteOutPort": "",
+    "zxAnGponRmIpRouteRowStatus": ""
+}
+
+### Configuration of ONU DHCP Option60.
+GET http://localhost/api/snmp/zxAnGponRmDhcpOption60Table
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmDhcpOption60Table/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmDhcpOption60Enable": 2,
+    "zxAnGponRmDhcpOption60VendorId": ""
+}
+
+### The The ONU UPnP(Universal Plug and Play) configuration table.
+GET http://localhost/api/snmp/zxAnGponRmUpnpConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmUpnpConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmUpnpEnable": 2,
+    "zxAnGponRmUpnpIphostId": ""
+}
+
+### The ONU PMP(Port Mapping Protocol) configuration table.
+GET http://localhost/api/snmp/zxAnGponRmPmpConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmPmpConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmPmpEnable": 2,
+    "zxAnGponRmPmpIphostId": ""
+}
+
+### The ONU NAT session configuration table.
+GET http://localhost/api/snmp/zxAnGponRmNatSessionConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmNatSessionConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmNatSessAgingTime": 180,
+    "zxAnGponRmNatSessMaxSessions": 128,
+    "zxAnGponRmNatSessMaxSessPerSec": 100
+}
+
+### The ONU ARP configuration table.
+GET http://localhost/api/snmp/zxAnGponRmArpConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmArpConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmArpProxyEnable": 2,
+    "zxAnGponRmArpMaxArpsLimit": 0
+}
+
+### The ONU ALG configuration table.
+GET http://localhost/api/snmp/zxAnGponRmAlgConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmAlgConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmAlgSupportedProtocols": "{ftp,tftp,rtsp,h323,pptp"
+}
+
+### The ONU DHCP server configuration table.
+GET http://localhost/api/snmp/zxAnGponRmDhcpServerConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmDhcpServerConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmDhcpSvrConfPrfName": ""
+}
+
+### ONU DHCP server option configuration table.
+GET http://localhost/api/snmp/zxAnGponRmDhcpServerOptTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmDhcpServerOptTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmDhcpSvrOptDataFormat": "",
+    "zxAnGponRmDhcpSvrOptData": "",
+    "zxAnGponRmDhcpSvrOptRowStatus": ""
+}
+
+### ONU DHCP client option configuration table.
+GET http://localhost/api/snmp/zxAnGponRmDhcpClientOptTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmDhcpClientOptTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmDhcpClntOptDataFormat": "",
+    "zxAnGponRmDhcpClntOptData": "",
+    "zxAnGponRmDhcpClntOptRowStatus": ""
+}
+
+### ONU DHCP server pool configuration table.
+GET http://localhost/api/snmp/zxAnGponRmDhcpSvrPoolConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmDhcpSvrPoolConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmDvPoolDevVendorPrfName": "",
+    "zxAnGponRmDvPoolPrfName": ""
+}
+
+### The ONU DHCP MAC and IP binding configuration table.
+GET http://localhost/api/snmp/zxAnGponRmDhcpMacIpBindConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmDhcpMacIpBindConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmDhcpMacIpBindIpType": "",
+    "zxAnGponRmDhcpMacIpBindIpAddr": "",
+    "zxAnGponRmDhcpMacIpBindRowStatus": ""
+}
+
+### The current IPv6 host addresses table.
+GET http://localhost/api/snmp/zxAnGponRmIpv6HostCurrAddrTable
+Authorization: Bearer {{token}}
+
+### The current IPv6 host default router IP addresses table.
+GET http://localhost/api/snmp/zxAnGponRmIpv6HostCDftRtIpTable
+Authorization: Bearer {{token}}
+
+### The current IPv6 host DNS server IP addresses table.
+GET http://localhost/api/snmp/zxAnGponRmIpv6HostCDnsIpTable
+Authorization: Bearer {{token}}
+
+### The current IPv6 host on-link prefix table.
+GET http://localhost/api/snmp/zxAnGponRmIpv6HostCOLnkPfxTable
+Authorization: Bearer {{token}}
+
+### This managed entity represents the point at a CES UNI in the ONU<br/><br/>where the physical path terminates and physical level functions<br/><br/>are performed.
+GET http://localhost/api/snmp/zxAnGponRmCesUniTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmCesUniTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmCesUniExpectedType": "",
+    "zxAnGponRmCesUniLoopback": "",
+    "zxAnGponRmCesUniAdminState": "",
+    "zxAnGponRmCesUniDs1Framing": "",
+    "zxAnGponRmCesUniEncoding": "",
+    "zxAnGponRmCesUniLineLength": "",
+    "zxAnGponRmCesUniDs1Mode": "",
+    "zxAnGponRmCesUniArcEnable": "",
+    "zxAnGponRmCesUniArcInterval": "",
+    "zxAnGponRmCesUniLineType": ""
+}
+
+### The pseudowire termination point supports packetized (rather than<br/><br/>TDM) G-PON transport of TDM services, transported either directly<br/><br/>over Ethernet or over UDP/IP. Instances of this managed entity are<br/><br/>created and deleted by the OLT. This table is the configuration of<br/><br/>transported over Ethernet
+GET http://localhost/api/snmp/zxAnGponRmCesOverEthConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmCesOverEthConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponCesOverEthBridgeIndex": "",
+    "zxAnGponCesOverEthTxPayloadEcid": "",
+    "zxAnGponCesOverEthTxSignalEcid": "",
+    "zxAnGponCesOverEthExpPayloadEcid": "",
+    "zxAnGponCesOverEthExpSignalEcid": "",
+    "zxAnGponCesOverEthTagPolicy": 1,
+    "zxAnGponCesOverEthVlanTagVal": "",
+    "zxAnGponCesOverEthDestMac": "",
+    "zxAnGponCesOverEthLoopback": 1,
+    "zxAnGponCesOverEthRowStatus": ""
+}
+
+### The pseudowire termination point supports packetized (rather than<br/><br/>TDM) G-PON transport of TDM services, transported either directly<br/><br/>over Ethernet or over UDP/IP. Instances of this managed entity are<br/><br/>created and deleted by the OLT.This table is the config of<br/><br/>transported over UDP/IP.
+GET http://localhost/api/snmp/zxAnGponRmCesOverIpConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmCesOverIpConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmCesOverIpNorthSidePort": "",
+    "zxAnGponRmCesOverIpNorthSideDscp": "",
+    "zxAnGponRmCesOverIpHostId": "",
+    "zxAnGponRmCesOverIpFarEndUri": "",
+    "zxAnGponRmCesOverIpRowStatus": ""
+}
+
+### The pseudowire termination point supports packetized (rather than<br/><br/>TDM) transport of TDM services, transported either directly over<br/><br/>Ethernet, over UDP/IP or over MPLS. Instances of this managed<br/><br/>entity are created and deleted by the OLT.
+GET http://localhost/api/snmp/zxAnGponRmPwTdmConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmPwTdmConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmPwTdmPayloadSize": 256,
+    "zxAnGponRmPwTdmPayloadDelay": 1,
+    "zxAnGponRmPwTdmTimingMode": 3,
+    "zxAnGponRmPwTdmPrf": "",
+    "zxAnGponRmPwTdmTransport": ""
+}
+
+### The pseudowire termination point supports packetized (rather than<br/><br/>TDM) transport of TDM services, transported either directly over<br/><br/>Ethernet, over UDP/IP or over MPLS. Instances of this managed<br/><br/>entity are created and deleted by the OLT.
+GET http://localhost/api/snmp/zxAnGponRmPwOptionalConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmPwOptionalConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmPwOptionalServiceType": 1,
+    "zxAnGponRmPwOptionalSignalling": 1,
+    "zxAnGponRmPwOptionalArcEnable": "",
+    "zxAnGponRmPwOptionalArcInterval": ""
+}
+
+### If a pseudowire service uses RTP, the RTP pseudowire parameters<br/><br/>managed entity provides Confuration information for the RTP<br/><br/>layer. Instances of this managed entity are created and deleted by<br/><br/>the OLT. The use of RTP on a pseudowire is optional, and is<br/><br/>determined by the existence of the RTP pseudowire parameters<br/><br/>managed entity.
+GET http://localhost/api/snmp/zxAnGponRmPwRtpConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmPwRtpConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponPwRtpTimestampMode": 2,
+    "zxAnGponPwRtpPayloadPtype": 96,
+    "zxAnGponPwRtpSignallingPtype": "",
+    "zxAnGponPwRtpExpPayloadPtype": 96,
+    "zxAnGponPwRtpExpSignallingPtype": "",
+    "zxAnGponPwRtpPayloadSsrc": "",
+    "zxAnGponPwRtpSignallingSsrc": "",
+    "zxAnGponPwRtpExpPayloadSsrc": "",
+    "zxAnGponPwRtpExpSignallingSsrc": "",
+    "zxAnGponPwRtpClockReference": 1,
+    "zxAnGponPwRtpRowStatus": ""
+}
+
+### The pseudowire termination point supports packetized (rather than<br/><br/>TDM) transport of TDM services, transported either directly over<br/><br/>Ethernet, over UDP/IP or over MPLS. Instances of this managed<br/><br/>entity are created and deleted by the OLT. This table is for the<br/><br/>configuration of transport over MPLS.
+GET http://localhost/api/snmp/zxAnGponRmCesOverMplsConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmCesOverMplsConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmCesOverMplsCipIndex": "",
+    "zxAnGponRmCesOverMplsTimeSlotLst": "",
+    "zxAnGponRmCesOverMplsRowStatus": ""
+}
+
+### GPON ONU IP filter table.
+GET http://localhost/api/snmp/zxAnGponRmIpFilterTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmIpFilterTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmIpFiltState": 2,
+    "zxAnGponRmIpFiltMode": 1,
+    "zxAnGponRmIpFiltProto": 2,
+    "zxAnGponRmIpFiltStartSrcIpType": 1,
+    "zxAnGponRmIpFiltStartSrcIpAddr": "",
+    "zxAnGponRmIpFiltEndSrcIpType": 1,
+    "zxAnGponRmIpFiltEndSrcIpAddr": "",
+    "zxAnGponRmIpFiltStartDestIpType": 1,
+    "zxAnGponRmIpFiltStartDestIpAddr": "",
+    "zxAnGponRmIpFiltEndDestIpType": 1,
+    "zxAnGponRmIpFiltEndDestIpAddr": "",
+    "zxAnGponRmIpFiltStartSrcPort": 0,
+    "zxAnGponRmIpFiltEndSrcPort": 0,
+    "zxAnGponRmIpFiltStartDestPort": 0,
+    "zxAnGponRmIpFiltEndDestPort": 0,
+    "zxAnGponRmIpFiltIngressIfType": 1,
+    "zxAnGponRmIpFiltIngressIfId": 0,
+    "zxAnGponRmIpFiltEgressIfType": 1,
+    "zxAnGponRmIpFiltEgressIfId": 0,
+    "zxAnGponRmIpFiltRowStatus": ""
+}
+
+### This table configure WAN to LAN port foward rules.
+GET http://localhost/api/snmp/zxAnGponRmPortFwdTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmPortFwdTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmPortFwdState": 2,
+    "zxAnGponRmPortFwdProto": 1,
+    "zxAnGponRmPortFwdMappingType": 1,
+    "zxAnGponRmPortFwdIpHostId": 1,
+    "zxAnGponRmPortFwdLanHostIpType": 1,
+    "zxAnGponRmPortFwdLanHostIp": "",
+    "zxAnGponRmPortFwdLanHostMac": "",
+    "zxAnGponRmPortFwdLanStartPort": 1,
+    "zxAnGponRmPortFwdLanEndPort": 65535,
+    "zxAnGponRmPortFwdWanStartPort": 1,
+    "zxAnGponRmPortFwdWanEndPort": 65535,
+    "zxAnGponRmPortFwdWanStartIpType": 1,
+    "zxAnGponRmPortFwdWanStartIp": "",
+    "zxAnGponRmPortFwdWanEndIpType": 1,
+    "zxAnGponRmPortFwdWanEndIp": "",
+    "zxAnGponRmPortFwdRowStatus": ""
+}
+
+### The ONU DMZ(Demilitarized Zone) configuration table.
+GET http://localhost/api/snmp/zxAnGponRmDmzConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmDmzConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmDmzEnable": 2,
+    "zxAnGponRmDmzIpHostId": "",
+    "zxAnGponRmDmzLanHostIpType": "",
+    "zxAnGponRmDmzLanHostIp": ""
+}
+
+### ONU access control configuration table.
+GET http://localhost/api/snmp/zxAnGponRmAccessCtrlTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmAccessCtrlTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmAccCtrlEnable": 2,
+    "zxAnGponRmAccCtrlFilterMode": 1,
+    "zxAnGponRmAccCtrlChannelType": 2,
+    "zxAnGponRmAccCtrlIpHostId": 0,
+    "zxAnGponRmAccCtrlProtocols": "{http,ftp,telnet,ssh,https,snmp,tr069",
+    "zxAnGponRmAccCtrlSrcBeginIpType": 1,
+    "zxAnGponRmAccCtrlSrcBeginIpAddr": "0.0.0.0",
+    "zxAnGponRmAccCtrlSrcEndIpType": 1,
+    "zxAnGponRmAccCtrlSrcEndIpAddr": "0.0.0.0",
+    "zxAnGponRmAccCtrlRowStatus": ""
+}
+
+### GPON ONU firewall table.
+GET http://localhost/api/snmp/zxAnGponRmFirewallTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmFirewallTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmFwEnable": 2,
+    "zxAnGponRmFwLevel": 1,
+    "zxAnGponRmFwAntiHackerEnable": 2
+}
+
+### This table contains information of ONU GEM port QoS configuration.<br/><br/>One entry in this table reflects a configuration table defined by<br/><br/>a manager which can be used to configure the ONU GEM port QoS.<br/><br/>If the GEM port mapping mode is cos careless, the following 8<br/><br/>UsPriToTcontQueues must be set with the same value at the same<br/><br/>time when changing the upstream queue.
+GET http://localhost/api/snmp/zxAnGponRmGemPortQosTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmGemPortQosTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmGemUsTrafficPrf": "",
+    "zxAnGponRmGemDsTrafficPrf": "",
+    "zxAnGponRmGemUsPri0ToTcontQueue": "",
+    "zxAnGponRmGemUsPri1ToTcontQueue": "",
+    "zxAnGponRmGemUsPri2ToTcontQueue": "",
+    "zxAnGponRmGemUsPri3ToTcontQueue": "",
+    "zxAnGponRmGemUsPri4ToTcontQueue": "",
+    "zxAnGponRmGemUsPri5ToTcontQueue": "",
+    "zxAnGponRmGemUsPri6ToTcontQueue": "",
+    "zxAnGponRmGemUsPri7ToTcontQueue": "",
+    "zxAnGponRmGemDsUniId": "",
+    "zxAnGponRmGemDsToUniQueue": ""
+}
+
+### This table includes ONU UNI traffic treat information.
+GET http://localhost/api/snmp/zxAnGponRmTrafficLimitTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmTrafficLimitTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmTrffcLimitCir": "",
+    "zxAnGponRmTrffcLimitTreat": 1,
+    "zxAnGponRmTrffcLimitPriLowRate": "",
+    "zxAnGponRmTrffcLimitPriUpRate": "",
+    "zxAnGponRmTrffcLimitRowStatus": ""
+}
+
+### This managed entity is used to configure the Traffic Scheduler of<br/><br/>Ethernet UNI
+GET http://localhost/api/snmp/zxAnGponRmTrafficSchedTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmTrafficSchedTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmTrafficSchedPrfName": ""
+}
+
+### The ONU QoS classification application table.
+GET http://localhost/api/snmp/zxAnGponRmOnuQosTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmOnuQosTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmOnuQosRuleAclPrfName": "",
+    "zxAnGponRmOnuQosRuleDscpRemarkEn": 2,
+    "zxAnGponRmOnuQosRuleDscpRemark": "",
+    "zxAnGponRmOnuQosRuleCosRemarkEn": 2,
+    "zxAnGponRmOnuQosRuleCosRemark": "",
+    "zxAnGponRmOnuQosRuleRowStatus": ""
+}
+
+### The ONU T-CONT queue schedule table.
+GET http://localhost/api/snmp/zxAnGponRmTcontQueueSchedTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmTcontQueueSchedTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmTcontQueueSchedPrfName": ""
+}
+
+### zxAnGponRmVeipTable table.<br/><br/>This managed entity represents the data plane hand-off point in<br/><br/>an ONU to a separate (non-OMCI) management domain.<br/><br/>The virtual Ethernet interface point is managed by OMCI,<br/><br/>and is potentially known to the non-OMCI management domain.<br/><br/>One or more Ethernet traffic flows are present at this boundary.
+GET http://localhost/api/snmp/zxAnGponRmVeipTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmVeipTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmVeipAdminState": 1,
+    "zxAnGponRmVeipInterdomainName": "",
+    "zxAnGponRmVeipIsPortAssigned": 1,
+    "zxAnGponRmVeipProtoType": 2,
+    "zxAnGponRmVeipAssignedPort": "",
+    "zxAnGponRmVeipHostId": ""
+}
+
+### zxAnGponRmTr069AcsTable table.<br/><br/>If functions within the ONU are managed by [BBF TR-69],<br/><br/>this ME allows OMCI configuration of the ACS URL<br/><br/>and related authentication information for an ACS connection<br/><br/>initiated by the ONU.<br/><br/>TR-69 supports other means to discover its ACS,<br/><br/>so not all TR-69-compatible ONUs necessarily support this ME.<br/><br/>Further, even if the ONU does support this ME,<br/><br/>some operators may choose not to use it.
+GET http://localhost/api/snmp/zxAnGponRmTr069AcsTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmTr069AcsTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmTr069AcsAdminState": 2,
+    "zxAnGponRmTr069AcsUri": "",
+    "zxAnGponRmTr069AcsValidation": 1,
+    "zxAnGponRmTr069AcsUsername": "",
+    "zxAnGponRmTr069AcsPassword": "",
+    "zxAnGponRmTr069AcsRealm": "",
+    "zxAnGponRmTr069AssociatedTag": ""
+}
+
+### This managed entity represents the point at the POTS UNI in the<br/><br/>ONU where physical paths terminate and physical path level<br/><br/>functions (e.g., analog telephony, facsimile function) are<br/><br/>performed. One or more instances of this managed entity shall be<br/><br/>contained in an instance of the ONUB-PON or a Circuit Pack managed<br/><br/>entity classified as POTS type.
+GET http://localhost/api/snmp/zxAnGponRmPotsUniTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmPotsUniTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmPotsUniAdminState": "",
+    "zxAnGponRmPotsUniArcEnable": "",
+    "zxAnGponRmPotsUniArcInterval": "",
+    "zxAnGponRmPotsUniImpedance": "",
+    "zxAnGponRmPotsUniTxPath": "",
+    "zxAnGponRmPotsUniRxGain": "",
+    "zxAnGponRmPotsUniTxGain": ""
+}
+
+### The VoIP configuration data managed entity defines the<br/><br/>configuration for VoIP in the ONU. The OLT uses this ME to<br/><br/>discover the VoIP signalling protocols and configuration methods<br/><br/>supported by this ONU. The OLT then uses this ME to select the<br/><br/>desired signalling protocol and configuration method. The entity<br/><br/>is conditionally required for ONUs that offer VoIP services.
+GET http://localhost/api/snmp/zxAnGponRmVoipConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmVoipConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmVoipSignalProtoUsed": 1,
+    "zxAnGponRmVoipConfMethodUsed": 1,
+    "zxAnGponRmVoipDomainName": "",
+    "zxAnGponRmVoipH248EquipName": "",
+    "zxAnGponRmVoipH248RegMode": 1,
+    "zxAnGponRmVoipMgcRegMode": 1,
+    "zxAnGponRmVoipLineName": "",
+    "zxAnGponRmVoipIpAllocMode": 1,
+    "zxAnGponRmVoipSvrAddr": "",
+    "zxAnGponRmVoipSvrValidation": 1,
+    "zxAnGponRmVoipSvrUsername": "",
+    "zxAnGponRmVoipSvrPassword": "",
+    "zxAnGponRmVoipSvrRealm": "",
+    "zxAnGponRmVoipSvrRetrieveFile": ""
+}
+
+### This table includes sip user configuration.
+GET http://localhost/api/snmp/zxAnGponRmSipUserTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmSipUserTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmSipPrf": "",
+    "zxAnGponRmSipUserId": "",
+    "zxAnGponRmSipUsername": "",
+    "zxAnGponRmSipPassword": "",
+    "zxAnGponRmSipDisplayName": "",
+    "zxAnGponRmSipVMailSvrUri": "",
+    "zxAnGponRmSipVMailValidation": 1,
+    "zxAnGponRmSipVMailUsername": "",
+    "zxAnGponRmSipVMailPassword": "",
+    "zxAnGponRmSipVMailRealm": "",
+    "zxAnGponRmSipVMailSubsExpTime": 3600,
+    "zxAnGponRmSipMediaPrf": "",
+    "zxAnGponRmSipSignalCode": "",
+    "zxAnGponRmSipRowStatus": ""
+}
+
+### This table includes mgc user configuration.
+GET http://localhost/api/snmp/zxAnGponRmMgcUserTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmMgcUserTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmMgcPrf": "",
+    "zxAnGponRmMgcMediaPrf": "",
+    "zxAnGponRmMgcSignalCode": "",
+    "zxAnGponRmMgcRowStatus": ""
+}
+
+### VoIP IP configuration table.
+GET http://localhost/api/snmp/zxAnGponRmVoipIpConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmVoipIpConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmVoipIpMode": 1,
+    "zxAnGponRmVoipIpPrf": "",
+    "zxAnGponRmVoipVlanPrf": "",
+    "zxAnGponRmVoipHostId": 0,
+    "zxAnGponRmVoipOnuIdentifier": "",
+    "zxAnGponRmVoipIpAddrType": 1,
+    "zxAnGponRmVoipIpAddr": "",
+    "zxAnGponRmVoipIpAddrPfxLen": "",
+    "zxAnGponRmVoipPppoeMode": 1,
+    "zxAnGponRmVoipPppoeUsername": "",
+    "zxAnGponRmVoipPppoePassword": "",
+    "zxAnGponRmVoipRspPing": 1,
+    "zxAnGponRmVoipRspTraceRoute": 2,
+    "zxAnGponRmVoipRsEnable": 2,
+    "zxAnGponRmVoipOnLinkPrefix": 0,
+    "zxAnGponRmVoipPppoeServiceName": "",
+    "zxAnGponRmVoipIpConfRowStatus": ""
+}
+
+### The VoIP line status managed entity contains line status<br/><br/>information for POTS ports using VoIP service. An ONU that<br/><br/>supports VoIP automatically creates or deletes an instance<br/><br/>of this managed entity upon creation or deletion of a PPTP<br/><br/>POTS UNI.
+GET http://localhost/api/snmp/zxAnGponRmVoipLineStatusTable
+Authorization: Bearer {{token}}
+
+### Configuration of GEM port loopback.
+GET http://localhost/api/snmp/zxAnGponRmGemPortLoopTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmGemPortLoopTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmGemPortLoopEnable": ""
+}
+
+### Uni loop configuration of ONU.
+GET http://localhost/api/snmp/zxAnGponRmUniLoopConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmUniLoopConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmUniLoopDisablePeriod": 60,
+    "zxAnGponRmUniLoopEnablePeriod": 15
+}
+
+### It is table for ONU-G test.
+GET http://localhost/api/snmp/zxAnGponRmOnuTestTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmOnuTestTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmOnuTest": ""
+}
+
+### It is table for ONU POTS UNI test.
+GET http://localhost/api/snmp/zxAnGponRmPotsTestTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmPotsTestTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmPotsTestMode": 1,
+    "zxAnGponRmPotsTestItem": "",
+    "zxAnGponRmPotsTestAction": ""
+}
+
+### It is table for ONU POTS UNI test result.
+GET http://localhost/api/snmp/zxAnGponRmPotsTestResultTable
+Authorization: Bearer {{token}}
+
+### The test action for IP host config data entity class,<br/><br/>including ping and traceroute.
+GET http://localhost/api/snmp/zxAnGponRmIpHostTestTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmIpHostTestTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmIpHostTestItem": "",
+    "zxAnGponRmIpHostTestIpAddrType": "",
+    "zxAnGponRmIpHostTestIpAddr": ""
+}
+
+### Test result for IP host config data entity class,<br/><br/>including ping and traceroute.
+GET http://localhost/api/snmp/zxAnGponRmPingResultTable
+Authorization: Bearer {{token}}
+
+### WAN IP configuration table.
+GET http://localhost/api/snmp/zxAnGponRmWanIpConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmWanIpConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmWanIpMode": 1,
+    "zxAnGponRmWanIpPrf": "",
+    "zxAnGponRmWanVlanPrf": "",
+    "zxAnGponRmWanHostId": 0,
+    "zxAnGponRmWanOnuIdentifier": "",
+    "zxAnGponRmWanIpAddrType": 1,
+    "zxAnGponRmWanIpAddr": "",
+    "zxAnGponRmWanIpAddrPfxLen": "",
+    "zxAnGponRmWanPppoeAuthMode": 1,
+    "zxAnGponRmWanPppoeUsername": "",
+    "zxAnGponRmWanPppoePassword": "",
+    "zxAnGponRmWanRspPing": 1,
+    "zxAnGponRmWanRspTraceRoute": 2,
+    "zxAnGponRmWanRsEnable": 2,
+    "zxAnGponRmWanOnLinkPrefix": 0,
+    "zxAnGponRmWanPppoeServiceName": "",
+    "zxAnGponRmWanIpConfRowStatus": ""
+}
+
+### WAN configuration data table.
+GET http://localhost/api/snmp/zxAnGponRmWanConfDataTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmWanConfDataTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmWanServiceType": "",
+    "zxAnGponRmWanAssociatedIpHostId": 0,
+    "zxAnGponRmWanAssociatedEthUni": 0,
+    "zxAnGponRmWanAssociatedSsid": 0,
+    "zxAnGponRmWanMVid": 65535,
+    "zxAnGponRmWanMtu": 0,
+    "zxAnGponRmWanConfDataRowStatus": ""
+}
+
+### WAN global control table of ONU.
+GET http://localhost/api/snmp/zxAnGponRmWanConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmWanConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmWanMaxUserNum": 254
+}
+
+### ONU SNMP configuration table. The SNMP configuration data provides<br/><br/>a way for the OLT to provision an IP path for a SNMP management<br/><br/>agent and a trap server.
+GET http://localhost/api/snmp/zxAnGponRmSnmpConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponRmSnmpConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponRmSnmpConfProfileName": "",
+    "zxAnGponRmSnmpConfIpHostId": 0,
+    "zxAnGponRmSnmpConfRowStatus": ""
+}
+

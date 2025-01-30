@@ -1,0 +1,77 @@
+### Authentication session table.
+GET http://localhost/api/snmp/zxAnAaaAuthenSessionTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnAaaAuthenSessionTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnAaaAuthenSessionAuthMode": 1,
+    "zxAnAaaAuthenSessionAuthType": 1,
+    "zxAnAaaAuthenSessionRowStatus": ""
+}
+
+### Login mode authentication table.
+GET http://localhost/api/snmp/zxAnAaaAuthenLoginTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnAaaAuthenLoginTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnAaaAuthenLoginLocalPri": 0,
+    "zxAnAaaAuthenLoginTacacsplusPri": 0,
+    "zxAnAaaAuthenLoginRadiusPri": 0,
+    "zxAnAaaAuthenLoginNoAuthMethodEn": 2,
+    "zxAnAaaAuthenLoginTacplusGrpName": "",
+    "zxAnAaaAuthenLoginRadiusGrpId": "",
+    "zxAnAaaAuthenLoginRowStatus": ""
+}
+
+### Authorization session table.
+GET http://localhost/api/snmp/zxAnAaaAuthorSessionTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnAaaAuthorSessionTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnAaaAuthorSessionAuthMode": 1,
+    "zxAnAaaAuthorSessionRowStatus": ""
+}
+
+### Command authorization table.
+GET http://localhost/api/snmp/zxAnAaaCmdAuthorTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnAaaCmdAuthorTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnAaaCmdAuthorTacplusGroupName": "",
+    "zxAnAaaCmdAuthorNoAuthorMethodEn": 2,
+    "zxAnAaaCmdAuthorRowStatus": ""
+}
+
+### Command accounting table.
+GET http://localhost/api/snmp/zxAnAaaCmdAccountTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnAaaCmdAccountTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnAaaCmdAcctTacacsplusGrpName": "",
+    "zxAnAaaCmdAcctRowStatus": ""
+}
+

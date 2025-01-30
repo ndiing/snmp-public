@@ -1,0 +1,38 @@
+### This table represents the switched port<br/>analyzer related parameters.
+GET http://localhost/api/snmp/zxAnSpanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnSpanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnSpanType": 255,
+    "zxAnSpanCpuPktMirrorEnable": 2,
+    "zxAnSpanCpuPktMirrorDirection": "",
+    "zxAnSpanSrcPortList": "",
+    "zxAnSpanSrcDirectionList": "",
+    "zxAnSpanSrcIfIndex1": 0,
+    "zxAnSpanSrcSubIfIndex1": 0,
+    "zxAnSpanSrcIfIndex2": 0,
+    "zxAnSpanSrcSubIfIndex2": 0,
+    "zxAnSpanSrcIfIndex3": 0,
+    "zxAnSpanSrcSubIfIndex3": 0,
+    "zxAnSpanSrcIfIndex4": 0,
+    "zxAnSpanSrcSubIfIndex4": 0,
+    "zxAnSpanSrcDirection": "",
+    "zxAnSpanDstPort": 0,
+    "zxAnSpanVid": 65535,
+    "zxAnSpanCos": 0,
+    "zxAnSpanTpid": 33024,
+    "zxAnSpanDstIpType": 1,
+    "zxAnSpanDstIpAddr": 0,
+    "zxAnSpanSrcIpType": 1,
+    "zxAnSpanSrcIpAddr": 0,
+    "zxAnSpanTtl": 128,
+    "zxAnSpanDscp": 0,
+    "zxAnSpanDstSubIfIndex": 0,
+    "zxAnSpanRowStatus": ""
+}
+

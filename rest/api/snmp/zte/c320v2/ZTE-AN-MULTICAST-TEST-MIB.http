@@ -1,0 +1,18 @@
+### Multicast test interface configuration table.
+GET http://localhost/api/snmp/zxAnMulticastTestIfConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnMulticastTestIfConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnMulticastTestIfUserVid": 0,
+    "zxAnMcastTestIfRowStatus": ""
+}
+
+### Multicast test interface status table.
+GET http://localhost/api/snmp/zxAnMulticastTestIfStatusTable
+Authorization: Bearer {{token}}
+

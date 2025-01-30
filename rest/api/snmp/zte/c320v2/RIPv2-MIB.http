@@ -1,0 +1,37 @@
+### A list of subnets which require separate<br/><br/>status monitoring in RIP.
+GET http://localhost/api/snmp/rip2IfStatTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/rip2IfStatTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "rip2IfStatStatus": ""
+}
+
+### A list of subnets which require separate<br/><br/>configuration in RIP.
+GET http://localhost/api/snmp/rip2IfConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/rip2IfConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "rip2IfConfDomain": 0,
+    "rip2IfConfAuthType": 1,
+    "rip2IfConfAuthKey": 0,
+    "rip2IfConfSend": 3,
+    "rip2IfConfReceive": 3,
+    "rip2IfConfDefaultMetric": "",
+    "rip2IfConfStatus": "",
+    "rip2IfConfSrcAddress": ""
+}
+
+### A list of RIP Peers.
+GET http://localhost/api/snmp/rip2PeerTable
+Authorization: Bearer {{token}}
+

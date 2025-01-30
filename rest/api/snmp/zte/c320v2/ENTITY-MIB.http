@@ -1,0 +1,32 @@
+### This table contains one row per physical entity.  There is<br/><br/>always at least one row for an 'overall' physical entity.
+GET http://localhost/api/snmp/entPhysicalTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/entPhysicalTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "entPhysicalSerialNum": "",
+    "entPhysicalAlias": "",
+    "entPhysicalAssetID": "",
+    "entPhysicalUris": ""
+}
+
+### This table contains one row per logical entity.  For agents<br/><br/>that implement more than one naming scope, at least one<br/><br/>entry must exist.  Agents which instantiate all MIB objects<br/><br/>within a single naming scope are not required to implement<br/><br/>this table.
+GET http://localhost/api/snmp/entLogicalTable
+Authorization: Bearer {{token}}
+
+### This table contains zero or more rows of logical entity to<br/><br/>physical equipment associations.  For each logical entity<br/><br/>known by this agent, there are zero or more mappings to the<br/><br/>physical resources, which are used to realize that logical<br/><br/>entity.<br/><br/><br/><br/>An agent should limit the number and nature of entries in<br/><br/>this table such that only meaningful and non-redundant<br/><br/>information is returned.  For example, in a system that<br/><br/>contains a single power supply, mappings between logical<br/><br/>entities and the power supply are not useful and should not<br/><br/>be included.<br/><br/><br/><br/>Also, only the most appropriate physical component, which is<br/><br/>closest to the root of a particular containment tree, should<br/><br/>be identified in an entLPMapping entry.<br/><br/><br/><br/>For example, suppose a bridge is realized on a particular<br/><br/>module, and all ports on that module are ports on this<br/><br/>bridge.  A mapping between the bridge and the module would<br/><br/>be useful, but additional mappings between the bridge and<br/><br/>each of the ports on that module would be redundant (because<br/><br/>the entPhysicalContainedIn hierarchy can provide the same<br/><br/>information).  On the other hand, if more than one bridge<br/><br/>were utilizing ports on this module, then mappings between<br/><br/>each bridge and the ports it used would be appropriate.<br/><br/><br/><br/>Also, in the case of a single backplane repeater, a mapping<br/><br/>for the backplane to the single repeater entity is not<br/><br/>necessary.
+GET http://localhost/api/snmp/entLPMappingTable
+Authorization: Bearer {{token}}
+
+### This table contains zero or more rows, representing<br/><br/>mappings of logical entity and physical component to<br/><br/>external MIB identifiers.  Each physical port in the system<br/><br/>may be associated with a mapping to an external identifier,<br/><br/>which itself is associated with a particular logical<br/><br/>entity's naming scope.  A 'wildcard' mechanism is provided<br/><br/>to indicate that an identifier is associated with more than<br/><br/>one logical entity.
+GET http://localhost/api/snmp/entAliasMappingTable
+Authorization: Bearer {{token}}
+
+### A table that exposes the container/'containee'<br/><br/>relationships between physical entities.  This table<br/><br/>provides all the information found by constructing the<br/><br/>virtual containment tree for a given entPhysicalTable, but<br/><br/>in a more direct format.<br/><br/><br/><br/>In the event a physical entity is contained by more than one<br/><br/>other physical entity (e.g., double-wide modules), this<br/><br/>table should include these additional mappings, which cannot<br/><br/>be represented in the entPhysicalTable virtual containment<br/><br/>tree.
+GET http://localhost/api/snmp/entPhysicalContainsTable
+Authorization: Bearer {{token}}
+

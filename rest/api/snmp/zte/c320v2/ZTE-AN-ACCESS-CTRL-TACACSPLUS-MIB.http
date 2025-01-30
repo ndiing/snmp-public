@@ -1,0 +1,28 @@
+### Tacacs+ server table.
+GET http://localhost/api/snmp/zxAnTacacsPlusServerTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnTacacsPlusServerTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnTacacsPlusServerKey": "",
+    "zxAnTacacsPlusServerTimeout": 5,
+    "zxAnTacacsPlusServerRowStatus": ""
+}
+
+### Tacacs+ server group table.
+GET http://localhost/api/snmp/zxAnTacacsPlusServerGroupTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnTacacsPlusServerGroupTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnTacacsPlusServerGrpRowStatus": ""
+}
+

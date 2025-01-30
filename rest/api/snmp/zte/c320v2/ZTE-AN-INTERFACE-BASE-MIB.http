@@ -1,0 +1,72 @@
+### This table includes the interface configuration infomation.
+GET http://localhost/api/snmp/zxAnIfConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIfConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIfConfAdminStatus": "",
+    "zxAnIfConfLockStatus": 1
+}
+
+### This table includes the ethernet-like interface configuration.
+GET http://localhost/api/snmp/zxAnEtherIfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnEtherIfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnEtherIfConfDuplexSpeed": "",
+    "zxAnEtherIfConfConnectorType": "",
+    "zxAnEtherIfConfFlowCtrlEnable": "",
+    "zxAnEtherIfConf10GEPhyType": "",
+    "zxAnEtherIfConf10GERefClk": ""
+}
+
+### This table includes the ATM PVC infomation.
+GET http://localhost/api/snmp/zxAnAtmPvcIfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnAtmPvcIfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnAtmPvcIfVpi": "",
+    "zxAnAtmPvcIfVci": "",
+    "zxAnAtmPvcIfEncapsType": "",
+    "zxAnAtmPvcIfAdminStatus": 1,
+    "zxAnAtmPvcIfRowStatus": ""
+}
+
+### This table includes the Mng port  infomation.
+GET http://localhost/api/snmp/zxAnOutOfBandIfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnOutOfBandIfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnOutOfBandIfAdminStatus": "",
+    "zxAnOutOfBandIfDuplexSpeed": "",
+    "zxAnOutOfBandIfTagMode": "",
+    "zxAnOutOfBandIfVid": "",
+    "zxAnOutOfBandIfCos": "",
+    "zxAnOutOfBandIfConfNegotiation": "",
+    "zxAnOutOfBandIfConfDuplex": "",
+    "zxAnOutOfBandIfConfSpeed": ""
+}
+
+### This table includes the inner port status of the line card.
+GET http://localhost/api/snmp/zxAnInnerPortStatusTable
+Authorization: Bearer {{token}}
+

@@ -1,0 +1,41 @@
+### Defines the ping Control Table for providing, via SNMP,<br/>the capability of performing ping operations at<br/>a remote host.  The results of these operations are<br/>stored in the pingResultsTable and the<br/>pingProbeHistoryTable.
+GET http://localhost/api/snmp/pingCtlTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/pingCtlTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "pingCtlTargetAddressType": 0,
+    "pingCtlTargetAddress": 0,
+    "pingCtlDataSize": 0,
+    "pingCtlTimeOut": 3,
+    "pingCtlProbeCount": 1,
+    "pingCtlAdminStatus": 2,
+    "pingCtlDataFill": 0,
+    "pingCtlFrequency": 0,
+    "pingCtlMaxRows": 50,
+    "pingCtlStorageType": 3,
+    "pingCtlTrapGeneration": "{",
+    "pingCtlTrapProbeFailureFilter": 1,
+    "pingCtlTrapTestFailureFilter": 1,
+    "pingCtlType": "pingIcmpEcho",
+    "pingCtlDescr": 0,
+    "pingCtlSourceAddressType": 0,
+    "pingCtlSourceAddress": 0,
+    "pingCtlIfIndex": 0,
+    "pingCtlByPassRouteTable": 2,
+    "pingCtlDSField": 0,
+    "pingCtlRowStatus": ""
+}
+
+### Defines the Ping Results Table for providing<br/>the capability of performing ping operations at<br/>a remote host.  The results of these operations are<br/>stored in the pingResultsTable and the pingProbeHistoryTable.<br/><br/>An entry is added to the pingResultsTable when an<br/>pingCtlEntry is started by successful transition<br/>of its pingCtlAdminStatus object to enabled(1).<br/><br/>If the object pingCtlAdminStatus already has the value<br/>enabled(1), and if the corresponding pingResultsOperStatus<br/>object has the value completed(3), then successfully writing<br/>enabled(1) to object pingCtlAdminStatus re-initializes the<br/>already existing entry in the pingResultsTable.  The values<br/>of objects in the re-initialized entry are the same as the<br/>values of objects in a new entry would be.<br/><br/>An entry is removed from the pingResultsTable when<br/>its corresponding pingCtlEntry is deleted.
+GET http://localhost/api/snmp/pingResultsTable
+Authorization: Bearer {{token}}
+
+### Defines a table for storing the results of ping<br/>operations.  The number of entries in this table is<br/>limited per entry in the pingCtlTable by the value<br/>of the corresponding pingCtlMaxRows object.<br/><br/>An entry in this table is created when the result of<br/>a ping probe is determined.  The initial 2 instance<br/>identifier index values identify the pingCtlEntry<br/>that a probe result (pingProbeHistoryEntry) belongs<br/>to.  An entry is removed from this table when<br/>its corresponding pingCtlEntry is deleted.<br/><br/>An implementation of this MIB will remove the oldest<br/>entry in the pingProbeHistoryTable of the<br/>corresponding entry in the pingCtlTable to allow<br/>the addition of an new entry once the number of rows<br/>in the pingProbeHistoryTable reaches the value<br/>specified by pingCtlMaxRows for the corresponding<br/>entry in the pingCtlTable.
+GET http://localhost/api/snmp/pingProbeHistoryTable
+Authorization: Bearer {{token}}
+

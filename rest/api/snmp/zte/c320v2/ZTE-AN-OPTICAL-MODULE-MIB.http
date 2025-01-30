@@ -1,0 +1,91 @@
+### This table includes the optical module threshold profile.
+GET http://localhost/api/snmp/zxAnOpticalModuleAlmPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnOpticalModuleAlmPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnOpticalRxPwrLowerThresh": "",
+    "zxAnOpticalRxPwrUpperThresh": "",
+    "zxAnOpticalTxPwrLowerThresh": "",
+    "zxAnOpticalTxPwrUpperThresh": "",
+    "zxAnOpticalBiasCurrLowerThresh": "",
+    "zxAnOpticalBiasCurrUpperThresh": "",
+    "zxAnOpticalVoltageLowerThresh": "",
+    "zxAnOpticalVoltageUpperThresh": "",
+    "zxAnOpticalTempLowerThresh": "",
+    "zxAnOpticalTempUpperThresh": "",
+    "zxAnOpticalOfflineTrapEnable": "",
+    "zxAnOpticalModuleConfClass": "",
+    "zxAnOpticalModuleAlmPrfRowStatus": ""
+}
+
+### This table includes the optical module profile configuration.
+GET http://localhost/api/snmp/zxAnOpticalAlmPrfIfConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnOpticalAlmPrfIfConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnOpticalIfAlmPrf": ""
+}
+
+### This table includes the optical module information.
+GET http://localhost/api/snmp/zxAnOpticalModuleInfoTable
+Authorization: Bearer {{token}}
+
+### This table includes the ALS configuration of the optical module.
+GET http://localhost/api/snmp/zxAnOpticalAlsIfConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnOpticalAlsIfConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnOptAlsEnable": 2,
+    "zxAnOptAlsLaserLosDuration": "",
+    "zxAnOptAlsLaserShutdownDuration": 100,
+    "zxAnOptAlsLaserStartUpDuration": 50
+}
+
+### This table includes the optical module configuration.
+GET http://localhost/api/snmp/zxAnOpticalModuleConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnOpticalModuleConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnOpticalModuleConfiguredClass": "",
+    "zxAnOpticalModuleConfProperty": "",
+    "zxAnOpticalModuleConfTechNorms": "",
+    "zxAnOpticalModuleConfRowStatus": ""
+}
+
+### This table includes the optical module channel information.
+GET http://localhost/api/snmp/zxAnOpticalModuleChanInfoTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnOpticalModuleChanInfoTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnOpticalChanLaserSwitch": 1
+}
+
+### This table includes the optical module class value.<br/><br/>NOTE: No recommended to develop this function in EMS.
+GET http://localhost/api/snmp/zxAnOpticalModuleClassValueTable
+Authorization: Bearer {{token}}
+

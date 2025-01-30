@@ -1,0 +1,36 @@
+### This table contains ZESR domain information.
+GET http://localhost/api/snmp/zxAnZesrDomainTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnZesrDomainTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnZesrProtectMstpInstance": "",
+    "zxAnZesrDomainRowStatus": ""
+}
+
+### This table includes the ZESR major ring information.
+GET http://localhost/api/snmp/zxAnZesrMajorTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnZesrMajorTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnZesrMajorNodeType": "",
+    "zxAnZesrMajorPrimaryPort": "",
+    "zxAnZesrMajorScndryPort": "",
+    "zxAnZesrMajorPreforwardTime": 20,
+    "zxAnZesrMajorPreupTime": 2,
+    "zxAnZesrMajorPrimaryLinkHelloEn": 2,
+    "zxAnZesrMajorScndryLinkHelloEn": 2,
+    "zxAnZesrMajorPrimaryTcnSendingEn": 2,
+    "zxAnZesrMajorScndryTcnSendingEn": 2,
+    "zxAnZesrMajorRowStatus": ""
+}
+

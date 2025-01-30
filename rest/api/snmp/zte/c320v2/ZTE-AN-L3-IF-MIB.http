@@ -1,0 +1,78 @@
+### ZTE access node's L3 interface table.
+GET http://localhost/api/snmp/zxAnL3IfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnL3IfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnL3IfMngEnable": 2,
+    "zxAnL3IfArpProxyEnable": 2,
+    "zxAnL3IfArpAgingTime": 600,
+    "zxAnL3IfIpv6Enable": 2,
+    "zxAnL3IfIpv6Mtu": 1500,
+    "zxAnL3IfIpv6DadAttemps": 1,
+    "zxAnL3IfIpv4Mtu": 1500,
+    "zxAnL3IfRowStatus": ""
+}
+
+### ZTE access node's layer 3 interface IPv4 Address table.
+GET http://localhost/api/snmp/zxAnL3IfIpAddressTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnL3IfIpAddressTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnL3IfIpAddressMask": "",
+    "zxAnL3IfIpCategory": "",
+    "zxAnL3IfIpRowStatus": ""
+}
+
+### ZTE access node's layer 3 interface IP address table for IPv6.
+GET http://localhost/api/snmp/zxAnL3IfIpv6IpAddressTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnL3IfIpv6IpAddressTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnL3IfIpv6IpPfxLen": "",
+    "zxAnL3IfIpv6RowStatus": ""
+}
+
+### ZTE access node's out of band IP address table.
+GET http://localhost/api/snmp/zxAnL3IfOutOfBandIpAddrTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnL3IfOutOfBandIpAddrTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnL3IfOutOfBandIpAddr": "",
+    "zxAnL3IfOutOfBandIpAddrMask": ""
+}
+
+### ZTE access node's out of band IPv6 address table.
+GET http://localhost/api/snmp/zxAnL3IfOutOfBandIpv6AddrTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnL3IfOutOfBandIpv6AddrTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnL3IfOutOfBandIpv6AddrType": "",
+    "zxAnL3IfOutOfBandIpv6Addr": "",
+    "zxAnL3IfOutOfBandIpv6PfxLen": ""
+}
+

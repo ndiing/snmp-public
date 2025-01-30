@@ -1,0 +1,215 @@
+### A list of Ethernet statistics entries.
+GET http://localhost/api/snmp/etherStatsTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/etherStatsTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "etherStatsDataSource": "",
+    "etherStatsOwner": "",
+    "etherStatsStatus": ""
+}
+
+### A list of history control entries.
+GET http://localhost/api/snmp/historyControlTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/historyControlTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "historyControlDataSource": "",
+    "historyControlBucketsRequested": 50,
+    "historyControlInterval": 1800,
+    "historyControlOwner": "",
+    "historyControlStatus": ""
+}
+
+### A list of Ethernet history entries.
+GET http://localhost/api/snmp/etherHistoryTable
+Authorization: Bearer {{token}}
+
+### A list of alarm entries.
+GET http://localhost/api/snmp/alarmTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/alarmTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "alarmInterval": "",
+    "alarmVariable": "",
+    "alarmSampleType": "",
+    "alarmStartupAlarm": "",
+    "alarmRisingThreshold": "",
+    "alarmFallingThreshold": "",
+    "alarmRisingEventIndex": "",
+    "alarmFallingEventIndex": "",
+    "alarmOwner": "",
+    "alarmStatus": ""
+}
+
+### A list of host table control entries.
+GET http://localhost/api/snmp/hostControlTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/hostControlTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "hostControlDataSource": "",
+    "hostControlOwner": "",
+    "hostControlStatus": ""
+}
+
+### A list of host entries.
+GET http://localhost/api/snmp/hostTable
+Authorization: Bearer {{token}}
+
+### A list of time-ordered host table entries.
+GET http://localhost/api/snmp/hostTimeTable
+Authorization: Bearer {{token}}
+
+### A list of top N host control entries.
+GET http://localhost/api/snmp/hostTopNControlTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/hostTopNControlTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "hostTopNHostIndex": "",
+    "hostTopNRateBase": "",
+    "hostTopNTimeRemaining": 0,
+    "hostTopNRequestedSize": 10,
+    "hostTopNOwner": "",
+    "hostTopNStatus": ""
+}
+
+### A list of top N host entries.
+GET http://localhost/api/snmp/hostTopNTable
+Authorization: Bearer {{token}}
+
+### A list of information entries for the<br/><br/>traffic matrix on each interface.
+GET http://localhost/api/snmp/matrixControlTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/matrixControlTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "matrixControlDataSource": "",
+    "matrixControlOwner": "",
+    "matrixControlStatus": ""
+}
+
+### A list of traffic matrix entries indexed by<br/><br/>source and destination MAC address.
+GET http://localhost/api/snmp/matrixSDTable
+Authorization: Bearer {{token}}
+
+### A list of traffic matrix entries indexed by<br/><br/>destination and source MAC address.
+GET http://localhost/api/snmp/matrixDSTable
+Authorization: Bearer {{token}}
+
+### A list of packet filter entries.
+GET http://localhost/api/snmp/filterTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/filterTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "filterChannelIndex": "",
+    "filterPktDataOffset": 0,
+    "filterPktData": "",
+    "filterPktDataMask": "",
+    "filterPktDataNotMask": "",
+    "filterPktStatus": "",
+    "filterPktStatusMask": "",
+    "filterPktStatusNotMask": "",
+    "filterOwner": "",
+    "filterStatus": ""
+}
+
+### A list of packet channel entries.
+GET http://localhost/api/snmp/channelTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/channelTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "channelIfIndex": "",
+    "channelAcceptType": "",
+    "channelDataControl": 2,
+    "channelTurnOnEventIndex": "",
+    "channelTurnOffEventIndex": "",
+    "channelEventIndex": "",
+    "channelEventStatus": 1,
+    "channelDescription": "",
+    "channelOwner": "",
+    "channelStatus": ""
+}
+
+### A list of buffers control entries.
+GET http://localhost/api/snmp/bufferControlTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/bufferControlTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "bufferControlChannelIndex": "",
+    "bufferControlFullAction": "",
+    "bufferControlCaptureSliceSize": 100,
+    "bufferControlDownloadSliceSize": 100,
+    "bufferControlDownloadOffset": 0,
+    "bufferControlMaxOctetsRequested": -1,
+    "bufferControlOwner": "",
+    "bufferControlStatus": ""
+}
+
+### A list of packets captured off of a channel.
+GET http://localhost/api/snmp/captureBufferTable
+Authorization: Bearer {{token}}
+
+### A list of events to be generated.
+GET http://localhost/api/snmp/eventTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/eventTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "eventDescription": "",
+    "eventType": "",
+    "eventCommunity": "",
+    "eventOwner": "",
+    "eventStatus": ""
+}
+
+### A list of events that have been logged.
+GET http://localhost/api/snmp/logTable
+Authorization: Bearer {{token}}
+

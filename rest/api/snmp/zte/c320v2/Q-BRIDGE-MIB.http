@@ -1,0 +1,157 @@
+### A table that contains configuration and control<br/>information for each Filtering Database currently<br/>operating on this device.  Entries in this table appear<br/>automatically when VLANs are assigned FDB IDs in the<br/>dot1qVlanCurrentTable.
+GET http://localhost/api/snmp/dot1qFdbTable
+Authorization: Bearer {{token}}
+
+### A table that contains information about unicast entries<br/>for which the device has forwarding and/or filtering<br/>information.  This information is used by the<br/>transparent bridging function in determining how to<br/>propagate a received frame.
+GET http://localhost/api/snmp/dot1qTpFdbTable
+Authorization: Bearer {{token}}
+
+### A table containing filtering information for VLANs<br/>configured into the bridge by (local or network)<br/>management, or learned dynamically, specifying the set of<br/>ports to which frames received on a VLAN for this FDB<br/>and containing a specific Group destination address are<br/>allowed to be forwarded.
+GET http://localhost/api/snmp/dot1qTpGroupTable
+Authorization: Bearer {{token}}
+
+### A table containing forwarding information for each<br/>VLAN, specifying the set of ports to which forwarding of<br/>all multicasts applies, configured statically by<br/>management or dynamically by GMRP.  An entry appears in<br/>this table for all VLANs that are currently<br/>instantiated.
+GET http://localhost/api/snmp/dot1qForwardAllTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/dot1qForwardAllTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "dot1qForwardAllStaticPorts": "",
+    "dot1qForwardAllForbiddenPorts": ""
+}
+
+### A table containing forwarding information for each<br/>VLAN, specifying the set of ports to which forwarding of<br/>multicast group-addressed frames for which no<br/>more specific forwarding information applies.  This is<br/>configured statically by management and determined<br/>dynamically by GMRP.  An entry appears in this table for<br/>all VLANs that are currently instantiated.
+GET http://localhost/api/snmp/dot1qForwardUnregisteredTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/dot1qForwardUnregisteredTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "dot1qForwardUnregisteredStaticPorts": "",
+    "dot1qForwardUnregisteredForbiddenPorts": ""
+}
+
+### A table containing filtering information for Unicast<br/>MAC addresses for each Filtering Database, configured<br/>into the device by (local or network) management<br/>specifying the set of ports to which frames received<br/>from specific ports and containing specific unicast<br/>destination addresses are allowed to be forwarded.  A<br/>value of zero in this table (as the port number from<br/>which frames with a specific destination address are<br/>received) is used to specify all ports for which there<br/>is no specific entry in this table for that particular<br/>destination address.  Entries are valid for unicast<br/>addresses only.
+GET http://localhost/api/snmp/dot1qStaticUnicastTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/dot1qStaticUnicastTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "dot1qStaticUnicastAllowedToGoTo": "",
+    "dot1qStaticUnicastStatus": 3
+}
+
+### A table containing filtering information for Multicast<br/>and Broadcast MAC addresses for each VLAN, configured<br/>into the device by (local or network) management<br/>specifying the set of ports to which frames received<br/>from specific ports and containing specific Multicast<br/>and Broadcast destination addresses are allowed to be<br/>forwarded.  A value of zero in this table (as the port<br/>number from which frames with a specific destination<br/>address are received) is used to specify all ports for<br/>which there is no specific entry in this table for that<br/>particular destination address.  Entries are valid for<br/>Multicast and Broadcast addresses only.
+GET http://localhost/api/snmp/dot1qStaticMulticastTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/dot1qStaticMulticastTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "dot1qStaticMulticastStaticEgressPorts": "",
+    "dot1qStaticMulticastForbiddenEgressPorts": "",
+    "dot1qStaticMulticastStatus": 3
+}
+
+### A table containing current configuration information<br/>for each VLAN currently configured into the device by<br/>(local or network) management, or dynamically created<br/>as a result of GVRP requests received.
+GET http://localhost/api/snmp/dot1qVlanCurrentTable
+Authorization: Bearer {{token}}
+
+### A table containing static configuration information for<br/>each VLAN configured into the device by (local or<br/>network) management.  All entries are permanent and will<br/>be restored after the device is reset.
+GET http://localhost/api/snmp/dot1qVlanStaticTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/dot1qVlanStaticTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "dot1qVlanStaticName": "",
+    "dot1qVlanStaticEgressPorts": "",
+    "dot1qVlanForbiddenEgressPorts": "",
+    "dot1qVlanStaticUntaggedPorts": "",
+    "dot1qVlanStaticRowStatus": ""
+}
+
+### A table containing per-port control and status<br/>information for VLAN configuration in the device.
+GET http://localhost/api/snmp/dot1qPortVlanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/dot1qPortVlanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "dot1qPvid": 1,
+    "dot1qPortAcceptableFrameTypes": 1,
+    "dot1qPortIngressFiltering": 2,
+    "dot1qPortGvrpStatus": 1,
+    "dot1qPortRestrictedVlanRegistration": 2
+}
+
+### A table containing per-port, per-VLAN statistics for<br/>traffic received.  Separate objects are provided for both the<br/>most-significant and least-significant bits of statistics<br/>counters for ports that are associated with this transparent<br/>bridge.  The most-significant bit objects are only required on<br/>high-capacity interfaces, as defined in the conformance clauses<br/>for these objects.  This mechanism is provided as a way to read<br/>64-bit counters for agents that support only SNMPv1.<br/><br/>Note that the reporting of most-significant and least-<br/>significant counter bits separately runs the risk of missing<br/>an overflow of the lower bits in the interval between sampling.<br/>The manager must be aware of this possibility, even within the<br/>same varbindlist, when interpreting the results of a request or<br/>asynchronous notification.
+GET http://localhost/api/snmp/dot1qPortVlanStatisticsTable
+Authorization: Bearer {{token}}
+
+### A table containing per-port, per-VLAN statistics for<br/>traffic on high-capacity interfaces.
+GET http://localhost/api/snmp/dot1qPortVlanHCStatisticsTable
+Authorization: Bearer {{token}}
+
+### A table containing learning constraints for sets of<br/>Shared and Independent VLANs.
+GET http://localhost/api/snmp/dot1qLearningConstraintsTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/dot1qLearningConstraintsTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "dot1qConstraintType": "",
+    "dot1qConstraintStatus": ""
+}
+
+### A table that contains mappings from Protocol<br/>Templates to Protocol Group Identifiers used for<br/>Port-and-Protocol-based VLAN Classification.
+GET http://localhost/api/snmp/dot1vProtocolGroupTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/dot1vProtocolGroupTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "dot1vProtocolGroupId": "",
+    "dot1vProtocolGroupRowStatus": ""
+}
+
+### A table that contains VID sets used for<br/>Port-and-Protocol-based VLAN Classification.
+GET http://localhost/api/snmp/dot1vProtocolPortTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/dot1vProtocolPortTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "dot1vProtocolPortGroupVid": "",
+    "dot1vProtocolPortRowStatus": ""
+}
+

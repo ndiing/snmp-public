@@ -1,0 +1,19 @@
+### PPPoE filter profile table.<br/><br/>This table contains information of the PPPoE filter profile<br/><br/>configuration. One entry in this table reflects a PPPoE profile<br/><br/>defined by a manager.
+GET http://localhost/api/snmp/zxAnPppoeFilterProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPppoeFilterProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPppoeFilterEnable": 2,
+    "zxAnPppoeFilterMaxSessionNum": 512,
+    "zxAnPppoeFilterEchoTimeout": 180
+}
+
+### PPPoE filter informationtable.
+GET http://localhost/api/snmp/zxAnPppoeFilterInfoTable
+Authorization: Bearer {{token}}
+

@@ -1,0 +1,13 @@
+### NE resource configuration changes logging table,<br/><br/>to logging the Sequence Number of configuration changes from<br/><br/>SNMP or CLI interfaces.<br/><br/><br/><br/>It is a sychronization mechanisum for configuration<br/><br/>between the manager and agent.<br/><br/><br/><br/>If the mis sychronization occured, that is<br/><br/>zxAnCurrResourceConfigSequenceNo in the manager and the agent are<br/><br/>different.<br/><br/><br/><br/>The manager can find which changes has missed through retrieve the<br/><br/>rows where the zxAnConfSyncResSequenceNo is between<br/><br/>zxAnCurrResourceConfigSequenceNo in the manager and the one in the<br/><br/>agent.
+GET http://localhost/api/snmp/zxAnConfSyncResChangedLogTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnConfSyncResChangedLogTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnConfSyncResRowstatus": ""
+}
+

@@ -1,0 +1,48 @@
+### The 15-minute interval performance data table of the optical<br/><br/>module.
+GET http://localhost/api/snmp/zxAnOpticalCurr15MinPerfTable
+Authorization: Bearer {{token}}
+
+### The 1-day interval performance data table of the optical mudule.
+GET http://localhost/api/snmp/zxAnOpticalCurr1DayPerfTable
+Authorization: Bearer {{token}}
+
+### The 15-minute interval historical performance data table of the<br/><br/>optical module.
+GET http://localhost/api/snmp/zxAnOpticalHis15MinPerfTable
+Authorization: Bearer {{token}}
+
+### The 1-day interval historical performance data table of the optical<br/><br/>module.
+GET http://localhost/api/snmp/zxAnOpticalHis1DayPerfTable
+Authorization: Bearer {{token}}
+
+### The minutes interval performance data table of the optical<br/><br/>module.
+GET http://localhost/api/snmp/zxAnOpticalCurrMinPerfTable
+Authorization: Bearer {{token}}
+
+### The minutes interval historical performance data table of the<br/><br/>optical module.
+GET http://localhost/api/snmp/zxAnOpticalHisMinPerfTable
+Authorization: Bearer {{token}}
+
+### The 15-minute interval performance data table of the optical<br/><br/>module channel.
+GET http://localhost/api/snmp/zxAnOptChanCurr15MinPerfTable
+Authorization: Bearer {{token}}
+
+### The 1-day interval performance data table of the optical module<br/><br/>channel.
+GET http://localhost/api/snmp/zxAnOptChanCurr1DayPerfTable
+Authorization: Bearer {{token}}
+
+### The 15-minute interval historical performance data table of the<br/><br/>optical module channel.
+GET http://localhost/api/snmp/zxAnOptChanHis15MinPerfTable
+Authorization: Bearer {{token}}
+
+### The 1-day interval historical performance data table of the<br/><br/>optical module channel.
+GET http://localhost/api/snmp/zxAnOptChanHis1DayPerfTable
+Authorization: Bearer {{token}}
+
+### The minutes interval performance data table of the optical<br/><br/>module channel.
+GET http://localhost/api/snmp/zxAnOptChanCurrMinPerfTable
+Authorization: Bearer {{token}}
+
+### The minutes interval historical performance data table of the<br/><br/>optical module channel.
+GET http://localhost/api/snmp/zxAnOptChanHisMinPerfTable
+Authorization: Bearer {{token}}
+

@@ -1,0 +1,54 @@
+### This table contains information of the service port unicast<br/><br/>profile configuration. One entry in this table reflects a<br/><br/>profile defined by a manager which can be used to<br/><br/>configure the service port.<br/><br/><br/><br/>When a manager wants to set the allowed ethernet type with an<br/><br/>user define ethernet type, it must comply with the multi-variables<br/><br/>usage rule that all the mib variables related to the fuction must<br/><br/>be in one snmp set operation, the variables are all mandatory.<br/><br/><br/><br/>- mandatoty:<br/><br/>zxAnSrvPortUCastAllowedEthType,<br/><br/>zxAnSrvPortUCastUserDefEthType.
+GET http://localhost/api/snmp/zxAnSrvPortUnicastPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnSrvPortUnicastPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnSrvPortUCastAllowedEthType": 1,
+    "zxAnSrvPortUCastUserDefEthType": "",
+    "zxAnSrvPortUCastSecurityPrf": "",
+    "zxAnSrvPortUCastPrfAdminStatus": 1,
+    "zxAnSrvPortUCastRowStatus": ""
+}
+
+### This table contains information of the service port iptv<br/><br/>profile configuration. One entry in this table reflects a<br/><br/>profile defined by a manager which can be used to<br/><br/>configure the service port.<br/><br/><br/><br/>When a manager wants to set the allowed ethernet type with an<br/><br/>user define ethernet type, it must comply with the multi-variables<br/><br/>usage rule that all the mib variables related to the fuction must<br/><br/>be in one snmp set operation, the variables are all mandatory.<br/><br/><br/><br/>- mandatoty:<br/><br/>zxAnSrvPortIptvAllowedEthType,<br/><br/>zxAnSrvPortIptvUserDefEthType.
+GET http://localhost/api/snmp/zxAnSrvPortIptvPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnSrvPortIptvPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnSrvPortIptvAllowedEthType": 1,
+    "zxAnSrvPortIptvUserDefEthType": "",
+    "zxAnSrvPortIptvSecurityPrf": "",
+    "zxAnSrvPortIptvMVid": "",
+    "zxAnSrvPortIptvPrfAdminStatus": 1,
+    "zxAnSrvPortIptvRowStatus": ""
+}
+
+### This table contains information of the service port security<br/><br/>profile configuration. One entry in this table reflects a<br/><br/>profile defined by a manager which can be used to<br/><br/>configure the service port.
+GET http://localhost/api/snmp/zxAnSrvPortSecurityPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnSrvPortSecurityPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnSrvPortSecPortIdFormat": 1,
+    "zxAnSrvPortSecDhcpV4L2RAEnable": 2,
+    "zxAnSrvPortSecDhcpV6L2RAEnable": 2,
+    "zxAnSrvPortSecNdpLioEnable": 2,
+    "zxAnSrvPortSecPppoeIAEnable": 2,
+    "zxAnSrvPortSecPrfAdminStatus": 1,
+    "zxAnSrvPortSecRowStatus": ""
+}
+

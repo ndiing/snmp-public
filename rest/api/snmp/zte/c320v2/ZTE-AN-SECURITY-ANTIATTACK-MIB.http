@@ -1,0 +1,26 @@
+### Source MAC white list table.
+GET http://localhost/api/snmp/zxAnSecAASrcMacWhiteListTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnSecAASrcMacWhiteListTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnSecAASrcMacWLRowStatus": ""
+}
+
+### Source IP white list table.
+GET http://localhost/api/snmp/zxAnSecAASrcIpWhiteListTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnSecAASrcIpWhiteListTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnSecAASrcIpWLRowStatus": ""
+}
+

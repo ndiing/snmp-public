@@ -1,0 +1,23 @@
+### This table contains the index to the Ethernet tables<br/><br/>associated with this Ethernet PW, the VLAN configuration,<br/><br/>and the VLAN mode.
+GET http://localhost/api/snmp/pwEnetTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/pwEnetTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "pwEnetPwVlan": "",
+    "pwEnetVlanMode": 2,
+    "pwEnetPortVlan": 4095,
+    "pwEnetPortIfIndex": "",
+    "pwEnetPwIfIndex": 0,
+    "pwEnetRowStatus": "",
+    "pwEnetStorageType": 3
+}
+
+### This table contains statistical counters specific for<br/><br/>Ethernet PW.
+GET http://localhost/api/snmp/pwEnetStatsTable
+Authorization: Bearer {{token}}
+

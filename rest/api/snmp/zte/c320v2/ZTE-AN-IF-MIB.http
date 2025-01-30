@@ -1,0 +1,13 @@
+### This table includes the general interface infomation.
+GET http://localhost/api/snmp/zxAnIfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnSubIfAlias": ""
+}
+

@@ -1,0 +1,14 @@
+### This table includes the SHDSL span information.
+GET http://localhost/api/snmp/zxAnShdslSpanConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnShdslSpanConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnShdslSpanConfDataPathType": 1,
+    "zxAnShdslSpanConfPam": 4
+}
+

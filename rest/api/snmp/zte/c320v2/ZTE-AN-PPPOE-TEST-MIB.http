@@ -1,0 +1,23 @@
+### PPPoE test interface configuration table.
+GET http://localhost/api/snmp/zxAnPppoeTestIfConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPppoeTestIfConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPppoeTestIfUserVid": 0,
+    "zxAnPppoeTestIfPppUserName": "",
+    "zxAnPppoeTestIfPppPassword": "",
+    "zxAnPppoeTestIfAuthMode": 1,
+    "zxAnPppoeTestIfTimeout": 60,
+    "zxAnPppoeTestIfUserMacAddress": "",
+    "zxAnIfPppoeTestIfRowStatus": ""
+}
+
+### PPPoE test interface status table.
+GET http://localhost/api/snmp/zxAnPppoeTestIfStatusTable
+Authorization: Bearer {{token}}
+

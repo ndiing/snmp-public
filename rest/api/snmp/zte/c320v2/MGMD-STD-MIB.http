@@ -1,0 +1,58 @@
+### The (conceptual) table listing the interfaces on which<br/><br/>IGMP or MLD is enabled.
+GET http://localhost/api/snmp/mgmdHostInterfaceTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/mgmdHostInterfaceTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "mgmdHostInterfaceStatus": "",
+    "mgmdHostInterfaceVersion": 3,
+    "mgmdHostInterfaceVersion3Robustness": 2
+}
+
+### The (conceptual) table listing the interfaces on which<br/><br/>IGMP or MLD is enabled.
+GET http://localhost/api/snmp/mgmdRouterInterfaceTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/mgmdRouterInterfaceTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "mgmdRouterInterfaceQueryInterval": 125,
+    "mgmdRouterInterfaceStatus": "",
+    "mgmdRouterInterfaceVersion": 3,
+    "mgmdRouterInterfaceQueryMaxResponseTime": 100,
+    "mgmdRouterInterfaceProxyIfIndex": 0,
+    "mgmdRouterInterfaceRobustness": 2,
+    "mgmdRouterInterfaceLastMemberQueryInterval": 10
+}
+
+### The (conceptual) table listing the IP multicast groups for<br/><br/>which the host is a member on a particular interface.
+GET http://localhost/api/snmp/mgmdHostCacheTable
+Authorization: Bearer {{token}}
+
+### The (conceptual) table listing the IP multicast groups for<br/><br/>which there are members on a particular router interface.
+GET http://localhost/api/snmp/mgmdRouterCacheTable
+Authorization: Bearer {{token}}
+
+### The (conceptual) table listing the interfaces that are<br/><br/>members of a particular group.  This is an inverse lookup<br/><br/>table for entries in the mgmdHostCacheTable.
+GET http://localhost/api/snmp/mgmdInverseHostCacheTable
+Authorization: Bearer {{token}}
+
+### The (conceptual) table listing the interfaces that<br/><br/>are members of a particular group.  This is an inverse<br/><br/>lookup table for entries in the mgmdRouterCacheTable.
+GET http://localhost/api/snmp/mgmdInverseRouterCacheTable
+Authorization: Bearer {{token}}
+
+### The (conceptual) table listing the Source List entries<br/><br/>corresponding to each interface and multicast group pair<br/><br/>on a host.
+GET http://localhost/api/snmp/mgmdHostSrcListTable
+Authorization: Bearer {{token}}
+
+### The (conceptual) table listing the Source List entries<br/><br/>corresponding to each interface and multicast group pair on<br/><br/>a Router.
+GET http://localhost/api/snmp/mgmdRouterSrcListTable
+Authorization: Bearer {{token}}
+

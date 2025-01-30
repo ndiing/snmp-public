@@ -1,0 +1,156 @@
+### Virtual private LAN services(VPLS) service table.
+GET http://localhost/api/snmp/zxAnL2vpnVplsServiceTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnL2vpnVplsServiceTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnL2vpnVplsLocalMembIsolateEn": 2,
+    "zxAnL2vpnVplsRmMemberIsolateEn": 2,
+    "zxAnL2vpnVplsServiceMtu": 1518,
+    "zxAnL2vpnVplsMaxLearnedMacs": 32768,
+    "zxAnL2vpnVplsMacLearnEnable": 1,
+    "zxAnL2vpnVplsMacAgingTime": 180,
+    "zxAnL2vpnVplsMacWithdrawEnable": 1,
+    "zxAnL2vpnVplsProtoMacCtrlPolicy": 1,
+    "zxAnL2vpnVplsProtoLacpPolicy": 1,
+    "zxAnL2vpnVplsProtoPortAuthPolicy": 1,
+    "zxAnL2vpnVplsProtoGarpPolicy": 1,
+    "zxAnL2vpnVplsProtoStpPolicy": 1,
+    "zxAnL2vpnVplsProtoMCastPolicy": 1,
+    "zxAnL2vpnVplsServiceMtuAdvrtEn": 2,
+    "zxAnL2vpnVplsInstDesc": 0,
+    "zxAnL2vpnVplsMacWithdrawTrustEn": 2,
+    "zxAnL2vpnVplsMacFailFwdPolicy": 1,
+    "zxAnL2vpnVplsBCastRateLimit": 0,
+    "zxAnL2vpnVplsMCastRateLimit": 0,
+    "zxAnL2vpnVplsUCastRateLimit": 0,
+    "zxAnL2vpnVplsRowStatus": ""
+}
+
+### VPLS static MAC table.
+GET http://localhost/api/snmp/zxAnL2vpnStaticMacTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnL2vpnStaticMacTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnL2vpnStaticMacCipId": 0,
+    "zxAnL2vpnStaticMacPwName": 0,
+    "zxAnL2vpnStaticMacRowStatus": ""
+}
+
+### VPLS filter MAC table.
+GET http://localhost/api/snmp/zxAnL2vpnFilterMacTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnL2vpnFilterMacTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnL2vpnFilterMacCipId": 0,
+    "zxAnL2vpnFilterMacPwName": 0,
+    "zxAnL2vpnFilterMacRowStatus": ""
+}
+
+### VPLS dynamic MAC table.
+GET http://localhost/api/snmp/zxAnL2vpnDynamicMacTable
+Authorization: Bearer {{token}}
+
+### VLL service table.
+GET http://localhost/api/snmp/zxAnL2vpnVllServiceTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnL2vpnVllServiceTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnL2vpnVllServiceType": 1,
+    "zxAnL2vpnVllServiceMtu": 1518,
+    "zxAnL2vpnVllMacWithdrawEnable": 1,
+    "zxAnL2vpnVllRowStatus": ""
+}
+
+### Multi-segment pseudowire(MSPW) service table.
+GET http://localhost/api/snmp/zxAnL2vpnMspwServiceTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnL2vpnMspwServiceTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnL2vpnMspwRowStatus": ""
+}
+
+### The virtual circuit(VC) table.
+GET http://localhost/api/snmp/zxAnL2vpnVcTable
+Authorization: Bearer {{token}}
+
+### Attachment circuit(AC) table.
+GET http://localhost/api/snmp/zxAnL2vpnAcConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnL2vpnAcConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnL2vpnAcFlowStatsEnable": 2,
+    "zxAnL2vpnAcOamMappingEnable": 1,
+    "zxAnL2vpnAcTrackSessionType": 1,
+    "zxAnL2vpnAcTrackSessionName": 0,
+    "zxAnL2vpnAcCfmMdId": 0,
+    "zxAnL2vpnAcCfmMaId": 0,
+    "zxAnL2vpnAcCfmMepId": 0,
+    "zxAnL2vpnAcMacLearnEnable": 1,
+    "zxAnL2vpnAcTreeRole": 1
+}
+
+### PW relation table.<br/><br/>This table provides an association between a<br/><br/>L2VPN service and the corresponding Pseudo<br/><br/>Wires. A service can have more than one PW association.<br/><br/>PW is defined in the zxAnPwConfTable.
+GET http://localhost/api/snmp/zxAnL2vpnInstPwRelationTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnL2vpnInstPwRelationTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnL2vpnPwRelationBindingType": 2,
+    "zxAnL2vpnPwRelationRowStatus": ""
+}
+
+### The AC relation table.<br/><br/>This table provides an association between a<br/><br/>L2VPN service and the corresponding CIP.<br/><br/>CIP is defined in the zxAnCipTable
+GET http://localhost/api/snmp/zxAnL2vpnInstAcRelationTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnL2vpnInstAcRelationTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnL2vpnAcRelationRowStatus": ""
+}
+
+### L2VPN PW flow statistic table.
+GET http://localhost/api/snmp/zxAnL2vpnPwStatsTable
+Authorization: Bearer {{token}}
+
+### L2VPN AC flow statistic information table.
+GET http://localhost/api/snmp/zxAnL2vpnAcStatsTable
+Authorization: Bearer {{token}}
+

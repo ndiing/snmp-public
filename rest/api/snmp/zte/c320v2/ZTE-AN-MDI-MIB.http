@@ -1,0 +1,51 @@
+### Media delivery index monitoring table.
+GET http://localhost/api/snmp/zxAnMdiMonitorConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnMdiMonitorConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnMdiMonitorIfIndex": "",
+    "zxAnMdiMonitorSubIfIndex": "",
+    "zxAnMdiMonitorVlan": "",
+    "zxAnMdiMonitorDestIpAddressType": "",
+    "zxAnMdiMonitorDestIpAddress": "",
+    "zxAnMdiMonitorBitRate": "",
+    "zxAnMdiMonitorCalculatePeriod": 1000,
+    "zxAnMdiMonitorStatisticPeriod": 10,
+    "zxAnMdiMonitorDuration": 15,
+    "zxAnMdiMonitorVideoPrf": "",
+    "zxAnMdiMonitorSrcIpAddressType": "",
+    "zxAnMdiMonitorSrcIpAddress": "",
+    "zxAnMdiMonitorDirection": 1,
+    "zxAnMdiMonitorDestUdpPort": "",
+    "zxAnMdiMonitorGemPort": "",
+    "zxAnMdiMonitorRowStatus": ""
+}
+
+### MDI monitoring statistic table.
+GET http://localhost/api/snmp/zxAnMdiMonitorStatsTable
+Authorization: Bearer {{token}}
+
+### MDI monitoring video profile table.
+GET http://localhost/api/snmp/zxAnMdiMonitorVideoPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnMdiMonitorVideoPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnMdiMonVideoCodec": 1,
+    "zxAnMdiMonVideoResolution": 1,
+    "zxAnMdiMonVideoFrameRate": 250,
+    "zxAnMdiMonVideoPlc": 1,
+    "zxAnMdiMonVideoRtpPayloadType": 33,
+    "zxAnMdiMonVideoBufferDuration": 10,
+    "zxAnMdiMonVideoPrfRowStatus": ""
+}
+

@@ -1,0 +1,22 @@
+### The table of users configured in the SNMP engine's<br/><br/>Local Configuration Datastore (LCD).
+GET http://localhost/api/snmp/usmUserTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/usmUserTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "usmUserCloneFrom": "",
+    "usmUserAuthProtocol": "usmHMACMD5AuthProtocol",
+    "usmUserAuthKeyChange": 0,
+    "usmUserOwnAuthKeyChange": 0,
+    "usmUserPrivProtocol": "usmNoPrivProtocol",
+    "usmUserPrivKeyChange": 0,
+    "usmUserOwnPrivKeyChange": 0,
+    "usmUserPublic": 0,
+    "usmUserStorageType": 3,
+    "usmUserStatus": ""
+}
+

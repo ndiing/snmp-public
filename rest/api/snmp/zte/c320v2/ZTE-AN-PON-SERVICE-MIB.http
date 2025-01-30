@@ -1,0 +1,309 @@
+### Configuration of PON ONU service profile.
+GET http://localhost/api/snmp/zxAnPonSrvOnuProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPonSrvOnuProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPonSrvOnuPrfOperation": "",
+    "zxAnPonSrvOnuPrfRowStatus": ""
+}
+
+### Configuration of PON ONU with the service profile.
+GET http://localhost/api/snmp/zxAnPonSrvOnuProfileConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPonSrvOnuProfileConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPonSrvOnuPrfConfPrfName": "",
+    "zxAnPonSrvOnuPrfConfRowStatus": ""
+}
+
+### PON ONU separation profile table.
+GET http://localhost/api/snmp/zxAnPonSrvOnuSepProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPonSrvOnuSepProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPonSrvOnuSepPrfOperation": "",
+    "zxAnPonSrvOnuSepPrfRowStatus": ""
+}
+
+### PON ONU separation profile configuration table.
+GET http://localhost/api/snmp/zxAnPonSrvOnuSepPrfConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPonSrvOnuSepPrfConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPonSrvOnuSepPrfConfPrfName": "",
+    "zxAnPonSrvOnuSepPrfConfRowStatus": ""
+}
+
+### PON IP pool to be bound to a PON port.
+GET http://localhost/api/snmp/zxAnPonSrvIpPoolTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPonSrvIpPoolTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPonSrvIpPoolStartAddrType": 1,
+    "zxAnPonSrvIpPoolStartAddr": "",
+    "zxAnPonSrvIpPoolEndAddrType": 1,
+    "zxAnPonSrvIpPoolEndAddr": "",
+    "zxAnPonSrvIpPoolAddrPfxLen": "",
+    "zxAnPonSrvIpPoolPri": 0,
+    "zxAnPonSrvIpPoolCVid": 1,
+    "zxAnPonSrvIpPoolSVid": 0,
+    "zxAnPonSrvIpPoolNetAddrType": 1,
+    "zxAnPonSrvIpPoolNetAddr": "",
+    "zxAnPonSrvIpPoolNetAddrPfxLen": "",
+    "zxAnPonSrvIpPoolNetGatewayType": 1,
+    "zxAnPonSrvIpPoolNetGateway": "",
+    "zxAnPonSrvIpPoolRowStatus": ""
+}
+
+### PON port associated with IP pool.
+GET http://localhost/api/snmp/zxAnPonSrvIpPoolBindTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPonSrvIpPoolBindTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPonSrvBindIpPoolName": "",
+    "zxAnPonSrvBindIpPoolRowStatus": ""
+}
+
+### PON ONU IP operation table
+GET http://localhost/api/snmp/zxAnPonSrvOnuIpOperTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPonSrvOnuIpOperTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPonSrvOnuIpOperAction": ""
+}
+
+### ONU inband management channel IP configuration.
+GET http://localhost/api/snmp/zxAnPonSrvOnuMgmtIpTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPonSrvOnuMgmtIpTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPonOnuMgmtIpAddrType": 1,
+    "zxAnPonOnuMgmtIpAddr": "",
+    "zxAnPonOnuMgmtIpPfxLen": "",
+    "zxAnPonOnuMgmtPri": "",
+    "zxAnPonOnuMgmtCVid": "",
+    "zxAnPonOnuMgmtSVid": "",
+    "zxAnPonOnuMgmtNetAddrType": 1,
+    "zxAnPonOnuMgmtNetAddr": "",
+    "zxAnPonOnuMgmtNetPfxLen": "",
+    "zxAnPonOnuMgmtNetGatewayAddrType": 1,
+    "zxAnPonOnuMgmtNetGatewayAddr": "",
+    "zxAnPonOnuMgmtIpEnable": ""
+}
+
+### ONU inband management channel IP configuration table.<br/><br/>This table is only used for C600 serial.
+GET http://localhost/api/snmp/zxAnPonSrvOnuMgmtIp2Table
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPonSrvOnuMgmtIp2Table/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPonSrvOnuMgmtIp2IpAddrType": 1,
+    "zxAnPonSrvOnuMgmtIp2IpAddr": "",
+    "zxAnPonSrvOnuMgmtIp2IpPfxLen": "",
+    "zxAnPonSrvOnuMgmtIp2Pri": "",
+    "zxAnPonSrvOnuMgmtIp2CVid": "",
+    "zxAnPonSrvOnuMgmtIp2SVid": "",
+    "zxAnPonSrvOnuMgmtIp2NetAddrType": 1,
+    "zxAnPonSrvOnuMgmtIp2NetAddr": "",
+    "zxAnPonSrvOnuMgmtIp2NetPfxLen": "",
+    "zxAnPonSrvOnuMgmtIp2NetGwIpType": 1,
+    "zxAnPonSrvOnuMgmtIp2NetGwIp": "",
+    "zxAnPonSrvOnuMgmtIp2RowStatus": ""
+}
+
+### PON interface ONU blacklist table.
+GET http://localhost/api/snmp/zxAnPonSrvOnuBlacklistTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPonSrvOnuBlacklistTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPonSrvOnuBlacklistAuthInfo": "",
+    "zxAnPonSrvOnuBlacklistRowStatus": ""
+}
+
+### xPON interface onu ID resource table
+GET http://localhost/api/snmp/zxAnPonSrvOnuIdResTable
+Authorization: Bearer {{token}}
+
+### PON whitelist table.
+GET http://localhost/api/snmp/zxAnPonSrvWhitelistTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPonSrvWhitelistTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPonSrvWhitelistRowStatus": ""
+}
+
+### PON plug and play configuration table.<br/><br/>The index of this table is PON port.
+GET http://localhost/api/snmp/zxAnPonSrvPlugAndPlayTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPonSrvPlugAndPlayTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPonSrvPlugAndPlayEnable": 2,
+    "zxAnPonSrvPnpReplacingEnable": 2
+}
+
+### ONU plug and play configuration table.
+GET http://localhost/api/snmp/zxAnPonSrvOnuPlugAndPlayTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPonSrvOnuPlugAndPlayTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPonSrvOnuPnpReplacingEnable": 1
+}
+
+### PON port DBA(dynamic bandwidth allocation) information table.<br/><br/>The 'IfType' of ifIndex supports 1(physical interface)<br/><br/>and 5(PON channel).
+GET http://localhost/api/snmp/zxAnPonSrvDbaInfoTable
+Authorization: Bearer {{token}}
+
+### The OLT PON port table.
+GET http://localhost/api/snmp/zxAnPonSrvPonPortTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPonSrvPonPortTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPonSrvPonPFiberMinDistance": "",
+    "zxAnPonSrvPonPFiberMaxDistance": "",
+    "zxAnPonSrvPonPUnConfOnuAgingTime": 300,
+    "zxAnPonSrvPonPReset": ""
+}
+
+### The OLT PON port channel table.
+GET http://localhost/api/snmp/zxAnPonSrvChannelTable
+Authorization: Bearer {{token}}
+
+### ONU alarm jitter table. This table is only used for the<br/><br/>zxAnPonSrvOnuAlmJitterOccurred trap.
+GET http://localhost/api/snmp/zxAnPonSrvOnuAlmJitterTable
+Authorization: Bearer {{token}}
+
+### The PON unconfigured ONU table.<br/><br/>This table is only supported by C600 serial.
+GET http://localhost/api/snmp/zxAnPonSrvUnconfOnuTable
+Authorization: Bearer {{token}}
+
+### The VND configuration table.
+GET http://localhost/api/snmp/zxAnPonSrvVndConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPonSrvVndConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPonSrvVndSupportedEponOnus": "",
+    "zxAnPonSrvVndSupportedGponOnus": "",
+    "zxAnPonSrvVndBandwidthWeight": ""
+}
+
+### The VND PON port configuration table.
+GET http://localhost/api/snmp/zxAnPonSrvVndPortConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPonSrvVndPortConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPonSrvVndPortMaxBandwidth": "",
+    "zxAnPonSrvVndPortSupportedOnus": "",
+    "zxAnPonSrvVndPortAvailableOnuIds": ""
+}
+
+### The VND binding ONU rule table.
+GET http://localhost/api/snmp/zxAnPonSrvVndBindOnuRuleTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPonSrvVndBindOnuRuleTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPonSrvVndBindOnuType": "",
+    "zxAnPonSrvVndBindOnuStartMac": "",
+    "zxAnPonSrvVndBindOnuEndMac": "",
+    "zxAnPonSrvVndBindOnuSn": "",
+    "zxAnPonSrvVndBindOnuRegExpRule": "",
+    "zxAnPonSrvVndBindOnuLoid": "",
+    "zxAnPonSrvVndBindOnuRowStatus": ""
+}
+
+### XPon License message table.
+GET http://localhost/api/snmp/zxAnPonSrvLicenseTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPonSrvLicenseTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPonSrvLicenseMsg": ""
+}
+

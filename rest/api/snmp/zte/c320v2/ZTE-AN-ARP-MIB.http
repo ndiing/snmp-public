@@ -1,0 +1,95 @@
+### This table provides the mechanism to control ARP anti-spoofing<br/><br/>per VLAN. When a VLAN is created in a device supporting this<br/><br/>table, a corresponding entry of this table will be added.<br/><br/><br/><br/>If the VLAN number on which ARP anti-spoofing at this interface<br/><br/>and ARP anti-spoofing at this interface are both enabled,the<br/><br/>ARP requests or ARP responses whose IP-MAC assignment is not<br/><br/>compliant, and for which there is therefore no matching entry<br/><br/>in the DHCP Snooping Table, they must be rejected.
+GET http://localhost/api/snmp/zxAnArpAntiSpoofingVlanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnArpAntiSpoofingVlanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnArpAntiSpoofingVlanDirection": 3,
+    "zxAnArpAntiSpoofingVlanRowStatus": ""
+}
+
+### This table provides the mechanism to enable or disable<br/><br/>ARP anti-spoofing at each user port capable of this feature.<br/><br/><br/><br/>If ARP anti-spoofing at this interface and the VLAN number on<br/><br/>which ARP anti-spoofing at this interface are both enabled,the<br/><br/>ARP requests or ARP responses whose IP-MAC assignment is not<br/><br/>compliant, and for which there is therefore no matching entry<br/><br/>in the DHCP Snooping Table, they must be rejected.<br/><br/><br/><br/>The interfaces for which this feature must be applicable are:<br/><br/>IfType = Physical Interface(1)<br/><br/>SubIfType = ONU service port sub-interface(3)
+GET http://localhost/api/snmp/zxAnArpAntiSpoofingIfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnArpAntiSpoofingIfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnArpAntiSpoofingIfEnable": "",
+    "zxAnArpAntiSpoofingIfLogEnable": ""
+}
+
+### This table provides the mechanism to control ARP reply agent<br/><br/>per VLAN. When a VLAN is created in a device supporting this<br/><br/>table, a corresponding entry of this table will be added.<br/><br/><br/><br/>If the VLAN number on which ARP reply agent at this interface<br/><br/>and ARP reply agent at this interface are both enabled, The<br/><br/>ARP Reply Agent must respond to ARP queries received from<br/><br/>the network.
+GET http://localhost/api/snmp/zxAnArpReplyAgentVlanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnArpReplyAgentVlanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnArpReplyAgentVlanRowStatus": ""
+}
+
+### This table provides the mechanism to enable or disable<br/><br/>ARP reply agent at each user port capable of this feature.<br/><br/><br/><br/>If ARP reply agent at this interface and the VLAN number on<br/><br/>which ARP reply agent at this interface are both enabled, The<br/><br/>ARP Reply Agent must respond to ARP queries received from the<br/><br/>network.<br/><br/><br/><br/>The interfaces for which this feature must be applicable are:<br/><br/>IfType = Physical Interface(1)<br/><br/>SubIfType = ONU service port sub-interface(3)
+GET http://localhost/api/snmp/zxAnArpReplyAgentIfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnArpReplyAgentIfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnArpReplyAgentIfEnable": ""
+}
+
+### This table provides the mechanism to enable or disable ARP<br/><br/>broadcast-packet-suppress at each bridge port capable of this<br/><br/>feature.<br/><br/><br/><br/>If ARP broadcast-packet-suppress at this bridge port is enabled<br/><br/>, unsolicited and any manipulated ARP replies from the customer<br/><br/>direction shall be suppressed.<br/><br/><br/><br/>The interfaces for which this feature must be applicable are:<br/><br/>IfType = Physical Interface(1)<br/><br/>SubIfType = ONU vport sub-interface(2)
+GET http://localhost/api/snmp/zxAnArpBcastSuppressIfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnArpBcastSuppressIfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnArpBcastSuppressIfEnable": ""
+}
+
+### This table indicates MFF configuration.MFF is MAC-Forced<br/><br/>Forwarding.This table supports 32 VLAN's configuration of the<br/><br/>MFF gateway,and 8 gateway configuration per vlan.In a same VLAN,<br/><br/>IP or MAC of the gateway should not be duplicated.
+GET http://localhost/api/snmp/zxAnArpMffTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnArpMffTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnArpMffGatewayIpMask": "",
+    "zxAnArpMffGatewayMac": 0,
+    "zxAnArpMffRowStatus": ""
+}
+
+### ARP filter table based on VLAN.<br/><br/>If the VLAN item is set, the NE will dispatch the ARP<br/><br/>packets downward by check the out port strictly.
+GET http://localhost/api/snmp/zxAnArpFilterVlanConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnArpFilterVlanConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnArpFilterVlanConfRowStatus": ""
+}
+

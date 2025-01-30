@@ -1,0 +1,47 @@
+### The reservable attributes of the system's  in-<br/>terfaces.
+GET http://localhost/api/snmp/intSrvIfAttribTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/intSrvIfAttribTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "intSrvIfAttribMaxAllocatedBits": "",
+    "intSrvIfAttribPropagationDelay": 0,
+    "intSrvIfAttribStatus": ""
+}
+
+### Information describing the reserved flows  us-<br/>ing the system's interfaces.
+GET http://localhost/api/snmp/intSrvFlowTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/intSrvFlowTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "intSrvFlowType": "",
+    "intSrvFlowOwner": "",
+    "intSrvFlowDestAddr": "",
+    "intSrvFlowSenderAddr": "",
+    "intSrvFlowDestAddrLength": "",
+    "intSrvFlowSenderAddrLength": "",
+    "intSrvFlowProtocol": "",
+    "intSrvFlowDestPort": "",
+    "intSrvFlowPort": "",
+    "intSrvFlowInterface": "",
+    "intSrvFlowIfAddr": "",
+    "intSrvFlowRate": "",
+    "intSrvFlowBurst": "",
+    "intSrvFlowWeight": "",
+    "intSrvFlowQueue": "",
+    "intSrvFlowMinTU": "",
+    "intSrvFlowMaxTU": "",
+    "intSrvFlowDiscard": 2,
+    "intSrvFlowOrder": "",
+    "intSrvFlowStatus": ""
+}
+

@@ -1,0 +1,39 @@
+### DoS attack table.
+GET http://localhost/api/snmp/zxAnSecDosAttackTable
+Authorization: Bearer {{token}}
+
+### CPU packet limit configuration table.
+GET http://localhost/api/snmp/zxAnSecCpuPktLimitConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnSecCpuPktLimitConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnSecCpuPktLimitConfPktLmtEn": 1,
+    "zxAnSecCpuPktLimitConfRateLimit": 256
+}
+
+### CPU packet limit statistic table.
+GET http://localhost/api/snmp/zxAnSecCpuPktLimitStatsTable
+Authorization: Bearer {{token}}
+
+### CPU queue packet limit configuration table.
+GET http://localhost/api/snmp/zxAnSecCpuQueuePktLmtConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnSecCpuQueuePktLmtConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnSecCpuQueuePktLmtMaxRate": 256
+}
+
+### CPU queue packet limit configuration table.
+GET http://localhost/api/snmp/zxAnSecCpuQueuePktLmtStatsTable
+Authorization: Bearer {{token}}
+

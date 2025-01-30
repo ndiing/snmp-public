@@ -1,0 +1,30 @@
+### Summer time table.
+GET http://localhost/api/snmp/zxr10SummerTimeTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxr10SummerTimeTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxr10SummerTimeName": "",
+    "zxr10SummerTimeType": "",
+    "zxr10SummerTimeStartYear": "",
+    "zxr10SummerTimeStartMonth": "",
+    "zxr10SummerTimeDateMode": "",
+    "zxr10SummerTimeStartDate": "",
+    "zxr10SummerTimeStartWeek": "",
+    "zxr10SummerTimeStartWeekDay": "",
+    "zxr10SummerTimeStartTime": "",
+    "zxr10SummerTimeEndYear": "",
+    "zxr10SummerTimeEndMonth": "",
+    "zxr10SummerTimeEndDate": "",
+    "zxr10SummerTimeEndWeek": "",
+    "zxr10SummerTimeEndWeekDay": "",
+    "zxr10SummerTimeEndTime": "",
+    "zxr10SummerTimeOffset": "",
+    "zxr10SummerTimeOffsetSign": 1,
+    "zxr10SummerTimeRowStatus": ""
+}
+

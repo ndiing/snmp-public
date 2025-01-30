@@ -1,0 +1,77 @@
+### the description of zxr10 shelf information,<br/><br/>it is a list of shelf entries.
+GET http://localhost/api/snmp/zxr10ShelfTable
+Authorization: Bearer {{token}}
+
+### the description of zxr10 card information,<br/><br/>it is a list of card entries.
+GET http://localhost/api/snmp/zxr10SlotBoardTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxr10SlotBoardTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxr10SlotReload": "",
+    "zxr10SlotReloadDesc": ""
+}
+
+### the description of zxr10 subcard information,<br/><br/>it is a list of subcard entries.
+GET http://localhost/api/snmp/zxr10SlotSubCardTable
+Authorization: Bearer {{token}}
+
+### the description of zxr10 subcard information,<br/><br/>it is a list of subcard entries.
+GET http://localhost/api/snmp/zxr10SlotSpecialSubCardTable
+Authorization: Bearer {{token}}
+
+### the description of port information<br/><br/>in the zxr10 card .<br/><br/>it is a list of port entries.
+GET http://localhost/api/snmp/zxr10PortTable
+Authorization: Bearer {{token}}
+
+### the description of SpecialPort information<br/><br/>in the zxr10 card .<br/><br/>it is a list of SpecialPort entries.
+GET http://localhost/api/snmp/zxr10SpecialPortTable
+Authorization: Bearer {{token}}
+
+### the description of ShelfAbility information<br/><br/>in the zxr10 card .<br/><br/>it is a list of ShelfAbility entries.
+GET http://localhost/api/snmp/zxr10ShelfAbilityTable
+Authorization: Bearer {{token}}
+
+### the description of peripheral information<br/><br/>in the zxr10 card .<br/><br/>it is a list of peripheral entries.
+GET http://localhost/api/snmp/zxr10PeripheralTable
+Authorization: Bearer {{token}}
+
+### the description of zxr10 light information,<br/><br/>it is a list of light entries.
+GET http://localhost/api/snmp/zxr10LightTable
+Authorization: Bearer {{token}}
+
+### the description of zxr10 sf link information,<br/><br/>it is a list of SFLink entries.<br/><br/>Only the equipment supported cluster use this table.
+GET http://localhost/api/snmp/zxr10SFLinkTable
+Authorization: Bearer {{token}}
+
+### the description of zxr10 ES link information,<br/><br/>it is a list of ESLink entries.<br/><br/>Only the equipment supported cluster use this table.
+GET http://localhost/api/snmp/zxr10ESLinkTable
+Authorization: Bearer {{token}}
+
+### the description of zxr10 ethernet physical port information,<br/><br/>it is a list of EthPhyPort entries.
+GET http://localhost/api/snmp/zxr10EthPhyPortTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxr10EthPhyPortTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxr10EthPhyPortNegotiation": "",
+    "zxr10EthPhyPortDuplex": "",
+    "zxr10EthPhyPortSpeed": ""
+}
+
+### the description of zxr10 virtual subcard information,<br/><br/>it is a list of virtual subcard entries.
+GET http://localhost/api/snmp/zxr10VirtualSubcardTable
+Authorization: Bearer {{token}}
+
+### the description of zxr10 card's function type information,<br/><br/>it is a list of card entries.
+GET http://localhost/api/snmp/zxr10SlotFuncTable
+Authorization: Bearer {{token}}
+

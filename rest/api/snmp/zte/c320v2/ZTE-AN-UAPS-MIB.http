@@ -1,0 +1,52 @@
+### This table includes the managed objects of the UAPS group.
+GET http://localhost/api/snmp/zxAnUapsGroupTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnUapsGroupTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnUapsGroupName": "",
+    "zxAnUapsPrimaryPortList": "",
+    "zxAnUapsSecondaryPortList": "",
+    "zxAnUapsAutoFailbackEnable": 2,
+    "zxAnUapsNextHopIpType": "",
+    "zxAnUapsNextHopIp": "",
+    "zxAnUapsIpLinkType": 1,
+    "zxAnUapsIpLinkCheckRetries": 5,
+    "zxAnUapsIpLinkCheckTimeout": 3,
+    "zxAnUapsSwapMode": 1,
+    "zxAnUapsForceSwap": "",
+    "zxAnUapsProtectionTime": 300,
+    "zxAnUapsSlavePortTxOptShutdown": 2,
+    "zxAnUapsGroupRowStatus": ""
+}
+
+### This table includes the primary ports of the UAPS group.
+GET http://localhost/api/snmp/zxAnUapsPrimaryPortsTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnUapsPrimaryPortsTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnUapsPrimaryPortsRowStatus": ""
+}
+
+### This table includes the secondary ports of the UAPS group.
+GET http://localhost/api/snmp/zxAnUapsSecondaryPortsTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnUapsSecondaryPortsTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnUapsSecondaryPortsRowStatus": ""
+}
+

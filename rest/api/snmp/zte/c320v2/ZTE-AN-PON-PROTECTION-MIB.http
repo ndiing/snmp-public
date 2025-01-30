@@ -1,0 +1,68 @@
+### Protection group configuration.
+GET http://localhost/api/snmp/zxAnPonProtectGroupTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPonProtectGroupTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPonProtectGroupName": "",
+    "zxAnPonProtectGroupWorkPort": "",
+    "zxAnPonProtectGroupProtectPort": "",
+    "zxAnPonProtectType": "",
+    "zxAnPonProtectSubType": "",
+    "zxAnPonProtectSystemMode": "",
+    "zxAnPonProtectPeerAddrType": 1,
+    "zxAnPonProtectPeerIpAddr": "",
+    "zxAnPonProtectSpanNeEncryptKey": 0,
+    "zxAnPonProtectGroupRowStatus": ""
+}
+
+### Protection group property.
+GET http://localhost/api/snmp/zxAnPonProtectGroupPropTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPonProtectGroupPropTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPonProtectRevertMode": "",
+    "zxAnPonProtectWtrInterval": ""
+}
+
+### Protection action.
+GET http://localhost/api/snmp/zxAnPonProtectActionTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPonProtectActionTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPonProtectSwitchCommand": "",
+    "zxAnPonProtectSwitchOnuList": ""
+}
+
+### PON protection group extended property table,<br/><br/>only for type C and type D protection.
+GET http://localhost/api/snmp/zxAnPonProtectGroupExtPropTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPonProtectGroupExtPropTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPonProtectChannelOnuId": "",
+    "zxAnPonProtectExtPropRowStatus": ""
+}
+
+### ONU link status information table.
+GET http://localhost/api/snmp/zxAnPonProtectLinkStatusTable
+Authorization: Bearer {{token}}
+

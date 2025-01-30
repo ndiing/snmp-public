@@ -1,0 +1,165 @@
+
+
+
+
+
+
+
+### /api/snmp/token
+POST http://localhost/api/snmp/token
+Content-Type: application/json
+
+{
+    "target": "103.28.148.202",
+    "community": "private",
+    "type": "zte/c320v2",
+    "options": {
+        "port": 1661
+    }
+}
+
+###
+POST http://localhost/api/snmp/token
+Content-Type: application/json
+
+{
+    "target": "103.28.148.202",
+    "community": "adsl",
+    "type": "fiberhome/an5516-04b"
+}
+
+
+
+
+
+
+
+### /api/snmp/find/:path
+
+###
+GET http://localhost/api/snmp/find/1.3.6.1.4.1.3902.1082.500.10.2.2.5.1.7
+Authorization: Bearer {{token}}
+
+###
+GET http://localhost/api/snmp/find/iso.org.dod.internet.private.enterprises.zte.zxAccessNode.zxAnPon.zxAnGponSrvMib.zxAnGponSrvObjects.zxAnGponSrvOnuObjects.zxAnGponSrvOnuMgmtTable.zxAnGponSrvOnuMgmtEntry.zxAnGponOnuMgmtDesc
+Authorization: Bearer {{token}}
+
+###
+GET http://localhost/api/snmp/find/zxAnGponSrvUnConfOnuTable
+Authorization: Bearer {{token}}
+
+
+
+
+
+
+
+### /api/snmp/find-closest/:path
+
+###
+GET http://localhost/api/snmp/find-closest/1.3.6.1.4.1.3902.1082.500.10.2.2.5.1.7
+Authorization: Bearer {{token}}
+
+###
+GET http://localhost/api/snmp/find-closest/1.3.6.1.4.1.3902.1082.500.10.2.2.5.1.7.285278721.1
+Authorization: Bearer {{token}}
+
+
+
+
+
+### /api/snmp/get/:path/:id
+GET http://localhost/api/snmp/get/:path/:id
+Authorization: Bearer {{token}}
+
+
+
+
+
+
+
+### /api/snmp/get-next/:path
+GET http://localhost/api/snmp/get-next/:path
+Authorization: Bearer {{token}}
+
+
+
+
+
+
+
+### /api/snmp/set/:path/:id
+POST http://localhost/api/snmp/set/:path/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+
+}
+
+
+
+
+
+
+
+### /api/snmp/subtree/:path
+GET http://localhost/api/snmp/subtree/system
+Authorization: Bearer {{token}}
+
+
+
+
+
+
+
+### /api/snmp/table/:path
+GET http://localhost/api/snmp/table/zxAnGponSrvUnConfOnuTable
+Authorization: Bearer {{token}}
+
+
+
+
+
+
+
+### /api/snmp/walk/:path
+GET http://localhost/api/snmp/walk/:path
+Authorization: Bearer {{token}}
+
+
+
+
+
+
+
+### /api/snmp/:path/:id
+GET http://localhost/api/snmp/:path/:id
+Authorization: Bearer {{token}}
+
+
+
+
+
+
+
+### /api/snmp/:path
+GET http://localhost/api/snmp/system
+Authorization: Bearer {{token}}
+
+
+
+
+
+
+
+### /api/snmp/:path/:id
+POST http://localhost/api/snmp/system/0
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "sysContact": "DefaultsysContact1",
+    "sysName": "Admin",
+    "sysLocation": "DefaultsysLocation1"
+}

@@ -1,0 +1,316 @@
+### This table contains CosToCos mapping information. One entry in<br/><br/>this table reflects a profile defined which can be used to<br/><br/>configure an interface.
+GET http://localhost/api/snmp/zxAnQosCosToCosPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosCosToCosPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosCosToCos": "",
+    "zxAnQosCosToCosPrfRowStatus": ""
+}
+
+### This table contains DSCP remark information.<br/><br/>One entry in this table reflects a profile defined which can be<br/><br/>used to configure an interface.
+GET http://localhost/api/snmp/zxAnQosDscpToDscpPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosDscpToDscpPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosDscpToDscp": "",
+    "zxAnQosDscpToDscpPrfRowStatus": ""
+}
+
+### This table contains DSCP to CoS mapping information.<br/><br/>One entry in this table reflects a profile defined which can be<br/><br/>used to configure an interface.
+GET http://localhost/api/snmp/zxAnQosDscpToCosPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosDscpToCosPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosDscpToCos": "",
+    "zxAnQosDscpToCosPrfRowStatus": ""
+}
+
+### This table contains DSCP to drop precedence mapping information.<br/><br/>One entry in this table reflects a profile defined which can be<br/><br/>used to configure an interface.
+GET http://localhost/api/snmp/zxAnQosDscpToDropPrecedePrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosDscpToDropPrecedePrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosDscpToDropPrecedence": "",
+    "zxAnQosDscpToDropPrePrfRowStatus": ""
+}
+
+### This table contains MPLS TC value to CoS mapping information.<br/><br/>One entry in this table reflects a profile defined which can be<br/><br/>used to configure an interface.
+GET http://localhost/api/snmp/zxAnQosMplsTcToCosPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosMplsTcToCosPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosMplsTcToCos": "",
+    "zxAnQosMplsTcToCosPrfRowStatus": ""
+}
+
+### This table contains CoS to MPLS TC mapping<br/><br/>information. One entry in this table reflects a profile defined<br/><br/>which can be used to configure an interface.
+GET http://localhost/api/snmp/zxAnQosCosToMplsTcPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosCosToMplsTcPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosCosToMplsTc": "",
+    "zxAnQosCosToMplsTcPrfRowStatus": ""
+}
+
+### This table contains CoS to drop precedence mapping information.<br/><br/>One entry in this table reflects a profile defined which can be<br/><br/>used to configure an interface.
+GET http://localhost/api/snmp/zxAnQosCosToDropPrecedePrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosCosToDropPrecedePrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosCosToDropPrecedence": "",
+    "zxAnQosCosToDropPrePrfRowStatus": ""
+}
+
+### This table contains CoS to DEI (Drop Eligible Indicator) mapping<br/><br/>information.<br/><br/>One entry in this table reflects a profile defined which can be<br/><br/>used to configure an interface.
+GET http://localhost/api/snmp/zxAnQosCosToDeiPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosCosToDeiPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosCosToDeiMappingType": "",
+    "zxAnQosCosToDei": "",
+    "zxAnQosCosToDeiRowStatus": ""
+}
+
+### This table contains configuration parameters for queues.<br/><br/>One entry in this table reflects a profile defined which can be<br/><br/>used to configure an interface.
+GET http://localhost/api/snmp/zxAnQosQueueBlockPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosQueueBlockPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosQueueBlockQNumber": "",
+    "zxAnQosQueueWeight": "",
+    "zxAnQosQueueDepth": "",
+    "zxAnQosQueueMaxRate": "",
+    "zxAnQosQueueMinRate": "",
+    "zxAnQosQueueBlockRowStatus": ""
+}
+
+### This table contains configuration parameters for enqueue profile.<br/><br/>One entry in this table reflects a profile defined which can be<br/><br/>used to configure an interface.
+GET http://localhost/api/snmp/zxAnQosQueueMapPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosQueueMapPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosQueueMapQNumber": 8,
+    "zxAnQosQueueMapMode": "",
+    "zxAnQosCosToQueue": 1020304050607,
+    "zxAnQosPvcToQueue": 10203040506070000,
+    "zxAnQosQueueMapRowStatus": ""
+}
+
+### This table contains configuration parameters for queue-shaping.<br/><br/>One entry in this table reflects a profile defined which can be<br/><br/>used to configure a certain channel.
+GET http://localhost/api/snmp/zxAnQosQueueShapingPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosQueueShapingPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosQueueShapingQNumber": 8,
+    "zxAnQosQueueShapingCirList": "",
+    "zxAnQosQueueShapingCbsList": "",
+    "zxAnQosQueueShapingEirList": "",
+    "zxAnQosQueueShapingEbsList": "",
+    "zxAnQosQueueShapingCMList": "",
+    "zxAnQosQueueShapingCFList": "",
+    "zxAnQosQueueShapingRowStatus": ""
+}
+
+### WRED configuration profile table.
+GET http://localhost/api/snmp/zxAnQosQueueWredPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosQueueWredPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosQueueWredRedLowThresh": "",
+    "zxAnQosQueueWredRedMaxProb": "",
+    "zxAnQosQueueWredYellowLowThresh": "",
+    "zxAnQosQueueWredYellowMaxProb": "",
+    "zxAnQosQueueWredGreenLowThresh": "",
+    "zxAnQosQueueWredGreenMaxProb": "",
+    "zxAnQosQueueWredPrfRowStatus": ""
+}
+
+### Pon WRED configuration profile table.
+GET http://localhost/api/snmp/zxAnQosQueueWredIIPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosQueueWredIIPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosQueueWredIIYellowLThresh": "",
+    "zxAnQosQueueWredIIYellowHThresh": "",
+    "zxAnQosQueueWredIIYellowMaxProb": "",
+    "zxAnQosQueueWredIIGreenLThresh": "",
+    "zxAnQosQueueWredIIGreenHThresh": "",
+    "zxAnQosQueueWredIIGreenMaxProb": "",
+    "zxAnQosQueueWredIIPrfRowStatus": ""
+}
+
+### QoS queue configuration profile table.
+GET http://localhost/api/snmp/zxAnQosQueueConfPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosQueueConfPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosQueueConfDepthRatio": "",
+    "zxAnQosQueueConfPrfRowStatus": ""
+}
+
+### WRED configuration table.
+GET http://localhost/api/snmp/zxAnQosQueueWredConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosQueueWredConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosQWredConfYellowLThresh": 100,
+    "zxAnQosQWredConfYellowHThresh": 100,
+    "zxAnQosQWredConfYellowMaxProb": 50,
+    "zxAnQosQWredConfGreenLThresh": 100,
+    "zxAnQosQWredConfGreenHThresh": 100,
+    "zxAnQosQWredConfGreenMaxProb": 50
+}
+
+### This table contains configuration data for interface, include<br/><br/>ethernet interface, GPON OLT and ONU interface.
+GET http://localhost/api/snmp/zxAnQosIfConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosIfConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosIfRateLimit": 0,
+    "zxAnQosIfBucketSize": 0,
+    "zxAnQosIfTrustMode": 1,
+    "zxAnQosIfCosFilter": 2,
+    "zxAnQosIfDefaultCos": 0,
+    "zxAnQosIfCtagDefaultCos": 0,
+    "zxAnQosIfCosToCosPrf": "",
+    "zxAnQosIfDscpToDscpPrf": "",
+    "zxAnQosIfDscpToCosPrf": "",
+    "zxAnQosIfDscpToDropPrecedencePrf": "",
+    "zxAnQosIfEgressDefaultCos": 0,
+    "zxAnQosIfCosOverride": 2,
+    "zxAnQosIfCtagCosOverride": 2,
+    "zxAnQosIfEgressCosOverride": 2,
+    "zxAnQosIfCtagCosToCosPrf": "",
+    "zxAnQosIfCtagDscpToCosPrf": "",
+    "zxAnQosIfEgressCosToCosPrf": "",
+    "zxAnQosIfEgressDscpToCosPrf": "",
+    "zxAnQosIfQueueBlockPrf": "",
+    "zxAnQosIfQueueMapPrf": "",
+    "zxAnQosIfIngressRateLimit": 0,
+    "zxAnQosIfIngressBucketSize": 0,
+    "zxAnQosIfQueueWredPrf": "",
+    "zxAnQosIfCosToDropPrecedencePrf": "",
+    "zxAnQosIfQueueWredIIPrf": "",
+    "zxAnQosIfQueueConfPrf": ""
+}
+
+### Interfaces queue statistics table.
+GET http://localhost/api/snmp/zxAnQosIfQueueStatsTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosIfQueueStatsTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosIfQueueStatsReset": ""
+}
+
+### A table containing VLAN CoS to DEI (Drop Eligible Indicator)<br/><br/>profile information.
+GET http://localhost/api/snmp/zxAnQosVlanCosToDeiPrfConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosVlanCosToDeiPrfConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosVlanCosToDeiPrfConfName": "",
+    "zxAnQosVlanCosToDeiPrfRowStatus": ""
+}
+
+### A table containing VLAN egress DEI information.
+GET http://localhost/api/snmp/zxAnQosVlanEgressDeiTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnQosVlanEgressDeiTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnQosVlanEgressDeiRowStatus": ""
+}
+

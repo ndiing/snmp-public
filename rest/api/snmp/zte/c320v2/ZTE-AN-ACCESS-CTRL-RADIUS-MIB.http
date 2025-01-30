@@ -1,0 +1,83 @@
+### Radius authentication group table.
+GET http://localhost/api/snmp/zxAnRadiusAuthenGroupTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnRadiusAuthenGroupTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnRadiusAuthenGrpAlgorithm": 1,
+    "zxAnRadiusAuthenGrpDeadTime": 5,
+    "zxAnRadiusAuthenGrpRetries": 3,
+    "zxAnRadiusAuthenGrpTimeout": 3,
+    "zxAnRadiusAuthenGrpAlias": "",
+    "zxAnRadiusAuthenGrpClassAsCarEn": 2,
+    "zxAnRadiusAuthenGrpVendorEn": 1,
+    "zxAnRadiusAuthenGrpUsrNameFormat": 2,
+    "zxAnRadiusAuthenGroupNasIpType": "",
+    "zxAnRadiusAuthenGroupNasIpAddr": "",
+    "zxAnRadiusAuthenGroupRowStatus": ""
+}
+
+### RADIUS authentication server group table.
+GET http://localhost/api/snmp/zxAnRadiusAuthenSvrGroupTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnRadiusAuthenSvrGroupTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnRadiusAuthenSvrGrpSvrIpType": "",
+    "zxAnRadiusAuthenSvrGrpSvrIpAddr": "",
+    "zxAnRadiusAuthenSvrGrpSvrPort": 1812,
+    "zxAnRadiusAuthenSvrGrpSvrKey": "",
+    "zxAnRadiusAuthenSvrGrpSvrMaster": 2,
+    "zxAnRadiusAuthenSvrGrpRowStatus": ""
+}
+
+### RADIUS accounting group table.
+GET http://localhost/api/snmp/zxAnRadiusAccountGroupTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnRadiusAccountGroupTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnRadiusAcctGrpAlgorithm": 1,
+    "zxAnRadiusAcctGrpDeadTime": 5,
+    "zxAnRadiusAcctGrpBufferEn": 2,
+    "zxAnRadiusAcctGrpRetries": 3,
+    "zxAnRadiusAcctGrpTimeout": 3,
+    "zxAnRadiusAcctGrpAlias": "",
+    "zxAnRadiusAcctGrpVendorEnable": 1,
+    "zxAnRadiusAcctGrpUsrNameFormat": 1,
+    "zxAnRadiusAcctGrpNasIpType": "",
+    "zxAnRadiusAcctGrpNasIpAddr": "",
+    "zxAnRadiusAcctGrpLocalBufferEn": 2,
+    "zxAnRadiusAccountGroupRowStatus": ""
+}
+
+### RADIUS accounting server group table.
+GET http://localhost/api/snmp/zxAnRadiusAccountSvrGroupTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnRadiusAccountSvrGroupTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnRadiusAccountSvrGrpSvrIpType": "",
+    "zxAnRadiusAccountSvrGrpSvrIpAddr": "",
+    "zxAnRadiusAccountSvrGrpSvrPort": 1812,
+    "zxAnRadiusAccountSvrGrpSvrKey": "",
+    "zxAnRadiusAccountSvrGrpMasterEn": 2,
+    "zxAnRadiusAccountSvrGrpRowStatus": ""
+}
+

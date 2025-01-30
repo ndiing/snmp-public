@@ -1,0 +1,32 @@
+### This table contains information about unicast entries for which<br/><br/>the bridge has forwarding and/or filtering information. This<br/><br/>information is used by the transparent bridging function in<br/><br/>determining how to propagate a received frame.
+GET http://localhost/api/snmp/zxAnMacFwdTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnMacFwdTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnMacFwdConfRowStatus": ""
+}
+
+### MAC statistics table based on VLAN.<br/><br/>This table includes statistical information of numbers of unicast<br/><br/>MAC addresses for all the bridges on the device that have<br/><br/>forwarding and/or filtering information.
+GET http://localhost/api/snmp/zxAnMacFwdVlanStatsTable
+Authorization: Bearer {{token}}
+
+### MAC address pool information table.
+GET http://localhost/api/snmp/zxAnMacPoolTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnMacPoolTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnMacPoolStartMacAddr": "",
+    "zxAnMacPoolSize": 256,
+    "zxAnMacPoolRowStatus": ""
+}
+

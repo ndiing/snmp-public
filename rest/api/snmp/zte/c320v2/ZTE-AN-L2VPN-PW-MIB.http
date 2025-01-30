@@ -1,0 +1,133 @@
+### MPLS L2VPN PW manage table
+GET http://localhost/api/snmp/zxAnL2vpnPwConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnL2vpnPwConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnL2vpnPwConfPwType": 26,
+    "zxAnL2vpnPwConfPwMode": 4,
+    "zxAnL2vpnPwFecType": 3,
+    "zxAnL2vpnPwConfPeerAddrType": 3,
+    "zxAnL2vpnPwConfPeerAddr": 0,
+    "zxAnL2vpnPwRouterId": "0.0.0.0",
+    "zxAnL2vpnPwConfVcId": 0,
+    "zxAnL2vpnPwConfLocalLabel": 0,
+    "zxAnL2vpnPwConfRmLabel": 0,
+    "zxAnL2vpnPwConfPwClassName": 0,
+    "zxAnL2vpnPwFec129AgiHigh": 0,
+    "zxAnL2vpnPwFec129AgiLow": 0,
+    "zxAnL2vpnPwFec129SaiiGid": 0,
+    "zxAnL2vpnPwFec129SaiiPrefix": "0.0.0.0",
+    "zxAnL2vpnPwFec129SaiiACId": 0,
+    "zxAnL2vpnPwFec129TaiiGid": 0,
+    "zxAnL2vpnPwFec129TaiiPrefix": "0.0.0.0",
+    "zxAnL2vpnPwFec129TaiiACId": 0,
+    "zxAnL2vpnPwSd": "",
+    "zxAnL2vpnPwFlowLabelSndEnable": 3,
+    "zxAnL2vpnPwFlowLabelRcvEnable": 3,
+    "zxAnL2vpnPwFlowLabelModeStatis": 2,
+    "zxAnL2vpnPwStatusNotify": 1,
+    "zxAnL2vpnPwMspwBackOffInitTime": 0,
+    "zxAnL2vpnPwMspwBackOffMaxTime": 0,
+    "zxAnL2vpnPwMacLearnEnable": 3,
+    "zxAnL2vpnPwConfSequence": 1,
+    "zxAnL2vpnPwTtl": 64,
+    "zxAnL2vpnPwETreeRole": 1,
+    "zxAnL2vpnPwAclIn": 0,
+    "zxAnL2vpnPwAclOut": 0,
+    "zxAnL2vpnPwQosTcToCos": 0,
+    "zxAnL2vpnPwQosCosToTc": 0,
+    "zxAnL2vpnPwFlowLabelMacAlgorithm": 3,
+    "zxAnL2vpnPwFlowLabelIpAlgorithm": 4,
+    "zxAnL2vpnPwFlowLabelPortAlg": 4,
+    "zxAnL2vpnPwFlowStatsEnable": 1,
+    "zxAnL2vpnPwStaticLoopback": 1,
+    "zxAnL2vpnPwConfMinRxInterval": 0,
+    "zxAnL2vpnPwConfMult": 0,
+    "zxAnL2vpnPwConfBfdTtl": 0,
+    "zxAnL2vpnPwConfMinTxInterval": 0,
+    "zxAnL2vpnPwConfAlmProfileName": 0,
+    "zxAnL2vpnPwConfPayloadSize": "",
+    "zxAnL2vpnPwConfEncapDelay": 8,
+    "zxAnL2vpnPwRowStatus": ""
+}
+
+### MPLS L2VPN PW signaling table
+GET http://localhost/api/snmp/zxAnL2vpnPwSigTable
+Authorization: Bearer {{token}}
+
+### MPLS L2VPN PW class manage table
+GET http://localhost/api/snmp/zxAnL2vpnPwClassMgrTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnL2vpnPwClassMgrTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnL2vpnPwClassMgrCBit": "",
+    "zxAnL2vpnPwClassMgrCCType": "",
+    "zxAnL2vpnPwClassMgrCVType": "",
+    "zxAnL2vpnPwClassMgrRowStatus": ""
+}
+
+### MPLS L2VPN PW redundancy group manage table
+GET http://localhost/api/snmp/zxAnL2vpnPwRgrMgrTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnL2vpnPwRgrMgrTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnL2vpnPwRgrNegType": "",
+    "zxAnL2vpnPwRgrMasterPwName": "",
+    "zxAnL2vpnPwRgrSlavePwName": "",
+    "zxAnL2vpnPwRgrProtectType": "",
+    "zxAnL2vpnPwRgrProtectHoldOffTime": "",
+    "zxAnL2vpnPwRgrRevertiveCap": "",
+    "zxAnL2vpnPwRgrWaitRestoreTime": 0,
+    "zxAnL2vpnPwRgrProtectSwitch": "",
+    "zxAnL2vpnPwRgrRowStatus": ""
+}
+
+### The performance alarm threshold profile table of PW flow.
+GET http://localhost/api/snmp/zxAnL2vpnPwAlmProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnL2vpnPwAlmProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnL2vpnPwAlmPrfRowStatus": ""
+}
+
+### The performance alarm threshold profile table<br/><br/>configuration of PW flow.
+GET http://localhost/api/snmp/zxAnL2vpnPwAlmProfileConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnL2vpnPwAlmProfileConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnL2vpnPwRiseAlmThresh": "",
+    "zxAnL2vpnPwClrRiseAlmThresh": "",
+    "zxAnL2vpnPwRiseWarnThresh": "",
+    "zxAnL2vpnPwClrRiseWarnThresh": "",
+    "zxAnL2vpnPwFallWarnThresh": "",
+    "zxAnL2vpnPwClrFallWarnThresh": "",
+    "zxAnL2vpnPwFallAlmThresh": "",
+    "zxAnL2vpnPwClrFallAlmThresh": "",
+    "zxAnL2vpnPwAlmPrfConfRowStatus": ""
+}
+

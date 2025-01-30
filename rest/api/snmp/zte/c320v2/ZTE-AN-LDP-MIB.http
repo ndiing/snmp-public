@@ -1,0 +1,119 @@
+### GR table.
+GET http://localhost/api/snmp/zxAnLdpGrSessTable
+Authorization: Bearer {{token}}
+
+### The best match table.<br/><br/>The FEC(Forwarding Equivalence Class) information associated<br/><br/>with an LSP, and add match route for reference.
+GET http://localhost/api/snmp/zxAnLdpBestMatchTable
+Authorization: Bearer {{token}}
+
+### The ACL table.
+GET http://localhost/api/snmp/zxAnLdpAclTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnLdpAclTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnLdpAclPeerLabelFilterAcl": "",
+    "zxAnLdpAclRowStatus": ""
+}
+
+### The BFD table.
+GET http://localhost/api/snmp/zxAnLdpBfdTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnLdpBfdTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnLdpBfdMinTxInterval": 3,
+    "zxAnLdpBfdMinRxInterval": 3,
+    "zxAnLdpBfdMultiple": "",
+    "zxAnLdpBfdRowStatus": ""
+}
+
+### Peer BFD table.
+GET http://localhost/api/snmp/zxAnLdpBfdPeerTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnLdpBfdPeerTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnLdpBfdPeerMinTxInterval": 3,
+    "zxAnLdpBfdPeerMinRxInterval": 3,
+    "zxAnLdpBfdPeerMultiple": "",
+    "zxAnLdpBfdPeerRowStatus": ""
+}
+
+### LDP MD5 table.
+GET http://localhost/api/snmp/zxAnLdpMd5Table
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnLdpMd5Table/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnLdpMd5PwdEncryptStatus": 2,
+    "zxAnLdpMd5Pwd": 0,
+    "zxAnLdpMd5RowStatus": ""
+}
+
+### The LDP interface table.
+GET http://localhost/api/snmp/zxAnLdpIfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnLdpIfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnLdpIfTransIpAddrType": 0,
+    "zxAnLdpIfTransIpAddr": "",
+    "zxAnLdpIfLabelDistMode": "",
+    "zxAnLdpIfRowStatus": ""
+}
+
+### Static LSP table.
+GET http://localhost/api/snmp/zxAnLdpStaticLspTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnLdpStaticLspTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnLdpStaticLspDestIpAddrType": "",
+    "zxAnLdpStaticLspDestIpAddr": "",
+    "zxAnLdpStaticLspIpPfxLen": "",
+    "zxAnLdpStaticLspInnerLabel": "",
+    "zxAnLdpStaticLspOuterLabel": "",
+    "zxAnLdpStaticLspNextHopIpAddType": 0,
+    "zxAnLdpStaticLspNextHopIpAddr": "",
+    "zxAnLdpStaticLspRowStatus": ""
+}
+
+### Target session table.
+GET http://localhost/api/snmp/zxAnLdpTargetSessTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnLdpTargetSessTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnLdpTargetSessLabelDistMode": 2,
+    "zxAnLdpTargetSessRowStatus": ""
+}
+

@@ -1,0 +1,21 @@
+### A table entry containing status information of<br/><br/>files synchronization from master card to slave card.
+GET http://localhost/api/snmp/zxAnFileSyncStatusTable
+Authorization: Bearer {{token}}
+
+### A table entry containing file information .
+GET http://localhost/api/snmp/zxAnFileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnFileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnFileOperation": ""
+}
+
+### The file list table.<br/><br/>This table is added to support the new index of the NE files:<br/><br/>'rack-shelf-slot-devType-devId-directory-name'.
+GET http://localhost/api/snmp/zxAnFileListTable
+Authorization: Bearer {{token}}
+

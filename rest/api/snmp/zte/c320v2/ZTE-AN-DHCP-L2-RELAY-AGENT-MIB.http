@@ -1,0 +1,57 @@
+### DhcpV4 layer-2 relay agent vlan switch table.<br/><br/>When dhcpV4 layer-2 relay agent on the vlan is activated,<br/><br/>the dhcpV4 packets with this vlan will be processed.
+GET http://localhost/api/snmp/zxAnDhcpV4L2RAVlanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnDhcpV4L2RAVlanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnDhcpV4L2RAVlanRowStatus": ""
+}
+
+### DhcpV4 layer-2 relay agent interface configuration table.
+GET http://localhost/api/snmp/zxAnDhcpV4L2RAIfConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnDhcpV4L2RAIfConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnDhcpV4L2RAIfConfEnable": 2,
+    "zxAnDhcpV4L2RAIfConfTrust": 2,
+    "zxAnDhcpV4L2RAIfConfPolicy": 4
+}
+
+### DhcpV6 layer-2 relay agent vlan switch table.<br/><br/>When dhcpV6 layer-2 relay agent on the vlan is activated,<br/><br/>the dhcpV6 packets with this vlan will be processed.
+GET http://localhost/api/snmp/zxAnDhcpV6L2RAVlanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnDhcpV6L2RAVlanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnDhcpV6L2RAVlanRowStatus": ""
+}
+
+### DhcpV6 layer-2 relay agent interface configuration table.
+GET http://localhost/api/snmp/zxAnDhcpV6L2RAIfConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnDhcpV6L2RAIfConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnDhcpV6L2RAIfConfEnable": 2,
+    "zxAnDhcpV6L2RAIfConfTrust": 2,
+    "zxAnDhcpV6L2RAIfConfPolicy": 4,
+    "zxAnDhcpV6L2RAIfWorkMode": 255
+}
+

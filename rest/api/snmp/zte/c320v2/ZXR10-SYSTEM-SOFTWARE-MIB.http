@@ -1,0 +1,61 @@
+### The activated package information table.
+GET http://localhost/api/snmp/zxr10SwActivePackageInfoTable
+Authorization: Bearer {{token}}
+
+### The installed package information table.
+GET http://localhost/api/snmp/zxr10SwInstallPackageInfoTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxr10SwInstallPackageInfoTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxr10SwInstallPackageOperation": "",
+    "zxr10SwInstallPackageActiveType": "",
+    "zxr10SwInstallPackageVndName": "",
+    "zxr10SwInstallPackageRowStatus": ""
+}
+
+### The installed set information table.
+GET http://localhost/api/snmp/zxr10SwInstallSetInfoTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxr10SwInstallSetInfoTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxr10SwInstallSetOperation": "",
+    "zxr10SwInstallSetActivationType": "",
+    "zxr10SwInstallSetRowStatus": ""
+}
+
+### The firmware updating operation table.
+GET http://localhost/api/snmp/zxr10FirmwareUpdateTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxr10FirmwareUpdateTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxr10FirmwareUpdateOperation": ""
+}
+
+### The firmware batch updating operation table.
+GET http://localhost/api/snmp/zxr10FirmwareBatchUpdateTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxr10FirmwareBatchUpdateTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxr10FirmwareBatchUpdateOperate": ""
+}
+

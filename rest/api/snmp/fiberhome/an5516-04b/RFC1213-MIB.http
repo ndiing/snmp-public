@@ -1,0 +1,120 @@
+@token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0YXJnZXQiOiIxMDMuMjguMTQ4LjIwMiIsImNvbW11bml0eSI6ImUxRjFBbWJZTGk0YXVPOCIsInR5cGUiOiJmaWJlcmhvbWUiLCJvcHRpb25zIjp7InBvcnQiOjMxNjF9fQ.5-4ISEKul8MbGU6pxf27C2o6HMn6iiv2aSfqf_1gJ7Y
+
+
+### A list of interface entries.  The number of<br/><br/>entries is given by the value of ifNumber.
+GET http://localhost/api/snmp/ifTable
+Authorization: Bearer {{token}}
+
+### The Address Translation tables contain the<br/><br/>NetworkAddress to `physical' address equivalences.<br/><br/>Some interfaces do not use translation tables for<br/><br/>determining address equivalences (e.g., DDN-X.25<br/><br/>has an algorithmic method); if all interfaces are<br/><br/>of this type, then the Address Translation table<br/><br/>is empty, i.e., has zero entries.
+GET http://localhost/api/snmp/atTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/atTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "atIfIndex": "",
+    "atPhysAddress": "",
+    "atNetAddress": ""
+}
+
+
+
+
+
+
+### The table of addressing information relevant to<br/><br/>this entity's IP addresses.
+GET http://localhost/api/snmp/ipAddrTable
+Authorization: Bearer {{token}}
+
+### This entity's IP Routing table.
+GET http://localhost/api/snmp/ipRouteTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/ipRouteTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "ipRouteDest": "",
+    "ipRouteIfIndex": "",
+    "ipRouteMetric1": "",
+    "ipRouteMetric2": "",
+    "ipRouteMetric3": "",
+    "ipRouteMetric4": "",
+    "ipRouteNextHop": "",
+    "ipRouteType": "",
+    "ipRouteAge": "",
+    "ipRouteMask": "",
+    "ipRouteMetric5": ""
+}
+
+
+
+
+
+
+### The IP Address Translation table used for mapping<br/><br/>from IP addresses to physical addresses.
+GET http://localhost/api/snmp/ipNetToMediaTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/ipNetToMediaTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "ipNetToMediaIfIndex": "",
+    "ipNetToMediaPhysAddress": "",
+    "ipNetToMediaNetAddress": "",
+    "ipNetToMediaType": ""
+}
+
+
+
+
+
+
+### A table containing TCP connection-specific<br/><br/>information.
+GET http://localhost/api/snmp/tcpConnTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/tcpConnTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "tcpConnState": ""
+}
+
+
+
+
+
+
+### A table containing UDP listener information.
+GET http://localhost/api/snmp/udpTable
+Authorization: Bearer {{token}}
+
+### The EGP neighbor table.
+GET http://localhost/api/snmp/egpNeighTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/egpNeighTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "egpNeighEventTrigger": ""
+}
+
+
+
+
+
+

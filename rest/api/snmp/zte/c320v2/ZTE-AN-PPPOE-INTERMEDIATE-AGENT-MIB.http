@@ -1,0 +1,28 @@
+### PPPoE Intermediate Agent vlan switch table.<br/><br/>When PPPoE Intermediate Agent on the vlan is activated,<br/><br/>the related pppoe packets with this vlan will be processed.
+GET http://localhost/api/snmp/zxAnPppoeIAVlanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPppoeIAVlanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPppoeIAVlanRowStatus": ""
+}
+
+### PPPoE Intermediate Agent interface configuration table
+GET http://localhost/api/snmp/zxAnPppoeIAIfConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPppoeIAIfConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPppoeIAIfConfEnable": 2,
+    "zxAnPppoeIAIfConfTrust": 2,
+    "zxAnPppoeIAIfConfPolicy": 4
+}
+

@@ -1,0 +1,247 @@
+### This table represents the ACL related parameters.
+GET http://localhost/api/snmp/zxAnAclTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnAclTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnAclName": 0,
+    "zxAnAclRowStatus": ""
+}
+
+### Acl standard rule table.<br/><br/>Provide acl standard rule configuration.
+GET http://localhost/api/snmp/zxAnAclStandardRuleTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnAclStandardRuleTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnAclStdRuleAccessCtrl": 1,
+    "zxAnAclStdRuleSrcIpType": 1,
+    "zxAnAclStdRuleSrcIp": 0,
+    "zxAnAclStdRuleSrcIpMask": "FFFFFFF",
+    "zxAnAclStdRuleTimeRangeName": 0,
+    "zxAnAclStdRuleRowStatus": ""
+}
+
+### ACL extended rule table.<br/><br/>Provide ACL extended rule configuration.
+GET http://localhost/api/snmp/zxAnAclExtendedRuleTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnAclExtendedRuleTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnAclExtRuleAccessCtrl": 1,
+    "zxAnAclExtRuleSrcIpType": 1,
+    "zxAnAclExtRuleSrcIp": 0,
+    "zxAnAclExtRuleSrcIpMask": "FFFFFFF",
+    "zxAnAclExtRuleDestIpType": 1,
+    "zxAnAclExtRuleDestIp": 0,
+    "zxAnAclExtRuleDestIpMask": "FFFFFFF",
+    "zxAnAclExtRuleIpProtocol": 255,
+    "zxAnAclExtRuleSrcPortOper": 1,
+    "zxAnAclExtRuleStartSrcPort": 0,
+    "zxAnAclExtRuleEndSrcPort": 0,
+    "zxAnAclExtRuleDestPortOper": 1,
+    "zxAnAclExtRuleStartDestPort": 0,
+    "zxAnAclExtRuleEndDestPort": 0,
+    "zxAnAclExtRuleTcpEstablished": 2,
+    "zxAnAclExtRuleIcmpType": 255,
+    "zxAnAclExtRuleIcmpCode": 255,
+    "zxAnAclExtRulePrecedence": 255,
+    "zxAnAclExtRuleTos": 255,
+    "zxAnAclExtRuleDscp": 255,
+    "zxAnAclExtRuleTtl": 65535,
+    "zxAnAclExtRuleTimeRangeName": 0,
+    "zxAnAclExtRuleRowStatus": ""
+}
+
+### ACL link rule table.<br/><br/>Provide ACL link rule configuration.
+GET http://localhost/api/snmp/zxAnAclLinkRuleTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnAclLinkRuleTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnAclLinkRuleAccessCtrl": 1,
+    "zxAnAclLinkRuleEthProtocol": 65535,
+    "zxAnAclLinkRuleStagCos": 255,
+    "zxAnAclLinkRuleSVid": 65535,
+    "zxAnAclLinkRuleCtagCos": 255,
+    "zxAnAclLinkRuleCVid": 65535,
+    "zxAnAclLinkRuleSrcMac": 0,
+    "zxAnAclLinkRuleSrcMacMask": "FFFFFFFFFFF",
+    "zxAnAclLinkRuleDestMac": 0,
+    "zxAnAclLinkRuleDestMacMask": "FFFFFFFFFFF",
+    "zxAnAclLinkRuleTimeRangeName": 0,
+    "zxAnAclLinkRuleRowStatus": ""
+}
+
+### Acl hybrid rule table.<br/><br/>Provide acl hybrid rule configuration.
+GET http://localhost/api/snmp/zxAnAclHybridRuleTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnAclHybridRuleTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnAclHybridRuleAccessCtrl": 1,
+    "zxAnAclHybridRuleSrcIpType": 1,
+    "zxAnAclHybridRuleSrcIp": 0,
+    "zxAnAclHybridRuleSrcIpMask": "FFFFFFF",
+    "zxAnAclHybridRuleDestIpType": 1,
+    "zxAnAclHybridRuleDestIp": 0,
+    "zxAnAclHybridRuleDestIpMask": "FFFFFFF",
+    "zxAnAclHybridRuleIpProto": 255,
+    "zxAnAclHybridRuleEthProto": 65535,
+    "zxAnAclHybridRuleSrcPortOper": 1,
+    "zxAnAclHybridRuleStartSrcPort": 0,
+    "zxAnAclHybridRuleEndSrcPort": 0,
+    "zxAnAclHybridRuleDestPortOper": 1,
+    "zxAnAclHybridRuleStartDestPort": 0,
+    "zxAnAclHybridRuleEndDestPort": 0,
+    "zxAnAclHybridRulePrecedence": 255,
+    "zxAnAclHybridRuleTos": 255,
+    "zxAnAclHybridRuleDscp": 255,
+    "zxAnAclHybridRuleStagCos": 255,
+    "zxAnAclHybridRuleSVid": 65535,
+    "zxAnAclHybridRuleCtagCos": 255,
+    "zxAnAclHybridRuleCVid": 65535,
+    "zxAnAclHybridRuleSrcMac": 0,
+    "zxAnAclHybridRuleSrcMacMask": "FFFFFFFFFFF",
+    "zxAnAclHybridRuleDestMac": 0,
+    "zxAnAclHybridRuleDestMacMask": "FFFFFFFFFFF",
+    "zxAnAclHybridRuleStagTpid": 0,
+    "zxAnAclHybridRuleCtagTpid": 0,
+    "zxAnAclHybridRuleItagTpid": 0,
+    "zxAnAclHybridRuleIsid": 2147483647,
+    "zxAnAclHybridRuleTimeRangeName": 0,
+    "zxAnAclHybridRuleRowStatus": ""
+}
+
+### ACL IPv6 rule table.<br/><br/>Provide ACL hybrid rule configuration.
+GET http://localhost/api/snmp/zxAnAclIpv6HybridRuleTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnAclIpv6HybridRuleTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnAclIpv6HybridAccessCtrl": 1,
+    "zxAnAclIpv6HybridSrcIpType": 0,
+    "zxAnAclIpv6HybridSrcIp": 0,
+    "zxAnAclIpv6HybridSrcIpMask": "FFFFFFF",
+    "zxAnAclIpv6HybridSrcIpPfxLen": 0,
+    "zxAnAclIpv6HybridDestIpType": 0,
+    "zxAnAclIpv6HybridDestIp": "",
+    "zxAnAclIpv6HybridDestIpMask": "FFFFFFF",
+    "zxAnAclIpv6HybridDestIpPfxLen": "",
+    "zxAnAclIpv6HybridIpProto": 255,
+    "zxAnAclIpv6HybridEthProto": 65535,
+    "zxAnAclIpv6HybridSrcPortOper": 1,
+    "zxAnAclIpv6HybridStartSrcPort": 0,
+    "zxAnAclIpv6HybridEndSrcPort": 0,
+    "zxAnAclIpv6HybridDestPortOper": 1,
+    "zxAnAclIpv6HybridStartDestPort": 0,
+    "zxAnAclIpv6HybridEndDestPort": 0,
+    "zxAnAclIpv6HybridPrecedence": 255,
+    "zxAnAclIpv6HybridTos": 255,
+    "zxAnAclIpv6HybridDscp": 255,
+    "zxAnAclIpv6HybridStagCos": 255,
+    "zxAnAclIpv6HybridSVid": 65535,
+    "zxAnAclIpv6HybridCtagCos": 255,
+    "zxAnAclIpv6HybridCVid": 65535,
+    "zxAnAclIpv6HybridSrcMac": 0,
+    "zxAnAclIpv6HybridSrcMacMask": "FFFFFFFFFFF",
+    "zxAnAclIpv6HybridDestMac": 0,
+    "zxAnAclIpv6HybridDestMacMask": "FFFFFFFFFFF",
+    "zxAnAclIpv6HybridTrafficClass": "",
+    "zxAnAclIpv6HybridFlowLabel": "",
+    "zxAnAclIpv6HybridIcmpType": "",
+    "zxAnAclIpv6HybridIcmpCode": "",
+    "zxAnAclIpv6HybridTimeRangeName": 0,
+    "zxAnAclIpv6HybridRowStatus": ""
+}
+
+### ACL IPv6 extended rule table.<br/><br/>Provide ACL IPv6 extended rule configuration.
+GET http://localhost/api/snmp/zxAnAclIpv6ExtendedRuleTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnAclIpv6ExtendedRuleTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnAclIpv6ExtRuleAccessCtrl": 1,
+    "zxAnAclIpv6ExtRuleSrcIpType": 2,
+    "zxAnAclIpv6ExtRuleSrcIp": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+    "zxAnAclIpv6ExtRuleSrcIpPfxLen": "",
+    "zxAnAclIpv6ExtRuleDestIpType": 2,
+    "zxAnAclIpv6ExtRuleDestIp": "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+    "zxAnAclIpv6ExtRuleDestIpPfxLen": "",
+    "zxAnAclIpv6ExtRuleIpProtocol": 255,
+    "zxAnAclIpv6ExtRuleSrcPortOper": 1,
+    "zxAnAclIpv6ExtRuleStartSrcPort": 0,
+    "zxAnAclIpv6ExtRuleEndSrcPort": 0,
+    "zxAnAclIpv6ExtRuleDestPortOper": 1,
+    "zxAnAclIpv6ExtRuleStartDestPort": 0,
+    "zxAnAclIpv6ExtRuleEndDestPort": 0,
+    "zxAnAclIpv6ExtRuleTcpEstablished": 2,
+    "zxAnAclIpv6ExtRuleIcmpType": 255,
+    "zxAnAclIpv6ExtRuleIcmpCode": 255,
+    "zxAnAclIpv6ExtRuleTrafficClass": "",
+    "zxAnAclIpv6ExtRuleFlowLabel": "",
+    "zxAnAclIpv6ExtRuleTimeRangeName": 0,
+    "zxAnAclIpv6ExtRuleRowStatus": ""
+}
+
+### ACL time range table.
+GET http://localhost/api/snmp/zxAnAclTimeRangeTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnAclTimeRangeTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnAclTimeRangeType": "",
+    "zxAnAclOnceStartTime": "",
+    "zxAnAclOnceEndTime": "",
+    "zxAnAclWeeklyDay": "",
+    "zxAnAclWeeklyStartTime": "",
+    "zxAnAclWeeklyEndTime": "",
+    "zxAnAclTimeRangeRowStatus": ""
+}
+
+### This table is to provide service that a specific Acl apply to<br/><br/>a specific inteface with direction.<br/><br/><br/><br/>Then the traffic that through this interface is managed<br/><br/>according to the acl.
+GET http://localhost/api/snmp/zxAnAclIfConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnAclIfConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnAclIfConfAclNumber": "",
+    "zxAnAclIfConfRowStatus": ""
+}
+

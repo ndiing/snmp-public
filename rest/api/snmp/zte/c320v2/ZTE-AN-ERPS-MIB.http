@@ -1,0 +1,43 @@
+### This table contains ERPS instance information.
+GET http://localhost/api/snmp/zxAnErpsInstanceTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnErpsInstanceTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnErpsInstanceRingId": 0,
+    "zxAnErpsInstanceMel": 7,
+    "zxAnErpsInstancePri": 7,
+    "zxAnErpsInstanceTrafficChannel": 255,
+    "zxAnErpsInstanceRapsChannel": 0,
+    "zxAnErpsInstanceWtrTime": 5,
+    "zxAnErpsInstanceGuardTime": 500,
+    "zxAnErpsInstanceSwitchMode": 1,
+    "zxAnErpsInstanceClear": "",
+    "zxAnErpsInstanceRowStatus": ""
+}
+
+### This table contains ERPS port information.
+GET http://localhost/api/snmp/zxAnErpsPortTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnErpsPortTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnErpsPortIfIndex": "",
+    "zxAnErpsPortRole": 1,
+    "zxAnErpsPortSwitchAction": "",
+    "zxAnErpsPortMonitorMd": 0,
+    "zxAnErpsPortMonitorMa": 0,
+    "zxAnErpsPortMonitorLmep": 0,
+    "zxAnErpsPortMonitorRmep": 0,
+    "zxAnErpsPortTcnSendingEnable": 2,
+    "zxAnErpsPortRowStatus": ""
+}
+

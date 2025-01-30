@@ -1,0 +1,1657 @@
+
+
+### Description
+GET http://localhost/api/snmp/onuPhysicalwhiteListTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/onuPhysicalwhiteListTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "onuSlotForPhysical": "",
+    "onuPonForPhysical": "",
+    "onuMacForPhysical": "",
+    "actionForPhysical": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/onuLogicWhiteListTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/onuLogicWhiteListTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "onuSlotForLogic": "",
+    "onuPonForLogic": "",
+    "onuSnForLogic": "",
+    "onuSnPasswordForLogic": "",
+    "actionForLogic": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/onuMacListFor5516Table
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/onuMacListFor5516Table/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "slotNoForMacList": "",
+    "ponNoForMacList": "",
+    "onuNoForMacList": "",
+    "onuTypeForMacList": "",
+    "macForMacList": "",
+    "passwordForMacList": "",
+    "actionForMacList": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/onuSnListFor5516Table
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/onuSnListFor5516Table/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "slotNoForSnList": "",
+    "ponNoForSnList": "",
+    "onuNoForSnList": "",
+    "onuTypeForSnList": "",
+    "snForSnList": "",
+    "passwordForSnList": "",
+    "actionForSnList": ""
+}
+
+
+
+
+
+
+### Description.
+GET http://localhost/api/snmp/onuPhyPasswordWhiteListTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/onuPhyPasswordWhiteListTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "slotPhyPasswordWhiteList": "",
+    "ponPhyPasswordWhiteList": "",
+    "onuPhyPasswordWhiteList": "",
+    "onuPhyPasswordWhiteListType": "",
+    "phyPasswordWhiteList": "",
+    "actionPhyPasswordWhiteList": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/voicePortEnableTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/voicePortEnableTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "potsPortEnable": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/dataPortEnableTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/dataPortEnableTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "dataPortEnable": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/oltPonEnableTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/oltPonEnableTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "oltPonEnable": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/bandwidthProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/bandwidthProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "bandwidthProfileName": "",
+    "upMinRate": "",
+    "upMaxRate": "",
+    "downMinRate": "",
+    "downMaxRate": "",
+    "fixedRate": "",
+    "bandwidthProfileAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/attachPortBandwidthProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/attachPortBandwidthProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "attachBandwidthProfileId": "",
+    "attachBandwidthProfileName": "",
+    "unAttatchPortAttributeProfileAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/portAttributeProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/portAttributeProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "portAttributeProfileName": "",
+    "autoNegotiation": "",
+    "speed": "",
+    "duplex": "",
+    "flowControl": "",
+    "portAttributeProfileAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/attachPortAttributeProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/attachPortAttributeProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "attachPortAttributeProfileName": "",
+    "setDefaultPortAttributeProfileAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/ponBandwidthProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/ponBandwidthProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "ponBandwidthProfileName": "",
+    "ponUpMinRate": "",
+    "ponUpMaxRate": "",
+    "ponDownMinRate": "",
+    "ponDownMaxRate": "",
+    "ponFixedRate": "",
+    "ponBandwidthProfileAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/attachPonBandwidthProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/attachPonBandwidthProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "attachPonBandwidthProfileId": "",
+    "attachPonBandwidthProfileName": "",
+    "unAttatchPonBandwidthProfileAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/feServiceCfgTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/feServiceCfgTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "serviceType": "",
+    "cvlanMode": "",
+    "cvlan": "",
+    "cvlanCos": "",
+    "tvlan": "",
+    "tvlanCos": "",
+    "svlan": "",
+    "svlanCos": "",
+    "upMinBandWidth": "",
+    "upManBandWidth": "",
+    "dnBandWidth": "",
+    "serviceVlanName": "",
+    "qinqProfileName": "",
+    "feServiceCfgAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/feServiceCfgIdTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/feServiceCfgApplyTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/feServiceCfgApplyTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "feServiceCfgApplyCommand": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/attachQINQProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/attachQINQProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "attachQINQProfileName": "",
+    "attachQINQSvlan": "",
+    "attachQINQTpid": "",
+    "attachQINQCos": "",
+    "attachQINQProfileAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/attchQinqProfileToOnuTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/attchQinqProfileToOnuTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "attchQinqProfileName": "",
+    "qinqAttchAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/qinqBandWidthCfgTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/qinqBandWidthCfgTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "usMinBandwidth": "",
+    "usMaxBandwidth": "",
+    "usBurstBandwidth": "",
+    "dsMinBandwidth": "",
+    "dsMaxBandwidth": "",
+    "dsBurstBandwidth": "",
+    "qinqBandwidthCfgAction": ""
+}
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/qinqBandwidthCfgApplyTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/qinqBandwidthCfgApplyTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "qinqBandwidthCfgApply": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/qinqDomainTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/qinqDomainTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "qinqDomainAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/qinqDomainServiceTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/qinqDomainServiceTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "qinqDomainServiceType": "",
+    "qinqDomainLayer1OldVlan": "",
+    "qinqDomainLayer1OldVlanCos": "",
+    "qinqDomainLayer1VlanAction": "",
+    "qinqDomainLayer1VlanCos": "",
+    "qinqDomainLayer1Tpid": "",
+    "qinqDomainLayer1NewVlan": "",
+    "qinqDomainLayer2OldVlan": "",
+    "qinqDomainLayer2OldVlanCos": "",
+    "qinqDomainLayer2VlanAction": "",
+    "qinqDomainLayer2VlanCos": "",
+    "qinqDomainLayer2Tpid": "",
+    "qinqDomainLayer2NewVlan": "",
+    "qinqDomainUpRuleType": "",
+    "qinqDomainUpRuleValue": "",
+    "qinqDomainUpRuleOperation": "",
+    "qinqDomainDnRuleType": "",
+    "qinqDomainDnRuleValue": "",
+    "qinqDomainDnRuleOperation": "",
+    "qinqDomainServiceAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/qinqDomainServiceRuleTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/qinqDomainServiceRuleTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "qinqDomainServiceUpRuleType": "",
+    "qinqDomainServiceUpRuleValue": "",
+    "qinqDomainServiceUpRuleOperation": "",
+    "qinqDomainServiceDnRuleType": "",
+    "qinqDomainServiceDnRuleValue": "",
+    "qinqDomainServiceDnRuleOperation": "",
+    "qinqDomainServiceRuleAction": ""
+}
+
+
+
+
+
+
+### Description.
+GET http://localhost/api/snmp/attachQinqProfileToPonTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/attachQinqProfileToPonTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "attchQinqToPonProfileName": "",
+    "qinqAttchToPonAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/ftthPerformanceCardEnableTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/ftthPerformanceCardEnableTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "ftthPerformanceCardEnable": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/ftthVlanTransmitPerformanceTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/frameInfoTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/cardInfoTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/portInfoTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/portInfoTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "portDesc": "",
+    "portMacNumberLimit": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/potsInfoTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/potsInfoTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "potsDesc": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/onuPonInfoTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/onuPonInfoTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "onuPonDesc": "",
+    "onuPonIsOpticalPowerValid": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/oltPonInfoTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/oltPonInfoTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "oltPonDesc": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/oltUplinkInfoTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/oltUplinkInfoTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "uplinkDesc": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/oltPonOpticalStatisticsTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/oltPonOpticalStatisticsTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "oltPonOpticalStatisticsSwitch": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/oltPonRxOpticalPowerTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/oltPonInfoRealtimeTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/oltPonRxOpticalPowerRealtimeTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/onuPonInfoRealtimeTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/slotInfoTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/onu2PonLengthTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/mgrCardInfoTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/onuAddressInfoTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/authOnuListTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/authOnuListTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "authOnuListOnuReboot": "",
+    "authOnuWebSwitch": "",
+    "authOnuWebPort": "",
+    "authOnuWebAdmin": "",
+    "authOnuWebAdminPassword": "",
+    "authOnuOpticalSwitch": "",
+    "authOnuWebServerSwitch": "",
+    "authOnuTelnetServerSwitch": "",
+    "authOnuWebUNIswitch": "",
+    "authOnuTelnetUNIswitch": "",
+    "authOnuConsoleSwitch": "",
+    "authOnuMacNumberLimit": "",
+    "authOnuMacNumberLimitApply": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/unauthOnuListTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/onuAuthModeTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/onuAuthModeTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "macAuthEnable": "",
+    "snAuthEnable": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/onuWarrentTypeTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/onuWarrentTypeTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "warrantType": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/ponAuthModeTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/ponAuthModeTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "authMode": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/cardWarrentTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/cardWarrentTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "warrentCardType": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/globalVlanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/globalVlanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "serviceName": "",
+    "beginVlanId": "",
+    "endVlanId": "",
+    "upLinkPort": "",
+    "tagStatus": "",
+    "globalVlanAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/globalVlanAttachPortTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/globalVlanAttachPortTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "vlanTag": "",
+    "globalVlanAttachAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/onuManageVlanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/onuManageVlanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "onuMac": "",
+    "manageVlanName": "",
+    "portNo": "",
+    "tagStatus1": "",
+    "manageSvlan": "",
+    "manageSvlanCos": "",
+    "mamageCvlan": "",
+    "mamageCvlanCos": "",
+    "onuIp": "",
+    "onuMask": "",
+    "onuGateway": "",
+    "onuManageVlanAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/trunkConfigTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/trunkConfigTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "masterPort": "",
+    "memberPort": "",
+    "trunkConfigAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/onuPonCfgTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/onuPonCfgTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "upBandwidth": "",
+    "dnBandwidth": "",
+    "upAssureBandwidth": "",
+    "upFixedBandwidth": "",
+    "onuPonCfgActon": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/mac2OnuInfoTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/sn2OnuInfoTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/snmpTrapTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/snmpTrapTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "snmpTrapIpv4": "",
+    "snmpTrapPort": "",
+    "snmpTrapVersion": "",
+    "snmpTrapReportVersion": "",
+    "snmpTrapCommunity": "",
+    "snmpTrapAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/snmpCommunityTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/snmpCommunityTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "snmpCommunity": "",
+    "snmpCommunityPermission": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/snmpTrapv6Table
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/snmpTrapv6Table/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "snmpTrapIpv6": "",
+    "snmpTrapv6Port": "",
+    "snmpTrapv6Version": "",
+    "snmpTrapReportv6Version": "",
+    "snmpTrapv6Community": "",
+    "snmpTrapv6Action": ""
+}
+
+
+
+
+
+
+### Description.
+GET http://localhost/api/snmp/snmpExCommunityTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/snmpExCommunityTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "snmpExCommunity": "",
+    "snmpExCommunityPermission": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/manageIpTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/manageIpTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "manageIpVlanName": "",
+    "manageIpvlanID": "",
+    "manageIpv4": "",
+    "manageIpv4Mask": "",
+    "manageIpv4GateWay": "",
+    "manageMacAddr": "",
+    "manageVlanType": "",
+    "iNnerVlanID": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/igmpProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/igmpProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "igmpProfileName": "",
+    "igmpProfileAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/igmpProfileGroupTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/igmpProfileGroupTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "groupAddressBegin": "",
+    "groupAddressEnd": "",
+    "igmpProfileGroupAuthority": "",
+    "igmpProfileGroupAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/igmpActiveMultiGroupNumberTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/igmpactiveJoinPortsNumberTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/portIgmpCfgTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/portIgmpCfgTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "portCtrlEnable": "",
+    "igmpProfile": "",
+    "leaveMode": "",
+    "maxOnlineNum": "",
+    "portBandwidth": "",
+    "portSignalVlan": "",
+    "portIgmpCfgAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/onuPhysicsAuthTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/onuPhysicsAuthTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "onuSlotForMacAuth": "",
+    "onuPonForMacAuth": "",
+    "onuNoForMacAuth": "",
+    "onuTypeForMacAuth": "",
+    "macForMacAuth": "",
+    "passwordForMacAuth": "",
+    "actionForMacAuth": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/onuSnAuthFor5116Table
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/onuSnAuthFor5116Table/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "slotNoForSnAuth": "",
+    "ponNoForSnMacAuth": "",
+    "onuNoForSnAuth": "",
+    "onuTypeForSnAuth": "",
+    "snForsnAuth": "",
+    "passwordForSnAuth": "",
+    "actionForSnAuth": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/cvlan2SvlanTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/onuCatvEnableTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/onuCatvEnableTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "onuCatvEnable": "",
+    "onuCatvRfOutputOffset": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/onuSNReplaceTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/onuSNReplaceTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "onuSNReplaceSnLoid": "",
+    "onuSNReplaceSnPwd": "",
+    "onuSNReplaceNewSnLoid": "",
+    "onuSNReplaceStatus": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/gponRmtManageCfgTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/gponRmtManageCfgTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "gponRmtManageUrl": "",
+    "gponRmtManageUser": "",
+    "gponRmtManagePwd": "",
+    "gponRmtManageAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/gponVEIPManagePathCfgTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/gponVEIPManagePathCfgTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "gponVEIPManagePathDsp": "",
+    "gponVEIPManagePathIPAddress": "",
+    "gponVEIPManagePathGateWay": "",
+    "gponVEIPManagePathPrimaryDns": "",
+    "gponVEIPManagePathSecondaryDns": "",
+    "gponVEIPManagePathNetworkPort": "",
+    "gponVEIPManagePathCVlan": "",
+    "gponVEIPManagePathCVlanCos": "",
+    "gponVEIPManagePathIpMask": "",
+    "gponVEIPManagePathCfgPortType": "",
+    "gponVEIPManagePathCfgChannelEnable": "",
+    "gponVEIPManagePathCfgmode": "",
+    "gponVEIPManagePathCfgManageVlanName": "",
+    "gponVEIPManagePathCfgIPProtocol": "",
+    "gponVEIPManagePathCfgToSDSCP": "",
+    "gponVEIPManagePathCfgTag": "",
+    "gponVEIPManagePathCfgSvlanTpid": "",
+    "gponVEIPManagePathCfgSVlanId": "",
+    "gponVEIPManagePathCfgSvlanCos": "",
+    "gponVEIPManagePathCfgCVlanTpid": "",
+    "gponVEIPManagePathAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/gponVEIPServiceCfgTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/gponVEIPServiceCfgTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "gponVEIPServiceTls": "",
+    "gponVEIPServiceCVlan": "",
+    "gponVEIPServiceCVlanCos": "",
+    "gponVEIPServiceTVlan": "",
+    "gponVEIPServiceTVlanCos": "",
+    "gponVEIPServiceSVlan": "",
+    "gponVEIPServiceSVlanCos": "",
+    "gponVEIPServiceUsBandWidth": "",
+    "gponVEIPServiceDsBandWidth": "",
+    "gponVEIPServiceProfileName": "",
+    "gponVEIPServiceAction": ""
+}
+
+
+
+
+
+
+### Obtain the available service ID (the node of the EPON3.1 is abandoned)
+GET http://localhost/api/snmp/gponVEIPServiceIDCfgTable
+Authorization: Bearer {{token}}
+
+### Description.
+GET http://localhost/api/snmp/gponOnuDefaultQinQConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/gponOnuDefaultQinQConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "gponOnuQinQCvlanID": "",
+    "gponOnuQinQCvlanPriority": "",
+    "gponOnuQinQTransVlanID": "",
+    "gponOnuQinQTransVLANPriority": "",
+    "gponOnuQinQSvlanID": "",
+    "gponOnuQinQSvlanPriority": "",
+    "gponOnuQinQOperation": ""
+}
+
+
+
+
+
+
+### Description.
+GET http://localhost/api/snmp/gponGetNextServiceIDTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/gponServiceBandwidthCfgTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/gponServiceBandwidthCfgTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "gponFixedBandwidth": "",
+    "gponAssureBandwidth": "",
+    "gponMaxBandwidth": "",
+    "gponBandwidthCfgAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/onuPonOpticalThreshTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/attachOptTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/attachOptTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "attachOptProfileId": "",
+    "attachOptProfileName": "",
+    "unattachOptiProfile": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/wanServiceTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/wanServiceTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "wanMode": "",
+    "wanConnType": "",
+    "wanVlanId": "",
+    "wanVlanCos": "",
+    "wanNatEnable": "",
+    "wanDsp": "",
+    "wanIpAddress": "",
+    "wanIPSubnet": "",
+    "wanIpMask": "",
+    "wanMasterDns": "",
+    "wanSlaveDns": "",
+    "wanPPPoeProxy": "",
+    "wanPPPoeUsername": "",
+    "wanPPPoePassword": "",
+    "wanPPPoeServer": "",
+    "wanPPPoeMode": "",
+    "wanQosEnable": "",
+    "wanVlanMode": "",
+    "wantranslationstate": "",
+    "wanTranVlanID": "",
+    "wanTranCos": "",
+    "wanQinqState": "",
+    "wanTPID": "",
+    "wanSvlanID": "",
+    "wanSvlanCos": "",
+    "wanDhcpRemoteID": "",
+    "wanbindport": "",
+    "wanServiceActiveFlag": "",
+    "wanServiceAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/applywanserviceTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/applywanserviceTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "applyWanAction": ""
+}
+
+
+
+
+
+
+### gpon service bandwith
+GET http://localhost/api/snmp/gponServiceBandwithTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/gponServiceBandwithTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "gponSerBwProName": "",
+    "gponSerBwProAction": ""
+}
+
+
+
+
+
+
+### gpon service bandwith
+GET http://localhost/api/snmp/gponServiceBwProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/gponServiceBwProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "fixBw": "",
+    "assureBw": "",
+    "maxBw": "",
+    "gponSerBwTypeAction": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/attachgponSerBwTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/attachgponSerBwTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "attachgponBwProfileId": "",
+    "attachgponBwProfileName": "",
+    "unattachgponBwProfile": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/mibPerformExternTable
+Authorization: Bearer {{token}}
+
+### A list of interface entries.  The number of<br/><br/>entries is given by the value of ifNumber.
+GET http://localhost/api/snmp/onuPonMibPerformTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/onuPonMibPerformTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "ifAdminStatus": "",
+    "ifLinkUpDownTrapEnable": "",
+    "ifPromiscuousMode": "",
+    "ifAlias": ""
+}
+
+
+
+
+
+
+### A list of interface entries.  The number of<br/><br/>entries is given by the value of ifNumber.
+GET http://localhost/api/snmp/onuFEMibPerformTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/onuFEMibPerformTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "onuFEfifAdminStatus": "",
+    "onuFEifLinkUpDownTrapEnable": "",
+    "onuFEifPromiscuousMode": "",
+    "onuFEifAlias": ""
+}
+
+
+
+
+
+
+### A list of interface entries.  The number of<br/><br/>entries is given by the value of ifNumber.
+GET http://localhost/api/snmp/cardPonMibPerformTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/cardPonMibPerformTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "cardifAdminStatus": "",
+    "cardifLinkUpDownTrapEnable": "",
+    "cardifPromiscuousMode": "",
+    "cardifAlias": ""
+}
+
+
+
+
+
+
+### Description.
+GET http://localhost/api/snmp/onuWanServiceBwProfileQueryTable
+Authorization: Bearer {{token}}
+
+### Description.
+GET http://localhost/api/snmp/qryOnuPhyPasswdWhiteListTable
+Authorization: Bearer {{token}}
+
+### Description.
+GET http://localhost/api/snmp/businessModeTable
+Authorization: Bearer {{token}}
+
+### Description.
+GET http://localhost/api/snmp/wanIPReturnTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/onuMACReplaceTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/onuMACReplaceTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "onuMACReplaceMACBefore": "",
+    "onuMACReplaceNewMACaddress": "",
+    "onuMACReplaceStatus": ""
+}
+
+
+
+
+
+
+### Description
+GET http://localhost/api/snmp/powerAlarmStatusTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/fanAlarmStatusTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/currentAlarmTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/hisAlarmTable
+Authorization: Bearer {{token}}
+
+### Description.
+GET http://localhost/api/snmp/lldpLocalSysCapSupportedTable
+Authorization: Bearer {{token}}
+
+### Description.
+GET http://localhost/api/snmp/lldpLocalSysCapEnabledTable
+Authorization: Bearer {{token}}
+
+### Description.
+GET http://localhost/api/snmp/lldpNeighborSysCapSupportedTable
+Authorization: Bearer {{token}}
+
+### Description.
+GET http://localhost/api/snmp/lldpNeighborSysCapEnabledTable
+Authorization: Bearer {{token}}
+
+### Description.
+GET http://localhost/api/snmp/lldpNeighborStatusTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/slotObjectIndexTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/onuObjectIndexTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/uplinkObjectIndexTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/potsObjectIndexTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/portObjectIndexTable
+Authorization: Bearer {{token}}
+
+### Description
+GET http://localhost/api/snmp/ponObjectIndexTable
+Authorization: Bearer {{token}}
+

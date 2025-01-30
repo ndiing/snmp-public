@@ -1,0 +1,28 @@
+### Global MVLAN translation table.
+GET http://localhost/api/snmp/zxAnMcastVlanGlobalTransTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnMcastVlanGlobalTransTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnMcastVlanGlbTransCVid": "",
+    "zxAnMcastVlanGlbTransRowStatus": ""
+}
+
+### MVLAN translation table on the interface.
+GET http://localhost/api/snmp/zxAnMcastVlanIfTransTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnMcastVlanIfTransTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnMcastVlanIfTransCVid": "",
+    "zxAnMcastVlanIfTransRowStatus": ""
+}
+

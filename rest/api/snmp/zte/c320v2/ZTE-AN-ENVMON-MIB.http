@@ -1,0 +1,218 @@
+### This table includes environment temperature information.
+GET http://localhost/api/snmp/zxAnEnvParamTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnEnvParamTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnEnvTempHighAlmThreshold": 75,
+    "zxAnEnvTempLowAlmThreshold": ""
+}
+
+### This table includes card temperature information.
+GET http://localhost/api/snmp/zxAnCardEnvParamTable
+Authorization: Bearer {{token}}
+
+### The 15 minutes interval performance data table of card<br/><br/>temperature.
+GET http://localhost/api/snmp/zxAnCardEnvHis15MinPerfTable
+Authorization: Bearer {{token}}
+
+### The 1 day interval performance data table of card temperature.
+GET http://localhost/api/snmp/zxAnCardEnvHis1DayPerfTable
+Authorization: Bearer {{token}}
+
+### The performance alarm threshold profile items configuration table<br/><br/>of card temperature.
+GET http://localhost/api/snmp/zxAnCardEnvAlmProfileConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnCardEnvAlmProfileConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnCardEnvRiseAlmThresh": "",
+    "zxAnCardEnvClrRiseAlmThresh": "",
+    "zxAnCardEnvRiseWarnThresh": "",
+    "zxAnCardEnvClrRiseWarnThresh": "",
+    "zxAnCardEnvFallWarnThresh": "",
+    "zxAnCardEnvClrFallWarnThresh": "",
+    "zxAnCardEnvFallAlmThresh": "",
+    "zxAnCardEnvClrFallAlmThresh": "",
+    "zxAnCardEnvAlmPrfConfRowStatus": ""
+}
+
+### The performance alarm threshold profile application table of<br/><br/>card temperature.
+GET http://localhost/api/snmp/zxAnCardEnvAlmProfileApplyTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnCardEnvAlmProfileApplyTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnCardEnvAlmPrf": "",
+    "zxAnCardEnvAlmPrfApplyRowStatus": ""
+}
+
+### The performance alarm threshold profile table of card<br/><br/>temperature.
+GET http://localhost/api/snmp/zxAnCardEnvAlmProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnCardEnvAlmProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnCardEnvAlmPrfRowStatus": ""
+}
+
+### Environment overheat protection table.
+GET http://localhost/api/snmp/zxAnEnvOverheatProtectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnEnvOverheatProtectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnEnvOverheatProtectEnable": 2,
+    "zxAnEnvOverheatProtectDelay": 10,
+    "zxAnEnvOverheatProtectFirstStep": "{xpon,xdsl,p2p",
+    "zxAnEnvOverheatProtectSecondStep": "{narrowband"
+}
+
+### Card overheat protection table.
+GET http://localhost/api/snmp/zxAnEnvCardOverheatProtectTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnEnvCardOverheatProtectTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnEnvCardCriticalTempProtectEn": 1
+}
+
+### The 5 minutes or 15 minutes interval environmental monitoring<br/><br/>performance data table of card.
+GET http://localhost/api/snmp/zxAnCardEnvHisMinPerfTable
+Authorization: Bearer {{token}}
+
+### This table includes the environment interface information.
+GET http://localhost/api/snmp/zxAnEnvMonInterfaceTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnEnvMonInterfaceTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnEnvMonInterfaceUsage": 2,
+    "zxAnEnvEpmConnectPort": "",
+    "zxAnEnvBackplaneInterfaceUsage": ""
+}
+
+### This table includes power supply capability table.
+GET http://localhost/api/snmp/zxAnPowerSupplyCapabilityTable
+Authorization: Bearer {{token}}
+
+### This table includes power supply table.
+GET http://localhost/api/snmp/zxAnPowerSupplyTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPowerSupplyTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPowerInVoltageUpperThresh": 0,
+    "zxAnPowerInVoltageLowerThresh": 0,
+    "zxAnPowerInCurrentThresh": 0
+}
+
+### The energy saving status table of the NE.
+GET http://localhost/api/snmp/zxAnEnvEnergySavingTable
+Authorization: Bearer {{token}}
+
+### The Fan Tray Control table, with rack and shelf information.
+GET http://localhost/api/snmp/zxAnEnvFanTrayTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnEnvFanTrayTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnFanTrayAlarmBeepEnable": 1,
+    "zxAnFanTrayAutoSwitchByCardUp": 2,
+    "zxAnFanTraySpeedCtrlMode": 1,
+    "zxAnFanTrayLowSpeed": "",
+    "zxAnFanTrayStdSpeed": "",
+    "zxAnFanTrayHighSpeed": "",
+    "zxAnFanTraySuperSpeed": "",
+    "zxAnFanTrayLowSpeedShiftTemp": "",
+    "zxAnFanTrayStdSpeedShiftTemp": "",
+    "zxAnFanTrayHighSpeedShiftTemp": "",
+    "zxAnFanTraySuperSpeedShiftTemp": "",
+    "zxAnFanTrayLowSpeedPercent": "",
+    "zxAnFanTrayStdSpeedPercent": "",
+    "zxAnFanTrayHighSpeedPercent": "",
+    "zxAnFanTraySuperSpeedPercent": "",
+    "zxAnFanTrayAdminStatus": 1,
+    "zxAnFanTrayConfSpeedLevel": 2,
+    "zxAnFanTraySn": 0
+}
+
+### This table includes speed information and operational status of<br/><br/>the fan units.
+GET http://localhost/api/snmp/zxAnEnvFanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnEnvFanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnEnvFanConfSpeedLevel": 2,
+    "zxAnEnvFanAdminStatus": 1
+}
+
+### The table of environment device.
+GET http://localhost/api/snmp/zxAnEnvDeviceTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnEnvDeviceTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnEnvDeviceName": "",
+    "zxAnEnvDeviceRowStatus": ""
+}
+
+### The table of the switch which monitors environment device.
+GET http://localhost/api/snmp/zxAnEnvDevMonSwitchTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnEnvDevMonSwitchTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnEnvDevMonSwitchDeviceId": 0,
+    "zxAnEnvDevMonSwitchTrapEnable": 2,
+    "zxAnEnvDevMonSwitchNormalStatus": 1
+}
+

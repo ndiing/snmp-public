@@ -1,0 +1,32 @@
+### RIP redistribution table.
+GET http://localhost/api/snmp/zxAnRipRedistributionTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnRipRedistributionTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnRipRedistributionMetric": "",
+    "zxAnRipRedistributionRowStatus": ""
+}
+
+### RIP network table.
+GET http://localhost/api/snmp/zxAnRipNetworkTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnRipNetworkTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnRipNetworkIpPfxLen": "",
+    "zxAnRipNetworkRowStatus": ""
+}
+
+### RIP route advertisement table.
+GET http://localhost/api/snmp/zxAnRipAdvertiseRouteTable
+Authorization: Bearer {{token}}
+

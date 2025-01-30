@@ -1,0 +1,100 @@
+### The 15 minutes interval performance data table of the bridge interfaces.
+GET http://localhost/api/snmp/zxAnBrgIfCurr15MinPerfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnBrgIfCurr15MinPerfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnBrgIfC15MReset": ""
+}
+
+### The 1 day interval performance data table of the bridge interfaces.
+GET http://localhost/api/snmp/zxAnBrgIfCurr1DayPerfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnBrgIfCurr1DayPerfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnBrgIfC1DReset": ""
+}
+
+### The 15 minutes interval history performance data table of the bridge interfaces.
+GET http://localhost/api/snmp/zxAnBrgIfHis15MinPerfTable
+Authorization: Bearer {{token}}
+
+### The 1 day interval history performance data table of the bridge interfaces.
+GET http://localhost/api/snmp/zxAnBrgIfHis1DayPerfTable
+Authorization: Bearer {{token}}
+
+### The performance alarm threshold profile table of the bridge interfaces.
+GET http://localhost/api/snmp/zxAnBrgIfAlmProfileConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnBrgIfAlmProfileConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnBrgIfRiseAlmThresh": "",
+    "zxAnBrgIfClrRiseAlmThresh": "",
+    "zxAnBrgIfRiseWarnThresh": "",
+    "zxAnBrgIfClrRiseWarnThresh": "",
+    "zxAnBrgIfFallWarnThresh": "",
+    "zxAnBrgIfClrFallWarnThresh": "",
+    "zxAnBrgIfFallAlmThresh": "",
+    "zxAnBrgIfClrFallAlmThresh": "",
+    "zxAnBrgIfThreshUsed": "",
+    "zxAnBrgIfAlmProfileConfRowStatus": ""
+}
+
+### The performance alarm threshold profile configuration table of<br/><br/>the bridge interfaces.
+GET http://localhost/api/snmp/zxAnBrgIfAlmProfileApplyTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnBrgIfAlmProfileApplyTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnBrgIfAlmPrf": "",
+    "zxAnBrgIfAlmPrfApplyRowStatus": ""
+}
+
+### The performance alarm threshold profile table of the bridge interfaces.<br/><br/>It can be used to delete all of the performance alarm threshold profiles<br/><br/>which has the same name configured in 'zxAnBrgIfAlmProfileConfTable'.
+GET http://localhost/api/snmp/zxAnBrgIfAlmProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnBrgIfAlmProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnBrgIfAlmProfileRowStatus": ""
+}
+
+### The minutes interval performance data table of the<br/><br/>bridge interfaces.
+GET http://localhost/api/snmp/zxAnBrgIfCurrMinPerfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnBrgIfCurrMinPerfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnBrgIfCMinReset": ""
+}
+
+### The minutes interval history performance data table of the<br/><br/>bridge interfaces.
+GET http://localhost/api/snmp/zxAnBrgIfHisMinPerfTable
+Authorization: Bearer {{token}}
+

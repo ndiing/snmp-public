@@ -1,0 +1,26 @@
+### This table specifies information for configuring<br/><br/>and monitoring LDP specific parameters for<br/><br/>Virtual Private Lan Services(VPLS).
+GET http://localhost/api/snmp/vplsLdpConfigTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/vplsLdpConfigTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "vplsLdpConfigMacAddrWithdraw": 1
+}
+
+### This table provides LDP specific information for<br/><br/>an association between a VPLS service and the<br/><br/>corresponding Pseudo Wires. A service can have more<br/><br/>than one Pseudo Wire association. Pseudo Wires are<br/><br/>defined in the pwTable.
+GET http://localhost/api/snmp/vplsLdpPwBindTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/vplsLdpPwBindTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "vplsLdpPwBindMacAddressLimit": 0
+}
+

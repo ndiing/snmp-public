@@ -1,0 +1,47 @@
+### This table is used to select management targets which should<br/><br/>receive notifications, as well as the type of notification<br/><br/>which should be sent to each selected management target.
+GET http://localhost/api/snmp/snmpNotifyTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/snmpNotifyTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "snmpNotifyTag": 0,
+    "snmpNotifyType": 1,
+    "snmpNotifyStorageType": 3,
+    "snmpNotifyRowStatus": ""
+}
+
+### This table is used to associate a notification filter<br/><br/>profile with a particular set of target parameters.
+GET http://localhost/api/snmp/snmpNotifyFilterProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/snmpNotifyFilterProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "snmpNotifyFilterProfileName": "",
+    "snmpNotifyFilterProfileStorType": 3,
+    "snmpNotifyFilterProfileRowStatus": ""
+}
+
+### The table of filter profiles.  Filter profiles are used<br/><br/>to determine whether particular management targets should<br/><br/>receive particular notifications.<br/><br/><br/><br/>When a notification is generated, it must be compared<br/><br/>with the filters associated with each management target<br/><br/>which is configured to receive notifications, in order to<br/><br/>determine whether it may be sent to each such management<br/><br/>target.<br/><br/><br/><br/>A more complete discussion of notification filtering<br/><br/>can be found in section 6. of [SNMP-APPL].
+GET http://localhost/api/snmp/snmpNotifyFilterTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/snmpNotifyFilterTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "snmpNotifyFilterMask": 0,
+    "snmpNotifyFilterType": 1,
+    "snmpNotifyFilterStorageType": 3,
+    "snmpNotifyFilterRowStatus": ""
+}
+

@@ -1,0 +1,22 @@
+### DHCPv4 test interface configuration table.
+GET http://localhost/api/snmp/zxAnDhcpV4TestIfConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnDhcpV4TestIfConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnDhcpV4TestIfClientMac": "",
+    "zxAnDhcpV4TestIfUserVid": 0,
+    "zxAnDhcpV4TestIfOption60String": "",
+    "zxAnDhcpV4TestIfTimeout": 30,
+    "zxAnDhcpV4TestIfDstIpAddr": "",
+    "zxAnDhcpV4TestIfRowStatus": ""
+}
+
+### DHCPv4 test interface status table.
+GET http://localhost/api/snmp/zxAnDhcpV4TestIfStatusTable
+Authorization: Bearer {{token}}
+

@@ -1,0 +1,149 @@
+### A list of alarm clear entries.
+GET http://localhost/api/snmp/alarmClearTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/alarmClearTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "alarmClearStatus": ""
+}
+
+### A list of current Alarm entries.
+GET http://localhost/api/snmp/curAlarmTable
+Authorization: Bearer {{token}}
+
+### A list of history alarm entries.
+GET http://localhost/api/snmp/hisAlarmTable
+Authorization: Bearer {{token}}
+
+### A list of notification entries.
+GET http://localhost/api/snmp/notificationTable
+Authorization: Bearer {{token}}
+
+### A list of global Alarm entries.
+GET http://localhost/api/snmp/globalAlarmTrapTable
+Authorization: Bearer {{token}}
+
+### A list of heart-beat entries.
+GET http://localhost/api/snmp/alarmHeartBeatTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/alarmHeartBeatTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "alarmHeartBeatStart": "",
+    "alarmHeartBeatPeriod": ""
+}
+
+### A list of alarm level entries.
+GET http://localhost/api/snmp/alarmLevelTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/alarmLevelTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "alarmLevel": ""
+}
+
+### A list of alarm mask entries.
+GET http://localhost/api/snmp/alarmMaskTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/alarmMaskTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "alarmMaskRowStatus": ""
+}
+
+### A list of alarm level entries.
+GET http://localhost/api/snmp/alarmLevelChangeTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/alarmLevelChangeTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "alarmLevelChangeLevel": "",
+    "alarmLevelChangeRowStatus": ""
+}
+
+### A list of alarm shield entries.
+GET http://localhost/api/snmp/alarmShieldTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/alarmShieldTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "alarmShieldRowStatus": ""
+}
+
+### A list of alarm mask entries.
+GET http://localhost/api/snmp/zxr10AlarmMaskTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxr10AlarmMaskTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxr10AlarmMaskRowStatus": ""
+}
+
+### A list of alarm shield profile entries.
+GET http://localhost/api/snmp/zxr10AlmShdProfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxr10AlmShdProfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxr10AlmShdProfRowStatus": ""
+}
+
+### A list of alarm shield profile alarm code entries.
+GET http://localhost/api/snmp/zxr10AlmShdProfCodeTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxr10AlmShdProfCodeTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxr10AlmShdProfCodeStatus": "",
+    "zxr10AlmShdProfCodeRowStatus": ""
+}
+
+### A list of alarm shield profile apply entries.
+GET http://localhost/api/snmp/zxr10AlmShdProfApplyTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxr10AlmShdProfApplyTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxr10AlmShdProfApplyRowStatus": ""
+}
+

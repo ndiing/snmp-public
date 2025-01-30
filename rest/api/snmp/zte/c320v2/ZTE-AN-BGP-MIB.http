@@ -1,0 +1,250 @@
+### The local BGP instance table.It should be configured before all<br/><br/>other BGP objects.
+GET http://localhost/api/snmp/zxAnBgpInstanceTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnBgpInstanceTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnBgpInstAdminStatus": 1,
+    "zxAnBgpInstRouterId": "",
+    "zxAnBgpInstClusterIdType": "",
+    "zxAnBgpInstClusterId": "",
+    "zxAnBgpInstAlwaysCompareMed": 2,
+    "zxAnBgpInstCToCReflection": 1,
+    "zxAnBgpInstDefLocPreference": 100,
+    "zxAnBgpInstDefIpv4Unicast": 1,
+    "zxAnBgpInstDefRouteTargetFilter": 1,
+    "zxAnBgpInstFastExternalFallover": 1,
+    "zxAnBgpInstGraceRestartEnable": 2,
+    "zxAnBgpInstGraceRestartStaleTime": 360,
+    "zxAnBgpInstGraceRestartTime": 120,
+    "zxAnBgpInstRapidConvergence": 2,
+    "zxAnBgpInstUpdateDelayTime": 120,
+    "zxAnBgpInstKeepAliveTime": 30,
+    "zxAnBgpInstHoldDownTime": 90,
+    "zxAnBgpInstRouteCheckTick": 15,
+    "zxAnBgpInstRouteChangeCheckTick": 25,
+    "zxAnBgpInstExtendCommCompatible": 2,
+    "zxAnBgpInstConfedId": 0,
+    "zxAnBgpInstRowStatus": ""
+}
+
+### The AS weight table.
+GET http://localhost/api/snmp/zxAnBgpAsWeightTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnBgpAsWeightTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnBgpAsWeight": 128,
+    "zxAnBgpAsWeightRowStatus": ""
+}
+
+### The peer AS table of BGP confederation.The entry should be created<br/><br/>after the object zxAnBgpConfedId is configured.
+GET http://localhost/api/snmp/zxAnBgpConfedPeerTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnBgpConfedPeerTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnBgpConfedPeerRowStatus": ""
+}
+
+### The BGP AFI attibution table.When BGP instance is created,the AFI<br/><br/>attibution entries of ipv4Unicast(1),ipv4Multicast(2),ipv4Vpnv4(3)<br/><br/>and ipv6Unicast(4) are also created.These entries can't be deleted<br/><br/>only when the BGP instance is deleted.<br/><br/><br/><br/>The AFI entry of ipv4 VRF is created or deleted,when zxAnBgpAfiType<br/><br/>is ipv4Vrf(5) and zxAnBgpAfiIpVrfName is not null.
+GET http://localhost/api/snmp/zxAnBgpAfiAttrTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnBgpAfiAttrTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnBgpAfiOriginateDefRoute": 2,
+    "zxAnBgpAfiDefMed": 0,
+    "zxAnBgpAfiExternalDistance": 20,
+    "zxAnBgpAfiInternalDistance": 200,
+    "zxAnBgpAfiInternalMaxPaths": 1,
+    "zxAnBgpAfiExternalMaxPaths": 1,
+    "zxAnBgpAfiSynchronization": 1,
+    "zxAnBgpAfiDampEnable": 2,
+    "zxAnBgpAfiDampRouteMap": 0,
+    "zxAnBgpAfiDampHalfLifeTime": 15,
+    "zxAnBgpAfiDampReuse": 750,
+    "zxAnBgpAfiDampSuppress": 2000,
+    "zxAnBgpAfiDampMaxSuppressTime": 60,
+    "zxAnBgpAfiFrrEnable": 2,
+    "zxAnBgpAfiRowStatus": ""
+}
+
+### The network policy table,when zxAnBgpAfiType is ipv4Unicast(1),<br/><br/>ipv4Multicast(2),ipv6Unicast(4) or ipv4Vrf(5).
+GET http://localhost/api/snmp/zxAnBgpAfiNetworkTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnBgpAfiNetworkTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnBgpAfiNetworkRouteMap": 0,
+    "zxAnBgpAfiNetworkRowStatus": ""
+}
+
+### The BGP redistribution policy table,when zxAnBgpAfiType is<br/><br/>ipv4Unicast(1),ipv4Multicast(2),ipv6Unicast(4) or ipv4Vrf(5).
+GET http://localhost/api/snmp/zxAnBgpAfiRedisTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnBgpAfiRedisTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnBgpAfiRedisMed": 0,
+    "zxAnBgpAfiRedisRouteMap": 0,
+    "zxAnBgpAfiRedisRowStatus": ""
+}
+
+### The BGP aggregation policy table,when BGP AFI is<br/><br/>ipv4Unicast(1).
+GET http://localhost/api/snmp/zxAnBgpAfiAggPolicyTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnBgpAfiAggPolicyTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnBgpAfiAggPolicyFlag": "",
+    "zxAnBgpAfiAggSubnets": 1,
+    "zxAnBgpAfiAggRowStatus": ""
+}
+
+### The subnet table of BGP aggregation policy,when zxAnBgpAfitype is<br/><br/>ipv4Unicast(1).
+GET http://localhost/api/snmp/zxAnBgpAfiAggSubnetTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnBgpAfiAggSubnetTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnBgpAfiSunbetRowStatus": ""
+}
+
+### The configured attributions of BGP peer neighbors,only when<br/><br/>zxAnBgpAfiType is ipv4Unicast(1) or ipv4Vrf(5).
+GET http://localhost/api/snmp/zxAnBgpAfiPeerConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnBgpAfiPeerConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnBgpAfiPeerRemoteAs": "",
+    "zxAnBgpAfiPeerIfName": 0,
+    "zxAnBgpAfiPeerDescription": 0,
+    "zxAnBgpAfiPeerAdvInterval": 30,
+    "zxAnBgpAfiPeerAllowAsInEnable": 2,
+    "zxAnBgpAfiPeerAllowAsInNum": 3,
+    "zxAnBgpAfiPeerExternalMultiHop": 8,
+    "zxAnBgpAfiPeerMaxPrefixNum": 4294967295,
+    "zxAnBgpAfiPeerMaxPrefixThresh": 75,
+    "zxAnBgpAfiPeerMaxPrefixAction": 1,
+    "zxAnBgpAfiPeerMaxPrefixReset": 0,
+    "zxAnBgpAfiPeerOrigInterval": 15,
+    "zxAnBgpAfiPeerDefOriginate": 2,
+    "zxAnBgpAfiPeerNextHopSelf": 2,
+    "zxAnBgpAfiPeerPassive": 2,
+    "zxAnBgpAfiPeerRouteReflectClient": 2,
+    "zxAnBgpAfiPeerSendCommunity": 2,
+    "zxAnBgpAfiPeerFallOverBfd": 2,
+    "zxAnBgpAfiPeerSendMed": 2,
+    "zxAnBgpAfiPeerSoftReconfig": 2,
+    "zxAnBgpAfiPeerRemovePrivateAs": 1,
+    "zxAnBgpAfiPeerPassword": 0,
+    "zxAnBgpAfiPeerPasswordEncrypt": 2,
+    "zxAnBgpAfiPeerPrefixListIn": 0,
+    "zxAnBgpAfiPeerPrefixListOut": 0,
+    "zxAnBgpAfiPeerRouteMapIn": 0,
+    "zxAnBgpAfiPeerRouteMapOut": 0,
+    "zxAnBgpAfiPeerAdminStatus": 1,
+    "zxAnBgpAfiPeerActivate": 1,
+    "zxAnBgpAfiPeerKeepAliveTime": 30,
+    "zxAnBgpAfiPeerHoldDownTime": 90,
+    "zxAnBgpAfiPeerRowStatus": ""
+}
+
+### The attributions of BGP peer group,only when zxAnBgpAfiType is<br/><br/>ipv4Unicast(1) or ipv4Vrf(5).
+GET http://localhost/api/snmp/zxAnBgpAfiPeerGrpAttrTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnBgpAfiPeerGrpAttrTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnBgpAfiPeerGrpRemoteAs": "",
+    "zxAnBgpAfiPeerGrpIfName": 0,
+    "zxAnBgpAfiPeerGrpDescription": 0,
+    "zxAnBgpAfiPeerGrpAdvInterval": 30,
+    "zxAnBgpAfiPeerGrpAllowAsInEnable": 2,
+    "zxAnBgpAfiPeerGrpAllowAsInNum": 3,
+    "zxAnBgpAfiPeerGrpExtMultiHop": 8,
+    "zxAnBgpAfiPeerGrpMaxPrefixNum": 4294967295,
+    "zxAnBgpAfiPeerGrpMaxPrefixThresh": 75,
+    "zxAnBgpAfiPeerGrpMaxPrefixAction": "",
+    "zxAnBgpAfiPeerGrpMaxPrefixReset": "",
+    "zxAnBgpAfiPeerGrpOrigInterval": 15,
+    "zxAnBgpAfiPeerGrpDefOriginate": 2,
+    "zxAnBgpAfiPeerGrpNextHopSelf": 2,
+    "zxAnBgpAfiPeerGrpPassive": 2,
+    "zxAnBgpAfiPeerGrpRouteReflClient": 2,
+    "zxAnBgpAfiPeerGrpSendCommunity": 2,
+    "zxAnBgpAfiPeerGrpFallOverBfd": 2,
+    "zxAnBgpAfiPeerGrpSendMed": 2,
+    "zxAnBgpAfiPeerGrpSoftReconfig": 2,
+    "zxAnBgpAfiPeerGrpRemovePrivateAs": 1,
+    "zxAnBgpAfiPeerGrpPassword": 0,
+    "zxAnBgpAfiPeerGrpPasswordEncrypt": 2,
+    "zxAnBgpAfiPeerGrpPrefixListIn": 0,
+    "zxAnBgpAfiPeerGrpPrefixListOut": 0,
+    "zxAnBgpAfiPeerGrpRouteMapIn": 0,
+    "zxAnBgpAfiPeerGrpRouteMapOut": 0,
+    "zxAnBgpAfiPeerGrpAdminStatus": 1,
+    "zxAnBgpAfiPeerGrpActivate": 1,
+    "zxAnBgpAfiPeerGrpKeepAliveTime": 30,
+    "zxAnBgpAfiPeerGrpHoldDownTime": 90,
+    "zxAnBgpAfiPeerGrpRowStatus": ""
+}
+
+### The member table of BGP peer group,when zxAnBgpAfiType is<br/><br/>ipv4Unicast(1) or ipv4Vrf(5).
+GET http://localhost/api/snmp/zxAnBgpAfiPeerGrpMemTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnBgpAfiPeerGrpMemTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnBgpAfiPeerGrpMemRowStatus": ""
+}
+
+### BGP peer table. This table contains information about the<br/><br/>connections with BGP peers.<br/><br/>This table currently only used for BGP4+.
+GET http://localhost/api/snmp/zxAnBgpPeerTable
+Authorization: Bearer {{token}}
+

@@ -1,0 +1,25 @@
+### A list of current IPv4 static route entries.
+GET http://localhost/api/snmp/zxR10Ipv4StaticRouteTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxR10Ipv4StaticRouteTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxR10Ipv4SrNextHopIsGlobal": 2,
+    "zxR10Ipv4SrTag": 0,
+    "zxR10Ipv4SrMetric": 0,
+    "zxR10Ipv4SrRowStatus": "",
+    "zxR10Ipv4SrTrackSessionName": "",
+    "zxR10Ipv4SrBfdEnable": "bfddisable",
+    "zxR10Ipv4SrDistance": 1,
+    "zxR10Ipv4SrName": "",
+    "zxR10Ipv4SrPermanent": 2
+}
+
+### A list of current static route entries for frr.
+GET http://localhost/api/snmp/zxR10Ipv4StaticRouteFrrTable
+Authorization: Bearer {{token}}
+

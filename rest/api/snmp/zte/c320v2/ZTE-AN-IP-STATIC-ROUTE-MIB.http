@@ -1,0 +1,22 @@
+### A list of current static route entries.
+GET http://localhost/api/snmp/zxAnIpStaticRouteTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIpStaticRouteTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIpStaticRouteNexthopType": "",
+    "zxAnIpStaticRouteNexthop": "",
+    "zxAnIpStaticRouteMetricValue": "",
+    "zxAnIpStaticRouteDetectGroupNum": "",
+    "zxAnIpStaticRouteNexthopIsGlobal": "",
+    "zxAnIpStaticRouteTrackSessName": "",
+    "zxAnIpStaticRouteDetectType": "",
+    "zxAnIpStaticRouteSlave": "",
+    "zxAnIpStaticRouteOutIntfName": "",
+    "zxAnIpStaticRouteRowStatus": ""
+}
+

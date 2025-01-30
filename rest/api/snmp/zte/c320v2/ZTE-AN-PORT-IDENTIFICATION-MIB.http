@@ -1,0 +1,20 @@
+### The table of port identification data at interface level.
+GET http://localhost/api/snmp/zxAnPortIdIfConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnPortIdIfConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnPortIdIfConfFormat": 1,
+    "zxAnPortIdIfConfRidEnable": 2,
+    "zxAnPortIdIfConfRid": 0,
+    "zxAnPortIdIfConfRidProtocol": "{ pppoe,dhcpv4,dhcpv6",
+    "zxAnPortIdIfConfUserDefinedCid": 0,
+    "zxAnPortIdIfConfFormatProfile": "",
+    "zxAnPortIdIfConfRidFormatProfile": 0,
+    "zxAnPortIdIfConfAlcEnable": 2
+}
+

@@ -1,0 +1,4 @@
+### Route label table.
+GET http://localhost/api/snmp/zxAnRtmLabelTable
+Authorization: Bearer {{token}}
+

@@ -1,0 +1,49 @@
+### Remote Unit software version update task configuration information<br/><br/>table. It will complete batch Remote Unit version upgrade of two<br/><br/>scenarios, one is online, the other is offline(automatic upgrade).
+GET http://localhost/api/snmp/zxAnRuSwUpdatingTaskTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnRuSwUpdatingTaskTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnRuSwUpdatingTaskDesc": "",
+    "zxAnRuSwUpdatingTaskMode": 3,
+    "zxAnRuSwUpdatingTaskServiceType": "",
+    "zxAnRuSwUpdatingTaskVendor": "zte",
+    "zxAnRuSwUpdatingTaskEquipType": "",
+    "zxAnRuSwUpdatingTaskCrtrnType": 1,
+    "zxAnRuSwUpdatingTaskCrtrnVer": "",
+    "zxAnRuSwUpdatingTaskOperObjType": 2,
+    "zxAnRuSwUpdatingTaskOperObjList": "",
+    "zxAnRuSwUpdatingTaskAction": "",
+    "zxAnRuSwUpdatingTaskFileName": "",
+    "zxAnRuSwUpdatingTaskRuAction": 2,
+    "zxAnRuSwUpdatingTaskParallelLmt": 64,
+    "zxAnRuSwUpdatingTaskLinePrf": 0,
+    "zxAnRuSwUpdatingTaskRemotePrf": 0,
+    "zxAnRuSwUpdatingTaskFileLocation": 1,
+    "zxAnRuSwUpdatingTaskFtpSvrProto": 2,
+    "zxAnRuSwUpdatingTaskFtpSvrIpType": 1,
+    "zxAnRuSwUpdatingTaskFtpSvrIpAddr": "0.0.0.0",
+    "zxAnRuSwUpdatingTaskFtpSvrUName": 0,
+    "zxAnRuSwUpdatingTaskFtpSvrUPwd": 0,
+    "zxAnRuSwUpdatingTaskFtpSvrPath": 0,
+    "zxAnRuSwUpdatingTaskStorageDevId": 1,
+    "zxAnRuSwUpdatingTaskFtpSvrVrfNm": "",
+    "zxAnRuSwUpdatingTaskRowStatus": ""
+}
+
+### Remote Unit software update task statistics information table.
+GET http://localhost/api/snmp/zxAnRuSwTaskStatsTable
+Authorization: Bearer {{token}}
+
+### Remote Unit software version update status configuration<br/><br/>information table.Each Remote Unit exists an item in this table,it<br/><br/>records the result of updating Remote Unit version last time.If<br/><br/>Remote Unit version updating is in process then can get the<br/><br/>updating percent by reading this table.
+GET http://localhost/api/snmp/zxAnRuSwUpdateStatusTable
+Authorization: Bearer {{token}}
+
+### Remote Unit software version information table.<br/><br/>Usually,two instances of the software image managed entity are<br/><br/>contained in an instance of an Remote Unit or equipment managed<br/><br/>entity whose software is independently managed.
+GET http://localhost/api/snmp/zxAnRuSwImageTable
+Authorization: Bearer {{token}}
+

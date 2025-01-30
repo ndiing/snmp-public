@@ -1,0 +1,148 @@
+### A table containing NTP server information.
+GET http://localhost/api/snmp/zxr10ntpServerTable
+Authorization: Bearer {{token}}
+
+### A table containing NTP server information.Setting the<br/>priority leaf node results in initializing the other leaf<br/>nodes except the indexs and rowStatus.Suggest the whole<br/>table setting.
+GET http://localhost/api/snmp/zxr10ntpServerCfgTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxr10ntpServerCfgTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxr10ntpServerCfgPriority": "",
+    "zxr10ntpServerCfgVersion": "",
+    "zxr10ntpServerCfgLock": "",
+    "zxr10ntpServerCfgKey": "",
+    "zxr10ntpServerCfgRowStatus": ""
+}
+
+### A table containing NTP peer information.Setting the<br/>priority leaf node results in initializing the other leaf<br/>nodes except the indexs and rowStatus.Suggest the whole<br/>table setting.
+GET http://localhost/api/snmp/zxr10ntpPeerCfgTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxr10ntpPeerCfgTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxr10ntpPeerCfgPriority": "",
+    "zxr10ntpPeerCfgVersion": 3,
+    "zxr10ntpPeerCfgKey": "",
+    "zxr10ntpPeerCfgRowStatus": ""
+}
+
+### A table containing NTP server information.Setting the<br/>priority leaf node results in initializing the other leaf<br/>nodes except the indexs and rowStatus.Suggest the whole<br/>table setting.
+GET http://localhost/api/snmp/zxr10ntpServerWithDnsCfgTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxr10ntpServerWithDnsCfgTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxr10ntpServerWithDnsCfgPriority": "",
+    "zxr10ntpServerWithDnsCfgVersion": "",
+    "zxr10ntpServerWithDnsCfgLock": "",
+    "zxr10ntpServerWithDnsCfgKey": "",
+    "zxr10ntpServerWDnsCfgRowStatus": ""
+}
+
+### A table containing NTP peer information.Setting the<br/>priority leaf node results in initializing the other leaf<br/>nodes except the indexs and rowStatus.Suggest the whole<br/>table setting.
+GET http://localhost/api/snmp/zxr10ntpPeerWithDnsCfgTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxr10ntpPeerWithDnsCfgTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxr10ntpPeerWithDnsCfgPriority": "",
+    "zxr10ntpPeerWithDnsCfgVersion": 3,
+    "zxr10ntpPeerWithDnsCfgKey": "",
+    "zxr10ntpPeerWithDnsCfgRowStatus": ""
+}
+
+### A table containing NTP broadcast Client information.
+GET http://localhost/api/snmp/zxr10ntpBroadcastClientTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxr10ntpBroadcastClientTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxr10ntpBroadcastClientRowStatus": ""
+}
+
+### A table containing NTP broadcast Server information.<br/>Setting some leaf nodes results in initializing the other<br/>leaf nodes except the indexs and rowStatus.Suggest the<br/>whole table setting.
+GET http://localhost/api/snmp/zxr10ntpBroadcastServerTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxr10ntpBroadcastServerTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxr10ntpBroadcastServerVersion": "",
+    "zxr10ntpBroadcastServerKey": "",
+    "zxr10ntpBroadcastServerRowStatus": ""
+}
+
+### A table containing NTP multicast Client information.
+GET http://localhost/api/snmp/zxr10ntpMulticastClientTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxr10ntpMulticastClientTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxr10ntpMulticastClientRowStatus": ""
+}
+
+### A table containing NTP multicast Server information.<br/>Setting some leaf nodes results in initializing the other<br/>leaf nodes except the indexs and rowStatus.Suggest the<br/>whole table setting.
+GET http://localhost/api/snmp/zxr10ntpMulticastServerTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxr10ntpMulticastServerTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxr10ntpMulticastServerVersion": 3,
+    "zxr10ntpMulticastServerKey": "",
+    "zxr10ntpMulticastServerTTL": "",
+    "zxr10ntpMulticastServerRowStatus": ""
+}
+
+### A table containing NTP Authentication information.
+GET http://localhost/api/snmp/zxr10ntpAuthTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxr10ntpAuthTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxr10ntpAuthKey": "",
+    "zxr10ntpAuthEncryptedKey": "",
+    "zxr10ntpAuthTrusted": "",
+    "zxr10ntpAuthRowStatus": "",
+    "zxr10ntpAuthKeychain": ""
+}
+
+### A table containing NTP association information.
+GET http://localhost/api/snmp/zxr10ntpAssocTable
+Authorization: Bearer {{token}}
+

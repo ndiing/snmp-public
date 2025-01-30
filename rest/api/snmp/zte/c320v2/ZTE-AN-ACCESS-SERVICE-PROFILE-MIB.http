@@ -1,0 +1,27 @@
+### This table contains information of the access service profile<br/><br/>configuration. One entry in this table reflects an access service<br/><br/>profile defined by a manager.
+GET http://localhost/api/snmp/zxAnAccessSrvPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnAccessSrvPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnAccessSrvPrfRowStatus": ""
+}
+
+### This table is to provide the interface access service profile<br/><br/>configuration. One entry in this table reflects an access service<br/><br/>profile has been applied to an interface.
+GET http://localhost/api/snmp/zxAnAccessSrvPrfIfConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnAccessSrvPrfIfConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnAccessSrvPrfIfConfPrf": "",
+    "zxAnAccessSrvPrfIfConfRowStatus": ""
+}
+

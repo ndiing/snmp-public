@@ -1,0 +1,286 @@
+### The ONU profile T-CONT table.
+GET http://localhost/api/snmp/zxAnGponOPTcontTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponOPTcontTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponOPTcontName": "",
+    "zxAnGponOPTcontBwPrfName": "",
+    "zxAnGponOPTcontDbaGapMode": "",
+    "zxAnGponOPTcontRowStatus": ""
+}
+
+### The ONU profile GEM port table.
+GET http://localhost/api/snmp/zxAnGponOPGemPortTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponOPGemPortTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponOPGemPortName": "",
+    "zxAnGponOPGemPortTcontIndex": "",
+    "zxAnGponOPGemPortQueueOfTcont": 0,
+    "zxAnGponOPGemPortEncrypt": 2,
+    "zxAnGponOPGemPortRowStatus": ""
+}
+
+### The ONU profile mapping table.
+GET http://localhost/api/snmp/zxAnGponOPMappingTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponOPMappingTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponOPMappingGemPort": "",
+    "zxAnGponOPMappingIfId": "",
+    "zxAnGponOPMappingType": "",
+    "zxAnGponOPMappingCos": 0,
+    "zxAnGponOPMappingVid": "",
+    "zxAnGponOPMappingRowStatus": ""
+}
+
+### The ONU profile ONU configuration table.
+GET http://localhost/api/snmp/zxAnGponOPOnuConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponOPOnuConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponOPOnuConfVportMode": "",
+    "zxAnGponOPOnuConfUsFecEnable": 4
+}
+
+### The ONU profile VPort table.
+GET http://localhost/api/snmp/zxAnGponOPBpConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponOPBpConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponOPBpName": "",
+    "zxAnGponOPBpMapType": "",
+    "zxAnGponOPBpRowStatus": ""
+}
+
+### The ONU profile VPort mapping table.
+GET http://localhost/api/snmp/zxAnGponOPBpMapConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponOPBpMapConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponOPBpMapConfRowStatus": ""
+}
+
+### The ONU profile T-CONT queue schedule table.
+GET http://localhost/api/snmp/zxAnGponOPTcontQueueSchedTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponOPTcontQueueSchedTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponOPTcontQueueSchedPrfName": ""
+}
+
+### The ONU profile GPON GEM port current performance table.
+GET http://localhost/api/snmp/zxAnGponOPGemPortCurrPerfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponOPGemPortCurrPerfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponOPGemPortCurrRowStatus": ""
+}
+
+### The ONU profile port VLAN table.<br/><br/>A table containing VLAN port information for VLANs<br/><br/>configured into the bridge by (local or network)<br/><br/>management,  specifying the set of<br/><br/>ports to which frames received on a VLAN for this FDB<br/><br/>and containing a specific Group destination address are<br/><br/>allowed to be forwarded.<br/><br/><br/><br/>When a manager wants to create a VLAN port,it must comply<br/><br/>with the multi-variables usage rule that all the mib variables<br/><br/>related to same fuction must be in one snmp set operation, the<br/><br/>variables have two type: mandatory and optional.<br/><br/><br/><br/>Mandatory variables must be in the one snmp set operation.<br/><br/>Optional variables may be in the one snmp set operation with the<br/><br/>mandatory variables, but must not be used alone.<br/><br/><br/><br/>To modify a service port,  there are several cases base on the<br/><br/>variable zxAnGponOPVlanPortMode, and the mandatory and optional<br/><br/>variables for each case are different.<br/><br/><br/><br/>Case 1: to modify a VLAN port when zxAnGponOPVlanPortMode is<br/><br/>access(1):<br/><br/>- mandatoty:<br/><br/>zxAnGponOPVlanPortMode,<br/><br/>- optional :<br/><br/>zxAnGponOPVlanPortDefaultVid,<br/><br/>zxAnGponOPVlanPortDefaultCos,<br/><br/><br/><br/>Case 2: to modify a service port when zxAnGponOPVlanPortMode is<br/><br/>trunk(2):<br/><br/>- mandatoty:<br/><br/>zxAnGponOPVlanPortMode,<br/><br/>- optional :<br/><br/><br/><br/>Case 3: to modify a service port when zxAnGponOPVlanPortMode is<br/><br/>hybrid(3):<br/><br/>- mandatoty:<br/><br/>zxAnGponOPVlanPortMode,<br/><br/>- optional :<br/><br/>zxAnGponOPVlanPortDefaultVid,<br/><br/>zxAnGponOPVlanPortDefaultCos,<br/><br/><br/><br/>Case 4: to modify a service port when zxAnGponOPVlanPortMode is<br/><br/>transparent(4):<br/><br/>- mandatoty:<br/><br/>zxAnGponOPVlanPortMode,<br/><br/>- optional :<br/><br/><br/><br/>Case 5: to modify a service port when zxAnGponOPVlanPortMode is<br/><br/>none(5):<br/><br/>- mandatoty:<br/><br/>zxAnGponOPVlanPortMode,<br/><br/>- optional :
+GET http://localhost/api/snmp/zxAnGponOPVlanPortTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponOPVlanPortTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponOPVlanPortMode": 5,
+    "zxAnGponOPVlanPortDefaultVid": 1,
+    "zxAnGponOPVlanPortDefaultCos": 0
+}
+
+### The port VLAN operation command table.<br/><br/>This table is used for ONU profile.
+GET http://localhost/api/snmp/zxAnGponOPVlanPortCmdTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponOPVlanPortCmdTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponOPVlanPortCmd": "",
+    "zxAnGponOPVlanPortVid": ""
+}
+
+### The ONU profile port VLAN translation table.
+GET http://localhost/api/snmp/zxAnGponOPVlanTransTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponOPVlanTransTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponOPVlanTransCVid": 0,
+    "zxAnGponOPVlanTransCtagCos": 8,
+    "zxAnGponOPVlanTransSVid": 0,
+    "zxAnGponOPVlanTransStagCos": 8,
+    "zxAnGponOPVlanTransRowStatus": ""
+}
+
+### The ONU profile multicast VLAN table.
+GET http://localhost/api/snmp/zxAnGponOPMVlanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponOPMVlanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponOPMVlanRowStatus": ""
+}
+
+### The ONU profile IGMP configuration table.
+GET http://localhost/api/snmp/zxAnGponOPIgmpConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponOPIgmpConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponOPIgmpUsedPrfName": "",
+    "zxAnGponOPIgmpMaxGroups": 0,
+    "zxAnGponOPIgmpMaxBw": 0,
+    "zxAnGponOPIgmpBwEnforce": 2,
+    "zxAnGponOPIgmpConfRowStatus": ""
+}
+
+### The ONU profile traffic scheduler configuration table.
+GET http://localhost/api/snmp/zxAnGponOPTrafficSchedTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponOPTrafficSchedTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponOPTrafficSchedPrfName": ""
+}
+
+### The ONU profile extended VLAN configuration table.
+GET http://localhost/api/snmp/zxAnGponOPExtVlanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponOPExtVlanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponOPExtVlanInputTpid": 100,
+    "zxAnGponOPExtVlanOutputTpid": 100,
+    "zxAnGponOPExtVlanDsMode": 1,
+    "zxAnGponOPExtVlanDscp2CosPrf": "",
+    "zxAnGponOPExtVlanRowStatus": ""
+}
+
+### The ONU profile extended VLAN rule configuration table.
+GET http://localhost/api/snmp/zxAnGponOPExtVlanRuleConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponOPExtVlanRuleConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponOPExtVlanConfTreatRule": "",
+    "zxAnGponOPExtVlanConfRowStatus": ""
+}
+
+### The ONU profile bridge configuration table.
+GET http://localhost/api/snmp/zxAnGponOPBrgConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponOPBrgConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponOPBrgStpEnable": "",
+    "zxAnGponOPBrgLearningEnable": "",
+    "zxAnGponOPBrgLocalBridgeEnable": "",
+    "zxAnGponOPBrgPri": "",
+    "zxAnGponOPBrgMaxAge": "",
+    "zxAnGponOPBrgHelloTime": "",
+    "zxAnGponOPBrgForwardDelay": "",
+    "zxAnGponOPBrgUnknownMacDiscard": "",
+    "zxAnGponOPBrgMacLearningDepth": "",
+    "zxAnGponOPBrgAgingTime": ""
+}
+
+### The ONU profile WAN IP configuration table.
+GET http://localhost/api/snmp/zxAnGponOPWanIpConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnGponOPWanIpConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnGponOPWanIpMode": 2,
+    "zxAnGponOPWanVlanPrf": "",
+    "zxAnGponOPWanHostId": 0,
+    "zxAnGponOPWanOnuIdentifier": "",
+    "zxAnGponOPWanPppoeAuthMode": 1,
+    "zxAnGponOPWanPppoeUsername": "",
+    "zxAnGponOPWanPppoePassword": "",
+    "zxAnGponOPWanRspPing": 1,
+    "zxAnGponOPWanRspTraceRoute": 2,
+    "zxAnGponOPWanRsEnable": 2,
+    "zxAnGponOPWanOnLinkPrefix": 0,
+    "zxAnGponOPWanPppoeServiceName": "",
+    "zxAnGponOPWanIpConfRowStatus": ""
+}
+

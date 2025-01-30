@@ -1,0 +1,47 @@
+### This table specifies information for configuring<br/><br/>and monitoring OSPF instance.
+GET http://localhost/api/snmp/zxAnOspfInstanceTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnOspfInstanceTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnOspfInstDefaultMetric": 20,
+    "zxAnOspfInstBfdSupport": 2,
+    "zxAnOspfInstRestart": "",
+    "zxAnOspfInstRedistribute": "",
+    "zxAnOspfInstanceRowStatus": ""
+}
+
+### This table specifies information for configuring and monitoring<br/><br/>OSPF interface.
+GET http://localhost/api/snmp/zxAnOspfNetworkTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnOspfNetworkTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnOspfNetworkRowStatus": ""
+}
+
+### This table specifies redistribute information from another routing<br/><br/>protocol.
+GET http://localhost/api/snmp/zxAnOspfRedistributeTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnOspfRedistributeTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnOspfRedistributeTag": "",
+    "zxAnOspfRedistributeMetric": "",
+    "zxAnOspfRedistributeMetricType": 2,
+    "zxAnOspfRedistributeInstanceId": "",
+    "zxAnOspfRedistributeRowStatus": ""
+}
+

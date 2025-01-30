@@ -1,0 +1,26 @@
+### BGP peer table.  This table contains,<br/><br/>one entry per BGP peer, information about<br/><br/>the connections with BGP peers.
+GET http://localhost/api/snmp/bgpPeerTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/bgpPeerTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "bgpPeerAdminStatus": "",
+    "bgpPeerConnectRetryInterval": "",
+    "bgpPeerHoldTimeConfigured": "",
+    "bgpPeerKeepAliveConfigured": "",
+    "bgpPeerMinASOriginationInterval": "",
+    "bgpPeerMinRouteAdvertisementInterval": ""
+}
+
+### The BGP Received Path Attribute Table<br/><br/>contains information about paths to<br/><br/>destination networks received from all<br/><br/>peers running BGP version 3 or less.
+GET http://localhost/api/snmp/bgpRcvdPathAttrTable
+Authorization: Bearer {{token}}
+
+### The BGP-4 Received Path Attribute Table<br/><br/>contains information about paths to<br/><br/>destination networks received from all<br/><br/>BGP4 peers.
+GET http://localhost/api/snmp/bgp4PathAttrTable
+Authorization: Bearer {{token}}
+

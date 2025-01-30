@@ -1,0 +1,19 @@
+### This table contains ZESS domain information.
+GET http://localhost/api/snmp/zxAnZessDomainTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnZessDomainTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnZessProtectMstpInstanceId": "",
+    "zxAnZessPrimaryPort": "",
+    "zxAnZessSecondaryPort": "",
+    "zxAnZessPreupTime": 2,
+    "zxAnZessDomainRevertiveMode": 1,
+    "zxAnZessClearSwitchTimes": "",
+    "zxAnZessDomainRowStatus": ""
+}
+

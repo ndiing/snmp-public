@@ -1,0 +1,17 @@
+### The table of watchdog function.
+GET http://localhost/api/snmp/zxAnCardWatchdogTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnCardWatchdogTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnCardHardwareWatchdogEnable": 2,
+    "zxAnCardTaskSuspendCardResetMode": 1,
+    "zxAnCardSoftwareWatchdogEnable": 2,
+    "zxAnCardTaskDurationThreshold": 5,
+    "zxAnCardTaskCpuUsageThreshold": 75
+}
+

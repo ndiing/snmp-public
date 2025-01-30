@@ -1,0 +1,31 @@
+### The MAC address assignment table of VRG card.
+GET http://localhost/api/snmp/zxAnVrgCardMacAssignTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnVrgCardMacAssignTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnVrgCardBeginMacAddr": "",
+    "zxAnVrgCardMacAddrTotalNum": 160000
+}
+
+### The binding relationship table between PON card and VRG card.
+GET http://localhost/api/snmp/zxAnVrgCardBindTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnVrgCardBindTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnVrgCardBindPonCardReserveVid": "",
+    "zxAnVrgCardBindVrgCardRack": "",
+    "zxAnVrgCardBindVrgCardShelf": "",
+    "zxAnVrgCardBindVrgCardSlot": "",
+    "zxAnVrgCardBindRowStatus": ""
+}
+

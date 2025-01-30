@@ -1,0 +1,28 @@
+### The LSP ping table.
+GET http://localhost/api/snmp/zxAnLspPingTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnLspPingTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnLspPingType": 1,
+    "zxAnLspPingLdpRmIpAddrType": 0,
+    "zxAnLspPingLdpRmIpAddr": "0.0.0.0",
+    "zxAnLspPingLdpRmIpAddrPfxLen": 32,
+    "zxAnLspPingOption": 1,
+    "zxAnLspPingTxPkts": 5,
+    "zxAnLspPingTimeout": 2,
+    "zxAnLspPingTxPktLen": 100,
+    "zxAnLspPingActiveStatus": 2,
+    "zxAnLspPingTestName": "lspping table",
+    "zxAnLspPingPwName": 0,
+    "zxAnLspPingRowStatus": ""
+}
+
+### The LSP Ping results table.<br/><br/><br/><br/>An entry is added to the zxAnLspPingResultTable when an<br/><br/>zxAnLspPingEntry is started by successful setting<br/><br/>zxAnLspPingActiveStatus to activate(1).
+GET http://localhost/api/snmp/zxAnLspPingResultTable
+Authorization: Bearer {{token}}
+

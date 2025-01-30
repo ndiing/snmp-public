@@ -1,0 +1,85 @@
+### A table that contains information about every high-<br/><br/>capacity port that is associated with this transparent<br/><br/>bridge.
+GET http://localhost/api/snmp/dot1dTpHCPortTable
+Authorization: Bearer {{token}}
+
+### A table that contains the most-significant bits of<br/><br/>statistics counters for ports that are associated with this<br/><br/>transparent bridge that are on high-capacity interfaces, as<br/><br/>defined in the conformance clauses for this table.  This table<br/><br/>is provided as a way to read 64-bit counters for agents that<br/><br/>support only SNMPv1.<br/><br/><br/><br/>Note that the reporting of most-significant and<br/><br/>least-significant counter bits separately runs the risk of<br/><br/>missing an overflow of the lower bits in the interval between<br/><br/>sampling.  The manager must be aware of this possibility, even<br/><br/>within the same varbindlist, when interpreting the results of<br/><br/>a request or asynchronous notification.
+GET http://localhost/api/snmp/dot1dTpPortOverflowTable
+Authorization: Bearer {{token}}
+
+### A table that contains capabilities information about<br/><br/>every port that is associated with this bridge.
+GET http://localhost/api/snmp/dot1dPortCapabilitiesTable
+Authorization: Bearer {{token}}
+
+### A table that contains information about every port that<br/><br/>is associated with this transparent bridge.
+GET http://localhost/api/snmp/dot1dPortPriorityTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/dot1dPortPriorityTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "dot1dPortDefaultUserPriority": "",
+    "dot1dPortNumTrafficClasses": ""
+}
+
+### A list of Regenerated User Priorities for each received<br/><br/>User Priority on each port of a bridge.  The Regenerated<br/><br/>User Priority value may be used to index the Traffic<br/><br/>Class Table for each input port.  This only has effect<br/><br/>on media that support native User Priority.  The default<br/><br/>values for Regenerated User Priorities are the same as<br/><br/>the User Priorities.
+GET http://localhost/api/snmp/dot1dUserPriorityRegenTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/dot1dUserPriorityRegenTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "dot1dRegenUserPriority": ""
+}
+
+### A table mapping evaluated User Priority to Traffic<br/><br/>Class, for forwarding by the bridge.  Traffic class is a<br/><br/>number in the range (0..(dot1dPortNumTrafficClasses-1)).
+GET http://localhost/api/snmp/dot1dTrafficClassTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/dot1dTrafficClassTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "dot1dTrafficClass": ""
+}
+
+### A table mapping Regenerated User Priority to Outbound<br/><br/>Access Priority.  This is a fixed mapping for all port<br/><br/>types, with two options for 802.5 Token Ring.
+GET http://localhost/api/snmp/dot1dPortOutboundAccessPriorityTable
+Authorization: Bearer {{token}}
+
+### A table of GARP control information about every bridge<br/><br/>port.  This is indexed by dot1dBasePort.
+GET http://localhost/api/snmp/dot1dPortGarpTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/dot1dPortGarpTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "dot1dPortGarpJoinTime": 20,
+    "dot1dPortGarpLeaveTime": 60,
+    "dot1dPortGarpLeaveAllTime": 1000
+}
+
+### A table of GMRP control and status information about<br/><br/>every bridge port.  Augments the dot1dBasePortTable.
+GET http://localhost/api/snmp/dot1dPortGmrpTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/dot1dPortGmrpTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "dot1dPortGmrpStatus": 1,
+    "dot1dPortRestrictedGroupRegistration": 2
+}
+

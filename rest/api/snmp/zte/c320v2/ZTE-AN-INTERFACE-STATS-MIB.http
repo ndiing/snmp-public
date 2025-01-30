@@ -1,0 +1,118 @@
+### Current performance data table of interfaces.
+GET http://localhost/api/snmp/zxAnEthIfCurrStatsTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnEthIfCurrStatsTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnEthIfReset": ""
+}
+
+### Current performance data table of interfaces.
+GET http://localhost/api/snmp/zxAnBrgIfCurrStatsTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnBrgIfCurrStatsTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnBrgIfReset": ""
+}
+
+### Current performance data table of LAG.
+GET http://localhost/api/snmp/zxAnLagIfCurrStatsTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnLagIfCurrStatsTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnLagIfReset": ""
+}
+
+### The rate statistics table of interfaces.
+GET http://localhost/api/snmp/zxAnIfRateStatsTable
+Authorization: Bearer {{token}}
+
+### Bandwidth using ratio and threshold table.
+GET http://localhost/api/snmp/zxAnIfBandwidthUsingTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIfBandwidthUsingTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIfInBandwidthUsingThresh": 100,
+    "zxAnIfOutBandwidthUsingThresh": 100
+}
+
+### The number of interfaces statistics table.
+GET http://localhost/api/snmp/zxAnIfNumberStatsTable
+Authorization: Bearer {{token}}
+
+### Interface VLAN statistic table.
+GET http://localhost/api/snmp/zxAnIfVlanCurrStatsTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIfVlanCurrStatsTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIfVlanCurrStatsReset": "",
+    "zxAnIfVlanCurrStatsRowStatus": ""
+}
+
+### Interface VLAN rate statistic table.
+GET http://localhost/api/snmp/zxAnIfVlanRateStatsTable
+Authorization: Bearer {{token}}
+
+### Interface S-VID and C-VID statistic table.
+GET http://localhost/api/snmp/zxAnIfVlan2CurrStatsTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIfVlan2CurrStatsTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIfVlan2CurrStatsReset": ""
+}
+
+### Enable/disable the bridge interface current performance<br/><br/>statistics.
+GET http://localhost/api/snmp/zxAnBrgIfCurrPerfStatsTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnBrgIfCurrPerfStatsTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnBrgIfCurrPerfStatsRowStatus": ""
+}
+
+### Enable/disable the interface S-VID and C-VID current performance<br/><br/>statistics.
+GET http://localhost/api/snmp/zxAnIfVlanCurrPerfStatsTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnIfVlanCurrPerfStatsTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIfVlanPerfStatsRowStatus": ""
+}
+

@@ -1,0 +1,147 @@
+### Interface packet rate limit information table.
+GET http://localhost/api/snmp/zxAnSecStormCtrlIfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnSecStormCtrlIfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnIfStormCtrlRateLmtIngress": 100,
+    "zxAnIfStormCtrlRateLmtEgress": 100
+}
+
+### Interface VLAN storm control table.
+GET http://localhost/api/snmp/zxAnSecStormCtrlIfVlanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnSecStormCtrlIfVlanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnSecStormCtrlIfVlanRateLimit": 100,
+    "zxAnSecStormCtrlIfVlanBurstSize": 1023,
+    "zxAnSecStormCtrlIfVlanRowStatus": ""
+}
+
+### The supported protocol rate limiting table.<br/><br/>This table specifies which kinds of information on protocol type,<br/><br/>rate limiting scale and unit are supported for current device.
+GET http://localhost/api/snmp/zxAnProtoRateLimitCapTable
+Authorization: Bearer {{token}}
+
+### The global protocol rate limiting table.<br/><br/>This table specifies protocol rate limiting configuration,<br/><br/>which is used to reduce the maximum traffic rate for<br/><br/>each protocol such as DHCP, IGMP, ICMP and so on.
+GET http://localhost/api/snmp/zxAnProtoIfRateLimitTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnProtoIfRateLimitTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnProtoIfRateLimitIngress": "",
+    "zxAnProtoIfRateLimitEgress": ""
+}
+
+### This table includes the ethernet-like interface configuration.
+GET http://localhost/api/snmp/zxAnSecIfMacLearnedLimitTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnSecIfMacLearnedLimitTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnSecIfMacLearnedLimitEnable": 1,
+    "zxAnSecIfMaxLearnedMacs": ""
+}
+
+### Interface VLAN MAC address learned limit table.
+GET http://localhost/api/snmp/zxAnSecIfVlanMacLearnedTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnSecIfVlanMacLearnedTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnSecIfVlanMacLearnedMaxMacs": 4095,
+    "zxAnSecIfVlanMacLearnedRowStatus": ""
+}
+
+### This table includes the interface static MAC binding infomation.
+GET http://localhost/api/snmp/zxAnSecIfMacBindingTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnSecIfMacBindingTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnSecIfMacBindingRowStatus": ""
+}
+
+### This table includes the interface static MAC filtering infomation.
+GET http://localhost/api/snmp/zxAnSecIfMacFilterTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnSecIfMacFilterTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnSecIfMacFilterRowStatus": ""
+}
+
+### This table includes the IPv6 filter information.
+GET http://localhost/api/snmp/zxAnSecIpv6FilterVlanConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnSecIpv6FilterVlanConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnSecIpv6FilterVid": "",
+    "zxAnSecIpv6FilterVlanMask": 4095,
+    "zxAnSecIpv6FilterVlanRowStatus": ""
+}
+
+### VLAN rate limit table.
+GET http://localhost/api/snmp/zxAnSecVlanRateLimitTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnSecVlanRateLimitTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnSecVlanRateLimit": "",
+    "zxAnSecVlanRateLimitRowStatus": ""
+}
+
+### VLAN range rate limit table.
+GET http://localhost/api/snmp/zxAnSecVlanRangeRateLmtTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnSecVlanRangeRateLmtTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnSecVlanRangeRateLmtDirection": 1,
+    "zxAnSecVlanRangeRateLmt": 64,
+    "zxAnSecVlanRangeRateLmtBurstSize": 8,
+    "zxAnSecVlanRangeRateLmtVlanIds": "",
+    "zxAnSecVlanRangeRateLmtRowStatus": ""
+}
+

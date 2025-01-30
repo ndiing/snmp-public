@@ -1,0 +1,201 @@
+### There is one CFM Stack table per bridge. It permits<br/><br/>the retrieval of information about the Maintenance Points<br/><br/>configured on any given interface.<br/><br/>**NOTE: this object is deprecated due to re-indexing of the<br/><br/>table.
+GET http://localhost/api/snmp/dot1agCfmStackTable
+Authorization: Bearer {{token}}
+
+### There is one CFM Stack table per bridge. It permits<br/><br/>the retrieval of information about the Maintenance Points<br/><br/>configured on any given interface.
+GET http://localhost/api/snmp/ieee8021CfmStackTable
+Authorization: Bearer {{token}}
+
+### For each bridge component, the Default MD Level Managed Object<br/><br/>controls MHF creation for VIDs that are not attached to a<br/><br/>specific Maintenance Association Managed Object, and Sender ID<br/><br/>TLV transmission by those MHFs.<br/><br/><br/><br/>For each Bridge Port, and for each VLAN ID whose data can<br/><br/>pass through that Bridge Port, an entry in this table is<br/><br/>used by the algorithm in subclause 22.2.3 only if there is no<br/><br/>entry in the Maintenance Association table defining an MA<br/><br/>for the same VLAN ID and MD Level as this table's entry, and<br/><br/>on which MA an Up MEP is defined.  If there exists such an<br/><br/>MA, that MA's objects are used by the algorithm in<br/><br/>subclause 22.2.3 in place of this table entry's objects.  The<br/><br/>agent maintains the value of dot1agCfmDefaultMdStatus to<br/><br/>indicate whether this entry is overridden by an MA.<br/><br/><br/><br/>When first initialized, the agent creates this table<br/><br/>automatically with entries for all VLAN IDs,<br/><br/>with the default values specified for each object.<br/><br/><br/><br/>After this initialization, the writable objects in this<br/><br/>table need to be persistent upon reboot or restart of a<br/><br/>device.<br/><br/>**NOTE: this object is deprecated due to re-indexing of the<br/><br/>table.
+GET http://localhost/api/snmp/dot1agCfmDefaultMdTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/dot1agCfmDefaultMdTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "dot1agCfmDefaultMdLevel": -1,
+    "dot1agCfmDefaultMdMhfCreation": 4,
+    "dot1agCfmDefaultMdIdPermission": 5
+}
+
+### For each bridge component, the Default MD Level Managed Object<br/><br/>controls MHF creation for VIDs that are not attached to a<br/><br/>specific Maintenance Association Managed Object, and Sender ID<br/><br/>TLV transmission by those MHFs.<br/><br/><br/><br/>For each Bridge Port, and for each VLAN ID whose data can<br/><br/>pass through that Bridge Port, an entry in this table is<br/><br/>used by the algorithm in subclause 22.2.3 only if there is no<br/><br/>entry in the Maintenance Association table defining an MA<br/><br/>for the same VLAN ID and MD Level as this table's entry, and<br/><br/>on which MA an Up MEP is defined.  If there exists such an<br/><br/>MA, that MA's objects are used by the algorithm in<br/><br/>subclause 22.2.3 in place of this table entry's objects.  The<br/><br/>agent maintains the value of ieee8021CfmDefaultMdStatus to<br/><br/>indicate whether this entry is overridden by an MA.<br/><br/><br/><br/>When first initialized, the agent creates this table<br/><br/>automatically with entries for all VLAN IDs,<br/><br/>with the default values specified for each object.<br/><br/><br/><br/>After this initialization, the writable objects in this<br/><br/>table need to be persistent upon reboot or restart of a<br/><br/>device.
+GET http://localhost/api/snmp/ieee8021CfmDefaultMdTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/ieee8021CfmDefaultMdTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "ieee8021CfmDefaultMdLevel": -1,
+    "ieee8021CfmDefaultMdMhfCreation": 4,
+    "ieee8021CfmDefaultMdIdPermission": 5
+}
+
+### This table defines the association of VIDs into VLANs.  There<br/><br/>is an entry in this table, for each component of the bridge,<br/><br/>for each VID that is:<br/><br/>a) a VID belonging to a VLAN associated with more than<br/><br/>one VID; and<br/><br/>b) not the Primary VLAN of that VID.<br/><br/>The entry in this table contains the Primary VID of the VLAN.<br/><br/><br/><br/>By default, this table is empty, meaning that every VID is<br/><br/>the Primary VID of a single-VID VLAN.<br/><br/><br/><br/>VLANs that are associated with only one VID SHOULD NOT have<br/><br/>an entry in this table.<br/><br/><br/><br/>The writable objects in this table need to be persistent<br/><br/>upon reboot or restart of a device.<br/><br/>**NOTE: this object is deprecated due to re-indexing of the<br/><br/>table.
+GET http://localhost/api/snmp/dot1agCfmVlanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/dot1agCfmVlanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "dot1agCfmVlanPrimaryVid": "",
+    "dot1agCfmVlanRowStatus": ""
+}
+
+### This table defines the association of VIDs into VLANs.  There<br/><br/>is an entry in this table, for each component of the bridge,<br/><br/>for each VID that is:<br/><br/>a) a VID belonging to a VLAN associated with more than<br/><br/>one VID; and<br/><br/>b) not the Primary VLAN of that VID.<br/><br/>The entry in this table contains the Primary VID of the VLAN.<br/><br/><br/><br/>By default, this table is empty, meaning that every VID is<br/><br/>the Primary VID of a single-VID VLAN.<br/><br/><br/><br/>VLANs that are associated with only one VID SHOULD NOT have<br/><br/>an entry in this table.<br/><br/><br/><br/>The writable objects in this table need to be persistent<br/><br/>upon reboot or restart of a device.
+GET http://localhost/api/snmp/ieee8021CfmVlanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/ieee8021CfmVlanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "ieee8021CfmVlanPrimarySelector": "",
+    "ieee8021CfmVlanRowStatus": ""
+}
+
+### The CFM Configuration Error List table provides a list of<br/><br/>Interfaces and VIDs that are incorrectly configured.<br/><br/>**NOTE: this object is deprecated due to re-indexing of the<br/><br/>table.
+GET http://localhost/api/snmp/dot1agCfmConfigErrorListTable
+Authorization: Bearer {{token}}
+
+### The CFM Configuration Error List table provides a list of<br/><br/>Interfaces and VIDs that are incorrectly configured.
+GET http://localhost/api/snmp/ieee8021CfmConfigErrorListTable
+Authorization: Bearer {{token}}
+
+### The Maintenance Domain table. Each row in the table<br/><br/>represents a different Maintenance Domain.<br/><br/><br/><br/>A Maintenance Domain is described in 802.1ag (3.22) as the<br/><br/>network or the part of the network for which faults in<br/><br/>connectivity are to be managed. The boundary of a Maintenance<br/><br/>Domain is defined by a set of DSAPs, each of which can become<br/><br/>a point of connectivity to a service instance.
+GET http://localhost/api/snmp/dot1agCfmMdTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/dot1agCfmMdTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "dot1agCfmMdFormat": 4,
+    "dot1agCfmMdName": "DEFAULT",
+    "dot1agCfmMdMdLevel": 0,
+    "dot1agCfmMdMhfCreation": 1,
+    "dot1agCfmMdMhfIdPermission": 1,
+    "dot1agCfmMdRowStatus": ""
+}
+
+### The Maintenance Association table.  Each row in the table<br/><br/>represents an MA.  An MA is a set of MEPs, each configured<br/><br/>with a single service instance.<br/><br/><br/><br/>This is the part of the complete MA table that is constant<br/><br/>across all Bridges in a Maintenance Domain, and across all<br/><br/>components of a single Bridge.  That part of the MA table that<br/><br/>can vary from Bridge component to Bridge component is contained<br/><br/>in the dot1agCfmMaCompTable.<br/><br/><br/><br/>Creation of a Service Instance establishes a connectionless<br/><br/>association among the selected DSAPs.  Configuring a<br/><br/>Maintenance association End Point (MEP) at each of the<br/><br/>DSAPs creates a Maintenance Association (MA) to monitor<br/><br/>that connectionless connectivity.  The MA is identified by a<br/><br/>Short MA Name that is unique within the Maintenance Domain<br/><br/>and chosen to facilitate easy identification of the Service<br/><br/>Instance.  Together, the Maintenance Domain Name and the<br/><br/>Short MA Name form the Maintenance Association Identifier<br/><br/>(MAID) that is carried in CFM Messages to identify<br/><br/>incorrect connectivity among Service Instances.  A small<br/><br/>integer, the Maintenance association End Point Identifier<br/><br/>(MEPID), identifies each MEP among those configured on a<br/><br/>single MA (802.1ag clauses 3.19 and 18.2).<br/><br/><br/><br/>This table uses two indices, first index is the index of the<br/><br/>Maintenance Domain table.  The second index is the same as the<br/><br/>index of the dot1agCfmMaCompEntry for the same MA.<br/><br/><br/><br/>The writable objects in this table need to be persistent<br/><br/>upon reboot or restart of a device.
+GET http://localhost/api/snmp/dot1agCfmMaNetTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/dot1agCfmMaNetTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "dot1agCfmMaNetFormat": "",
+    "dot1agCfmMaNetName": "",
+    "dot1agCfmMaNetCcmInterval": 4,
+    "dot1agCfmMaNetRowStatus": ""
+}
+
+### The Maintenance Association table.  Each row in the table<br/><br/>represents an MA.  An MA is a set of MEPs, each configured<br/><br/>with a single service instance.<br/><br/><br/><br/>This is the part of the complete MA table that is variable<br/><br/>across the Bridges in a Maintenance Domain, or across the<br/><br/>components of a single Bridge.  That part of the MA table that<br/><br/>is constant across the Bridges and their components in a<br/><br/>Maintenance Domain is contained in the dot1agCfmMaNetTable.<br/><br/><br/><br/>This table uses three indices, first index is the<br/><br/>Dot1agCfmPbbComponentIdentifier that identifies the component<br/><br/>within the Bridge for which the information in the<br/><br/>dot1agCfmMaCompEntry applies.  The second is the index of the<br/><br/>Maintenance Domain table.  The third index is the same as the<br/><br/>index of the dot1agCfmMaNetEntry for the same MA.<br/><br/><br/><br/>The writable objects in this table need to be persistent<br/><br/>upon reboot or restart of a device.<br/><br/><br/><br/>**NOTE: this object is deprecated due to re-indexing of the<br/><br/>table.
+GET http://localhost/api/snmp/dot1agCfmMaCompTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/dot1agCfmMaCompTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "dot1agCfmMaCompPrimaryVlanId": "",
+    "dot1agCfmMaCompMhfCreation": 4,
+    "dot1agCfmMaCompIdPermission": 5,
+    "dot1agCfmMaCompNumberOfVids": "",
+    "dot1agCfmMaCompRowStatus": ""
+}
+
+### List of MEPIDs that belong to this MA.<br/><br/><br/><br/>Clause 12.14.6.1.3 specifies that a list of MEPIDs in all<br/><br/>bridges in that MA, but since SNMP SMI does not allow to<br/><br/>state in a MIB that an object in a table is an array, the<br/><br/>information has to be stored in another table with two<br/><br/>indices, being the first index, the index of the table that<br/><br/>contains the list or array.<br/><br/><br/><br/>For all bridges in which the same MAID {dot1agCfmMdFormat,<br/><br/>dot1agCfmMdName, dot1agCfmMaNetFormat, and dot1agCfmMaNetName}<br/><br/>is configured, the same set of dot1agCfmMaMepListIdentifiers<br/><br/>MUST be configured in the bridges' dot1agCfmMaMepListTables.<br/><br/>This allows each MEP to determine whether or not it is<br/><br/>receiving CCMs from all of the other MEPs in the MA.<br/><br/><br/><br/>For example, if one were creating a new MA whose MAID were<br/><br/>{charString, 'Dom1', charString, 'MA1'}, that had 2 MEPs, whose<br/><br/>MEPIDs were 1 and 3, one could, in Bridge A:<br/><br/>1. Get a new MD index d from dot1agCfmMdTableNextIndex.<br/><br/>2. Create the Maintenance Domain {charString, 'Dom1'}.<br/><br/>3. Get a new MA index a from dot1agCfmMdMaNextIndex [d].<br/><br/>4. Create the Maintenance Association {charString, 'MA1'}.<br/><br/>5. Create a new dot1agCfmMaMepListEntry for each of the MEPs<br/><br/>in the MA: [d, a, 1] and [d, a, 3].<br/><br/>6. Create one of the new MEPs, say [d, a, 1].<br/><br/>Then, in Bridge B:<br/><br/>7. Do all of these steps 1-6, except for using the other MEPID<br/><br/>for the new MEP in Step 6, in this example, MEPID 3.<br/><br/>Note that, when creating the MA, MEP List Table, and MEP<br/><br/>entries in the second bridge, the indices 'd' and 'a'<br/><br/>identifying the MAID {charString, 'Dom1', charString, 'MA1'}<br/><br/>may have different values than those in the first Bridge.
+GET http://localhost/api/snmp/dot1agCfmMaMepListTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/dot1agCfmMaMepListTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "dot1agCfmMaMepListRowStatus": ""
+}
+
+### The Maintenance Association table.  Each row in the table<br/><br/>represents an MA.  An MA is a set of MEPs, each configured<br/><br/>with a single service instance.<br/><br/><br/><br/>This is the part of the complete MA table that is variable<br/><br/>across the Bridges in a Maintenance Domain, or across the<br/><br/>components of a single Bridge.  That part of the MA table that<br/><br/>is constant across the Bridges and their components in a<br/><br/>Maintenance Domain is contained in the ieee8021CfmMaNetTable.<br/><br/><br/><br/>This table uses three indices, first index is the<br/><br/>IEEE8021PbbComponentIdentifier that identifies the component<br/><br/>within the Bridge for which the information in the<br/><br/>ieee8021CfmMaCompEntry applies.  The second is the index of the<br/><br/>Maintenance Domain table.  The third index is the same as the<br/><br/>index of the ieee8021CfmMaNetEntry for the same MA.<br/><br/><br/><br/>The writable objects in this table need to be persistent<br/><br/>upon reboot or restart of a device.
+GET http://localhost/api/snmp/ieee8021CfmMaCompTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/ieee8021CfmMaCompTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "ieee8021CfmMaCompPrimarySelectorType": "",
+    "ieee8021CfmMaCompPrimarySelectorOrNone": "",
+    "ieee8021CfmMaCompMhfCreation": 4,
+    "ieee8021CfmMaCompIdPermission": 5,
+    "ieee8021CfmMaCompNumberOfVids": "",
+    "ieee8021CfmMaCompRowStatus": ""
+}
+
+### The Maintenance Association End Point (MEP) table.<br/><br/><br/><br/>Each row in the table represents a different MEP.  A MEP is<br/><br/>an actively managed CFM entity, associated with a specific<br/><br/>DSAP of a Service Instance, which can generate and receive<br/><br/>CFM PDUs and track any responses.  It is an end point of a<br/><br/>single Maintenance Association, and is an endpoint of a<br/><br/>separate Maintenance Entity for each of the other MEPs in<br/><br/>the same Maintenance Association (802.1ag clause 3.19).<br/><br/><br/><br/>This table uses three indices. The first two indices are the<br/><br/>indices of the Maintenance Domain and MA tables, the reason<br/><br/>being that a MEP is always related to an MA and Maintenance<br/><br/>Domain.<br/><br/><br/><br/>The MEP table also stores all the managed objects for sending<br/><br/>LBM and LTM.<br/><br/><br/><br/>*LBM Managed objects<br/><br/><br/><br/>LBM Managed objects in the MEP table<br/><br/>enables the management entity to initiate<br/><br/>transmission of Loopback messages.  It will signal the MEP<br/><br/>that it SHOULD transmit some number of Loopback messages<br/><br/>and detect the detection (or lack thereof) of the<br/><br/>corresponding Loopback messages.<br/><br/><br/><br/>Steps to use entries in this table:<br/><br/><br/><br/>1) Wait for dot1agCfmMepTransmitLbmStatus value to be<br/><br/>false.  To do this do this sequence:<br/><br/>a. an SNMP GET for both SnmpSetSerialNo and<br/><br/>dot1agCfmMepTransmitLbmStatus objects (in same SNMP<br/><br/>PDU).<br/><br/>b. Check if value for dot1agCfmMepTransmitLbmStatus is false.<br/><br/>- if not, wait x seconds, go to step a above.<br/><br/>- if yes, save the value of SnmpSetSerialNo and go<br/><br/>to step 2) below<br/><br/>2) Change dot1agCfmMepTransmitLbmStatus value from false to<br/><br/>true to ensure no other management entity will use<br/><br/>the service. In order to not disturb a possible other NMS<br/><br/>do this by sending an SNMP SET for both SnmpSetSerialNo<br/><br/>and dot1agCfmMepTransmitLbmStatus objects (in same SNMP<br/><br/>PDU,  and make sure SNmpSetSerialNo is the first varBind).<br/><br/>For the SnmpSetSerialNo varBind, use the value that you<br/><br/>obtained in step 1)a.. This ensures that two cooperating<br/><br/>NMSes will not step on each others toes.<br/><br/>Setting this MIB object does not set the corresponding<br/><br/>LBIactive state machine variable.<br/><br/>3) Setup the different data to be sent (number of messages,<br/><br/>optional TLVs,...), except do not set<br/><br/>dot1agCfmMepTransmitLbmMessages.<br/><br/>4) Record the current values of dot1agCfmMepLbrIn,<br/><br/>dot1agCfmMepLbrInOutOfOrder, and dot1agCfmMepLbrBadMsdu.<br/><br/>6) Set dot1agCfmMepTransmitLbmMessages to a non-zero value to<br/><br/>initiate transmission of Loopback messages.<br/><br/>The dot1agCfmMepTransmitLbmMessages indicates the<br/><br/>number of LBMs to be sent and is not decremented as<br/><br/>loopbacks are actually sent. dot1agCfmMepTransmitLbmMessages<br/><br/>is not equivalent to the LBMsToSend state machine variable.<br/><br/>7) Check the value of dot1agCfmMepTransmitLbmResultOK to<br/><br/>find out if the operation was successfully initiated or<br/><br/>not.<br/><br/>8) Monitor the value of dot1agCfmMepTransmitLbmStatus.<br/><br/>When it is reset to false, the last LBM has been transmitted.<br/><br/>Wait an additional 5 seconds to ensure that all LBRs have<br/><br/>been returned.<br/><br/>9) Compare dot1agCfmMepLbrIn, dot1agCfmMepLbrInOutOfOrder,<br/><br/>and dot1agCfmMepLbrBadMsdu to their old values from step<br/><br/>4, above, to get the results of the test.<br/><br/><br/><br/>*LTM Managed objects<br/><br/>The LTM Managed objects in the MEP table are used in a manner<br/><br/>similar to that described for LBM transmission, above.  Upon<br/><br/>successfully initiating the transmission, the variables<br/><br/>dot1agCfmMepTransmitLtmSeqNumber and<br/><br/>dot1agCfmMepTransmitLtmEgressIdentifier return the information<br/><br/>required to recover the results of the LTM from the<br/><br/>dot1agCfmLtrTable.
+GET http://localhost/api/snmp/dot1agCfmMepTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/dot1agCfmMepTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "dot1agCfmMepIfIndex": "",
+    "dot1agCfmMepDirection": "",
+    "dot1agCfmMepPrimaryVid": 0,
+    "dot1agCfmMepActive": 2,
+    "dot1agCfmMepCciEnabled": 2,
+    "dot1agCfmMepCcmLtmPriority": "",
+    "dot1agCfmMepLowPrDef": 2,
+    "dot1agCfmMepFngAlarmTime": 250,
+    "dot1agCfmMepFngResetTime": 1000,
+    "dot1agCfmMepTransmitLbmStatus": 2,
+    "dot1agCfmMepTransmitLbmDestMacAddress": "",
+    "dot1agCfmMepTransmitLbmDestMepId": "",
+    "dot1agCfmMepTransmitLbmDestIsMepId": "",
+    "dot1agCfmMepTransmitLbmMessages": 1,
+    "dot1agCfmMepTransmitLbmDataTlv": "",
+    "dot1agCfmMepTransmitLbmVlanPriority": "",
+    "dot1agCfmMepTransmitLbmVlanDropEnable": 1,
+    "dot1agCfmMepTransmitLtmStatus": 1,
+    "dot1agCfmMepTransmitLtmFlags": "{useFDBonly",
+    "dot1agCfmMepTransmitLtmTargetMacAddress": "",
+    "dot1agCfmMepTransmitLtmTargetMepId": "",
+    "dot1agCfmMepTransmitLtmTargetIsMepId": "",
+    "dot1agCfmMepTransmitLtmTtl": 64,
+    "dot1agCfmMepTransmitLtmEgressIdentifier": "",
+    "dot1agCfmMepRowStatus": ""
+}
+
+### This table extends the MEP table and contains a list of<br/><br/>Linktrace replies received by a specific MEP in response to<br/><br/>a linktrace message.<br/><br/><br/><br/>SNMP SMI does not allow to state in a MIB that an object in<br/><br/>a table is an array.  The solution is to take the index (or<br/><br/>indices) of the first table and add one or more indices.
+GET http://localhost/api/snmp/dot1agCfmLtrTable
+Authorization: Bearer {{token}}
+
+### The MEP Database. A database, maintained by every MEP, that<br/><br/>maintains received information about other MEPs in the<br/><br/>Maintenance Domain.<br/><br/><br/><br/>The SMI does not allow to state in a MIB that an object in<br/><br/>a table is an array. The solution is to take the index (or<br/><br/>indices) of the first table and add one or more indices.
+GET http://localhost/api/snmp/dot1agCfmMepDbTable
+Authorization: Bearer {{token}}
+

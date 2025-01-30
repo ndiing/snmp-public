@@ -1,0 +1,14 @@
+### Neighbor solicitation(NS) anti-spoofing VLAN table.
+GET http://localhost/api/snmp/zxAnNsAntiSpoofingVlanTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnNsAntiSpoofingVlanTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnNsAntiSpoofingVlanDirection": "",
+    "zxAnNsAntiSpoofingVlanRowStatus": ""
+}
+

@@ -1,0 +1,68 @@
+### Configure STP instance parameters.
+GET http://localhost/api/snmp/zxAnStpInstanceTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnStpInstanceTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnStpInstBridgePriority": "",
+    "zxAnStpInstBridgeMaxHops": "",
+    "zxAnStpInstVlanMaps": "",
+    "zxAnStpInstRowStatus": ""
+}
+
+### Configure STP Port parameters.
+GET http://localhost/api/snmp/zxAnStpPortTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnStpPortTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnStpPortEnable": 1,
+    "zxAnStpPortLinkType": 3,
+    "zxAnStpPortEdgedPortEnable": 2,
+    "zxAnStpPortBpduGuardEnable": 3,
+    "zxAnStpPortPacketType": 1,
+    "zxAnStpPortProtoMigration": ""
+}
+
+### Configure STP Port Instance parameters.
+GET http://localhost/api/snmp/zxAnStpPortInstConfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnStpPortInstConfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnStpPortInstConfPriority": "",
+    "zxAnStpPortInstConfPathCost": "",
+    "zxAnStpPortInstRootGuardEnable": "",
+    "zxAnStpPortInstLoopGuardEnable": ""
+}
+
+### Configure STP Port Instance parameters.
+GET http://localhost/api/snmp/zxAnStpPortInstOperTable
+Authorization: Bearer {{token}}
+
+### Configure MSTP Hmd5 parameters.
+GET http://localhost/api/snmp/zxAnMstpHmd5Table
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnMstpHmd5Table/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnMstpHmd5Key": "13ac06a62e47fd51f95d2ba243cd0346",
+    "zxAnMstpHmd5Digest": 0
+}
+

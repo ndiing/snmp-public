@@ -1,0 +1,111 @@
+### ADSL line information table.
+GET http://localhost/api/snmp/zxAnAdslLineTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnAdslLineTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnAdslLineExtConfPrf": "",
+    "zxAnAdslLineCmndLdsf": 1
+}
+
+### ADSL line configuration profile table.
+GET http://localhost/api/snmp/zxAnAdslLineConfProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnAdslLineConfProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnAdslLineConfTxStartBin": 32,
+    "zxAnAdslLineConfTxEndBin": 63,
+    "zxAnAdslLineConfRxStartBin": 6,
+    "zxAnAdslLineConfRxEndBin": 63,
+    "zxAnAdslLineConfUseCustomBins": 2,
+    "zxAnAdslLineConfPMMode": "{",
+    "zxAnAdslLineConfPML2Rate": 512,
+    "zxAnAdsl2ConfMinProtectionDs": 3,
+    "zxAnAdslLineConfMinProtectionUs": 3,
+    "zxAnAdslLineConfDMTConfTrellis": 1,
+    "zxAnAdslLineConfMaxBitsPerBin": 15,
+    "zxAnAdslLineConfBitSwapDs": 2,
+    "zxAnAdslLineConfBitSwapUs": 2,
+    "zxAnAdslLineConfReAdsl2Enable": 2,
+    "zxAnAdslLineConfPmL0Time": 240,
+    "zxAnAdslLineConfPmL2Time": 120,
+    "zxAnAdslLineConfPmL2Atpr": 3,
+    "zxAnAdslLineConfPsdMaskSelectUs": 1
+}
+
+### ADSL line alarm configuration profile table.
+GET http://localhost/api/snmp/zxAnAdslAlarmConfPrfTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnAdslAlarmConfPrfTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnAdslAtucConnRateTolerance": 0,
+    "zxAnAdslAturConnRateTolerance": 0,
+    "zxAnAdslAtucThreshConnRate": 0,
+    "zxAnAdslAturThreshConnRate": 0,
+    "zxAnAdslMaxAtucConnRateTolerance": 0,
+    "zxAnAdslMaxAturConnRateTolerance": 0,
+    "zxAnAdslMaxThreshAtucConnRate": 0,
+    "zxAnAdslMaxThreshAturConnRate": 0,
+    "zxAnAdslAturInitFailTrapEnable": "{",
+    "zxAnAdslAtucThreshInpLeftr": 0,
+    "zxAnAdslAturThreshInpLeftr": 0
+}
+
+### ATUC channel table.
+GET http://localhost/api/snmp/zxAnAdslAtucChanTable
+Authorization: Bearer {{token}}
+
+### ATUR channel table.
+GET http://localhost/api/snmp/zxAnAdslAturChanTable
+Authorization: Bearer {{token}}
+
+### ATUC performance data table.
+GET http://localhost/api/snmp/zxAnAdslAtucPerfDataTable
+Authorization: Bearer {{token}}
+
+### ATUR performance data table.
+GET http://localhost/api/snmp/zxAnAdslAturPerfDataTable
+Authorization: Bearer {{token}}
+
+### ATUC channel performance data table.
+GET http://localhost/api/snmp/zxAnAdslAtucChanPerfDataTable
+Authorization: Bearer {{token}}
+
+### ATUR channel performance data table.
+GET http://localhost/api/snmp/zxAnAdslAturChanPerfDataTable
+Authorization: Bearer {{token}}
+
+### ATUC channel interval performance data table.
+GET http://localhost/api/snmp/zxAnAdslAtucChanIntervalTable
+Authorization: Bearer {{token}}
+
+### ATUR channel interval performance data table.
+GET http://localhost/api/snmp/zxAnAdslAturChanIntervalTable
+Authorization: Bearer {{token}}
+
+### ATUC channel history 1 day performance data table.
+GET http://localhost/api/snmp/zxAnAdslAtucChanHist1DayTable
+Authorization: Bearer {{token}}
+
+### ATUR channel history 1 day performance data table.
+GET http://localhost/api/snmp/zxAnAdslAturChanHist1DayTable
+Authorization: Bearer {{token}}
+
+### ATUC interval performance data table.
+GET http://localhost/api/snmp/zxAnAdslAtucIntervalTable
+Authorization: Bearer {{token}}
+

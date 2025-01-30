@@ -1,0 +1,85 @@
+### A list of trap destination entries.
+GET http://localhost/api/snmp/zxAnEventReceiverTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnEventReceiverTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnEventReceiverIpAddrType": "",
+    "zxAnEventReceiverIpAddr": "",
+    "zxAnEventReceiverSnmpVer": 2,
+    "zxAnEventReceiverCommunity": "",
+    "zxAnEventReceiverUserName": "",
+    "zxAnEventReceiverSecurityLevel": "",
+    "zxAnEventReceiverEventFormat": 1,
+    "zxAnEventReceiverEventType": "{ equipmentEvent,qualityOfServiceEvent,communicationsEvent,\r\nenvironmentEvent,processingErrorEvent",
+    "zxAnEventReceiverMinEventLevel": 7,
+    "zxAnEventReceiverEnable": 1,
+    "zxAnEventReceiverIsZteNmsSever": "",
+    "zxAnEventReceiverPort": 162,
+    "zxAnEventRcvrTrapRptCompatible": 1,
+    "zxAnEventReceiverRowStatus": ""
+}
+
+### Event definition table.
+GET http://localhost/api/snmp/zxAnEventDefinitionTable
+Authorization: Bearer {{token}}
+
+### Event control profile table.
+GET http://localhost/api/snmp/zxAnEventRptCtrlProfileTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnEventRptCtrlProfileTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnEventRptCtrlPrfAdminStatus": 1,
+    "zxAnEventRptCtrlPrfRowStatus": ""
+}
+
+### Event control profile rule table.
+GET http://localhost/api/snmp/zxAnEventRptCtrlProfileRuleTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnEventRptCtrlProfileRuleTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnEventRptCtrlEventCode": "",
+    "zxAnEventRptCtrlProbableCause": "",
+    "zxAnEventRptCtrlServiceAffect": "",
+    "zxAnEventRptCtrlAdminStatus": "",
+    "zxAnEventRptCtrlRptSeverity": "",
+    "zxAnEventRptCtrlPrfRuleRowStatus": ""
+}
+
+### Event control profile table.
+GET http://localhost/api/snmp/zxAnEventRptCtrlResourceTable
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost/api/snmp/zxAnEventRptCtrlResourceTable/:id
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "zxAnEventRptCtrlResPrfName": "",
+    "zxAnEventRptCtrlResAdminStatus": 5,
+    "zxAnEventRptCtrlResRowStatus": ""
+}
+
+### A table of Active Alarms entries.
+GET http://localhost/api/snmp/zxAnEventActiveTable
+Authorization: Bearer {{token}}
+
+### A table of variables to go with active alarm entries.
+GET http://localhost/api/snmp/zxAnEventActiveVariableTable
+Authorization: Bearer {{token}}
+
