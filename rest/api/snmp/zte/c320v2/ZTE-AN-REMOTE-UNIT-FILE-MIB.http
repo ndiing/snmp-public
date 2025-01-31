@@ -1,9 +1,9 @@
 ### Remote unit configuration file updating table.
-GET http://localhost/api/snmp/zxAnRuConfigFileUpdateTable
+GET http://103.184.122.170/api/snmp/zxAnRuConfigFileUpdateTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnRuConfigFileUpdateTable/:id
+POST http://103.184.122.170/api/snmp/zxAnRuConfigFileUpdateTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -18,6 +18,6 @@ Content-Type: application/json
 }
 
 ### Remote unit configuration file updating status information table.<br/>Each item in this table records the updating result of remote unit<br/>configruation file last time.
-GET http://localhost/api/snmp/zxAnRuCfUpdatingStatusTable
+GET http://103.184.122.170/api/snmp/zxAnRuCfUpdatingStatusTable
 Authorization: Bearer {{token}}
 

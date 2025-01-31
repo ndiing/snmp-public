@@ -1,9 +1,9 @@
 ### A table of transport addresses to be used in the generation<br/><br/>of SNMP messages.
-GET http://localhost/api/snmp/snmpTargetAddrTable
+GET http://103.184.122.170/api/snmp/snmpTargetAddrTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/snmpTargetAddrTable/:id
+POST http://103.184.122.170/api/snmp/snmpTargetAddrTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -19,11 +19,11 @@ Content-Type: application/json
 }
 
 ### A table of SNMP target information to be used<br/><br/>in the generation of SNMP messages.
-GET http://localhost/api/snmp/snmpTargetParamsTable
+GET http://103.184.122.170/api/snmp/snmpTargetParamsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/snmpTargetParamsTable/:id
+POST http://103.184.122.170/api/snmp/snmpTargetParamsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

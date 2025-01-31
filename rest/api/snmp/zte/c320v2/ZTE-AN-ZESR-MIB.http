@@ -1,9 +1,9 @@
 ### This table contains ZESR domain information.
-GET http://localhost/api/snmp/zxAnZesrDomainTable
+GET http://103.184.122.170/api/snmp/zxAnZesrDomainTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnZesrDomainTable/:id
+POST http://103.184.122.170/api/snmp/zxAnZesrDomainTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -13,11 +13,11 @@ Content-Type: application/json
 }
 
 ### This table includes the ZESR major ring information.
-GET http://localhost/api/snmp/zxAnZesrMajorTable
+GET http://103.184.122.170/api/snmp/zxAnZesrMajorTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnZesrMajorTable/:id
+POST http://103.184.122.170/api/snmp/zxAnZesrMajorTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

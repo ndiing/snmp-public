@@ -1,9 +1,9 @@
 ### Configuration of PON ONU service profile.
-GET http://localhost/api/snmp/zxAnPonSrvOnuProfileTable
+GET http://103.184.122.170/api/snmp/zxAnPonSrvOnuProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonSrvOnuProfileTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonSrvOnuProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -13,11 +13,11 @@ Content-Type: application/json
 }
 
 ### Configuration of PON ONU with the service profile.
-GET http://localhost/api/snmp/zxAnPonSrvOnuProfileConfTable
+GET http://103.184.122.170/api/snmp/zxAnPonSrvOnuProfileConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonSrvOnuProfileConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonSrvOnuProfileConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -27,11 +27,11 @@ Content-Type: application/json
 }
 
 ### PON ONU separation profile table.
-GET http://localhost/api/snmp/zxAnPonSrvOnuSepProfileTable
+GET http://103.184.122.170/api/snmp/zxAnPonSrvOnuSepProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonSrvOnuSepProfileTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonSrvOnuSepProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -41,11 +41,11 @@ Content-Type: application/json
 }
 
 ### PON ONU separation profile configuration table.
-GET http://localhost/api/snmp/zxAnPonSrvOnuSepPrfConfTable
+GET http://103.184.122.170/api/snmp/zxAnPonSrvOnuSepPrfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonSrvOnuSepPrfConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonSrvOnuSepPrfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -55,11 +55,11 @@ Content-Type: application/json
 }
 
 ### PON IP pool to be bound to a PON port.
-GET http://localhost/api/snmp/zxAnPonSrvIpPoolTable
+GET http://103.184.122.170/api/snmp/zxAnPonSrvIpPoolTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonSrvIpPoolTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonSrvIpPoolTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -81,11 +81,11 @@ Content-Type: application/json
 }
 
 ### PON port associated with IP pool.
-GET http://localhost/api/snmp/zxAnPonSrvIpPoolBindTable
+GET http://103.184.122.170/api/snmp/zxAnPonSrvIpPoolBindTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonSrvIpPoolBindTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonSrvIpPoolBindTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -95,11 +95,11 @@ Content-Type: application/json
 }
 
 ### PON ONU IP operation table
-GET http://localhost/api/snmp/zxAnPonSrvOnuIpOperTable
+GET http://103.184.122.170/api/snmp/zxAnPonSrvOnuIpOperTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonSrvOnuIpOperTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonSrvOnuIpOperTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -108,11 +108,11 @@ Content-Type: application/json
 }
 
 ### ONU inband management channel IP configuration.
-GET http://localhost/api/snmp/zxAnPonSrvOnuMgmtIpTable
+GET http://103.184.122.170/api/snmp/zxAnPonSrvOnuMgmtIpTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonSrvOnuMgmtIpTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonSrvOnuMgmtIpTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -132,11 +132,11 @@ Content-Type: application/json
 }
 
 ### ONU inband management channel IP configuration table.<br/><br/>This table is only used for C600 serial.
-GET http://localhost/api/snmp/zxAnPonSrvOnuMgmtIp2Table
+GET http://103.184.122.170/api/snmp/zxAnPonSrvOnuMgmtIp2Table
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonSrvOnuMgmtIp2Table/:id
+POST http://103.184.122.170/api/snmp/zxAnPonSrvOnuMgmtIp2Table/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -156,11 +156,11 @@ Content-Type: application/json
 }
 
 ### PON interface ONU blacklist table.
-GET http://localhost/api/snmp/zxAnPonSrvOnuBlacklistTable
+GET http://103.184.122.170/api/snmp/zxAnPonSrvOnuBlacklistTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonSrvOnuBlacklistTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonSrvOnuBlacklistTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -170,15 +170,15 @@ Content-Type: application/json
 }
 
 ### xPON interface onu ID resource table
-GET http://localhost/api/snmp/zxAnPonSrvOnuIdResTable
+GET http://103.184.122.170/api/snmp/zxAnPonSrvOnuIdResTable
 Authorization: Bearer {{token}}
 
 ### PON whitelist table.
-GET http://localhost/api/snmp/zxAnPonSrvWhitelistTable
+GET http://103.184.122.170/api/snmp/zxAnPonSrvWhitelistTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonSrvWhitelistTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonSrvWhitelistTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -187,11 +187,11 @@ Content-Type: application/json
 }
 
 ### PON plug and play configuration table.<br/><br/>The index of this table is PON port.
-GET http://localhost/api/snmp/zxAnPonSrvPlugAndPlayTable
+GET http://103.184.122.170/api/snmp/zxAnPonSrvPlugAndPlayTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonSrvPlugAndPlayTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonSrvPlugAndPlayTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -201,11 +201,11 @@ Content-Type: application/json
 }
 
 ### ONU plug and play configuration table.
-GET http://localhost/api/snmp/zxAnPonSrvOnuPlugAndPlayTable
+GET http://103.184.122.170/api/snmp/zxAnPonSrvOnuPlugAndPlayTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonSrvOnuPlugAndPlayTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonSrvOnuPlugAndPlayTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -214,15 +214,15 @@ Content-Type: application/json
 }
 
 ### PON port DBA(dynamic bandwidth allocation) information table.<br/><br/>The 'IfType' of ifIndex supports 1(physical interface)<br/><br/>and 5(PON channel).
-GET http://localhost/api/snmp/zxAnPonSrvDbaInfoTable
+GET http://103.184.122.170/api/snmp/zxAnPonSrvDbaInfoTable
 Authorization: Bearer {{token}}
 
 ### The OLT PON port table.
-GET http://localhost/api/snmp/zxAnPonSrvPonPortTable
+GET http://103.184.122.170/api/snmp/zxAnPonSrvPonPortTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonSrvPonPortTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonSrvPonPortTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -234,23 +234,23 @@ Content-Type: application/json
 }
 
 ### The OLT PON port channel table.
-GET http://localhost/api/snmp/zxAnPonSrvChannelTable
+GET http://103.184.122.170/api/snmp/zxAnPonSrvChannelTable
 Authorization: Bearer {{token}}
 
 ### ONU alarm jitter table. This table is only used for the<br/><br/>zxAnPonSrvOnuAlmJitterOccurred trap.
-GET http://localhost/api/snmp/zxAnPonSrvOnuAlmJitterTable
+GET http://103.184.122.170/api/snmp/zxAnPonSrvOnuAlmJitterTable
 Authorization: Bearer {{token}}
 
 ### The PON unconfigured ONU table.<br/><br/>This table is only supported by C600 serial.
-GET http://localhost/api/snmp/zxAnPonSrvUnconfOnuTable
+GET http://103.184.122.170/api/snmp/zxAnPonSrvUnconfOnuTable
 Authorization: Bearer {{token}}
 
 ### The VND configuration table.
-GET http://localhost/api/snmp/zxAnPonSrvVndConfTable
+GET http://103.184.122.170/api/snmp/zxAnPonSrvVndConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonSrvVndConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonSrvVndConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -261,11 +261,11 @@ Content-Type: application/json
 }
 
 ### The VND PON port configuration table.
-GET http://localhost/api/snmp/zxAnPonSrvVndPortConfTable
+GET http://103.184.122.170/api/snmp/zxAnPonSrvVndPortConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonSrvVndPortConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonSrvVndPortConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -276,11 +276,11 @@ Content-Type: application/json
 }
 
 ### The VND binding ONU rule table.
-GET http://localhost/api/snmp/zxAnPonSrvVndBindOnuRuleTable
+GET http://103.184.122.170/api/snmp/zxAnPonSrvVndBindOnuRuleTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonSrvVndBindOnuRuleTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonSrvVndBindOnuRuleTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -295,11 +295,11 @@ Content-Type: application/json
 }
 
 ### XPon License message table.
-GET http://localhost/api/snmp/zxAnPonSrvLicenseTable
+GET http://103.184.122.170/api/snmp/zxAnPonSrvLicenseTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonSrvLicenseTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonSrvLicenseTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

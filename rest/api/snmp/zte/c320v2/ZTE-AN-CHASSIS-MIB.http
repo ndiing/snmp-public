@@ -1,9 +1,9 @@
 ### This table includes the enable or disable plug and play of<br/><br/>the rack.
-GET http://localhost/api/snmp/zxAnRackTable
+GET http://103.184.122.170/api/snmp/zxAnRackTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnRackTable/:id
+POST http://103.184.122.170/api/snmp/zxAnRackTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -14,11 +14,11 @@ Content-Type: application/json
 }
 
 ### This table includes the enable or disable plug and play of<br/><br/>the shelf.
-GET http://localhost/api/snmp/zxAnShelfTable
+GET http://103.184.122.170/api/snmp/zxAnShelfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnShelfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnShelfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -30,11 +30,11 @@ Content-Type: application/json
 }
 
 ### This table includes the enable or disable plug and play of<br/><br/>the Card.
-GET http://localhost/api/snmp/zxAnCardTable
+GET http://103.184.122.170/api/snmp/zxAnCardTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnCardTable/:id
+POST http://103.184.122.170/api/snmp/zxAnCardTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -50,11 +50,11 @@ Content-Type: application/json
 }
 
 ### This table includes the enable or disable plug and play of<br/><br/>the subcard.
-GET http://localhost/api/snmp/zxAnSubcardTable
+GET http://103.184.122.170/api/snmp/zxAnSubcardTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnSubcardTable/:id
+POST http://103.184.122.170/api/snmp/zxAnSubcardTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -66,15 +66,15 @@ Content-Type: application/json
 }
 
 ### This table includes the CPU information of the card.
-GET http://localhost/api/snmp/zxAnCardCpuTable
+GET http://103.184.122.170/api/snmp/zxAnCardCpuTable
 Authorization: Bearer {{token}}
 
 ### This table includes file storage devices information.
-GET http://localhost/api/snmp/zxAnStorageDeviceTable
+GET http://103.184.122.170/api/snmp/zxAnStorageDeviceTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnStorageDeviceTable/:id
+POST http://103.184.122.170/api/snmp/zxAnStorageDeviceTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -83,6 +83,6 @@ Content-Type: application/json
 }
 
 ### The 5 minutes or 15 minutes interval performance data table of<br/><br/>card.
-GET http://localhost/api/snmp/zxAnCardHisMinPerfTable
+GET http://103.184.122.170/api/snmp/zxAnCardHisMinPerfTable
 Authorization: Bearer {{token}}
 

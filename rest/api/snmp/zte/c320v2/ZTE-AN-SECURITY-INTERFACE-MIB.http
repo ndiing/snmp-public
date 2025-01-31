@@ -1,9 +1,9 @@
 ### Interface packet rate limit information table.
-GET http://localhost/api/snmp/zxAnSecStormCtrlIfTable
+GET http://103.184.122.170/api/snmp/zxAnSecStormCtrlIfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnSecStormCtrlIfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnSecStormCtrlIfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -13,11 +13,11 @@ Content-Type: application/json
 }
 
 ### Interface VLAN storm control table.
-GET http://localhost/api/snmp/zxAnSecStormCtrlIfVlanTable
+GET http://103.184.122.170/api/snmp/zxAnSecStormCtrlIfVlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnSecStormCtrlIfVlanTable/:id
+POST http://103.184.122.170/api/snmp/zxAnSecStormCtrlIfVlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -28,15 +28,15 @@ Content-Type: application/json
 }
 
 ### The supported protocol rate limiting table.<br/><br/>This table specifies which kinds of information on protocol type,<br/><br/>rate limiting scale and unit are supported for current device.
-GET http://localhost/api/snmp/zxAnProtoRateLimitCapTable
+GET http://103.184.122.170/api/snmp/zxAnProtoRateLimitCapTable
 Authorization: Bearer {{token}}
 
 ### The global protocol rate limiting table.<br/><br/>This table specifies protocol rate limiting configuration,<br/><br/>which is used to reduce the maximum traffic rate for<br/><br/>each protocol such as DHCP, IGMP, ICMP and so on.
-GET http://localhost/api/snmp/zxAnProtoIfRateLimitTable
+GET http://103.184.122.170/api/snmp/zxAnProtoIfRateLimitTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnProtoIfRateLimitTable/:id
+POST http://103.184.122.170/api/snmp/zxAnProtoIfRateLimitTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -46,11 +46,11 @@ Content-Type: application/json
 }
 
 ### This table includes the ethernet-like interface configuration.
-GET http://localhost/api/snmp/zxAnSecIfMacLearnedLimitTable
+GET http://103.184.122.170/api/snmp/zxAnSecIfMacLearnedLimitTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnSecIfMacLearnedLimitTable/:id
+POST http://103.184.122.170/api/snmp/zxAnSecIfMacLearnedLimitTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -60,11 +60,11 @@ Content-Type: application/json
 }
 
 ### Interface VLAN MAC address learned limit table.
-GET http://localhost/api/snmp/zxAnSecIfVlanMacLearnedTable
+GET http://103.184.122.170/api/snmp/zxAnSecIfVlanMacLearnedTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnSecIfVlanMacLearnedTable/:id
+POST http://103.184.122.170/api/snmp/zxAnSecIfVlanMacLearnedTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -74,11 +74,11 @@ Content-Type: application/json
 }
 
 ### This table includes the interface static MAC binding infomation.
-GET http://localhost/api/snmp/zxAnSecIfMacBindingTable
+GET http://103.184.122.170/api/snmp/zxAnSecIfMacBindingTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnSecIfMacBindingTable/:id
+POST http://103.184.122.170/api/snmp/zxAnSecIfMacBindingTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -87,11 +87,11 @@ Content-Type: application/json
 }
 
 ### This table includes the interface static MAC filtering infomation.
-GET http://localhost/api/snmp/zxAnSecIfMacFilterTable
+GET http://103.184.122.170/api/snmp/zxAnSecIfMacFilterTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnSecIfMacFilterTable/:id
+POST http://103.184.122.170/api/snmp/zxAnSecIfMacFilterTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -100,11 +100,11 @@ Content-Type: application/json
 }
 
 ### This table includes the IPv6 filter information.
-GET http://localhost/api/snmp/zxAnSecIpv6FilterVlanConfTable
+GET http://103.184.122.170/api/snmp/zxAnSecIpv6FilterVlanConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnSecIpv6FilterVlanConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnSecIpv6FilterVlanConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -115,11 +115,11 @@ Content-Type: application/json
 }
 
 ### VLAN rate limit table.
-GET http://localhost/api/snmp/zxAnSecVlanRateLimitTable
+GET http://103.184.122.170/api/snmp/zxAnSecVlanRateLimitTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnSecVlanRateLimitTable/:id
+POST http://103.184.122.170/api/snmp/zxAnSecVlanRateLimitTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -129,11 +129,11 @@ Content-Type: application/json
 }
 
 ### VLAN range rate limit table.
-GET http://localhost/api/snmp/zxAnSecVlanRangeRateLmtTable
+GET http://103.184.122.170/api/snmp/zxAnSecVlanRangeRateLmtTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnSecVlanRangeRateLmtTable/:id
+POST http://103.184.122.170/api/snmp/zxAnSecVlanRangeRateLmtTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

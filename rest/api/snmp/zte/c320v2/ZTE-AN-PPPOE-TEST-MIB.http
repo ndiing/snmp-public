@@ -1,9 +1,9 @@
 ### PPPoE test interface configuration table.
-GET http://localhost/api/snmp/zxAnPppoeTestIfConfTable
+GET http://103.184.122.170/api/snmp/zxAnPppoeTestIfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPppoeTestIfConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPppoeTestIfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -18,6 +18,6 @@ Content-Type: application/json
 }
 
 ### PPPoE test interface status table.
-GET http://localhost/api/snmp/zxAnPppoeTestIfStatusTable
+GET http://103.184.122.170/api/snmp/zxAnPppoeTestIfStatusTable
 Authorization: Bearer {{token}}
 

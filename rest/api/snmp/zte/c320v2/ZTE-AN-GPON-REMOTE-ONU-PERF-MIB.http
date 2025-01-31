@@ -1,9 +1,9 @@
 ### The performance configuration table of GPON remote ONU.
-GET http://localhost/api/snmp/zxAnGponRmPerfConfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmPerfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponRmPerfConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponRmPerfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -13,11 +13,11 @@ Content-Type: application/json
 }
 
 ### The ethernet frame performance configuration table of<br/>GPON remote ONU.
-GET http://localhost/api/snmp/zxAnGponRmEthFrmPerfConfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmEthFrmPerfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponRmEthFrmPerfConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponRmEthFrmPerfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -28,166 +28,166 @@ Content-Type: application/json
 }
 
 ### The current 15-minute performance data table related to FEC.
-GET http://localhost/api/snmp/zxAnGponRmFecC15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmFecC15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The last 15-minute historical performance data table related to<br/><br/>FEC.
-GET http://localhost/api/snmp/zxAnGponRmFecH15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmFecH15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The current 15-minute performance data table related to the GEM<br/><br/>port.
-GET http://localhost/api/snmp/zxAnGponRmGemPortC15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmGemPortC15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The last 15-minute historical performance data table related to<br/><br/>the GEM port.
-GET http://localhost/api/snmp/zxAnGponRmGemPortH15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmGemPortH15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The current 15-minute performance data table related to MAC<br/><br/>bridge.
-GET http://localhost/api/snmp/zxAnGponRmBrgC15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmBrgC15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The last 15-minute historical performance data table related to<br/><br/>MAC bridge.
-GET http://localhost/api/snmp/zxAnGponRmBrgH15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmBrgH15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The current 15-minute performance data table related to the MAC<br/><br/>bridge port.
-GET http://localhost/api/snmp/zxAnGponRmBpC15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmBpC15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The last 15-minute historical performance data table related to<br/><br/>the MAC bridge port
-GET http://localhost/api/snmp/zxAnGponRmBpH15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmBpH15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The current 15-minute performance data table related to an ONU's<br/><br/>IEEE 802.1X CPE authentication operation.
-GET http://localhost/api/snmp/zxAnGponRmDot1xC15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmDot1xC15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The last 15-minute historical performance data table<br/><br/>related to an ONU's IEEE 802.1X CPE authentication operation.
-GET http://localhost/api/snmp/zxAnGponRmDot1xH15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmDot1xH15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The current 15-minute performance data table related to an ONU's<br/><br/>radius client, particularly as associated with its 802.1X<br/><br/>operation.
-GET http://localhost/api/snmp/zxAnGponRmRadiusC15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmRadiusC15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The last 15-minute historical performance data table<br/><br/>related to an ONU's radius client, particularly as associated<br/><br/>with its 802.1X operation.
-GET http://localhost/api/snmp/zxAnGponRmRadiusH15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmRadiusH15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The current 15-minute performance data table related to ethernet<br/><br/>frame delivery.
-GET http://localhost/api/snmp/zxAnGponRmEthC15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmEthC15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The last 15-minute historical performance data table<br/><br/>related to ethernet frame delivery.
-GET http://localhost/api/snmp/zxAnGponRmEthH15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmEthH15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The current 15-minute performance data table related to multicast<br/><br/>frame delivery.
-GET http://localhost/api/snmp/zxAnGponRmMVlanC15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmMVlanC15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The last 15-minute historical performance data table<br/><br/>related to multicast frame delivery.
-GET http://localhost/api/snmp/zxAnGponRmMVlanH15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmMVlanH15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The current 15-minute performance data table related to an ONU's<br/><br/>ethernet UNI VLAN.
-GET http://localhost/api/snmp/zxAnGponRmVlanC15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmVlanC15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The last 15-minute historical performance data table<br/><br/>related to an ONU's ethernet UNI VLAN.
-GET http://localhost/api/snmp/zxAnGponRmVlanH15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmVlanH15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The current 15-minute performance data table related to an IP<br/><br/>host.
-GET http://localhost/api/snmp/zxAnGponRmIphostC15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmIphostC15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The last 15-minute historical performance data table<br/><br/>related to IP host.
-GET http://localhost/api/snmp/zxAnGponRmIphostH15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmIphostH15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The current 15-minute performance data table related to an<br/><br/>CES physical interface.
-GET http://localhost/api/snmp/zxAnGponRmPwC15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmPwC15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The last 15-minute historical performance data<br/><br/>table related to an CES physical interface.
-GET http://localhost/api/snmp/zxAnGponRmPwH15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmPwH15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The current 15-minute performance data table related to an RTP<br/><br/>session.
-GET http://localhost/api/snmp/zxAnGponRmRtpC15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmRtpC15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The last 15-minute historical performance data<br/><br/>table related to an RTP session.
-GET http://localhost/api/snmp/zxAnGponRmRtpH15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmRtpH15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The current 15-minute performance data table related to SIP.
-GET http://localhost/api/snmp/zxAnGponRmSipC15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmSipC15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The last 15-minute historical performance data table related to<br/><br/>SIP.
-GET http://localhost/api/snmp/zxAnGponRmSipH15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmSipH15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The current 15-minute performance data table related to an<br/><br/>instance of the MGC config data or MGC config portal ME.
-GET http://localhost/api/snmp/zxAnGponRmMgcC15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmMgcC15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The last 15-minute historical performance data table<br/><br/>related to an instance of the MGC config data or MGC config<br/><br/>portal ME.
-GET http://localhost/api/snmp/zxAnGponRmMgcH15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmMgcH15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The current 15-minute performance data table related to a call<br/><br/>control channel.
-GET http://localhost/api/snmp/zxAnGponRmCallCtrlC15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmCallCtrlC15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The last 15-minute historical performance data table<br/><br/>related to an call control channel.
-GET http://localhost/api/snmp/zxAnGponRmCallCtrlH15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmCallCtrlH15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The current 15 minutes performance data table related to<br/>the VoIP service of ONU.
-GET http://localhost/api/snmp/zxAnGponRmVoiceC15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmVoiceC15MPerfTable
 Authorization: Bearer {{token}}
 
 ### Performance monitoring data related to the VoIP service of ONU.
-GET http://localhost/api/snmp/zxAnGponRmVoiceH15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmVoiceH15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The current 15 minutes performance data table related to<br/><br/>the VoIP service of POTS UNI.
-GET http://localhost/api/snmp/zxAnGponRmUniVoiceC15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmUniVoiceC15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The 15 minutes interval performance data table related to<br/><br/>the VoIP service of POTS UNI.
-GET http://localhost/api/snmp/zxAnGponRmUniVoiceH15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmUniVoiceH15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The current continuous accumulation performance data table<br/>related to the ethernet frame of PM.
-GET http://localhost/api/snmp/zxAnGponRmEthFrmCurrPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmEthFrmCurrPerfTable
 Authorization: Bearer {{token}}
 
 ### The current 15 minutes performance data table related to<br/>the ethernet frame of PM.
-GET http://localhost/api/snmp/zxAnGponRmEthFrmC15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmEthFrmC15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The history 15 minutes performance data table related to<br/>the ethernet frame of PM.
-GET http://localhost/api/snmp/zxAnGponRmEthFrmH15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmEthFrmH15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The current 15-minute performance data table related to XG-PON.
-GET http://localhost/api/snmp/zxAnGponRmXgponC15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmXgponC15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The last 15-minute historical performance data table related to<br/>XG-PON.
-GET http://localhost/api/snmp/zxAnGponRmXgponH15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmXgponH15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The current 15-minutes performance data table related to an ONU<br/><br/>WiFi SSID.
-GET http://localhost/api/snmp/zxAnGponRmWifiSsidC15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmWifiSsidC15MPerfTable
 Authorization: Bearer {{token}}
 
 ### The last 15-minutes historical performance data table related to<br/><br/>an ONU WiFi SSID.
-GET http://localhost/api/snmp/zxAnGponRmWifiSsidH15MPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponRmWifiSsidH15MPerfTable
 Authorization: Bearer {{token}}
 

@@ -1,9 +1,9 @@
 ### Locally held information about families of subtrees<br/><br/>within MIB views.<br/><br/><br/><br/>Each MIB view is defined by two sets of view subtrees:<br/><br/>- the included view subtrees, and<br/><br/>- the excluded view subtrees.<br/><br/>Every such view subtree, both the included and the<br/><br/>excluded ones, is defined in this table.<br/><br/><br/><br/>To determine if a particular object instance is in<br/><br/>a particular MIB view, compare the object instance's<br/><br/>OBJECT IDENTIFIER with each of the MIB view's active<br/><br/>entries in this table.  If none match, then the<br/><br/>object instance is not in the MIB view.  If one or<br/><br/>more match, then the object instance is included in,<br/><br/>or excluded from, the MIB view according to the<br/><br/>value of vacmViewTreeFamilyType in the entry whose<br/><br/>value of vacmViewTreeFamilySubtree has the most<br/><br/>sub-identifiers.  If multiple entries match and have<br/><br/>the same number of sub-identifiers, then the<br/><br/>lexicographically greatest instance of<br/><br/>vacmViewTreeFamilyType determines the inclusion or<br/><br/>exclusion.<br/><br/><br/><br/>An object instance's OBJECT IDENTIFIER X matches an<br/><br/>active entry in this table when the number of<br/><br/>sub-identifiers in X is at least as many as in the<br/><br/>value of vacmViewTreeFamilySubtree for the entry,<br/><br/>and each sub-identifier in the value of<br/><br/>vacmViewTreeFamilySubtree matches its corresponding<br/><br/>sub-identifier in X.  Two sub-identifiers match<br/><br/>either if the corresponding bit of the value of<br/><br/>vacmViewTreeFamilyMask for the entry is zero (the<br/><br/>'wild card' value), or if they are equal.<br/><br/><br/><br/>A 'family' of subtrees is the set of subtrees defined<br/><br/>by a particular combination of values of<br/><br/>vacmViewTreeFamilySubtree and vacmViewTreeFamilyMask.<br/><br/>In the case where no 'wild card' is defined in the<br/><br/>vacmViewTreeFamilyMask, the family of subtrees reduces<br/><br/>to a single subtree.<br/><br/><br/><br/>When creating or changing MIB views, an SNMP Command<br/><br/>Generator application should utilize the<br/><br/>vacmViewSpinLock to try to avoid collisions. See<br/><br/>DESCRIPTION clause of vacmViewSpinLock.<br/><br/><br/><br/>When creating MIB views, it is strongly advised that<br/><br/>first the 'excluded' vacmViewTreeFamilyEntries are<br/><br/>created and then the 'included' entries.<br/><br/><br/><br/>When deleting MIB views, it is strongly advised that<br/><br/>first the 'included' vacmViewTreeFamilyEntries are<br/><br/>deleted and then the 'excluded' entries.<br/><br/><br/><br/>If a create for an entry for instance-level access<br/><br/>control is received and the implementation does not<br/><br/>support instance-level granularity, then an<br/><br/>inconsistentName error must be returned.
-GET http://localhost/api/snmp/vacmViewTreeFamilyTable
+GET http://103.184.122.170/api/snmp/vacmViewTreeFamilyTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/vacmViewTreeFamilyTable/:id
+POST http://103.184.122.170/api/snmp/vacmViewTreeFamilyTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -15,15 +15,15 @@ Content-Type: application/json
 }
 
 ### The table of locally available contexts.<br/><br/><br/><br/>This table provides information to SNMP Command<br/><br/>Generator applications so that they can properly<br/><br/>configure the vacmAccessTable to control access to<br/><br/>all contexts at the SNMP entity.<br/><br/><br/><br/>This table may change dynamically if the SNMP entity<br/><br/>allows that contexts are added/deleted dynamically<br/><br/>(for instance when its configuration changes). Such<br/><br/>changes would happen only if the management<br/><br/>instrumentation at that SNMP entity recognizes more<br/><br/>(or fewer) contexts.<br/><br/><br/><br/>The presence of entries in this table and of entries<br/><br/>in the vacmAccessTable are independent.  That is, a<br/><br/>context identified by an entry in this table is not<br/><br/>necessarily referenced by any entries in the<br/><br/>vacmAccessTable; and the context(s) referenced by an<br/><br/>entry in the vacmAccessTable does not necessarily<br/><br/>currently exist and thus need not be identified by an<br/><br/>entry in this table.<br/><br/><br/><br/>This table must be made accessible via the default<br/><br/>context so that Command Responder applications have<br/><br/>a standard way of retrieving the information.<br/><br/><br/><br/>This table is read-only. It cannot be configured via<br/><br/>SNMP.
-GET http://localhost/api/snmp/vacmContextTable
+GET http://103.184.122.170/api/snmp/vacmContextTable
 Authorization: Bearer {{token}}
 
 ### This table maps a combination of securityModel and<br/><br/>securityName into a groupName which is used to define<br/><br/>an access control policy for a group of principals.
-GET http://localhost/api/snmp/vacmSecurityToGroupTable
+GET http://103.184.122.170/api/snmp/vacmSecurityToGroupTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/vacmSecurityToGroupTable/:id
+POST http://103.184.122.170/api/snmp/vacmSecurityToGroupTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -34,11 +34,11 @@ Content-Type: application/json
 }
 
 ### The table of access rights for groups.<br/><br/><br/><br/>Each entry is indexed by a contextPrefix, a groupName<br/><br/>a securityModel and a securityLevel.  To determine<br/><br/>whether access is allowed, one entry from this table<br/><br/>needs to be selected and the proper viewName from that<br/><br/>entry must be used for access control checking.<br/><br/><br/><br/>To select the proper entry, follow these steps:<br/><br/><br/><br/>1) the set of possible matches is formed by the<br/><br/>intersection of the following sets of entries:<br/><br/>the set of entries with identical vacmGroupName<br/><br/>the union of these two sets:<br/><br/>- the set with identical vacmAccessContextPrefix<br/><br/>- the set of entries with vacmAccessContextMatch<br/><br/>value of 'prefix' and matching<br/><br/>vacmAccessContextPrefix<br/><br/>intersected with the union of these two sets:<br/><br/>- the set of entries with identical<br/><br/>vacmSecurityModel<br/><br/>- the set of entries with vacmSecurityModel<br/><br/>value of 'any'<br/><br/>intersected with the set of entries with<br/><br/>vacmAccessSecurityLevel value less than or equal<br/><br/>to the requested securityLevel<br/><br/><br/><br/>2) if this set has only one member, we're done<br/><br/>otherwise, it comes down to deciding how to weight<br/><br/>the preferences between ContextPrefixes,<br/><br/>SecurityModels, and SecurityLevels as follows:<br/><br/>a) if the subset of entries with identical<br/><br/>securityModels is not empty, discard the rest.<br/><br/>b) if the subset of entries with identical<br/><br/>vacmAccessContextPrefix is not empty,<br/><br/>discard the rest<br/><br/>c) discard all entries with ContextPrefixes shorter<br/><br/>than the longest one remaining in the set<br/><br/>d) select the entry with the highest securityLevel<br/><br/><br/><br/>Please note that for securityLevel noAuthNoPriv, all<br/><br/>groups are really equivalent since the assumption that<br/><br/>the securityName has been authenticated does not hold.
-GET http://localhost/api/snmp/vacmAccessTable
+GET http://103.184.122.170/api/snmp/vacmAccessTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/vacmAccessTable/:id
+POST http://103.184.122.170/api/snmp/vacmAccessTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

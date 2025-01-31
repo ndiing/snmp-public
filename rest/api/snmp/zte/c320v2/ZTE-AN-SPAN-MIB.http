@@ -1,9 +1,9 @@
 ### This table represents the switched port<br/>analyzer related parameters.
-GET http://localhost/api/snmp/zxAnSpanTable
+GET http://103.184.122.170/api/snmp/zxAnSpanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnSpanTable/:id
+POST http://103.184.122.170/api/snmp/zxAnSpanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

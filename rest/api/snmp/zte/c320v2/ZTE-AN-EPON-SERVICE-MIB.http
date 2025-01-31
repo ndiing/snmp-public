@@ -1,9 +1,9 @@
 ### A Table of dot3 Multi-Point Control Protocol<br/><br/>(MPCP) MIB objects. The entries in the table<br/><br/>are control and status objects of the MPCP.<br/><br/>Each object has a row for every virtual link<br/><br/>denoted by the corresponding ifIndex. The LLID<br/><br/>field, as defined in the [802.3ah] is a 2bytes<br/><br/>register (15bits field and a broadcast bit)<br/><br/>limiting the number of virtual links to 32768.<br/><br/>Typically the number of expected virtual links<br/><br/>in a PON is like the number of ONUs, which is<br/><br/>32-64, plus an additional entry for broadcast<br/><br/>LLID (with a value of 0xffff).
-GET http://localhost/api/snmp/dot3MpcpControlTable
+GET http://103.184.122.170/api/snmp/dot3MpcpControlTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/dot3MpcpControlTable/:id
+POST http://103.184.122.170/api/snmp/dot3MpcpControlTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -12,23 +12,23 @@ Content-Type: application/json
 }
 
 ### This table defines the list of statistics counters of an interface<br/><br/>implementing the [802.3ah] clause 64 MPCP. Each object has a row<br/><br/>for every virtual link denoted by the corresponding ifIndex. The<br/><br/>LLID field, as defined in the [802.3ah] is a 2bytes register<br/><br/>(15bits field and a broadcast bit) limiting the number of virtual<br/><br/>links to 32768. Typically the number of expected virtual links in<br/><br/>a PON is like the number of ONUs, which is 32-64, plus an additional<br/><br/>entry for broadcast LLID (with a value of 0xffff).
-GET http://localhost/api/snmp/dot3MpcpStatTable
+GET http://103.184.122.170/api/snmp/dot3MpcpStatTable
 Authorization: Bearer {{token}}
 
 ### A table of dot3 OmpEmulation MIB objects. The table contain<br/><br/>objects for the management of the OMPEmulation sublayer. Each<br/><br/>object has a row for every virtual link denoted by the corresponding<br/><br/>ifIndex. The LLID field, as defined in the [802.3ah] is a 2bytes<br/><br/>register (15bits field and a broadcast bit) limiting the number<br/><br/>of virtual links to 32768. Typically the number of expected<br/><br/>virtual links in a PON is like the number of ONUs, which<br/><br/>is 32-64, plus an additional entry for broadcast LLID<br/><br/>(with a value of 0xffff).
-GET http://localhost/api/snmp/dot3OmpEmulationTable
+GET http://103.184.122.170/api/snmp/dot3OmpEmulationTable
 Authorization: Bearer {{token}}
 
 ### This table defines the list of statistics counters of [802.3ah]<br/><br/>clause 65 OMPEmulation sublayer. Each object has a row for every<br/><br/>virtual link denoted by the corresponding ifIndex. The LLID field,<br/><br/>as defined in the [802.3ah] is a 2bytes register (15bits field and<br/><br/>a broadcast bit) limiting the number of virtual links to 32768.<br/><br/>Typically the number of expected virtual links in a PON is like<br/><br/>the number of ONUs, which is 32-64, plus an additional entry for<br/><br/>broadcast LLID (with a value of 0xffff).
-GET http://localhost/api/snmp/dot3OmpEmulationStatTable
+GET http://103.184.122.170/api/snmp/dot3OmpEmulationStatTable
 Authorization: Bearer {{token}}
 
 ### A table of dot3 EPON FEC management objects. The entries in the<br/><br/>table are control and status objects and statistic counters for<br/><br/>the FEC layer. Each object has a row for every virtual link denoted<br/><br/>by the corresponding ifIndex. The LLID field, as defined in the<br/><br/>[802.3ah] is a 2bytes register (15bits field and a broadcast bit)<br/><br/>limiting the number of virtual links to 32768. Typically the number<br/><br/>of expected virtual links in a PON is like the number of ONUs, which<br/><br/>is 32-64, plus an additional entry for broadcast LLID (with a value<br/><br/>of 0xffff).
-GET http://localhost/api/snmp/dot3EponFecTable
+GET http://103.184.122.170/api/snmp/dot3EponFecTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/dot3EponFecTable/:id
+POST http://103.184.122.170/api/snmp/dot3EponFecTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -37,11 +37,11 @@ Content-Type: application/json
 }
 
 ### A table of dot3 EPON FEC management objects. The entries in the<br/><br/>table are control and status objects and statistic counters for<br/><br/>the FEC layer. Each object has a row for every virtual link denoted<br/><br/>by the corresponding ifIndex. The LLID field, as defined in the<br/><br/>[802.3ah] is a 2bytes register (15bits field and a broadcast bit)<br/><br/>limiting the number of virtual links to 32768. Typically the number<br/><br/>of expected virtual links in a PON is like the number of ONUs, which<br/><br/>is 32-64, plus an additional entry for broadcast LLID (with a value<br/><br/>of 0xffff).
-GET http://localhost/api/snmp/dot3ExtPkgControlTable
+GET http://103.184.122.170/api/snmp/dot3ExtPkgControlTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/dot3ExtPkgControlTable/:id
+POST http://103.184.122.170/api/snmp/dot3ExtPkgControlTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -53,11 +53,11 @@ Content-Type: application/json
 }
 
 ### A table of the extended package objects for queue management.<br/><br/>The [802.3ah] MPCP defines a report message of the occupancy<br/><br/>of the transmit queues for the feedback BW request from the ONUs.<br/><br/>These queues serve the uplink transmission of the ONU and data<br/><br/>is gathered there until the ONU is granted for transmission. The<br/><br/>management table of the queues is added here mainly to control<br/><br/>the reporting and to gather some statistics of their operation.<br/><br/>This table is not duplicating existing management objects of<br/><br/>bridging queues, specified in [802.1d], since the existence of<br/><br/>a dedicated transmit queuing mechanism is implied in the [802.3ah]<br/><br/>and the ONU may be a device which is not a bridge, with embedded<br/><br/>bridging queues. The format of the REPORT message, The 'Queue report'<br/><br/>field reports the occupancy of each uplink transmission queue. The<br/><br/>number of queue sets defines the number of the reported sets, as<br/><br/>would be explained in the description of the ExtPkgQueueSetsTable<br/><br/>table. For each set the report bitmap defines which queue is present<br/><br/>in the report, meaning that although the MPCP REPORT message can report<br/><br/>of up to 8 queues in a REPORT message, the actual number is flexible.<br/><br/>The Queue table has a variable size which is limited by the<br/><br/>ExtPkgObjectReportMaximumNumQueues object as an ONU can have fewer<br/><br/>queues to report. The entries in the table are control and status<br/><br/>indication objects for managing the queues of an EPON interface which<br/><br/>are gathered in an extended package as an addition to the objects which<br/><br/>are based on the [802.3ah] attributes. Each object has a row for every<br/><br/>virtual link and for every queue in the report. The LLID field, as<br/><br/>defined in the [802.3ah] is a 2bytes register (15bits field and a broadcast<br/><br/>bit) limiting the number of virtual links to 32768. Typically the number<br/><br/>of expected virtual links in a PON is like the number of ONUs, which is<br/><br/>32-64, plus an additional entry for broadcast LLID (with a value of 0xffff).<br/><br/>The number of queues is between 0 and 7 and limited by<br/><br/>ExtPkgObjectReportMaximumNumQueues.
-GET http://localhost/api/snmp/dot3ExtPkgQueueTable
+GET http://103.184.122.170/api/snmp/dot3ExtPkgQueueTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/dot3ExtPkgQueueTable/:id
+POST http://103.184.122.170/api/snmp/dot3ExtPkgQueueTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -66,11 +66,11 @@ Content-Type: application/json
 }
 
 ### A table of Extended package objects used for the management of the queue_sets.<br/><br/>Entries are control and status indication objects of an EPON interface which<br/><br/>are gathered in an extended package as an addition to the objects based on<br/><br/>the [802.3ah] attributes. The objects in this table are specific for the<br/><br/>queue_sets which are reported in the MPCP REPORT message as defined in<br/><br/>[802.3ah] clause 64. The [802.3ah] MPCP defines a report message of the<br/><br/>occupancy of the transmit queues for the feedback BW request from the ONUs.<br/><br/>These queues serve the uplink transmission of the ONU and data is gathered<br/><br/>there until the ONU is granted for transmission. The management table of<br/><br/>the queues_sets is added here mainly to control the reporting and to gather<br/><br/>some statistics of their operation. This table is not duplicating existing<br/><br/>management objects of bridging queues, specified in [802.1d], since the<br/><br/>existence of a dedicated transmit queuing mechanism is implied in the<br/><br/>[802.3ah] and the ONU may be a device which is not a bridge, with embedded<br/><br/>bridging queues. As can be seen from the message format, the ONU interface<br/><br/>reports of the status of up to 8 queues and it can report in a single MPCP<br/><br/>REPORT message of a few sets of queues. The number of queue_sets defines<br/><br/>the number of the reported sets, and it can reach up to a value of 8. It<br/><br/>means that a ONU can hold a variable number of sets between 0 to 7. The<br/><br/>dot3ExtPkgQueueSetsTable table has a variable queue_set size which is<br/><br/>limited by the dot3ExtPkgObjectReportMaximumNumThreshold object as an ONU<br/><br/>can have fewer queue_sets to report. The 'Queue report' field reports the<br/><br/>occupancy of each uplink transmission queue. The queue_sets can be used to<br/><br/>report the occupancy of the queues in a few levels as to allow granting,<br/><br/>in an accurate manner, of only part of the data available in the queues.<br/><br/>A Threshold is defined for each queue_set to define the level of the queue<br/><br/>which is counted for the report of the occupancy. The threshold is reflected<br/><br/>in the queue_set table by the dot3ExtPkgObjectReportThreshold object. For<br/><br/>each queue set, the report bitmap defines which queues are present in the<br/><br/>report, meaning that although the MPCP REPORT message can report of up to<br/><br/>8 queues in a REPORT message, the actual number is flexible. The<br/><br/>dot3ExtPkgQueueSetsTable table has a variable queue size which is limited<br/><br/>by the dot3ExtPkgObjectReportMaximumNumQueues object as an ONU can have<br/><br/>fewer queues to report. Each object has a row for every virtual link, for<br/><br/>each queue in the report and for each queue_set in the queue. The LLID<br/><br/>field, as defined in the [802.3ah] is a 2bytes register (15bits field and<br/><br/>a broadcast bit) limiting the number of virtual links to 32768. Typically<br/><br/>the number of expected virtual links in a PON is like the number of ONUs,<br/><br/>which is 32-64, plus an additional entry for broadcast LLID (with a value<br/><br/>of 0xffff). The number of queues is between 0 and 7 and limited by<br/><br/>dot3ExtPkgObjectReportMaximumNumQueues. The number of queues_sets is<br/><br/>between 0 and 7 and limited by dot3ExtPkgObjectReportMaximumNumThreshold.
-GET http://localhost/api/snmp/dot3ExtPkgQueueSetsTable
+GET http://103.184.122.170/api/snmp/dot3ExtPkgQueueSetsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/dot3ExtPkgQueueSetsTable/:id
+POST http://103.184.122.170/api/snmp/dot3ExtPkgQueueSetsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -79,11 +79,11 @@ Content-Type: application/json
 }
 
 ### This table defines the control and status indication objects<br/><br/>for the optical interface of the EPON interface. Each object has<br/><br/>a row for every virtual link denoted by the corresponding ifIndex.<br/><br/>The LLID field, as defined in the [802.3ah] is a 2bytes register<br/><br/>(15bits field and a broadcast bit) limiting the number of virtual<br/><br/>links to 32768. Typically the number of expected virtual links in a<br/><br/>PON is like the number of ONUs, which is 32-64, plus an additional<br/><br/>entry for broadcast LLID (with a value of 0xffff). Although the optical<br/><br/>interface is a physical interface, there is a row in the table for each<br/><br/>virtual interface. The reason for having a separate row for each virtual<br/><br/>link is that the OLT has a separate link for each one of the ONUs. For<br/><br/>instance, ONUs could be in different distances with different link budgets<br/><br/>and different receive powers, therefore having different power alarms.<br/><br/>It is quite similar to a case of different physical interfaces.
-GET http://localhost/api/snmp/dot3ExtPkgOptIfTable
+GET http://103.184.122.170/api/snmp/dot3ExtPkgOptIfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/dot3ExtPkgOptIfTable/:id
+POST http://103.184.122.170/api/snmp/dot3ExtPkgOptIfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

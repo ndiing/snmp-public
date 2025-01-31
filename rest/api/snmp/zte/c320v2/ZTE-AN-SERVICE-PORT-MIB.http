@@ -1,9 +1,9 @@
 ### This table includes interface service port configuration.<br/><br/>It uses  in user's traffic scene, a service port indicates<br/><br/>an user's service,for example VOIP/CATV/POTS/DATA service.<br/><br/>We can create a service port as the same time finished some<br/><br/>functions which are QinQ and translate etc.
-GET http://localhost/api/snmp/zxAnSrvPortConfTable
+GET http://103.184.122.170/api/snmp/zxAnSrvPortConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnSrvPortConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnSrvPortConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

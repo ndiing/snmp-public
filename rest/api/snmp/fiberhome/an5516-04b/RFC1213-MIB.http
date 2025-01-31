@@ -2,15 +2,15 @@
 
 
 ### A list of interface entries.  The number of<br/><br/>entries is given by the value of ifNumber.
-GET http://localhost/api/snmp/ifTable
+GET http://103.184.122.170/api/snmp/ifTable
 Authorization: Bearer {{token}}
 
 ### The Address Translation tables contain the<br/><br/>NetworkAddress to `physical' address equivalences.<br/><br/>Some interfaces do not use translation tables for<br/><br/>determining address equivalences (e.g., DDN-X.25<br/><br/>has an algorithmic method); if all interfaces are<br/><br/>of this type, then the Address Translation table<br/><br/>is empty, i.e., has zero entries.
-GET http://localhost/api/snmp/atTable
+GET http://103.184.122.170/api/snmp/atTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/atTable/:id
+POST http://103.184.122.170/api/snmp/atTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -26,15 +26,15 @@ Content-Type: application/json
 
 
 ### The table of addressing information relevant to<br/><br/>this entity's IP addresses.
-GET http://localhost/api/snmp/ipAddrTable
+GET http://103.184.122.170/api/snmp/ipAddrTable
 Authorization: Bearer {{token}}
 
 ### This entity's IP Routing table.
-GET http://localhost/api/snmp/ipRouteTable
+GET http://103.184.122.170/api/snmp/ipRouteTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/ipRouteTable/:id
+POST http://103.184.122.170/api/snmp/ipRouteTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -58,11 +58,11 @@ Content-Type: application/json
 
 
 ### The IP Address Translation table used for mapping<br/><br/>from IP addresses to physical addresses.
-GET http://localhost/api/snmp/ipNetToMediaTable
+GET http://103.184.122.170/api/snmp/ipNetToMediaTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/ipNetToMediaTable/:id
+POST http://103.184.122.170/api/snmp/ipNetToMediaTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -79,11 +79,11 @@ Content-Type: application/json
 
 
 ### A table containing TCP connection-specific<br/><br/>information.
-GET http://localhost/api/snmp/tcpConnTable
+GET http://103.184.122.170/api/snmp/tcpConnTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/tcpConnTable/:id
+POST http://103.184.122.170/api/snmp/tcpConnTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -97,15 +97,15 @@ Content-Type: application/json
 
 
 ### A table containing UDP listener information.
-GET http://localhost/api/snmp/udpTable
+GET http://103.184.122.170/api/snmp/udpTable
 Authorization: Bearer {{token}}
 
 ### The EGP neighbor table.
-GET http://localhost/api/snmp/egpNeighTable
+GET http://103.184.122.170/api/snmp/egpNeighTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/egpNeighTable/:id
+POST http://103.184.122.170/api/snmp/egpNeighTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

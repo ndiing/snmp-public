@@ -1,9 +1,9 @@
 ### The reservable attributes of the system's  in-<br/>terfaces.
-GET http://localhost/api/snmp/intSrvIfAttribTable
+GET http://103.184.122.170/api/snmp/intSrvIfAttribTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/intSrvIfAttribTable/:id
+POST http://103.184.122.170/api/snmp/intSrvIfAttribTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -14,11 +14,11 @@ Content-Type: application/json
 }
 
 ### Information describing the reserved flows  us-<br/>ing the system's interfaces.
-GET http://localhost/api/snmp/intSrvFlowTable
+GET http://103.184.122.170/api/snmp/intSrvFlowTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/intSrvFlowTable/:id
+POST http://103.184.122.170/api/snmp/intSrvFlowTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

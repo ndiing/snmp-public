@@ -1,33 +1,33 @@
 ### This table includes the card version information.
-GET http://localhost/api/snmp/zxAnSwCardRunningVerTable
+GET http://103.184.122.170/api/snmp/zxAnSwCardRunningVerTable
 Authorization: Bearer {{token}}
 
 ### This table includes the sub card version information.
-GET http://localhost/api/snmp/zxAnSwSubcardRunningVerTable
+GET http://103.184.122.170/api/snmp/zxAnSwSubcardRunningVerTable
 Authorization: Bearer {{token}}
 
 ### This table includes the saved version information in<br/><br/>version area MP.
-GET http://localhost/api/snmp/zxAnSwImageTable
+GET http://103.184.122.170/api/snmp/zxAnSwImageTable
 Authorization: Bearer {{token}}
 
 ### The software set file information.
-GET http://localhost/api/snmp/zxAnSwSetTable
+GET http://103.184.122.170/api/snmp/zxAnSwSetTable
 Authorization: Bearer {{token}}
 
 ### This table includes the version updating status<br/><br/>information.
-GET http://localhost/api/snmp/zxAnSwManualUpdateStatusTable
+GET http://103.184.122.170/api/snmp/zxAnSwManualUpdateStatusTable
 Authorization: Bearer {{token}}
 
 ### This table includes the subcard software updating status<br/><br/>information.
-GET http://localhost/api/snmp/zxAnSwSubcardMUpdateStatusTable
+GET http://103.184.122.170/api/snmp/zxAnSwSubcardMUpdateStatusTable
 Authorization: Bearer {{token}}
 
 ### This table includes the saved patch information.
-GET http://localhost/api/snmp/zxAnSwSavedPatchTable
+GET http://103.184.122.170/api/snmp/zxAnSwSavedPatchTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnSwSavedPatchTable/:id
+POST http://103.184.122.170/api/snmp/zxAnSwSavedPatchTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -36,19 +36,19 @@ Content-Type: application/json
 }
 
 ### This table includes the patch running status information of the<br/><br/>card.
-GET http://localhost/api/snmp/zxAnSwCardPatchRunStatusTable
+GET http://103.184.122.170/api/snmp/zxAnSwCardPatchRunStatusTable
 Authorization: Bearer {{token}}
 
 ### This table includes the subcard patch information.
-GET http://localhost/api/snmp/zxAnSwSubcardRunningPatchTable
+GET http://103.184.122.170/api/snmp/zxAnSwSubcardRunningPatchTable
 Authorization: Bearer {{token}}
 
 ### This table includes the saved patch package information.
-GET http://localhost/api/snmp/zxAnSwSavedPatchPackageTable
+GET http://103.184.122.170/api/snmp/zxAnSwSavedPatchPackageTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnSwSavedPatchPackageTable/:id
+POST http://103.184.122.170/api/snmp/zxAnSwSavedPatchPackageTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -57,6 +57,6 @@ Content-Type: application/json
 }
 
 ### This table includes the information of the file inside the patch<br/><br/>package.
-GET http://localhost/api/snmp/zxAnSwSavedPatchPackageFileTable
+GET http://103.184.122.170/api/snmp/zxAnSwSavedPatchPackageFileTable
 Authorization: Bearer {{token}}
 

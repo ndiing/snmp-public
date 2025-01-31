@@ -1,9 +1,9 @@
 ### This table contains information of the port identification format<br/><br/>profile configuration. One entry in this table reflects a format<br/><br/>profile defined by a manager.
-GET http://localhost/api/snmp/zxAnPortIdFormatPrfTable
+GET http://103.184.122.170/api/snmp/zxAnPortIdFormatPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPortIdFormatPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPortIdFormatPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -12,11 +12,11 @@ Content-Type: application/json
 }
 
 ### This table is to provide circuit ID syntax configuration. One entry<br/><br/>in this table reflects a syntax item define by a manager, which is<br/><br/>a component of a port identification format profile.
-GET http://localhost/api/snmp/zxAnPortIdCircuitIdSyntaxTable
+GET http://103.184.122.170/api/snmp/zxAnPortIdCircuitIdSyntaxTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPortIdCircuitIdSyntaxTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPortIdCircuitIdSyntaxTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -30,11 +30,11 @@ Content-Type: application/json
 }
 
 ### This table contains information of the port identification operator<br/><br/>profile configuration. One entry in this table reflects a operator<br/><br/>profile defined by a manager.
-GET http://localhost/api/snmp/zxAnPortIdOperatorPrfTable
+GET http://103.184.122.170/api/snmp/zxAnPortIdOperatorPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPortIdOperatorPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPortIdOperatorPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -69,11 +69,11 @@ Content-Type: application/json
 }
 
 ### This table is to provide the VLAN operator profile configuration.<br/><br/>One entry in this table reflects an operator profile has been<br/><br/>applied to one VLAN.
-GET http://localhost/api/snmp/zxAnPortIdVlanOperPrfConfTable
+GET http://103.184.122.170/api/snmp/zxAnPortIdVlanOperPrfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPortIdVlanOperPrfConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPortIdVlanOperPrfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -83,11 +83,11 @@ Content-Type: application/json
 }
 
 ### This table is to provide the interface operator profile<br/><br/>configuration. One entry in this table reflects an operator<br/><br/>profile has been applied to an interface.
-GET http://localhost/api/snmp/zxAnPortIdIfOperPrfConfTable
+GET http://103.184.122.170/api/snmp/zxAnPortIdIfOperPrfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPortIdIfOperPrfConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPortIdIfOperPrfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

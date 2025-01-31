@@ -1,9 +1,9 @@
 ### A list of interface entries.  The number of entries is<br/>given by the value of ifNumber.  This table contains<br/>additional objects for the interface table.
-GET http://localhost/api/snmp/ifXTable
+GET http://103.184.122.170/api/snmp/ifXTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/ifXTable/:id
+POST http://103.184.122.170/api/snmp/ifXTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -14,11 +14,11 @@ Content-Type: application/json
 }
 
 ### The table containing information on the relationships<br/>between the multiple sub-layers of network interfaces.  In<br/>particular, it contains information on which sub-layers run<br/>'on top of' which other sub-layers, where each sub-layer<br/>corresponds to a conceptual row in the ifTable.  For<br/>example, when the sub-layer with ifIndex value x runs over<br/>the sub-layer with ifIndex value y, then this table<br/>contains:<br/><br/>ifStackStatus.x.y=active<br/><br/>For each ifIndex value, I, which identifies an active<br/>interface, there are always at least two instantiated rows<br/>in this table associated with I.  For one of these rows, I<br/>is the value of ifStackHigherLayer; for the other, I is the<br/>value of ifStackLowerLayer.  (If I is not involved in<br/>multiplexing, then these are the only two rows associated<br/>with I.)<br/><br/>For example, two rows exist even for an interface which has<br/>no others stacked on top or below it:<br/><br/>ifStackStatus.0.x=active<br/>ifStackStatus.x.0=active
-GET http://localhost/api/snmp/ifStackTable
+GET http://103.184.122.170/api/snmp/ifStackTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/ifStackTable/:id
+POST http://103.184.122.170/api/snmp/ifStackTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -27,11 +27,11 @@ Content-Type: application/json
 }
 
 ### This table contains an entry for each address (broadcast,<br/>multicast, or uni-cast) for which the system will receive<br/>packets/frames on a particular interface, except as follows:<br/><br/>- for an interface operating in promiscuous mode, entries<br/>are only required for those addresses for which the system<br/>would receive frames were it not operating in promiscuous<br/>mode.<br/><br/>- for 802.5 functional addresses, only one entry is<br/>required, for the address which has the functional address<br/>bit ANDed with the bit mask of all functional addresses for<br/>which the interface will accept frames.<br/><br/>A system is normally able to use any unicast address which<br/>corresponds to an entry in this table as a source address.
-GET http://localhost/api/snmp/ifRcvAddressTable
+GET http://103.184.122.170/api/snmp/ifRcvAddressTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/ifRcvAddressTable/:id
+POST http://103.184.122.170/api/snmp/ifRcvAddressTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -41,11 +41,11 @@ Content-Type: application/json
 }
 
 ### This table contains one entry per interface.  It defines<br/>objects which allow a network manager to instruct an agent<br/>to test an interface for various faults.  Tests for an<br/>interface are defined in the media-specific MIB for that<br/>interface.  After invoking a test, the object ifTestResult<br/>can be read to determine the outcome.  If an agent can not<br/>perform the test, ifTestResult is set to so indicate.  The<br/>object ifTestCode can be used to provide further test-<br/>specific or interface-specific (or even enterprise-specific)<br/>information concerning the outcome of the test.  Only one<br/>test can be in progress on each interface at any one time.<br/>If one test is in progress when another test is invoked, the<br/>second test is rejected.  Some agents may reject a test when<br/>a prior test is active on another interface.<br/><br/>Before starting a test, a manager-station must first obtain<br/>'ownership' of the entry in the ifTestTable for the<br/>interface to be tested.  This is accomplished with the<br/>ifTestId and ifTestStatus objects as follows:<br/><br/>try_again:<br/>get (ifTestId, ifTestStatus)<br/>while (ifTestStatus != notInUse)<br/>/*<br/>* Loop while a test is running or some other<br/>* manager is configuring a test.<br/>*/<br/>short delay<br/>get (ifTestId, ifTestStatus)<br/>}<br/><br/>/*<br/>* Is not being used right now -- let's compete<br/>* to see who gets it.<br/>*/<br/>lock_value = ifTestId<br/><br/>if ( set(ifTestId = lock_value, ifTestStatus = inUse,<br/><br/>ifTestOwner = 'my-IP-address') == FAILURE)<br/>/*<br/>* Another manager got the ifTestEntry -- go<br/>* try again<br/>*/<br/>goto try_again;<br/><br/>/*<br/>* I have the lock<br/>*/<br/>set up any test parameters.<br/><br/>/*<br/>* This starts the test<br/>*/<br/>set(ifTestType = test_to_run);<br/><br/>wait for test completion by polling ifTestResult<br/><br/>when test completes, agent sets ifTestResult<br/>agent also sets ifTestStatus = 'notInUse'<br/><br/>retrieve any additional test results, and ifTestId<br/><br/>if (ifTestId == lock_value+1) results are valid<br/><br/>A manager station first retrieves the value of the<br/>appropriate ifTestId and ifTestStatus objects, periodically<br/>repeating the retrieval if necessary, until the value of<br/>ifTestStatus is 'notInUse'.  The manager station then tries<br/>to set the same ifTestId object to the value it just<br/>retrieved, the same ifTestStatus object to 'inUse', and the<br/>corresponding ifTestOwner object to a value indicating<br/>itself.  If the set operation succeeds then the manager has<br/>obtained ownership of the ifTestEntry, and the value of the<br/>ifTestId object is incremented by the agent (per the<br/>semantics of TestAndIncr).  Failure of the set operation<br/>indicates that some other manager has obtained ownership of<br/>the ifTestEntry.<br/><br/>Once ownership is obtained, any test parameters can be<br/>setup, and then the test is initiated by setting ifTestType.<br/>On completion of the test, the agent sets ifTestStatus to<br/>'notInUse'.  Once this occurs, the manager can retrieve the<br/>results.  In the (rare) event that the invocation of tests<br/>by two network managers were to overlap, then there would be<br/>a possibility that the first test's results might be<br/>overwritten by the second test's results prior to the first<br/>results being read.  This unlikely circumstance can be<br/>detected by a network manager retrieving ifTestId at the<br/>same time as retrieving the test results, and ensuring that<br/>the results are for the desired request.<br/><br/>If ifTestType is not set within an abnormally long period of<br/>time after ownership is obtained, the agent should time-out<br/>the manager, and reset the value of the ifTestStatus object<br/>back to 'notInUse'.  It is suggested that this time-out<br/>period be 5 minutes.<br/><br/>In general, a management station must not retransmit a<br/>request to invoke a test for which it does not receive a<br/>response; instead, it properly inspects an agent's MIB to<br/>determine if the invocation was successful.  Only if the<br/>invocation was unsuccessful, is the invocation request<br/>retransmitted.<br/><br/>Some tests may require the interface to be taken off-line in<br/>order to execute them, or may even require the agent to<br/>reboot after completion of the test.  In these<br/>circumstances, communication with the management station<br/>invoking the test may be lost until after completion of the<br/>test.  An agent is not required to support such tests.<br/>However, if such tests are supported, then the agent should<br/>make every effort to transmit a response to the request<br/>which invoked the test prior to losing communication.  When<br/>the agent is restored to normal service, the results of the<br/>test are properly made available in the appropriate objects.<br/>Note that this requires that the ifIndex value assigned to<br/>an interface must be unchanged even if the test causes a<br/>reboot.  An agent must reject any test for which it cannot,<br/>perhaps due to resource constraints, make available at least<br/>the minimum amount of information after that test<br/>completes.
-GET http://localhost/api/snmp/ifTestTable
+GET http://103.184.122.170/api/snmp/ifTestTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/ifTestTable/:id
+POST http://103.184.122.170/api/snmp/ifTestTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

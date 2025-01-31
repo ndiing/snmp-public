@@ -1,9 +1,9 @@
 ### NG-PON2 group table.
-GET http://localhost/api/snmp/zxAnNgpon2GroupTable
+GET http://103.184.122.170/api/snmp/zxAnNgpon2GroupTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnNgpon2GroupTable/:id
+POST http://103.184.122.170/api/snmp/zxAnNgpon2GroupTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -13,11 +13,11 @@ Content-Type: application/json
 }
 
 ### The NG-PON2 ONU configuration table.
-GET http://localhost/api/snmp/zxAnNgpon2OnuConfTable
+GET http://103.184.122.170/api/snmp/zxAnNgpon2OnuConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnNgpon2OnuConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnNgpon2OnuConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -26,15 +26,15 @@ Content-Type: application/json
 }
 
 ### The NG-PON2 ONU status table.
-GET http://localhost/api/snmp/zxAnNgpon2OnuStatusTable
+GET http://103.184.122.170/api/snmp/zxAnNgpon2OnuStatusTable
 Authorization: Bearer {{token}}
 
 ### The NG-PON2 ONU action table.
-GET http://localhost/api/snmp/zxAnNgpon2OnuActionTable
+GET http://103.184.122.170/api/snmp/zxAnNgpon2OnuActionTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnNgpon2OnuActionTable/:id
+POST http://103.184.122.170/api/snmp/zxAnNgpon2OnuActionTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

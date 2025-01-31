@@ -1,9 +1,9 @@
 ### This table is an extension of RFC 2662.  It<br/><br/>contains ADSL line configuration and<br/><br/>monitoring information. This includes the ADSL<br/><br/>line's capabilities and actual ADSL transmission<br/><br/>system.
-GET http://localhost/api/snmp/adslLineExtTable
+GET http://103.184.122.170/api/snmp/adslLineExtTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/adslLineExtTable/:id
+POST http://103.184.122.170/api/snmp/adslLineExtTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -13,27 +13,27 @@ Content-Type: application/json
 }
 
 ### This table extends adslAtucPerfDataTable [RFC2662]<br/><br/>with additional ADSL physical line counter<br/><br/>information such as unavailable seconds-line and<br/><br/>severely errored seconds-line.
-GET http://localhost/api/snmp/adslAtucPerfDataExtTable
+GET http://103.184.122.170/api/snmp/adslAtucPerfDataExtTable
 Authorization: Bearer {{token}}
 
 ### This table provides one row for each ATU-C<br/><br/>performance data collection interval for<br/><br/>ADSL physical interfaces whose<br/><br/>IfEntries' ifType is equal to adsl(94).
-GET http://localhost/api/snmp/adslAtucIntervalExtTable
+GET http://103.184.122.170/api/snmp/adslAtucIntervalExtTable
 Authorization: Bearer {{token}}
 
 ### This table contains ADSL physical line counters<br/><br/>not defined in the adslAturPerfDataTable<br/><br/>from the ADSL-LINE-MIB [RFC2662].
-GET http://localhost/api/snmp/adslAturPerfDataExtTable
+GET http://103.184.122.170/api/snmp/adslAturPerfDataExtTable
 Authorization: Bearer {{token}}
 
 ### This table provides one row for each ATU-R<br/><br/>performance data collection interval for<br/><br/>ADSL physical interfaces whose<br/><br/>IfEntries' ifType is equal to adsl(94).
-GET http://localhost/api/snmp/adslAturIntervalExtTable
+GET http://103.184.122.170/api/snmp/adslAturIntervalExtTable
 Authorization: Bearer {{token}}
 
 ### The adslConfProfileExtTable extends the ADSL line<br/><br/>profile configuration information in the<br/><br/>adslLineConfProfileTable from the ADSL-LINE-MIB<br/><br/>[RFC2662] by adding the ability to configure the<br/><br/>ADSL physical line mode.
-GET http://localhost/api/snmp/adslConfProfileExtTable
+GET http://103.184.122.170/api/snmp/adslConfProfileExtTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/adslConfProfileExtTable/:id
+POST http://103.184.122.170/api/snmp/adslConfProfileExtTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -42,11 +42,11 @@ Content-Type: application/json
 }
 
 ### This table extends the<br/><br/>adslLineAlarmConfProfileTable and provides<br/><br/>threshold parameters for all the counters defined<br/><br/>in this MIB module.
-GET http://localhost/api/snmp/adslAlarmConfProfileExtTable
+GET http://103.184.122.170/api/snmp/adslAlarmConfProfileExtTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/adslAlarmConfProfileExtTable/:id
+POST http://103.184.122.170/api/snmp/adslAlarmConfProfileExtTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

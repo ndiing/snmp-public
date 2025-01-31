@@ -1,9 +1,9 @@
 ### This table contains ERPS instance information.
-GET http://localhost/api/snmp/zxAnErpsInstanceTable
+GET http://103.184.122.170/api/snmp/zxAnErpsInstanceTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnErpsInstanceTable/:id
+POST http://103.184.122.170/api/snmp/zxAnErpsInstanceTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -21,11 +21,11 @@ Content-Type: application/json
 }
 
 ### This table contains ERPS port information.
-GET http://localhost/api/snmp/zxAnErpsPortTable
+GET http://103.184.122.170/api/snmp/zxAnErpsPortTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnErpsPortTable/:id
+POST http://103.184.122.170/api/snmp/zxAnErpsPortTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

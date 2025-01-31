@@ -1,9 +1,9 @@
 ### This table provides to configure DHCPv4 relay server groups.<br/><br/><br/><br/>When a relay server group is created in a device supporting this<br/><br/>table, a corresponding entry of this table will be added.<br/><br/><br/><br/>When a server group is destroyed in a device supporting this<br/><br/>table, a corresponding entry of this table will be deleted.
-GET http://localhost/api/snmp/zxAnDrDhcpV4SvrGrpTable
+GET http://103.184.122.170/api/snmp/zxAnDrDhcpV4SvrGrpTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDrDhcpV4SvrGrpTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDrDhcpV4SvrGrpTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -16,11 +16,11 @@ Content-Type: application/json
 }
 
 ### This table provides to configure servers in the<br/><br/>DHCPv4 relay server groups.
-GET http://localhost/api/snmp/zxAnDrDhcpV4SvrGrpSvrTable
+GET http://103.184.122.170/api/snmp/zxAnDrDhcpV4SvrGrpSvrTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDrDhcpV4SvrGrpSvrTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDrDhcpV4SvrGrpSvrTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -32,11 +32,11 @@ Content-Type: application/json
 }
 
 ### This table provides to configure<br/><br/>DHCPv4 relay server policy.<br/><br/><br/><br/>When a relay server policy is created in a device<br/><br/>supporting this table, a corresponding entry of this<br/><br/>table will be added.<br/><br/><br/><br/>When a server policy is destroyed in a device<br/><br/>supporting this table, a corresponding entry of<br/><br/>this table will be deleted.
-GET http://localhost/api/snmp/zxAnDrDhcpV4SvrPolicyTable
+GET http://103.184.122.170/api/snmp/zxAnDrDhcpV4SvrPolicyTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDrDhcpV4SvrPolicyTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDrDhcpV4SvrPolicyTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -47,11 +47,11 @@ Content-Type: application/json
 }
 
 ### This table provides IP address allocation strategy<br/><br/>is to take the same service package equipment division<br/><br/>in a IP bundle.<br/><br/>It is the efficient use of IP resources.
-GET http://localhost/api/snmp/zxAnDrDhcpV4IpBundleTable
+GET http://103.184.122.170/api/snmp/zxAnDrDhcpV4IpBundleTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDrDhcpV4IpBundleTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDrDhcpV4IpBundleTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -60,11 +60,11 @@ Content-Type: application/json
 }
 
 ### This table provides to configure attributes of<br/><br/>DHCPv4 relay server policy groups.
-GET http://localhost/api/snmp/zxAnDrDhcpV4IpBundleIpAddrTable
+GET http://103.184.122.170/api/snmp/zxAnDrDhcpV4IpBundleIpAddrTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDrDhcpV4IpBundleIpAddrTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDrDhcpV4IpBundleIpAddrTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -74,11 +74,11 @@ Content-Type: application/json
 }
 
 ### This table provides the DHCPv4 relay server policy<br/><br/>for the equipment in an IP bundle.
-GET http://localhost/api/snmp/zxAnDrDhcpV4IBSvrPolicyTable
+GET http://103.184.122.170/api/snmp/zxAnDrDhcpV4IBSvrPolicyTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDrDhcpV4IBSvrPolicyTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDrDhcpV4IBSvrPolicyTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -87,11 +87,11 @@ Content-Type: application/json
 }
 
 ### This table is to provide DHCP relay service apply to<br/><br/>L3 interface.
-GET http://localhost/api/snmp/zxAnDrDhcpV4IfConfTable
+GET http://103.184.122.170/api/snmp/zxAnDrDhcpV4IfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDrDhcpV4IfConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDrDhcpV4IfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -104,11 +104,11 @@ Content-Type: application/json
 }
 
 ### This table provides the DHCPv4 relay agent policy for<br/><br/>L3 interface.
-GET http://localhost/api/snmp/zxAnDrDhcpV4IfAgentPolicyTable
+GET http://103.184.122.170/api/snmp/zxAnDrDhcpV4IfAgentPolicyTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDrDhcpV4IfAgentPolicyTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDrDhcpV4IfAgentPolicyTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -118,11 +118,11 @@ Content-Type: application/json
 }
 
 ### This table provides the DHCPv4 relay<br/><br/>user information learnt by the interface<br/><br/>capable of this feature.<br/><br/><br/><br/>ifIndex is the L3 interface includes VLAN<br/><br/>and super VLAN.
-GET http://localhost/api/snmp/zxAnDrDhcpV4UserViewTable
+GET http://103.184.122.170/api/snmp/zxAnDrDhcpV4UserViewTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDrDhcpV4UserViewTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDrDhcpV4UserViewTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -131,11 +131,11 @@ Content-Type: application/json
 }
 
 ### DHCPv4 relay interface packet statistics table.
-GET http://localhost/api/snmp/zxAnDrDhcpV4IfPktStatsTable
+GET http://103.184.122.170/api/snmp/zxAnDrDhcpV4IfPktStatsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDrDhcpV4IfPktStatsTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDrDhcpV4IfPktStatsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -146,11 +146,11 @@ Content-Type: application/json
 }
 
 ### This table provides to configure DHCPv6 relay server groups.<br/><br/><br/><br/>When a relay server group is created in a device supporting this<br/><br/>table, a corresponding entry of this table will be added.<br/><br/><br/><br/>When a server group is destroyed in a device supporting this<br/><br/>table, a corresponding entry of this table will be deleted.
-GET http://localhost/api/snmp/zxAnDrDhcpV6SvrGrpTable
+GET http://103.184.122.170/api/snmp/zxAnDrDhcpV6SvrGrpTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDrDhcpV6SvrGrpTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDrDhcpV6SvrGrpTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -163,11 +163,11 @@ Content-Type: application/json
 }
 
 ### This table provides to configure servers in the<br/><br/>DHCPv6 relay server groups.
-GET http://localhost/api/snmp/zxAnDrDhcpV6SvrGrpSvrTable
+GET http://103.184.122.170/api/snmp/zxAnDrDhcpV6SvrGrpSvrTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDrDhcpV6SvrGrpSvrTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDrDhcpV6SvrGrpSvrTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -179,11 +179,11 @@ Content-Type: application/json
 }
 
 ### This table provides to configure<br/><br/>DHCPv6 relay server policy.<br/><br/><br/><br/>When a relay server policy is created in a device<br/><br/>supporting this table, a corresponding entry of this<br/><br/>table will be added.<br/><br/><br/><br/>When a server policy is destroyed in a device<br/><br/>supporting this table, a corresponding entry of<br/><br/>this table will be deleted.
-GET http://localhost/api/snmp/zxAnDrDhcpV6SvrPolicyTable
+GET http://103.184.122.170/api/snmp/zxAnDrDhcpV6SvrPolicyTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDrDhcpV6SvrPolicyTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDrDhcpV6SvrPolicyTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -194,11 +194,11 @@ Content-Type: application/json
 }
 
 ### This table provides to configure<br/><br/>DHCPv6 relay server VLAN policy.<br/><br/><br/><br/>When a relay server VLAN policy is created in a device<br/><br/>supporting this table, a corresponding entry of this<br/><br/>table will be added.<br/><br/><br/><br/>When a server VLAN policy is destroyed in a device<br/><br/>supporting this table, a corresponding entry of<br/><br/>this table will be deleted.
-GET http://localhost/api/snmp/zxAnDrDhcpV6SvrVlanPolicyTable
+GET http://103.184.122.170/api/snmp/zxAnDrDhcpV6SvrVlanPolicyTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDrDhcpV6SvrVlanPolicyTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDrDhcpV6SvrVlanPolicyTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -208,11 +208,11 @@ Content-Type: application/json
 }
 
 ### This table is to provide DHCPv6 relay service apply to<br/><br/>L3 interface.
-GET http://localhost/api/snmp/zxAnDrDhcpV6IfConfTable
+GET http://103.184.122.170/api/snmp/zxAnDrDhcpV6IfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDrDhcpV6IfConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDrDhcpV6IfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -224,15 +224,15 @@ Content-Type: application/json
 }
 
 ### This table provides the DHCPv6 relay<br/><br/>user information learnt by the interface<br/><br/>capable of this feature.<br/><br/><br/><br/>ifIndex is the L3 interface includes VLAN<br/><br/>and super VLAN.
-GET http://localhost/api/snmp/zxAnDrDhcpV6UserViewTable
+GET http://103.184.122.170/api/snmp/zxAnDrDhcpV6UserViewTable
 Authorization: Bearer {{token}}
 
 ### DHCPv6 relay interface packet statistics table.
-GET http://localhost/api/snmp/zxAnDrDhcpV6IfPktStatsTable
+GET http://103.184.122.170/api/snmp/zxAnDrDhcpV6IfPktStatsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDrDhcpV6IfPktStatsTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDrDhcpV6IfPktStatsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

@@ -1,9 +1,9 @@
 ### The performance alarm threshold profile<br/><br/>list table of interfaces.
-GET http://localhost/api/snmp/zxAnGponOltPerfAlmPrfTable
+GET http://103.184.122.170/api/snmp/zxAnGponOltPerfAlmPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOltPerfAlmPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOltPerfAlmPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -12,11 +12,11 @@ Content-Type: application/json
 }
 
 ### The performance alarm threshold profile table of interfaces.
-GET http://localhost/api/snmp/zxAnGponOltPerfAlmPrfItemTable
+GET http://103.184.122.170/api/snmp/zxAnGponOltPerfAlmPrfItemTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOltPerfAlmPrfItemTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOltPerfAlmPrfItemTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -34,11 +34,11 @@ Content-Type: application/json
 }
 
 ### The performance alarm threshold profile applying table of<br/><br/>interfaces.<br/><br/>The 'IfType' of ifIndex supports 1(physical interface)<br/><br/>and 5(PON channel).
-GET http://localhost/api/snmp/zxAnGponOltPerfAlmPrfApplyTable
+GET http://103.184.122.170/api/snmp/zxAnGponOltPerfAlmPrfApplyTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOltPerfAlmPrfApplyTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOltPerfAlmPrfApplyTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -48,11 +48,11 @@ Content-Type: application/json
 }
 
 ### The performance alarm threshold profile<br/><br/>list table of interfaces.
-GET http://localhost/api/snmp/zxAnGponOnuPerfAlmPrfTable
+GET http://103.184.122.170/api/snmp/zxAnGponOnuPerfAlmPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOnuPerfAlmPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOnuPerfAlmPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -61,11 +61,11 @@ Content-Type: application/json
 }
 
 ### The performance alarm threshold profile table of interfaces.
-GET http://localhost/api/snmp/zxAnGponOnuPerfAlmPrfItemTable
+GET http://103.184.122.170/api/snmp/zxAnGponOnuPerfAlmPrfItemTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOnuPerfAlmPrfItemTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOnuPerfAlmPrfItemTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -83,11 +83,11 @@ Content-Type: application/json
 }
 
 ### The performance alarm threshold profile<br/><br/>applying table of interfaces.
-GET http://localhost/api/snmp/zxAnGponOnuPerfAlmPrfApplyTable
+GET http://103.184.122.170/api/snmp/zxAnGponOnuPerfAlmPrfApplyTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOnuPerfAlmPrfApplyTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOnuPerfAlmPrfApplyTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -97,11 +97,11 @@ Content-Type: application/json
 }
 
 ### Bandwidth allocation for one T-CONT in some ONU.<br/><br/>these bandwidths as following:<br/><br/>fixed bandwidth        ab. FBW<br/><br/>assured bandwidth      ab. ABW<br/><br/>non-assured bandwidth  ab. NABW<br/><br/>best effort bandwidth  ab. BEBW<br/><br/>additional bandwidth   ab. AddBW<br/><br/>guaranteed bandwidth   ab. GBW<br/><br/>maximum bandwidth      ab. MaxBW<br/><br/>minimum bandwidth      ab. MinBW<br/><br/>AddBW = NABW + BEBW<br/><br/>GBW   = FBW  + ABW<br/><br/>MaxBW = GBW  + AddBW<br/><br/>MinBW = FBW<br/><br/>NABW, BEBW, FBW and ABWare able to participate in DBA
-GET http://localhost/api/snmp/zxAnGponSrvBandwidthPrfTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvBandwidthPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponSrvBandwidthPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponSrvBandwidthPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -116,11 +116,11 @@ Content-Type: application/json
 }
 
 ### Rate configuration for one traffic as fowllowing:<br/><br/>sustainable information rate      ab. SIR<br/><br/>peak information rate             ab. PIR
-GET http://localhost/api/snmp/zxAnGponSrvTrafficPrfTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvTrafficPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponSrvTrafficPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponSrvTrafficPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -133,11 +133,11 @@ Content-Type: application/json
 }
 
 ### The PON port identifier configuration table.
-GET http://localhost/api/snmp/zxAnGponSrvPonIdConfTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvPonIdConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponSrvPonIdConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponSrvPonIdConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -147,11 +147,11 @@ Content-Type: application/json
 }
 
 ### The current performance data table of GPON OLT.<br/><br/>The 'IfType' of ifIndex supports 1(physical interface)<br/><br/>and 5(PON channel).
-GET http://localhost/api/snmp/zxAnGponSrvOltCurrPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvOltCurrPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponSrvOltCurrPerfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponSrvOltCurrPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -160,11 +160,11 @@ Content-Type: application/json
 }
 
 ### The current 15 minutes performance data table of GPON OLT.<br/><br/>The 'IfType' of ifIndex supports 1(physical interface)<br/><br/>and 5(PON channel).
-GET http://localhost/api/snmp/zxAnGponSrvOltCurr15MinPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvOltCurr15MinPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponSrvOltCurr15MinPerfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponSrvOltCurr15MinPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -173,11 +173,11 @@ Content-Type: application/json
 }
 
 ### The minutes interval performance data table of GPON OLT.<br/><br/>The 'IfType' of ifIndex supports 1(physical interface)<br/><br/>and 5(PON channel).
-GET http://localhost/api/snmp/zxAnGponSrvOltCurrMinPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvOltCurrMinPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponSrvOltCurrMinPerfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponSrvOltCurrMinPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -186,11 +186,11 @@ Content-Type: application/json
 }
 
 ### The current 1 day performance data table of GPON OLT.<br/><br/>The 'IfType' of ifIndex supports 1(physical interface)<br/><br/>and 5(PON channel).
-GET http://localhost/api/snmp/zxAnGponSrvOltCurr1DayPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvOltCurr1DayPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponSrvOltCurr1DayPerfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponSrvOltCurr1DayPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -199,23 +199,23 @@ Content-Type: application/json
 }
 
 ### The 15 minutes interval performance data table of GPON OLT.<br/><br/>The 'IfType' of ifIndex supports 1(physical interface)<br/><br/>and 5(PON channel).
-GET http://localhost/api/snmp/zxAnGponSrvOltHis15MinPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvOltHis15MinPerfTable
 Authorization: Bearer {{token}}
 
 ### The minutes interval history performance data table of GPON OLT.<br/><br/>The 'IfType' of ifIndex supports 1(physical interface)<br/><br/>and 5(PON channel).
-GET http://localhost/api/snmp/zxAnGponSrvOltHisMinPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvOltHisMinPerfTable
 Authorization: Bearer {{token}}
 
 ### The 1 day interval performance data table of interfaces.<br/><br/>The 'IfType' of ifIndex supports 1(physical interface)<br/><br/>and 5(PON channel).
-GET http://localhost/api/snmp/zxAnGponSrvOltHis1DayPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvOltHis1DayPerfTable
 Authorization: Bearer {{token}}
 
 ### The configuration table of OLT PON interface.<br/><br/>The 'IfType' of ifIndex supports 1(physical interface)<br/><br/>and 5(PON channel), only for zxAnGponSrvPonFecMode.
-GET http://localhost/api/snmp/zxAnGponSrvOltPonIfConfTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvOltPonIfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponSrvOltPonIfConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponSrvOltPonIfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -235,11 +235,11 @@ Content-Type: application/json
 }
 
 ### Table of PON port operation.
-GET http://localhost/api/snmp/zxAnGponSrvOltOperTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvOltOperTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponSrvOltOperTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponSrvOltOperTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -251,19 +251,19 @@ Content-Type: application/json
 }
 
 ### Table of unconfigured ONU.
-GET http://localhost/api/snmp/zxAnGponSrvUnConfOnuTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvUnConfOnuTable
 Authorization: Bearer {{token}}
 
 ### Table of GPON service OLT QoS configuration.<br/><br/>The 'IfType' of ifIndex supports 1(physical interface)<br/><br/>and 5(PON channel).
-GET http://localhost/api/snmp/zxAnGponSrvOltQosConfTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvOltQosConfTable
 Authorization: Bearer {{token}}
 
 ### The GPON ONU current performance data table
-GET http://localhost/api/snmp/zxAnGponSrvOnuCurrPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvOnuCurrPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponSrvOnuCurrPerfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponSrvOnuCurrPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -272,11 +272,11 @@ Content-Type: application/json
 }
 
 ### The current 15 minutes performance<br/><br/>data table of GPON ONU.
-GET http://localhost/api/snmp/zxAnGponSrvOnuCurr15MinPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvOnuCurr15MinPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponSrvOnuCurr15MinPerfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponSrvOnuCurr15MinPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -285,11 +285,11 @@ Content-Type: application/json
 }
 
 ### The minutes interval performance data table of GPON ONU.
-GET http://localhost/api/snmp/zxAnGponSrvOnuCurrMinPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvOnuCurrMinPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponSrvOnuCurrMinPerfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponSrvOnuCurrMinPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -298,11 +298,11 @@ Content-Type: application/json
 }
 
 ### The current 1 day performance data table of GPON ONU.
-GET http://localhost/api/snmp/zxAnGponSrvOnuCurr1DayPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvOnuCurr1DayPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponSrvOnuCurr1DayPerfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponSrvOnuCurr1DayPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -311,23 +311,23 @@ Content-Type: application/json
 }
 
 ### The 15 minutes interval performance data table of GPON ONU.
-GET http://localhost/api/snmp/zxAnGponSrvOnuHis15MinPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvOnuHis15MinPerfTable
 Authorization: Bearer {{token}}
 
 ### The minutes interval history performance data table of GPON ONU.
-GET http://localhost/api/snmp/zxAnGponSrvOnuHisMinPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvOnuHisMinPerfTable
 Authorization: Bearer {{token}}
 
 ### The 1 day interval performance data table of GPON ONU.
-GET http://localhost/api/snmp/zxAnGponSrvOnuHis1DayPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvOnuHis1DayPerfTable
 Authorization: Bearer {{token}}
 
 ### The GPON GEM port current performance data table
-GET http://localhost/api/snmp/zxAnGponSrvGemPortCurrPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvGemPortCurrPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponSrvGemPortCurrPerfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponSrvGemPortCurrPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -337,11 +337,11 @@ Content-Type: application/json
 }
 
 ### Enable/disable the GPON VPort interface statistics.
-GET http://localhost/api/snmp/zxAnGponSrvVportCurrPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvVportCurrPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponSrvVportCurrPerfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponSrvVportCurrPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -350,11 +350,11 @@ Content-Type: application/json
 }
 
 ### GPON card ONU authentication mode table.
-GET http://localhost/api/snmp/zxAnGponSrvCardOnuAuthModeTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvCardOnuAuthModeTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponSrvCardOnuAuthModeTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponSrvCardOnuAuthModeTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -363,11 +363,11 @@ Content-Type: application/json
 }
 
 ### The Table of ONU managment.
-GET http://localhost/api/snmp/zxAnGponSrvOnuMgmtTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvOnuMgmtTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponSrvOnuMgmtTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponSrvOnuMgmtTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -399,11 +399,11 @@ Content-Type: application/json
 }
 
 ### This table represents ONU's information of T-CONT.
-GET http://localhost/api/snmp/zxAnGponSrvTcontTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvTcontTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponSrvTcontTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponSrvTcontTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -416,11 +416,11 @@ Content-Type: application/json
 }
 
 ### This table represents the GEM port configuration.
-GET http://localhost/api/snmp/zxAnGponSrvGemPortTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvGemPortTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponSrvGemPortTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponSrvGemPortTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -439,11 +439,11 @@ Content-Type: application/json
 }
 
 ### Table of the VPort.
-GET http://localhost/api/snmp/zxAnGponSrvBpConfTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvBpConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponSrvBpConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponSrvBpConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -454,11 +454,11 @@ Content-Type: application/json
 }
 
 ### Table of the VPort map, it is used valid the<br/><br/>'zxAnGponSrvBpMapType' is not 'oneToOne'.
-GET http://localhost/api/snmp/zxAnGponSrvBpMapConfTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvBpMapConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponSrvBpMapConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponSrvBpMapConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -467,11 +467,11 @@ Content-Type: application/json
 }
 
 ### Table of ONU status.
-GET http://localhost/api/snmp/zxAnGponSrvOnuStatusTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvOnuStatusTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponSrvOnuStatusTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponSrvOnuStatusTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -480,11 +480,11 @@ Content-Type: application/json
 }
 
 ### Table of ONU command operation.
-GET http://localhost/api/snmp/zxAnGponSrvOnuOperTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvOnuOperTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponSrvOnuOperTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponSrvOnuOperTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -494,6 +494,6 @@ Content-Type: application/json
 }
 
 ### This table represents ONU distance.
-GET http://localhost/api/snmp/zxAnGponSrvOnuDistanceTable
+GET http://103.184.122.170/api/snmp/zxAnGponSrvOnuDistanceTable
 Authorization: Bearer {{token}}
 

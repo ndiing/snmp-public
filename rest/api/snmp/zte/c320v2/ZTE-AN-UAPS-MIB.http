@@ -1,9 +1,9 @@
 ### This table includes the managed objects of the UAPS group.
-GET http://localhost/api/snmp/zxAnUapsGroupTable
+GET http://103.184.122.170/api/snmp/zxAnUapsGroupTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnUapsGroupTable/:id
+POST http://103.184.122.170/api/snmp/zxAnUapsGroupTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -25,11 +25,11 @@ Content-Type: application/json
 }
 
 ### This table includes the primary ports of the UAPS group.
-GET http://localhost/api/snmp/zxAnUapsPrimaryPortsTable
+GET http://103.184.122.170/api/snmp/zxAnUapsPrimaryPortsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnUapsPrimaryPortsTable/:id
+POST http://103.184.122.170/api/snmp/zxAnUapsPrimaryPortsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -38,11 +38,11 @@ Content-Type: application/json
 }
 
 ### This table includes the secondary ports of the UAPS group.
-GET http://localhost/api/snmp/zxAnUapsSecondaryPortsTable
+GET http://103.184.122.170/api/snmp/zxAnUapsSecondaryPortsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnUapsSecondaryPortsTable/:id
+POST http://103.184.122.170/api/snmp/zxAnUapsSecondaryPortsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

@@ -1,9 +1,9 @@
 ### DhcpV4 layer-2 relay agent vlan switch table.<br/><br/>When dhcpV4 layer-2 relay agent on the vlan is activated,<br/><br/>the dhcpV4 packets with this vlan will be processed.
-GET http://localhost/api/snmp/zxAnDhcpV4L2RAVlanTable
+GET http://103.184.122.170/api/snmp/zxAnDhcpV4L2RAVlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDhcpV4L2RAVlanTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDhcpV4L2RAVlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -12,11 +12,11 @@ Content-Type: application/json
 }
 
 ### DhcpV4 layer-2 relay agent interface configuration table.
-GET http://localhost/api/snmp/zxAnDhcpV4L2RAIfConfTable
+GET http://103.184.122.170/api/snmp/zxAnDhcpV4L2RAIfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDhcpV4L2RAIfConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDhcpV4L2RAIfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -27,11 +27,11 @@ Content-Type: application/json
 }
 
 ### DhcpV6 layer-2 relay agent vlan switch table.<br/><br/>When dhcpV6 layer-2 relay agent on the vlan is activated,<br/><br/>the dhcpV6 packets with this vlan will be processed.
-GET http://localhost/api/snmp/zxAnDhcpV6L2RAVlanTable
+GET http://103.184.122.170/api/snmp/zxAnDhcpV6L2RAVlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDhcpV6L2RAVlanTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDhcpV6L2RAVlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -40,11 +40,11 @@ Content-Type: application/json
 }
 
 ### DhcpV6 layer-2 relay agent interface configuration table.
-GET http://localhost/api/snmp/zxAnDhcpV6L2RAIfConfTable
+GET http://103.184.122.170/api/snmp/zxAnDhcpV6L2RAIfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDhcpV6L2RAIfConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDhcpV6L2RAIfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

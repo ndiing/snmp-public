@@ -1,9 +1,9 @@
 ### This table represents the interface loopback detection<br/><br/>configuration.
-GET http://localhost/api/snmp/zxAnLoopbackDetectIfConfTable
+GET http://103.184.122.170/api/snmp/zxAnLoopbackDetectIfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnLoopbackDetectIfConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnLoopbackDetectIfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -16,15 +16,15 @@ Content-Type: application/json
 }
 
 ### This table represents the loopbacked interfaces.
-GET http://localhost/api/snmp/zxAnLoopbackDetectIfStatusTable
+GET http://103.184.122.170/api/snmp/zxAnLoopbackDetectIfStatusTable
 Authorization: Bearer {{token}}
 
 ### This table provides the parameters to start an interface manual<br/><br/>loopback detection.<br/><br/>The parameters cann't be read after starting the detection.
-GET http://localhost/api/snmp/zxAnLoopbackManualDetectIfTable
+GET http://103.184.122.170/api/snmp/zxAnLoopbackManualDetectIfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnLoopbackManualDetectIfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnLoopbackManualDetectIfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

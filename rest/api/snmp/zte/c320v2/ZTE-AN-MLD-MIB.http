@@ -1,9 +1,9 @@
 ### A table that contains all MLD protocol information of an user<br/><br/>interface.
-GET http://localhost/api/snmp/zxAnMldProtoIfTable
+GET http://103.184.122.170/api/snmp/zxAnMldProtoIfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnMldProtoIfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnMldProtoIfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -16,11 +16,11 @@ Content-Type: application/json
 }
 
 ### A table that contains MLD protocol information in Multicast<br/><br/>VLAN.
-GET http://localhost/api/snmp/zxAnMldProtoMVlanTable
+GET http://103.184.122.170/api/snmp/zxAnMldProtoMVlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnMldProtoMVlanTable/:id
+POST http://103.184.122.170/api/snmp/zxAnMldProtoMVlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -38,11 +38,11 @@ Content-Type: application/json
 }
 
 ### A table that contains MLD Snooping informations in multicast<br/><br/>VLAN.
-GET http://localhost/api/snmp/zxAnMldSnoopingMVlanTable
+GET http://103.184.122.170/api/snmp/zxAnMldSnoopingMVlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnMldSnoopingMVlanTable/:id
+POST http://103.184.122.170/api/snmp/zxAnMldSnoopingMVlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -51,11 +51,11 @@ Content-Type: application/json
 }
 
 ### A table that contains MLD proxy informations in Multicast<br/><br/>VLAN.
-GET http://localhost/api/snmp/zxAnMldProxyMVlanTable
+GET http://103.184.122.170/api/snmp/zxAnMldProxyMVlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnMldProxyMVlanTable/:id
+POST http://103.184.122.170/api/snmp/zxAnMldProxyMVlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -77,11 +77,11 @@ Content-Type: application/json
 }
 
 ### A table used to create or remove MVLAN.
-GET http://localhost/api/snmp/zxAnMldMgmtMVlanTable
+GET http://103.184.122.170/api/snmp/zxAnMldMgmtMVlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnMldMgmtMVlanTable/:id
+POST http://103.184.122.170/api/snmp/zxAnMldMgmtMVlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -91,11 +91,11 @@ Content-Type: application/json
 }
 
 ### A Table used to add or delete receiving port in a MVLAN.
-GET http://localhost/api/snmp/zxAnMldMgmtMVlanRecvIfTable
+GET http://103.184.122.170/api/snmp/zxAnMldMgmtMVlanRecvIfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnMldMgmtMVlanRecvIfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnMldMgmtMVlanRecvIfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -104,11 +104,11 @@ Content-Type: application/json
 }
 
 ### A Table used to add or delete source port in a MVLAN.
-GET http://localhost/api/snmp/zxAnMldMgmtMVlanSrcIfTable
+GET http://103.184.122.170/api/snmp/zxAnMldMgmtMVlanSrcIfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnMldMgmtMVlanSrcIfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnMldMgmtMVlanSrcIfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -117,15 +117,15 @@ Content-Type: application/json
 }
 
 ### A table that contains receiving ports information in a MVLAN.
-GET http://localhost/api/snmp/zxAnMldMgmtMVlanPortListTable
+GET http://103.184.122.170/api/snmp/zxAnMldMgmtMVlanPortListTable
 Authorization: Bearer {{token}}
 
 ### A table used to add or delete group-filter group segment.
-GET http://localhost/api/snmp/zxAnMldMgmtGroupFilterTable
+GET http://103.184.122.170/api/snmp/zxAnMldMgmtGroupFilterTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnMldMgmtGroupFilterTable/:id
+POST http://103.184.122.170/api/snmp/zxAnMldMgmtGroupFilterTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -134,11 +134,11 @@ Content-Type: application/json
 }
 
 ### A table used to bind or unbind static receiving port to or from<br/><br/>multicast group.
-GET http://localhost/api/snmp/zxAnMldMgmtGroupStaticIfTable
+GET http://103.184.122.170/api/snmp/zxAnMldMgmtGroupStaticIfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnMldMgmtGroupStaticIfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnMldMgmtGroupStaticIfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -147,23 +147,23 @@ Content-Type: application/json
 }
 
 ### A table that contains the source filter mode of multicast group.
-GET http://localhost/api/snmp/zxAnMldMgmtGroupSrcListTable
+GET http://103.184.122.170/api/snmp/zxAnMldMgmtGroupSrcListTable
 Authorization: Bearer {{token}}
 
 ### A table that contains multicast forwarding port list<br/><br/>information.
-GET http://localhost/api/snmp/zxAnMldMgmtGroupForwardingTable
+GET http://103.184.122.170/api/snmp/zxAnMldMgmtGroupForwardingTable
 Authorization: Bearer {{token}}
 
 ### A table that contains dynamic group user information.
-GET http://localhost/api/snmp/zxAnMldMgmtGroupUserTable
+GET http://103.184.122.170/api/snmp/zxAnMldMgmtGroupUserTable
 Authorization: Bearer {{token}}
 
 ### A table used to add or delete multicast group prejoin<br/><br/>configuration.
-GET http://localhost/api/snmp/zxAnMldMgmtGroupPrejoinTable
+GET http://103.184.122.170/api/snmp/zxAnMldMgmtGroupPrejoinTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnMldMgmtGroupPrejoinTable/:id
+POST http://103.184.122.170/api/snmp/zxAnMldMgmtGroupPrejoinTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -172,11 +172,11 @@ Content-Type: application/json
 }
 
 ### A table used to configure multicast group information.
-GET http://localhost/api/snmp/zxAnMldMgmtGroupConfTable
+GET http://103.184.122.170/api/snmp/zxAnMldMgmtGroupConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnMldMgmtGroupConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnMldMgmtGroupConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -186,15 +186,15 @@ Content-Type: application/json
 }
 
 ### A table used to show active multicast group list of the<br/><br/>user interface.
-GET http://localhost/api/snmp/zxAnMldMgmtIfActiveGroupTable
+GET http://103.184.122.170/api/snmp/zxAnMldMgmtIfActiveGroupTable
 Authorization: Bearer {{token}}
 
 ### A table that contains MLD span VLAN information for VLANs.<br/><br/>MLD packets of this SVLAN will be processed.
-GET http://localhost/api/snmp/zxAnMldMgmtSpanVlanTable
+GET http://103.184.122.170/api/snmp/zxAnMldMgmtSpanVlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnMldMgmtSpanVlanTable/:id
+POST http://103.184.122.170/api/snmp/zxAnMldMgmtSpanVlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -203,11 +203,11 @@ Content-Type: application/json
 }
 
 ### Multicast group source filter table.<br/><br/>The continuous group segments with the same group source IP will be<br/><br/>merged to one segment.<br/><br/>For example, with the same group source IP of FF00::AABB, the<br/><br/>group segment [FF32:0040:2002::0001-FF32:0040:2002::0003], and<br/><br/>group segment [FF32:0040:2002::0004-FF32:0040:2002::0006], will be<br/><br/>merged to one group segment<br/><br/>[FF32:0040:2002::0001-FF32:0040:2002::0006].
-GET http://localhost/api/snmp/zxAnMldMgmtGroupSrcFilterTable
+GET http://103.184.122.170/api/snmp/zxAnMldMgmtGroupSrcFilterTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnMldMgmtGroupSrcFilterTable/:id
+POST http://103.184.122.170/api/snmp/zxAnMldMgmtGroupSrcFilterTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -217,11 +217,11 @@ Content-Type: application/json
 }
 
 ### Multicast group SCB mode forwarding table.
-GET http://localhost/api/snmp/zxAnMldMgmtGroupScbFwdTable
+GET http://103.184.122.170/api/snmp/zxAnMldMgmtGroupScbFwdTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnMldMgmtGroupScbFwdTable/:id
+POST http://103.184.122.170/api/snmp/zxAnMldMgmtGroupScbFwdTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -230,15 +230,15 @@ Content-Type: application/json
 }
 
 ### Multicast receiving ports list table.
-GET http://localhost/api/snmp/zxAnMldMgmtMVlanPortListIITable
+GET http://103.184.122.170/api/snmp/zxAnMldMgmtMVlanPortListIITable
 Authorization: Bearer {{token}}
 
 ### A table used to add or delete source pseudo wire in a MVLAN.
-GET http://localhost/api/snmp/zxAnMldVplsMVlanSrcPwTable
+GET http://103.184.122.170/api/snmp/zxAnMldVplsMVlanSrcPwTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnMldVplsMVlanSrcPwTable/:id
+POST http://103.184.122.170/api/snmp/zxAnMldVplsMVlanSrcPwTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -247,11 +247,11 @@ Content-Type: application/json
 }
 
 ### MLD log servers table.
-GET http://localhost/api/snmp/zxAnMldLogServerTable
+GET http://103.184.122.170/api/snmp/zxAnMldLogServerTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnMldLogServerTable/:id
+POST http://103.184.122.170/api/snmp/zxAnMldLogServerTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -266,11 +266,11 @@ Content-Type: application/json
 }
 
 ### A table that contains MLD packet statistics information.
-GET http://localhost/api/snmp/zxAnMldPktStatsTable
+GET http://103.184.122.170/api/snmp/zxAnMldPktStatsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnMldPktStatsTable/:id
+POST http://103.184.122.170/api/snmp/zxAnMldPktStatsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -279,14 +279,14 @@ Content-Type: application/json
 }
 
 ### A table that contains MLD group statistics information of an<br/><br/>user interface.
-GET http://localhost/api/snmp/zxAnMldIfStatsTable
+GET http://103.184.122.170/api/snmp/zxAnMldIfStatsTable
 Authorization: Bearer {{token}}
 
 ### A table that contains MLD group statistics information in a<br/><br/>MVLAN.
-GET http://localhost/api/snmp/zxAnMldMVlanStatsTable
+GET http://103.184.122.170/api/snmp/zxAnMldMVlanStatsTable
 Authorization: Bearer {{token}}
 
 ### A table that contains interface statistics information in a<br/><br/>multicast group.
-GET http://localhost/api/snmp/zxAnMldGroupStatsTable
+GET http://103.184.122.170/api/snmp/zxAnMldGroupStatsTable
 Authorization: Bearer {{token}}
 

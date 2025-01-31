@@ -1,8 +1,8 @@
 ### The BFD Session Table describes the BFD sessions.
-GET http://localhost/api/snmp/zxAnBfdSessTable
+GET http://103.184.122.170/api/snmp/zxAnBfdSessTable
 Authorization: Bearer {{token}}
 
 ### This table specifies BFD Session performance counters.
-GET http://localhost/api/snmp/zxAnBfdSessPerfTable
+GET http://103.184.122.170/api/snmp/zxAnBfdSessPerfTable
 Authorization: Bearer {{token}}
 

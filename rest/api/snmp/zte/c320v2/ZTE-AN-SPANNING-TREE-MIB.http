@@ -1,9 +1,9 @@
 ### Configure STP instance parameters.
-GET http://localhost/api/snmp/zxAnStpInstanceTable
+GET http://103.184.122.170/api/snmp/zxAnStpInstanceTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnStpInstanceTable/:id
+POST http://103.184.122.170/api/snmp/zxAnStpInstanceTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -15,11 +15,11 @@ Content-Type: application/json
 }
 
 ### Configure STP Port parameters.
-GET http://localhost/api/snmp/zxAnStpPortTable
+GET http://103.184.122.170/api/snmp/zxAnStpPortTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnStpPortTable/:id
+POST http://103.184.122.170/api/snmp/zxAnStpPortTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -33,11 +33,11 @@ Content-Type: application/json
 }
 
 ### Configure STP Port Instance parameters.
-GET http://localhost/api/snmp/zxAnStpPortInstConfTable
+GET http://103.184.122.170/api/snmp/zxAnStpPortInstConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnStpPortInstConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnStpPortInstConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -49,15 +49,15 @@ Content-Type: application/json
 }
 
 ### Configure STP Port Instance parameters.
-GET http://localhost/api/snmp/zxAnStpPortInstOperTable
+GET http://103.184.122.170/api/snmp/zxAnStpPortInstOperTable
 Authorization: Bearer {{token}}
 
 ### Configure MSTP Hmd5 parameters.
-GET http://localhost/api/snmp/zxAnMstpHmd5Table
+GET http://103.184.122.170/api/snmp/zxAnMstpHmd5Table
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnMstpHmd5Table/:id
+POST http://103.184.122.170/api/snmp/zxAnMstpHmd5Table/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

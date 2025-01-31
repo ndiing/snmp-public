@@ -1,9 +1,9 @@
 ### This table includes the L2CP filter records for forwarding or<br/><br/>discarding.
-GET http://localhost/api/snmp/zxAnSecL2cpFiltVlanConfTable
+GET http://103.184.122.170/api/snmp/zxAnSecL2cpFiltVlanConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnSecL2cpFiltVlanConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnSecL2cpFiltVlanConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -18,6 +18,6 @@ Content-Type: application/json
 }
 
 ### This table includes the default L2CP filter records.
-GET http://localhost/api/snmp/zxAnSecL2cpFiltDefaultTable
+GET http://103.184.122.170/api/snmp/zxAnSecL2cpFiltDefaultTable
 Authorization: Bearer {{token}}
 

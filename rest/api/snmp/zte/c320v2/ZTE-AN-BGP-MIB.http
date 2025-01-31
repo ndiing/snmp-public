@@ -1,9 +1,9 @@
 ### The local BGP instance table.It should be configured before all<br/><br/>other BGP objects.
-GET http://localhost/api/snmp/zxAnBgpInstanceTable
+GET http://103.184.122.170/api/snmp/zxAnBgpInstanceTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnBgpInstanceTable/:id
+POST http://103.184.122.170/api/snmp/zxAnBgpInstanceTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -33,11 +33,11 @@ Content-Type: application/json
 }
 
 ### The AS weight table.
-GET http://localhost/api/snmp/zxAnBgpAsWeightTable
+GET http://103.184.122.170/api/snmp/zxAnBgpAsWeightTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnBgpAsWeightTable/:id
+POST http://103.184.122.170/api/snmp/zxAnBgpAsWeightTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -47,11 +47,11 @@ Content-Type: application/json
 }
 
 ### The peer AS table of BGP confederation.The entry should be created<br/><br/>after the object zxAnBgpConfedId is configured.
-GET http://localhost/api/snmp/zxAnBgpConfedPeerTable
+GET http://103.184.122.170/api/snmp/zxAnBgpConfedPeerTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnBgpConfedPeerTable/:id
+POST http://103.184.122.170/api/snmp/zxAnBgpConfedPeerTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -60,11 +60,11 @@ Content-Type: application/json
 }
 
 ### The BGP AFI attibution table.When BGP instance is created,the AFI<br/><br/>attibution entries of ipv4Unicast(1),ipv4Multicast(2),ipv4Vpnv4(3)<br/><br/>and ipv6Unicast(4) are also created.These entries can't be deleted<br/><br/>only when the BGP instance is deleted.<br/><br/><br/><br/>The AFI entry of ipv4 VRF is created or deleted,when zxAnBgpAfiType<br/><br/>is ipv4Vrf(5) and zxAnBgpAfiIpVrfName is not null.
-GET http://localhost/api/snmp/zxAnBgpAfiAttrTable
+GET http://103.184.122.170/api/snmp/zxAnBgpAfiAttrTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnBgpAfiAttrTable/:id
+POST http://103.184.122.170/api/snmp/zxAnBgpAfiAttrTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -87,11 +87,11 @@ Content-Type: application/json
 }
 
 ### The network policy table,when zxAnBgpAfiType is ipv4Unicast(1),<br/><br/>ipv4Multicast(2),ipv6Unicast(4) or ipv4Vrf(5).
-GET http://localhost/api/snmp/zxAnBgpAfiNetworkTable
+GET http://103.184.122.170/api/snmp/zxAnBgpAfiNetworkTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnBgpAfiNetworkTable/:id
+POST http://103.184.122.170/api/snmp/zxAnBgpAfiNetworkTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -101,11 +101,11 @@ Content-Type: application/json
 }
 
 ### The BGP redistribution policy table,when zxAnBgpAfiType is<br/><br/>ipv4Unicast(1),ipv4Multicast(2),ipv6Unicast(4) or ipv4Vrf(5).
-GET http://localhost/api/snmp/zxAnBgpAfiRedisTable
+GET http://103.184.122.170/api/snmp/zxAnBgpAfiRedisTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnBgpAfiRedisTable/:id
+POST http://103.184.122.170/api/snmp/zxAnBgpAfiRedisTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -116,11 +116,11 @@ Content-Type: application/json
 }
 
 ### The BGP aggregation policy table,when BGP AFI is<br/><br/>ipv4Unicast(1).
-GET http://localhost/api/snmp/zxAnBgpAfiAggPolicyTable
+GET http://103.184.122.170/api/snmp/zxAnBgpAfiAggPolicyTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnBgpAfiAggPolicyTable/:id
+POST http://103.184.122.170/api/snmp/zxAnBgpAfiAggPolicyTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -131,11 +131,11 @@ Content-Type: application/json
 }
 
 ### The subnet table of BGP aggregation policy,when zxAnBgpAfitype is<br/><br/>ipv4Unicast(1).
-GET http://localhost/api/snmp/zxAnBgpAfiAggSubnetTable
+GET http://103.184.122.170/api/snmp/zxAnBgpAfiAggSubnetTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnBgpAfiAggSubnetTable/:id
+POST http://103.184.122.170/api/snmp/zxAnBgpAfiAggSubnetTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -144,11 +144,11 @@ Content-Type: application/json
 }
 
 ### The configured attributions of BGP peer neighbors,only when<br/><br/>zxAnBgpAfiType is ipv4Unicast(1) or ipv4Vrf(5).
-GET http://localhost/api/snmp/zxAnBgpAfiPeerConfTable
+GET http://103.184.122.170/api/snmp/zxAnBgpAfiPeerConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnBgpAfiPeerConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnBgpAfiPeerConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -188,11 +188,11 @@ Content-Type: application/json
 }
 
 ### The attributions of BGP peer group,only when zxAnBgpAfiType is<br/><br/>ipv4Unicast(1) or ipv4Vrf(5).
-GET http://localhost/api/snmp/zxAnBgpAfiPeerGrpAttrTable
+GET http://103.184.122.170/api/snmp/zxAnBgpAfiPeerGrpAttrTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnBgpAfiPeerGrpAttrTable/:id
+POST http://103.184.122.170/api/snmp/zxAnBgpAfiPeerGrpAttrTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -232,11 +232,11 @@ Content-Type: application/json
 }
 
 ### The member table of BGP peer group,when zxAnBgpAfiType is<br/><br/>ipv4Unicast(1) or ipv4Vrf(5).
-GET http://localhost/api/snmp/zxAnBgpAfiPeerGrpMemTable
+GET http://103.184.122.170/api/snmp/zxAnBgpAfiPeerGrpMemTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnBgpAfiPeerGrpMemTable/:id
+POST http://103.184.122.170/api/snmp/zxAnBgpAfiPeerGrpMemTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -245,6 +245,6 @@ Content-Type: application/json
 }
 
 ### BGP peer table. This table contains information about the<br/><br/>connections with BGP peers.<br/><br/>This table currently only used for BGP4+.
-GET http://localhost/api/snmp/zxAnBgpPeerTable
+GET http://103.184.122.170/api/snmp/zxAnBgpPeerTable
 Authorization: Bearer {{token}}
 

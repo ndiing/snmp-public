@@ -1,9 +1,9 @@
 ### The table of users configured in the SNMP engine's<br/><br/>Local Configuration Datastore (LCD).
-GET http://localhost/api/snmp/usmUserTable
+GET http://103.184.122.170/api/snmp/usmUserTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/usmUserTable/:id
+POST http://103.184.122.170/api/snmp/usmUserTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

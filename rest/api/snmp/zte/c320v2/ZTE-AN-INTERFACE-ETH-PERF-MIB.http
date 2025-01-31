@@ -1,9 +1,9 @@
 ### The 15 minutes interval performance data table of the<br/><br/>ethernet interfaces.
-GET http://localhost/api/snmp/zxAnEthIfCurr15MinPerfTable
+GET http://103.184.122.170/api/snmp/zxAnEthIfCurr15MinPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnEthIfCurr15MinPerfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnEthIfCurr15MinPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -12,11 +12,11 @@ Content-Type: application/json
 }
 
 ### The 1 day interval performance data table of the ethernet<br/><br/>interfaces.
-GET http://localhost/api/snmp/zxAnEthIfCurr1DayPerfTable
+GET http://103.184.122.170/api/snmp/zxAnEthIfCurr1DayPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnEthIfCurr1DayPerfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnEthIfCurr1DayPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -25,19 +25,19 @@ Content-Type: application/json
 }
 
 ### The 15 minutes interval history performance data table of<br/><br/>the ethernet interfaces.
-GET http://localhost/api/snmp/zxAnEthIfHis15MinPerfTable
+GET http://103.184.122.170/api/snmp/zxAnEthIfHis15MinPerfTable
 Authorization: Bearer {{token}}
 
 ### The 1 day interval history performance data table of<br/><br/>the ethernet interfaces.
-GET http://localhost/api/snmp/zxAnEthIfHis1DayPerfTable
+GET http://103.184.122.170/api/snmp/zxAnEthIfHis1DayPerfTable
 Authorization: Bearer {{token}}
 
 ### The performance alarm threshold profile table of the ethernet interfaces.
-GET http://localhost/api/snmp/zxAnEthIfAlmProfileConfTable
+GET http://103.184.122.170/api/snmp/zxAnEthIfAlmProfileConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnEthIfAlmProfileConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnEthIfAlmProfileConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -55,11 +55,11 @@ Content-Type: application/json
 }
 
 ### The performance alarm threshold profile configuration table of<br/><br/>the ethernet interfaces.
-GET http://localhost/api/snmp/zxAnEthIfAlmProfileApplyTable
+GET http://103.184.122.170/api/snmp/zxAnEthIfAlmProfileApplyTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnEthIfAlmProfileApplyTable/:id
+POST http://103.184.122.170/api/snmp/zxAnEthIfAlmProfileApplyTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -69,11 +69,11 @@ Content-Type: application/json
 }
 
 ### The performance alarm threshold profile table of the ethernet interfaces.It can be used to<br/><br/>delete all of the performance alarm threshold profiles which has the same name configured<br/><br/>in 'zxAnEthIfAlmProfileConfTable'.
-GET http://localhost/api/snmp/zxAnEthIfAlmProfileTable
+GET http://103.184.122.170/api/snmp/zxAnEthIfAlmProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnEthIfAlmProfileTable/:id
+POST http://103.184.122.170/api/snmp/zxAnEthIfAlmProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -82,11 +82,11 @@ Content-Type: application/json
 }
 
 ### The minutes interval performance data table of the<br/><br/>ethernet interfaces.
-GET http://localhost/api/snmp/zxAnEthIfCurrMinPerfTable
+GET http://103.184.122.170/api/snmp/zxAnEthIfCurrMinPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnEthIfCurrMinPerfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnEthIfCurrMinPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -95,6 +95,6 @@ Content-Type: application/json
 }
 
 ### The minutes interval history performance data table of<br/><br/>the ethernet interfaces.
-GET http://localhost/api/snmp/zxAnEthIfHisMinPerfTable
+GET http://103.184.122.170/api/snmp/zxAnEthIfHisMinPerfTable
 Authorization: Bearer {{token}}
 

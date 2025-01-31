@@ -1,9 +1,9 @@
 ### A table of information about possible alarms on the system,<br/>and how they have been modelled.
-GET http://localhost/api/snmp/alarmModelTable
+GET http://103.184.122.170/api/snmp/alarmModelTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/alarmModelTable/:id
+POST http://103.184.122.170/api/snmp/alarmModelTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -19,14 +19,14 @@ Content-Type: application/json
 }
 
 ### A table of Active Alarms entries.
-GET http://localhost/api/snmp/alarmActiveTable
+GET http://103.184.122.170/api/snmp/alarmActiveTable
 Authorization: Bearer {{token}}
 
 ### A table of variables to go with active alarm entries.
-GET http://localhost/api/snmp/alarmActiveVariableTable
+GET http://103.184.122.170/api/snmp/alarmActiveVariableTable
 Authorization: Bearer {{token}}
 
 ### This table represents the alarm statistics<br/>information.
-GET http://localhost/api/snmp/alarmActiveStatsTable
+GET http://103.184.122.170/api/snmp/alarmActiveStatsTable
 Authorization: Bearer {{token}}
 

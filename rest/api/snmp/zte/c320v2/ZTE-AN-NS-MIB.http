@@ -1,9 +1,9 @@
 ### Neighbor solicitation(NS) anti-spoofing VLAN table.
-GET http://localhost/api/snmp/zxAnNsAntiSpoofingVlanTable
+GET http://103.184.122.170/api/snmp/zxAnNsAntiSpoofingVlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnNsAntiSpoofingVlanTable/:id
+POST http://103.184.122.170/api/snmp/zxAnNsAntiSpoofingVlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

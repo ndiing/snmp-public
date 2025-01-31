@@ -1,9 +1,9 @@
 ### This table is to provide aggregator configuration, and<br/><br/>contains information about every aggregator in this system.<br/><br/>An aggregator is associated with a link aggregation group,<br/><br/>which named smartgroup.
-GET http://localhost/api/snmp/zxAnLacpAggTable
+GET http://103.184.122.170/api/snmp/zxAnLacpAggTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnLacpAggTable/:id
+POST http://103.184.122.170/api/snmp/zxAnLacpAggTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -16,11 +16,11 @@ Content-Type: application/json
 }
 
 ### This table is to provide aggregation port configuration, and<br/><br/>contains information about every aggregation port associated<br/><br/>with this device. A row appears in this table for each<br/><br/>physical port as a member port of the smartgroup.
-GET http://localhost/api/snmp/zxAnLacpAggPortTable
+GET http://103.184.122.170/api/snmp/zxAnLacpAggPortTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnLacpAggPortTable/:id
+POST http://103.184.122.170/api/snmp/zxAnLacpAggPortTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -35,11 +35,11 @@ Content-Type: application/json
 }
 
 ### A table that contains Link Aggregation Protocol statistics<br/><br/>about every port that is associated with this device. A row<br/><br/>appears in this table for each aggregation port.
-GET http://localhost/api/snmp/zxAnLacpAggPortStatsTable
+GET http://103.184.122.170/api/snmp/zxAnLacpAggPortStatsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnLacpAggPortStatsTable/:id
+POST http://103.184.122.170/api/snmp/zxAnLacpAggPortStatsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

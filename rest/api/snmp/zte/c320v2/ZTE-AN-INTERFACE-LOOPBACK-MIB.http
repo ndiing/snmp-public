@@ -1,9 +1,9 @@
 ### This table includes the uplink interface loopback configuration<br/><br/>information.
-GET http://localhost/api/snmp/zxAnIfLoopbackUplinkConfTable
+GET http://103.184.122.170/api/snmp/zxAnIfLoopbackUplinkConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnIfLoopbackUplinkConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnIfLoopbackUplinkConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

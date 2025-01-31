@@ -1,9 +1,9 @@
 ### The table containing infomation of LCT accessing<br/><br/>the network elements.
-GET http://localhost/api/snmp/zxAnLctAccessTable
+GET http://103.184.122.170/api/snmp/zxAnLctAccessTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnLctAccessTable/:id
+POST http://103.184.122.170/api/snmp/zxAnLctAccessTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

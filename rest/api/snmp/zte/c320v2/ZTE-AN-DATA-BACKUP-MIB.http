@@ -1,9 +1,9 @@
 ### Automatic backup configuration table.
-GET http://localhost/api/snmp/zxAnDataAutoBackupConfTable
+GET http://103.184.122.170/api/snmp/zxAnDataAutoBackupConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDataAutoBackupConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDataAutoBackupConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -16,11 +16,11 @@ Content-Type: application/json
 }
 
 ### Automatic backup configuration table.
-GET http://localhost/api/snmp/zxAnDataManualBackupConfTable
+GET http://103.184.122.170/api/snmp/zxAnDataManualBackupConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDataManualBackupConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDataManualBackupConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -29,6 +29,6 @@ Content-Type: application/json
 }
 
 ### Automatic backup status table.
-GET http://localhost/api/snmp/zxAnDataBackupStatusTable
+GET http://103.184.122.170/api/snmp/zxAnDataBackupStatusTable
 Authorization: Bearer {{token}}
 

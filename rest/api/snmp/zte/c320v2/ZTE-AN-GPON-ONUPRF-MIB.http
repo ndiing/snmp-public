@@ -1,9 +1,9 @@
 ### The ONU profile T-CONT table.
-GET http://localhost/api/snmp/zxAnGponOPTcontTable
+GET http://103.184.122.170/api/snmp/zxAnGponOPTcontTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOPTcontTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOPTcontTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -15,11 +15,11 @@ Content-Type: application/json
 }
 
 ### The ONU profile GEM port table.
-GET http://localhost/api/snmp/zxAnGponOPGemPortTable
+GET http://103.184.122.170/api/snmp/zxAnGponOPGemPortTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOPGemPortTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOPGemPortTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -32,11 +32,11 @@ Content-Type: application/json
 }
 
 ### The ONU profile mapping table.
-GET http://localhost/api/snmp/zxAnGponOPMappingTable
+GET http://103.184.122.170/api/snmp/zxAnGponOPMappingTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOPMappingTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOPMappingTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -50,11 +50,11 @@ Content-Type: application/json
 }
 
 ### The ONU profile ONU configuration table.
-GET http://localhost/api/snmp/zxAnGponOPOnuConfTable
+GET http://103.184.122.170/api/snmp/zxAnGponOPOnuConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOPOnuConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOPOnuConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -64,11 +64,11 @@ Content-Type: application/json
 }
 
 ### The ONU profile VPort table.
-GET http://localhost/api/snmp/zxAnGponOPBpConfTable
+GET http://103.184.122.170/api/snmp/zxAnGponOPBpConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOPBpConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOPBpConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -79,11 +79,11 @@ Content-Type: application/json
 }
 
 ### The ONU profile VPort mapping table.
-GET http://localhost/api/snmp/zxAnGponOPBpMapConfTable
+GET http://103.184.122.170/api/snmp/zxAnGponOPBpMapConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOPBpMapConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOPBpMapConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -92,11 +92,11 @@ Content-Type: application/json
 }
 
 ### The ONU profile T-CONT queue schedule table.
-GET http://localhost/api/snmp/zxAnGponOPTcontQueueSchedTable
+GET http://103.184.122.170/api/snmp/zxAnGponOPTcontQueueSchedTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOPTcontQueueSchedTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOPTcontQueueSchedTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -105,11 +105,11 @@ Content-Type: application/json
 }
 
 ### The ONU profile GPON GEM port current performance table.
-GET http://localhost/api/snmp/zxAnGponOPGemPortCurrPerfTable
+GET http://103.184.122.170/api/snmp/zxAnGponOPGemPortCurrPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOPGemPortCurrPerfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOPGemPortCurrPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -118,11 +118,11 @@ Content-Type: application/json
 }
 
 ### The ONU profile port VLAN table.<br/><br/>A table containing VLAN port information for VLANs<br/><br/>configured into the bridge by (local or network)<br/><br/>management,  specifying the set of<br/><br/>ports to which frames received on a VLAN for this FDB<br/><br/>and containing a specific Group destination address are<br/><br/>allowed to be forwarded.<br/><br/><br/><br/>When a manager wants to create a VLAN port,it must comply<br/><br/>with the multi-variables usage rule that all the mib variables<br/><br/>related to same fuction must be in one snmp set operation, the<br/><br/>variables have two type: mandatory and optional.<br/><br/><br/><br/>Mandatory variables must be in the one snmp set operation.<br/><br/>Optional variables may be in the one snmp set operation with the<br/><br/>mandatory variables, but must not be used alone.<br/><br/><br/><br/>To modify a service port,  there are several cases base on the<br/><br/>variable zxAnGponOPVlanPortMode, and the mandatory and optional<br/><br/>variables for each case are different.<br/><br/><br/><br/>Case 1: to modify a VLAN port when zxAnGponOPVlanPortMode is<br/><br/>access(1):<br/><br/>- mandatoty:<br/><br/>zxAnGponOPVlanPortMode,<br/><br/>- optional :<br/><br/>zxAnGponOPVlanPortDefaultVid,<br/><br/>zxAnGponOPVlanPortDefaultCos,<br/><br/><br/><br/>Case 2: to modify a service port when zxAnGponOPVlanPortMode is<br/><br/>trunk(2):<br/><br/>- mandatoty:<br/><br/>zxAnGponOPVlanPortMode,<br/><br/>- optional :<br/><br/><br/><br/>Case 3: to modify a service port when zxAnGponOPVlanPortMode is<br/><br/>hybrid(3):<br/><br/>- mandatoty:<br/><br/>zxAnGponOPVlanPortMode,<br/><br/>- optional :<br/><br/>zxAnGponOPVlanPortDefaultVid,<br/><br/>zxAnGponOPVlanPortDefaultCos,<br/><br/><br/><br/>Case 4: to modify a service port when zxAnGponOPVlanPortMode is<br/><br/>transparent(4):<br/><br/>- mandatoty:<br/><br/>zxAnGponOPVlanPortMode,<br/><br/>- optional :<br/><br/><br/><br/>Case 5: to modify a service port when zxAnGponOPVlanPortMode is<br/><br/>none(5):<br/><br/>- mandatoty:<br/><br/>zxAnGponOPVlanPortMode,<br/><br/>- optional :
-GET http://localhost/api/snmp/zxAnGponOPVlanPortTable
+GET http://103.184.122.170/api/snmp/zxAnGponOPVlanPortTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOPVlanPortTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOPVlanPortTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -133,11 +133,11 @@ Content-Type: application/json
 }
 
 ### The port VLAN operation command table.<br/><br/>This table is used for ONU profile.
-GET http://localhost/api/snmp/zxAnGponOPVlanPortCmdTable
+GET http://103.184.122.170/api/snmp/zxAnGponOPVlanPortCmdTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOPVlanPortCmdTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOPVlanPortCmdTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -147,11 +147,11 @@ Content-Type: application/json
 }
 
 ### The ONU profile port VLAN translation table.
-GET http://localhost/api/snmp/zxAnGponOPVlanTransTable
+GET http://103.184.122.170/api/snmp/zxAnGponOPVlanTransTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOPVlanTransTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOPVlanTransTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -164,11 +164,11 @@ Content-Type: application/json
 }
 
 ### The ONU profile multicast VLAN table.
-GET http://localhost/api/snmp/zxAnGponOPMVlanTable
+GET http://103.184.122.170/api/snmp/zxAnGponOPMVlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOPMVlanTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOPMVlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -177,11 +177,11 @@ Content-Type: application/json
 }
 
 ### The ONU profile IGMP configuration table.
-GET http://localhost/api/snmp/zxAnGponOPIgmpConfTable
+GET http://103.184.122.170/api/snmp/zxAnGponOPIgmpConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOPIgmpConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOPIgmpConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -194,11 +194,11 @@ Content-Type: application/json
 }
 
 ### The ONU profile traffic scheduler configuration table.
-GET http://localhost/api/snmp/zxAnGponOPTrafficSchedTable
+GET http://103.184.122.170/api/snmp/zxAnGponOPTrafficSchedTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOPTrafficSchedTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOPTrafficSchedTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -207,11 +207,11 @@ Content-Type: application/json
 }
 
 ### The ONU profile extended VLAN configuration table.
-GET http://localhost/api/snmp/zxAnGponOPExtVlanTable
+GET http://103.184.122.170/api/snmp/zxAnGponOPExtVlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOPExtVlanTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOPExtVlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -224,11 +224,11 @@ Content-Type: application/json
 }
 
 ### The ONU profile extended VLAN rule configuration table.
-GET http://localhost/api/snmp/zxAnGponOPExtVlanRuleConfTable
+GET http://103.184.122.170/api/snmp/zxAnGponOPExtVlanRuleConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOPExtVlanRuleConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOPExtVlanRuleConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -238,11 +238,11 @@ Content-Type: application/json
 }
 
 ### The ONU profile bridge configuration table.
-GET http://localhost/api/snmp/zxAnGponOPBrgConfTable
+GET http://103.184.122.170/api/snmp/zxAnGponOPBrgConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOPBrgConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOPBrgConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -260,11 +260,11 @@ Content-Type: application/json
 }
 
 ### The ONU profile WAN IP configuration table.
-GET http://localhost/api/snmp/zxAnGponOPWanIpConfTable
+GET http://103.184.122.170/api/snmp/zxAnGponOPWanIpConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnGponOPWanIpConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnGponOPWanIpConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

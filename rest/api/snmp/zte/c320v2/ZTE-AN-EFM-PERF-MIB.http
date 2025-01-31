@@ -1,9 +1,9 @@
 ### EFM current performance table.
-GET http://localhost/api/snmp/zxAnEfmCurrPerfTable
+GET http://103.184.122.170/api/snmp/zxAnEfmCurrPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnEfmCurrPerfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnEfmCurrPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -12,11 +12,11 @@ Content-Type: application/json
 }
 
 ### EFM current 15 minutes performance table.
-GET http://localhost/api/snmp/zxAnEfmCurr15MinPerfTable
+GET http://103.184.122.170/api/snmp/zxAnEfmCurr15MinPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnEfmCurr15MinPerfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnEfmCurr15MinPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -25,11 +25,11 @@ Content-Type: application/json
 }
 
 ### EFM current 1 day performance table.
-GET http://localhost/api/snmp/zxAnEfmCurr1DayPerfTable
+GET http://103.184.122.170/api/snmp/zxAnEfmCurr1DayPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnEfmCurr1DayPerfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnEfmCurr1DayPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -38,10 +38,10 @@ Content-Type: application/json
 }
 
 ### EFM history 15 minutes performance table.
-GET http://localhost/api/snmp/zxAnEfmHis15MinPerfTable
+GET http://103.184.122.170/api/snmp/zxAnEfmHis15MinPerfTable
 Authorization: Bearer {{token}}
 
 ### EFM history 1 day performance table.
-GET http://localhost/api/snmp/zxAnEfmHis1DayPerfTable
+GET http://103.184.122.170/api/snmp/zxAnEfmHis1DayPerfTable
 Authorization: Bearer {{token}}
 

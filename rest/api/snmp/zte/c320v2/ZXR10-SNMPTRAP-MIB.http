@@ -1,9 +1,9 @@
 ### snmp Trap Enable entity configuration table
-GET http://localhost/api/snmp/zxr10SnmpTrapEnableTable
+GET http://103.184.122.170/api/snmp/zxr10SnmpTrapEnableTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxr10SnmpTrapEnableTable/:id
+POST http://103.184.122.170/api/snmp/zxr10SnmpTrapEnableTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -12,11 +12,11 @@ Content-Type: application/json
 }
 
 ### SNMP trap server entity configuration table
-GET http://localhost/api/snmp/zxr10SnmpTrapSvrTable
+GET http://103.184.122.170/api/snmp/zxr10SnmpTrapSvrTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxr10SnmpTrapSvrTable/:id
+POST http://103.184.122.170/api/snmp/zxr10SnmpTrapSvrTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

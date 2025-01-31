@@ -1,9 +1,9 @@
 ### Uplink port protection table.
-GET http://localhost/api/snmp/zxAnSecUplinkProtectionTable
+GET http://103.184.122.170/api/snmp/zxAnSecUplinkProtectionTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnSecUplinkProtectionTable/:id
+POST http://103.184.122.170/api/snmp/zxAnSecUplinkProtectionTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -12,11 +12,11 @@ Content-Type: application/json
 }
 
 ### When the value of 'zxAnSecGlbVlanIsolationEnable' is enabled, the<br/><br/>table allowed be created, deleted, or the table can not be created<br/><br/>and deleted.
-GET http://localhost/api/snmp/zxAnSecVlanCommunicateTable
+GET http://103.184.122.170/api/snmp/zxAnSecVlanCommunicateTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnSecVlanCommunicateTable/:id
+POST http://103.184.122.170/api/snmp/zxAnSecVlanCommunicateTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -25,11 +25,11 @@ Content-Type: application/json
 }
 
 ### Uplink isolation table.
-GET http://localhost/api/snmp/zxAnSecUplinkIsolationTable
+GET http://103.184.122.170/api/snmp/zxAnSecUplinkIsolationTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnSecUplinkIsolationTable/:id
+POST http://103.184.122.170/api/snmp/zxAnSecUplinkIsolationTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

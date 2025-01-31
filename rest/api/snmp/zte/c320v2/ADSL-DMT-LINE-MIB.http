@@ -1,21 +1,21 @@
 ### DMT interface physical layer actuals information<br/><br/>table.
-GET http://localhost/api/snmp/adslLineDMTTable
+GET http://103.184.122.170/api/snmp/adslLineDMTTable
 Authorization: Bearer {{token}}
 
 ### DMT interface physical layer actuals information<br/><br/>table for the central office.
-GET http://localhost/api/snmp/adslAtucDMTPhysTable
+GET http://103.184.122.170/api/snmp/adslAtucDMTPhysTable
 Authorization: Bearer {{token}}
 
 ### DMT interface physical layer actuals information<br/><br/>table for the remote unit.
-GET http://localhost/api/snmp/adslAturDMTPhysTable
+GET http://103.184.122.170/api/snmp/adslAturDMTPhysTable
 Authorization: Bearer {{token}}
 
 ### This table contains the target DMT specific configuration<br/><br/>parameters for the physical layer before initialization.
-GET http://localhost/api/snmp/adslLineDMTConfProfileTable
+GET http://103.184.122.170/api/snmp/adslLineDMTConfProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/adslLineDMTConfProfileTable/:id
+POST http://103.184.122.170/api/snmp/adslLineDMTConfProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

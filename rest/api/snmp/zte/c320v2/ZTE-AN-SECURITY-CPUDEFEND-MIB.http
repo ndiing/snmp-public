@@ -1,13 +1,13 @@
 ### DoS attack table.
-GET http://localhost/api/snmp/zxAnSecDosAttackTable
+GET http://103.184.122.170/api/snmp/zxAnSecDosAttackTable
 Authorization: Bearer {{token}}
 
 ### CPU packet limit configuration table.
-GET http://localhost/api/snmp/zxAnSecCpuPktLimitConfTable
+GET http://103.184.122.170/api/snmp/zxAnSecCpuPktLimitConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnSecCpuPktLimitConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnSecCpuPktLimitConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -17,15 +17,15 @@ Content-Type: application/json
 }
 
 ### CPU packet limit statistic table.
-GET http://localhost/api/snmp/zxAnSecCpuPktLimitStatsTable
+GET http://103.184.122.170/api/snmp/zxAnSecCpuPktLimitStatsTable
 Authorization: Bearer {{token}}
 
 ### CPU queue packet limit configuration table.
-GET http://localhost/api/snmp/zxAnSecCpuQueuePktLmtConfTable
+GET http://103.184.122.170/api/snmp/zxAnSecCpuQueuePktLmtConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnSecCpuQueuePktLmtConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnSecCpuQueuePktLmtConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -34,6 +34,6 @@ Content-Type: application/json
 }
 
 ### CPU queue packet limit configuration table.
-GET http://localhost/api/snmp/zxAnSecCpuQueuePktLmtStatsTable
+GET http://103.184.122.170/api/snmp/zxAnSecCpuQueuePktLmtStatsTable
 Authorization: Bearer {{token}}
 

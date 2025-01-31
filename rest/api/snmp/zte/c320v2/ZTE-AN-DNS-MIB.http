@@ -1,9 +1,9 @@
 ### Domain name server table.
-GET http://localhost/api/snmp/zxAnDnsDomainNameServerTable
+GET http://103.184.122.170/api/snmp/zxAnDnsDomainNameServerTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDnsDomainNameServerTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDnsDomainNameServerTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -12,6 +12,6 @@ Content-Type: application/json
 }
 
 ### DNS IP domain table.
-GET http://localhost/api/snmp/zxAnDnsIpDomainTable
+GET http://103.184.122.170/api/snmp/zxAnDnsIpDomainTable
 Authorization: Bearer {{token}}
 

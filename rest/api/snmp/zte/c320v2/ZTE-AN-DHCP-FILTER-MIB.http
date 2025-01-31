@@ -1,9 +1,9 @@
 ### IPv4 DHCP packets filtering based on VLAN table.
-GET http://localhost/api/snmp/zxAnDhcpV4FilterVlanTable
+GET http://103.184.122.170/api/snmp/zxAnDhcpV4FilterVlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnDhcpV4FilterVlanTable/:id
+POST http://103.184.122.170/api/snmp/zxAnDhcpV4FilterVlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

@@ -1,9 +1,9 @@
 ### A table of config-copy requests.
-GET http://localhost/api/snmp/zxr10CopyTable
+GET http://103.184.122.170/api/snmp/zxr10CopyTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxr10CopyTable/:id
+POST http://103.184.122.170/api/snmp/zxr10CopyTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -25,11 +25,11 @@ Content-Type: application/json
 }
 
 ### A table of tftp copy requests.
-GET http://localhost/api/snmp/zxr10TFTPCopyTable
+GET http://103.184.122.170/api/snmp/zxr10TFTPCopyTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxr10TFTPCopyTable/:id
+POST http://103.184.122.170/api/snmp/zxr10TFTPCopyTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -48,11 +48,11 @@ Content-Type: application/json
 }
 
 ### A table of SFTP copy requests.
-GET http://localhost/api/snmp/zxr10SftpCopyTable
+GET http://103.184.122.170/api/snmp/zxr10SftpCopyTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxr10SftpCopyTable/:id
+POST http://103.184.122.170/api/snmp/zxr10SftpCopyTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

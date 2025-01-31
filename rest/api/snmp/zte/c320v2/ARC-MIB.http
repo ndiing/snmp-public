@@ -1,9 +1,9 @@
 ### A table of Alarm Reporting Control (ARC) settings on the system.<br/><br/>Alarm Reporting Control is a feature that provides an automatic<br/>in-service provisioning capability.  Alarm reporting is turned<br/>off on a per-resource basis for a selective set of potential<br/>alarm conditions to allow sufficient time for customer testing<br/>and other maintenance activities in an 'alarm free' state.<br/>Once a resource is ready for service, alarm reporting is<br/>automatically or manually turned on.<br/><br/>Functional description and requirements of Alarm Reporting<br/>Control are defined in ITU-T Recommendation M.3100 Amendment 3<br/>[M.3100 Amd3].
-GET http://localhost/api/snmp/arcTable
+GET http://103.184.122.170/api/snmp/arcTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/arcTable/:id
+POST http://103.184.122.170/api/snmp/arcTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

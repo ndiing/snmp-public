@@ -1,9 +1,9 @@
 ### This table is to provide traffic-limit configuration<br/><br/>based on the ACL rule.
-GET http://localhost/api/snmp/zxAnQosAclTrafficLimitTable
+GET http://103.184.122.170/api/snmp/zxAnQosAclTrafficLimitTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnQosAclTrafficLimitTable/:id
+POST http://103.184.122.170/api/snmp/zxAnQosAclTrafficLimitTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -24,11 +24,11 @@ Content-Type: application/json
 }
 
 ### This table is to provide priority-mark configuration<br/><br/>based on the ACL rule.
-GET http://localhost/api/snmp/zxAnQosAclPriorityMarkTable
+GET http://103.184.122.170/api/snmp/zxAnQosAclPriorityMarkTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnQosAclPriorityMarkTable/:id
+POST http://103.184.122.170/api/snmp/zxAnQosAclPriorityMarkTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -43,11 +43,11 @@ Content-Type: application/json
 }
 
 ### This table is to provide vlan-mark configuration<br/><br/>based on the ACL rule.
-GET http://localhost/api/snmp/zxAnQosAclVlanMarkTable
+GET http://103.184.122.170/api/snmp/zxAnQosAclVlanMarkTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnQosAclVlanMarkTable/:id
+POST http://103.184.122.170/api/snmp/zxAnQosAclVlanMarkTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -57,11 +57,11 @@ Content-Type: application/json
 }
 
 ### This table is to provide traffic-redirect configuration<br/><br/>based on the ACL rule.
-GET http://localhost/api/snmp/zxAnQosAclRedirectTable
+GET http://103.184.122.170/api/snmp/zxAnQosAclRedirectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnQosAclRedirectTable/:id
+POST http://103.184.122.170/api/snmp/zxAnQosAclRedirectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -75,11 +75,11 @@ Content-Type: application/json
 }
 
 ### This table is to provide traffic-mirror configuration<br/><br/>based on the ACL rule.
-GET http://localhost/api/snmp/zxAnQosAclTrafficMirrorTable
+GET http://103.184.122.170/api/snmp/zxAnQosAclTrafficMirrorTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnQosAclTrafficMirrorTable/:id
+POST http://103.184.122.170/api/snmp/zxAnQosAclTrafficMirrorTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -100,11 +100,11 @@ Content-Type: application/json
 }
 
 ### This table is to provide traffic-statistics configuration<br/><br/>based on the ACL rule.
-GET http://localhost/api/snmp/zxAnQosAclTrafficStatsTable
+GET http://103.184.122.170/api/snmp/zxAnQosAclTrafficStatsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnQosAclTrafficStatsTable/:id
+POST http://103.184.122.170/api/snmp/zxAnQosAclTrafficStatsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -116,11 +116,11 @@ Content-Type: application/json
 }
 
 ### This table is to provide traffic burst detection configuration<br/><br/>based on the ACL rule.
-GET http://localhost/api/snmp/zxAnTrafficBurstDetectTable
+GET http://103.184.122.170/api/snmp/zxAnTrafficBurstDetectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnTrafficBurstDetectTable/:id
+POST http://103.184.122.170/api/snmp/zxAnTrafficBurstDetectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

@@ -1,9 +1,9 @@
 ### Anti-DoS global interface configuration information table.<br/><br/>The global interface based anti-DoS configuration will be<br/><br/>applied to the interface if the interface based anti-DoS<br/><br/>configuration is not given in zxAnAntiDosIfConfTable.
-GET http://localhost/api/snmp/zxAnAntiDosGlobalIfConfTable
+GET http://103.184.122.170/api/snmp/zxAnAntiDosGlobalIfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnAntiDosGlobalIfConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnAntiDosGlobalIfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -15,11 +15,11 @@ Content-Type: application/json
 }
 
 ### Anti-DoS interface configuration information table.
-GET http://localhost/api/snmp/zxAnAntiDosIfConfTable
+GET http://103.184.122.170/api/snmp/zxAnAntiDosIfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnAntiDosIfConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnAntiDosIfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -31,6 +31,6 @@ Content-Type: application/json
 }
 
 ### Anti-DoS blacklist information table.
-GET http://localhost/api/snmp/zxAnAntiDosBlacklistTable
+GET http://103.184.122.170/api/snmp/zxAnAntiDosBlacklistTable
 Authorization: Bearer {{token}}
 

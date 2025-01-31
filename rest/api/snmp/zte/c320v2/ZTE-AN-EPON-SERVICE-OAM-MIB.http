@@ -1,9 +1,9 @@
 ### This table contains the primary controls and status for the OAM<br/><br/>capabilities of an Ethernet like interface. There will be one row<br/><br/>in this table for each Ethernet like interface in the system that<br/><br/>supports the OAM functions defined in [802.3ah].
-GET http://localhost/api/snmp/dot3OamTable
+GET http://103.184.122.170/api/snmp/dot3OamTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/dot3OamTable/:id
+POST http://103.184.122.170/api/snmp/dot3OamTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -13,15 +13,15 @@ Content-Type: application/json
 }
 
 ### This table contains information about the OAM peer for a particular Ethernet<br/><br/>like interface. OAM entities communicate with a single OAM peer entity on<br/><br/>Ethernet links on which OAM is enabled and operating properly. There is one<br/><br/>entry in this table for each entry in the OamTable for which information<br/><br/>on the peer OAM entity is available.
-GET http://localhost/api/snmp/dot3OamPeerTable
+GET http://103.184.122.170/api/snmp/dot3OamPeerTable
 Authorization: Bearer {{token}}
 
 ### This table contains controls for the loopback state of the local link as well<br/><br/>as indicating the status of the loopback function. There is one entry in this<br/><br/>table for each entry in OamTable that supports loopback functionality<br/><br/>(where OamFunctionsSupported includes the loopbackSupport bit set).<br/><br/>Loopback can be used to place the remote OAM entity in a state where every<br/><br/>received frame (except OAMPDUs) are echoed back over the same interface<br/><br/>on which they were received. In this state, at the remote entity, 'normal'<br/><br/>traffic is disabled as only the looped back frames are transmitted on<br/><br/>the interface. Loopback is thus an intrusive operation that prohibits normal<br/><br/>data flow and should be used accordingly.
-GET http://localhost/api/snmp/dot3OamLoopbackTable
+GET http://103.184.122.170/api/snmp/dot3OamLoopbackTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/dot3OamLoopbackTable/:id
+POST http://103.184.122.170/api/snmp/dot3OamLoopbackTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -31,15 +31,15 @@ Content-Type: application/json
 }
 
 ### This table contains statistics for the OAM function on a particular Ethernet<br/><br/>like interface. There is an entry in the table for every entry in the OamTable.<br/><br/>The counters in this table are defined as 32-bit entries to match the counter size<br/><br/>as defined in [802.3ah]. Given the OAM protocol is a slow protocol, the counters<br/><br/>increment at a slow rate.
-GET http://localhost/api/snmp/dot3OamStatsTable
+GET http://103.184.122.170/api/snmp/dot3OamStatsTable
 Authorization: Bearer {{token}}
 
 ### Ethernet OAM includes the ability to generate and receive Event Notification OAMPDUs<br/><br/>to indicate various link problems. This table contains the mechanisms to enable<br/><br/>Event Notifications and configure the thresholds to generate the standard Ethernet<br/><br/>OAM events. There is one entry in the table for every entry in OamTable that<br/><br/>supports OAM events (where OamFunctionsSupported includes the eventSupport bit set).<br/><br/>The values in the table are maintained across changes to OamOperStatus. There<br/><br/>are other events (dying gasp, critical events) that are not threshold crossing<br/><br/>events but which can be enabled/disabled via this table.
-GET http://localhost/api/snmp/dot3OamEventConfigTable
+GET http://103.184.122.170/api/snmp/dot3OamEventConfigTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/dot3OamEventConfigTable/:id
+POST http://103.184.122.170/api/snmp/dot3OamEventConfigTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -63,6 +63,6 @@ Content-Type: application/json
 }
 
 ### This table records a history of the events that have occurred at the Ethernet<br/><br/>OAM level. These events can include locally detected events, which may result<br/><br/>in locally generated OAMPDUs, and remotely detected events, which are detected<br/><br/>by the OAM peer entity and signaled to the local entity via Ethernet OAM.<br/><br/>Ethernet OAM events can be signaled by Event Notification OAMPDUs or by the<br/><br/>flags field in any OAMPDU. This table contains both threshold crossing events<br/><br/>and non-threshold crossing events. The parameters for the threshold window,<br/><br/>threshold value, and actual value (OamEventLogWindowXX, OamEventLogThresholdXX,<br/><br/>OamEventLogValue) are only applicable to threshold crossing events, and<br/><br/>are returned as all F's (2^32 - 1) for non-threshold crossing events. Entries<br/><br/>in the table are automatically created when such events are detected. The size<br/><br/>of the table is implementation dependent. When the table reaches its maximum<br/><br/>size, older entries are automatically deleted to make room for newer entries.
-GET http://localhost/api/snmp/dot3OamEventLogTable
+GET http://103.184.122.170/api/snmp/dot3OamEventLogTable
 Authorization: Bearer {{token}}
 

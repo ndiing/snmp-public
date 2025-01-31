@@ -1,9 +1,9 @@
 ### L3 interface ND proxy configuration table.
-GET http://localhost/api/snmp/zxAnL3IfNdProxyConfTable
+GET http://103.184.122.170/api/snmp/zxAnL3IfNdProxyConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnL3IfNdProxyConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnL3IfNdProxyConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -12,11 +12,11 @@ Content-Type: application/json
 }
 
 ### This table provides ND configuration information on the L3<br/><br/>interface.<br/><br/>The interfaces for which this feature must be applicable are:<br/><br/>IfType = Physical Interface(1).
-GET http://localhost/api/snmp/zxAnL3IfNdConfTable
+GET http://103.184.122.170/api/snmp/zxAnL3IfNdConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnL3IfNdConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnL3IfNdConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -33,11 +33,11 @@ Content-Type: application/json
 }
 
 ### This table provides RA Prefix configuration information on the L3<br/><br/>interface.<br/><br/>The interfaces for which this feature must be applicable are:<br/><br/>IfType = Physical Interface(1).
-GET http://localhost/api/snmp/zxAnL3IfNdRaPrefixConfTable
+GET http://103.184.122.170/api/snmp/zxAnL3IfNdRaPrefixConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnL3IfNdRaPrefixConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnL3IfNdRaPrefixConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -50,11 +50,11 @@ Content-Type: application/json
 }
 
 ### This table provides static ND configuration and show ND items,<br/><br/>including dynamic ND item.<br/><br/><br/><br/>The interfaces for which this feature must be applicable are:<br/><br/>IfType = Physical Interface(1)
-GET http://localhost/api/snmp/zxAnL3IfNdCacheTable
+GET http://103.184.122.170/api/snmp/zxAnL3IfNdCacheTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnL3IfNdCacheTable/:id
+POST http://103.184.122.170/api/snmp/zxAnL3IfNdCacheTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

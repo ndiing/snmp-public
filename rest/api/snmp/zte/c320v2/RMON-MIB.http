@@ -1,9 +1,9 @@
 ### A list of Ethernet statistics entries.
-GET http://localhost/api/snmp/etherStatsTable
+GET http://103.184.122.170/api/snmp/etherStatsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/etherStatsTable/:id
+POST http://103.184.122.170/api/snmp/etherStatsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -14,11 +14,11 @@ Content-Type: application/json
 }
 
 ### A list of history control entries.
-GET http://localhost/api/snmp/historyControlTable
+GET http://103.184.122.170/api/snmp/historyControlTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/historyControlTable/:id
+POST http://103.184.122.170/api/snmp/historyControlTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -31,15 +31,15 @@ Content-Type: application/json
 }
 
 ### A list of Ethernet history entries.
-GET http://localhost/api/snmp/etherHistoryTable
+GET http://103.184.122.170/api/snmp/etherHistoryTable
 Authorization: Bearer {{token}}
 
 ### A list of alarm entries.
-GET http://localhost/api/snmp/alarmTable
+GET http://103.184.122.170/api/snmp/alarmTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/alarmTable/:id
+POST http://103.184.122.170/api/snmp/alarmTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -57,11 +57,11 @@ Content-Type: application/json
 }
 
 ### A list of host table control entries.
-GET http://localhost/api/snmp/hostControlTable
+GET http://103.184.122.170/api/snmp/hostControlTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/hostControlTable/:id
+POST http://103.184.122.170/api/snmp/hostControlTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -72,19 +72,19 @@ Content-Type: application/json
 }
 
 ### A list of host entries.
-GET http://localhost/api/snmp/hostTable
+GET http://103.184.122.170/api/snmp/hostTable
 Authorization: Bearer {{token}}
 
 ### A list of time-ordered host table entries.
-GET http://localhost/api/snmp/hostTimeTable
+GET http://103.184.122.170/api/snmp/hostTimeTable
 Authorization: Bearer {{token}}
 
 ### A list of top N host control entries.
-GET http://localhost/api/snmp/hostTopNControlTable
+GET http://103.184.122.170/api/snmp/hostTopNControlTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/hostTopNControlTable/:id
+POST http://103.184.122.170/api/snmp/hostTopNControlTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -98,15 +98,15 @@ Content-Type: application/json
 }
 
 ### A list of top N host entries.
-GET http://localhost/api/snmp/hostTopNTable
+GET http://103.184.122.170/api/snmp/hostTopNTable
 Authorization: Bearer {{token}}
 
 ### A list of information entries for the<br/><br/>traffic matrix on each interface.
-GET http://localhost/api/snmp/matrixControlTable
+GET http://103.184.122.170/api/snmp/matrixControlTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/matrixControlTable/:id
+POST http://103.184.122.170/api/snmp/matrixControlTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -117,19 +117,19 @@ Content-Type: application/json
 }
 
 ### A list of traffic matrix entries indexed by<br/><br/>source and destination MAC address.
-GET http://localhost/api/snmp/matrixSDTable
+GET http://103.184.122.170/api/snmp/matrixSDTable
 Authorization: Bearer {{token}}
 
 ### A list of traffic matrix entries indexed by<br/><br/>destination and source MAC address.
-GET http://localhost/api/snmp/matrixDSTable
+GET http://103.184.122.170/api/snmp/matrixDSTable
 Authorization: Bearer {{token}}
 
 ### A list of packet filter entries.
-GET http://localhost/api/snmp/filterTable
+GET http://103.184.122.170/api/snmp/filterTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/filterTable/:id
+POST http://103.184.122.170/api/snmp/filterTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -147,11 +147,11 @@ Content-Type: application/json
 }
 
 ### A list of packet channel entries.
-GET http://localhost/api/snmp/channelTable
+GET http://103.184.122.170/api/snmp/channelTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/channelTable/:id
+POST http://103.184.122.170/api/snmp/channelTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -169,11 +169,11 @@ Content-Type: application/json
 }
 
 ### A list of buffers control entries.
-GET http://localhost/api/snmp/bufferControlTable
+GET http://103.184.122.170/api/snmp/bufferControlTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/bufferControlTable/:id
+POST http://103.184.122.170/api/snmp/bufferControlTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -189,15 +189,15 @@ Content-Type: application/json
 }
 
 ### A list of packets captured off of a channel.
-GET http://localhost/api/snmp/captureBufferTable
+GET http://103.184.122.170/api/snmp/captureBufferTable
 Authorization: Bearer {{token}}
 
 ### A list of events to be generated.
-GET http://localhost/api/snmp/eventTable
+GET http://103.184.122.170/api/snmp/eventTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/eventTable/:id
+POST http://103.184.122.170/api/snmp/eventTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -210,6 +210,6 @@ Content-Type: application/json
 }
 
 ### A list of events that have been logged.
-GET http://localhost/api/snmp/logTable
+GET http://103.184.122.170/api/snmp/logTable
 Authorization: Bearer {{token}}
 

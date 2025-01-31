@@ -1,9 +1,9 @@
 ### File server group configuration table.
-GET http://localhost/api/snmp/zxAnFileServerGroupTable
+GET http://103.184.122.170/api/snmp/zxAnFileServerGroupTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnFileServerGroupTable/:id
+POST http://103.184.122.170/api/snmp/zxAnFileServerGroupTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -12,11 +12,11 @@ Content-Type: application/json
 }
 
 ### File server configuration table.
-GET http://localhost/api/snmp/zxAnFileServerTable
+GET http://103.184.122.170/api/snmp/zxAnFileServerTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnFileServerTable/:id
+POST http://103.184.122.170/api/snmp/zxAnFileServerTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

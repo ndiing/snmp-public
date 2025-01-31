@@ -1,4 +1,4 @@
 ### The system synchronization table.
-GET http://localhost/api/snmp/zxr10SystemSynchronizationTable
+GET http://103.184.122.170/api/snmp/zxr10SystemSynchronizationTable
 Authorization: Bearer {{token}}
 

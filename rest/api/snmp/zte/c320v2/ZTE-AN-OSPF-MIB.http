@@ -1,9 +1,9 @@
 ### This table specifies information for configuring<br/><br/>and monitoring OSPF instance.
-GET http://localhost/api/snmp/zxAnOspfInstanceTable
+GET http://103.184.122.170/api/snmp/zxAnOspfInstanceTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnOspfInstanceTable/:id
+POST http://103.184.122.170/api/snmp/zxAnOspfInstanceTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -16,11 +16,11 @@ Content-Type: application/json
 }
 
 ### This table specifies information for configuring and monitoring<br/><br/>OSPF interface.
-GET http://localhost/api/snmp/zxAnOspfNetworkTable
+GET http://103.184.122.170/api/snmp/zxAnOspfNetworkTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnOspfNetworkTable/:id
+POST http://103.184.122.170/api/snmp/zxAnOspfNetworkTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -29,11 +29,11 @@ Content-Type: application/json
 }
 
 ### This table specifies redistribute information from another routing<br/><br/>protocol.
-GET http://localhost/api/snmp/zxAnOspfRedistributeTable
+GET http://103.184.122.170/api/snmp/zxAnOspfRedistributeTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnOspfRedistributeTable/:id
+POST http://103.184.122.170/api/snmp/zxAnOspfRedistributeTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

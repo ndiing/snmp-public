@@ -1,9 +1,9 @@
 ### Media delivery index monitoring table.
-GET http://localhost/api/snmp/zxAnMdiMonitorConfTable
+GET http://103.184.122.170/api/snmp/zxAnMdiMonitorConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnMdiMonitorConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnMdiMonitorConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -27,15 +27,15 @@ Content-Type: application/json
 }
 
 ### MDI monitoring statistic table.
-GET http://localhost/api/snmp/zxAnMdiMonitorStatsTable
+GET http://103.184.122.170/api/snmp/zxAnMdiMonitorStatsTable
 Authorization: Bearer {{token}}
 
 ### MDI monitoring video profile table.
-GET http://localhost/api/snmp/zxAnMdiMonitorVideoPrfTable
+GET http://103.184.122.170/api/snmp/zxAnMdiMonitorVideoPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnMdiMonitorVideoPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnMdiMonitorVideoPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

@@ -1,9 +1,9 @@
 ### Virtual private LAN services(VPLS) service table.
-GET http://localhost/api/snmp/zxAnL2vpnVplsServiceTable
+GET http://103.184.122.170/api/snmp/zxAnL2vpnVplsServiceTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnL2vpnVplsServiceTable/:id
+POST http://103.184.122.170/api/snmp/zxAnL2vpnVplsServiceTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -32,11 +32,11 @@ Content-Type: application/json
 }
 
 ### VPLS static MAC table.
-GET http://localhost/api/snmp/zxAnL2vpnStaticMacTable
+GET http://103.184.122.170/api/snmp/zxAnL2vpnStaticMacTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnL2vpnStaticMacTable/:id
+POST http://103.184.122.170/api/snmp/zxAnL2vpnStaticMacTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -47,11 +47,11 @@ Content-Type: application/json
 }
 
 ### VPLS filter MAC table.
-GET http://localhost/api/snmp/zxAnL2vpnFilterMacTable
+GET http://103.184.122.170/api/snmp/zxAnL2vpnFilterMacTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnL2vpnFilterMacTable/:id
+POST http://103.184.122.170/api/snmp/zxAnL2vpnFilterMacTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -62,15 +62,15 @@ Content-Type: application/json
 }
 
 ### VPLS dynamic MAC table.
-GET http://localhost/api/snmp/zxAnL2vpnDynamicMacTable
+GET http://103.184.122.170/api/snmp/zxAnL2vpnDynamicMacTable
 Authorization: Bearer {{token}}
 
 ### VLL service table.
-GET http://localhost/api/snmp/zxAnL2vpnVllServiceTable
+GET http://103.184.122.170/api/snmp/zxAnL2vpnVllServiceTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnL2vpnVllServiceTable/:id
+POST http://103.184.122.170/api/snmp/zxAnL2vpnVllServiceTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -82,11 +82,11 @@ Content-Type: application/json
 }
 
 ### Multi-segment pseudowire(MSPW) service table.
-GET http://localhost/api/snmp/zxAnL2vpnMspwServiceTable
+GET http://103.184.122.170/api/snmp/zxAnL2vpnMspwServiceTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnL2vpnMspwServiceTable/:id
+POST http://103.184.122.170/api/snmp/zxAnL2vpnMspwServiceTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -95,15 +95,15 @@ Content-Type: application/json
 }
 
 ### The virtual circuit(VC) table.
-GET http://localhost/api/snmp/zxAnL2vpnVcTable
+GET http://103.184.122.170/api/snmp/zxAnL2vpnVcTable
 Authorization: Bearer {{token}}
 
 ### Attachment circuit(AC) table.
-GET http://localhost/api/snmp/zxAnL2vpnAcConfTable
+GET http://103.184.122.170/api/snmp/zxAnL2vpnAcConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnL2vpnAcConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnL2vpnAcConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -120,11 +120,11 @@ Content-Type: application/json
 }
 
 ### PW relation table.<br/><br/>This table provides an association between a<br/><br/>L2VPN service and the corresponding Pseudo<br/><br/>Wires. A service can have more than one PW association.<br/><br/>PW is defined in the zxAnPwConfTable.
-GET http://localhost/api/snmp/zxAnL2vpnInstPwRelationTable
+GET http://103.184.122.170/api/snmp/zxAnL2vpnInstPwRelationTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnL2vpnInstPwRelationTable/:id
+POST http://103.184.122.170/api/snmp/zxAnL2vpnInstPwRelationTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -134,11 +134,11 @@ Content-Type: application/json
 }
 
 ### The AC relation table.<br/><br/>This table provides an association between a<br/><br/>L2VPN service and the corresponding CIP.<br/><br/>CIP is defined in the zxAnCipTable
-GET http://localhost/api/snmp/zxAnL2vpnInstAcRelationTable
+GET http://103.184.122.170/api/snmp/zxAnL2vpnInstAcRelationTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnL2vpnInstAcRelationTable/:id
+POST http://103.184.122.170/api/snmp/zxAnL2vpnInstAcRelationTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -147,10 +147,10 @@ Content-Type: application/json
 }
 
 ### L2VPN PW flow statistic table.
-GET http://localhost/api/snmp/zxAnL2vpnPwStatsTable
+GET http://103.184.122.170/api/snmp/zxAnL2vpnPwStatsTable
 Authorization: Bearer {{token}}
 
 ### L2VPN AC flow statistic information table.
-GET http://localhost/api/snmp/zxAnL2vpnAcStatsTable
+GET http://103.184.122.170/api/snmp/zxAnL2vpnAcStatsTable
 Authorization: Bearer {{token}}
 

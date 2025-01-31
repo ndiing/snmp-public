@@ -1,9 +1,9 @@
 ### This table includes packets limit profile information.
-GET http://localhost/api/snmp/zxAnPonRmProtoPktsLimitPrfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmProtoPktsLimitPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmProtoPktsLimitPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmProtoPktsLimitPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -17,11 +17,11 @@ Content-Type: application/json
 }
 
 ### This table includes protocol enable profile information.
-GET http://localhost/api/snmp/zxAnPonRmProtoEnablePrfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmProtoEnablePrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmProtoEnablePrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmProtoEnablePrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -35,11 +35,11 @@ Content-Type: application/json
 }
 
 ### This table includes ONU protocol configuration information.
-GET http://localhost/api/snmp/zxAnPonRmOnuProtoConfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmOnuProtoConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmOnuProtoConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmOnuProtoConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -49,11 +49,11 @@ Content-Type: application/json
 }
 
 ### This table includes protocol configuration<br/><br/>information of ONU's Ethernet UNI port.
-GET http://localhost/api/snmp/zxAnPonRmOnuIfProtoConfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmOnuIfProtoConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmOnuIfProtoConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmOnuIfProtoConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -63,15 +63,15 @@ Content-Type: application/json
 }
 
 ### PON ONU POTS calling data record table.
-GET http://localhost/api/snmp/zxAnPonRmPotsCallDataRecordTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmPotsCallDataRecordTable
 Authorization: Bearer {{token}}
 
 ### The table of energy saving profile management.
-GET http://localhost/api/snmp/zxAnPonRmEnergySavePrfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmEnergySavePrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmEnergySavePrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmEnergySavePrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -84,11 +84,11 @@ Content-Type: application/json
 }
 
 ### This table associated with the ONU energy saving management<br/><br/>entity.
-GET http://localhost/api/snmp/zxAnPonRmOnuEnergySaveConfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmOnuEnergySaveConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmOnuEnergySaveConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmOnuEnergySaveConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -97,15 +97,15 @@ Content-Type: application/json
 }
 
 ### This table associated with the ONU remote latest three events<br/><br/>management entity.
-GET http://localhost/api/snmp/zxAnPonRmOnuLatestEventsTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmOnuLatestEventsTable
 Authorization: Bearer {{token}}
 
 ### ONU configuration command table.<br/><br/>EMS can send ONU configuration commands to OLT so as to configure<br/><br/>remote ONU, and OLT only forward these commands to ONU via OMCI<br/><br/>or OAM channel.<br/><br/><br/><br/>NOTES: EMS will put all the ONU configuration commands to<br/><br/>zxAnPonRmOnuConfCmd,<br/><br/><br/><br/>The format of zxAnPonRmOnuConfCmd is:<br/><br/>'command head::[parameter 1]=P1,[parameter 2]=P2,<br/><br/>...[parameter n]=Pn;'<br/><br/>the command head represents a configuration function<br/><br/>which is defined by EMS and ONU.<br/><br/>parameters are followed by '::' and separated by ',',<br/><br/>the end of the command must be ';'.<br/><br/>Example:<br/><br/>WAN_CONF::WANID=1,HOST=1,MODE=1,PPPUser=test,PPPPassword=test;
-GET http://localhost/api/snmp/zxAnPonRmOnuConfCmdTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmOnuConfCmdTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmOnuConfCmdTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmOnuConfCmdTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -114,11 +114,11 @@ Content-Type: application/json
 }
 
 ### EMS can send zxAnPonRmOnuRetrieveCmd to retrieve ONU monitoring<br/><br/>metrics which are not defined by ME of OMCI or OAM.<br/><br/>Otherwise, EMS can retrieve error messages of excution of<br/><br/>zxAnPonRmOnuConfCmd  in ONU.<br/><br/><br/><br/>The action is divided into two steps.<br/><br/>Step one:<br/><br/>EMS sends zxAnPonRmOnuRetrieveCmdSessionId and<br/><br/>zxAnPonRmOnuRetrieveCmd to OLT.<br/><br/>The format of zxAnPonRmOnuRetrieveCmd is:<br/><br/>'command head::[parameter 1]=P1,[parameter 2]=P2,<br/><br/>...[parameter n]=Pn;'<br/><br/>the command head represents a configuration function<br/><br/>which is defined by EMS and ONU.<br/><br/>parameters are followed by '::' and separated by ',',<br/><br/>the end of the command must be ';'.<br/><br/>Example:<br/><br/>GET_WAN_CONF::WANID=1;<br/><br/>Step two:<br/><br/>The result is saved in zxAnPonRmOnuRetrieveCmdReply.<br/><br/>EMS can retrieve result by zxAnPonRmOnuRetrieveCmdSessionId.<br/><br/>The format of zxAnPonRmOnuRetrieveCmdReply is:<br/><br/>'command head::[parameter 1]=P1,[parameter 2]=P2,<br/><br/>...[parameter n]=Pn;'<br/><br/>the command head represents a configuration function<br/><br/>which is defined by EMS and ONU.<br/><br/>parameters are followed by '::' and separated by ',',<br/><br/>the end of the command must be ';'.<br/><br/>Example:<br/><br/>GET_WAN_CONF_RESULT::WANID=1,HOST=1,MODE=1,PPPUser=test,<br/><br/>PPPPassword=test;
-GET http://localhost/api/snmp/zxAnPonRmOnuRetrieveCmdTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmOnuRetrieveCmdTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmOnuRetrieveCmdTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmOnuRetrieveCmdTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -127,11 +127,11 @@ Content-Type: application/json
 }
 
 ### Service configuration  server  of the ONU.
-GET http://localhost/api/snmp/zxAnPonRmOnuConfFileSvrTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmOnuConfFileSvrTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmOnuConfFileSvrTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmOnuConfFileSvrTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -143,15 +143,15 @@ Content-Type: application/json
 }
 
 ### ONU WiFi interface capability table.<br/><br/>This table is only supported by EPON ONU.
-GET http://localhost/api/snmp/zxAnPonRmWifiIfCapabilityTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmWifiIfCapabilityTable
 Authorization: Bearer {{token}}
 
 ### ONU 2.4G WiFi interface table.
-GET http://localhost/api/snmp/zxAnPonRmWifiUniTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmWifiUniTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmWifiUniTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmWifiUniTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -170,11 +170,11 @@ Content-Type: application/json
 }
 
 ### ONU WiFi SSID table.
-GET http://localhost/api/snmp/zxAnPonRmWifiSsidTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmWifiSsidTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmWifiSsidTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmWifiSsidTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -196,11 +196,11 @@ Content-Type: application/json
 }
 
 ### ONU WiFi SSID VLAN tagging configuration table.<br/><br/>This table is only supported by EPON ONU.
-GET http://localhost/api/snmp/zxAnPonRmWifiSsidVlanTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmWifiSsidVlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmWifiSsidVlanTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmWifiSsidVlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -211,11 +211,11 @@ Content-Type: application/json
 }
 
 ### ONU 5G WiFi interface table.
-GET http://localhost/api/snmp/zxAnPonRmWifi5gUniTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmWifi5gUniTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmWifi5gUniTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmWifi5gUniTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -234,11 +234,11 @@ Content-Type: application/json
 }
 
 ### The Maintenance Domain table. Each row in the table<br/><br/>represents a different Maintenance Domain.<br/><br/>A Maintenance Domain is described in 802.1ag (3.22) as the<br/><br/>network or the part of the network for which faults in<br/><br/>connectivity are to be managed. The boundary of a Maintenance<br/><br/>Domain is defined by a set of DSAPs, each of which can become<br/><br/>a point of connectivity to a service instance.<br/><br/>This table only used by GPON service.
-GET http://localhost/api/snmp/zxAnPonRmOnuCfmMdTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmOnuCfmMdTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmOnuCfmMdTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmOnuCfmMdTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -252,11 +252,11 @@ Content-Type: application/json
 }
 
 ### This managed entity models an IEEE 802.1 service defined<br/><br/>on a bridge port. A maintenance association (MA) is<br/><br/>a set of endpoints on opposite sides of a network,<br/><br/>all existing at a defined maintenance level.<br/><br/>This table only used by GPON service.
-GET http://localhost/api/snmp/zxAnPonRmOnuCfmMaTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmOnuCfmMaTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmOnuCfmMaTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmOnuCfmMaTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -271,11 +271,11 @@ Content-Type: application/json
 }
 
 ### This managed entity models a maintenance association end point<br/><br/>(MEP) as defined primarily in IEEE 802.1ag<br/><br/>and secondarily in ITU-T Y.1731.<br/><br/>This table only used by GPON service.
-GET http://localhost/api/snmp/zxAnPonRmOnuCfmMepTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmOnuCfmMepTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmOnuCfmMepTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmOnuCfmMepTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -300,11 +300,11 @@ Content-Type: application/json
 }
 
 ### This managed entity models a maintenance association end point<br/><br/>(MEP) as defined primarily in IEEE 802.1ag and<br/><br/>secondarily in ITU-T Y.1731.
-GET http://localhost/api/snmp/zxAnPonRmOnuCfmMepTestTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmOnuCfmMepTestTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmOnuCfmMepTestTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmOnuCfmMepTestTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -322,11 +322,11 @@ Content-Type: application/json
 }
 
 ### This managed entity models LM test in G.984.4.
-GET http://localhost/api/snmp/zxAnPonRmOnuCfmMepLmTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmOnuCfmMepLmTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmOnuCfmMepLmTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmOnuCfmMepLmTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -342,11 +342,11 @@ Content-Type: application/json
 }
 
 ### This managed entity models DM test in G.984.4.
-GET http://localhost/api/snmp/zxAnPonRmOnuCfmMepDmTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmOnuCfmMepDmTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmOnuCfmMepDmTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmOnuCfmMepDmTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -362,11 +362,11 @@ Content-Type: application/json
 }
 
 ### The table lists PPPoE test entry. the entry indicates the test.
-GET http://localhost/api/snmp/zxAnPonRmOnuPppoeTestTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmOnuPppoeTestTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmOnuPppoeTestTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmOnuPppoeTestTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -379,11 +379,11 @@ Content-Type: application/json
 }
 
 ### The table lists IPoE test entry. the entry indicates the test.
-GET http://localhost/api/snmp/zxAnPonRmOnuIpoeTestTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmOnuIpoeTestTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmOnuIpoeTestTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmOnuIpoeTestTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -399,11 +399,11 @@ Content-Type: application/json
 }
 
 ### The table lists Iptv test entry. The entry indicates The test.
-GET http://localhost/api/snmp/zxAnPonRmOnuIptvTestTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmOnuIptvTestTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmOnuIptvTestTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmOnuIptvTestTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -417,11 +417,11 @@ Content-Type: application/json
 }
 
 ### The table lists callee test entry. The entry indicates a test.
-GET http://localhost/api/snmp/zxAnPonRmOnuVoipCalleeTestTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmOnuVoipCalleeTestTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmOnuVoipCalleeTestTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmOnuVoipCalleeTestTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -432,11 +432,11 @@ Content-Type: application/json
 }
 
 ### The table lists caller test entry. The entry indicates a test.
-GET http://localhost/api/snmp/zxAnPonRmOnuVoipCallerTestTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmOnuVoipCallerTestTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmOnuVoipCallerTestTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmOnuVoipCallerTestTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -447,31 +447,31 @@ Content-Type: application/json
 }
 
 ### ONU optical transceivers table.
-GET http://localhost/api/snmp/zxAnPonRmOnuOTransceiversTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmOnuOTransceiversTable
 Authorization: Bearer {{token}}
 
 ### The xDSL line current 15 minutes performance data table.
-GET http://localhost/api/snmp/zxAnPonRmXdsl2PMLineC15MTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmXdsl2PMLineC15MTable
 Authorization: Bearer {{token}}
 
 ### The xDSL line historical 15 minutes performance data table.
-GET http://localhost/api/snmp/zxAnPonRmXdsl2PMLineH15MTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmXdsl2PMLineH15MTable
 Authorization: Bearer {{token}}
 
 ### The xDSL channel current 15 minutes performance data table.
-GET http://localhost/api/snmp/zxAnPonRmXdsl2PMChannelC15MTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmXdsl2PMChannelC15MTable
 Authorization: Bearer {{token}}
 
 ### The xDSL channel historical 15 minutes performance data table.
-GET http://localhost/api/snmp/zxAnPonRmXdsl2PMChannelH15MTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmXdsl2PMChannelH15MTable
 Authorization: Bearer {{token}}
 
 ### The xDSL performance configuration table.
-GET http://localhost/api/snmp/zxAnPonRmXdsl2PMConfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmXdsl2PMConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmXdsl2PMConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmXdsl2PMConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -480,11 +480,11 @@ Content-Type: application/json
 }
 
 ### Downstream data rate configuration profile table.
-GET http://localhost/api/snmp/zxAnPonRmXdslDsDataRatePrfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmXdslDsDataRatePrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmXdslDsDataRatePrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmXdslDsDataRatePrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -502,11 +502,11 @@ Content-Type: application/json
 }
 
 ### Upstream data rate configuration profile table.
-GET http://localhost/api/snmp/zxAnPonRmXdslUsDataRatePrfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmXdslUsDataRatePrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmXdslUsDataRatePrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmXdslUsDataRatePrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -524,11 +524,11 @@ Content-Type: application/json
 }
 
 ### Spectrum configuration profile.
-GET http://localhost/api/snmp/zxAnPonRmXdslSpectrumPrfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmXdslSpectrumPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmXdslSpectrumPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmXdslSpectrumPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -551,11 +551,11 @@ Content-Type: application/json
 }
 
 ### Each Line Spectrum Profile is associated with one or more<br/><br/>Mode Specific PSD Profiles. Each transmission mode enabled in a<br/><br/>Line Spectrum Profile is covered by one and only one of the<br/><br/>Mode Specific PSD Profiles contained in that Line Spectrum Profile.<br/><br/><br/><br/>The table zxAnPonRmXdslModeSpecPrfTable extends the DSL line<br/><br/>configuration profile by xDSL Mode Specific parameters.<br/><br/>A row in this table that has an index of zxAnPonRmXdslXdslMode.<br/><br/>When a row in the zxAnPonRmXdslSpectrumPrfTable table (the parent<br/><br/>row) is created, the manager must also create a row in this table<br/><br/>using the zxAnPonRmXdslModeSpecRowStatus attribute.<br/><br/>The manager may delete a row in this table using the<br/><br/>zxAnPonRmXdslModeSpecRowStatus attribute.<br/><br/>Entries in this table must be maintained in a persistent manner.
-GET http://localhost/api/snmp/zxAnPonRmXdslModeSpecPrfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmXdslModeSpecPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmXdslModeSpecPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmXdslModeSpecPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -575,11 +575,11 @@ Content-Type: application/json
 }
 
 ### UPBO configuration profile table.
-GET http://localhost/api/snmp/zxAnPonRmXdslUpboPrfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmXdslUpboPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmXdslUpboPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmXdslUpboPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -605,11 +605,11 @@ Content-Type: application/json
 }
 
 ### SNR margin configuration profile table.
-GET http://localhost/api/snmp/zxAnPonRmXdslSnrMarginPrfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmXdslSnrMarginPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmXdslSnrMarginPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmXdslSnrMarginPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -636,11 +636,11 @@ Content-Type: application/json
 }
 
 ### Delay and INP configuration profile table.
-GET http://localhost/api/snmp/zxAnPonRmXdslDelayInpPrfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmXdslDelayInpPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmXdslDelayInpPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmXdslDelayInpPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -661,11 +661,11 @@ Content-Type: application/json
 }
 
 ### xDSL service configuration profile, include xDSL line configuration<br/><br/>profiles, xDSL channel configuration profiles, etc.
-GET http://localhost/api/snmp/zxAnPonRmXdslSrvPrfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmXdslSrvPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmXdslSrvPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmXdslSrvPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -690,11 +690,11 @@ Content-Type: application/json
 }
 
 ### This managed entity represents the point where physical paths<br/><br/>terminate on an xDSL CO modem (xTU-C). The xDSL managed entity<br/><br/>family is used for ADSL and VDSL2 services. A legacy family of VDSL<br/><br/>managed entities remains valid for [ITU-T G.993.1] VDSL, if needed.<br/><br/>It is documented in [ITU-T G.983.2].
-GET http://localhost/api/snmp/zxAnPonRmXdslUniTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmXdslUniTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmXdslUniTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmXdslUniTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -707,11 +707,11 @@ Content-Type: application/json
 }
 
 ### This managed entity represents the point where physical paths<br/><br/>terminate on an xDSL CO modem (xTU-C). The xDSL managed entity<br/><br/>family is used for ADSL and VDSL2 services. A legacy family of VDSL<br/><br/>managed entities remains valid for [ITU-T G.993.1] VDSL, if needed.<br/><br/>It is documented in [ITU-T G.983.2]. The index 'zxAnPonRmOnuUniIndex'<br/><br/>of this table only supports xDSL UNI.
-GET http://localhost/api/snmp/zxAnPonRmXdslSrvConfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmXdslSrvConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmXdslSrvConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmXdslSrvConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -721,11 +721,11 @@ Content-Type: application/json
 }
 
 ### RFI configuration profile table.
-GET http://localhost/api/snmp/zxAnPonRmXdslRfiConfPrfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmXdslRfiConfPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmXdslRfiConfPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmXdslRfiConfPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -735,27 +735,27 @@ Content-Type: application/json
 }
 
 ### The xDSL line inventory table.
-GET http://localhost/api/snmp/zxAnPonRmXdsl2LineInventoryTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmXdsl2LineInventoryTable
 Authorization: Bearer {{token}}
 
 ### The xDSL line status table.
-GET http://localhost/api/snmp/zxAnPonRmXdsl2LineStatusTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmXdsl2LineStatusTable
 Authorization: Bearer {{token}}
 
 ### The channel status table for xDSL.
-GET http://localhost/api/snmp/zxAnPonRmXdsl2ChannelStatusTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmXdsl2ChannelStatusTable
 Authorization: Bearer {{token}}
 
 ### The per-band line status parameters table of xDSL.<br/><br/>It extends the other xDSL line inventory and status data<br/><br/>MEs with attributes specific to VDSL2. This ME contains per-band<br/><br/>attributes for both directions. These same attributes are defined<br/><br/>in the xDSL line inventory and status data part 2 managed entity,<br/><br/>but only for a single band. [ITU T G.993.2] allows for VDSL2 to<br/><br/>have as many as five bands upstream and as many as five bands<br/><br/>downstream.
-GET http://localhost/api/snmp/zxAnPonRmXdsl2LineBandTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmXdsl2LineBandTable
 Authorization: Bearer {{token}}
 
 ### Downstream data rate configuration profile table.
-GET http://localhost/api/snmp/zxAnPonRmGfastDsDataRatePrfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmGfastDsDataRatePrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmGfastDsDataRatePrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmGfastDsDataRatePrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -768,11 +768,11 @@ Content-Type: application/json
 }
 
 ### Upstream data rate configuration profile table.
-GET http://localhost/api/snmp/zxAnPonRmGfastUsDataRatePrfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmGfastUsDataRatePrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmGfastUsDataRatePrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmGfastUsDataRatePrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -785,11 +785,11 @@ Content-Type: application/json
 }
 
 ### Spectrum configuration profile table.
-GET http://localhost/api/snmp/zxAnPonRmGfastSpectrumPrfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmGfastSpectrumPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmGfastSpectrumPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmGfastSpectrumPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -801,11 +801,11 @@ Content-Type: application/json
 }
 
 ### SNR margin configuration profile table.
-GET http://localhost/api/snmp/zxAnPonRmGfastSnrMarginPrfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmGfastSnrMarginPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmGfastSnrMarginPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmGfastSnrMarginPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -828,11 +828,11 @@ Content-Type: application/json
 }
 
 ### INP and delay configuration profile table.
-GET http://localhost/api/snmp/zxAnPonRmGfastInpDelayPrfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmGfastInpDelayPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmGfastInpDelayPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmGfastInpDelayPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -853,19 +853,19 @@ Content-Type: application/json
 }
 
 ### The G.fast line status table.
-GET http://localhost/api/snmp/zxAnPonRmGfastLnStatusTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmGfastLnStatusTable
 Authorization: Bearer {{token}}
 
 ### The G.fast line inventory table.
-GET http://localhost/api/snmp/zxAnPonRmGfastLnInventoryTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmGfastLnInventoryTable
 Authorization: Bearer {{token}}
 
 ### G.fast line configuration profile table.
-GET http://localhost/api/snmp/zxAnPonRmGfastLnConfPrfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmGfastLnConfPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmGfastLnConfPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmGfastLnConfPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -881,11 +881,11 @@ Content-Type: application/json
 }
 
 ### G.fast line configuration table. The index 'zxAnPonRmOnuUniIndex'<br/><br/>of this table only supports xDSL UNI.
-GET http://localhost/api/snmp/zxAnPonRmGfastLnConfTable
+GET http://103.184.122.170/api/snmp/zxAnPonRmGfastLnConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPonRmGfastLnConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPonRmGfastLnConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

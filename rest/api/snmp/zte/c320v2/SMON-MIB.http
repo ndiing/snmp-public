@@ -1,13 +1,13 @@
 ### This table describes RMON data sources and port copy<br/><br/>capabilities. An NMS MAY use this table to discover the<br/><br/>identity and attributes of the data sources on a given agent<br/><br/>implementation. Similar to the probeCapabilities object,<br/><br/>actual row-creation operations will succeed or fail based on<br/><br/>the resources available and parameter values used in each<br/><br/>row-creation operation.<br/><br/><br/><br/>Upon restart of the RMON agent, the dataSourceTable, ifTable,<br/><br/>and perhaps entPhysicalTable are initialized for the available<br/><br/>dataSources.<br/><br/><br/><br/>For each dataSourceCapsEntry representing a VLAN or<br/><br/>entPhysicalEntry the agent MUST create an associated ifEntry<br/><br/>with a ifType value of 'propVirtual(53)'. This ifEntry will be<br/><br/>used as the actual value in RMON control table dataSource<br/><br/>objects. The assigned ifIndex value is copied into the<br/><br/>associated dataSourceCapsIfIndex object.<br/><br/><br/><br/>It is understood that dataSources representing VLANs may not<br/><br/>always be instantiated immediately upon restart, but rather as<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>VLAN usage is detected by the agent. The agent SHOULD attempt<br/><br/>to create dataSource and interface entries for all dataSources<br/><br/>as soon as possible.
-GET http://localhost/api/snmp/dataSourceCapsTable
+GET http://103.184.122.170/api/snmp/dataSourceCapsTable
 Authorization: Bearer {{token}}
 
 ### Controls the setup of VLAN statistics tables.<br/><br/><br/><br/>The statistics collected represent a distribution based on<br/><br/>the IEEE 802.1Q VLAN-ID (VID), for each good frame attributed<br/><br/>to the data source for the collection.
-GET http://localhost/api/snmp/smonVlanStatsControlTable
+GET http://103.184.122.170/api/snmp/smonVlanStatsControlTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/smonVlanStatsControlTable/:id
+POST http://103.184.122.170/api/snmp/smonVlanStatsControlTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -18,15 +18,15 @@ Content-Type: application/json
 }
 
 ### Contains the VLAN statistics data.<br/><br/>The statistics collected represent a distribution based<br/><br/>on the IEEE 802.1Q VLAN-ID (VID), for each good frame<br/><br/>attributed to the data source for the collection.<br/><br/><br/><br/>This function applies the same rules for attributing frames<br/><br/>to VLAN-based collections. RMON VLAN statistics are collected<br/><br/>after the Ingress Rules defined in section 3.13 of the VLAN<br/><br/>Specification [20] are applied.<br/><br/><br/><br/>It is possible that entries in this table will be<br/><br/>garbage-collected, based on agent resources, and VLAN<br/><br/>configuration. Agents are encouraged to support all 4094<br/><br/>index values and not garbage collect this table.
-GET http://localhost/api/snmp/smonVlanIdStatsTable
+GET http://103.184.122.170/api/snmp/smonVlanIdStatsTable
 Authorization: Bearer {{token}}
 
 ### Controls the setup of priority statistics tables.<br/><br/><br/><br/>The smonPrioStatsControlTable allows configuration of<br/><br/>collections based on the value of the 3-bit user priority<br/><br/>field encoded in the Tag Control Information (TCI) field<br/><br/>according to [19],[20].<br/><br/><br/><br/>Note that this table merely reports priority as encoded in<br/><br/>the VLAN headers, not the priority (if any) given to the<br/><br/>frame for the actual switching purposes.
-GET http://localhost/api/snmp/smonPrioStatsControlTable
+GET http://103.184.122.170/api/snmp/smonPrioStatsControlTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/smonPrioStatsControlTable/:id
+POST http://103.184.122.170/api/snmp/smonPrioStatsControlTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -37,15 +37,15 @@ Content-Type: application/json
 }
 
 ### Contains the priority statistics. The collections are based<br/><br/>on the value of the 3-bit user priority field encoded in the<br/><br/>Tag Control Information (TCI) field according to [19], [20].<br/><br/>Note that this table merely reports priority as encoded in<br/><br/>the VLAN headers, not the priority (if any) given to the<br/><br/>frame for the actual switching purposes.<br/><br/><br/><br/>No garbage collection is designed for this table, as there<br/><br/>always are at most eight rows per statistical set, and the<br/><br/>low memory requirements do not justify the implementation of<br/><br/>such a mechanism.
-GET http://localhost/api/snmp/smonPrioStatsTable
+GET http://103.184.122.170/api/snmp/smonPrioStatsTable
 Authorization: Bearer {{token}}
 
 ### Port Copy provides the ability to copy all frames from a<br/><br/>specified source to specified destination within a switch.<br/><br/>Source and destinations MUST be ifEntries, as defined by [22].<br/><br/>One to one, one to many, many to one and many to many source to<br/><br/>destination relationships may be configured.<br/><br/><br/><br/>Applicable counters on the destination will increment for all<br/><br/>packets transiting the port, be it by normal bridging/switching<br/><br/>or due to packet copy.<br/><br/>Note that this table manages no RMON data collection by itself,<br/><br/>and an agent may possibly implement no RMON objects except<br/><br/>objects related to the port copy operation defined by the<br/><br/>portCopyCompliance conformance macro. That allows for a switch<br/><br/>with no other embedded RMON capability to perform port copy<br/><br/>operations to a destination port at which a different external<br/><br/>RMON probe is connected.<br/><br/><br/><br/>One to one, many to one and one to many source to destination<br/><br/>relationships may be configured.<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>Each row that exists in this table defines such a<br/><br/>relationship. By disabling a row in this table the port copy<br/><br/>relationship no longer exists.<br/><br/><br/><br/>The number of entries and the types of port copies (1-1,<br/><br/>many-1, 1-many) are implementation specific and could<br/><br/>possibly be dynamic due to changing resource availability.<br/><br/><br/><br/>In order to configure a source to destination portCopy<br/><br/>relationship, both source and destination interfaces MUST be<br/><br/>present as an ifEntry in the ifTable and their respective<br/><br/>ifAdminStatus and ifOperStatus values MUST be equal to<br/><br/>'up(1)'. If the value of any of those two objects changes<br/><br/>after the portCopyEntry is activated, portCopyStatus will<br/><br/>transition to 'notReady(3)'.<br/><br/><br/><br/>The capability of an interface to be source or destination of<br/><br/>a port copy operation is described by the 'copySourcePort(0)'<br/><br/>and 'copyDestPort(1)' bits in dataSourceCopyCaps. Those bits<br/><br/>SHOULD be appropriately set by the agent, in order to allow<br/><br/>for a portCopyEntry to be created.<br/><br/><br/><br/>Applicable counters on the destination will increment for all<br/><br/>packets transmitted, be it by normal bridging/switching or<br/><br/>due to packet copy.
-GET http://localhost/api/snmp/portCopyTable
+GET http://103.184.122.170/api/snmp/portCopyTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/portCopyTable/:id
+POST http://103.184.122.170/api/snmp/portCopyTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

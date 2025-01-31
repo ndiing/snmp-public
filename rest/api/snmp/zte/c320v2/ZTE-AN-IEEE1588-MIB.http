@@ -1,9 +1,9 @@
 ### This table is for PTP configuration management.
-GET http://localhost/api/snmp/zxAnPtpTable
+GET http://103.184.122.170/api/snmp/zxAnPtpTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPtpTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPtpTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -31,11 +31,11 @@ Content-Type: application/json
 }
 
 ### This table includes PTP source configuration information<br/><br/>in NE equipment.
-GET http://localhost/api/snmp/zxAnPtpRemoteSrcTable
+GET http://103.184.122.170/api/snmp/zxAnPtpRemoteSrcTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPtpRemoteSrcTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPtpRemoteSrcTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -54,11 +54,11 @@ Content-Type: application/json
 }
 
 ### The IEEE 1588 PTP server table.
-GET http://localhost/api/snmp/zxAnPtpServerTable
+GET http://103.184.122.170/api/snmp/zxAnPtpServerTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPtpServerTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPtpServerTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -73,11 +73,11 @@ Content-Type: application/json
 }
 
 ### The IEEE 1588 PTP client table.<br/><br/>It is the client of PTP server.
-GET http://localhost/api/snmp/zxAnPtpClientTable
+GET http://103.184.122.170/api/snmp/zxAnPtpClientTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPtpClientTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPtpClientTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -86,11 +86,11 @@ Content-Type: application/json
 }
 
 ### The PTP Ethernet port configuration table.
-GET http://localhost/api/snmp/zxAnPtpEthIfConfTable
+GET http://103.184.122.170/api/snmp/zxAnPtpEthIfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnPtpEthIfConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnPtpEthIfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -99,11 +99,11 @@ Content-Type: application/json
 }
 
 ### This table includes 1PPS source information in NE<br/><br/>equipment.
-GET http://localhost/api/snmp/zxAnSyncTime1ppsSrcTable
+GET http://103.184.122.170/api/snmp/zxAnSyncTime1ppsSrcTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnSyncTime1ppsSrcTable/:id
+POST http://103.184.122.170/api/snmp/zxAnSyncTime1ppsSrcTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -121,11 +121,11 @@ Content-Type: application/json
 }
 
 ### This table includes TOD source information in NE<br/><br/>equipment.
-GET http://localhost/api/snmp/zxAnSyncTimeTodSrcTable
+GET http://103.184.122.170/api/snmp/zxAnSyncTimeTodSrcTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnSyncTimeTodSrcTable/:id
+POST http://103.184.122.170/api/snmp/zxAnSyncTimeTodSrcTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -140,11 +140,11 @@ Content-Type: application/json
 }
 
 ### This table includes 1PPS and TOD signal output ports<br/><br/>information in NE equipment.
-GET http://localhost/api/snmp/zxAnSyncTimeOutputPortTable
+GET http://103.184.122.170/api/snmp/zxAnSyncTimeOutputPortTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnSyncTimeOutputPortTable/:id
+POST http://103.184.122.170/api/snmp/zxAnSyncTimeOutputPortTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

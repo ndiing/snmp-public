@@ -1,9 +1,9 @@
 ### The fan system table.
-GET http://localhost/api/snmp/zxr10FanSystemTable
+GET http://103.184.122.170/api/snmp/zxr10FanSystemTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxr10FanSystemTable/:id
+POST http://103.184.122.170/api/snmp/zxr10FanSystemTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -12,11 +12,11 @@ Content-Type: application/json
 }
 
 ### The system cpu load threshold table.
-GET http://localhost/api/snmp/zxr10SystemCpuLoadThreshTable
+GET http://103.184.122.170/api/snmp/zxr10SystemCpuLoadThreshTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxr10SystemCpuLoadThreshTable/:id
+POST http://103.184.122.170/api/snmp/zxr10SystemCpuLoadThreshTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -26,11 +26,11 @@ Content-Type: application/json
 }
 
 ### The system memory usage threshold table.
-GET http://localhost/api/snmp/zxr10SystemMemUsageThreshTable
+GET http://103.184.122.170/api/snmp/zxr10SystemMemUsageThreshTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxr10SystemMemUsageThreshTable/:id
+POST http://103.184.122.170/api/snmp/zxr10SystemMemUsageThreshTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -40,11 +40,11 @@ Content-Type: application/json
 }
 
 ### The card power supply table.
-GET http://localhost/api/snmp/zxr10CardPowerSupplyTable
+GET http://103.184.122.170/api/snmp/zxr10CardPowerSupplyTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxr10CardPowerSupplyTable/:id
+POST http://103.184.122.170/api/snmp/zxr10CardPowerSupplyTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -53,11 +53,11 @@ Content-Type: application/json
 }
 
 ### the description of Cpusystem information<br/><br/>in the zxr10 card .<br/><br/>it is a list of Cpusystem entries.
-GET http://localhost/api/snmp/zxr10CpusystemTable
+GET http://103.184.122.170/api/snmp/zxr10CpusystemTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxr10CpusystemTable/:id
+POST http://103.184.122.170/api/snmp/zxr10CpusystemTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -67,11 +67,11 @@ Content-Type: application/json
 }
 
 ### The description of fan module information.
-GET http://localhost/api/snmp/zxr10FanTable
+GET http://103.184.122.170/api/snmp/zxr10FanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxr10FanTable/:id
+POST http://103.184.122.170/api/snmp/zxr10FanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -80,11 +80,11 @@ Content-Type: application/json
 }
 
 ### the description of ShelfTemperature information.
-GET http://localhost/api/snmp/zxr10ShelfTemperatureTable
+GET http://103.184.122.170/api/snmp/zxr10ShelfTemperatureTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxr10ShelfTemperatureTable/:id
+POST http://103.184.122.170/api/snmp/zxr10ShelfTemperatureTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -96,11 +96,11 @@ Content-Type: application/json
 }
 
 ### the description of BoardTemperature information.
-GET http://localhost/api/snmp/zxr10BoardTempTable
+GET http://103.184.122.170/api/snmp/zxr10BoardTempTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxr10BoardTempTable/:id
+POST http://103.184.122.170/api/snmp/zxr10BoardTempTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -109,18 +109,18 @@ Content-Type: application/json
 }
 
 ### the description of power information.
-GET http://localhost/api/snmp/zxr10PowerInfoTable
+GET http://103.184.122.170/api/snmp/zxr10PowerInfoTable
 Authorization: Bearer {{token}}
 
 ### the description of power module.
-GET http://localhost/api/snmp/zxr10PowerModuleTable
+GET http://103.184.122.170/api/snmp/zxr10PowerModuleTable
 Authorization: Bearer {{token}}
 
 ### the description of power division.
-GET http://localhost/api/snmp/zxr10PowerDivisionTable
+GET http://103.184.122.170/api/snmp/zxr10PowerDivisionTable
 Authorization: Bearer {{token}}
 
 ### The description of board power information.
-GET http://localhost/api/snmp/zxr10BoardPowerTable
+GET http://103.184.122.170/api/snmp/zxr10BoardPowerTable
 Authorization: Bearer {{token}}
 

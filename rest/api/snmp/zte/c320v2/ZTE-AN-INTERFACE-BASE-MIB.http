@@ -1,9 +1,9 @@
 ### This table includes the interface configuration infomation.
-GET http://localhost/api/snmp/zxAnIfConfTable
+GET http://103.184.122.170/api/snmp/zxAnIfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnIfConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnIfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -13,11 +13,11 @@ Content-Type: application/json
 }
 
 ### This table includes the ethernet-like interface configuration.
-GET http://localhost/api/snmp/zxAnEtherIfTable
+GET http://103.184.122.170/api/snmp/zxAnEtherIfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnEtherIfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnEtherIfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -30,11 +30,11 @@ Content-Type: application/json
 }
 
 ### This table includes the ATM PVC infomation.
-GET http://localhost/api/snmp/zxAnAtmPvcIfTable
+GET http://103.184.122.170/api/snmp/zxAnAtmPvcIfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnAtmPvcIfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnAtmPvcIfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -47,11 +47,11 @@ Content-Type: application/json
 }
 
 ### This table includes the Mng port  infomation.
-GET http://localhost/api/snmp/zxAnOutOfBandIfTable
+GET http://103.184.122.170/api/snmp/zxAnOutOfBandIfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnOutOfBandIfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnOutOfBandIfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -67,6 +67,6 @@ Content-Type: application/json
 }
 
 ### This table includes the inner port status of the line card.
-GET http://localhost/api/snmp/zxAnInnerPortStatusTable
+GET http://103.184.122.170/api/snmp/zxAnInnerPortStatusTable
 Authorization: Bearer {{token}}
 

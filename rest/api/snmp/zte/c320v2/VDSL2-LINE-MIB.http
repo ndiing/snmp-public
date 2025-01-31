@@ -1,9 +1,9 @@
 ### The table xdsl2LineTable contains configuration, command and<br/><br/>status parameters of the VDSL2/ADSL/ADSL2 or ADSL2+ line.<br/><br/><br/><br/>Several objects in this table MUST be maintained in a persistent<br/><br/>manner.
-GET http://localhost/api/snmp/xdsl2LineTable
+GET http://103.184.122.170/api/snmp/xdsl2LineTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/xdsl2LineTable/:id
+POST http://103.184.122.170/api/snmp/xdsl2LineTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -19,15 +19,15 @@ Content-Type: application/json
 }
 
 ### The table xdsl2LineBandTable contains the, per-band line<br/><br/>status parameters of the VDSL2/ADSL/ADSL2 or ADSL2+ line.<br/><br/>The parameters in this table are updated at line initialization<br/><br/>time and at Showtime.
-GET http://localhost/api/snmp/xdsl2LineBandTable
+GET http://103.184.122.170/api/snmp/xdsl2LineBandTable
 Authorization: Bearer {{token}}
 
 ### The table xdsl2LineSegmentTable contains status parameters<br/><br/>of VDSL2/ADSL/ADSL2 and ADSL2+ subcarriers.<br/><br/>The parameters in this table are updated when a measurement<br/><br/>request is made using the xdsl2LineCmndConfBpsc object.<br/><br/><br/><br/>Note that a bits-per-subcarrier measurement is also performed<br/><br/>during a line diagnostic procedure.  This table provides an<br/><br/>additional mechanism to fetch the bits-per-subcarrier data.  This<br/><br/>additional mechanism is provided so that bits-per-subcarrier<br/><br/>data may be fetched without forcing the line into no power state.<br/><br/>This is useful because the bits-per-subcarrier allocation may be<br/><br/>adjusted at Showtime due to rate adaption and bit swapping.<br/><br/><br/><br/>The implementation of this additional mechanism for measuring<br/><br/>bits per subcarrier is not mandatory.
-GET http://localhost/api/snmp/xdsl2LineSegmentTable
+GET http://103.184.122.170/api/snmp/xdsl2LineSegmentTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/xdsl2LineSegmentTable/:id
+POST http://103.184.122.170/api/snmp/xdsl2LineSegmentTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -36,15 +36,15 @@ Content-Type: application/json
 }
 
 ### The table xdsl2ChannelStatusTable contains status<br/><br/>parameters of VDSL2/ADSL/ADSL2 or ADSL2+ channel.<br/><br/>This table contains live data from equipment.
-GET http://localhost/api/snmp/xdsl2ChannelStatusTable
+GET http://103.184.122.170/api/snmp/xdsl2ChannelStatusTable
 Authorization: Bearer {{token}}
 
 ### The table xdsl2SCStatusTable contains<br/><br/>status parameters for VDSL2/ADSL/ADSL2 and ADSL2+ that<br/><br/>provide information about the size of parameters in<br/><br/>xdsl2SCStatusSegmentTable.<br/><br/>The parameters in this table MUST be updated after a loop<br/><br/>diagnostic procedure, MAY be updated after a line<br/><br/>initialization, and MAY be updated at Showtime.
-GET http://localhost/api/snmp/xdsl2SCStatusTable
+GET http://103.184.122.170/api/snmp/xdsl2SCStatusTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/xdsl2SCStatusTable/:id
+POST http://103.184.122.170/api/snmp/xdsl2SCStatusTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -53,59 +53,59 @@ Content-Type: application/json
 }
 
 ### The table xdsl2SCStatusBandTable contains subcarrier status<br/><br/>parameters for VDSL2/ADSL/ADSL2 and ADSL2+ that are grouped per-<br/><br/>band.<br/><br/>For ADSL/ADSL2/ADSL2+, there is a single upstream band and a<br/><br/>single downstream band.  For VDSL2, there are several downstream<br/><br/>bands and several upstream bands.<br/><br/>The parameters in this table are only available after a loop<br/><br/>diagnostic procedure.
-GET http://localhost/api/snmp/xdsl2SCStatusBandTable
+GET http://103.184.122.170/api/snmp/xdsl2SCStatusBandTable
 Authorization: Bearer {{token}}
 
 ### The table xdsl2SCStatusSegmentTable contains status<br/><br/>parameters of VDSL2/ADSL/ADSL2 and ADSL2+ subcarriers.<br/><br/><br/><br/>Several objects in the table refer to NSus and NSds.  For<br/><br/>G.993.2, the value of NSus and NSds are, respectively, the<br/><br/>indices of the highest supported upstream and downstream<br/><br/>subcarriers according to the selected implementation profile.<br/><br/>For ADSL, NSus is equal to NSCus-1 and NSds is equal to NSCds-1.<br/><br/><br/><br/>The parameters in this table MUST be updated after a loop<br/><br/>diagnostic procedure and MAY be updated after a line<br/><br/>initialization and MAY be updated at Showtime.
-GET http://localhost/api/snmp/xdsl2SCStatusSegmentTable
+GET http://103.184.122.170/api/snmp/xdsl2SCStatusSegmentTable
 Authorization: Bearer {{token}}
 
 ### The table xdsl2LineInventoryTable contains an inventory of the<br/><br/>DSL termination unit.
-GET http://localhost/api/snmp/xdsl2LineInventoryTable
+GET http://103.184.122.170/api/snmp/xdsl2LineInventoryTable
 Authorization: Bearer {{token}}
 
 ### The table xdsl2PMLineCurrTable contains current Performance<br/><br/>Monitoring results for DSL lines.
-GET http://localhost/api/snmp/xdsl2PMLineCurrTable
+GET http://103.184.122.170/api/snmp/xdsl2PMLineCurrTable
 Authorization: Bearer {{token}}
 
 ### The table xdsl2PMLineInitCurrTable contains current<br/><br/>initialization counters for DSL lines.
-GET http://localhost/api/snmp/xdsl2PMLineInitCurrTable
+GET http://103.184.122.170/api/snmp/xdsl2PMLineInitCurrTable
 Authorization: Bearer {{token}}
 
 ### The table xdsl2PMLineHist15MinTable contains PM line history<br/><br/>for 15-minute intervals of DSL line.
-GET http://localhost/api/snmp/xdsl2PMLineHist15MinTable
+GET http://103.184.122.170/api/snmp/xdsl2PMLineHist15MinTable
 Authorization: Bearer {{token}}
 
 ### The table xdsl2PMLineHist1DayTable contains PM line history<br/><br/>for 24-hour intervals of DSL line.
-GET http://localhost/api/snmp/xdsl2PMLineHist1DayTable
+GET http://103.184.122.170/api/snmp/xdsl2PMLineHist1DayTable
 Authorization: Bearer {{token}}
 
 ### The table xdsl2PMLineInitHist15MinTable contains PM line<br/><br/>initialization history for 15-minute intervals of DSL<br/><br/>line.
-GET http://localhost/api/snmp/xdsl2PMLineInitHist15MinTable
+GET http://103.184.122.170/api/snmp/xdsl2PMLineInitHist15MinTable
 Authorization: Bearer {{token}}
 
 ### The table xdsl2PMLineInitHist1DayTable contains PM line<br/><br/>initialization history for 24-hour intervals for DSL<br/><br/>lines.
-GET http://localhost/api/snmp/xdsl2PMLineInitHist1DayTable
+GET http://103.184.122.170/api/snmp/xdsl2PMLineInitHist1DayTable
 Authorization: Bearer {{token}}
 
 ### The table xdsl2PMChCurrTable contains current Performance<br/><br/>Monitoring results for DSL channels.
-GET http://localhost/api/snmp/xdsl2PMChCurrTable
+GET http://103.184.122.170/api/snmp/xdsl2PMChCurrTable
 Authorization: Bearer {{token}}
 
 ### The table xdsl2PMChHist15MinTable contains Performance<br/><br/>Monitoring (PM) history for 15-minute intervals for DSL channels<br/><br/>PM.
-GET http://localhost/api/snmp/xdsl2PMChHist15MinTable
+GET http://103.184.122.170/api/snmp/xdsl2PMChHist15MinTable
 Authorization: Bearer {{token}}
 
 ### The table xdsl2PMChHist1DTable contains Performance<br/><br/>Monitoring (PM) history for 1-day intervals for DSL channels<br/><br/>PM.
-GET http://localhost/api/snmp/xdsl2PMChHist1DTable
+GET http://103.184.122.170/api/snmp/xdsl2PMChHist1DTable
 Authorization: Bearer {{token}}
 
 ### The table xdsl2LineConfTemplateTable contains VDSL2/ADSL/<br/><br/>ADSL2 and ADSL2+ line configuration templates.<br/><br/><br/><br/>Note that this table is also used to configure the number of<br/><br/>bearer channels.<br/><br/>When the number of bearer channels is increased, the SNMP agent<br/><br/>SHOULD create rows in all tables indexed by a channel index.<br/><br/>When the number of bearer channels is decreased, the SNMP agent<br/><br/>SHOULD delete rows in all tables indexed by a channel index.<br/><br/>For example, if the value of xdsl2LConfTempChan4ConfProfile is<br/><br/>set to a non-null value, then rows SHOULD be created in<br/><br/>xdsl2ChannelStatusTable, xdsl2PMChCurrTable, and all other tables<br/><br/>indexed by a channel index.<br/><br/><br/><br/>For example, if the value of xdsl2LConfTempChan2ConfProfile is<br/><br/>set to a null value, then rows SHOULD be deleted in<br/><br/>xdsl2ChannelStatusTable, xdsl2PMChCurrTable, and all other<br/><br/>tables indexed by a channel index.<br/><br/><br/><br/>Entries in this table MUST be maintained in a persistent<br/><br/>manner.
-GET http://localhost/api/snmp/xdsl2LineConfTemplateTable
+GET http://103.184.122.170/api/snmp/xdsl2LineConfTemplateTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/xdsl2LineConfTemplateTable/:id
+POST http://103.184.122.170/api/snmp/xdsl2LineConfTemplateTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -127,11 +127,11 @@ Content-Type: application/json
 }
 
 ### The table xdsl2LineConfProfTable contains VDSL2/ADSL/<br/><br/>ADSL2 and ADSL2+ line configuration profiles.<br/><br/><br/><br/>Entries in this table MUST be maintained in a persistent<br/><br/>manner.
-GET http://localhost/api/snmp/xdsl2LineConfProfTable
+GET http://103.184.122.170/api/snmp/xdsl2LineConfProfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/xdsl2LineConfProfTable/:id
+POST http://103.184.122.170/api/snmp/xdsl2LineConfProfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -186,11 +186,11 @@ Content-Type: application/json
 }
 
 ### The table xdsl2LineConfProfModeSpecTable extends the DSL<br/><br/>line configuration profile by xDSL Mode-Specific parameters.<br/><br/>A row in this table that has an index of xdsl2LConfProfXdslMode<br/><br/>== defMode(1), is called a 'mandatory' row or 'default' row.<br/><br/>A row in this table that has an index such that<br/><br/>xdsl2LConfProfXdslMode is not equal to defMode(1), is called an<br/><br/>'optional' row or 'mode-specific' row.<br/><br/>When a row in the xdsl2LineConfProfTable table (the parent row)<br/><br/>is created, the SNMP agent will automatically create a<br/><br/>'mandatory' row in this table.<br/><br/>When the parent row is deleted, the SNMP agent will automatically<br/><br/>delete all associated rows in this table.<br/><br/>Any attempt to delete the 'mandatory' row using the<br/><br/>xdsl2LConfProfModeSpecRowStatus object will be rejected by the<br/><br/>SNMP agent.<br/><br/>The manager MAY create an 'optional' row in this table using the<br/><br/>xdsl2LConfProfModeSpecRowStatus object if the parent row<br/><br/>exists.<br/><br/>The manager MAY delete an 'optional' row in this table using the<br/><br/>xdsl2LConfProfModeSpecRowStatus object at any time.<br/><br/>If the actual transmission mode of a DSL line does not match one<br/><br/>of the 'optional' rows in this table, then the line will use the<br/><br/>PSD configuration from the 'mandatory' row.<br/><br/><br/><br/>Entries in this table MUST be maintained in a persistent<br/><br/>manner.
-GET http://localhost/api/snmp/xdsl2LineConfProfModeSpecTable
+GET http://103.184.122.170/api/snmp/xdsl2LineConfProfModeSpecTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/xdsl2LineConfProfModeSpecTable/:id
+POST http://103.184.122.170/api/snmp/xdsl2LineConfProfModeSpecTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -210,11 +210,11 @@ Content-Type: application/json
 }
 
 ### The table xdsl2LineConfProfModeSpecBandUsTable extends<br/><br/>xdsl2LineConfProfModeSpecTable with upstream-band-specific<br/><br/>parameters for VDSL2, such as upstream power back-off<br/><br/>parameters xdsl2LConfProfUpboPsdA and xdsl2LConfProfUpboPsdB<br/><br/>(UPBOPSD-pb).<br/><br/><br/><br/>When a parent 'mandatory row' is created in<br/><br/>xdsl2LineConfProfModeSpecTable, the SNMP agent will automatically<br/><br/>create several 'mandatory' rows in this table -- one for each<br/><br/>upstream band:<br/><br/>Note: A mandatory row is one where xdsl2LConfProfXdslMode =<br/><br/>defMode(1).  When the parent row is deleted, the SNMP agent will<br/><br/>automatically delete all associated rows in this table.  Any<br/><br/>attempt to delete a 'mandatory' row using the<br/><br/>xdsl2LConfProfModeSpecBandUsRowStatus object will be rejected<br/><br/>by the SNMP agent.  The manager MAY create a new 'optional'<br/><br/>row in this table using the xdsl2LConfProfModeSpecBandUsRowStatus<br/><br/>object if the associated parent row exists, and the<br/><br/>value of xdsl2LConfProfXdslMode is a G.993.2 value.  The manager<br/><br/>MAY delete an 'optional' row in this table using the<br/><br/>xdsl2LConfProfModeSpecBandUsRowStatus object at any time.<br/><br/><br/><br/>With respect to the xdsl2LConfProfUpboPsdA and<br/><br/>xdsl2LConfProfUpboPsdB parameters, for a given upstream band,<br/><br/>if an optional row is missing from this table, then that<br/><br/>means upstream power back-off is disabled for that upstream<br/><br/>band.<br/><br/><br/><br/>Entries in this table MUST be maintained in a persistent<br/><br/>manner.
-GET http://localhost/api/snmp/xdsl2LineConfProfModeSpecBandUsTable
+GET http://103.184.122.170/api/snmp/xdsl2LineConfProfModeSpecBandUsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/xdsl2LineConfProfModeSpecBandUsTable/:id
+POST http://103.184.122.170/api/snmp/xdsl2LineConfProfModeSpecBandUsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -225,11 +225,11 @@ Content-Type: application/json
 }
 
 ### The table xdsl2ChConfProfileTable contains DSL channel<br/><br/>profile configuration.<br/><br/><br/><br/>Entries in this table MUST be maintained in a persistent<br/><br/>manner.
-GET http://localhost/api/snmp/xdsl2ChConfProfileTable
+GET http://103.184.122.170/api/snmp/xdsl2ChConfProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/xdsl2ChConfProfileTable/:id
+POST http://103.184.122.170/api/snmp/xdsl2ChConfProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -261,11 +261,11 @@ Content-Type: application/json
 }
 
 ### The table xdsl2LineAlarConfTemplateTable contains DSL<br/><br/>line alarm configuration templates.<br/><br/><br/><br/>Entries in this table MUST be maintained in a persistent<br/><br/>manner.
-GET http://localhost/api/snmp/xdsl2LineAlarmConfTemplateTable
+GET http://103.184.122.170/api/snmp/xdsl2LineAlarmConfTemplateTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/xdsl2LineAlarmConfTemplateTable/:id
+POST http://103.184.122.170/api/snmp/xdsl2LineAlarmConfTemplateTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -279,11 +279,11 @@ Content-Type: application/json
 }
 
 ### The table xdsl2LineAlarmConfProfileTable contains DSL<br/><br/>line performance threshold values.<br/><br/><br/><br/>If a performance counter exceeds the threshold value specified<br/><br/>in this table, then the SNMP agent will issue a threshold trap.<br/><br/>Each performance counter has a unique trap type<br/><br/>(see NOTIFICATION-TYPE definitions below).<br/><br/>One trap will be sent per interval, per interface, per trap type.<br/><br/>A value of 0 will disable the trap.<br/><br/><br/><br/>Entries in this table MUST be maintained in a persistent<br/><br/>manner.
-GET http://localhost/api/snmp/xdsl2LineAlarmConfProfileTable
+GET http://103.184.122.170/api/snmp/xdsl2LineAlarmConfProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/xdsl2LineAlarmConfProfileTable/:id
+POST http://103.184.122.170/api/snmp/xdsl2LineAlarmConfProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -304,11 +304,11 @@ Content-Type: application/json
 }
 
 ### The table xdsl2ChAlarmConfProfileTable contains DSL channel<br/><br/>performance threshold values.<br/><br/><br/><br/>If a performance counter exceeds the threshold value specified<br/><br/>in this table, then the SNMP agent will issue a threshold trap.<br/><br/>Each performance counter has a unique trap type<br/><br/>(see NOTIFICATION-TYPE definitions below).<br/><br/>One trap will be sent per interval per interface per trap type.<br/><br/>A value of 0 will disable the trap.<br/><br/><br/><br/>Entries in this table MUST be maintained in a persistent<br/><br/>manner.
-GET http://localhost/api/snmp/xdsl2ChAlarmConfProfileTable
+GET http://103.184.122.170/api/snmp/xdsl2ChAlarmConfProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/xdsl2ChAlarmConfProfileTable/:id
+POST http://103.184.122.170/api/snmp/xdsl2ChAlarmConfProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

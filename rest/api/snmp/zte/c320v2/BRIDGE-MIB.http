@@ -1,13 +1,13 @@
 ### A table that contains generic information about every<br/>port that is associated with this bridge.  Transparent,<br/>source-route, and srt ports are included.
-GET http://localhost/api/snmp/dot1dBasePortTable
+GET http://103.184.122.170/api/snmp/dot1dBasePortTable
 Authorization: Bearer {{token}}
 
 ### A table that contains port-specific information<br/>for the Spanning Tree Protocol.
-GET http://localhost/api/snmp/dot1dStpPortTable
+GET http://103.184.122.170/api/snmp/dot1dStpPortTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/dot1dStpPortTable/:id
+POST http://103.184.122.170/api/snmp/dot1dStpPortTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -19,19 +19,19 @@ Content-Type: application/json
 }
 
 ### A table that contains information about unicast<br/>entries for which the bridge has forwarding and/or<br/>filtering information.  This information is used<br/>by the transparent bridging function in<br/>determining how to propagate a received frame.
-GET http://localhost/api/snmp/dot1dTpFdbTable
+GET http://103.184.122.170/api/snmp/dot1dTpFdbTable
 Authorization: Bearer {{token}}
 
 ### A table that contains information about every port that<br/>is associated with this transparent bridge.
-GET http://localhost/api/snmp/dot1dTpPortTable
+GET http://103.184.122.170/api/snmp/dot1dTpPortTable
 Authorization: Bearer {{token}}
 
 ### A table containing filtering information configured<br/>into the bridge by (local or network) management<br/>specifying the set of ports to which frames received<br/>from specific ports and containing specific destination<br/>addresses are allowed to be forwarded.  The value of<br/>zero in this table, as the port number from which frames<br/>with a specific destination address are received, is<br/>used to specify all ports for which there is no specific<br/>entry in this table for that particular destination<br/>address.  Entries are valid for unicast and for<br/>group/broadcast addresses.
-GET http://localhost/api/snmp/dot1dStaticTable
+GET http://103.184.122.170/api/snmp/dot1dStaticTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/dot1dStaticTable/:id
+POST http://103.184.122.170/api/snmp/dot1dStaticTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

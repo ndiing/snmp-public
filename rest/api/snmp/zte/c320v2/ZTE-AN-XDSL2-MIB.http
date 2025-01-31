@@ -1,9 +1,9 @@
 ### XDSL line table.
-GET http://localhost/api/snmp/zxAnXdsl2LnTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2LnTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnXdsl2LnTable/:id
+POST http://103.184.122.170/api/snmp/zxAnXdsl2LnTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -39,19 +39,19 @@ Content-Type: application/json
 }
 
 ### XDSL2 line band table.
-GET http://localhost/api/snmp/zxAnXdsl2LnBandTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2LnBandTable
 Authorization: Bearer {{token}}
 
 ### xDSL line status table.
-GET http://localhost/api/snmp/zxAnXdsl2LnStatusTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2LnStatusTable
 Authorization: Bearer {{token}}
 
 ### Downstream data rate configuration profile table.
-GET http://localhost/api/snmp/zxAnXdsl2DsDataRateConfPrfTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2DsDataRateConfPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnXdsl2DsDataRateConfPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnXdsl2DsDataRateConfPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -69,11 +69,11 @@ Content-Type: application/json
 }
 
 ### Upstream data rate configuration profile table.
-GET http://localhost/api/snmp/zxAnXdsl2UsDataRateConfPrfTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2UsDataRateConfPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnXdsl2UsDataRateConfPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnXdsl2UsDataRateConfPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -91,11 +91,11 @@ Content-Type: application/json
 }
 
 ### Spectrum configuration profile.
-GET http://localhost/api/snmp/zxAnXdsl2SpectrumConfPrfTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2SpectrumConfPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnXdsl2SpectrumConfPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnXdsl2SpectrumConfPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -118,11 +118,11 @@ Content-Type: application/json
 }
 
 ### DPBO configuration profile table.
-GET http://localhost/api/snmp/zxAnXdsl2DpboConfPrfTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2DpboConfPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnXdsl2DpboConfPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnXdsl2DpboConfPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -139,11 +139,11 @@ Content-Type: application/json
 }
 
 ### UPBO configuration profile table.
-GET http://localhost/api/snmp/zxAnXdsl2UpboConfPrfTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2UpboConfPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnXdsl2UpboConfPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnXdsl2UpboConfPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -166,11 +166,11 @@ Content-Type: application/json
 }
 
 ### SNR margin configuration profile table.
-GET http://localhost/api/snmp/zxAnXdsl2SnrMarginConfPrfTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2SnrMarginConfPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnXdsl2SnrMarginConfPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnXdsl2SnrMarginConfPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -197,11 +197,11 @@ Content-Type: application/json
 }
 
 ### Delay and INP configuration profile table.
-GET http://localhost/api/snmp/zxAnXdsl2DelayInpConfPrfTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2DelayInpConfPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnXdsl2DelayInpConfPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnXdsl2DelayInpConfPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -220,11 +220,11 @@ Content-Type: application/json
 }
 
 ### Virtual noise configuration profile table.
-GET http://localhost/api/snmp/zxAnXdsl2VNConfPrfTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2VNConfPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnXdsl2VNConfPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnXdsl2VNConfPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -235,11 +235,11 @@ Content-Type: application/json
 }
 
 ### RFI configuration profile table.
-GET http://localhost/api/snmp/zxAnXdsl2RfiConfPrfTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2RfiConfPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnXdsl2RfiConfPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnXdsl2RfiConfPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -249,11 +249,11 @@ Content-Type: application/json
 }
 
 ### SOS configuration profile Table.
-GET http://localhost/api/snmp/zxAnXdsl2SosConfPrfTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2SosConfPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnXdsl2SosConfPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnXdsl2SosConfPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -274,11 +274,11 @@ Content-Type: application/json
 }
 
 ### INM configuration profile table.
-GET http://localhost/api/snmp/zxAnXdsl2InmConfPrfTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2InmConfPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnXdsl2InmConfPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnXdsl2InmConfPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -295,11 +295,11 @@ Content-Type: application/json
 }
 
 ### The table zxAnXdsl2ProfModeSpecTable extends the DSL line<br/><br/>configuration profile by xDSL Mode Specific parameters.<br/><br/>A row in this table that has an index of zxAnXdsl2LConfXdslMode ==<br/><br/>defMode(1), is called a 'mandatory' row.<br/><br/>A row in this table that has an index such that<br/><br/>xdsl2LConfProfXdslMode is not equal to defMode(1), is called an<br/><br/>'optional' row.<br/><br/>When a row in the zxAnXdsl2SpectrumConfPrfTable table (the parent<br/><br/>row) is created, the SNMP agent will automatically create a<br/><br/>'mandatory' row in this table.<br/><br/>When the parent row is deleted, the SNMP agent will automatically<br/><br/>delete all associated rows in this table. Any attempt to delete the<br/><br/>'mandatory' row using the zxAnXdsl2ProfModeSpecRowStatus attribute<br/><br/>will be rejected by the SNMP agent.<br/><br/>The manager MAY create an 'optional' row in this table using the<br/><br/>zxAnXdsl2ProfModeSpecRowStatus attribute if the parent row exists.<br/><br/>The manager MAY delete an 'optional' row in this table using the<br/><br/>zxAnXdsl2ProfModeSpecRowStatus attribute at any time.<br/><br/>If the actual transmission mode of a DSL line does not match one of<br/><br/>the 'optional' rows in this table, then the line will use the PSD<br/><br/>configuration from the 'mandatory' row.<br/><br/><br/><br/>Entries in this table MUST be maintained in a persistent manner.
-GET http://localhost/api/snmp/zxAnXdsl2ProfModeSpecTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2ProfModeSpecTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnXdsl2ProfModeSpecTable/:id
+POST http://103.184.122.170/api/snmp/zxAnXdsl2ProfModeSpecTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -320,11 +320,11 @@ Content-Type: application/json
 }
 
 ### Extend configuration profile table.
-GET http://localhost/api/snmp/zxAnXdsl2ExtConfPrfTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2ExtConfPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnXdsl2ExtConfPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnXdsl2ExtConfPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -361,11 +361,11 @@ Content-Type: application/json
 }
 
 ### Alarm configuration profile table.
-GET http://localhost/api/snmp/zxAnXdsl2AlmThreshPrfTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2AlmThreshPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnXdsl2AlmThreshPrfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnXdsl2AlmThreshPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -415,35 +415,35 @@ Content-Type: application/json
 }
 
 ### XDSL line current performance table.
-GET http://localhost/api/snmp/zxAnXdsl2PMLineCurrTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2PMLineCurrTable
 Authorization: Bearer {{token}}
 
 ### XDSL line history 15 minutes performance table.
-GET http://localhost/api/snmp/zxAnXdsl2PMLineHist15MinTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2PMLineHist15MinTable
 Authorization: Bearer {{token}}
 
 ### XDSL2 line history 1 day performance table.
-GET http://localhost/api/snmp/zxAnXdsl2PMLineHist1DayTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2PMLineHist1DayTable
 Authorization: Bearer {{token}}
 
 ### XDSL channel current performance table.
-GET http://localhost/api/snmp/zxAnXdsl2PMChCurrTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2PMChCurrTable
 Authorization: Bearer {{token}}
 
 ### XDSL channel history 15 minutes performance table.
-GET http://localhost/api/snmp/zxAnXdsl2PMChHist15MinTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2PMChHist15MinTable
 Authorization: Bearer {{token}}
 
 ### XDSL channel history 1 day performance table.
-GET http://localhost/api/snmp/zxAnXdsl2PMChHist1DayTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2PMChHist1DayTable
 Authorization: Bearer {{token}}
 
 ### XDSL SELT configuration table.
-GET http://localhost/api/snmp/zxAnXdsl2SeltConfTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2SeltConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnXdsl2SeltConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnXdsl2SeltConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -465,23 +465,23 @@ Content-Type: application/json
 }
 
 ### XDSL SELT line status table.
-GET http://localhost/api/snmp/zxAnXdsl2SeltLineStatusTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2SeltLineStatusTable
 Authorization: Bearer {{token}}
 
 ### XDSL SELT sub-carrierr status table.
-GET http://localhost/api/snmp/zxAnXdsl2SeltSCStatusTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2SeltSCStatusTable
 Authorization: Bearer {{token}}
 
 ### This table describes the result of SELT raw data test.
-GET http://localhost/api/snmp/zxAnXdsl2SeltRawDataTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2SeltRawDataTable
 Authorization: Bearer {{token}}
 
 ### The metallic line testing configuration table.
-GET http://localhost/api/snmp/zxAnXdsl2MeltConfTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2MeltConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnXdsl2MeltConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnXdsl2MeltConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -496,15 +496,15 @@ Content-Type: application/json
 }
 
 ### The metallic line testing status table.
-GET http://localhost/api/snmp/zxAnXdsl2MeltStatusTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2MeltStatusTable
 Authorization: Bearer {{token}}
 
 ### The vectoring card table.
-GET http://localhost/api/snmp/zxAnXdsl2VectoringCardTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2VectoringCardTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnXdsl2VectoringCardTable/:id
+POST http://103.184.122.170/api/snmp/zxAnXdsl2VectoringCardTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -517,23 +517,23 @@ Content-Type: application/json
 }
 
 ### The FEXT coefficient table.
-GET http://localhost/api/snmp/zxAnXdsl2FextCoefficientTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2FextCoefficientTable
 Authorization: Bearer {{token}}
 
 ### The vectoring crosstalk table.
-GET http://localhost/api/snmp/zxAnXdsl2VectoringCrosstalkTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2VectoringCrosstalkTable
 Authorization: Bearer {{token}}
 
 ### The vectoring crosstalk logarithm sample table.
-GET http://localhost/api/snmp/zxAnXdsl2XlogSampleTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2XlogSampleTable
 Authorization: Bearer {{token}}
 
 ### The vectoring fast join interface configuration table.
-GET http://localhost/api/snmp/zxAnXdsl2FastJoinIfConfTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2FastJoinIfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnXdsl2FastJoinIfConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnXdsl2FastJoinIfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -544,10 +544,10 @@ Content-Type: application/json
 }
 
 ### VDSL Sub-carrier status table.
-GET http://localhost/api/snmp/zxAnXdsl2SCStatusTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2SCStatusTable
 Authorization: Bearer {{token}}
 
 ### VDSL line inventory table.
-GET http://localhost/api/snmp/zxAnXdsl2LineInventoryTable
+GET http://103.184.122.170/api/snmp/zxAnXdsl2LineInventoryTable
 Authorization: Bearer {{token}}
 

@@ -1,9 +1,9 @@
 ### The Maintenance Domain table. Each row in the table<br/><br/>represents a different Maintenance Domain.<br/><br/><br/><br/>A Maintenance Domain is described in 802.1ag (3.22) as the<br/><br/>network or the part of the network for which faults in<br/><br/>connectivity are to be managed. The boundary of a Maintenance<br/><br/>Domain is defined by a set of DSAPs, each of which can become<br/><br/>a point of connectivity to a service instance.
-GET http://localhost/api/snmp/zxAnCfm2MdTable
+GET http://103.184.122.170/api/snmp/zxAnCfm2MdTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnCfm2MdTable/:id
+POST http://103.184.122.170/api/snmp/zxAnCfm2MdTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -17,11 +17,11 @@ Content-Type: application/json
 }
 
 ### The Maintenance Association table. Each row in the table<br/><br/>represents an MA. An MA is a set of MEPs, each configured<br/><br/>with a single service instance.<br/><br/><br/><br/>Creation of a Service Instance establishes a connectionless<br/><br/>association among the selected DSAPs. Configuring a<br/><br/>Maintenance association End Point (MEP) at each of the<br/><br/>DSAPs creates a Maintenance Association (MA) to monitor<br/><br/>that connectionless connectivity. The MA is identified by a<br/><br/>Short MA Name that is unique within the Maintenance Domain<br/><br/>and chosen to facilitate easy identification of the Service<br/><br/>Instance. Together, the Maintenance Domain Name and the<br/><br/>Short MA Name form the Maintenance Association Identifier<br/><br/>(MAID) that is carried in CFM Messages to identify<br/><br/>incorrect connectivity among Service Instances. A small<br/><br/>integer, the Maintenance association End Point Identifier<br/><br/>(MEPID), identifies each MEP among those configured on a<br/><br/>single MA (802.1ag clauses 3.19 and 18.2).<br/><br/><br/><br/>This table uses two indices, first index is the index of the<br/><br/>Maintenance Domain table. The second index is the same as the<br/><br/>index of the dot1agCfmMaCompEntry for the same MA.<br/><br/><br/><br/>The writable objects in this table need to be persistent<br/><br/>upon reboot or restart of a device.
-GET http://localhost/api/snmp/zxAnCfm2MaTable
+GET http://103.184.122.170/api/snmp/zxAnCfm2MaTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnCfm2MaTable/:id
+POST http://103.184.122.170/api/snmp/zxAnCfm2MaTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -36,11 +36,11 @@ Content-Type: application/json
 }
 
 ### The Maintenance Association End Point (MEP) table.<br/><br/><br/><br/>Each row in the table represents a different MEP. An MEP is<br/><br/>an actively managed CFM entity, associated with a specific<br/><br/>DSAP of a Service Instance, which can generate and receive<br/><br/>CFM PDUs and track any responses. It is an end point of a<br/><br/>single Maintenance Association, and is an endpoint of a<br/><br/>separate Maintenance Entity for each of the other MEPs in<br/><br/>the same Maintenance Association (802.1ag clause 3.19).<br/><br/><br/><br/>This table uses three indices. The first two indices are the<br/><br/>indices of the Maintenance Domain and MA tables, the reason<br/><br/>being that an MEP is always related to an MA and Maintenance<br/><br/>Domain.
-GET http://localhost/api/snmp/zxAnCfm2LocalMepTable
+GET http://103.184.122.170/api/snmp/zxAnCfm2LocalMepTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnCfm2LocalMepTable/:id
+POST http://103.184.122.170/api/snmp/zxAnCfm2LocalMepTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -63,11 +63,11 @@ Content-Type: application/json
 }
 
 ### This table includes remote MEP configuration.<br/><br/>A remote MEP is an MEP, it can use in all the CFM tests.<br/><br/>It represents the destination of the test when the test uses<br/><br/>MEPID as its destination.
-GET http://localhost/api/snmp/zxAnCfm2RemoteMepTable
+GET http://103.184.122.170/api/snmp/zxAnCfm2RemoteMepTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnCfm2RemoteMepTable/:id
+POST http://103.184.122.170/api/snmp/zxAnCfm2RemoteMepTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -78,11 +78,11 @@ Content-Type: application/json
 }
 
 ### This table includes MIP configuration. An MIP can be used<br/><br/>in all the CFM tests. MIP is a CFM entry, associated with a single<br/><br/>Maintenance Domain, and thus with single MD level, it can generate<br/><br/>CFM PDUs, but only in response to received CFM PDUs.
-GET http://localhost/api/snmp/zxAnCfm2MipTable
+GET http://103.184.122.170/api/snmp/zxAnCfm2MipTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnCfm2MipTable/:id
+POST http://103.184.122.170/api/snmp/zxAnCfm2MipTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -93,11 +93,11 @@ Content-Type: application/json
 }
 
 ### The Maintenance Association End Point (MEP) connectivity operation<br/><br/>table stores all the managed objects for sending LBM.<br/><br/><br/><br/>LBM Managed objects in the MEP table<br/><br/>enables the management entity to initiate<br/><br/>transmission of Loopback messages. It will signal the MEP<br/><br/>that it SHOULD transmit some number of Loopback messages<br/><br/>and detect the detection (or lack thereof) of the<br/><br/>corresponding Loopback messages.<br/><br/><br/><br/>Steps to use entries in this table:<br/><br/><br/><br/>1) Wait for zxAnCfm2MepTransLbmStatus value to be<br/><br/>disabled. To do this do this sequence:<br/><br/>a. an SNMP GET for both SnmpSetSerialNo and<br/><br/>zxAnCfm2MepTransLbmStatus objects (in same SNMP PDU).<br/><br/>b. Check if value for zxAnCfm2MepTransLbmStatus is disabled.<br/><br/>- if not, wait x seconds, go to step a above.<br/><br/>- if enabled, save the value of SnmpSetSerialNo and go<br/><br/>to step 2) below<br/><br/>2) Change zxAnCfm2MepTransLbmStatus value from disabled to<br/><br/>enabled to ensure no other management entity will use<br/><br/>the service. In order to not disturb a possible other NMS<br/><br/>do this by sending an SNMP SET for both SnmpSetSerialNo<br/><br/>and zxAnCfm2MepTransLbmStatus objects (in same SNMP<br/><br/>PDU, and make sure SNmpSetSerialNo is the first varBind).<br/><br/>For the SnmpSetSerialNo varBind, use the value that you<br/><br/>obtained in step 1)a.. This ensures that two cooperating<br/><br/>NMSes will not step on each others toes.<br/><br/>Setting this MIB object does not set the corresponding<br/><br/>LBIactive state machine variable.<br/><br/>3) Setup the different data to be sent (number of messages,<br/><br/>optional TLVs,...).<br/><br/>4) Record the current values of zxAnCfm2MepLbrInInOrder,<br/><br/>zxAnCfm2MepLbrInOutOfOrder, and zxAnCfm2MepLbrBadMsdu.<br/><br/>5) Check the value of zxAnCfm2MepTransLbmResultOk to<br/><br/>find out if the operation was successfully initiated or not.<br/><br/>6) Monitor the value of zxAnCfm2MepTransLbmStatus.<br/><br/>When it is reset to false, the last LBM has been transmitted.<br/><br/>Wait an additional 5 seconds to ensure that all LBRs have<br/><br/>been returned.<br/><br/>7) Compare zxAnCfm2MepLbrInInOrder, zxAnCfm2MepLbrInOutOfOrder,<br/><br/>and zxAnCfm2MepLbrBadMsdu to their old values from step<br/><br/>4, above, to get the results of the test.
-GET http://localhost/api/snmp/zxAnCfm2MepLoopBackOperTable
+GET http://103.184.122.170/api/snmp/zxAnCfm2MepLoopBackOperTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnCfm2MepLoopBackOperTable/:id
+POST http://103.184.122.170/api/snmp/zxAnCfm2MepLoopBackOperTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -115,15 +115,15 @@ Content-Type: application/json
 }
 
 ### This table includes multicast Loopback result. Before start a<br/><br/>mulitcast LBM user must first get all the entry of this table, and<br/><br/>after the LBM is over, user must get all the entry of this table<br/><br/>again, and compare all the entry to get the result of multicast<br/><br/>LBM.
-GET http://localhost/api/snmp/zxAnCfm2MepMultiLbrTable
+GET http://103.184.122.170/api/snmp/zxAnCfm2MepMultiLbrTable
 Authorization: Bearer {{token}}
 
 ### The Maintenance Association End Point (MEP) LinkTrace operation<br/><br/>table stores all the managed objects for sending LTM.<br/><br/><br/><br/>LTM Managed objects in the MEP table<br/><br/>enables the management entity to initiate<br/><br/>transmission of LinkTrace messages. It will signal the MEP<br/><br/>that it SHOULD transmit some number of LinkTrace messages<br/><br/>and detect the detection (or lack thereof) of the<br/><br/>corresponding LinkTrace messages.<br/><br/><br/><br/>Steps to use entries in this table:<br/><br/><br/><br/>1) Wait for zxAnCfm2MepTransLtmStatus value to be<br/><br/>disabled. To do this do this sequence:<br/><br/>a. an SNMP GET for both SnmpSetSerialNo and<br/><br/>zxAnCfm2MepTransLtmStatus objects (in same SNMP PDU).<br/><br/>b. Check if value for zxAnCfm2MepTransLtmStatus is disabled.<br/><br/>- if not, wait x seconds, go to step a above.<br/><br/>- if enabled, save the value of SnmpSetSerialNo and go<br/><br/>to step 2) below<br/><br/>2) Change zxAnCfm2MepTransLtmStatus value from disabled to<br/><br/>enabled to ensure no other management entity will use<br/><br/>the service. In order to not disturb a possible other NMS<br/><br/>do this by sending an SNMP SET for both SnmpSetSerialNo<br/><br/>and zxAnCfm2MepTransLtmStatus objects (in same SNMP<br/><br/>PDU, and make sure SNmpSetSerialNo is the first varBind).<br/><br/>For the SnmpSetSerialNo varBind, use the value that you<br/><br/>obtained in step 1)a.. This ensures that two cooperating<br/><br/>NMSes will not step on each others toes.<br/><br/>Setting this MIB object does not set the corresponding<br/><br/>LBIactive state machine variable.<br/><br/>3) Setup the different data to be sent (number of messages,<br/><br/>,...).<br/><br/>4) Check the value of zxAnCfm2MepTransLtmResultOk to<br/><br/>find out if the operation was successfully initiated or not.<br/><br/>5) Monitor the value of zxAnCfm2MepTransLtmStatus.<br/><br/>When it is reset to false, the last LTM has been transmitted.<br/><br/>Wait an additional 5 seconds to ensure that all LTRs have<br/><br/>been returned.<br/><br/>6) Read the zxAnCfm2MepLinkTraceReplyTable to get the results of<br/><br/>the test.
-GET http://localhost/api/snmp/zxAnCfm2MepLinkTraceOperTable
+GET http://103.184.122.170/api/snmp/zxAnCfm2MepLinkTraceOperTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnCfm2MepLinkTraceOperTable/:id
+POST http://103.184.122.170/api/snmp/zxAnCfm2MepLinkTraceOperTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -138,15 +138,15 @@ Content-Type: application/json
 }
 
 ### This table extends the MEP table and contains a list of<br/><br/>LinkTrace replies received by a specific MEP in response to<br/><br/>a LinkTrace message.<br/><br/>SNMP SMI does not allow to state in a MIB that an object in<br/><br/>a table is an array. The solution is to take the index (or<br/><br/>indices) of the first table and add one or more indices.
-GET http://localhost/api/snmp/zxAnCfm2MepLinkTraceReplyTable
+GET http://103.184.122.170/api/snmp/zxAnCfm2MepLinkTraceReplyTable
 Authorization: Bearer {{token}}
 
 ### The Maintenance Association End Point (MEP) performance<br/><br/>measurement operation table stores all the managed objects<br/><br/>for sending DMM.<br/><br/><br/><br/>Steps to use entries in this table:<br/><br/><br/><br/>1) Wait for zxAnCfm2MepDmStatus value to be<br/><br/>disabled. To do this do this sequence:<br/><br/>a. an SNMP GET for both SnmpSetSerialNo and<br/><br/>zxAnCfm2MepDmStatus objects (in same SNMP PDU).<br/><br/>b. Check if value for zxAnCfm2MepDmStatus is disabled.<br/><br/>- if not, wait x seconds, go to step a above.<br/><br/>- if enabled, save the value of SnmpSetSerialNo and go<br/><br/>to step 2) below<br/><br/>2) Change zxAnCfm2MepDmStatus value from disabled to<br/><br/>enabled to ensure no other management entity will use<br/><br/>the service. In order to not disturb a possible other NMS<br/><br/>do this by sending an SNMP SET for both SnmpSetSerialNo<br/><br/>and zxAnCfm2MepDmStatus objects (in same SNMP<br/><br/>PDU, and make sure SNmpSetSerialNo is the first varBind).<br/><br/>For the SnmpSetSerialNo varBind, use the value that you<br/><br/>obtained in step 1)a.. This ensures that two cooperating<br/><br/>NMSes will not step on each others toes.<br/><br/>Setting this MIB object does not set the corresponding<br/><br/>LBIactive state machine variable.<br/><br/>3) Setup the different data to be sent (zxAnCfm2MepDmPriority,<br/><br/>...).<br/><br/>4) Check the value of zxAnCfm2MepDmResultOk to<br/><br/>find out if the operation was successfully initiated or not.<br/><br/>5) Monitor the value of zxAnCfm2MepDmStatus.<br/><br/>When it is reset to false, the last DMM has been transmitted.<br/><br/>6) Get zxAnCfm2MepDmTwoWayAvgDelay, zxAnCfm2MepDmTwoWayAvgDv,<br/><br/>to get the results of the test.
-GET http://localhost/api/snmp/zxAnCfm2MepDmOperTable
+GET http://103.184.122.170/api/snmp/zxAnCfm2MepDmOperTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnCfm2MepDmOperTable/:id
+POST http://103.184.122.170/api/snmp/zxAnCfm2MepDmOperTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -162,11 +162,11 @@ Content-Type: application/json
 }
 
 ### The Maintenance Association End Point (MEP) performance<br/><br/>measurement operation table stores all the managed objects<br/><br/>for sending LMM .<br/><br/><br/><br/>Steps to use entries in this table:<br/><br/><br/><br/>1) Wait for zxAnCfm2MepLmStatus value to be<br/><br/>disabled. To do this do this sequence:<br/><br/>a. an SNMP GET for both SnmpSetSerialNo and<br/><br/>zxAnCfm2MepLmStatus objects (in same SNMP PDU).<br/><br/>b. Check if value for zxAnCfm2MepLmStatus is disabled.<br/><br/>- if not, wait x seconds, go to step a above.<br/><br/>- if enabled, save the value of SnmpSetSerialNo and go<br/><br/>to step 2) below<br/><br/>2) Change zxAnCfm2MepLmStatus value from disabled to<br/><br/>enabled to ensure no other management entity will use<br/><br/>the service. In order to not disturb a possible other NMS<br/><br/>do this by sending an SNMP SET for both SnmpSetSerialNo<br/><br/>and zxAnCfm2MepLmStatus objects (in same SNMP<br/><br/>PDU, and make sure SNmpSetSerialNo is the first varBind).<br/><br/>For the SnmpSetSerialNo varBind, use the value that you<br/><br/>obtained in step 1)a.. This ensures that two cooperating<br/><br/>NMSes will not step on each others toes.<br/><br/>Setting this MIB object does not set the corresponding<br/><br/>LBIactive state machine variable.<br/><br/>3) Setup the different data to be sent (zxAnCfm2MepLmPriority,<br/><br/>...).<br/><br/>4) Check the value of zxAnCfm2MepLmResultOk to<br/><br/>find out if the operation was successfully initiated or not.<br/><br/>5) Monitor the value of zxAnCfm2MepLmStatus.<br/><br/>When it is reset to false, the last LMM has been transmitted.<br/><br/>6) Get zxAnCfm2MepSingleEndLmFarLoss,<br/><br/>zxAnCfm2MepSingleLmFarLossRatio, zxAnCfm2MepSingleEndLmNearLoss,<br/><br/>zxAnCfm2MepSingleLmNearLossRatio to get the results of the<br/><br/>test.
-GET http://localhost/api/snmp/zxAnCfm2MepLmOperTable
+GET http://103.184.122.170/api/snmp/zxAnCfm2MepLmOperTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnCfm2MepLmOperTable/:id
+POST http://103.184.122.170/api/snmp/zxAnCfm2MepLmOperTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -181,11 +181,11 @@ Content-Type: application/json
 }
 
 ### The MEP (Maintenance Association End Point) statistics table.
-GET http://localhost/api/snmp/zxAnCfm2MepStatsTable
+GET http://103.184.122.170/api/snmp/zxAnCfm2MepStatsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnCfm2MepStatsTable/:id
+POST http://103.184.122.170/api/snmp/zxAnCfm2MepStatsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

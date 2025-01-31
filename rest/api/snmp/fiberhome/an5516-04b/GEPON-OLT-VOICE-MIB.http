@@ -1,11 +1,11 @@
 
 
 ### Description
-GET http://localhost/api/snmp/signalProfileTable
+GET http://103.184.122.170/api/snmp/signalProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/signalProfileTable/:id
+POST http://103.184.122.170/api/snmp/signalProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -37,11 +37,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://localhost/api/snmp/potsUserCfgTable
+GET http://103.184.122.170/api/snmp/potsUserCfgTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/potsUserCfgTable/:id
+POST http://103.184.122.170/api/snmp/potsUserCfgTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -69,11 +69,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://localhost/api/snmp/onuVoiceCfgTable
+GET http://103.184.122.170/api/snmp/onuVoiceCfgTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/onuVoiceCfgTable/:id
+POST http://103.184.122.170/api/snmp/onuVoiceCfgTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -96,11 +96,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://localhost/api/snmp/voicePlatformProfileTable
+GET http://103.184.122.170/api/snmp/voicePlatformProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/voicePlatformProfileTable/:id
+POST http://103.184.122.170/api/snmp/voicePlatformProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -128,11 +128,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://localhost/api/snmp/potsCfgProfileTable
+GET http://103.184.122.170/api/snmp/potsCfgProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/potsCfgProfileTable/:id
+POST http://103.184.122.170/api/snmp/potsCfgProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

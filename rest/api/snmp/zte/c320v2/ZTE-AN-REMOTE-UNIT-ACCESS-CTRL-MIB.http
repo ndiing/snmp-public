@@ -1,9 +1,9 @@
 ### Remote unit access control rule table.
-GET http://localhost/api/snmp/zxAnRuAccessCtrlRuleTable
+GET http://103.184.122.170/api/snmp/zxAnRuAccessCtrlRuleTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnRuAccessCtrlRuleTable/:id
+POST http://103.184.122.170/api/snmp/zxAnRuAccessCtrlRuleTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -15,6 +15,6 @@ Content-Type: application/json
 }
 
 ### Remote unit access control inventory table.
-GET http://localhost/api/snmp/zxAnRuAccessCtrlInventoryTable
+GET http://103.184.122.170/api/snmp/zxAnRuAccessCtrlInventoryTable
 Authorization: Bearer {{token}}
 

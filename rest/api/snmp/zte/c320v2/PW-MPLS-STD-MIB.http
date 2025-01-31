@@ -1,9 +1,9 @@
 ### This table controls MPLS-specific parameters when the PW is<br/><br/>going to be carried over MPLS PSN.
-GET http://localhost/api/snmp/pwMplsTable
+GET http://103.184.122.170/api/snmp/pwMplsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/pwMplsTable/:id
+POST http://103.184.122.170/api/snmp/pwMplsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -18,11 +18,11 @@ Content-Type: application/json
 }
 
 ### This table reports and configures the current outbound MPLS<br/><br/>tunnels (i.e., toward the PSN) or the physical interface in<br/><br/>the case of a PW label only that carries the PW traffic.  It<br/><br/>also reports the current outer tunnel and LSP that forward<br/><br/>the PW traffic.
-GET http://localhost/api/snmp/pwMplsOutboundTable
+GET http://103.184.122.170/api/snmp/pwMplsOutboundTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/pwMplsOutboundTable/:id
+POST http://103.184.122.170/api/snmp/pwMplsOutboundTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -35,14 +35,14 @@ Content-Type: application/json
 }
 
 ### This table indicates the PW LDP XC entry in the<br/><br/>MPLS-LSR-STD-MIB for signaled PWs.
-GET http://localhost/api/snmp/pwMplsInboundTable
+GET http://103.184.122.170/api/snmp/pwMplsInboundTable
 Authorization: Bearer {{token}}
 
 ### This table indicates the PW association to the outbound<br/><br/>tunnel in non-TE applications, maps the PW to its (inbound)<br/><br/>XC entry, and indicates the PW-to-physical interface mapping<br/><br/>for a PW without an outer tunnel.
-GET http://localhost/api/snmp/pwMplsNonTeMappingTable
+GET http://103.184.122.170/api/snmp/pwMplsNonTeMappingTable
 Authorization: Bearer {{token}}
 
 ### This table reports the PW association to the<br/><br/>outbound MPLS tunnel for MPLS-TE applications.
-GET http://localhost/api/snmp/pwMplsTeMappingTable
+GET http://103.184.122.170/api/snmp/pwMplsTeMappingTable
 Authorization: Bearer {{token}}
 

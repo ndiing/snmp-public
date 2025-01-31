@@ -1,9 +1,9 @@
 ### MPLS L2VPN PW manage table
-GET http://localhost/api/snmp/zxAnL2vpnPwConfTable
+GET http://103.184.122.170/api/snmp/zxAnL2vpnPwConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnL2vpnPwConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnL2vpnPwConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -57,15 +57,15 @@ Content-Type: application/json
 }
 
 ### MPLS L2VPN PW signaling table
-GET http://localhost/api/snmp/zxAnL2vpnPwSigTable
+GET http://103.184.122.170/api/snmp/zxAnL2vpnPwSigTable
 Authorization: Bearer {{token}}
 
 ### MPLS L2VPN PW class manage table
-GET http://localhost/api/snmp/zxAnL2vpnPwClassMgrTable
+GET http://103.184.122.170/api/snmp/zxAnL2vpnPwClassMgrTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnL2vpnPwClassMgrTable/:id
+POST http://103.184.122.170/api/snmp/zxAnL2vpnPwClassMgrTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -77,11 +77,11 @@ Content-Type: application/json
 }
 
 ### MPLS L2VPN PW redundancy group manage table
-GET http://localhost/api/snmp/zxAnL2vpnPwRgrMgrTable
+GET http://103.184.122.170/api/snmp/zxAnL2vpnPwRgrMgrTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnL2vpnPwRgrMgrTable/:id
+POST http://103.184.122.170/api/snmp/zxAnL2vpnPwRgrMgrTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -98,11 +98,11 @@ Content-Type: application/json
 }
 
 ### The performance alarm threshold profile table of PW flow.
-GET http://localhost/api/snmp/zxAnL2vpnPwAlmProfileTable
+GET http://103.184.122.170/api/snmp/zxAnL2vpnPwAlmProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnL2vpnPwAlmProfileTable/:id
+POST http://103.184.122.170/api/snmp/zxAnL2vpnPwAlmProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -111,11 +111,11 @@ Content-Type: application/json
 }
 
 ### The performance alarm threshold profile table<br/><br/>configuration of PW flow.
-GET http://localhost/api/snmp/zxAnL2vpnPwAlmProfileConfTable
+GET http://103.184.122.170/api/snmp/zxAnL2vpnPwAlmProfileConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnL2vpnPwAlmProfileConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnL2vpnPwAlmProfileConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

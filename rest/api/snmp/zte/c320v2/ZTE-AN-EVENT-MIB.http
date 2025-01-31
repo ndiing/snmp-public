@@ -1,9 +1,9 @@
 ### A list of trap destination entries.
-GET http://localhost/api/snmp/zxAnEventReceiverTable
+GET http://103.184.122.170/api/snmp/zxAnEventReceiverTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnEventReceiverTable/:id
+POST http://103.184.122.170/api/snmp/zxAnEventReceiverTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -25,15 +25,15 @@ Content-Type: application/json
 }
 
 ### Event definition table.
-GET http://localhost/api/snmp/zxAnEventDefinitionTable
+GET http://103.184.122.170/api/snmp/zxAnEventDefinitionTable
 Authorization: Bearer {{token}}
 
 ### Event control profile table.
-GET http://localhost/api/snmp/zxAnEventRptCtrlProfileTable
+GET http://103.184.122.170/api/snmp/zxAnEventRptCtrlProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnEventRptCtrlProfileTable/:id
+POST http://103.184.122.170/api/snmp/zxAnEventRptCtrlProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -43,11 +43,11 @@ Content-Type: application/json
 }
 
 ### Event control profile rule table.
-GET http://localhost/api/snmp/zxAnEventRptCtrlProfileRuleTable
+GET http://103.184.122.170/api/snmp/zxAnEventRptCtrlProfileRuleTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnEventRptCtrlProfileRuleTable/:id
+POST http://103.184.122.170/api/snmp/zxAnEventRptCtrlProfileRuleTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -61,11 +61,11 @@ Content-Type: application/json
 }
 
 ### Event control profile table.
-GET http://localhost/api/snmp/zxAnEventRptCtrlResourceTable
+GET http://103.184.122.170/api/snmp/zxAnEventRptCtrlResourceTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnEventRptCtrlResourceTable/:id
+POST http://103.184.122.170/api/snmp/zxAnEventRptCtrlResourceTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -76,10 +76,10 @@ Content-Type: application/json
 }
 
 ### A table of Active Alarms entries.
-GET http://localhost/api/snmp/zxAnEventActiveTable
+GET http://103.184.122.170/api/snmp/zxAnEventActiveTable
 Authorization: Bearer {{token}}
 
 ### A table of variables to go with active alarm entries.
-GET http://localhost/api/snmp/zxAnEventActiveVariableTable
+GET http://103.184.122.170/api/snmp/zxAnEventActiveVariableTable
 Authorization: Bearer {{token}}
 

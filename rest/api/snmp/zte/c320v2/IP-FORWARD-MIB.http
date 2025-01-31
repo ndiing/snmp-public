@@ -1,9 +1,9 @@
 ### This entity's IP Routing table.
-GET http://localhost/api/snmp/inetCidrRouteTable
+GET http://103.184.122.170/api/snmp/inetCidrRouteTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/inetCidrRouteTable/:id
+POST http://103.184.122.170/api/snmp/inetCidrRouteTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -20,11 +20,11 @@ Content-Type: application/json
 }
 
 ### This entity's IP Routing table.  This table has been<br/><br/>deprecated in favor of the IP version neutral<br/><br/>inetCidrRouteTable.
-GET http://localhost/api/snmp/ipCidrRouteTable
+GET http://103.184.122.170/api/snmp/ipCidrRouteTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/ipCidrRouteTable/:id
+POST http://103.184.122.170/api/snmp/ipCidrRouteTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -42,11 +42,11 @@ Content-Type: application/json
 }
 
 ### This entity's IP Routing table.
-GET http://localhost/api/snmp/ipForwardTable
+GET http://103.184.122.170/api/snmp/ipForwardTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/ipForwardTable/:id
+POST http://103.184.122.170/api/snmp/ipForwardTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

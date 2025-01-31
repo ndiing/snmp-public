@@ -1,9 +1,9 @@
 ### Traffic reflection table.
-GET http://localhost/api/snmp/zxAnTrafficReflectConfTable
+GET http://103.184.122.170/api/snmp/zxAnTrafficReflectConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAnTrafficReflectConfTable/:id
+POST http://103.184.122.170/api/snmp/zxAnTrafficReflectConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

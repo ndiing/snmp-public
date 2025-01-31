@@ -1,9 +1,9 @@
 ### This table includes common attributes describing<br/><br/>both ends of the line.  It is required for all ADSL<br/><br/>physical interfaces.  ADSL physical interfaces are<br/><br/>those ifEntries where ifType is equal to adsl(94).
-GET http://localhost/api/snmp/adslLineTable
+GET http://103.184.122.170/api/snmp/adslLineTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/adslLineTable/:id
+POST http://103.184.122.170/api/snmp/adslLineTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -15,59 +15,59 @@ Content-Type: application/json
 }
 
 ### This table provides one row for each ATUC.<br/><br/>Each row contains the Physical Layer Parameters<br/><br/>table for that ATUC. ADSL physical interfaces are<br/><br/>those ifEntries where ifType is equal to adsl(94).
-GET http://localhost/api/snmp/adslAtucPhysTable
+GET http://103.184.122.170/api/snmp/adslAtucPhysTable
 Authorization: Bearer {{token}}
 
 ### This table provides one row for each ATUR<br/><br/>Each row contains the Physical Layer Parameters<br/><br/>table for that ATUR. ADSL physical interfaces are<br/><br/>those ifEntries where ifType is equal to adsl(94).
-GET http://localhost/api/snmp/adslAturPhysTable
+GET http://103.184.122.170/api/snmp/adslAturPhysTable
 Authorization: Bearer {{token}}
 
 ### This table provides one row for each ATUC channel.<br/><br/>ADSL channel interfaces are those ifEntries<br/><br/>where ifType is equal to adslInterleave(124)<br/><br/>or adslFast(125).
-GET http://localhost/api/snmp/adslAtucChanTable
+GET http://103.184.122.170/api/snmp/adslAtucChanTable
 Authorization: Bearer {{token}}
 
 ### This table provides one row for each ATUR channel.<br/><br/>ADSL channel interfaces are those ifEntries<br/><br/>where ifType is equal to adslInterleave(124)<br/><br/>or adslFast(125).
-GET http://localhost/api/snmp/adslAturChanTable
+GET http://103.184.122.170/api/snmp/adslAturChanTable
 Authorization: Bearer {{token}}
 
 ### This table provides one row for each ATUC.<br/><br/>ADSL physical interfaces are<br/><br/>those ifEntries where ifType is equal to adsl(94).
-GET http://localhost/api/snmp/adslAtucPerfDataTable
+GET http://103.184.122.170/api/snmp/adslAtucPerfDataTable
 Authorization: Bearer {{token}}
 
 ### This table provides one row for each ATUR.<br/><br/>ADSL physical interfaces are<br/><br/>those ifEntries where ifType is equal to adsl(94).
-GET http://localhost/api/snmp/adslAturPerfDataTable
+GET http://103.184.122.170/api/snmp/adslAturPerfDataTable
 Authorization: Bearer {{token}}
 
 ### This table provides one row for each ATUC<br/><br/>performance data collection interval.<br/><br/>ADSL physical interfaces are<br/><br/>those ifEntries where ifType is equal to adsl(94).
-GET http://localhost/api/snmp/adslAtucIntervalTable
+GET http://103.184.122.170/api/snmp/adslAtucIntervalTable
 Authorization: Bearer {{token}}
 
 ### This table provides one row for each ATUR<br/><br/>performance data collection interval.<br/><br/>ADSL physical interfaces are those<br/><br/>ifEntries where ifType is equal to adsl(94).
-GET http://localhost/api/snmp/adslAturIntervalTable
+GET http://103.184.122.170/api/snmp/adslAturIntervalTable
 Authorization: Bearer {{token}}
 
 ### This table provides one row for each ATUC channel.<br/><br/>ADSL channel interfaces are those ifEntries<br/><br/>where ifType is equal to adslInterleave(124)<br/><br/>or adslFast(125).
-GET http://localhost/api/snmp/adslAtucChanPerfDataTable
+GET http://103.184.122.170/api/snmp/adslAtucChanPerfDataTable
 Authorization: Bearer {{token}}
 
 ### This table provides one row for each ATUR channel.<br/><br/>ADSL channel interfaces are those ifEntries<br/><br/>where ifType is equal to adslInterleave(124)<br/><br/>or adslFast(125).
-GET http://localhost/api/snmp/adslAturChanPerfDataTable
+GET http://103.184.122.170/api/snmp/adslAturChanPerfDataTable
 Authorization: Bearer {{token}}
 
 ### This table provides one row for each ATUC channel's<br/><br/>performance data collection interval.<br/><br/>ADSL channel interfaces are those ifEntries<br/><br/>where ifType is equal to adslInterleave(124)<br/><br/>or adslFast(125).
-GET http://localhost/api/snmp/adslAtucChanIntervalTable
+GET http://103.184.122.170/api/snmp/adslAtucChanIntervalTable
 Authorization: Bearer {{token}}
 
 ### This table provides one row for each ATUR channel's<br/><br/>performance data collection interval.<br/><br/>ADSL channel interfaces are those ifEntries<br/><br/>where ifType is equal to adslInterleave(124)<br/><br/>or adslFast(125).
-GET http://localhost/api/snmp/adslAturChanIntervalTable
+GET http://103.184.122.170/api/snmp/adslAturChanIntervalTable
 Authorization: Bearer {{token}}
 
 ### This table contains information on the ADSL line<br/><br/>configuration.  One entry in this table reflects a<br/><br/>profile defined by a manager which can be used to<br/><br/>configure the ADSL line.
-GET http://localhost/api/snmp/adslLineConfProfileTable
+GET http://103.184.122.170/api/snmp/adslLineConfProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/adslLineConfProfileTable/:id
+POST http://103.184.122.170/api/snmp/adslLineConfProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -104,11 +104,11 @@ Content-Type: application/json
 }
 
 ### This table contains information on the ADSL line<br/><br/>configuration.  One entry in this table reflects a<br/><br/>profile defined by a manager which can be used to<br/><br/>configure the modem for a physical line
-GET http://localhost/api/snmp/adslLineAlarmConfProfileTable
+GET http://103.184.122.170/api/snmp/adslLineAlarmConfProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/adslLineAlarmConfProfileTable/:id
+POST http://103.184.122.170/api/snmp/adslLineAlarmConfProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

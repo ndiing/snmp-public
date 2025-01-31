@@ -1,13 +1,13 @@
 ### A table that contains the authorized session objects for the<br/><br/>PAE associated with each port.
-GET http://localhost/api/snmp/zxAn8021XPaeAuthSessionTable
+GET http://103.184.122.170/api/snmp/zxAn8021XPaeAuthSessionTable
 Authorization: Bearer {{token}}
 
 ### A table that contains the authenticator objects for the<br/><br/>PAE associated with each port.
-GET http://localhost/api/snmp/zxAn8021XPaeAuthenticatorTable
+GET http://103.184.122.170/api/snmp/zxAn8021XPaeAuthenticatorTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAn8021XPaeAuthenticatorTable/:id
+POST http://103.184.122.170/api/snmp/zxAn8021XPaeAuthenticatorTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -20,11 +20,11 @@ Content-Type: application/json
 }
 
 ### A table that contains the supplicant objects for the<br/><br/>PAE associated with each port.
-GET http://localhost/api/snmp/zxAn8021XPaeSupplicantTable
+GET http://103.184.122.170/api/snmp/zxAn8021XPaeSupplicantTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAn8021XPaeSupplicantTable/:id
+POST http://103.184.122.170/api/snmp/zxAn8021XPaeSupplicantTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -36,11 +36,11 @@ Content-Type: application/json
 }
 
 ### A table that contains the EAPOL statistics objects for the<br/><br/>PAE associated with each port.
-GET http://localhost/api/snmp/zxAn8021XPaeEapolIfStatsTable
+GET http://103.184.122.170/api/snmp/zxAn8021XPaeEapolIfStatsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://localhost/api/snmp/zxAn8021XPaeEapolIfStatsTable/:id
+POST http://103.184.122.170/api/snmp/zxAn8021XPaeEapolIfStatsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
