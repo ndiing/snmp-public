@@ -1,0 +1,23 @@
+###
+POST http://localhost/api/cacti/login
+Content-Type: application/json
+
+{
+    "action": "login",
+    "login_username": "wijaya",
+    "login_password": "wijaya@2024"
+}
+
+###
+GET http://localhost/api/cacti/logout
+
+
+###
+GET http://localhost/api/cacti/graph_json
+?rra_id=0
+&local_graph_id=540
+&graph_start=2025-01-31
+&graph_end=2025-02-01
+&graph_height=200
+&graph_width=700
+
