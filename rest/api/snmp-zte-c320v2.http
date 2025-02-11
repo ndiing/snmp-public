@@ -199,6 +199,10 @@ Authorization: Bearer {{token}}
 GET http://103.184.122.170/api/snmp/zxAnGponSrvUnConfOnuTable
 Authorization: Bearer {{token}}
 
+###
+GET http://103.184.122.170/api/snmp/zxAnGponSrvOnuMgmtTable
+Authorization: Bearer {{token}}
+
 ### ONU Manager > Unauthenticated ONU Configuration > Add To
 ### ONU Manager > New
 POST http://103.184.122.170/api/snmp/zxAnGponSrvOnuMgmtTable/285278721.1
@@ -368,3 +372,26 @@ Content-Type: application/json
     "sysName": "ZXAN",
     "sysLocation": "Summarecon Bandung, Ruby Commercial 188, Kota Bandung, Jawa Barat 44173"
 }
+
+
+
+
+
+
+### other
+
+### Details of ONU > Line Attributes
+GET http://103.184.122.170/api/snmp/zxAnGponSrvOnuStatusTable
+Authorization: Bearer {{token}}
+
+### Details of ONU > Service Attributes
+GET http://103.184.122.170/api/snmp/zxAnGponRmOnuTable
+Authorization: Bearer {{token}}
+
+### Details of ONU > Service Attributes
+GET http://103.184.122.170/api/snmp/zxAnGponRmOnuCapabilityTable
+Authorization: Bearer {{token}}
+
+### Details of ONU > Performance
+GET http://103.184.122.170/api/snmp/zxAnPonOnuIfCurrPerfTable
+Authorization: Bearer {{token}}

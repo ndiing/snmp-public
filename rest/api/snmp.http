@@ -49,7 +49,7 @@ GET http://103.184.122.170/api/snmp/find/iso.org.dod.internet.private.enterprise
 Authorization: Bearer {{token}}
 
 ###
-GET http://103.184.122.170/api/snmp/find/zxAnProducts
+GET http://103.184.122.170/api/snmp/find/zxAnGponSrvOnuStatusTable
 Authorization: Bearer {{token}}
 
 
@@ -65,7 +65,7 @@ GET http://103.184.122.170/api/snmp/find-closest/1.3.6.1.4.1.3902.1082.500.10.2.
 Authorization: Bearer {{token}}
 
 ###
-GET http://103.184.122.170/api/snmp/find-closest/1.3.6.1.4.1.3902.1082.500.10.2.2.5.1.7.285278721.1
+GET http://103.184.122.170/api/snmp/find-closest/1.3.6.1.4.1.3902.1082.500.10.2.3.8.1.1.285278721.1
 Authorization: Bearer {{token}}
 
 
@@ -118,7 +118,7 @@ Authorization: Bearer {{token}}
 
 
 ### /api/snmp/table/:path
-GET http://103.184.122.170/api/snmp/table/zxAnGponSrvUnConfOnuTable
+GET http://103.184.122.170/api/snmp/table/zxAnGponSrvOnuStatusTable
 Authorization: Bearer {{token}}
 
 
@@ -148,7 +148,7 @@ Authorization: Bearer {{token}}
 
 
 ### /api/snmp/:path
-GET http://103.184.122.170/api/snmp/system
+GET http://103.184.122.170/api/snmp/zxAnGponRmOnuTable
 Authorization: Bearer {{token}}
 
 
