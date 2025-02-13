@@ -4,8 +4,8 @@ Content-Type: application/json
 
 {
     "action": "login",
-    "login_username": "wijaya",
-    "login_password": "wijaya@2024"
+    "login_username": "{{login_username}}",
+    "login_password": "{{login_password}}"
 }
 
 ### Logout
