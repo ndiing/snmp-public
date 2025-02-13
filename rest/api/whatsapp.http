@@ -1,0 +1,76 @@
+@_id=session1
+
+
+### Manajemen client whatsapp
+### _id - gunakan id unik untuk penanganan multi whatsapp, sebaiknya gunakan nomor whatsapp biar mudah
+### connectionUpdateWebhook - end point untuk menerima data ketika connection Update
+### messagesUpsertWebhook - end point untuk menerima data ketika messages Upsert
+### autoStart - jalankan whatsapp otomatis ketika sistem dimulai
+
+
+### tambahkan whatsapp
+POST http://localhost/api/whatsapp/
+Content-Type: application/json
+
+{
+"_id": "session1",
+"connectionUpdateWebhook": "http://127.0.0.1/api/whatsapp/connection-update",
+"messagesUpsertWebhook": "http://127.0.0.1/api/whatsapp/messages-upsert"
+}
+
+
+### Ambil semua data yang disimpan
+GET http://localhost/api/whatsapp/
+
+### Ambil berdasarkan _id
+GET http://localhost/api/whatsapp/{{_id}}
+
+### Ubah config yang disimpan
+PATCH http://localhost/api/whatsapp/{{_id}}
+Content-Type: application/json
+
+{
+    "autoStart":true
+}
+
+### Hapus data whatsapp termasuk session
+DELETE http://localhost/api/whatsapp/{{_id}}
+
+
+
+
+
+
+
+
+### Mulai whatsapp
+POST http://localhost/api/whatsapp/start/{{_id}}
+Content-Type: application/json
+
+{
+}
+
+
+### Hentikan whatsapp
+POST http://localhost/api/whatsapp/close/{{_id}}
+Content-Type: application/json
+
+{
+}
+
+
+
+
+
+
+
+### Kirim pesan text
+POST http://localhost/api/whatsapp/send-message/{{_id}}
+Content-Type: application/json
+
+{
+    "jid":"6281935155404@s.whatsapp.net",
+    "content":{
+        "text":"hello word"
+    }
+}
