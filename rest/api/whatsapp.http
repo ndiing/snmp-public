@@ -9,7 +9,7 @@
 
 
 ### tambahkan whatsapp
-POST http://localhost/api/whatsapp/
+POST http://103.184.122.170/api/whatsapp/
 Content-Type: application/json
 
 {
@@ -20,13 +20,13 @@ Content-Type: application/json
 
 
 ### Ambil semua data yang disimpan
-GET http://localhost/api/whatsapp/
+GET http://103.184.122.170/api/whatsapp/
 
 ### Ambil berdasarkan _id
-GET http://localhost/api/whatsapp/{{_id}}
+GET http://103.184.122.170/api/whatsapp/{{_id}}
 
 ### Ubah config yang disimpan
-PATCH http://localhost/api/whatsapp/{{_id}}
+PATCH http://103.184.122.170/api/whatsapp/{{_id}}
 Content-Type: application/json
 
 {
@@ -34,7 +34,7 @@ Content-Type: application/json
 }
 
 ### Hapus data whatsapp termasuk session
-DELETE http://localhost/api/whatsapp/{{_id}}
+DELETE http://103.184.122.170/api/whatsapp/{{_id}}
 
 
 
@@ -44,7 +44,7 @@ DELETE http://localhost/api/whatsapp/{{_id}}
 
 
 ### Mulai whatsapp
-POST http://localhost/api/whatsapp/start/{{_id}}
+POST http://103.184.122.170/api/whatsapp/start/{{_id}}
 Content-Type: application/json
 
 {
@@ -52,7 +52,7 @@ Content-Type: application/json
 
 
 ### Hentikan whatsapp
-POST http://localhost/api/whatsapp/close/{{_id}}
+POST http://103.184.122.170/api/whatsapp/close/{{_id}}
 Content-Type: application/json
 
 {
@@ -65,7 +65,7 @@ Content-Type: application/json
 
 
 ### Kirim pesan text
-POST http://localhost/api/whatsapp/send-message/{{_id}}
+POST http://103.184.122.170/api/whatsapp/send-message/{{_id}}
 Content-Type: application/json
 
 {

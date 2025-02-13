@@ -1,5 +1,5 @@
 ### Login
-POST http://localhost/api/cacti/login
+POST http://103.184.122.170/api/cacti/login
 Content-Type: application/json
 
 {
@@ -9,7 +9,7 @@ Content-Type: application/json
 }
 
 ### Logout
-GET http://localhost/api/cacti/logout
+GET http://103.184.122.170/api/cacti/logout
 
 
 
@@ -17,19 +17,19 @@ GET http://localhost/api/cacti/logout
 
 
 ### Tree
-GET http://localhost/api/cacti/graph_view
+GET http://103.184.122.170/api/cacti/graph_view
 ?action=get_node
 &tree_id=0
 &id=%23
 
 ### Tree > Node
-GET http://localhost/api/cacti/graph_view
+GET http://103.184.122.170/api/cacti/graph_view
 ?action=get_node
 &tree_id=0
 &id=tree_anchor-2
 
 ### Graph Filters 
-GET http://localhost/api/cacti/graph_view
+GET http://103.184.122.170/api/cacti/graph_view
 ?action=tree_content
 &node=tbranch-15
 &tree_id=2
@@ -44,7 +44,7 @@ GET http://localhost/api/cacti/graph_view
 
 
 ### Content
-GET http://localhost/api/cacti/graph_json
+GET http://103.184.122.170/api/cacti/graph_json
 ?rra_id=0
 &local_graph_id=457
 &graph_start=2025-01-31
@@ -53,7 +53,7 @@ GET http://localhost/api/cacti/graph_json
 &graph_width=700
 
 ### Graph Utility View
-GET http://localhost/api/cacti/graph_json
+GET http://103.184.122.170/api/cacti/graph_json
 ?rra_id=1
 &local_graph_id=457
 &graph_start=2025-01-31
@@ -63,7 +63,7 @@ GET http://localhost/api/cacti/graph_json
 &disable_cache=true
 
 ### Summary Details
-GET http://localhost/api/cacti/graph_xport
+GET http://103.184.122.170/api/cacti/graph_xport
 ?local_graph_id=457
 &rra_id=0
 &format=table
