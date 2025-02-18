@@ -205,15 +205,15 @@ Authorization: Bearer {{token}}
 
 ### ONU Manager > Unauthenticated ONU Configuration > Add To
 ### ONU Manager > New
-POST http://103.184.122.170/api/snmp/zxAnGponSrvOnuMgmtTable/285278721.1
+POST http://103.184.122.170/api/snmp/zxAnGponSrvOnuMgmtTable/285278721.3
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
     "zxAnGponOnuMgmtRegMode": 1,
-    "zxAnGponOnuMgmtSn": "MHEGC959A3DA",
-    "zxAnGponOnuMgmtName": "ZTE ONU",
-    "zxAnGponOnuMgmtTypeName": "ZTE",
+    "zxAnGponOnuMgmtSn": "ZTEGC915E414",
+    "zxAnGponOnuMgmtName": "ZTE-F660V8.0",
+    "zxAnGponOnuMgmtTypeName": "ZTE-F622",
     "zxAnGponOnuMgmtDesc": "",
     "zxAnGponOnuMgmtTargetStatus": 2,
     "zxAnGponOnuMgmtVportMode": 1,
@@ -221,7 +221,7 @@ Content-Type: application/json
 }
 
 ### ONU Manager > Delete
-POST http://103.184.122.170/api/snmp/zxAnGponSrvOnuMgmtTable/285278721.1
+POST http://103.184.122.170/api/snmp/zxAnGponSrvOnuMgmtTable/285278721.3
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

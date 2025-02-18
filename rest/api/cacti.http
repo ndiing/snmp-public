@@ -28,6 +28,11 @@ GET http://103.184.122.170/api/cacti/graph_view
 &tree_id=0
 &id=tree_anchor-2
 
+
+
+
+
+
 ### Graph Filters 
 GET http://103.184.122.170/api/cacti/graph_view
 ?action=tree_content
@@ -39,6 +44,20 @@ GET http://103.184.122.170/api/cacti/graph_view
 &page=1
 
 
+### Graph Filters - rfilter
+GET http://103.184.122.170/api/cacti/graph_view
+?action=tree_content
+&rfilter=CPU
+
+### Graph Filters - rfilter - clear
+GET http://103.184.122.170/api/cacti/graph_view
+?action=tree_content
+&rfilter=
+
+
+
+
+
 
 
 
@@ -46,7 +65,7 @@ GET http://103.184.122.170/api/cacti/graph_view
 ### Content
 GET http://103.184.122.170/api/cacti/graph_json
 ?rra_id=0
-&local_graph_id=457
+&local_graph_id=670
 &graph_start=2025-01-31
 &graph_end=2025-02-01
 &graph_height=200
@@ -55,7 +74,7 @@ GET http://103.184.122.170/api/cacti/graph_json
 ### Graph Utility View
 GET http://103.184.122.170/api/cacti/graph_json
 ?rra_id=1
-&local_graph_id=457
+&local_graph_id=670
 &graph_start=2025-01-31
 &graph_end=2025-02-01
 &graph_height=200
@@ -64,7 +83,7 @@ GET http://103.184.122.170/api/cacti/graph_json
 
 ### Summary Details
 GET http://103.184.122.170/api/cacti/graph_xport
-?local_graph_id=457
+?local_graph_id=670
 &rra_id=0
 &format=table
 &graph_start=2025-01-31
