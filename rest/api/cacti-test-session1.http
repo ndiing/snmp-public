@@ -1,6 +1,7 @@
+@_id=session1
 
 ### Login
-POST http://103.184.122.170/api/cacti/login/:_id
+POST http://103.184.122.170/api/cacti/login/{{_id}}
 Content-Type: application/json
 
 {
@@ -10,7 +11,7 @@ Content-Type: application/json
 }
 
 ### Logout
-GET http://103.184.122.170/api/cacti/logout/:_id
+GET http://103.184.122.170/api/cacti/logout/{{_id}}
 
 
 
@@ -18,13 +19,13 @@ GET http://103.184.122.170/api/cacti/logout/:_id
 
 
 ### Tree
-GET http://103.184.122.170/api/cacti/graph_view/:_id
+GET http://103.184.122.170/api/cacti/graph_view/{{_id}}
 ?action=get_node
 &tree_id=0
 &id=%23
 
 ### Tree > Node
-GET http://103.184.122.170/api/cacti/graph_view/:_id
+GET http://103.184.122.170/api/cacti/graph_view/{{_id}}
 ?action=get_node
 &tree_id=0
 &id=tree_anchor-2
@@ -35,9 +36,9 @@ GET http://103.184.122.170/api/cacti/graph_view/:_id
 
 
 ### Graph Filters 
-GET http://103.184.122.170/api/cacti/graph_view/:_id
+GET http://103.184.122.170/api/cacti/graph_view/{{_id}}
 ?action=tree_content
-&node=tbranch-15
+&node=tbranch-17
 &tree_id=2
 &leaf_id=15
 &hgd=
@@ -46,12 +47,12 @@ GET http://103.184.122.170/api/cacti/graph_view/:_id
 
 
 ### Graph Filters - rfilter
-GET http://103.184.122.170/api/cacti/graph_view/:_id
+GET http://103.184.122.170/api/cacti/graph_view/{{_id}}
 ?action=tree_content
-&rfilter=CPU
+&rfilter=access
 
 ### Graph Filters - rfilter - clear
-GET http://103.184.122.170/api/cacti/graph_view/:_id
+GET http://103.184.122.170/api/cacti/graph_view/{{_id}}
 ?action=tree_content
 &rfilter=
 
@@ -64,7 +65,7 @@ GET http://103.184.122.170/api/cacti/graph_view/:_id
 
 
 ### Content
-GET http://103.184.122.170/api/cacti/graph_json
+GET http://103.184.122.170/api/cacti/graph_json/{{_id}}
 ?rra_id=0
 &local_graph_id=670
 &graph_start=2025-01-31
@@ -73,7 +74,7 @@ GET http://103.184.122.170/api/cacti/graph_json
 &graph_width=700
 
 ### Graph Utility View
-GET http://103.184.122.170/api/cacti/graph_json
+GET http://103.184.122.170/api/cacti/graph_json/{{_id}}
 ?rra_id=1
 &local_graph_id=670
 &graph_start=2025-01-31
@@ -83,7 +84,7 @@ GET http://103.184.122.170/api/cacti/graph_json
 &disable_cache=true
 
 ### Summary Details
-GET http://103.184.122.170/api/cacti/graph_xport
+GET http://103.184.122.170/api/cacti/graph_xport/{{_id}}
 ?local_graph_id=670
 &rra_id=0
 &format=table
