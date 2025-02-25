@@ -74,3 +74,14 @@ Content-Type: application/json
         "text":"hello word"
     }
 }
+
+### Kirim pesan text (groups)
+POST http://103.184.122.170/api/whatsapp/send-message/{{_id}}
+Content-Type: application/json
+
+{
+    "jid":"120363393409997601@g.us",
+    "content":{
+        "text":"hello word"
+    }
+}
