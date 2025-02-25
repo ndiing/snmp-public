@@ -235,6 +235,10 @@ Content-Type: application/json
 
 
 ### ONU Manager > Line Configurations > T-CONT Configuration > New
+GET http://103.184.122.170/api/snmp/zxAnGponSrvTcontTable/
+Authorization: Bearer {{token}}
+
+### ONU Manager > Line Configurations > T-CONT Configuration > New
 POST http://103.184.122.170/api/snmp/zxAnGponSrvTcontTable/285278721.1.1
 Authorization: Bearer {{token}}
 Content-Type: application/json
@@ -262,6 +266,10 @@ Content-Type: application/json
 
 
 ### ONU Manager > Line Configurations > GEM Port Configuration > New
+GET http://103.184.122.170/api/snmp/zxAnGponSrvGemPortTable/
+Authorization: Bearer {{token}}
+
+### ONU Manager > Line Configurations > GEM Port Configuration > New
 POST http://103.184.122.170/api/snmp/zxAnGponSrvGemPortTable/285278721.1.1
 Authorization: Bearer {{token}}
 Content-Type: application/json
@@ -281,6 +289,10 @@ Content-Type: application/json
 
 
 
+
+### ONU Manager > VPort Service Configurations > Service Port > New
+GET http://103.184.122.170/api/snmp/zxAnSrvPortConfTable/
+Authorization: Bearer {{token}}
 
 ### ONU Manager > VPort Service Configurations > Service Port > New
 POST http://103.184.122.170/api/snmp/zxAnSrvPortConfTable/285278721.402718976
@@ -326,6 +338,10 @@ Content-Type: application/json
 
 
 
+
+### ONU Manager > WAN Service Configurations > ONU Service WAN IP Configuration > New
+GET  http://103.184.122.170/api/snmp/zxAnGponRmWanIpConfTable/
+Authorization: Bearer {{token}}
 
 ### ONU Manager > WAN Service Configurations > ONU Service WAN IP Configuration > New
 POST http://103.184.122.170/api/snmp/zxAnGponRmWanIpConfTable/285278721.1.1

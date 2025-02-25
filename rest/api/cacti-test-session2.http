@@ -71,6 +71,8 @@ GET http://103.184.122.170/api/cacti/v2/graph_view/{{_id}}
 &hgd=
 &header=false
 &page=1
+&columns=2
+&graphs=4
 
 
 
