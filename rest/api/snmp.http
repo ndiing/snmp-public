@@ -9,6 +9,33 @@
 GET http://103.184.122.170/api/snmp/types
 
 
+
+
+
+
+
+### /api/snmp/converter
+POST http://103.184.122.170/api/snmp/converter
+Content-Type: application/json
+
+{
+    "index":"49.48.48.77"
+}
+
+### /api/snmp/converter
+POST http://103.184.122.170/api/snmp/converter
+Content-Type: application/json
+
+{
+    "index":"100M"
+}
+
+
+
+
+
+
+
 ### /api/snmp/token
 POST http://103.184.122.170/api/snmp/token
 Content-Type: application/json
