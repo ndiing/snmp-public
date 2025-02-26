@@ -84,20 +84,20 @@ GET http://103.184.122.170/api/snmp/zxAnGponSrvTrafficPrfTable
 Authorization: Bearer {{token}}
 
 ### Profile Configuration > GPON > Bandwidth > Traffic Profile > New
-POST http://103.184.122.170/api/snmp/zxAnGponSrvTrafficPrfTable/3.53.48.77
+POST http://103.184.122.170/api/snmp/zxAnGponSrvTrafficPrfTable/4.116.101.115.116
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
-    "zxAnGponSrvTrafficPrfSir": 50000,
-    "zxAnGponSrvTrafficPrfPir": 50000,
+    "zxAnGponSrvTrafficPrfSir": 0,
+    "zxAnGponSrvTrafficPrfPir": 64,
     "zxAnGponSvrTrafficPrfCbs": 0,
     "zxAnGponSvrTrafficPrfPbs": 0,
     "zxAnGponSrvTrafficPrfRowStatus": 4
 }
 
 ### Profile Configuration > GPON > Bandwidth > Traffic Profile > Delete
-POST http://103.184.122.170/api/snmp/zxAnGponSrvTrafficPrfTable/3.53.48.77
+POST http://103.184.122.170/api/snmp/zxAnGponSrvTrafficPrfTable/4.116.101.115.116
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -150,13 +150,13 @@ GET http://103.184.122.170/api/snmp/zxAnPonOnuIfAttrTable
 Authorization: Bearer {{token}}
 
 ### Profile Configuration > Global > ONU Type Profile > New
-POST http://103.184.122.170/api/snmp/zxAnPonOnuTypeTable/3.90.84.69
+POST http://103.184.122.170/api/snmp/zxAnPonOnuTypeTable/6.65.66.67.88.89.90
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
 {
     "zxAnPonOnuTypePonType": 2,
-    "zxAnPonOnuTypeDesc": "ZTE",
+    "zxAnPonOnuTypeDesc": "ABCXYZ",
     "zxAnPonOnuTypeAttr1": 255,
     "zxAnPonOnuTypeAttr2": 255,
     "zxAnPonOnuTypeAttr3": 255,
@@ -169,7 +169,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonOnuIfAttrTable/3.90.84.69.655460
+POST http://103.184.122.170/api/snmp/zxAnPonOnuIfAttrTable/6.65.66.67.88.89.90.655460
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -178,7 +178,7 @@ Content-Type: application/json
 }
 
 ### Profile Configuration > Global > ONU Type Profile > Delete
-POST http://103.184.122.170/api/snmp/zxAnPonOnuTypeTable/3.90.84.69
+POST http://103.184.122.170/api/snmp/zxAnPonOnuTypeTable/6.65.66.67.88.89.90
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

@@ -87,6 +87,20 @@ Content-Type: application/json
 }
 
 
+### logout
+POST http://103.184.122.170/api/whatsapp/logout/{{_id}}
+Content-Type: application/json 
+
+{}
+
+
+### end
+POST http://103.184.122.170/api/whatsapp/end/{{_id}}
+Content-Type: application/json 
+
+{}
+
+
 ### get chats
 GET http://103.184.122.170/api/whatsapp/store/chats/{{_id}}
 

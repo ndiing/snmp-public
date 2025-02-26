@@ -19,7 +19,7 @@ POST http://103.184.122.170/api/snmp/converter
 Content-Type: application/json
 
 {
-    "index":"49.48.48.77"
+    "index":"27.65.68.77.73.78.79.76.84.45.73.80.84.86.45.73.80.84.86.45.49.48.77.45.68.79.87.78"
 }
 
 ### /api/snmp/converter
@@ -27,7 +27,7 @@ POST http://103.184.122.170/api/snmp/converter
 Content-Type: application/json
 
 {
-    "index":"100M"
+    "index":"ADMINOLT-IPTV-IPTV-10M-DOWN"
 }
 
 
@@ -76,7 +76,7 @@ GET http://103.184.122.170/api/snmp/find/iso.org.dod.internet.private.enterprise
 Authorization: Bearer {{token}}
 
 ###
-GET http://103.184.122.170/api/snmp/find/zxAnPonOnuTypeName
+GET http://103.184.122.170/api/snmp/find/zxAnGponSrvTrafficPrfTable
 Authorization: Bearer {{token}}
 
 
@@ -175,7 +175,7 @@ Authorization: Bearer {{token}}
 
 
 ### /api/snmp/:path
-GET http://103.184.122.170/api/snmp/zxAnPonOnuTypeName
+GET http://103.184.122.170/api/snmp/ifTable
 Authorization: Bearer {{token}}
 
 
