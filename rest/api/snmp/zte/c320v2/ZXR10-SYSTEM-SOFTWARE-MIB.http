@@ -1,13 +1,13 @@
 ### The activated package information table.
-GET http://103.184.122.170/api/snmp/zxr10SwActivePackageInfoTable
+GET http://localhost/api/snmp/zxr10SwActivePackageInfoTable
 Authorization: Bearer {{token}}
 
 ### The installed package information table.
-GET http://103.184.122.170/api/snmp/zxr10SwInstallPackageInfoTable
+GET http://localhost/api/snmp/zxr10SwInstallPackageInfoTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxr10SwInstallPackageInfoTable/:id
+POST http://localhost/api/snmp/zxr10SwInstallPackageInfoTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -19,11 +19,11 @@ Content-Type: application/json
 }
 
 ### The installed set information table.
-GET http://103.184.122.170/api/snmp/zxr10SwInstallSetInfoTable
+GET http://localhost/api/snmp/zxr10SwInstallSetInfoTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxr10SwInstallSetInfoTable/:id
+POST http://localhost/api/snmp/zxr10SwInstallSetInfoTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -34,11 +34,11 @@ Content-Type: application/json
 }
 
 ### The firmware updating operation table.
-GET http://103.184.122.170/api/snmp/zxr10FirmwareUpdateTable
+GET http://localhost/api/snmp/zxr10FirmwareUpdateTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxr10FirmwareUpdateTable/:id
+POST http://localhost/api/snmp/zxr10FirmwareUpdateTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -47,11 +47,11 @@ Content-Type: application/json
 }
 
 ### The firmware batch updating operation table.
-GET http://103.184.122.170/api/snmp/zxr10FirmwareBatchUpdateTable
+GET http://localhost/api/snmp/zxr10FirmwareBatchUpdateTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxr10FirmwareBatchUpdateTable/:id
+POST http://localhost/api/snmp/zxr10FirmwareBatchUpdateTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

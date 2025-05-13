@@ -1,9 +1,9 @@
 ### VND resource profile table.<br/><br/>This table is valid only in VND 0.
-GET http://103.184.122.170/api/snmp/zxAnVndResProfileTable
+GET http://localhost/api/snmp/zxAnVndResProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVndResProfileTable/:id
+POST http://localhost/api/snmp/zxAnVndResProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -13,11 +13,11 @@ Content-Type: application/json
 }
 
 ### VND resource profile configuration table.<br/><br/>This table is valid only in VND 0.
-GET http://103.184.122.170/api/snmp/zxAnVndResProfileConfTable
+GET http://localhost/api/snmp/zxAnVndResProfileConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVndResProfileConfTable/:id
+POST http://localhost/api/snmp/zxAnVndResProfileConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -26,18 +26,18 @@ Content-Type: application/json
 }
 
 ### VND Resource Statistics Table.<br/><br/>This table is valid only in VND 0.
-GET http://103.184.122.170/api/snmp/zxAnVndResStatsTable
+GET http://localhost/api/snmp/zxAnVndResStatsTable
 Authorization: Bearer {{token}}
 
 ### VND Current Resource Statistics Table.<br/><br/>This table is valid in every VND and only can get current VND<br/><br/>resource.
-GET http://103.184.122.170/api/snmp/zxAnVndCurrResStatsTable
+GET http://localhost/api/snmp/zxAnVndCurrResStatsTable
 Authorization: Bearer {{token}}
 
 ### VND interface assigned information table.<br/><br/>This table is valid in every VND.
-GET http://103.184.122.170/api/snmp/zxAnVndIfAssignedInfoTable
+GET http://localhost/api/snmp/zxAnVndIfAssignedInfoTable
 Authorization: Bearer {{token}}
 
 ### Assignable card information table.<br/><br/>This table is valid only in VND 0.
-GET http://103.184.122.170/api/snmp/zxAnVndAssignableCardTable
+GET http://localhost/api/snmp/zxAnVndAssignableCardTable
 Authorization: Bearer {{token}}
 

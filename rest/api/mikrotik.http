@@ -1,0 +1,227 @@
+### 🔐 Login
+POST http://localhost/api/mikrotik/login
+Content-Type: application/json
+
+{
+  "name": "admin",
+  "password": "admin123"
+}
+
+### ➕ Add VLAN
+POST http://localhost/api/mikrotik/interface/vlan/add
+Content-Type: application/json
+
+{
+  "name": "vlan10",
+  "vlan-id": 10,
+  "interface": "ether1"
+}
+
+### 📄 Print VLAN
+GET http://localhost/api/mikrotik/interface/vlan/print
+
+### ❌ Remove VLAN
+DELETE http://localhost/api/mikrotik/interface/vlan/remove
+Content-Type: application/json
+
+{
+  ".id": "*E"
+}
+
+### ⚙️ Set VLAN (Disable)
+PUT http://localhost/api/mikrotik/interface/vlan/set
+Content-Type: application/json
+
+{
+  ".id": "*F",
+  "disabled": "yes"
+}
+
+### 🌐 Add IP Address
+POST http://localhost/api/mikrotik/ip/address/add
+Content-Type: application/json
+
+{
+  "address": "192.168.88.10/24",
+  "interface": "ether1"
+}
+
+### 📄 Print IP Address
+GET http://localhost/api/mikrotik/ip/address/print
+
+### ❌ Remove IP Address
+DELETE http://localhost/api/mikrotik/ip/address/remove
+Content-Type: application/json
+
+{
+  ".id": "*3"
+}
+
+### ⚙️ Set IP Address (Disable)
+PUT http://localhost/api/mikrotik/ip/address/set
+Content-Type: application/json
+
+{
+  ".id": "*4",
+  "disabled": "yes"
+}
+
+### 👤 Add User
+POST http://localhost/api/mikrotik/user/add
+Content-Type: application/json
+
+{
+  "name": "ndiing",
+  "password": "rahasia123",
+  "group": "full"
+}
+
+### 📄 Print User
+GET http://localhost/api/mikrotik/user/print
+
+### ❌ Remove User
+DELETE http://localhost/api/mikrotik/user/remove
+Content-Type: application/json
+
+{
+  ".id": "*5"
+}
+
+### 📊 Monitor Interface Traffic
+POST http://localhost/api/mikrotik/interface/monitor-traffic
+Content-Type: application/json
+
+{
+  "interface": "ether1",
+  "once": true
+}
+
+### 📊 Monitor Global Traffic (Multiple Interfaces)
+POST http://localhost/api/mikrotik/interface/monitor-traffic
+Content-Type: application/json
+
+{
+  "interface": "all",
+  "once": true
+}
+
+### ➕ Add Firewall Rule
+POST http://localhost/api/mikrotik/ip/firewall/filter/add
+Content-Type: application/json
+
+{
+  "chain": "input",
+  "action": "accept",
+  "protocol": "tcp",
+  "dst-port": "80"
+}
+
+### 📄 Print Firewall Rules
+GET http://localhost/api/mikrotik/ip/firewall/filter/print
+
+### ❌ Remove Firewall Rule
+DELETE http://localhost/api/mikrotik/ip/firewall/filter/remove
+Content-Type: application/json
+
+{
+  ".id": "*6"
+}
+
+### ⚙️ Set Firewall Rule (Disable)
+PUT http://localhost/api/mikrotik/ip/firewall/filter/set
+Content-Type: application/json
+
+{
+  ".id": "*7",
+  "disabled": "yes"
+}
+
+### ➕ Add DHCP Server
+POST http://localhost/api/mikrotik/ip/dhcp-server/add
+Content-Type: application/json
+
+{
+  "interface": "ether2",
+  "address-pool": "dhcp-pool",
+  "disabled": "no"
+}
+
+### 📄 Print DHCP Server
+GET http://localhost/api/mikrotik/ip/dhcp-server/print
+
+### ❌ Remove DHCP Server
+DELETE http://localhost/api/mikrotik/ip/dhcp-server/remove
+Content-Type: application/json
+
+{
+  ".id": "*8"
+}
+
+### ➕ Add Static Route
+POST http://localhost/api/mikrotik/ip/route/add
+Content-Type: application/json
+
+{
+  "dst-address": "192.168.100.0/24",
+  "gateway": "192.168.88.1"
+}
+
+### 📄 Print Static Routes
+GET http://localhost/api/mikrotik/ip/route/print
+
+### ❌ Remove Static Route
+DELETE http://localhost/api/mikrotik/ip/route/remove
+Content-Type: application/json
+
+{
+  ".id": "*9"
+}
+
+### ➕ Add NAT Rule
+POST http://localhost/api/mikrotik/ip/firewall/nat/add
+Content-Type: application/json
+
+{
+  "chain": "srcnat",
+  "action": "masquerade",
+  "out-interface": "ether1"
+}
+
+### 📄 Print NAT Rules
+GET http://localhost/api/mikrotik/ip/firewall/nat/print
+
+### ❌ Remove NAT Rule
+DELETE http://localhost/api/mikrotik/ip/firewall/nat/remove
+Content-Type: application/json
+
+{
+  ".id": "*10"
+}
+
+### 📊 Monitor CPU Usage
+GET http://localhost/api/mikrotik/system/monitor/cpu
+
+### 📊 Monitor Memory Usage
+GET http://localhost/api/mikrotik/system/monitor/memory
+
+### 💾 Create Backup
+POST http://localhost/api/mikrotik/system/backup
+Content-Type: application/json
+
+{
+  "name": "backup1"
+}
+
+### 🔄 Restore from Backup
+POST http://localhost/api/mikrotik/system/restore
+Content-Type: application/json
+
+{
+  "name": "backup1"
+}
+
+### 🔄 Reboot System
+POST http://localhost/api/mikrotik/system/reboot
+
+### ⛔ Shutdown System
+POST http://localhost/api/mikrotik/system/shutdown

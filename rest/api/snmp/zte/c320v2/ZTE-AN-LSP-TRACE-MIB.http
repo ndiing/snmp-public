@@ -1,9 +1,9 @@
 ### The LSP traceroute table.
-GET http://103.184.122.170/api/snmp/zxAnLspTraceTable
+GET http://localhost/api/snmp/zxAnLspTraceTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnLspTraceTable/:id
+POST http://localhost/api/snmp/zxAnLspTraceTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -23,10 +23,10 @@ Content-Type: application/json
 }
 
 ### The LSP traceroute results table.<br/><br/><br/><br/>An entry is added to the zxAnLspTraceResultTable when an<br/><br/>zxAnLspTraceEntry is started by successful setting<br/><br/>zxAnLspTraceActiveStatus to activate(1).
-GET http://103.184.122.170/api/snmp/zxAnLspTraceResultTable
+GET http://localhost/api/snmp/zxAnLspTraceResultTable
 Authorization: Bearer {{token}}
 
 ### The LSP traceroute hop table for<br/><br/>keeping track of the results of LSP traceroute tests on<br/><br/>a per hop basis.
-GET http://103.184.122.170/api/snmp/zxAnLspTraceHopsTable
+GET http://localhost/api/snmp/zxAnLspTraceHopsTable
 Authorization: Bearer {{token}}
 

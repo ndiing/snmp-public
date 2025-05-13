@@ -1,9 +1,9 @@
 ### The table of watchdog function.
-GET http://103.184.122.170/api/snmp/zxAnCardWatchdogTable
+GET http://localhost/api/snmp/zxAnCardWatchdogTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnCardWatchdogTable/:id
+POST http://localhost/api/snmp/zxAnCardWatchdogTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

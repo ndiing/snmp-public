@@ -1,9 +1,9 @@
 ### This table provides the mechanism to control user management.
-GET http://103.184.122.170/api/snmp/zxAnCliUserConfTable
+GET http://localhost/api/snmp/zxAnCliUserConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnCliUserConfTable/:id
+POST http://localhost/api/snmp/zxAnCliUserConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -20,11 +20,11 @@ Content-Type: application/json
 }
 
 ### This table provides information of users that are currently logging<br/><br/>on this device
-GET http://103.184.122.170/api/snmp/zxAnCliActiveUserTable
+GET http://localhost/api/snmp/zxAnCliActiveUserTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnCliActiveUserTable/:id
+POST http://localhost/api/snmp/zxAnCliActiveUserTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

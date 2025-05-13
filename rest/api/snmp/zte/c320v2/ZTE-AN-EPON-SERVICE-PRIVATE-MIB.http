@@ -1,9 +1,9 @@
 ### EPON up bandwidth profile table
-GET http://103.184.122.170/api/snmp/zxEponBwProfileTable
+GET http://localhost/api/snmp/zxEponBwProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxEponBwProfileTable/:id
+POST http://localhost/api/snmp/zxEponBwProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -20,11 +20,11 @@ Content-Type: application/json
 }
 
 ### undefined
-GET http://103.184.122.170/api/snmp/sysAttrObjectTable
+GET http://localhost/api/snmp/sysAttrObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/sysAttrObjectTable/:id
+POST http://localhost/api/snmp/sysAttrObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -36,11 +36,11 @@ Content-Type: application/json
 }
 
 ### undefined
-GET http://103.184.122.170/api/snmp/oltLinkAdminTestObjectTable
+GET http://localhost/api/snmp/oltLinkAdminTestObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/oltLinkAdminTestObjectTable/:id
+POST http://localhost/api/snmp/oltLinkAdminTestObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -49,11 +49,11 @@ Content-Type: application/json
 }
 
 ### undefined
-GET http://103.184.122.170/api/snmp/oltLoopbackObjectTable
+GET http://localhost/api/snmp/oltLoopbackObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/oltLoopbackObjectTable/:id
+POST http://localhost/api/snmp/oltLoopbackObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -65,11 +65,11 @@ Content-Type: application/json
 }
 
 ### undefined
-GET http://103.184.122.170/api/snmp/onuAdminObjectTable
+GET http://localhost/api/snmp/onuAdminObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/onuAdminObjectTable/:id
+POST http://localhost/api/snmp/onuAdminObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -91,11 +91,11 @@ Content-Type: application/json
 }
 
 ### undefined
-GET http://103.184.122.170/api/snmp/oltEncryAdminObjectTable
+GET http://localhost/api/snmp/oltEncryAdminObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/oltEncryAdminObjectTable/:id
+POST http://localhost/api/snmp/oltEncryAdminObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -107,11 +107,11 @@ Content-Type: application/json
 }
 
 ### undefined
-GET http://103.184.122.170/api/snmp/lineEncryAdminObjectTable
+GET http://localhost/api/snmp/lineEncryAdminObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/lineEncryAdminObjectTable/:id
+POST http://localhost/api/snmp/lineEncryAdminObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -121,11 +121,11 @@ Content-Type: application/json
 }
 
 ### undefined
-GET http://103.184.122.170/api/snmp/slaUpAdminObjectTable
+GET http://localhost/api/snmp/slaUpAdminObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/slaUpAdminObjectTable/:id
+POST http://localhost/api/snmp/slaUpAdminObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -141,11 +141,11 @@ Content-Type: application/json
 }
 
 ### undefined
-GET http://103.184.122.170/api/snmp/slaDownAdminObjectTable
+GET http://localhost/api/snmp/slaDownAdminObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/slaDownAdminObjectTable/:id
+POST http://localhost/api/snmp/slaDownAdminObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -159,11 +159,11 @@ Content-Type: application/json
 }
 
 ### undefined
-GET http://103.184.122.170/api/snmp/slaP2pAdminObjectTable
+GET http://localhost/api/snmp/slaP2pAdminObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/slaP2pAdminObjectTable/:id
+POST http://localhost/api/snmp/slaP2pAdminObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -177,11 +177,11 @@ Content-Type: application/json
 }
 
 ### undefined
-GET http://103.184.122.170/api/snmp/p2pModeAdminObjectTable
+GET http://localhost/api/snmp/p2pModeAdminObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/p2pModeAdminObjectTable/:id
+POST http://localhost/api/snmp/p2pModeAdminObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -190,11 +190,11 @@ Content-Type: application/json
 }
 
 ### undefined
-GET http://103.184.122.170/api/snmp/p2pGroupAdminObjectTable
+GET http://localhost/api/snmp/p2pGroupAdminObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/p2pGroupAdminObjectTable/:id
+POST http://localhost/api/snmp/p2pGroupAdminObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -206,11 +206,11 @@ Content-Type: application/json
 }
 
 ### undefined
-GET http://103.184.122.170/api/snmp/p2pTransmitAdminObjectTable
+GET http://localhost/api/snmp/p2pTransmitAdminObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/p2pTransmitAdminObjectTable/:id
+POST http://localhost/api/snmp/p2pTransmitAdminObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -220,19 +220,19 @@ Content-Type: application/json
 }
 
 ### undefined
-GET http://103.184.122.170/api/snmp/onuUnPassedAdminAuthInfoTable
+GET http://localhost/api/snmp/onuUnPassedAdminAuthInfoTable
 Authorization: Bearer {{token}}
 
 ### undefined
-GET http://103.184.122.170/api/snmp/onuConfigAdminObjectTable
+GET http://localhost/api/snmp/onuConfigAdminObjectTable
 Authorization: Bearer {{token}}
 
 ### undefined
-GET http://103.184.122.170/api/snmp/oltPonAttrObjectTable
+GET http://localhost/api/snmp/oltPonAttrObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/oltPonAttrObjectTable/:id
+POST http://localhost/api/snmp/oltPonAttrObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -249,11 +249,11 @@ Content-Type: application/json
 }
 
 ### undefined
-GET http://103.184.122.170/api/snmp/onuUpStreamPriorityObjectTable
+GET http://localhost/api/snmp/onuUpStreamPriorityObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/onuUpStreamPriorityObjectTable/:id
+POST http://localhost/api/snmp/onuUpStreamPriorityObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -264,11 +264,11 @@ Content-Type: application/json
 }
 
 ### undefined
-GET http://103.184.122.170/api/snmp/onuDownStreamPriorityObjectTable
+GET http://localhost/api/snmp/onuDownStreamPriorityObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/onuDownStreamPriorityObjectTable/:id
+POST http://localhost/api/snmp/onuDownStreamPriorityObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -279,11 +279,11 @@ Content-Type: application/json
 }
 
 ### undefined
-GET http://103.184.122.170/api/snmp/zxEponOnuDbaPriorityObjectTable
+GET http://localhost/api/snmp/zxEponOnuDbaPriorityObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxEponOnuDbaPriorityObjectTable/:id
+POST http://localhost/api/snmp/zxEponOnuDbaPriorityObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -292,19 +292,19 @@ Content-Type: application/json
 }
 
 ### EPON ONU optical power measure
-GET http://103.184.122.170/api/snmp/zxEponOnuOpticalPowerMeasureObjectTable
+GET http://localhost/api/snmp/zxEponOnuOpticalPowerMeasureObjectTable
 Authorization: Bearer {{token}}
 
 ### EPON OLT optical power measure
-GET http://103.184.122.170/api/snmp/zxEponOltOpticalPowerMeasureObjectTable
+GET http://localhost/api/snmp/zxEponOltOpticalPowerMeasureObjectTable
 Authorization: Bearer {{token}}
 
 ### undefined
-GET http://103.184.122.170/api/snmp/zxEponHighPriorityFrameObjectTable
+GET http://localhost/api/snmp/zxEponHighPriorityFrameObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxEponHighPriorityFrameObjectTable/:id
+POST http://localhost/api/snmp/zxEponHighPriorityFrameObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -320,11 +320,11 @@ Content-Type: application/json
 }
 
 ### EPON OLT Maxrtt
-GET http://103.184.122.170/api/snmp/zxEponMaxrttObjectTable
+GET http://localhost/api/snmp/zxEponMaxrttObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxEponMaxrttObjectTable/:id
+POST http://localhost/api/snmp/zxEponMaxrttObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -333,11 +333,11 @@ Content-Type: application/json
 }
 
 ### EPON OLT priority queue map
-GET http://103.184.122.170/api/snmp/zxEponPriorityQueueMapObjectTable
+GET http://localhost/api/snmp/zxEponPriorityQueueMapObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxEponPriorityQueueMapObjectTable/:id
+POST http://localhost/api/snmp/zxEponPriorityQueueMapObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -361,11 +361,11 @@ Content-Type: application/json
 }
 
 ### EPON OLT rxhec
-GET http://103.184.122.170/api/snmp/zxEponRxHecObjectTable
+GET http://localhost/api/snmp/zxEponRxHecObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxEponRxHecObjectTable/:id
+POST http://localhost/api/snmp/zxEponRxHecObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -374,11 +374,11 @@ Content-Type: application/json
 }
 
 ### EPON Onu AutoCfg
-GET http://103.184.122.170/api/snmp/zxEponOnuAutoCfgObjectTable
+GET http://localhost/api/snmp/zxEponOnuAutoCfgObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxEponOnuAutoCfgObjectTable/:id
+POST http://localhost/api/snmp/zxEponOnuAutoCfgObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -388,11 +388,11 @@ Content-Type: application/json
 }
 
 ### EPON Ip Pool
-GET http://103.184.122.170/api/snmp/zxEponIpPoolObjectTable
+GET http://localhost/api/snmp/zxEponIpPoolObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxEponIpPoolObjectTable/:id
+POST http://localhost/api/snmp/zxEponIpPoolObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -409,15 +409,15 @@ Content-Type: application/json
 }
 
 ### EPON Run Ip
-GET http://103.184.122.170/api/snmp/zxEponRunIpObjectTable
+GET http://localhost/api/snmp/zxEponRunIpObjectTable
 Authorization: Bearer {{token}}
 
 ### EPON Ip PoolConjPon
-GET http://103.184.122.170/api/snmp/zxEponIpPoolConjPonObjectTable
+GET http://localhost/api/snmp/zxEponIpPoolConjPonObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxEponIpPoolConjPonObjectTable/:id
+POST http://localhost/api/snmp/zxEponIpPoolConjPonObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -427,11 +427,11 @@ Content-Type: application/json
 }
 
 ### EPON onu bandwidth profile config table
-GET http://103.184.122.170/api/snmp/zxEponOnuBwCfgTable
+GET http://localhost/api/snmp/zxEponOnuBwCfgTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxEponOnuBwCfgTable/:id
+POST http://localhost/api/snmp/zxEponOnuBwCfgTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -440,11 +440,11 @@ Content-Type: application/json
 }
 
 ### EPON Onu Ip Configure table
-GET http://103.184.122.170/api/snmp/zxEponOnuIpCfgTable
+GET http://localhost/api/snmp/zxEponOnuIpCfgTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxEponOnuIpCfgTable/:id
+POST http://localhost/api/snmp/zxEponOnuIpCfgTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -453,11 +453,11 @@ Content-Type: application/json
 }
 
 ### Determin if config is automaticly send to onu when onu online.
-GET http://103.184.122.170/api/snmp/zxEponOnuAutoConfigTable
+GET http://localhost/api/snmp/zxEponOnuAutoConfigTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxEponOnuAutoConfigTable/:id
+POST http://localhost/api/snmp/zxEponOnuAutoConfigTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -467,11 +467,11 @@ Content-Type: application/json
 }
 
 ### undefined
-GET http://103.184.122.170/api/snmp/onuCustomObjectTable
+GET http://localhost/api/snmp/onuCustomObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/onuCustomObjectTable/:id
+POST http://localhost/api/snmp/onuCustomObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -480,11 +480,11 @@ Content-Type: application/json
 }
 
 ### EPON vport management table.
-GET http://103.184.122.170/api/snmp/zxAnEponOnuVportMgmtTable
+GET http://localhost/api/snmp/zxAnEponOnuVportMgmtTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnEponOnuVportMgmtTable/:id
+POST http://localhost/api/snmp/zxAnEponOnuVportMgmtTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -493,11 +493,11 @@ Content-Type: application/json
 }
 
 ### Epon Queue Buffer Size Config table. This table contains<br/><br/>information about buffer size configured of ifIndex.<br/><br/>The level of the ifIndex is card number of OLT.
-GET http://103.184.122.170/api/snmp/zxEponQueueBufferObjectTable
+GET http://localhost/api/snmp/zxEponQueueBufferObjectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxEponQueueBufferObjectTable/:id
+POST http://localhost/api/snmp/zxEponQueueBufferObjectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -506,11 +506,11 @@ Content-Type: application/json
 }
 
 ### ONU extended attribute configuration table.
-GET http://103.184.122.170/api/snmp/zxEponOnuExtendedAttrTable
+GET http://localhost/api/snmp/zxEponOnuExtendedAttrTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxEponOnuExtendedAttrTable/:id
+POST http://localhost/api/snmp/zxEponOnuExtendedAttrTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -519,11 +519,11 @@ Content-Type: application/json
 }
 
 ### ifIndex table.
-GET http://103.184.122.170/api/snmp/zxEponIfIndexTable
+GET http://localhost/api/snmp/zxEponIfIndexTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxEponIfIndexTable/:id
+POST http://localhost/api/snmp/zxEponIfIndexTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -532,11 +532,11 @@ Content-Type: application/json
 }
 
 ### The ONU Auto-discovery configuration table.
-GET http://103.184.122.170/api/snmp/zxEponIfOnuAutoDiscoverTable
+GET http://localhost/api/snmp/zxEponIfOnuAutoDiscoverTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxEponIfOnuAutoDiscoverTable/:id
+POST http://localhost/api/snmp/zxEponIfOnuAutoDiscoverTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

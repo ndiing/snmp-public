@@ -1,9 +1,9 @@
 ### A table of system level information for each port supported by<br/><br/>the Port Access Entity.  An entry appears in this table for<br/><br/>each port of this system.<br/><br/><br/><br/>For the writeable objects in this table, the configured value<br/><br/>shall be stored in persistent memory and remain unchanged<br/><br/>across a re-initialization of the management system of the<br/><br/>entity.
-GET http://103.184.122.170/api/snmp/ieee8021XPaePortTable
+GET http://localhost/api/snmp/ieee8021XPaePortTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/ieee8021XPaePortTable/:id
+POST http://localhost/api/snmp/ieee8021XPaePortTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -17,11 +17,11 @@ Content-Type: application/json
 }
 
 ### A table of system level information for each interface<br/><br/>supported by PAC.<br/><br/><br/><br/>This table will be instantiated if the value of the object<br/><br/>ieee8021XPaePortCapabilities in the corresponding entry of the<br/><br/>ieee8021XPaePortTable has the bit 'macsecImplemented' off.<br/><br/><br/><br/>For the writeable objects in this table, the configured value<br/><br/>shall be stored in persistent memory and remain unchanged<br/><br/>across a re-initialization of the management system of the<br/><br/>entity.
-GET http://103.184.122.170/api/snmp/ieee8021XPacPortTable
+GET http://localhost/api/snmp/ieee8021XPacPortTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/ieee8021XPacPortTable/:id
+POST http://localhost/api/snmp/ieee8021XPacPortTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -30,19 +30,19 @@ Content-Type: application/json
 }
 
 ### A table of system level information for each port to support<br/><br/>the Logon Process(es) status information.<br/><br/><br/><br/>This table will be instantiated if the object<br/><br/>ieee8021XPaePortLogonEnable in the corresponding entry of the<br/><br/>ieee8021XPaePortTable is 'true'.
-GET http://103.184.122.170/api/snmp/ieee8021XPaePortLogonTable
+GET http://localhost/api/snmp/ieee8021XPaePortLogonTable
 Authorization: Bearer {{token}}
 
 ### A table of system level information for each port to support<br/><br/>Logon Process(es) session information.  This table maintains<br/><br/>session statistics for its associated Controlled Port,<br/><br/>suitable for communication to a RADIUS or other AAA server at<br/><br/>the end of a session for accounting purpose.<br/><br/><br/><br/>This table will be instantiated if the object<br/><br/>ieee8021XPaePortLogonEnable in the corresponding entry of the<br/><br/>ieee8021XPaePortTable is 'true'.
-GET http://103.184.122.170/api/snmp/ieee8021XPaePortSessionTable
+GET http://localhost/api/snmp/ieee8021XPaePortSessionTable
 Authorization: Bearer {{token}}
 
 ### The Logon Process may use Network Identities (NIDs) to manage<br/><br/>its use of authentication credentials, cached CAKs, and<br/><br/>announcements.  This table provides the NID information for<br/><br/>Logon Process.<br/><br/><br/><br/>For the writeable objects in this table, the configured value<br/><br/>shall be stored in persistent memory and remain unchanged<br/><br/>across a re-initialization of the management system of the<br/><br/>entity.
-GET http://103.184.122.170/api/snmp/ieee8021XLogonNIDTable
+GET http://localhost/api/snmp/ieee8021XLogonNIDTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/ieee8021XLogonNIDTable/:id
+POST http://localhost/api/snmp/ieee8021XLogonNIDTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -51,11 +51,11 @@ Content-Type: application/json
 }
 
 ### A table that contains the configuration objects for the<br/><br/>Authenticator PAE associated with each port.  This table will<br/><br/>be instantiated if the object ieee8021XPaePortAuthenticatorEnable in<br/><br/>the corresponding entry of the ieee8021XPaePortTable is 'true'.<br/><br/><br/><br/>For the writeable objects in this table, the configured value<br/><br/>shall be stored in persistent memory and remain unchanged<br/><br/>across a re-initialization of the management system of the<br/><br/>entity.
-GET http://103.184.122.170/api/snmp/ieee8021XAuthenticatorTable
+GET http://localhost/api/snmp/ieee8021XAuthenticatorTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/ieee8021XAuthenticatorTable/:id
+POST http://localhost/api/snmp/ieee8021XAuthenticatorTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -67,11 +67,11 @@ Content-Type: application/json
 }
 
 ### A table that contains the configuration objects for the<br/><br/>Supplicant PAE associated with each port.<br/><br/><br/><br/>For the writeable objects in this table, the configured value<br/><br/>shall be stored in persistent memory and remain unchanged<br/><br/>across a re-initialization of the management system of the<br/><br/>entity.
-GET http://103.184.122.170/api/snmp/ieee8021XSupplicantTable
+GET http://localhost/api/snmp/ieee8021XSupplicantTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/ieee8021XSupplicantTable/:id
+POST http://localhost/api/snmp/ieee8021XSupplicantTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -81,15 +81,15 @@ Content-Type: application/json
 }
 
 ### A table in system level contains the EAPOL statistics and<br/><br/>diagnostics information supported by PAE.
-GET http://103.184.122.170/api/snmp/ieee8021XEapolStatsTable
+GET http://localhost/api/snmp/ieee8021XEapolStatsTable
 Authorization: Bearer {{token}}
 
 ### A table of system level information for each interface<br/><br/>supported by the KaY (Key Agreement Entity).  This table will<br/><br/>be instantiated if the object ieee8021XPaePortKayMkaEnable in<br/><br/>the corresponding entry of the ieee8021XPaePortTable is 'true'.<br/><br/><br/><br/>The following terms are used to identify roles within the MKA<br/><br/>protocol or protocol scenarios and the MIB description :<br/><br/><br/><br/>participant : An instance of MKA, transmitting and receiving<br/><br/>frames protected by keys derived from a single CAK, and<br/><br/>operating with positive intent, obeying the protocol.<br/><br/><br/><br/>member: A participant that possesses the CAK that can be used<br/><br/>to prove liveness and to obtain membership in the CA under<br/><br/>discussion.<br/><br/><br/><br/>actor: The participant under discussion, usually in the KaY<br/><br/>being described.<br/><br/><br/><br/>partners: Participants or members attached to the same LAN as<br/><br/>the actor, excluding the actor.<br/><br/><br/><br/>principal actor: The actor participating in the MKA instance<br/><br/>that has elected the highest priority key server.<br/><br/><br/><br/>Each participant selects the live participant advertising the<br/><br/>highest priority as its key server provided that participant<br/><br/>has not selected another as its key server or is unwilling to<br/><br/>act as the key server.  If a key server cannot be selected SAKs<br/><br/>are not distributed.  In the event of a tie for highest<br/><br/>priority key server, the member with the highest priority SCI<br/><br/>is chosen.  For consistency with other uses of the SCI's MAC<br/><br/>Address component as a priority, numerically lower values of<br/><br/>the key server priority and SCI are accorded the highest<br/><br/>priority.<br/><br/><br/><br/>For the writeable objects in this table, the configured value<br/><br/>shall be stored in persistent memory and remain unchanged<br/><br/>across a re-initialization of the management system of the<br/><br/>entity.
-GET http://103.184.122.170/api/snmp/ieee8021XKayMkaTable
+GET http://localhost/api/snmp/ieee8021XKayMkaTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/ieee8021XKayMkaTable/:id
+POST http://localhost/api/snmp/ieee8021XKayMkaTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -101,11 +101,11 @@ Content-Type: application/json
 }
 
 ### A table for each MKA participant supported by the KaY MKA<br/><br/>entity.<br/><br/><br/><br/>For the writeable objects in this table, the configured value<br/><br/>shall be stored in persistent memory and remain unchanged<br/><br/>across a re-initialization of the management system of the<br/><br/>entity.
-GET http://103.184.122.170/api/snmp/ieee8021XKayMkaParticipantTable
+GET http://localhost/api/snmp/ieee8021XKayMkaParticipantTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/ieee8021XKayMkaParticipantTable/:id
+POST http://localhost/api/snmp/ieee8021XKayMkaParticipantTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -119,15 +119,15 @@ Content-Type: application/json
 }
 
 ### A table containing the lists of Live Peers and Potential Peers,<br/><br/>for all MKA instances for which the KaY is active.
-GET http://103.184.122.170/api/snmp/ieee8021XKayMkaPeerListTable
+GET http://localhost/api/snmp/ieee8021XKayMkaPeerListTable
 Authorization: Bearer {{token}}
 
 ### A table that contains the configuration objects for the network<br/><br/>announcement information for the Logon Process.<br/><br/><br/><br/>The detail operation of the Logon Process can vary depending on<br/><br/>the port-based network access control applications, and on the<br/><br/>capabilities supported by that implementation including, for<br/><br/>example, network discovery and roaming.  This table specifies<br/><br/>control variables that facilitate behaviors that are<br/><br/>potentially useful in a range of applications.  Implementations<br/><br/>may use and augment the variables specified, or may use<br/><br/>variables specific to the implementation.<br/><br/><br/><br/>For the writeable objects in this table, the configured value<br/><br/>shall be stored in persistent memory and remain unchanged<br/><br/>across a re-initialization of the management system of the<br/><br/>entity.
-GET http://103.184.122.170/api/snmp/ieee8021XNidConfigTable
+GET http://localhost/api/snmp/ieee8021XNidConfigTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/ieee8021XNidConfigTable/:id
+POST http://localhost/api/snmp/ieee8021XNidConfigTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -142,14 +142,14 @@ Content-Type: application/json
 }
 
 ### A table contains the status information that the Announcers<br/><br/>announce in the network announcement of the PAE system.<br/><br/><br/><br/>This table will be instantiated if the object<br/><br/>ieee8021XPaePortAnnouncerEnable in the corresponding entry of<br/><br/>the ieee8021XPaePortTable is 'true'.
-GET http://103.184.122.170/api/snmp/ieee8021XAnnounceTable
+GET http://localhost/api/snmp/ieee8021XAnnounceTable
 Authorization: Bearer {{token}}
 
 ### A table contains the status information that the Listeners<br/><br/>receive in the network announcement of the PAE system.<br/><br/><br/><br/>This table will be instantiated if the object<br/><br/>ieee8021XPaePortListenerEnable in the corresponding entry of the<br/><br/>ieee8021XPaePortTable is 'true'.
-GET http://103.184.122.170/api/snmp/ieee8021XAnnouncementTable
+GET http://localhost/api/snmp/ieee8021XAnnouncementTable
 Authorization: Bearer {{token}}
 
 ### A table contains the Cipher Suites information that the Listeners<br/><br/>receive in the network announcement of the PAE system.<br/><br/><br/><br/>This table will be instantiated if the object<br/><br/>ieee8021XPaePortListenerEnable in the corresponding entry of the<br/><br/>ieee8021XPaePortTable is 'true'.
-GET http://103.184.122.170/api/snmp/ieee8021XAnnouncementCipherSuitesTable
+GET http://localhost/api/snmp/ieee8021XAnnouncementCipherSuitesTable
 Authorization: Bearer {{token}}
 

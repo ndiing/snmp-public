@@ -1,9 +1,9 @@
 ### ADSL line information table.
-GET http://103.184.122.170/api/snmp/zxAnAdslLineTable
+GET http://localhost/api/snmp/zxAnAdslLineTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnAdslLineTable/:id
+POST http://localhost/api/snmp/zxAnAdslLineTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -13,11 +13,11 @@ Content-Type: application/json
 }
 
 ### ADSL line configuration profile table.
-GET http://103.184.122.170/api/snmp/zxAnAdslLineConfProfileTable
+GET http://localhost/api/snmp/zxAnAdslLineConfProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnAdslLineConfProfileTable/:id
+POST http://localhost/api/snmp/zxAnAdslLineConfProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -43,11 +43,11 @@ Content-Type: application/json
 }
 
 ### ADSL line alarm configuration profile table.
-GET http://103.184.122.170/api/snmp/zxAnAdslAlarmConfPrfTable
+GET http://localhost/api/snmp/zxAnAdslAlarmConfPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnAdslAlarmConfPrfTable/:id
+POST http://localhost/api/snmp/zxAnAdslAlarmConfPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -66,46 +66,46 @@ Content-Type: application/json
 }
 
 ### ATUC channel table.
-GET http://103.184.122.170/api/snmp/zxAnAdslAtucChanTable
+GET http://localhost/api/snmp/zxAnAdslAtucChanTable
 Authorization: Bearer {{token}}
 
 ### ATUR channel table.
-GET http://103.184.122.170/api/snmp/zxAnAdslAturChanTable
+GET http://localhost/api/snmp/zxAnAdslAturChanTable
 Authorization: Bearer {{token}}
 
 ### ATUC performance data table.
-GET http://103.184.122.170/api/snmp/zxAnAdslAtucPerfDataTable
+GET http://localhost/api/snmp/zxAnAdslAtucPerfDataTable
 Authorization: Bearer {{token}}
 
 ### ATUR performance data table.
-GET http://103.184.122.170/api/snmp/zxAnAdslAturPerfDataTable
+GET http://localhost/api/snmp/zxAnAdslAturPerfDataTable
 Authorization: Bearer {{token}}
 
 ### ATUC channel performance data table.
-GET http://103.184.122.170/api/snmp/zxAnAdslAtucChanPerfDataTable
+GET http://localhost/api/snmp/zxAnAdslAtucChanPerfDataTable
 Authorization: Bearer {{token}}
 
 ### ATUR channel performance data table.
-GET http://103.184.122.170/api/snmp/zxAnAdslAturChanPerfDataTable
+GET http://localhost/api/snmp/zxAnAdslAturChanPerfDataTable
 Authorization: Bearer {{token}}
 
 ### ATUC channel interval performance data table.
-GET http://103.184.122.170/api/snmp/zxAnAdslAtucChanIntervalTable
+GET http://localhost/api/snmp/zxAnAdslAtucChanIntervalTable
 Authorization: Bearer {{token}}
 
 ### ATUR channel interval performance data table.
-GET http://103.184.122.170/api/snmp/zxAnAdslAturChanIntervalTable
+GET http://localhost/api/snmp/zxAnAdslAturChanIntervalTable
 Authorization: Bearer {{token}}
 
 ### ATUC channel history 1 day performance data table.
-GET http://103.184.122.170/api/snmp/zxAnAdslAtucChanHist1DayTable
+GET http://localhost/api/snmp/zxAnAdslAtucChanHist1DayTable
 Authorization: Bearer {{token}}
 
 ### ATUR channel history 1 day performance data table.
-GET http://103.184.122.170/api/snmp/zxAnAdslAturChanHist1DayTable
+GET http://localhost/api/snmp/zxAnAdslAturChanHist1DayTable
 Authorization: Bearer {{token}}
 
 ### ATUC interval performance data table.
-GET http://103.184.122.170/api/snmp/zxAnAdslAtucIntervalTable
+GET http://localhost/api/snmp/zxAnAdslAtucIntervalTable
 Authorization: Bearer {{token}}
 

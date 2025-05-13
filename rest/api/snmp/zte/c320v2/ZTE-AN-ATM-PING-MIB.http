@@ -1,9 +1,9 @@
 ### An ATM loopback request table.
-GET http://103.184.122.170/api/snmp/zxAnAtmPingTestTable
+GET http://localhost/api/snmp/zxAnAtmPingTestTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnAtmPingTestTable/:id
+POST http://localhost/api/snmp/zxAnAtmPingTestTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

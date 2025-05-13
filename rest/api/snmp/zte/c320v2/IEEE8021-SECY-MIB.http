@@ -1,9 +1,9 @@
 ### A table of system level information for each interface<br/><br/>supported by the MAC security entity.  An entry appears in this<br/><br/>table for each interface with MAC security capability in this<br/><br/>system.<br/><br/><br/><br/>For the writeable objects in this table, the configured value<br/><br/>shall be stored in persistent memory and remain unchanged across<br/><br/>a re-initialization of the management system of the entity.
-GET http://103.184.122.170/api/snmp/secyIfTable
+GET http://localhost/api/snmp/secyIfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/secyIfTable/:id
+POST http://localhost/api/snmp/secyIfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -20,23 +20,23 @@ Content-Type: application/json
 }
 
 ### A table for providing information about the status of each<br/><br/>transmitting SC supported by the MAC security entity.
-GET http://103.184.122.170/api/snmp/secyTxSCTable
+GET http://localhost/api/snmp/secyTxSCTable
 Authorization: Bearer {{token}}
 
 ### A table for providing information about the status of each<br/><br/>transmitting SA supported by the MAC security entity.
-GET http://103.184.122.170/api/snmp/secyTxSATable
+GET http://localhost/api/snmp/secyTxSATable
 Authorization: Bearer {{token}}
 
 ### A table for providing information about the status of each<br/><br/>receiving SC supported by the MAC security entity.
-GET http://103.184.122.170/api/snmp/secyRxSCTable
+GET http://localhost/api/snmp/secyRxSCTable
 Authorization: Bearer {{token}}
 
 ### A table for providing information about the status of each<br/><br/>receiving SA supported by the MAC security entity.
-GET http://103.184.122.170/api/snmp/secyRxSATable
+GET http://localhost/api/snmp/secyRxSATable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/secyRxSATable/:id
+POST http://localhost/api/snmp/secyRxSATable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -45,11 +45,11 @@ Content-Type: application/json
 }
 
 ### The table of selectable cipher suites for the MAC security<br/><br/>entity.<br/><br/><br/><br/>For the writeable objects in this table, the configured value<br/><br/>shall be stored in persistent memory and remain unchanged across<br/><br/>a re-initialization of the management system of the entity.
-GET http://103.184.122.170/api/snmp/secyCipherSuiteTable
+GET http://localhost/api/snmp/secyCipherSuiteTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/secyCipherSuiteTable/:id
+POST http://localhost/api/snmp/secyCipherSuiteTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -65,22 +65,22 @@ Content-Type: application/json
 }
 
 ### A table that contains the statistics objects for each<br/><br/>transmitting SA in the MAC security entity.
-GET http://103.184.122.170/api/snmp/secyTxSAStatsTable
+GET http://localhost/api/snmp/secyTxSAStatsTable
 Authorization: Bearer {{token}}
 
 ### A table that contains statistics information for each<br/><br/>transmitting SC in the MAC security entity.
-GET http://103.184.122.170/api/snmp/secyTxSCStatsTable
+GET http://localhost/api/snmp/secyTxSCStatsTable
 Authorization: Bearer {{token}}
 
 ### A table that contains the statistics objects for each<br/><br/>receiving SA in the MAC security entity.
-GET http://103.184.122.170/api/snmp/secyRxSAStatsTable
+GET http://localhost/api/snmp/secyRxSAStatsTable
 Authorization: Bearer {{token}}
 
 ### A table for the statistics information of each receiving SC<br/><br/>supported by the MAC security entity.
-GET http://103.184.122.170/api/snmp/secyRxSCStatsTable
+GET http://localhost/api/snmp/secyRxSCStatsTable
 Authorization: Bearer {{token}}
 
 ### A table for the statistics information of each SecY supported by<br/><br/>the MAC security entity.
-GET http://103.184.122.170/api/snmp/secyStatsTable
+GET http://localhost/api/snmp/secyStatsTable
 Authorization: Bearer {{token}}
 

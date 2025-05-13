@@ -1,13 +1,13 @@
 ### A table containing NTP server information.
-GET http://103.184.122.170/api/snmp/zxr10ntpServerTable
+GET http://localhost/api/snmp/zxr10ntpServerTable
 Authorization: Bearer {{token}}
 
 ### A table containing NTP server information.Setting the<br/>priority leaf node results in initializing the other leaf<br/>nodes except the indexs and rowStatus.Suggest the whole<br/>table setting.
-GET http://103.184.122.170/api/snmp/zxr10ntpServerCfgTable
+GET http://localhost/api/snmp/zxr10ntpServerCfgTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxr10ntpServerCfgTable/:id
+POST http://localhost/api/snmp/zxr10ntpServerCfgTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -20,11 +20,11 @@ Content-Type: application/json
 }
 
 ### A table containing NTP peer information.Setting the<br/>priority leaf node results in initializing the other leaf<br/>nodes except the indexs and rowStatus.Suggest the whole<br/>table setting.
-GET http://103.184.122.170/api/snmp/zxr10ntpPeerCfgTable
+GET http://localhost/api/snmp/zxr10ntpPeerCfgTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxr10ntpPeerCfgTable/:id
+POST http://localhost/api/snmp/zxr10ntpPeerCfgTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -36,11 +36,11 @@ Content-Type: application/json
 }
 
 ### A table containing NTP server information.Setting the<br/>priority leaf node results in initializing the other leaf<br/>nodes except the indexs and rowStatus.Suggest the whole<br/>table setting.
-GET http://103.184.122.170/api/snmp/zxr10ntpServerWithDnsCfgTable
+GET http://localhost/api/snmp/zxr10ntpServerWithDnsCfgTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxr10ntpServerWithDnsCfgTable/:id
+POST http://localhost/api/snmp/zxr10ntpServerWithDnsCfgTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -53,11 +53,11 @@ Content-Type: application/json
 }
 
 ### A table containing NTP peer information.Setting the<br/>priority leaf node results in initializing the other leaf<br/>nodes except the indexs and rowStatus.Suggest the whole<br/>table setting.
-GET http://103.184.122.170/api/snmp/zxr10ntpPeerWithDnsCfgTable
+GET http://localhost/api/snmp/zxr10ntpPeerWithDnsCfgTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxr10ntpPeerWithDnsCfgTable/:id
+POST http://localhost/api/snmp/zxr10ntpPeerWithDnsCfgTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -69,11 +69,11 @@ Content-Type: application/json
 }
 
 ### A table containing NTP broadcast Client information.
-GET http://103.184.122.170/api/snmp/zxr10ntpBroadcastClientTable
+GET http://localhost/api/snmp/zxr10ntpBroadcastClientTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxr10ntpBroadcastClientTable/:id
+POST http://localhost/api/snmp/zxr10ntpBroadcastClientTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -82,11 +82,11 @@ Content-Type: application/json
 }
 
 ### A table containing NTP broadcast Server information.<br/>Setting some leaf nodes results in initializing the other<br/>leaf nodes except the indexs and rowStatus.Suggest the<br/>whole table setting.
-GET http://103.184.122.170/api/snmp/zxr10ntpBroadcastServerTable
+GET http://localhost/api/snmp/zxr10ntpBroadcastServerTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxr10ntpBroadcastServerTable/:id
+POST http://localhost/api/snmp/zxr10ntpBroadcastServerTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -97,11 +97,11 @@ Content-Type: application/json
 }
 
 ### A table containing NTP multicast Client information.
-GET http://103.184.122.170/api/snmp/zxr10ntpMulticastClientTable
+GET http://localhost/api/snmp/zxr10ntpMulticastClientTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxr10ntpMulticastClientTable/:id
+POST http://localhost/api/snmp/zxr10ntpMulticastClientTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -110,11 +110,11 @@ Content-Type: application/json
 }
 
 ### A table containing NTP multicast Server information.<br/>Setting some leaf nodes results in initializing the other<br/>leaf nodes except the indexs and rowStatus.Suggest the<br/>whole table setting.
-GET http://103.184.122.170/api/snmp/zxr10ntpMulticastServerTable
+GET http://localhost/api/snmp/zxr10ntpMulticastServerTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxr10ntpMulticastServerTable/:id
+POST http://localhost/api/snmp/zxr10ntpMulticastServerTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -126,11 +126,11 @@ Content-Type: application/json
 }
 
 ### A table containing NTP Authentication information.
-GET http://103.184.122.170/api/snmp/zxr10ntpAuthTable
+GET http://localhost/api/snmp/zxr10ntpAuthTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxr10ntpAuthTable/:id
+POST http://localhost/api/snmp/zxr10ntpAuthTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -143,6 +143,6 @@ Content-Type: application/json
 }
 
 ### A table containing NTP association information.
-GET http://103.184.122.170/api/snmp/zxr10ntpAssocTable
+GET http://localhost/api/snmp/zxr10ntpAssocTable
 Authorization: Bearer {{token}}
 

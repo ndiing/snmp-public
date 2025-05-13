@@ -1,4 +1,4 @@
 ### This table includes the software updating status<br/><br/>information of the fan trays.
-GET http://103.184.122.170/api/snmp/zxAnFanTraySwUpdateStatusTable
+GET http://localhost/api/snmp/zxAnFanTraySwUpdateStatusTable
 Authorization: Bearer {{token}}
 

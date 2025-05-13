@@ -1,9 +1,9 @@
 ### ND filter table based on VLAN.<br/><br/>If the VLAN item is set, the NE will dispatch the ND<br/><br/>packets downward by check the out port strictly.
-GET http://103.184.122.170/api/snmp/zxAnNdFilterVlanConfTable
+GET http://localhost/api/snmp/zxAnNdFilterVlanConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnNdFilterVlanConfTable/:id
+POST http://localhost/api/snmp/zxAnNdFilterVlanConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

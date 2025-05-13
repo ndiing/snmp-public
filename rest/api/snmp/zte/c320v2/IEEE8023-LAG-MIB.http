@@ -1,9 +1,9 @@
 ### A table that contains information about every<br/>Aggregator that is associated with this System.
-GET http://103.184.122.170/api/snmp/dot3adAggTable
+GET http://localhost/api/snmp/dot3adAggTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/dot3adAggTable/:id
+POST http://localhost/api/snmp/dot3adAggTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -14,15 +14,15 @@ Content-Type: application/json
 }
 
 ### A table that contains a list of all the ports<br/>associated with each Aggregator.
-GET http://103.184.122.170/api/snmp/dot3adAggPortListTable
+GET http://localhost/api/snmp/dot3adAggPortListTable
 Authorization: Bearer {{token}}
 
 ### A table that contains Link Aggregation Control<br/>configuration information about every<br/>Aggregation Port associated with this device.<br/>A row appears in this table for each physical port.
-GET http://103.184.122.170/api/snmp/dot3adAggPortTable
+GET http://localhost/api/snmp/dot3adAggPortTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/dot3adAggPortTable/:id
+POST http://localhost/api/snmp/dot3adAggPortTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -41,10 +41,10 @@ Content-Type: application/json
 }
 
 ### A table that contains Link Aggregation information<br/>about every port that is associated with this device.<br/>A row appears in this table for each physical port.
-GET http://103.184.122.170/api/snmp/dot3adAggPortStatsTable
+GET http://localhost/api/snmp/dot3adAggPortStatsTable
 Authorization: Bearer {{token}}
 
 ### A table that contains Link Aggregation debug<br/>information about every port that is associated with<br/>this device.  A row appears in this table for each<br/>physical port.
-GET http://103.184.122.170/api/snmp/dot3adAggPortDebugTable
+GET http://localhost/api/snmp/dot3adAggPortDebugTable
 Authorization: Bearer {{token}}
 

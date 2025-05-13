@@ -1,9 +1,9 @@
 ### This table contains ZESS domain information.
-GET http://103.184.122.170/api/snmp/zxAnZessDomainTable
+GET http://localhost/api/snmp/zxAnZessDomainTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnZessDomainTable/:id
+POST http://localhost/api/snmp/zxAnZessDomainTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

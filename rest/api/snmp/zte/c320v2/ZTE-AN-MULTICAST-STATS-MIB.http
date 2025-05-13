@@ -1,9 +1,9 @@
 ### Multicast group traffic table.
-GET http://103.184.122.170/api/snmp/zxAnMcastGrpTrafficTable
+GET http://localhost/api/snmp/zxAnMcastGrpTrafficTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnMcastGrpTrafficTable/:id
+POST http://localhost/api/snmp/zxAnMcastGrpTrafficTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

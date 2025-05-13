@@ -1,9 +1,9 @@
 ### Current performance data table of interfaces.
-GET http://103.184.122.170/api/snmp/zxAnEthIfCurrStatsTable
+GET http://localhost/api/snmp/zxAnEthIfCurrStatsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnEthIfCurrStatsTable/:id
+POST http://localhost/api/snmp/zxAnEthIfCurrStatsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -12,11 +12,11 @@ Content-Type: application/json
 }
 
 ### Current performance data table of interfaces.
-GET http://103.184.122.170/api/snmp/zxAnBrgIfCurrStatsTable
+GET http://localhost/api/snmp/zxAnBrgIfCurrStatsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnBrgIfCurrStatsTable/:id
+POST http://localhost/api/snmp/zxAnBrgIfCurrStatsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -25,11 +25,11 @@ Content-Type: application/json
 }
 
 ### Current performance data table of LAG.
-GET http://103.184.122.170/api/snmp/zxAnLagIfCurrStatsTable
+GET http://localhost/api/snmp/zxAnLagIfCurrStatsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnLagIfCurrStatsTable/:id
+POST http://localhost/api/snmp/zxAnLagIfCurrStatsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -38,15 +38,15 @@ Content-Type: application/json
 }
 
 ### The rate statistics table of interfaces.
-GET http://103.184.122.170/api/snmp/zxAnIfRateStatsTable
+GET http://localhost/api/snmp/zxAnIfRateStatsTable
 Authorization: Bearer {{token}}
 
 ### Bandwidth using ratio and threshold table.
-GET http://103.184.122.170/api/snmp/zxAnIfBandwidthUsingTable
+GET http://localhost/api/snmp/zxAnIfBandwidthUsingTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnIfBandwidthUsingTable/:id
+POST http://localhost/api/snmp/zxAnIfBandwidthUsingTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -56,15 +56,15 @@ Content-Type: application/json
 }
 
 ### The number of interfaces statistics table.
-GET http://103.184.122.170/api/snmp/zxAnIfNumberStatsTable
+GET http://localhost/api/snmp/zxAnIfNumberStatsTable
 Authorization: Bearer {{token}}
 
 ### Interface VLAN statistic table.
-GET http://103.184.122.170/api/snmp/zxAnIfVlanCurrStatsTable
+GET http://localhost/api/snmp/zxAnIfVlanCurrStatsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnIfVlanCurrStatsTable/:id
+POST http://localhost/api/snmp/zxAnIfVlanCurrStatsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -74,15 +74,15 @@ Content-Type: application/json
 }
 
 ### Interface VLAN rate statistic table.
-GET http://103.184.122.170/api/snmp/zxAnIfVlanRateStatsTable
+GET http://localhost/api/snmp/zxAnIfVlanRateStatsTable
 Authorization: Bearer {{token}}
 
 ### Interface S-VID and C-VID statistic table.
-GET http://103.184.122.170/api/snmp/zxAnIfVlan2CurrStatsTable
+GET http://localhost/api/snmp/zxAnIfVlan2CurrStatsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnIfVlan2CurrStatsTable/:id
+POST http://localhost/api/snmp/zxAnIfVlan2CurrStatsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -91,11 +91,11 @@ Content-Type: application/json
 }
 
 ### Enable/disable the bridge interface current performance<br/><br/>statistics.
-GET http://103.184.122.170/api/snmp/zxAnBrgIfCurrPerfStatsTable
+GET http://localhost/api/snmp/zxAnBrgIfCurrPerfStatsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnBrgIfCurrPerfStatsTable/:id
+POST http://localhost/api/snmp/zxAnBrgIfCurrPerfStatsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -104,11 +104,11 @@ Content-Type: application/json
 }
 
 ### Enable/disable the interface S-VID and C-VID current performance<br/><br/>statistics.
-GET http://103.184.122.170/api/snmp/zxAnIfVlanCurrPerfStatsTable
+GET http://localhost/api/snmp/zxAnIfVlanCurrPerfStatsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnIfVlanCurrPerfStatsTable/:id
+POST http://localhost/api/snmp/zxAnIfVlanCurrPerfStatsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

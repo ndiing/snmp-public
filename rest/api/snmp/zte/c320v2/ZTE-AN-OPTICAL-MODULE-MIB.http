@@ -1,9 +1,9 @@
 ### This table includes the optical module threshold profile.
-GET http://103.184.122.170/api/snmp/zxAnOpticalModuleAlmPrfTable
+GET http://localhost/api/snmp/zxAnOpticalModuleAlmPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnOpticalModuleAlmPrfTable/:id
+POST http://localhost/api/snmp/zxAnOpticalModuleAlmPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -24,11 +24,11 @@ Content-Type: application/json
 }
 
 ### This table includes the optical module profile configuration.
-GET http://103.184.122.170/api/snmp/zxAnOpticalAlmPrfIfConfTable
+GET http://localhost/api/snmp/zxAnOpticalAlmPrfIfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnOpticalAlmPrfIfConfTable/:id
+POST http://localhost/api/snmp/zxAnOpticalAlmPrfIfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -37,15 +37,15 @@ Content-Type: application/json
 }
 
 ### This table includes the optical module information.
-GET http://103.184.122.170/api/snmp/zxAnOpticalModuleInfoTable
+GET http://localhost/api/snmp/zxAnOpticalModuleInfoTable
 Authorization: Bearer {{token}}
 
 ### This table includes the ALS configuration of the optical module.
-GET http://103.184.122.170/api/snmp/zxAnOpticalAlsIfConfTable
+GET http://localhost/api/snmp/zxAnOpticalAlsIfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnOpticalAlsIfConfTable/:id
+POST http://localhost/api/snmp/zxAnOpticalAlsIfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -57,11 +57,11 @@ Content-Type: application/json
 }
 
 ### This table includes the optical module configuration.
-GET http://103.184.122.170/api/snmp/zxAnOpticalModuleConfTable
+GET http://localhost/api/snmp/zxAnOpticalModuleConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnOpticalModuleConfTable/:id
+POST http://localhost/api/snmp/zxAnOpticalModuleConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -73,11 +73,11 @@ Content-Type: application/json
 }
 
 ### This table includes the optical module channel information.
-GET http://103.184.122.170/api/snmp/zxAnOpticalModuleChanInfoTable
+GET http://localhost/api/snmp/zxAnOpticalModuleChanInfoTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnOpticalModuleChanInfoTable/:id
+POST http://localhost/api/snmp/zxAnOpticalModuleChanInfoTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -86,6 +86,6 @@ Content-Type: application/json
 }
 
 ### This table includes the optical module class value.<br/><br/>NOTE: No recommended to develop this function in EMS.
-GET http://103.184.122.170/api/snmp/zxAnOpticalModuleClassValueTable
+GET http://localhost/api/snmp/zxAnOpticalModuleClassValueTable
 Authorization: Bearer {{token}}
 

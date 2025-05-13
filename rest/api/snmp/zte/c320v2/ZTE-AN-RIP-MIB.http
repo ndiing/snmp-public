@@ -1,9 +1,9 @@
 ### RIP redistribution table.
-GET http://103.184.122.170/api/snmp/zxAnRipRedistributionTable
+GET http://localhost/api/snmp/zxAnRipRedistributionTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnRipRedistributionTable/:id
+POST http://localhost/api/snmp/zxAnRipRedistributionTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -13,11 +13,11 @@ Content-Type: application/json
 }
 
 ### RIP network table.
-GET http://103.184.122.170/api/snmp/zxAnRipNetworkTable
+GET http://localhost/api/snmp/zxAnRipNetworkTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnRipNetworkTable/:id
+POST http://localhost/api/snmp/zxAnRipNetworkTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -27,6 +27,6 @@ Content-Type: application/json
 }
 
 ### RIP route advertisement table.
-GET http://103.184.122.170/api/snmp/zxAnRipAdvertiseRouteTable
+GET http://localhost/api/snmp/zxAnRipAdvertiseRouteTable
 Authorization: Bearer {{token}}
 

@@ -1,9 +1,9 @@
 ### The data path table contains RowPointers indicating the start of<br/>the functional data path for each interface and traffic direction<br/>in this device. These may merge, or be separated into parallel<br/>data paths.
-GET http://103.184.122.170/api/snmp/diffServDataPathTable
+GET http://localhost/api/snmp/diffServDataPathTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/diffServDataPathTable/:id
+POST http://localhost/api/snmp/diffServDataPathTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -14,11 +14,11 @@ Content-Type: application/json
 }
 
 ### This table enumerates all the diffserv classifier functional<br/>data path elements of this device.  The actual classification<br/>definitions are defined in diffServClfrElementTable entries<br/>belonging to each classifier.<br/><br/>An entry in this table, pointed to by a RowPointer specifying an<br/>instance of diffServClfrStatus, is frequently used as the name<br/>for a set of classifier elements, which all use the index<br/>diffServClfrId. Per the semantics of the classifier element<br/>table, these entries constitute one or more unordered sets of<br/>tests which may be simultaneously applied to a message to<br/>classify it.<br/><br/>The primary function of this table is to ensure that the value of<br/>diffServClfrId is unique before attempting to use it in creating<br/>a diffServClfrElementEntry. Therefore, the diffServClfrEntry must<br/>be created on the same SET as the diffServClfrElementEntry, or<br/>before the diffServClfrElementEntry is created.
-GET http://103.184.122.170/api/snmp/diffServClfrTable
+GET http://localhost/api/snmp/diffServClfrTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/diffServClfrTable/:id
+POST http://localhost/api/snmp/diffServClfrTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -28,11 +28,11 @@ Content-Type: application/json
 }
 
 ### The classifier element table enumerates the relationship between<br/>classification patterns and subsequent downstream Differentiated<br/>Services Functional Data Path elements.<br/>diffServClfrElementSpecific points to a filter that specifies the<br/>classification parameters. A classifier may use filter tables of<br/>different types together.<br/><br/>One example of a filter table defined in this MIB is<br/>diffServMultiFieldClfrTable, for IP Multi-Field Classifiers<br/>(MFCs). Such an entry might identify anything from a single<br/>micro-flow (an identifiable sub-session packet stream directed<br/>from one sending transport to the receiving transport or<br/>transports), or aggregates of those such as the traffic from a<br/>host, traffic for an application, or traffic between two hosts<br/>using an application and a given DSCP. The standard Behavior<br/>Aggregate used in the Differentiated Services Architecture is<br/>encoded as a degenerate case of such an aggregate - the traffic<br/>using a particular DSCP value.<br/><br/>Filter tables for other filter types may be defined elsewhere.
-GET http://103.184.122.170/api/snmp/diffServClfrElementTable
+GET http://localhost/api/snmp/diffServClfrElementTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/diffServClfrElementTable/:id
+POST http://localhost/api/snmp/diffServClfrElementTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -45,11 +45,11 @@ Content-Type: application/json
 }
 
 ### A table of IP Multi-field Classifier filter entries that a<br/>system may use to identify IP traffic.
-GET http://103.184.122.170/api/snmp/diffServMultiFieldClfrTable
+GET http://localhost/api/snmp/diffServMultiFieldClfrTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/diffServMultiFieldClfrTable/:id
+POST http://localhost/api/snmp/diffServMultiFieldClfrTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -71,11 +71,11 @@ Content-Type: application/json
 }
 
 ### This table enumerates specific meters that a system may use to<br/>police a stream of traffic. The traffic stream to be metered is<br/>determined by the Differentiated Services Functional Data Path<br/>Element(s) upstream of the meter i.e. by the object(s) that point<br/>to each entry in this table.  This may include all traffic on an<br/>interface.<br/><br/>Specific meter details are to be found in table entry referenced<br/>by diffServMeterSpecific.
-GET http://103.184.122.170/api/snmp/diffServMeterTable
+GET http://localhost/api/snmp/diffServMeterTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/diffServMeterTable/:id
+POST http://localhost/api/snmp/diffServMeterTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -88,11 +88,11 @@ Content-Type: application/json
 }
 
 ### This table enumerates a single set of token bucket meter<br/>parameters that a system may use to police a stream of traffic.<br/>Such meters are modeled here as having a single rate and a single<br/>burst size. Multiple entries are used when multiple rates/burst<br/>sizes are needed.
-GET http://103.184.122.170/api/snmp/diffServTBParamTable
+GET http://localhost/api/snmp/diffServTBParamTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/diffServTBParamTable/:id
+POST http://localhost/api/snmp/diffServTBParamTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -106,11 +106,11 @@ Content-Type: application/json
 }
 
 ### The Action Table enumerates actions that can be performed to a<br/>stream of traffic. Multiple actions can be concatenated. For<br/>example, traffic exiting from a meter may be counted, marked, and<br/>potentially dropped before entering a queue.<br/><br/>Specific actions are indicated by diffServActionSpecific which<br/>points to an entry of a specific action type parameterizing the<br/>action in detail.
-GET http://103.184.122.170/api/snmp/diffServActionTable
+GET http://localhost/api/snmp/diffServActionTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/diffServActionTable/:id
+POST http://localhost/api/snmp/diffServActionTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -123,15 +123,15 @@ Content-Type: application/json
 }
 
 ### This table enumerates specific DSCPs used for marking or<br/>remarking the DSCP field of IP packets. The entries of this table<br/>may be referenced by a diffServActionSpecific attribute.
-GET http://103.184.122.170/api/snmp/diffServDscpMarkActTable
+GET http://localhost/api/snmp/diffServDscpMarkActTable
 Authorization: Bearer {{token}}
 
 ### This table contains counters for all the traffic passing through<br/>an action element.
-GET http://103.184.122.170/api/snmp/diffServCountActTable
+GET http://localhost/api/snmp/diffServCountActTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/diffServCountActTable/:id
+POST http://localhost/api/snmp/diffServCountActTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -141,11 +141,11 @@ Content-Type: application/json
 }
 
 ### The algorithmic drop table contains entries describing an<br/>element that drops packets according to some algorithm.
-GET http://103.184.122.170/api/snmp/diffServAlgDropTable
+GET http://localhost/api/snmp/diffServAlgDropTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/diffServAlgDropTable/:id
+POST http://localhost/api/snmp/diffServAlgDropTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -160,11 +160,11 @@ Content-Type: application/json
 }
 
 ### The random drop table contains entries describing a process that<br/>drops packets randomly. Entries in this table are pointed to by<br/>diffServAlgDropSpecific.
-GET http://103.184.122.170/api/snmp/diffServRandomDropTable
+GET http://localhost/api/snmp/diffServRandomDropTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/diffServRandomDropTable/:id
+POST http://localhost/api/snmp/diffServRandomDropTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -181,11 +181,11 @@ Content-Type: application/json
 }
 
 ### The Queue Table enumerates the individual queues.  Note that the<br/>MIB models queuing systems as composed of individual queues, one<br/>per class of traffic, even though they may in fact be structured<br/>as classes of traffic scheduled using a common calendar queue, or<br/>in other ways.
-GET http://103.184.122.170/api/snmp/diffServQTable
+GET http://localhost/api/snmp/diffServQTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/diffServQTable/:id
+POST http://localhost/api/snmp/diffServQTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -198,11 +198,11 @@ Content-Type: application/json
 }
 
 ### The Scheduler Table enumerates packet schedulers. Multiple<br/>scheduling algorithms can be used on a given data path, with each<br/>algorithm described by one diffServSchedulerEntry.
-GET http://103.184.122.170/api/snmp/diffServSchedulerTable
+GET http://localhost/api/snmp/diffServSchedulerTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/diffServSchedulerTable/:id
+POST http://localhost/api/snmp/diffServSchedulerTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -216,11 +216,11 @@ Content-Type: application/json
 }
 
 ### The Minimum Rate Parameters Table enumerates individual sets of<br/>scheduling parameter that can be used/reused by Queues and<br/>Schedulers.
-GET http://103.184.122.170/api/snmp/diffServMinRateTable
+GET http://localhost/api/snmp/diffServMinRateTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/diffServMinRateTable/:id
+POST http://localhost/api/snmp/diffServMinRateTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -233,11 +233,11 @@ Content-Type: application/json
 }
 
 ### The Maximum Rate Parameter Table enumerates individual sets of<br/>scheduling parameter that can be used/reused by Queues and<br/>Schedulers.
-GET http://103.184.122.170/api/snmp/diffServMaxRateTable
+GET http://localhost/api/snmp/diffServMaxRateTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/diffServMaxRateTable/:id
+POST http://localhost/api/snmp/diffServMaxRateTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

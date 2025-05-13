@@ -1,4 +1,4 @@
 ### The (conceptual) table listing the capabilities of<br/><br/>the local SNMP application acting as a command<br/><br/>responder with respect to various MIB modules.<br/><br/>SNMP entities having dynamically-configurable support<br/><br/>of MIB modules will have a dynamically-varying number<br/><br/>of conceptual rows.
-GET http://103.184.122.170/api/snmp/sysORTable
+GET http://localhost/api/snmp/sysORTable
 Authorization: Bearer {{token}}
 

@@ -1,16 +1,16 @@
 ### Configure Aggregating Port parameters.
-GET http://103.184.122.170/api/snmp/lacpAggregatingTable
+GET http://localhost/api/snmp/lacpAggregatingTable
 Authorization: Bearer {{token}}
 
 ### Aggregating port bound aggregated port.
-GET http://103.184.122.170/api/snmp/lacpAggBoundTable
+GET http://localhost/api/snmp/lacpAggBoundTable
 Authorization: Bearer {{token}}
 
 ### Configure Aggregating Port mclag parameters.
-GET http://103.184.122.170/api/snmp/zxr10LacpAggMclagTable
+GET http://localhost/api/snmp/zxr10LacpAggMclagTable
 Authorization: Bearer {{token}}
 
 ### Configure Aggregated Port parameters.
-GET http://103.184.122.170/api/snmp/lacpAggregatedTable
+GET http://localhost/api/snmp/lacpAggregatedTable
 Authorization: Bearer {{token}}
 

@@ -1,9 +1,9 @@
 ### Virtual MAC address VLAN table.
-GET http://103.184.122.170/api/snmp/zxAnVmacVlanTable
+GET http://localhost/api/snmp/zxAnVmacVlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVmacVlanTable/:id
+POST http://localhost/api/snmp/zxAnVmacVlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -13,11 +13,11 @@ Content-Type: application/json
 }
 
 ### Virtual MAC address interface configuration table.
-GET http://103.184.122.170/api/snmp/zxAnVmacIfConfTable
+GET http://localhost/api/snmp/zxAnVmacIfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVmacIfConfTable/:id
+POST http://localhost/api/snmp/zxAnVmacIfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -27,11 +27,11 @@ Content-Type: application/json
 }
 
 ### Interface virtual MAC address translation table.
-GET http://103.184.122.170/api/snmp/zxAnVmacIfTranslateTable
+GET http://localhost/api/snmp/zxAnVmacIfTranslateTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVmacIfTranslateTable/:id
+POST http://localhost/api/snmp/zxAnVmacIfTranslateTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -40,11 +40,11 @@ Content-Type: application/json
 }
 
 ### Interface reserved MAC address table.
-GET http://103.184.122.170/api/snmp/zxAnVmacIfReservedMacTable
+GET http://localhost/api/snmp/zxAnVmacIfReservedMacTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVmacIfReservedMacTable/:id
+POST http://localhost/api/snmp/zxAnVmacIfReservedMacTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -53,11 +53,11 @@ Content-Type: application/json
 }
 
 ### Virtual MAC address profile table.
-GET http://103.184.122.170/api/snmp/zxAnVmacProfileTable
+GET http://localhost/api/snmp/zxAnVmacProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVmacProfileTable/:id
+POST http://localhost/api/snmp/zxAnVmacProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -66,11 +66,11 @@ Content-Type: application/json
 }
 
 ### Virtual MAC address profile item table.
-GET http://103.184.122.170/api/snmp/zxAnVmacProfileItemTable
+GET http://localhost/api/snmp/zxAnVmacProfileItemTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVmacProfileItemTable/:id
+POST http://localhost/api/snmp/zxAnVmacProfileItemTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

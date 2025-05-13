@@ -1,9 +1,9 @@
 ### This table includes the virtual ethernet interface mapping<br/>configuration information.
-GET http://103.184.122.170/api/snmp/zxAnVEthMapConfTable
+GET http://localhost/api/snmp/zxAnVEthMapConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVEthMapConfTable/:id
+POST http://localhost/api/snmp/zxAnVEthMapConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

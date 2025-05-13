@@ -1,9 +1,9 @@
 ### Remote unit channel TCP port allocation table.<br/><br/>A row in this table can be create or delete only when<br/><br/>zxAnRuChannelTcpPortAutoAllocEn is enabled(1).
-GET http://103.184.122.170/api/snmp/zxAnRuChannelTcpPortTable
+GET http://localhost/api/snmp/zxAnRuChannelTcpPortTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnRuChannelTcpPortTable/:id
+POST http://localhost/api/snmp/zxAnRuChannelTcpPortTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

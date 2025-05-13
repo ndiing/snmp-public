@@ -1,9 +1,9 @@
 ### Virtual network device configuration table.
-GET http://103.184.122.170/api/snmp/zxr10VndConfTable
+GET http://localhost/api/snmp/zxr10VndConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxr10VndConfTable/:id
+POST http://localhost/api/snmp/zxr10VndConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -15,11 +15,11 @@ Content-Type: application/json
 }
 
 ### Virtual network device MPU deployment table.
-GET http://103.184.122.170/api/snmp/zxr10VndDeployMpuTable
+GET http://localhost/api/snmp/zxr10VndDeployMpuTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxr10VndDeployMpuTable/:id
+POST http://localhost/api/snmp/zxr10VndDeployMpuTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -28,11 +28,11 @@ Content-Type: application/json
 }
 
 ### Virtual network device interface assignment table.
-GET http://103.184.122.170/api/snmp/zxr10VndAssignInterfaceTable
+GET http://localhost/api/snmp/zxr10VndAssignInterfaceTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxr10VndAssignInterfaceTable/:id
+POST http://localhost/api/snmp/zxr10VndAssignInterfaceTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -42,15 +42,15 @@ Content-Type: application/json
 }
 
 ### Virtual network device interface configuration table.
-GET http://103.184.122.170/api/snmp/zxr10VndInterfaceConfTable
+GET http://localhost/api/snmp/zxr10VndInterfaceConfTable
 Authorization: Bearer {{token}}
 
 ### Virtual network device card assignment table.
-GET http://103.184.122.170/api/snmp/zxr10VndAssignCardTable
+GET http://localhost/api/snmp/zxr10VndAssignCardTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxr10VndAssignCardTable/:id
+POST http://localhost/api/snmp/zxr10VndAssignCardTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -59,6 +59,6 @@ Content-Type: application/json
 }
 
 ### Virtual network device card configuration table.
-GET http://103.184.122.170/api/snmp/zxr10VndCardConfTable
+GET http://localhost/api/snmp/zxr10VndCardConfTable
 Authorization: Bearer {{token}}
 

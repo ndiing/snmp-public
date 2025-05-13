@@ -1,9 +1,9 @@
 ### This table specifies information for configuring and<br/><br/>status monitoring that is common to all service types<br/><br/>and PSN types.
-GET http://103.184.122.170/api/snmp/pwTable
+GET http://localhost/api/snmp/pwTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/pwTable/:id
+POST http://localhost/api/snmp/pwTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -42,26 +42,26 @@ Content-Type: application/json
 }
 
 ### This table provides per-PW performance information for<br/><br/>the current interval.
-GET http://103.184.122.170/api/snmp/pwPerfCurrentTable
+GET http://localhost/api/snmp/pwPerfCurrentTable
 Authorization: Bearer {{token}}
 
 ### This table provides per-PW performance information for<br/><br/>each interval.
-GET http://103.184.122.170/api/snmp/pwPerfIntervalTable
+GET http://localhost/api/snmp/pwPerfIntervalTable
 Authorization: Bearer {{token}}
 
 ### This table provides per-PW performance information for<br/><br/>the current day's measurement and the previous day's<br/><br/>interval.
-GET http://103.184.122.170/api/snmp/pwPerf1DayIntervalTable
+GET http://localhost/api/snmp/pwPerf1DayIntervalTable
 Authorization: Bearer {{token}}
 
 ### This table enables the reverse mapping of the unique<br/><br/>PWid parameters [peer IP, PW type, and PW ID] and the<br/><br/>pwIndex.  The table is not applicable for PWs created<br/><br/>manually or by using the generalized FEC.
-GET http://103.184.122.170/api/snmp/pwIndexMappingTable
+GET http://localhost/api/snmp/pwIndexMappingTable
 Authorization: Bearer {{token}}
 
 ### This table provides reverse mapping of the existing PW<br/><br/>based on PW type and PW ID ordering.  This table is<br/><br/>typically useful for the element management system (EMS)<br/><br/>ordered query of existing PWs.
-GET http://103.184.122.170/api/snmp/pwPeerMappingTable
+GET http://localhost/api/snmp/pwPeerMappingTable
 Authorization: Bearer {{token}}
 
 ### This table enables the reverse mapping of the unique<br/><br/>PWid parameters [GroupAttachmentID, LocalAttachmentID,<br/><br/>and PeerAttachmentID] and the pwIndex.  The table is<br/><br/>only applicable for PW using the generalized FEC.
-GET http://103.184.122.170/api/snmp/pwGenFecIndexMappingTable
+GET http://localhost/api/snmp/pwGenFecIndexMappingTable
 Authorization: Bearer {{token}}
 

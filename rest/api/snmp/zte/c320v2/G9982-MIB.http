@@ -1,21 +1,21 @@
 ### This table contains current Performance Monitoring information<br/><br/>for a G.Bond/Eth port.  This table contains live data from the<br/><br/>equipment and as such is NOT persistent.
-GET http://103.184.122.170/api/snmp/g9982PortPmCurTable
+GET http://localhost/api/snmp/g9982PortPmCurTable
 Authorization: Bearer {{token}}
 
 ### This table contains historical 15-minute buckets of Performance<br/><br/>Monitoring information for a G.Bond/Eth port (a row for each<br/><br/>15-minute interval, up to 96 intervals).<br/><br/>Entries in this table MUST be maintained in a persistent manner.
-GET http://103.184.122.170/api/snmp/g9982PortPm15MinTable
+GET http://localhost/api/snmp/g9982PortPm15MinTable
 Authorization: Bearer {{token}}
 
 ### This table contains historical 1-day buckets of Performance<br/><br/>Monitoring information for a G.Bond/Eth port (a row for each<br/><br/>1-day interval, up to 7 intervals).<br/><br/>Entries in this table MUST be maintained in a persistent manner.
-GET http://103.184.122.170/api/snmp/g9982PortPm1DayTable
+GET http://localhost/api/snmp/g9982PortPm1DayTable
 Authorization: Bearer {{token}}
 
 ### Table for configuration of G.Bond/Eth GBS ports.  Entries in<br/><br/>this table MUST be maintained in a persistent manner.
-GET http://103.184.122.170/api/snmp/g9982PortConfTable
+GET http://localhost/api/snmp/g9982PortConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/g9982PortConfTable/:id
+POST http://localhost/api/snmp/g9982PortConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -25,19 +25,19 @@ Content-Type: application/json
 }
 
 ### Table for capabilities of G.Bond/Eth ports.  Entries in this<br/><br/>table MUST be maintained in a persistent manner.
-GET http://103.184.122.170/api/snmp/g9982PortCapTable
+GET http://localhost/api/snmp/g9982PortCapTable
 Authorization: Bearer {{token}}
 
 ### This table provides overall status information of G.Bond<br/><br/>ports, complementing the generic status information from the<br/><br/>ifTable of the IF-MIB.  Additional status information about<br/><br/>connected BCEs is available from the relevant line MIBs.<br/><br/><br/><br/>This table contains live data from the equipment.  As such,<br/><br/>it is NOT persistent.
-GET http://103.184.122.170/api/snmp/g9982PortStatTable
+GET http://localhost/api/snmp/g9982PortStatTable
 Authorization: Bearer {{token}}
 
 ### Table for configuration of G.Bond/Eth-specific aspects for the<br/><br/>Bonding Channel Entity (BCE) ports (modems/channels).<br/><br/><br/><br/>Entries in this table MUST be maintained in a persistent<br/><br/>manner.
-GET http://103.184.122.170/api/snmp/g9982BceConfTable
+GET http://localhost/api/snmp/g9982BceConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/g9982BceConfTable/:id
+POST http://localhost/api/snmp/g9982BceConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -46,6 +46,6 @@ Content-Type: application/json
 }
 
 ### This table provides common status information of G.Bond/Eth<br/><br/>BCE ports.<br/><br/><br/><br/>This table contains live data from the equipment.  As such,<br/><br/>it is NOT persistent.
-GET http://103.184.122.170/api/snmp/g9982BceStatTable
+GET http://localhost/api/snmp/g9982BceStatTable
 Authorization: Bearer {{token}}
 

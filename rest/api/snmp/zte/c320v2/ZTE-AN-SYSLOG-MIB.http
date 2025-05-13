@@ -1,9 +1,9 @@
 ### Syslog host configuration table.
-GET http://103.184.122.170/api/snmp/zxAnSyslogServerTable
+GET http://localhost/api/snmp/zxAnSyslogServerTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnSyslogServerTable/:id
+POST http://localhost/api/snmp/zxAnSyslogServerTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -19,11 +19,11 @@ Content-Type: application/json
 }
 
 ### Syslog event id mappint to the facility configuration table.
-GET http://103.184.122.170/api/snmp/zxAnSyslogEventMapTable
+GET http://localhost/api/snmp/zxAnSyslogEventMapTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnSyslogEventMapTable/:id
+POST http://localhost/api/snmp/zxAnSyslogEventMapTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

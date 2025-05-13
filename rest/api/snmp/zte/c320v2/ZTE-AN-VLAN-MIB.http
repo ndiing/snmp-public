@@ -1,9 +1,9 @@
 ### A table containing VLAN information for VLANs<br/><br/>configured into the bridge by (local or network)<br/><br/>management,  specifying the set of<br/><br/>ports to which frames received on a VLAN for this FDB<br/><br/>and containing a specific Group destination address are<br/><br/>allowed to be forwarded.
-GET http://103.184.122.170/api/snmp/zxAnVlanTable
+GET http://localhost/api/snmp/zxAnVlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVlanTable/:id
+POST http://localhost/api/snmp/zxAnVlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -14,11 +14,11 @@ Content-Type: application/json
 }
 
 ### A table containing VLAN Port information for VLANs<br/><br/>configured into the bridge by (local or network)<br/><br/>management,  specifying the set of<br/><br/>ports to which frames received on a VLAN for this FDB<br/><br/>and containing a specific Group destination address are<br/><br/>allowed to be forwarded.
-GET http://103.184.122.170/api/snmp/zxAnVlanIfConfTable
+GET http://localhost/api/snmp/zxAnVlanIfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVlanIfConfTable/:id
+POST http://localhost/api/snmp/zxAnVlanIfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -35,11 +35,11 @@ Content-Type: application/json
 }
 
 ### Operation command table for bridge port configuration like<br/><br/>Vlan list.
-GET http://103.184.122.170/api/snmp/zxAnVlanIfConfVlanCmdTable
+GET http://localhost/api/snmp/zxAnVlanIfConfVlanCmdTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVlanIfConfVlanCmdTable/:id
+POST http://localhost/api/snmp/zxAnVlanIfConfVlanCmdTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -49,23 +49,23 @@ Content-Type: application/json
 }
 
 ### A table containing VLAN PortList information for VLAN +<br/><br/>SHELF + SLOT configured into the bridge by (local or network)<br/><br/>management,  specifying the set of ports to which frames<br/><br/>received on a VLAN for this FDB  and containing a specific<br/><br/>Group destination address are allowed to be forwarded.
-GET http://103.184.122.170/api/snmp/zxAnVlanPortListTable
+GET http://localhost/api/snmp/zxAnVlanPortListTable
 Authorization: Bearer {{token}}
 
 ### A table containing VLAN extended portlist information for VLAN +<br/><br/>RACK + SHELF + SLOT + PORT configured into the bridge by (local or<br/><br/>network) management,  specifying the set of ports to which frames<br/><br/>received on a VLAN for this FDB  and containing a specific<br/><br/>group destination address are allowed to be forwarded.
-GET http://103.184.122.170/api/snmp/zxAnVlanExtPortListTable
+GET http://localhost/api/snmp/zxAnVlanExtPortListTable
 Authorization: Bearer {{token}}
 
 ### A table containing DSL port CVLAN port list information.
-GET http://103.184.122.170/api/snmp/zxAnVlanCVlanDslPortListTable
+GET http://localhost/api/snmp/zxAnVlanCVlanDslPortListTable
 Authorization: Bearer {{token}}
 
 ### VLAN configuration table.<br/><br/>This table is only used for getting VLAN information (network-side<br/><br/>SVLAN of service port function) when operating on EPON/GPON ports.<br/><br/>This table is used for setting and getting VLAN information when<br/><br/>operating on uplink ports.<br/><br/>This table is used for setting and getting VLAN information when<br/><br/>operating on DSL ports.
-GET http://103.184.122.170/api/snmp/zxAnVlanIfConfVlanTable
+GET http://localhost/api/snmp/zxAnVlanIfConfVlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVlanIfConfVlanTable/:id
+POST http://localhost/api/snmp/zxAnVlanIfConfVlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -75,15 +75,15 @@ Content-Type: application/json
 }
 
 ### Port list based on VLAN table.
-GET http://103.184.122.170/api/snmp/zxAnVlanExtPortListIITable
+GET http://localhost/api/snmp/zxAnVlanExtPortListIITable
 Authorization: Bearer {{token}}
 
 ### Ethernet protocol vlan mapping table.
-GET http://103.184.122.170/api/snmp/zxAnVlanIfProtoMapTable
+GET http://localhost/api/snmp/zxAnVlanIfProtoMapTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVlanIfProtoMapTable/:id
+POST http://localhost/api/snmp/zxAnVlanIfProtoMapTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -96,11 +96,11 @@ Content-Type: application/json
 }
 
 ### Config vlan the protocol-mapping switch.
-GET http://103.184.122.170/api/snmp/zxAnVlanIfProtoMapEnableTable
+GET http://localhost/api/snmp/zxAnVlanIfProtoMapEnableTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVlanIfProtoMapEnableTable/:id
+POST http://localhost/api/snmp/zxAnVlanIfProtoMapEnableTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -109,11 +109,11 @@ Content-Type: application/json
 }
 
 ### This table includes global vlan translate configuration.<br/><br/>When a manager wants to create a vlan translate rule,<br/><br/>it must comply with the multi-variables usage rule that all the mib<br/><br/>variables related to same fuction must be in one snmp set operation,<br/><br/>the variables have two type: mandatory and optional.<br/><br/><br/><br/>Mandatory variables must be in the one snmp set operation.<br/><br/>Optional variables may be in the one snmp set operation with the<br/><br/>mandatory variables, but must not be used alone.<br/><br/><br/><br/>When user packet is single VLAN tag:<br/><br/>- mandatoty:<br/><br/>zxAnVlanGlobalTransIfIndex,<br/><br/>zxAnVlanGlobalTransSubIfIndex,<br/><br/>zxAnVlanGlobalTransUserVid,<br/><br/>zxAnVlanGlobalTransCVid,<br/><br/>zxAnVlanGlobalTransRowStatus<br/><br/>- optional :<br/><br/>zxAnVlanGlobalTransSVid,<br/><br/>zxAnVlanGlobalTransVlanMerge<br/><br/><br/><br/>When user packet is double VLAN tag:<br/><br/>- mandatoty:<br/><br/>zxAnVlanGlobalTransIfIndex,<br/><br/>zxAnVlanGlobalTransSubIfIndex,<br/><br/>zxAnVlanGlobalTransUserVid,<br/><br/>zxAnVlanGlobalTransUserSVid<br/><br/>zxAnVlanGlobalTransCVid,<br/><br/>zxAnVlanGlobalTransRowStatus<br/><br/>- optional :<br/><br/>zxAnVlanGlobalTransSVid,<br/><br/>zxAnVlanGlobalTransVlanMerge
-GET http://103.184.122.170/api/snmp/zxAnVlanGlobalTransTable
+GET http://localhost/api/snmp/zxAnVlanGlobalTransTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVlanGlobalTransTable/:id
+POST http://localhost/api/snmp/zxAnVlanGlobalTransTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -129,11 +129,11 @@ Content-Type: application/json
 }
 
 ### A table containing VLAN translate information for VLANs<br/><br/>configured into the bridge by (local or network)<br/><br/>management.
-GET http://103.184.122.170/api/snmp/zxAnVlanIfTransTable
+GET http://localhost/api/snmp/zxAnVlanIfTransTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVlanIfTransTable/:id
+POST http://localhost/api/snmp/zxAnVlanIfTransTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -145,11 +145,11 @@ Content-Type: application/json
 }
 
 ### This table includes ruled VLAN translate configuration.<br/><br/><br/><br/>Mandatory variables must be in the one snmp set operation.<br/><br/>Optional variables may be in the one snmp set operation with the<br/><br/>mandatory variables, but must not be used alone.<br/><br/><br/><br/>- mandatoty:<br/><br/>zxAnVlanRuledTransUserVid,<br/><br/>zxAnVlanRuledTransRowStatus<br/><br/>- optional : none
-GET http://103.184.122.170/api/snmp/zxAnVlanRuledTransTable
+GET http://localhost/api/snmp/zxAnVlanRuledTransTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVlanRuledTransTable/:id
+POST http://localhost/api/snmp/zxAnVlanRuledTransTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -159,11 +159,11 @@ Content-Type: application/json
 }
 
 ### VLAN translation extension table.<br/><br/>This table is an extension of the table zxAnVlanIfTransTable.<br/><br/>This table includes VLAN translation information for single tagged<br/><br/>packets, and double tagged packets.
-GET http://103.184.122.170/api/snmp/zxAnVlanIfExtTransTable
+GET http://localhost/api/snmp/zxAnVlanIfExtTransTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVlanIfExtTransTable/:id
+POST http://localhost/api/snmp/zxAnVlanIfExtTransTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -176,11 +176,11 @@ Content-Type: application/json
 }
 
 ### A table containing global MVLAN translate information.
-GET http://103.184.122.170/api/snmp/zxAnMVlanGlobalTransTable
+GET http://localhost/api/snmp/zxAnMVlanGlobalTransTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnMVlanGlobalTransTable/:id
+POST http://localhost/api/snmp/zxAnMVlanGlobalTransTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -190,11 +190,11 @@ Content-Type: application/json
 }
 
 ### A table containing MVLAN translate information for VLANs<br/><br/>configured into the bridge by (local or network)<br/><br/>management.
-GET http://103.184.122.170/api/snmp/zxAnMVlanIfTransTable
+GET http://localhost/api/snmp/zxAnMVlanIfTransTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnMVlanIfTransTable/:id
+POST http://localhost/api/snmp/zxAnMVlanIfTransTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -203,11 +203,11 @@ Content-Type: application/json
 }
 
 ### This table includes vlan smart qinq configuration.
-GET http://103.184.122.170/api/snmp/zxAnVlanSmartQinQTable
+GET http://localhost/api/snmp/zxAnVlanSmartQinQTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVlanSmartQinQTable/:id
+POST http://localhost/api/snmp/zxAnVlanSmartQinQTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -226,11 +226,11 @@ Content-Type: application/json
 }
 
 ### This table includes interface vlan smart qinq configuration.
-GET http://103.184.122.170/api/snmp/zxAnVlanSmartQinQIfConfTable
+GET http://localhost/api/snmp/zxAnVlanSmartQinQIfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVlanSmartQinQIfConfTable/:id
+POST http://localhost/api/snmp/zxAnVlanSmartQinQIfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -239,11 +239,11 @@ Content-Type: application/json
 }
 
 ### This table includes VLAN based forward rule configuration.
-GET http://103.184.122.170/api/snmp/zxAnVlanBasedFwdTable
+GET http://localhost/api/snmp/zxAnVlanBasedFwdTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVlanBasedFwdTable/:id
+POST http://localhost/api/snmp/zxAnVlanBasedFwdTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -256,11 +256,11 @@ Content-Type: application/json
 }
 
 ### This table includes VLAN based forward configuration information.
-GET http://103.184.122.170/api/snmp/zxAnVlanBasedFwdConfTable
+GET http://localhost/api/snmp/zxAnVlanBasedFwdConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVlanBasedFwdConfTable/:id
+POST http://localhost/api/snmp/zxAnVlanBasedFwdConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -269,11 +269,11 @@ Content-Type: application/json
 }
 
 ### A table containing VLAN information for VoIP.
-GET http://103.184.122.170/api/snmp/zxAnVlanVoipConfTable
+GET http://localhost/api/snmp/zxAnVlanVoipConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVlanVoipConfTable/:id
+POST http://localhost/api/snmp/zxAnVlanVoipConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -283,11 +283,11 @@ Content-Type: application/json
 }
 
 ### A table containing system Internal used VLANs information.
-GET http://103.184.122.170/api/snmp/zxAnInternalVlanTable
+GET http://localhost/api/snmp/zxAnInternalVlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnInternalVlanTable/:id
+POST http://localhost/api/snmp/zxAnInternalVlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -297,11 +297,11 @@ Content-Type: application/json
 }
 
 ### This table includes CoS mapping VLAN enabling configuration.
-GET http://103.184.122.170/api/snmp/zxAnVlanIfCosMapEnableTable
+GET http://localhost/api/snmp/zxAnVlanIfCosMapEnableTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVlanIfCosMapEnableTable/:id
+POST http://localhost/api/snmp/zxAnVlanIfCosMapEnableTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -310,11 +310,11 @@ Content-Type: application/json
 }
 
 ### This table includes CoS mapping VLAN configuration of interface.
-GET http://103.184.122.170/api/snmp/zxAnVlanIfCosMapTable
+GET http://localhost/api/snmp/zxAnVlanIfCosMapTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVlanIfCosMapTable/:id
+POST http://localhost/api/snmp/zxAnVlanIfCosMapTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -325,11 +325,11 @@ Content-Type: application/json
 }
 
 ### A table containing VLAN TPID information.
-GET http://103.184.122.170/api/snmp/zxAnVlanTpidConfTable
+GET http://localhost/api/snmp/zxAnVlanTpidConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVlanTpidConfTable/:id
+POST http://localhost/api/snmp/zxAnVlanTpidConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -339,11 +339,11 @@ Content-Type: application/json
 }
 
 ### A table containing VLAN forwarding control information.
-GET http://103.184.122.170/api/snmp/zxAnVlanForwardingCtrlTable
+GET http://localhost/api/snmp/zxAnVlanForwardingCtrlTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVlanForwardingCtrlTable/:id
+POST http://localhost/api/snmp/zxAnVlanForwardingCtrlTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -352,11 +352,11 @@ Content-Type: application/json
 }
 
 ### A table containing VLAN protocol filter information.
-GET http://103.184.122.170/api/snmp/zxAnVlanProtocolFilterConfTable
+GET http://localhost/api/snmp/zxAnVlanProtocolFilterConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVlanProtocolFilterConfTable/:id
+POST http://localhost/api/snmp/zxAnVlanProtocolFilterConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -366,11 +366,11 @@ Content-Type: application/json
 }
 
 ### A table containing TPIDs to filter the packets.<br/><br/>Packets will be discarded when the TPID is mismatched.
-GET http://103.184.122.170/api/snmp/zxAnVlanTpidFilterConfTable
+GET http://localhost/api/snmp/zxAnVlanTpidFilterConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVlanTpidFilterConfTable/:id
+POST http://localhost/api/snmp/zxAnVlanTpidFilterConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -380,11 +380,11 @@ Content-Type: application/json
 }
 
 ### A table containing TPIDs of the interface to filter the packets.<br/><br/>Packets will be discarded when the TPID is mismatched.
-GET http://103.184.122.170/api/snmp/zxAnVlanIfTpidFilterConfTable
+GET http://localhost/api/snmp/zxAnVlanIfTpidFilterConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnVlanIfTpidFilterConfTable/:id
+POST http://localhost/api/snmp/zxAnVlanIfTpidFilterConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

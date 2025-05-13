@@ -1,9 +1,9 @@
 ### Protection group configuration.
-GET http://103.184.122.170/api/snmp/zxAnPonProtectGroupTable
+GET http://localhost/api/snmp/zxAnPonProtectGroupTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonProtectGroupTable/:id
+POST http://localhost/api/snmp/zxAnPonProtectGroupTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -21,11 +21,11 @@ Content-Type: application/json
 }
 
 ### Protection group property.
-GET http://103.184.122.170/api/snmp/zxAnPonProtectGroupPropTable
+GET http://localhost/api/snmp/zxAnPonProtectGroupPropTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonProtectGroupPropTable/:id
+POST http://localhost/api/snmp/zxAnPonProtectGroupPropTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -35,11 +35,11 @@ Content-Type: application/json
 }
 
 ### Protection action.
-GET http://103.184.122.170/api/snmp/zxAnPonProtectActionTable
+GET http://localhost/api/snmp/zxAnPonProtectActionTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonProtectActionTable/:id
+POST http://localhost/api/snmp/zxAnPonProtectActionTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -49,11 +49,11 @@ Content-Type: application/json
 }
 
 ### PON protection group extended property table,<br/><br/>only for type C and type D protection.
-GET http://103.184.122.170/api/snmp/zxAnPonProtectGroupExtPropTable
+GET http://localhost/api/snmp/zxAnPonProtectGroupExtPropTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonProtectGroupExtPropTable/:id
+POST http://localhost/api/snmp/zxAnPonProtectGroupExtPropTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -63,6 +63,6 @@ Content-Type: application/json
 }
 
 ### ONU link status information table.
-GET http://103.184.122.170/api/snmp/zxAnPonProtectLinkStatusTable
+GET http://localhost/api/snmp/zxAnPonProtectLinkStatusTable
 Authorization: Bearer {{token}}
 

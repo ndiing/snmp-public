@@ -3,11 +3,11 @@
 ### https://www.tembolok.id/setting-olt-zte-c320-netnumen/#google_vignette
 
 ### NE Protocol Manager > VLAN > Static VLAN
-GET http://103.184.122.170/api/snmp/zxAnVlanTable
+GET http://localhost/api/snmp/zxAnVlanTable
 Authorization: Bearer {{token}}
 
 ### NE Protocol Manager > VLAN > Static VLAN > New
-POST http://103.184.122.170/api/snmp/zxAnVlanTable/100
+POST http://localhost/api/snmp/zxAnVlanTable/100
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -18,7 +18,7 @@ Content-Type: application/json
 }
 
 ### NE Protocol Manager > VLAN > Static VLAN > Delete
-POST http://103.184.122.170/api/snmp/zxAnVlanTable/100
+POST http://localhost/api/snmp/zxAnVlanTable/100
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -27,16 +27,24 @@ Content-Type: application/json
 }
 
 
+# 285278721.268501248
+
+# 285278721.1
+# 285278721.2
 
 
 
+
+### 
+GET http://localhost/api/snmp/ifIndex
+Authorization: Bearer {{token}}
 
 ### NE Protocol Manager > VLAN > Port VLAN
-GET http://103.184.122.170/api/snmp/zxAnVlanIfConfTable
+GET http://localhost/api/snmp/zxAnVlanIfConfTable
 Authorization: Bearer {{token}}
 
 ### NE Protocol Manager > VLAN > Port VLAN > VLAN Bind
-POST http://103.184.122.170/api/snmp/zxAnVlanIfConfVlanCmdTable/285279233.0
+POST http://localhost/api/snmp/zxAnVlanIfConfVlanCmdTable/285279235.0
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -51,11 +59,11 @@ Content-Type: application/json
 
 
 ### Profile Configuration > GPON > Bandwidth > ONU Bandwidth Profile
-GET http://103.184.122.170/api/snmp/zxAnGponSrvBandwidthPrfTable
+GET http://localhost/api/snmp/zxAnGponSrvBandwidthPrfTable
 Authorization: Bearer {{token}}
 
 ### Profile Configuration > GPON > Bandwidth > ONU Bandwidth Profile > New
-POST http://103.184.122.170/api/snmp/zxAnGponSrvBandwidthPrfTable/4.49.48.48.77
+POST http://localhost/api/snmp/zxAnGponSrvBandwidthPrfTable/4.49.48.48.77
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -66,7 +74,7 @@ Content-Type: application/json
 }
 
 ### Profile Configuration > GPON > Bandwidth > ONU Bandwidth Profile > Delete
-POST http://103.184.122.170/api/snmp/zxAnGponSrvBandwidthPrfTable/4.49.48.48.77
+POST http://localhost/api/snmp/zxAnGponSrvBandwidthPrfTable/4.49.48.48.77
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -80,11 +88,11 @@ Content-Type: application/json
 
 
 ### Profile Configuration > GPON > Bandwidth > Traffic Profile
-GET http://103.184.122.170/api/snmp/zxAnGponSrvTrafficPrfTable
+GET http://localhost/api/snmp/zxAnGponSrvTrafficPrfTable
 Authorization: Bearer {{token}}
 
 ### Profile Configuration > GPON > Bandwidth > Traffic Profile > New
-POST http://103.184.122.170/api/snmp/zxAnGponSrvTrafficPrfTable/4.116.101.115.116
+POST http://localhost/api/snmp/zxAnGponSrvTrafficPrfTable/4.116.101.115.116
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -97,7 +105,7 @@ Content-Type: application/json
 }
 
 ### Profile Configuration > GPON > Bandwidth > Traffic Profile > Delete
-POST http://103.184.122.170/api/snmp/zxAnGponSrvTrafficPrfTable/4.116.101.115.116
+POST http://localhost/api/snmp/zxAnGponSrvTrafficPrfTable/4.116.101.115.116
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -111,11 +119,11 @@ Content-Type: application/json
 
 
 ### Profile Configuration > GPON > VOIP > VLAN Profile
-GET http://103.184.122.170/api/snmp/zxAnGponRmVlanPrfTable
+GET http://localhost/api/snmp/zxAnGponRmVlanPrfTable
 Authorization: Bearer {{token}}
 
 ### Profile Configuration > GPON > VOIP > VLAN Profile > New
-POST http://103.184.122.170/api/snmp/zxAnGponRmVlanPrfTable/8.80.82.79.70.73.76.69.49
+POST http://localhost/api/snmp/zxAnGponRmVlanPrfTable/8.80.82.79.70.73.76.69.49
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -127,7 +135,7 @@ Content-Type: application/json
 }
 
 ### Profile Configuration > GPON > VOIP > VLAN Profile > Delete
-POST http://103.184.122.170/api/snmp/zxAnGponRmVlanPrfTable/8.80.82.79.70.73.76.69.49
+POST http://localhost/api/snmp/zxAnGponRmVlanPrfTable/8.80.82.79.70.73.76.69.49
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -142,15 +150,15 @@ Content-Type: application/json
 
 
 ### Profile Configuration > Global > ONU Type Profile
-GET http://103.184.122.170/api/snmp/zxAnPonOnuTypeTable
+GET http://localhost/api/snmp/zxAnPonOnuTypeTable
 Authorization: Bearer {{token}}
 
 ###
-GET http://103.184.122.170/api/snmp/zxAnPonOnuIfAttrTable
+GET http://localhost/api/snmp/zxAnPonOnuIfAttrTable
 Authorization: Bearer {{token}}
 
 ### Profile Configuration > Global > ONU Type Profile > New
-POST http://103.184.122.170/api/snmp/zxAnPonOnuTypeTable/6.65.66.67.88.89.90
+POST http://localhost/api/snmp/zxAnPonOnuTypeTable/6.65.66.67.88.89.90
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -169,7 +177,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonOnuIfAttrTable/6.65.66.67.88.89.90.655460
+POST http://localhost/api/snmp/zxAnPonOnuIfAttrTable/6.65.66.67.88.89.90.655460
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -178,7 +186,7 @@ Content-Type: application/json
 }
 
 ### Profile Configuration > Global > ONU Type Profile > Delete
-POST http://103.184.122.170/api/snmp/zxAnPonOnuTypeTable/6.65.66.67.88.89.90
+POST http://localhost/api/snmp/zxAnPonOnuTypeTable/6.65.66.67.88.89.90
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -192,20 +200,20 @@ Content-Type: application/json
 
 
 ### ONU Manager
-GET http://103.184.122.170/api/snmp/zxAnGponSrvOltPonIfConfTable
+GET http://localhost/api/snmp/zxAnGponSrvOltPonIfConfTable
 Authorization: Bearer {{token}}
 
 ### ONU Manager > Unauthenticated ONU Configuration > Refresh
-GET http://103.184.122.170/api/snmp/zxAnGponSrvUnConfOnuTable
+GET http://localhost/api/snmp/zxAnGponSrvUnConfOnuTable
 Authorization: Bearer {{token}}
 
 ###
-GET http://103.184.122.170/api/snmp/zxAnGponSrvOnuMgmtTable
+GET http://localhost/api/snmp/zxAnGponSrvOnuMgmtTable
 Authorization: Bearer {{token}}
 
 ### ONU Manager > Unauthenticated ONU Configuration > Add To
 ### ONU Manager > New
-POST http://103.184.122.170/api/snmp/zxAnGponSrvOnuMgmtTable/285278721.3
+POST http://localhost/api/snmp/zxAnGponSrvOnuMgmtTable/285278721.3
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -221,7 +229,7 @@ Content-Type: application/json
 }
 
 ### ONU Manager > Delete
-POST http://103.184.122.170/api/snmp/zxAnGponSrvOnuMgmtTable/285278721.3
+POST http://localhost/api/snmp/zxAnGponSrvOnuMgmtTable/285278721.3
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -235,11 +243,11 @@ Content-Type: application/json
 
 
 ### ONU Manager > Line Configurations > T-CONT Configuration > New
-GET http://103.184.122.170/api/snmp/zxAnGponSrvTcontTable/
+GET http://localhost/api/snmp/zxAnGponSrvTcontTable/
 Authorization: Bearer {{token}}
 
 ### ONU Manager > Line Configurations > T-CONT Configuration > New
-POST http://103.184.122.170/api/snmp/zxAnGponSrvTcontTable/285278721.1.1
+POST http://localhost/api/snmp/zxAnGponSrvTcontTable/285278721.1.1
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -250,7 +258,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnGponSrvTcontTable/285278721.1.1
+POST http://localhost/api/snmp/zxAnGponSrvTcontTable/285278721.1.1
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -266,11 +274,11 @@ Content-Type: application/json
 
 
 ### ONU Manager > Line Configurations > GEM Port Configuration > New
-GET http://103.184.122.170/api/snmp/zxAnGponSrvGemPortTable/
+GET http://localhost/api/snmp/zxAnGponSrvGemPortTable/
 Authorization: Bearer {{token}}
 
 ### ONU Manager > Line Configurations > GEM Port Configuration > New
-POST http://103.184.122.170/api/snmp/zxAnGponSrvGemPortTable/285278721.1.1
+POST http://localhost/api/snmp/zxAnGponSrvGemPortTable/285278721.1.1
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -291,11 +299,11 @@ Content-Type: application/json
 
 
 ### ONU Manager > VPort Service Configurations > Service Port > New
-GET http://103.184.122.170/api/snmp/zxAnSrvPortConfTable/
+GET http://localhost/api/snmp/zxAnSrvPortConfTable/
 Authorization: Bearer {{token}}
 
 ### ONU Manager > VPort Service Configurations > Service Port > New
-POST http://103.184.122.170/api/snmp/zxAnSrvPortConfTable/285278721.402718976
+POST http://localhost/api/snmp/zxAnSrvPortConfTable/285278721.402718976
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -319,11 +327,11 @@ Content-Type: application/json
 
 
 ### ONU Manager > PON Service Configurations > ONU Service
-GET http://103.184.122.170/api/snmp/zxAnGponRmServiceMapTable
+GET http://localhost/api/snmp/zxAnGponRmServiceMapTable
 Authorization: Bearer {{token}}
 
 ### ONU Manager > PON Service Configurations > ONU Service > New
-POST http://103.184.122.170/api/snmp/zxAnGponRmServiceMapTable/285278721.402718976
+POST http://localhost/api/snmp/zxAnGponRmServiceMapTable/285278721.402718976
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -340,11 +348,11 @@ Content-Type: application/json
 
 
 ### ONU Manager > WAN Service Configurations > ONU Service WAN IP Configuration > New
-GET  http://103.184.122.170/api/snmp/zxAnGponRmWanIpConfTable/
+GET  http://localhost/api/snmp/zxAnGponRmWanIpConfTable/
 Authorization: Bearer {{token}}
 
 ### ONU Manager > WAN Service Configurations > ONU Service WAN IP Configuration > New
-POST http://103.184.122.170/api/snmp/zxAnGponRmWanIpConfTable/285278721.1.1
+POST http://localhost/api/snmp/zxAnGponRmWanIpConfTable/285278721.1.1
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -366,7 +374,7 @@ Content-Type: application/json
 
 
 ### ONU Manager > PON Service Configurations > UNI VLAN
-GET http://103.184.122.170/api/snmp/zxAnGponRmVlanPortTable
+GET http://localhost/api/snmp/zxAnGponRmVlanPortTable
 Authorization: Bearer {{token}}
 
 
@@ -375,11 +383,11 @@ Authorization: Bearer {{token}}
 
 
 ###
-GET http://103.184.122.170/api/snmp/system/0
+GET http://localhost/api/snmp/system/0
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/system/0
+POST http://localhost/api/snmp/system/0
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -397,17 +405,17 @@ Content-Type: application/json
 ### other
 
 ### Details of ONU > Line Attributes
-GET http://103.184.122.170/api/snmp/zxAnGponSrvOnuStatusTable
+GET http://localhost/api/snmp/zxAnGponSrvOnuStatusTable
 Authorization: Bearer {{token}}
 
 ### Details of ONU > Service Attributes
-GET http://103.184.122.170/api/snmp/zxAnGponRmOnuTable
+GET http://localhost/api/snmp/zxAnGponRmOnuTable
 Authorization: Bearer {{token}}
 
 ### Details of ONU > Service Attributes
-GET http://103.184.122.170/api/snmp/zxAnGponRmOnuCapabilityTable
+GET http://localhost/api/snmp/zxAnGponRmOnuCapabilityTable
 Authorization: Bearer {{token}}
 
 ### Details of ONU > Performance
-GET http://103.184.122.170/api/snmp/zxAnPonOnuIfCurrPerfTable
+GET http://localhost/api/snmp/zxAnPonOnuIfCurrPerfTable
 Authorization: Bearer {{token}}

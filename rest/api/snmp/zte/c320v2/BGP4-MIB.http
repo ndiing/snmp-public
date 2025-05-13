@@ -1,9 +1,9 @@
 ### BGP peer table.  This table contains,<br/><br/>one entry per BGP peer, information about<br/><br/>the connections with BGP peers.
-GET http://103.184.122.170/api/snmp/bgpPeerTable
+GET http://localhost/api/snmp/bgpPeerTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/bgpPeerTable/:id
+POST http://localhost/api/snmp/bgpPeerTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -17,10 +17,10 @@ Content-Type: application/json
 }
 
 ### The BGP Received Path Attribute Table<br/><br/>contains information about paths to<br/><br/>destination networks received from all<br/><br/>peers running BGP version 3 or less.
-GET http://103.184.122.170/api/snmp/bgpRcvdPathAttrTable
+GET http://localhost/api/snmp/bgpRcvdPathAttrTable
 Authorization: Bearer {{token}}
 
 ### The BGP-4 Received Path Attribute Table<br/><br/>contains information about paths to<br/><br/>destination networks received from all<br/><br/>BGP4 peers.
-GET http://103.184.122.170/api/snmp/bgp4PathAttrTable
+GET http://localhost/api/snmp/bgp4PathAttrTable
 Authorization: Bearer {{token}}
 

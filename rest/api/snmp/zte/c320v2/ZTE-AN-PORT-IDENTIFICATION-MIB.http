@@ -1,9 +1,9 @@
 ### The table of port identification data at interface level.
-GET http://103.184.122.170/api/snmp/zxAnPortIdIfConfTable
+GET http://localhost/api/snmp/zxAnPortIdIfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPortIdIfConfTable/:id
+POST http://localhost/api/snmp/zxAnPortIdIfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

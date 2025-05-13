@@ -1,17 +1,17 @@
 ### GR table.
-GET http://103.184.122.170/api/snmp/zxAnLdpGrSessTable
+GET http://localhost/api/snmp/zxAnLdpGrSessTable
 Authorization: Bearer {{token}}
 
 ### The best match table.<br/><br/>The FEC(Forwarding Equivalence Class) information associated<br/><br/>with an LSP, and add match route for reference.
-GET http://103.184.122.170/api/snmp/zxAnLdpBestMatchTable
+GET http://localhost/api/snmp/zxAnLdpBestMatchTable
 Authorization: Bearer {{token}}
 
 ### The ACL table.
-GET http://103.184.122.170/api/snmp/zxAnLdpAclTable
+GET http://localhost/api/snmp/zxAnLdpAclTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnLdpAclTable/:id
+POST http://localhost/api/snmp/zxAnLdpAclTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -21,11 +21,11 @@ Content-Type: application/json
 }
 
 ### The BFD table.
-GET http://103.184.122.170/api/snmp/zxAnLdpBfdTable
+GET http://localhost/api/snmp/zxAnLdpBfdTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnLdpBfdTable/:id
+POST http://localhost/api/snmp/zxAnLdpBfdTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -37,11 +37,11 @@ Content-Type: application/json
 }
 
 ### Peer BFD table.
-GET http://103.184.122.170/api/snmp/zxAnLdpBfdPeerTable
+GET http://localhost/api/snmp/zxAnLdpBfdPeerTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnLdpBfdPeerTable/:id
+POST http://localhost/api/snmp/zxAnLdpBfdPeerTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -53,11 +53,11 @@ Content-Type: application/json
 }
 
 ### LDP MD5 table.
-GET http://103.184.122.170/api/snmp/zxAnLdpMd5Table
+GET http://localhost/api/snmp/zxAnLdpMd5Table
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnLdpMd5Table/:id
+POST http://localhost/api/snmp/zxAnLdpMd5Table/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -68,11 +68,11 @@ Content-Type: application/json
 }
 
 ### The LDP interface table.
-GET http://103.184.122.170/api/snmp/zxAnLdpIfTable
+GET http://localhost/api/snmp/zxAnLdpIfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnLdpIfTable/:id
+POST http://localhost/api/snmp/zxAnLdpIfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -84,11 +84,11 @@ Content-Type: application/json
 }
 
 ### Static LSP table.
-GET http://103.184.122.170/api/snmp/zxAnLdpStaticLspTable
+GET http://localhost/api/snmp/zxAnLdpStaticLspTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnLdpStaticLspTable/:id
+POST http://localhost/api/snmp/zxAnLdpStaticLspTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -104,11 +104,11 @@ Content-Type: application/json
 }
 
 ### Target session table.
-GET http://103.184.122.170/api/snmp/zxAnLdpTargetSessTable
+GET http://localhost/api/snmp/zxAnLdpTargetSessTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnLdpTargetSessTable/:id
+POST http://localhost/api/snmp/zxAnLdpTargetSessTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

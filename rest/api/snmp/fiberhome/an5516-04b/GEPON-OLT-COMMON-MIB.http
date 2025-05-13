@@ -1,11 +1,11 @@
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/onuPhysicalwhiteListTable
+GET http://localhost/api/snmp/onuPhysicalwhiteListTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/onuPhysicalwhiteListTable/:id
+POST http://localhost/api/snmp/onuPhysicalwhiteListTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -22,11 +22,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/onuLogicWhiteListTable
+GET http://localhost/api/snmp/onuLogicWhiteListTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/onuLogicWhiteListTable/:id
+POST http://localhost/api/snmp/onuLogicWhiteListTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -44,11 +44,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/onuMacListFor5516Table
+GET http://localhost/api/snmp/onuMacListFor5516Table
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/onuMacListFor5516Table/:id
+POST http://localhost/api/snmp/onuMacListFor5516Table/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -68,11 +68,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/onuSnListFor5516Table
+GET http://localhost/api/snmp/onuSnListFor5516Table
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/onuSnListFor5516Table/:id
+POST http://localhost/api/snmp/onuSnListFor5516Table/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -92,11 +92,11 @@ Content-Type: application/json
 
 
 ### Description.
-GET http://103.184.122.170/api/snmp/onuPhyPasswordWhiteListTable
+GET http://localhost/api/snmp/onuPhyPasswordWhiteListTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/onuPhyPasswordWhiteListTable/:id
+POST http://localhost/api/snmp/onuPhyPasswordWhiteListTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -115,11 +115,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/voicePortEnableTable
+GET http://localhost/api/snmp/voicePortEnableTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/voicePortEnableTable/:id
+POST http://localhost/api/snmp/voicePortEnableTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -133,11 +133,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/dataPortEnableTable
+GET http://localhost/api/snmp/dataPortEnableTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/dataPortEnableTable/:id
+POST http://localhost/api/snmp/dataPortEnableTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -151,11 +151,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/oltPonEnableTable
+GET http://localhost/api/snmp/oltPonEnableTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/oltPonEnableTable/:id
+POST http://localhost/api/snmp/oltPonEnableTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -169,11 +169,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/bandwidthProfileTable
+GET http://localhost/api/snmp/bandwidthProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/bandwidthProfileTable/:id
+POST http://localhost/api/snmp/bandwidthProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -193,11 +193,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/attachPortBandwidthProfileTable
+GET http://localhost/api/snmp/attachPortBandwidthProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/attachPortBandwidthProfileTable/:id
+POST http://localhost/api/snmp/attachPortBandwidthProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -213,11 +213,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/portAttributeProfileTable
+GET http://localhost/api/snmp/portAttributeProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/portAttributeProfileTable/:id
+POST http://localhost/api/snmp/portAttributeProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -236,11 +236,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/attachPortAttributeProfileTable
+GET http://localhost/api/snmp/attachPortAttributeProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/attachPortAttributeProfileTable/:id
+POST http://localhost/api/snmp/attachPortAttributeProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -255,11 +255,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/ponBandwidthProfileTable
+GET http://localhost/api/snmp/ponBandwidthProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/ponBandwidthProfileTable/:id
+POST http://localhost/api/snmp/ponBandwidthProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -279,11 +279,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/attachPonBandwidthProfileTable
+GET http://localhost/api/snmp/attachPonBandwidthProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/attachPonBandwidthProfileTable/:id
+POST http://localhost/api/snmp/attachPonBandwidthProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -299,11 +299,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/feServiceCfgTable
+GET http://localhost/api/snmp/feServiceCfgTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/feServiceCfgTable/:id
+POST http://localhost/api/snmp/feServiceCfgTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -330,15 +330,15 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/feServiceCfgIdTable
+GET http://localhost/api/snmp/feServiceCfgIdTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/feServiceCfgApplyTable
+GET http://localhost/api/snmp/feServiceCfgApplyTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/feServiceCfgApplyTable/:id
+POST http://localhost/api/snmp/feServiceCfgApplyTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -352,11 +352,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/attachQINQProfileTable
+GET http://localhost/api/snmp/attachQINQProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/attachQINQProfileTable/:id
+POST http://localhost/api/snmp/attachQINQProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -374,11 +374,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/attchQinqProfileToOnuTable
+GET http://localhost/api/snmp/attchQinqProfileToOnuTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/attchQinqProfileToOnuTable/:id
+POST http://localhost/api/snmp/attchQinqProfileToOnuTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -393,11 +393,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/qinqBandWidthCfgTable
+GET http://localhost/api/snmp/qinqBandWidthCfgTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/qinqBandWidthCfgTable/:id
+POST http://localhost/api/snmp/qinqBandWidthCfgTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -416,11 +416,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/qinqBandwidthCfgApplyTable
+GET http://localhost/api/snmp/qinqBandwidthCfgApplyTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/qinqBandwidthCfgApplyTable/:id
+POST http://localhost/api/snmp/qinqBandwidthCfgApplyTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -434,11 +434,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/qinqDomainTable
+GET http://localhost/api/snmp/qinqDomainTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/qinqDomainTable/:id
+POST http://localhost/api/snmp/qinqDomainTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -452,11 +452,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/qinqDomainServiceTable
+GET http://localhost/api/snmp/qinqDomainServiceTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/qinqDomainServiceTable/:id
+POST http://localhost/api/snmp/qinqDomainServiceTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -489,11 +489,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/qinqDomainServiceRuleTable
+GET http://localhost/api/snmp/qinqDomainServiceRuleTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/qinqDomainServiceRuleTable/:id
+POST http://localhost/api/snmp/qinqDomainServiceRuleTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -513,11 +513,11 @@ Content-Type: application/json
 
 
 ### Description.
-GET http://103.184.122.170/api/snmp/attachQinqProfileToPonTable
+GET http://localhost/api/snmp/attachQinqProfileToPonTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/attachQinqProfileToPonTable/:id
+POST http://localhost/api/snmp/attachQinqProfileToPonTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -532,11 +532,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/ftthPerformanceCardEnableTable
+GET http://localhost/api/snmp/ftthPerformanceCardEnableTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/ftthPerformanceCardEnableTable/:id
+POST http://localhost/api/snmp/ftthPerformanceCardEnableTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -550,23 +550,23 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/ftthVlanTransmitPerformanceTable
+GET http://localhost/api/snmp/ftthVlanTransmitPerformanceTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/frameInfoTable
+GET http://localhost/api/snmp/frameInfoTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/cardInfoTable
+GET http://localhost/api/snmp/cardInfoTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/portInfoTable
+GET http://localhost/api/snmp/portInfoTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/portInfoTable/:id
+POST http://localhost/api/snmp/portInfoTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -581,11 +581,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/potsInfoTable
+GET http://localhost/api/snmp/potsInfoTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/potsInfoTable/:id
+POST http://localhost/api/snmp/potsInfoTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -599,11 +599,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/onuPonInfoTable
+GET http://localhost/api/snmp/onuPonInfoTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/onuPonInfoTable/:id
+POST http://localhost/api/snmp/onuPonInfoTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -618,11 +618,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/oltPonInfoTable
+GET http://localhost/api/snmp/oltPonInfoTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/oltPonInfoTable/:id
+POST http://localhost/api/snmp/oltPonInfoTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -636,11 +636,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/oltUplinkInfoTable
+GET http://localhost/api/snmp/oltUplinkInfoTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/oltUplinkInfoTable/:id
+POST http://localhost/api/snmp/oltUplinkInfoTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -654,11 +654,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/oltPonOpticalStatisticsTable
+GET http://localhost/api/snmp/oltPonOpticalStatisticsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/oltPonOpticalStatisticsTable/:id
+POST http://localhost/api/snmp/oltPonOpticalStatisticsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -672,43 +672,43 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/oltPonRxOpticalPowerTable
+GET http://localhost/api/snmp/oltPonRxOpticalPowerTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/oltPonInfoRealtimeTable
+GET http://localhost/api/snmp/oltPonInfoRealtimeTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/oltPonRxOpticalPowerRealtimeTable
+GET http://localhost/api/snmp/oltPonRxOpticalPowerRealtimeTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/onuPonInfoRealtimeTable
+GET http://localhost/api/snmp/onuPonInfoRealtimeTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/slotInfoTable
+GET http://localhost/api/snmp/slotInfoTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/onu2PonLengthTable
+GET http://localhost/api/snmp/onu2PonLengthTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/mgrCardInfoTable
+GET http://localhost/api/snmp/mgrCardInfoTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/onuAddressInfoTable
+GET http://localhost/api/snmp/onuAddressInfoTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/authOnuListTable
+GET http://localhost/api/snmp/authOnuListTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/authOnuListTable/:id
+POST http://localhost/api/snmp/authOnuListTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -734,15 +734,15 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/unauthOnuListTable
+GET http://localhost/api/snmp/unauthOnuListTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/onuAuthModeTable
+GET http://localhost/api/snmp/onuAuthModeTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/onuAuthModeTable/:id
+POST http://localhost/api/snmp/onuAuthModeTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -757,11 +757,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/onuWarrentTypeTable
+GET http://localhost/api/snmp/onuWarrentTypeTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/onuWarrentTypeTable/:id
+POST http://localhost/api/snmp/onuWarrentTypeTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -775,11 +775,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/ponAuthModeTable
+GET http://localhost/api/snmp/ponAuthModeTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/ponAuthModeTable/:id
+POST http://localhost/api/snmp/ponAuthModeTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -793,11 +793,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/cardWarrentTable
+GET http://localhost/api/snmp/cardWarrentTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/cardWarrentTable/:id
+POST http://localhost/api/snmp/cardWarrentTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -811,11 +811,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/globalVlanTable
+GET http://localhost/api/snmp/globalVlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/globalVlanTable/:id
+POST http://localhost/api/snmp/globalVlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -834,11 +834,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/globalVlanAttachPortTable
+GET http://localhost/api/snmp/globalVlanAttachPortTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/globalVlanAttachPortTable/:id
+POST http://localhost/api/snmp/globalVlanAttachPortTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -853,11 +853,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/onuManageVlanTable
+GET http://localhost/api/snmp/onuManageVlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/onuManageVlanTable/:id
+POST http://localhost/api/snmp/onuManageVlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -882,11 +882,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/trunkConfigTable
+GET http://localhost/api/snmp/trunkConfigTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/trunkConfigTable/:id
+POST http://localhost/api/snmp/trunkConfigTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -902,11 +902,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/onuPonCfgTable
+GET http://localhost/api/snmp/onuPonCfgTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/onuPonCfgTable/:id
+POST http://localhost/api/snmp/onuPonCfgTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -924,19 +924,19 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/mac2OnuInfoTable
+GET http://localhost/api/snmp/mac2OnuInfoTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/sn2OnuInfoTable
+GET http://localhost/api/snmp/sn2OnuInfoTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/snmpTrapTable
+GET http://localhost/api/snmp/snmpTrapTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/snmpTrapTable/:id
+POST http://localhost/api/snmp/snmpTrapTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -955,11 +955,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/snmpCommunityTable
+GET http://localhost/api/snmp/snmpCommunityTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/snmpCommunityTable/:id
+POST http://localhost/api/snmp/snmpCommunityTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -974,11 +974,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/snmpTrapv6Table
+GET http://localhost/api/snmp/snmpTrapv6Table
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/snmpTrapv6Table/:id
+POST http://localhost/api/snmp/snmpTrapv6Table/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -997,11 +997,11 @@ Content-Type: application/json
 
 
 ### Description.
-GET http://103.184.122.170/api/snmp/snmpExCommunityTable
+GET http://localhost/api/snmp/snmpExCommunityTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/snmpExCommunityTable/:id
+POST http://localhost/api/snmp/snmpExCommunityTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1016,11 +1016,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/manageIpTable
+GET http://localhost/api/snmp/manageIpTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/manageIpTable/:id
+POST http://localhost/api/snmp/manageIpTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1041,11 +1041,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/igmpProfileTable
+GET http://localhost/api/snmp/igmpProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/igmpProfileTable/:id
+POST http://localhost/api/snmp/igmpProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1060,11 +1060,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/igmpProfileGroupTable
+GET http://localhost/api/snmp/igmpProfileGroupTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/igmpProfileGroupTable/:id
+POST http://localhost/api/snmp/igmpProfileGroupTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1081,19 +1081,19 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/igmpActiveMultiGroupNumberTable
+GET http://localhost/api/snmp/igmpActiveMultiGroupNumberTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/igmpactiveJoinPortsNumberTable
+GET http://localhost/api/snmp/igmpactiveJoinPortsNumberTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/portIgmpCfgTable
+GET http://localhost/api/snmp/portIgmpCfgTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/portIgmpCfgTable/:id
+POST http://localhost/api/snmp/portIgmpCfgTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1113,11 +1113,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/onuPhysicsAuthTable
+GET http://localhost/api/snmp/onuPhysicsAuthTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/onuPhysicsAuthTable/:id
+POST http://localhost/api/snmp/onuPhysicsAuthTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1137,11 +1137,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/onuSnAuthFor5116Table
+GET http://localhost/api/snmp/onuSnAuthFor5116Table
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/onuSnAuthFor5116Table/:id
+POST http://localhost/api/snmp/onuSnAuthFor5116Table/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1161,15 +1161,15 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/cvlan2SvlanTable
+GET http://localhost/api/snmp/cvlan2SvlanTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/onuCatvEnableTable
+GET http://localhost/api/snmp/onuCatvEnableTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/onuCatvEnableTable/:id
+POST http://localhost/api/snmp/onuCatvEnableTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1184,11 +1184,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/onuSNReplaceTable
+GET http://localhost/api/snmp/onuSNReplaceTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/onuSNReplaceTable/:id
+POST http://localhost/api/snmp/onuSNReplaceTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1205,11 +1205,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/gponRmtManageCfgTable
+GET http://localhost/api/snmp/gponRmtManageCfgTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/gponRmtManageCfgTable/:id
+POST http://localhost/api/snmp/gponRmtManageCfgTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1226,11 +1226,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/gponVEIPManagePathCfgTable
+GET http://localhost/api/snmp/gponVEIPManagePathCfgTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/gponVEIPManagePathCfgTable/:id
+POST http://localhost/api/snmp/gponVEIPManagePathCfgTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1264,11 +1264,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/gponVEIPServiceCfgTable
+GET http://localhost/api/snmp/gponVEIPServiceCfgTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/gponVEIPServiceCfgTable/:id
+POST http://localhost/api/snmp/gponVEIPServiceCfgTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1292,15 +1292,15 @@ Content-Type: application/json
 
 
 ### Obtain the available service ID (the node of the EPON3.1 is abandoned)
-GET http://103.184.122.170/api/snmp/gponVEIPServiceIDCfgTable
+GET http://localhost/api/snmp/gponVEIPServiceIDCfgTable
 Authorization: Bearer {{token}}
 
 ### Description.
-GET http://103.184.122.170/api/snmp/gponOnuDefaultQinQConfTable
+GET http://localhost/api/snmp/gponOnuDefaultQinQConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/gponOnuDefaultQinQConfTable/:id
+POST http://localhost/api/snmp/gponOnuDefaultQinQConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1320,15 +1320,15 @@ Content-Type: application/json
 
 
 ### Description.
-GET http://103.184.122.170/api/snmp/gponGetNextServiceIDTable
+GET http://localhost/api/snmp/gponGetNextServiceIDTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/gponServiceBandwidthCfgTable
+GET http://localhost/api/snmp/gponServiceBandwidthCfgTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/gponServiceBandwidthCfgTable/:id
+POST http://localhost/api/snmp/gponServiceBandwidthCfgTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1345,15 +1345,15 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/onuPonOpticalThreshTable
+GET http://localhost/api/snmp/onuPonOpticalThreshTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/attachOptTable
+GET http://localhost/api/snmp/attachOptTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/attachOptTable/:id
+POST http://localhost/api/snmp/attachOptTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1369,11 +1369,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/wanServiceTable
+GET http://localhost/api/snmp/wanServiceTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/wanServiceTable/:id
+POST http://localhost/api/snmp/wanServiceTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1415,11 +1415,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/applywanserviceTable
+GET http://localhost/api/snmp/applywanserviceTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/applywanserviceTable/:id
+POST http://localhost/api/snmp/applywanserviceTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1433,11 +1433,11 @@ Content-Type: application/json
 
 
 ### gpon service bandwith
-GET http://103.184.122.170/api/snmp/gponServiceBandwithTable
+GET http://localhost/api/snmp/gponServiceBandwithTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/gponServiceBandwithTable/:id
+POST http://localhost/api/snmp/gponServiceBandwithTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1452,11 +1452,11 @@ Content-Type: application/json
 
 
 ### gpon service bandwith
-GET http://103.184.122.170/api/snmp/gponServiceBwProfileTable
+GET http://localhost/api/snmp/gponServiceBwProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/gponServiceBwProfileTable/:id
+POST http://localhost/api/snmp/gponServiceBwProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1473,11 +1473,11 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/attachgponSerBwTable
+GET http://localhost/api/snmp/attachgponSerBwTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/attachgponSerBwTable/:id
+POST http://localhost/api/snmp/attachgponSerBwTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1493,15 +1493,15 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/mibPerformExternTable
+GET http://localhost/api/snmp/mibPerformExternTable
 Authorization: Bearer {{token}}
 
 ### A list of interface entries.  The number of<br/><br/>entries is given by the value of ifNumber.
-GET http://103.184.122.170/api/snmp/onuPonMibPerformTable
+GET http://localhost/api/snmp/onuPonMibPerformTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/onuPonMibPerformTable/:id
+POST http://localhost/api/snmp/onuPonMibPerformTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1518,11 +1518,11 @@ Content-Type: application/json
 
 
 ### A list of interface entries.  The number of<br/><br/>entries is given by the value of ifNumber.
-GET http://103.184.122.170/api/snmp/onuFEMibPerformTable
+GET http://localhost/api/snmp/onuFEMibPerformTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/onuFEMibPerformTable/:id
+POST http://localhost/api/snmp/onuFEMibPerformTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1539,11 +1539,11 @@ Content-Type: application/json
 
 
 ### A list of interface entries.  The number of<br/><br/>entries is given by the value of ifNumber.
-GET http://103.184.122.170/api/snmp/cardPonMibPerformTable
+GET http://localhost/api/snmp/cardPonMibPerformTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/cardPonMibPerformTable/:id
+POST http://localhost/api/snmp/cardPonMibPerformTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1560,27 +1560,27 @@ Content-Type: application/json
 
 
 ### Description.
-GET http://103.184.122.170/api/snmp/onuWanServiceBwProfileQueryTable
+GET http://localhost/api/snmp/onuWanServiceBwProfileQueryTable
 Authorization: Bearer {{token}}
 
 ### Description.
-GET http://103.184.122.170/api/snmp/qryOnuPhyPasswdWhiteListTable
+GET http://localhost/api/snmp/qryOnuPhyPasswdWhiteListTable
 Authorization: Bearer {{token}}
 
 ### Description.
-GET http://103.184.122.170/api/snmp/businessModeTable
+GET http://localhost/api/snmp/businessModeTable
 Authorization: Bearer {{token}}
 
 ### Description.
-GET http://103.184.122.170/api/snmp/wanIPReturnTable
+GET http://localhost/api/snmp/wanIPReturnTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/onuMACReplaceTable
+GET http://localhost/api/snmp/onuMACReplaceTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/onuMACReplaceTable/:id
+POST http://localhost/api/snmp/onuMACReplaceTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -1596,62 +1596,62 @@ Content-Type: application/json
 
 
 ### Description
-GET http://103.184.122.170/api/snmp/powerAlarmStatusTable
+GET http://localhost/api/snmp/powerAlarmStatusTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/fanAlarmStatusTable
+GET http://localhost/api/snmp/fanAlarmStatusTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/currentAlarmTable
+GET http://localhost/api/snmp/currentAlarmTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/hisAlarmTable
+GET http://localhost/api/snmp/hisAlarmTable
 Authorization: Bearer {{token}}
 
 ### Description.
-GET http://103.184.122.170/api/snmp/lldpLocalSysCapSupportedTable
+GET http://localhost/api/snmp/lldpLocalSysCapSupportedTable
 Authorization: Bearer {{token}}
 
 ### Description.
-GET http://103.184.122.170/api/snmp/lldpLocalSysCapEnabledTable
+GET http://localhost/api/snmp/lldpLocalSysCapEnabledTable
 Authorization: Bearer {{token}}
 
 ### Description.
-GET http://103.184.122.170/api/snmp/lldpNeighborSysCapSupportedTable
+GET http://localhost/api/snmp/lldpNeighborSysCapSupportedTable
 Authorization: Bearer {{token}}
 
 ### Description.
-GET http://103.184.122.170/api/snmp/lldpNeighborSysCapEnabledTable
+GET http://localhost/api/snmp/lldpNeighborSysCapEnabledTable
 Authorization: Bearer {{token}}
 
 ### Description.
-GET http://103.184.122.170/api/snmp/lldpNeighborStatusTable
+GET http://localhost/api/snmp/lldpNeighborStatusTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/slotObjectIndexTable
+GET http://localhost/api/snmp/slotObjectIndexTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/onuObjectIndexTable
+GET http://localhost/api/snmp/onuObjectIndexTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/uplinkObjectIndexTable
+GET http://localhost/api/snmp/uplinkObjectIndexTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/potsObjectIndexTable
+GET http://localhost/api/snmp/potsObjectIndexTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/portObjectIndexTable
+GET http://localhost/api/snmp/portObjectIndexTable
 Authorization: Bearer {{token}}
 
 ### Description
-GET http://103.184.122.170/api/snmp/ponObjectIndexTable
+GET http://localhost/api/snmp/ponObjectIndexTable
 Authorization: Bearer {{token}}
 

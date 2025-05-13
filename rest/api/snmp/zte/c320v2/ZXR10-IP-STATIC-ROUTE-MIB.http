@@ -1,9 +1,9 @@
 ### A list of current IPv4 static route entries.
-GET http://103.184.122.170/api/snmp/zxR10Ipv4StaticRouteTable
+GET http://localhost/api/snmp/zxR10Ipv4StaticRouteTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxR10Ipv4StaticRouteTable/:id
+POST http://localhost/api/snmp/zxR10Ipv4StaticRouteTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -20,6 +20,6 @@ Content-Type: application/json
 }
 
 ### A list of current static route entries for frr.
-GET http://103.184.122.170/api/snmp/zxR10Ipv4StaticRouteFrrTable
+GET http://localhost/api/snmp/zxR10Ipv4StaticRouteFrrTable
 Authorization: Bearer {{token}}
 

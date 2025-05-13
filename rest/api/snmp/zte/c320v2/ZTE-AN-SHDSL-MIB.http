@@ -1,9 +1,9 @@
 ### This table includes the SHDSL span information.
-GET http://103.184.122.170/api/snmp/zxAnShdslSpanConfTable
+GET http://localhost/api/snmp/zxAnShdslSpanConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnShdslSpanConfTable/:id
+POST http://localhost/api/snmp/zxAnShdslSpanConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

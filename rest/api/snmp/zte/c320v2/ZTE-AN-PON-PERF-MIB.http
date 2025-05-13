@@ -1,9 +1,9 @@
 ### PON interface statistics table.<br/>The 'IfType' of ifIndex supports 1(physical interface)<br/>and 5(PON channel).
-GET http://103.184.122.170/api/snmp/zxAnPonOltIfCurrPerfTable
+GET http://localhost/api/snmp/zxAnPonOltIfCurrPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonOltIfCurrPerfTable/:id
+POST http://localhost/api/snmp/zxAnPonOltIfCurrPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -12,11 +12,11 @@ Content-Type: application/json
 }
 
 ### The current 15 minutes performance data table of PON interface.<br/>The 'IfType' of ifIndex supports 1(physical interface)<br/>and 5(PON channel).
-GET http://103.184.122.170/api/snmp/zxAnPonOltIfCurr15MinPerfTable
+GET http://localhost/api/snmp/zxAnPonOltIfCurr15MinPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonOltIfCurr15MinPerfTable/:id
+POST http://localhost/api/snmp/zxAnPonOltIfCurr15MinPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -25,11 +25,11 @@ Content-Type: application/json
 }
 
 ### The minutes interval performance data table of PON OLT.<br/>The 'IfType' of ifIndex supports 1(physical interface)<br/>and 5(PON channel).
-GET http://103.184.122.170/api/snmp/zxAnPonOltIfCurrMinPerfTable
+GET http://localhost/api/snmp/zxAnPonOltIfCurrMinPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonOltIfCurrMinPerfTable/:id
+POST http://localhost/api/snmp/zxAnPonOltIfCurrMinPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -38,11 +38,11 @@ Content-Type: application/json
 }
 
 ### The current 1 day performance data table of PON interface.<br/>The 'IfType' of ifIndex supports 1(physical interface)<br/>and 5(PON channel).
-GET http://103.184.122.170/api/snmp/zxAnPonOltIfCurr1DayPerfTable
+GET http://localhost/api/snmp/zxAnPonOltIfCurr1DayPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonOltIfCurr1DayPerfTable/:id
+POST http://localhost/api/snmp/zxAnPonOltIfCurr1DayPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -51,23 +51,23 @@ Content-Type: application/json
 }
 
 ### The 15 minutes interval performance data table of PON OLT.<br/>The 'IfType' of ifIndex supports 1(physical interface)<br/>and 5(PON channel).
-GET http://103.184.122.170/api/snmp/zxAnPonOltIfHis15MinPerfTable
+GET http://localhost/api/snmp/zxAnPonOltIfHis15MinPerfTable
 Authorization: Bearer {{token}}
 
 ### The minutes interval history performance data table of PON OLT.<br/>The 'IfType' of ifIndex supports 1(physical interface)<br/>and 5(PON channel).
-GET http://103.184.122.170/api/snmp/zxAnPonOltIfHisMinPerfTable
+GET http://localhost/api/snmp/zxAnPonOltIfHisMinPerfTable
 Authorization: Bearer {{token}}
 
 ### The 1 day interval performance data table of PON OLT.<br/>The 'IfType' of ifIndex supports 1(physical interface)<br/>and 5(PON channel).
-GET http://103.184.122.170/api/snmp/zxAnPonOltIfHis1DayPerfTable
+GET http://localhost/api/snmp/zxAnPonOltIfHis1DayPerfTable
 Authorization: Bearer {{token}}
 
 ### The performance alarm threshold profile<br/>list table of interfaces.
-GET http://103.184.122.170/api/snmp/zxAnPonOltPerfAlmPrfTable
+GET http://localhost/api/snmp/zxAnPonOltPerfAlmPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonOltPerfAlmPrfTable/:id
+POST http://localhost/api/snmp/zxAnPonOltPerfAlmPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -76,11 +76,11 @@ Content-Type: application/json
 }
 
 ### The performance alarm threshold profile table of interfaces.
-GET http://103.184.122.170/api/snmp/zxAnPonOltPerfAlmPrfConfTable
+GET http://localhost/api/snmp/zxAnPonOltPerfAlmPrfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonOltPerfAlmPrfConfTable/:id
+POST http://localhost/api/snmp/zxAnPonOltPerfAlmPrfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -98,11 +98,11 @@ Content-Type: application/json
 }
 
 ### The performance alarm threshold profile applying table of<br/>interfaces.<br/>The 'IfType' of ifIndex supports 1(physical interface)<br/>and 5(PON channel).
-GET http://103.184.122.170/api/snmp/zxAnPonOltPerfAlmPrfApplyTable
+GET http://localhost/api/snmp/zxAnPonOltPerfAlmPrfApplyTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonOltPerfAlmPrfApplyTable/:id
+POST http://localhost/api/snmp/zxAnPonOltPerfAlmPrfApplyTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -112,11 +112,11 @@ Content-Type: application/json
 }
 
 ### PON ONU interface statistics table
-GET http://103.184.122.170/api/snmp/zxAnPonOnuIfCurrPerfTable
+GET http://localhost/api/snmp/zxAnPonOnuIfCurrPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonOnuIfCurrPerfTable/:id
+POST http://localhost/api/snmp/zxAnPonOnuIfCurrPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -125,11 +125,11 @@ Content-Type: application/json
 }
 
 ### The current 15 minutes performance data table of PON ONU<br/>interface.
-GET http://103.184.122.170/api/snmp/zxAnPonOnuIfCurr15MinPerfTable
+GET http://localhost/api/snmp/zxAnPonOnuIfCurr15MinPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonOnuIfCurr15MinPerfTable/:id
+POST http://localhost/api/snmp/zxAnPonOnuIfCurr15MinPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -138,11 +138,11 @@ Content-Type: application/json
 }
 
 ### The minutes interval performance data table of PON ONU<br/>interface.
-GET http://103.184.122.170/api/snmp/zxAnPonOnuIfCurrMinPerfTable
+GET http://localhost/api/snmp/zxAnPonOnuIfCurrMinPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonOnuIfCurrMinPerfTable/:id
+POST http://localhost/api/snmp/zxAnPonOnuIfCurrMinPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -151,11 +151,11 @@ Content-Type: application/json
 }
 
 ### The current 1 day performance data table of PON ONU interface.
-GET http://103.184.122.170/api/snmp/zxAnPonOnuIfCurr1DayPerfTable
+GET http://localhost/api/snmp/zxAnPonOnuIfCurr1DayPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonOnuIfCurr1DayPerfTable/:id
+POST http://localhost/api/snmp/zxAnPonOnuIfCurr1DayPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -164,23 +164,23 @@ Content-Type: application/json
 }
 
 ### The 15 minutes interval performance data table of PON ONU.
-GET http://103.184.122.170/api/snmp/zxAnPonOnuIfHis15MinPerfTable
+GET http://localhost/api/snmp/zxAnPonOnuIfHis15MinPerfTable
 Authorization: Bearer {{token}}
 
 ### The minutes interval history performance data table of PON ONU.
-GET http://103.184.122.170/api/snmp/zxAnPonOnuIfHisMinPerfTable
+GET http://localhost/api/snmp/zxAnPonOnuIfHisMinPerfTable
 Authorization: Bearer {{token}}
 
 ### The 1 day interval performance data table of PON ONU.
-GET http://103.184.122.170/api/snmp/zxAnPonOnuIfHis1DayPerfTable
+GET http://localhost/api/snmp/zxAnPonOnuIfHis1DayPerfTable
 Authorization: Bearer {{token}}
 
 ### The performance alarm threshold profile<br/>list table of interfaces.
-GET http://103.184.122.170/api/snmp/zxAnPonOnuPerfAlmPrfTable
+GET http://localhost/api/snmp/zxAnPonOnuPerfAlmPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonOnuPerfAlmPrfTable/:id
+POST http://localhost/api/snmp/zxAnPonOnuPerfAlmPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -189,11 +189,11 @@ Content-Type: application/json
 }
 
 ### The performance alarm threshold profile table of interfaces.
-GET http://103.184.122.170/api/snmp/zxAnPonOnuPerfAlmPrfConfTable
+GET http://localhost/api/snmp/zxAnPonOnuPerfAlmPrfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonOnuPerfAlmPrfConfTable/:id
+POST http://localhost/api/snmp/zxAnPonOnuPerfAlmPrfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -211,11 +211,11 @@ Content-Type: application/json
 }
 
 ### The performance alarm threshold profile<br/>applying table of interfaces.
-GET http://103.184.122.170/api/snmp/zxAnPonOnuPerfAlmPrfApplyTable
+GET http://localhost/api/snmp/zxAnPonOnuPerfAlmPrfApplyTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonOnuPerfAlmPrfApplyTable/:id
+POST http://localhost/api/snmp/zxAnPonOnuPerfAlmPrfApplyTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

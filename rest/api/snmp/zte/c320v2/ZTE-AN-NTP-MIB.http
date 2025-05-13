@@ -1,9 +1,9 @@
 ### This table for configure ntp server.<br/><br/><br/><br/>Each entry is indexed by a zxAnNtpServerPriority.<br/><br/>To assign a ntp server, follow these steps:<br/><br/>1) Confirm the zxAnNtpServerPriority hasn`t be<br/><br/>used by other server.<br/><br/>2) Assign the server ip address zxAnNtpServerIpAddress,<br/><br/>this is mandory and this address must be also unique.<br/><br/>3) Configure ntp server version zxAnNtpServerVersion,<br/><br/>optional. Note that NE does not synchronize with<br/><br/>server which version is lower.<br/><br/>4) Assign a key to authe the server, optional.<br/><br/>Make sure this key must be exist and trusted,<br/><br/>otherwise NE will not authe the server.<br/><br/>5) Assign a server to be locked, optional.<br/><br/>If a server has been locked, then NE will only synchronize<br/><br/>with this server.
-GET http://103.184.122.170/api/snmp/zxAnNtpServerTable
+GET http://localhost/api/snmp/zxAnNtpServerTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnNtpServerTable/:id
+POST http://localhost/api/snmp/zxAnNtpServerTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -17,11 +17,11 @@ Content-Type: application/json
 }
 
 ### NTP authentication configuration table.
-GET http://103.184.122.170/api/snmp/zxAnNtpAuthTable
+GET http://localhost/api/snmp/zxAnNtpAuthTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnNtpAuthTable/:id
+POST http://localhost/api/snmp/zxAnNtpAuthTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -32,11 +32,11 @@ Content-Type: application/json
 }
 
 ### NTP layer 3 interface configuration table.
-GET http://103.184.122.170/api/snmp/zxAnNtpIfConfTable
+GET http://localhost/api/snmp/zxAnNtpIfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnNtpIfConfTable/:id
+POST http://localhost/api/snmp/zxAnNtpIfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -53,11 +53,11 @@ Content-Type: application/json
 }
 
 ### NTP peer table.
-GET http://103.184.122.170/api/snmp/zxAnNtpPeerTable
+GET http://localhost/api/snmp/zxAnNtpPeerTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnNtpPeerTable/:id
+POST http://localhost/api/snmp/zxAnNtpPeerTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

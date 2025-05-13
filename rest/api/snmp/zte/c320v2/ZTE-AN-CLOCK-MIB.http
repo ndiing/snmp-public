@@ -1,9 +1,9 @@
 ### undefined
-GET http://103.184.122.170/api/snmp/zxAnClockSrcTable
+GET http://localhost/api/snmp/zxAnClockSrcTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnClockSrcTable/:id
+POST http://localhost/api/snmp/zxAnClockSrcTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -20,11 +20,11 @@ Content-Type: application/json
 }
 
 ### SSM/QL-level overwriting management of clock tx port.
-GET http://103.184.122.170/api/snmp/zxAnClockSsmSendTable
+GET http://localhost/api/snmp/zxAnClockSsmSendTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnClockSsmSendTable/:id
+POST http://localhost/api/snmp/zxAnClockSsmSendTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -37,11 +37,11 @@ Content-Type: application/json
 }
 
 ### This managed entity represents the<br/><br/>ESMC(Ethernet Synchronization Messaging Channel).
-GET http://103.184.122.170/api/snmp/zxAnClockEsmcTable
+GET http://localhost/api/snmp/zxAnClockEsmcTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnClockEsmcTable/:id
+POST http://localhost/api/snmp/zxAnClockEsmcTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -53,11 +53,11 @@ Content-Type: application/json
 }
 
 ### The card clock configuration table.
-GET http://103.184.122.170/api/snmp/zxAnClockCardClockConfTable
+GET http://localhost/api/snmp/zxAnClockCardClockConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnClockCardClockConfTable/:id
+POST http://localhost/api/snmp/zxAnClockCardClockConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

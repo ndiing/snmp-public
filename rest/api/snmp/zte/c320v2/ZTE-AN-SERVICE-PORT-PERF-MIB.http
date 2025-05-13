@@ -1,9 +1,9 @@
 ### Current statistics data table of service port.
-GET http://103.184.122.170/api/snmp/zxAnSrvPortCurrStatsTable
+GET http://localhost/api/snmp/zxAnSrvPortCurrStatsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnSrvPortCurrStatsTable/:id
+POST http://localhost/api/snmp/zxAnSrvPortCurrStatsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -13,11 +13,11 @@ Content-Type: application/json
 }
 
 ### The current minutes interval performance data table of the<br/><br/>service port.
-GET http://103.184.122.170/api/snmp/zxAnSrvPortCurrMinPerfTable
+GET http://localhost/api/snmp/zxAnSrvPortCurrMinPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnSrvPortCurrMinPerfTable/:id
+POST http://localhost/api/snmp/zxAnSrvPortCurrMinPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -26,11 +26,11 @@ Content-Type: application/json
 }
 
 ### The current 1 day interval performance data table of the service<br/><br/>port.
-GET http://103.184.122.170/api/snmp/zxAnSrvPortCurr1DayPerfTable
+GET http://localhost/api/snmp/zxAnSrvPortCurr1DayPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnSrvPortCurr1DayPerfTable/:id
+POST http://localhost/api/snmp/zxAnSrvPortCurr1DayPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -39,19 +39,19 @@ Content-Type: application/json
 }
 
 ### The historical minutes interval performance data table of the<br/><br/>service port.
-GET http://103.184.122.170/api/snmp/zxAnSrvPortHisMinPerfTable
+GET http://localhost/api/snmp/zxAnSrvPortHisMinPerfTable
 Authorization: Bearer {{token}}
 
 ### The historical 1 day interval performance data table of the<br/><br/>service port.
-GET http://103.184.122.170/api/snmp/zxAnSrvPortHis1DayPerfTable
+GET http://localhost/api/snmp/zxAnSrvPortHis1DayPerfTable
 Authorization: Bearer {{token}}
 
 ### Enable/disable the service port performance.
-GET http://103.184.122.170/api/snmp/zxAnSrvPortPerfConfTable
+GET http://localhost/api/snmp/zxAnSrvPortPerfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnSrvPortPerfConfTable/:id
+POST http://localhost/api/snmp/zxAnSrvPortPerfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

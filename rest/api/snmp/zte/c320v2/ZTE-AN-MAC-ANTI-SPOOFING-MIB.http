@@ -1,13 +1,13 @@
 ### A table that contains the MAC move information.
-GET http://103.184.122.170/api/snmp/zxAnMasMacMoveLogTable
+GET http://localhost/api/snmp/zxAnMasMacMoveLogTable
 Authorization: Bearer {{token}}
 
 ### MAC-anti-spoofing(Mas) trust configuration for permitting MAC<br/><br/>address moving based on interface table.
-GET http://103.184.122.170/api/snmp/zxAnMasIfConfTable
+GET http://localhost/api/snmp/zxAnMasIfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnMasIfConfTable/:id
+POST http://localhost/api/snmp/zxAnMasIfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

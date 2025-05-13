@@ -1,9 +1,9 @@
 ### Global MVLAN translation table.
-GET http://103.184.122.170/api/snmp/zxAnMcastVlanGlobalTransTable
+GET http://localhost/api/snmp/zxAnMcastVlanGlobalTransTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnMcastVlanGlobalTransTable/:id
+POST http://localhost/api/snmp/zxAnMcastVlanGlobalTransTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -13,11 +13,11 @@ Content-Type: application/json
 }
 
 ### MVLAN translation table on the interface.
-GET http://103.184.122.170/api/snmp/zxAnMcastVlanIfTransTable
+GET http://localhost/api/snmp/zxAnMcastVlanIfTransTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnMcastVlanIfTransTable/:id
+POST http://localhost/api/snmp/zxAnMcastVlanIfTransTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

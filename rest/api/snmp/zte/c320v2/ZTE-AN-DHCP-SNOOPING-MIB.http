@@ -1,9 +1,9 @@
 ### This table provides the mechanism to control<br/><br/>ipv4 dhcp snooping per vlan.<br/><br/><br/><br/>When a vlan is created in a device supporting this<br/><br/>table, a corresponding entry of this table will be added.<br/><br/><br/><br/>When a vlan is destroyed in a device supporting this<br/><br/>table, a corresponding entry of this table will be deleted.
-GET http://103.184.122.170/api/snmp/zxAnDsDhcpV4VlanTable
+GET http://localhost/api/snmp/zxAnDsDhcpV4VlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnDsDhcpV4VlanTable/:id
+POST http://localhost/api/snmp/zxAnDsDhcpV4VlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -12,11 +12,11 @@ Content-Type: application/json
 }
 
 ### This table provides the mechanism to enable or disable<br/><br/>DHCPv4 snooping at each interface capable of this feature.<br/><br/><br/><br/>The interfaces for which this feature must be applicable are:<br/><br/>IfType = Physical Interface(1)<br/><br/>for PON card:<br/><br/>SubIfType = ONU vport sub-interface(2)<br/><br/>for DSL card:<br/><br/>SubIfType = DSL PVC sub-interface(6)
-GET http://103.184.122.170/api/snmp/zxAnDsDhcpV4IfTable
+GET http://localhost/api/snmp/zxAnDsDhcpV4IfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnDsDhcpV4IfTable/:id
+POST http://localhost/api/snmp/zxAnDsDhcpV4IfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -25,11 +25,11 @@ Content-Type: application/json
 }
 
 ### This table provides the ipv4 dhcp snooping<br/><br/>bindings information learnt by the interface<br/><br/>capable of this feature.<br/><br/><br/><br/>The interfaces for which this feature must<br/><br/>be applicable are:<br/><br/>IfType = Physical Interface(1)<br/><br/>for PON card:<br/><br/>SubIfType = ONU service port sub-interface(3)<br/><br/>for DSL card:<br/><br/>SubIfType = DSL PVC sub-interface(6)
-GET http://103.184.122.170/api/snmp/zxAnDsDhcpV4IpBindingTable
+GET http://localhost/api/snmp/zxAnDsDhcpV4IpBindingTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnDsDhcpV4IpBindingTable/:id
+POST http://localhost/api/snmp/zxAnDsDhcpV4IpBindingTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -38,11 +38,11 @@ Content-Type: application/json
 }
 
 ### This table provides the information on static IPv4 addresses<br/><br/>used for IP Source Guard purpose at each interface capable<br/><br/>of this feature.<br/><br/><br/><br/>The interfaces for which this feature must be applicable are:<br/><br/>IfType = Physical Interface(1)<br/><br/>SubIfType = ONU service port sub-interface(3)
-GET http://103.184.122.170/api/snmp/zxAnDsDhcpV4StaticIpBindingTable
+GET http://localhost/api/snmp/zxAnDsDhcpV4StaticIpBindingTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnDsDhcpV4StaticIpBindingTable/:id
+POST http://localhost/api/snmp/zxAnDsDhcpV4StaticIpBindingTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -52,11 +52,11 @@ Content-Type: application/json
 }
 
 ### This object specifies the maximum number of DHCPv4 bindings<br/><br/>allowed on this interface. This objects value will limit<br/><br/>the number of entries in zxAnDsDhcpV4IpBindingTable and<br/><br/>zxAnDsDhcpV4StaticIpBindingTable.<br/><br/><br/><br/>The interfaces for which this feature must be applicable<br/><br/>are:<br/><br/>IfType = Physical Interface(1)<br/><br/>SubIfType = ONU port sub-interface(1)
-GET http://103.184.122.170/api/snmp/zxAnDsDhcpV4IfBindingLimitTable
+GET http://localhost/api/snmp/zxAnDsDhcpV4IfBindingLimitTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnDsDhcpV4IfBindingLimitTable/:id
+POST http://localhost/api/snmp/zxAnDsDhcpV4IfBindingLimitTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -65,11 +65,11 @@ Content-Type: application/json
 }
 
 ### This object specifies the maximum number of DHCPv4 bindings<br/><br/>allowed on this interface. This objects value will limit<br/><br/>the number of entries in zxAnDsDhcpV4IpBindingTable.<br/><br/><br/><br/>The interfaces for which this feature must be applicable<br/><br/>are:<br/><br/>IfType = Physical Interface(1)<br/><br/>for PON card:<br/><br/>SubIfType = ONU vport sub-interface(1)<br/><br/>for DSL card:<br/><br/>SubIfType = DSL PVC sub-interface(6)
-GET http://103.184.122.170/api/snmp/zxAnDsDhcpV4IfSessionLimitTable
+GET http://localhost/api/snmp/zxAnDsDhcpV4IfSessionLimitTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnDsDhcpV4IfSessionLimitTable/:id
+POST http://localhost/api/snmp/zxAnDsDhcpV4IfSessionLimitTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -78,11 +78,11 @@ Content-Type: application/json
 }
 
 ### This table provides the mechanism to control<br/><br/>IPv4 DHCP snooping MAC-anti-spoofing per VLAN.<br/><br/><br/><br/>When a VLAN is created in a device supporting this<br/><br/>table, a corresponding entry of this table will be added.<br/><br/><br/><br/>When a VLAN is destroyed in a device supporting this<br/><br/>table, a corresponding entry of this table will be deleted.
-GET http://103.184.122.170/api/snmp/zxAnDsDhcpV4MasVlanTable
+GET http://localhost/api/snmp/zxAnDsDhcpV4MasVlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnDsDhcpV4MasVlanTable/:id
+POST http://localhost/api/snmp/zxAnDsDhcpV4MasVlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -91,11 +91,11 @@ Content-Type: application/json
 }
 
 ### This table provides the ipv4 dhcp statistics<br/><br/>information received by by the interface<br/><br/>capable of this feature.<br/><br/><br/><br/>The interfaces for which this feature must<br/><br/>be applicable are:<br/><br/>IfType = Physical Interface(1)<br/><br/>for PON card:<br/><br/>SubIfType = ONU vport sub-interface(2)<br/><br/>for DSL card:<br/><br/>SubIfType = DSL PVC sub-interface(6)
-GET http://103.184.122.170/api/snmp/zxAnDsDhcpV4IfStatsTable
+GET http://localhost/api/snmp/zxAnDsDhcpV4IfStatsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnDsDhcpV4IfStatsTable/:id
+POST http://localhost/api/snmp/zxAnDsDhcpV4IfStatsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -104,11 +104,11 @@ Content-Type: application/json
 }
 
 ### This table provides the mechanism to control<br/><br/>ipv6 dhcp snooping per vlan.<br/><br/><br/><br/>When a vlan is created in a device supporting this<br/><br/>table, a corresponding entry of this table will be added.<br/><br/><br/><br/>When a vlan is destroyed in a device supporting this<br/><br/>table, a corresponding entry of this table will be deleted.
-GET http://103.184.122.170/api/snmp/zxAnDsDhcpV6VlanTable
+GET http://localhost/api/snmp/zxAnDsDhcpV6VlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnDsDhcpV6VlanTable/:id
+POST http://localhost/api/snmp/zxAnDsDhcpV6VlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -117,11 +117,11 @@ Content-Type: application/json
 }
 
 ### This table provides the mechanism to enable or disable<br/><br/>DHCPv6 snooping at each user port capable of this feature.<br/><br/><br/><br/>The interfaces for which this feature must be applicable are:<br/><br/>IfType = Physical Interface(1)<br/><br/>for PON card:<br/><br/>SubIfType = ONU vport sub-interface(2)<br/><br/>for DSL card:<br/><br/>SubIfType = DSL PVC sub-interface(6)
-GET http://103.184.122.170/api/snmp/zxAnDsDhcpV6IfTable
+GET http://localhost/api/snmp/zxAnDsDhcpV6IfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnDsDhcpV6IfTable/:id
+POST http://localhost/api/snmp/zxAnDsDhcpV6IfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -130,11 +130,11 @@ Content-Type: application/json
 }
 
 ### This table provides the ipv6 dhcp snooping<br/><br/>bindings information learnt by the interface<br/><br/>capable of this feature.<br/><br/><br/><br/>The interfaces for which this feature must<br/><br/>be applicable are:<br/><br/>IfType = Physical Interface(1)<br/><br/>for PON card:<br/><br/>SubIfType = ONU service port sub-interface(3)<br/><br/>for DSL card:<br/><br/>SubIfType = DSL PVC sub-interface(6)
-GET http://103.184.122.170/api/snmp/zxAnDsDhcpV6IpBindingTable
+GET http://localhost/api/snmp/zxAnDsDhcpV6IpBindingTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnDsDhcpV6IpBindingTable/:id
+POST http://localhost/api/snmp/zxAnDsDhcpV6IpBindingTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -143,11 +143,11 @@ Content-Type: application/json
 }
 
 ### This table provides the information on static IPv6 addresses<br/><br/>used for IP Source Guard purpose at each interface capable<br/><br/>of this feature.<br/><br/><br/><br/>The interfaces for which this feature must be applicable are:<br/><br/>IfType = Physical Interface(1)<br/><br/>for PON card:<br/><br/>SubIfType = ONU service port sub-interface(3)<br/><br/>for DSL card:<br/><br/>SubIfType = DSL PVC sub-interface(6)
-GET http://103.184.122.170/api/snmp/zxAnDsDhcpV6StaticIpBindingTable
+GET http://localhost/api/snmp/zxAnDsDhcpV6StaticIpBindingTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnDsDhcpV6StaticIpBindingTable/:id
+POST http://localhost/api/snmp/zxAnDsDhcpV6StaticIpBindingTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -158,11 +158,11 @@ Content-Type: application/json
 }
 
 ### This object specifies the maximum number of DHCPv6 bindings<br/><br/>allowed on this interface. This objects value will limit<br/><br/>the number of entries in zxAnDsDhcpV6IpBindingTable and<br/><br/>zxAnDsDhcpV6StaticIpBindingTable.<br/><br/><br/><br/>The interfaces for which this feature must be applicable<br/><br/>are:<br/><br/>IfType = Physical Interface(1)<br/><br/>SubIfType = ONU port sub-interface(1)
-GET http://103.184.122.170/api/snmp/zxAnDsDhcpV6IfBindingLimitTable
+GET http://localhost/api/snmp/zxAnDsDhcpV6IfBindingLimitTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnDsDhcpV6IfBindingLimitTable/:id
+POST http://localhost/api/snmp/zxAnDsDhcpV6IfBindingLimitTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -171,11 +171,11 @@ Content-Type: application/json
 }
 
 ### This object specifies the maximum number of DHCPv6 bindings<br/><br/>allowed on this interface. This objects value will limit<br/><br/>the number of entries in zxAnDsDhcpV6IpBindingTable<br/><br/><br/><br/>The interfaces for which this feature must be applicable<br/><br/>are:<br/><br/>IfType = Physical Interface(1)<br/><br/>SubIfType = ONU vport sub-interface(1)
-GET http://103.184.122.170/api/snmp/zxAnDsDhcpV6IfSessionLimitTable
+GET http://localhost/api/snmp/zxAnDsDhcpV6IfSessionLimitTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnDsDhcpV6IfSessionLimitTable/:id
+POST http://localhost/api/snmp/zxAnDsDhcpV6IfSessionLimitTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -184,11 +184,11 @@ Content-Type: application/json
 }
 
 ### This table provides the ipv6 dhcp statistics<br/><br/>information received by by the interface<br/><br/>capable of this feature.<br/><br/><br/><br/>The interfaces for which this feature must<br/><br/>be applicable are:<br/><br/>IfType = Physical Interface(1)<br/><br/>for PON card:<br/><br/>SubIfType = ONU vport sub-interface(2)<br/><br/>for DSL card:<br/><br/>SubIfType = DSL PVC sub-interface(6)
-GET http://103.184.122.170/api/snmp/zxAnDsDhcpV6IfStatsTable
+GET http://localhost/api/snmp/zxAnDsDhcpV6IfStatsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnDsDhcpV6IfStatsTable/:id
+POST http://localhost/api/snmp/zxAnDsDhcpV6IfStatsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -197,11 +197,11 @@ Content-Type: application/json
 }
 
 ### This table provides the information on static IPv4 addresses used<br/><br/>for IP source guard purpose at each interface capable of this<br/><br/>feature.<br/><br/><br/><br/>The interfaces for which this feature must be applicable are:<br/><br/>IfType = Physical Interface(1)<br/><br/>for PON card:<br/><br/>SubIfType = ONU service port sub-interface(3)<br/><br/>for DSL card:<br/><br/>SubIfType = DSL PVC sub-interface(6)
-GET http://103.184.122.170/api/snmp/zxAnIpv4SrcGuardIpBindingTable
+GET http://localhost/api/snmp/zxAnIpv4SrcGuardIpBindingTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnIpv4SrcGuardIpBindingTable/:id
+POST http://localhost/api/snmp/zxAnIpv4SrcGuardIpBindingTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -213,11 +213,11 @@ Content-Type: application/json
 }
 
 ### This table provides the information on IPv6 addresses used for IP<br/><br/>source guard purpose at each interface capable of this feature.<br/><br/><br/><br/>The interfaces for which this feature must be applicable are:<br/><br/>IfType = Physical Interface(1)<br/><br/>for PON card:<br/><br/>SubIfType = ONU service port sub-interface(3)<br/><br/>for DSL card:<br/><br/>SubIfType = DSL PVC sub-interface(6)
-GET http://103.184.122.170/api/snmp/zxAnIpv6SrcGuardIpBindingTable
+GET http://localhost/api/snmp/zxAnIpv6SrcGuardIpBindingTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnIpv6SrcGuardIpBindingTable/:id
+POST http://localhost/api/snmp/zxAnIpv6SrcGuardIpBindingTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -229,11 +229,11 @@ Content-Type: application/json
 }
 
 ### This table provides the mechanism to enable or disable IP Source<br/><br/>Guard at each user port capable of this feature.<br/><br/><br/><br/>When DHCP Snooping is enabled at an interface, a list of IP<br/><br/>addresses is obtained through DHCP Snooping for this particular<br/><br/>interface. another list of IP addresses is obtained through static<br/><br/>configuration.<br/><br/><br/><br/>If IP Source Guard at this interface and the VLAN number on which<br/><br/>IP Source Guard at this interface is enabled, only traffic from<br/><br/>these IP addresses is allowed to pass through the interface.<br/><br/><br/><br/>The interfaces for which this feature must be applicable are:<br/><br/>IfType = Physical Interface(1)<br/><br/>for PON card:<br/><br/>SubIfType = ONU service port sub-interface(3)<br/><br/>for DSL card:<br/><br/>SubIfType = DSL PVC sub-interface(6)
-GET http://103.184.122.170/api/snmp/zxAnIpSrcGuardIfTable
+GET http://localhost/api/snmp/zxAnIpSrcGuardIfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnIpSrcGuardIfTable/:id
+POST http://localhost/api/snmp/zxAnIpSrcGuardIfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -242,11 +242,11 @@ Content-Type: application/json
 }
 
 ### This table provides the mechanism to control IP Source Guard<br/><br/>per VLAN. When a VLAN is created in a device supporting this<br/><br/>table,a corresponding entry of this table will be added.
-GET http://103.184.122.170/api/snmp/zxAnIpSrcGuardVlanTable
+GET http://localhost/api/snmp/zxAnIpSrcGuardVlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnIpSrcGuardVlanTable/:id
+POST http://localhost/api/snmp/zxAnIpSrcGuardVlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

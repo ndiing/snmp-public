@@ -1,9 +1,9 @@
 ### Clearing ONU configuration data action table.
-GET http://103.184.122.170/api/snmp/zxAnPonConfDataOnuClearTable
+GET http://localhost/api/snmp/zxAnPonConfDataOnuClearTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonConfDataOnuClearTable/:id
+POST http://localhost/api/snmp/zxAnPonConfDataOnuClearTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -12,11 +12,11 @@ Content-Type: application/json
 }
 
 ### Configuration of PON data copy.
-GET http://103.184.122.170/api/snmp/zxAnPonConfDataCopyTable
+GET http://localhost/api/snmp/zxAnPonConfDataCopyTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonConfDataCopyTable/:id
+POST http://localhost/api/snmp/zxAnPonConfDataCopyTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -29,11 +29,11 @@ Content-Type: application/json
 }
 
 ### Configuration of ONU type.
-GET http://103.184.122.170/api/snmp/zxAnPonOnuTypeTable
+GET http://localhost/api/snmp/zxAnPonOnuTypeTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonOnuTypeTable/:id
+POST http://localhost/api/snmp/zxAnPonOnuTypeTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -54,11 +54,11 @@ Content-Type: application/json
 }
 
 ### Configuration of ONU interface attributes.
-GET http://103.184.122.170/api/snmp/zxAnPonOnuIfAttrTable
+GET http://localhost/api/snmp/zxAnPonOnuIfAttrTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonOnuIfAttrTable/:id
+POST http://localhost/api/snmp/zxAnPonOnuIfAttrTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -77,11 +77,11 @@ Content-Type: application/json
 }
 
 ### This table is defined to control rogue ONU.
-GET http://103.184.122.170/api/snmp/zxAnPonRogueOnuDetectInfoTable
+GET http://localhost/api/snmp/zxAnPonRogueOnuDetectInfoTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonRogueOnuDetectInfoTable/:id
+POST http://localhost/api/snmp/zxAnPonRogueOnuDetectInfoTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -92,15 +92,15 @@ Content-Type: application/json
 }
 
 ### This table is defined to get rogue ONU information.
-GET http://103.184.122.170/api/snmp/zxAnPonRogueOnuInfoTable
+GET http://localhost/api/snmp/zxAnPonRogueOnuInfoTable
 Authorization: Bearer {{token}}
 
 ### The PON port rogue ONU management table.<br/><br/>This table only is used for C600 serial.
-GET http://103.184.122.170/api/snmp/zxAnPonPortRogueOnuConfTable
+GET http://localhost/api/snmp/zxAnPonPortRogueOnuConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonPortRogueOnuConfTable/:id
+POST http://localhost/api/snmp/zxAnPonPortRogueOnuConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -111,15 +111,15 @@ Content-Type: application/json
 }
 
 ### Received optical power on OLT side from ONU.
-GET http://103.184.122.170/api/snmp/zxAnPonRxOpticalPowerTable
+GET http://localhost/api/snmp/zxAnPonRxOpticalPowerTable
 Authorization: Bearer {{token}}
 
 ### Received threshold of transceiver on OLT side.
-GET http://103.184.122.170/api/snmp/zxAnPonRxOpticalPowerThreshTable
+GET http://localhost/api/snmp/zxAnPonRxOpticalPowerThreshTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonRxOpticalPowerThreshTable/:id
+POST http://localhost/api/snmp/zxAnPonRxOpticalPowerThreshTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -131,11 +131,11 @@ Content-Type: application/json
 }
 
 ### Power levelling function.<br/><br/>OLT detect received optical power periodically,<br/><br/>then adjust the received optical power between the region.
-GET http://103.184.122.170/api/snmp/zxAnPonPowerLevellingTable
+GET http://localhost/api/snmp/zxAnPonPowerLevellingTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnPonPowerLevellingTable/:id
+POST http://localhost/api/snmp/zxAnPonPowerLevellingTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

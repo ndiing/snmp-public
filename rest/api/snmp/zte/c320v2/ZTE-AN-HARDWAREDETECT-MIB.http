@@ -1,4 +1,4 @@
 ### The hardware status table of the card.
-GET http://103.184.122.170/api/snmp/zxAnHwDetectCardStatusTable
+GET http://localhost/api/snmp/zxAnHwDetectCardStatusTable
 Authorization: Bearer {{token}}
 

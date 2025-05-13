@@ -1,4 +1,4 @@
 ### A list of current Frr route entries.
-GET http://103.184.122.170/api/snmp/zxAnIpFrrTable
+GET http://localhost/api/snmp/zxAnIpFrrTable
 Authorization: Bearer {{token}}
 

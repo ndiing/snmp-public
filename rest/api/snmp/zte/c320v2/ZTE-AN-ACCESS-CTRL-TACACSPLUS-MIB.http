@@ -1,9 +1,9 @@
 ### Tacacs+ server table.
-GET http://103.184.122.170/api/snmp/zxAnTacacsPlusServerTable
+GET http://localhost/api/snmp/zxAnTacacsPlusServerTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnTacacsPlusServerTable/:id
+POST http://localhost/api/snmp/zxAnTacacsPlusServerTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -14,11 +14,11 @@ Content-Type: application/json
 }
 
 ### Tacacs+ server group table.
-GET http://103.184.122.170/api/snmp/zxAnTacacsPlusServerGroupTable
+GET http://localhost/api/snmp/zxAnTacacsPlusServerGroupTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnTacacsPlusServerGroupTable/:id
+POST http://localhost/api/snmp/zxAnTacacsPlusServerGroupTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

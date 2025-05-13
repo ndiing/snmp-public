@@ -1,9 +1,9 @@
 ### A list of Mac-Layer Token Ring statistics<br/><br/>entries.
-GET http://103.184.122.170/api/snmp/tokenRingMLStatsTable
+GET http://localhost/api/snmp/tokenRingMLStatsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/tokenRingMLStatsTable/:id
+POST http://localhost/api/snmp/tokenRingMLStatsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -14,11 +14,11 @@ Content-Type: application/json
 }
 
 ### A list of promiscuous Token Ring statistics<br/><br/>entries.
-GET http://103.184.122.170/api/snmp/tokenRingPStatsTable
+GET http://localhost/api/snmp/tokenRingPStatsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/tokenRingPStatsTable/:id
+POST http://localhost/api/snmp/tokenRingPStatsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -29,19 +29,19 @@ Content-Type: application/json
 }
 
 ### A list of Mac-Layer Token Ring statistics<br/><br/>entries.
-GET http://103.184.122.170/api/snmp/tokenRingMLHistoryTable
+GET http://localhost/api/snmp/tokenRingMLHistoryTable
 Authorization: Bearer {{token}}
 
 ### A list of promiscuous Token Ring statistics<br/><br/>entries.
-GET http://103.184.122.170/api/snmp/tokenRingPHistoryTable
+GET http://localhost/api/snmp/tokenRingPHistoryTable
 Authorization: Bearer {{token}}
 
 ### A list of ringStation table control entries.
-GET http://103.184.122.170/api/snmp/ringStationControlTable
+GET http://localhost/api/snmp/ringStationControlTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/ringStationControlTable/:id
+POST http://localhost/api/snmp/ringStationControlTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -51,19 +51,19 @@ Content-Type: application/json
 }
 
 ### A list of ring station entries.  An entry will<br/><br/>exist for each station that is now or has<br/><br/>previously been detected as physically present on<br/><br/>this ring.
-GET http://103.184.122.170/api/snmp/ringStationTable
+GET http://localhost/api/snmp/ringStationTable
 Authorization: Bearer {{token}}
 
 ### A list of ring station entries for stations in<br/><br/>the ring poll, ordered by their ring-order.
-GET http://103.184.122.170/api/snmp/ringStationOrderTable
+GET http://localhost/api/snmp/ringStationOrderTable
 Authorization: Bearer {{token}}
 
 ### A list of ring station configuration control<br/><br/>entries.
-GET http://103.184.122.170/api/snmp/ringStationConfigControlTable
+GET http://localhost/api/snmp/ringStationConfigControlTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/ringStationConfigControlTable/:id
+POST http://localhost/api/snmp/ringStationConfigControlTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -73,15 +73,15 @@ Content-Type: application/json
 }
 
 ### A list of configuration entries for stations on a<br/><br/>ring monitored by this probe.
-GET http://103.184.122.170/api/snmp/ringStationConfigTable
+GET http://localhost/api/snmp/ringStationConfigTable
 Authorization: Bearer {{token}}
 
 ### A list of source routing statistics entries.
-GET http://103.184.122.170/api/snmp/sourceRoutingStatsTable
+GET http://localhost/api/snmp/sourceRoutingStatsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/sourceRoutingStatsTable/:id
+POST http://localhost/api/snmp/sourceRoutingStatsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

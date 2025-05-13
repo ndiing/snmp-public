@@ -1,9 +1,9 @@
 ### ZTE access node's L3 interface table.
-GET http://103.184.122.170/api/snmp/zxAnL3IfTable
+GET http://localhost/api/snmp/zxAnL3IfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnL3IfTable/:id
+POST http://localhost/api/snmp/zxAnL3IfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -19,11 +19,11 @@ Content-Type: application/json
 }
 
 ### ZTE access node's layer 3 interface IPv4 Address table.
-GET http://103.184.122.170/api/snmp/zxAnL3IfIpAddressTable
+GET http://localhost/api/snmp/zxAnL3IfIpAddressTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnL3IfIpAddressTable/:id
+POST http://localhost/api/snmp/zxAnL3IfIpAddressTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -34,11 +34,11 @@ Content-Type: application/json
 }
 
 ### ZTE access node's layer 3 interface IP address table for IPv6.
-GET http://103.184.122.170/api/snmp/zxAnL3IfIpv6IpAddressTable
+GET http://localhost/api/snmp/zxAnL3IfIpv6IpAddressTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnL3IfIpv6IpAddressTable/:id
+POST http://localhost/api/snmp/zxAnL3IfIpv6IpAddressTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -48,11 +48,11 @@ Content-Type: application/json
 }
 
 ### ZTE access node's out of band IP address table.
-GET http://103.184.122.170/api/snmp/zxAnL3IfOutOfBandIpAddrTable
+GET http://localhost/api/snmp/zxAnL3IfOutOfBandIpAddrTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnL3IfOutOfBandIpAddrTable/:id
+POST http://localhost/api/snmp/zxAnL3IfOutOfBandIpAddrTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -62,11 +62,11 @@ Content-Type: application/json
 }
 
 ### ZTE access node's out of band IPv6 address table.
-GET http://103.184.122.170/api/snmp/zxAnL3IfOutOfBandIpv6AddrTable
+GET http://localhost/api/snmp/zxAnL3IfOutOfBandIpv6AddrTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnL3IfOutOfBandIpv6AddrTable/:id
+POST http://localhost/api/snmp/zxAnL3IfOutOfBandIpv6AddrTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

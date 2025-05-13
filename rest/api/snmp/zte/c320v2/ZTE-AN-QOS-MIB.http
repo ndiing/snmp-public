@@ -1,9 +1,9 @@
 ### This table contains CosToCos mapping information. One entry in<br/><br/>this table reflects a profile defined which can be used to<br/><br/>configure an interface.
-GET http://103.184.122.170/api/snmp/zxAnQosCosToCosPrfTable
+GET http://localhost/api/snmp/zxAnQosCosToCosPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnQosCosToCosPrfTable/:id
+POST http://localhost/api/snmp/zxAnQosCosToCosPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -13,11 +13,11 @@ Content-Type: application/json
 }
 
 ### This table contains DSCP remark information.<br/><br/>One entry in this table reflects a profile defined which can be<br/><br/>used to configure an interface.
-GET http://103.184.122.170/api/snmp/zxAnQosDscpToDscpPrfTable
+GET http://localhost/api/snmp/zxAnQosDscpToDscpPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnQosDscpToDscpPrfTable/:id
+POST http://localhost/api/snmp/zxAnQosDscpToDscpPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -27,11 +27,11 @@ Content-Type: application/json
 }
 
 ### This table contains DSCP to CoS mapping information.<br/><br/>One entry in this table reflects a profile defined which can be<br/><br/>used to configure an interface.
-GET http://103.184.122.170/api/snmp/zxAnQosDscpToCosPrfTable
+GET http://localhost/api/snmp/zxAnQosDscpToCosPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnQosDscpToCosPrfTable/:id
+POST http://localhost/api/snmp/zxAnQosDscpToCosPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -41,11 +41,11 @@ Content-Type: application/json
 }
 
 ### This table contains DSCP to drop precedence mapping information.<br/><br/>One entry in this table reflects a profile defined which can be<br/><br/>used to configure an interface.
-GET http://103.184.122.170/api/snmp/zxAnQosDscpToDropPrecedePrfTable
+GET http://localhost/api/snmp/zxAnQosDscpToDropPrecedePrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnQosDscpToDropPrecedePrfTable/:id
+POST http://localhost/api/snmp/zxAnQosDscpToDropPrecedePrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -55,11 +55,11 @@ Content-Type: application/json
 }
 
 ### This table contains MPLS TC value to CoS mapping information.<br/><br/>One entry in this table reflects a profile defined which can be<br/><br/>used to configure an interface.
-GET http://103.184.122.170/api/snmp/zxAnQosMplsTcToCosPrfTable
+GET http://localhost/api/snmp/zxAnQosMplsTcToCosPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnQosMplsTcToCosPrfTable/:id
+POST http://localhost/api/snmp/zxAnQosMplsTcToCosPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -69,11 +69,11 @@ Content-Type: application/json
 }
 
 ### This table contains CoS to MPLS TC mapping<br/><br/>information. One entry in this table reflects a profile defined<br/><br/>which can be used to configure an interface.
-GET http://103.184.122.170/api/snmp/zxAnQosCosToMplsTcPrfTable
+GET http://localhost/api/snmp/zxAnQosCosToMplsTcPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnQosCosToMplsTcPrfTable/:id
+POST http://localhost/api/snmp/zxAnQosCosToMplsTcPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -83,11 +83,11 @@ Content-Type: application/json
 }
 
 ### This table contains CoS to drop precedence mapping information.<br/><br/>One entry in this table reflects a profile defined which can be<br/><br/>used to configure an interface.
-GET http://103.184.122.170/api/snmp/zxAnQosCosToDropPrecedePrfTable
+GET http://localhost/api/snmp/zxAnQosCosToDropPrecedePrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnQosCosToDropPrecedePrfTable/:id
+POST http://localhost/api/snmp/zxAnQosCosToDropPrecedePrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -97,11 +97,11 @@ Content-Type: application/json
 }
 
 ### This table contains CoS to DEI (Drop Eligible Indicator) mapping<br/><br/>information.<br/><br/>One entry in this table reflects a profile defined which can be<br/><br/>used to configure an interface.
-GET http://103.184.122.170/api/snmp/zxAnQosCosToDeiPrfTable
+GET http://localhost/api/snmp/zxAnQosCosToDeiPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnQosCosToDeiPrfTable/:id
+POST http://localhost/api/snmp/zxAnQosCosToDeiPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -112,11 +112,11 @@ Content-Type: application/json
 }
 
 ### This table contains configuration parameters for queues.<br/><br/>One entry in this table reflects a profile defined which can be<br/><br/>used to configure an interface.
-GET http://103.184.122.170/api/snmp/zxAnQosQueueBlockPrfTable
+GET http://localhost/api/snmp/zxAnQosQueueBlockPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnQosQueueBlockPrfTable/:id
+POST http://localhost/api/snmp/zxAnQosQueueBlockPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -130,11 +130,11 @@ Content-Type: application/json
 }
 
 ### This table contains configuration parameters for enqueue profile.<br/><br/>One entry in this table reflects a profile defined which can be<br/><br/>used to configure an interface.
-GET http://103.184.122.170/api/snmp/zxAnQosQueueMapPrfTable
+GET http://localhost/api/snmp/zxAnQosQueueMapPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnQosQueueMapPrfTable/:id
+POST http://localhost/api/snmp/zxAnQosQueueMapPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -147,11 +147,11 @@ Content-Type: application/json
 }
 
 ### This table contains configuration parameters for queue-shaping.<br/><br/>One entry in this table reflects a profile defined which can be<br/><br/>used to configure a certain channel.
-GET http://103.184.122.170/api/snmp/zxAnQosQueueShapingPrfTable
+GET http://localhost/api/snmp/zxAnQosQueueShapingPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnQosQueueShapingPrfTable/:id
+POST http://localhost/api/snmp/zxAnQosQueueShapingPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -167,11 +167,11 @@ Content-Type: application/json
 }
 
 ### WRED configuration profile table.
-GET http://103.184.122.170/api/snmp/zxAnQosQueueWredPrfTable
+GET http://localhost/api/snmp/zxAnQosQueueWredPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnQosQueueWredPrfTable/:id
+POST http://localhost/api/snmp/zxAnQosQueueWredPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -186,11 +186,11 @@ Content-Type: application/json
 }
 
 ### Pon WRED configuration profile table.
-GET http://103.184.122.170/api/snmp/zxAnQosQueueWredIIPrfTable
+GET http://localhost/api/snmp/zxAnQosQueueWredIIPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnQosQueueWredIIPrfTable/:id
+POST http://localhost/api/snmp/zxAnQosQueueWredIIPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -205,11 +205,11 @@ Content-Type: application/json
 }
 
 ### QoS queue configuration profile table.
-GET http://103.184.122.170/api/snmp/zxAnQosQueueConfPrfTable
+GET http://localhost/api/snmp/zxAnQosQueueConfPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnQosQueueConfPrfTable/:id
+POST http://localhost/api/snmp/zxAnQosQueueConfPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -219,11 +219,11 @@ Content-Type: application/json
 }
 
 ### WRED configuration table.
-GET http://103.184.122.170/api/snmp/zxAnQosQueueWredConfTable
+GET http://localhost/api/snmp/zxAnQosQueueWredConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnQosQueueWredConfTable/:id
+POST http://localhost/api/snmp/zxAnQosQueueWredConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -237,11 +237,11 @@ Content-Type: application/json
 }
 
 ### This table contains configuration data for interface, include<br/><br/>ethernet interface, GPON OLT and ONU interface.
-GET http://103.184.122.170/api/snmp/zxAnQosIfConfTable
+GET http://localhost/api/snmp/zxAnQosIfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnQosIfConfTable/:id
+POST http://localhost/api/snmp/zxAnQosIfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -275,11 +275,11 @@ Content-Type: application/json
 }
 
 ### Interfaces queue statistics table.
-GET http://103.184.122.170/api/snmp/zxAnQosIfQueueStatsTable
+GET http://localhost/api/snmp/zxAnQosIfQueueStatsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnQosIfQueueStatsTable/:id
+POST http://localhost/api/snmp/zxAnQosIfQueueStatsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -288,11 +288,11 @@ Content-Type: application/json
 }
 
 ### A table containing VLAN CoS to DEI (Drop Eligible Indicator)<br/><br/>profile information.
-GET http://103.184.122.170/api/snmp/zxAnQosVlanCosToDeiPrfConfTable
+GET http://localhost/api/snmp/zxAnQosVlanCosToDeiPrfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnQosVlanCosToDeiPrfConfTable/:id
+POST http://localhost/api/snmp/zxAnQosVlanCosToDeiPrfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -302,11 +302,11 @@ Content-Type: application/json
 }
 
 ### A table containing VLAN egress DEI information.
-GET http://103.184.122.170/api/snmp/zxAnQosVlanEgressDeiTable
+GET http://localhost/api/snmp/zxAnQosVlanEgressDeiTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnQosVlanEgressDeiTable/:id
+POST http://localhost/api/snmp/zxAnQosVlanEgressDeiTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

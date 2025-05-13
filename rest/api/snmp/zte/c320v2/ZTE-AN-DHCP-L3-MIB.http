@@ -1,9 +1,9 @@
 ### This table is to provide DHCP relay service apply to<br/><br/>L3 interface.
-GET http://103.184.122.170/api/snmp/zxAnDhcpV4L3IfConfTable
+GET http://localhost/api/snmp/zxAnDhcpV4L3IfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnDhcpV4L3IfConfTable/:id
+POST http://localhost/api/snmp/zxAnDhcpV4L3IfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -12,11 +12,11 @@ Content-Type: application/json
 }
 
 ### This table is to provide DHCPv6 relay service apply to<br/><br/>L3 interface.
-GET http://103.184.122.170/api/snmp/zxAnDhcpV6L3IfConfTable
+GET http://localhost/api/snmp/zxAnDhcpV6L3IfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnDhcpV6L3IfConfTable/:id
+POST http://localhost/api/snmp/zxAnDhcpV6L3IfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

@@ -1,9 +1,9 @@
 ### A table of ITU Alarm information for possible alarms<br/><br/>on the system.
-GET http://103.184.122.170/api/snmp/ituAlarmTable
+GET http://localhost/api/snmp/ituAlarmTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/ituAlarmTable/:id
+POST http://localhost/api/snmp/ituAlarmTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -15,10 +15,10 @@ Content-Type: application/json
 }
 
 ### A table of ITU information for active alarms entries.
-GET http://103.184.122.170/api/snmp/ituAlarmActiveTable
+GET http://localhost/api/snmp/ituAlarmActiveTable
 Authorization: Bearer {{token}}
 
 ### This table represents the ITU alarm statistics<br/><br/>information.
-GET http://103.184.122.170/api/snmp/ituAlarmActiveStatsTable
+GET http://localhost/api/snmp/ituAlarmActiveStatsTable
 Authorization: Bearer {{token}}
 

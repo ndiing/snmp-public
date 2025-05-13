@@ -1,13 +1,13 @@
 ### The table of addressing information relevant to this<br/><br/>entity's IPv4 addresses.<br/><br/><br/><br/>This table has been deprecated, as a new IP version-neutral<br/><br/>table has been added.  It is loosely replaced by the<br/><br/>ipAddressTable although several objects that weren't deemed<br/><br/>useful weren't carried forward while another<br/><br/>(ipAdEntReasmMaxSize) was moved to the ipv4InterfaceTable.
-GET http://103.184.122.170/api/snmp/ipAddrTable
+GET http://localhost/api/snmp/ipAddrTable
 Authorization: Bearer {{token}}
 
 ### The IPv4 Address Translation table used for mapping from<br/><br/>IPv4 addresses to physical addresses.<br/><br/><br/><br/>This table has been deprecated, as a new IP version-neutral<br/><br/>table has been added.  It is loosely replaced by the<br/><br/>ipNetToPhysicalTable.
-GET http://103.184.122.170/api/snmp/ipNetToMediaTable
+GET http://localhost/api/snmp/ipNetToMediaTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/ipNetToMediaTable/:id
+POST http://localhost/api/snmp/ipNetToMediaTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -19,19 +19,19 @@ Content-Type: application/json
 }
 
 ### The table containing system wide, IP version specific<br/><br/>traffic statistics.  This table and the ipIfStatsTable<br/><br/>contain similar objects whose difference is in their<br/><br/>granularity.  Where this table contains system wide traffic<br/><br/>statistics, the ipIfStatsTable contains the same statistics<br/><br/>but counted on a per-interface basis.
-GET http://103.184.122.170/api/snmp/ipSystemStatsTable
+GET http://localhost/api/snmp/ipSystemStatsTable
 Authorization: Bearer {{token}}
 
 ### The table containing per-interface traffic statistics.  This<br/><br/>table and the ipSystemStatsTable contain similar objects<br/><br/>whose difference is in their granularity.  Where this table<br/><br/>contains per-interface statistics, the ipSystemStatsTable<br/><br/>contains the same statistics, but counted on a system wide<br/><br/>basis.
-GET http://103.184.122.170/api/snmp/ipIfStatsTable
+GET http://localhost/api/snmp/ipIfStatsTable
 Authorization: Bearer {{token}}
 
 ### The table containing per-interface IPv4-specific<br/><br/>information.
-GET http://103.184.122.170/api/snmp/ipv4InterfaceTable
+GET http://localhost/api/snmp/ipv4InterfaceTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/ipv4InterfaceTable/:id
+POST http://localhost/api/snmp/ipv4InterfaceTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -40,11 +40,11 @@ Content-Type: application/json
 }
 
 ### The table containing per-interface IPv6-specific<br/><br/>information.
-GET http://103.184.122.170/api/snmp/ipv6InterfaceTable
+GET http://localhost/api/snmp/ipv6InterfaceTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/ipv6InterfaceTable/:id
+POST http://localhost/api/snmp/ipv6InterfaceTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -54,15 +54,15 @@ Content-Type: application/json
 }
 
 ### This table allows the user to determine the source of an IP<br/><br/>address or set of IP addresses, and allows other tables to<br/><br/>share the information via pointer rather than by copying.<br/><br/><br/><br/>For example, when the node configures both a unicast and<br/><br/>anycast address for a prefix, the ipAddressPrefix objects<br/><br/>for those addresses will point to a single row in this<br/><br/>table.<br/><br/><br/><br/>This table primarily provides support for IPv6 prefixes, and<br/><br/>several of the objects are less meaningful for IPv4.  The<br/><br/>table continues to allow IPv4 addresses to allow future<br/><br/>flexibility.  In order to promote a common configuration,<br/><br/>this document includes suggestions for default values for<br/><br/>IPv4 prefixes.  Each of these values may be overridden if an<br/><br/>object is meaningful to the node.<br/><br/><br/><br/>All prefixes used by this entity should be included in this<br/><br/>table independent of how the entity learned the prefix.<br/><br/>(This table isn't limited to prefixes learned from router<br/><br/>advertisements.)
-GET http://103.184.122.170/api/snmp/ipAddressPrefixTable
+GET http://localhost/api/snmp/ipAddressPrefixTable
 Authorization: Bearer {{token}}
 
 ### This table contains addressing information relevant to the<br/><br/>entity's interfaces.<br/><br/><br/><br/>This table does not contain multicast address information.<br/><br/>Tables for such information should be contained in multicast<br/><br/>specific MIBs, such as RFC 3019.<br/><br/><br/><br/>While this table is writable, the user will note that<br/><br/>several objects, such as ipAddressOrigin, are not.  The<br/><br/>intention in allowing a user to write to this table is to<br/><br/>allow them to add or remove any entry that isn't<br/><br/>permanent.  The user should be allowed to modify objects<br/><br/>and entries when that would not cause inconsistencies<br/><br/>within the table.  Allowing write access to objects, such<br/><br/>as ipAddressOrigin, could allow a user to insert an entry<br/><br/>and then label it incorrectly.<br/><br/><br/><br/>Note well: When including IPv6 link-local addresses in this<br/><br/>table, the entry must use an InetAddressType of 'ipv6z' in<br/><br/>order to differentiate between the possible interfaces.
-GET http://103.184.122.170/api/snmp/ipAddressTable
+GET http://localhost/api/snmp/ipAddressTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/ipAddressTable/:id
+POST http://localhost/api/snmp/ipAddressTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -75,11 +75,11 @@ Content-Type: application/json
 }
 
 ### The IP Address Translation table used for mapping from IP<br/><br/>addresses to physical addresses.<br/><br/><br/><br/>The Address Translation tables contain the IP address to<br/><br/>'physical' address equivalences.  Some interfaces do not use<br/><br/>translation tables for determining address equivalences<br/><br/>(e.g., DDN-X.25 has an algorithmic method); if all<br/><br/>interfaces are of this type, then the Address Translation<br/><br/>table is empty, i.e., has zero entries.<br/><br/><br/><br/>While many protocols may be used to populate this table, ARP<br/><br/>and Neighbor Discovery are the most likely<br/><br/>options.
-GET http://103.184.122.170/api/snmp/ipNetToPhysicalTable
+GET http://localhost/api/snmp/ipNetToPhysicalTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/ipNetToPhysicalTable/:id
+POST http://localhost/api/snmp/ipNetToPhysicalTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -90,19 +90,19 @@ Content-Type: application/json
 }
 
 ### The table used to describe IPv6 unicast and multicast scope<br/><br/>zones.<br/><br/><br/><br/>For those objects that have names rather than numbers, the<br/><br/>names were chosen to coincide with the names used in the<br/><br/>IPv6 address architecture document.
-GET http://103.184.122.170/api/snmp/ipv6ScopeZoneIndexTable
+GET http://localhost/api/snmp/ipv6ScopeZoneIndexTable
 Authorization: Bearer {{token}}
 
 ### The table used to describe the default routers known to this<br/><br/>entity.
-GET http://103.184.122.170/api/snmp/ipDefaultRouterTable
+GET http://localhost/api/snmp/ipDefaultRouterTable
 Authorization: Bearer {{token}}
 
 ### The table containing information used to construct router<br/><br/>advertisements.
-GET http://103.184.122.170/api/snmp/ipv6RouterAdvertTable
+GET http://localhost/api/snmp/ipv6RouterAdvertTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/ipv6RouterAdvertTable/:id
+POST http://localhost/api/snmp/ipv6RouterAdvertTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -121,10 +121,10 @@ Content-Type: application/json
 }
 
 ### The table of generic system-wide ICMP counters.
-GET http://103.184.122.170/api/snmp/icmpStatsTable
+GET http://localhost/api/snmp/icmpStatsTable
 Authorization: Bearer {{token}}
 
 ### The table of system-wide per-version, per-message type ICMP<br/><br/>counters.
-GET http://103.184.122.170/api/snmp/icmpMsgStatsTable
+GET http://localhost/api/snmp/icmpMsgStatsTable
 Authorization: Bearer {{token}}
 

@@ -1,9 +1,9 @@
 ### This table contains information of the service port unicast<br/><br/>profile configuration. One entry in this table reflects a<br/><br/>profile defined by a manager which can be used to<br/><br/>configure the service port.<br/><br/><br/><br/>When a manager wants to set the allowed ethernet type with an<br/><br/>user define ethernet type, it must comply with the multi-variables<br/><br/>usage rule that all the mib variables related to the fuction must<br/><br/>be in one snmp set operation, the variables are all mandatory.<br/><br/><br/><br/>- mandatoty:<br/><br/>zxAnSrvPortUCastAllowedEthType,<br/><br/>zxAnSrvPortUCastUserDefEthType.
-GET http://103.184.122.170/api/snmp/zxAnSrvPortUnicastPrfTable
+GET http://localhost/api/snmp/zxAnSrvPortUnicastPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnSrvPortUnicastPrfTable/:id
+POST http://localhost/api/snmp/zxAnSrvPortUnicastPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -16,11 +16,11 @@ Content-Type: application/json
 }
 
 ### This table contains information of the service port iptv<br/><br/>profile configuration. One entry in this table reflects a<br/><br/>profile defined by a manager which can be used to<br/><br/>configure the service port.<br/><br/><br/><br/>When a manager wants to set the allowed ethernet type with an<br/><br/>user define ethernet type, it must comply with the multi-variables<br/><br/>usage rule that all the mib variables related to the fuction must<br/><br/>be in one snmp set operation, the variables are all mandatory.<br/><br/><br/><br/>- mandatoty:<br/><br/>zxAnSrvPortIptvAllowedEthType,<br/><br/>zxAnSrvPortIptvUserDefEthType.
-GET http://103.184.122.170/api/snmp/zxAnSrvPortIptvPrfTable
+GET http://localhost/api/snmp/zxAnSrvPortIptvPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnSrvPortIptvPrfTable/:id
+POST http://localhost/api/snmp/zxAnSrvPortIptvPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -34,11 +34,11 @@ Content-Type: application/json
 }
 
 ### This table contains information of the service port security<br/><br/>profile configuration. One entry in this table reflects a<br/><br/>profile defined by a manager which can be used to<br/><br/>configure the service port.
-GET http://103.184.122.170/api/snmp/zxAnSrvPortSecurityPrfTable
+GET http://localhost/api/snmp/zxAnSrvPortSecurityPrfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnSrvPortSecurityPrfTable/:id
+POST http://localhost/api/snmp/zxAnSrvPortSecurityPrfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

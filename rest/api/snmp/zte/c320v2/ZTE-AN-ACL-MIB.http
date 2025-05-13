@@ -1,9 +1,9 @@
 ### This table represents the ACL related parameters.
-GET http://103.184.122.170/api/snmp/zxAnAclTable
+GET http://localhost/api/snmp/zxAnAclTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnAclTable/:id
+POST http://localhost/api/snmp/zxAnAclTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -13,11 +13,11 @@ Content-Type: application/json
 }
 
 ### Acl standard rule table.<br/><br/>Provide acl standard rule configuration.
-GET http://103.184.122.170/api/snmp/zxAnAclStandardRuleTable
+GET http://localhost/api/snmp/zxAnAclStandardRuleTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnAclStandardRuleTable/:id
+POST http://localhost/api/snmp/zxAnAclStandardRuleTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -31,11 +31,11 @@ Content-Type: application/json
 }
 
 ### ACL extended rule table.<br/><br/>Provide ACL extended rule configuration.
-GET http://103.184.122.170/api/snmp/zxAnAclExtendedRuleTable
+GET http://localhost/api/snmp/zxAnAclExtendedRuleTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnAclExtendedRuleTable/:id
+POST http://localhost/api/snmp/zxAnAclExtendedRuleTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -66,11 +66,11 @@ Content-Type: application/json
 }
 
 ### ACL link rule table.<br/><br/>Provide ACL link rule configuration.
-GET http://103.184.122.170/api/snmp/zxAnAclLinkRuleTable
+GET http://localhost/api/snmp/zxAnAclLinkRuleTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnAclLinkRuleTable/:id
+POST http://localhost/api/snmp/zxAnAclLinkRuleTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -90,11 +90,11 @@ Content-Type: application/json
 }
 
 ### Acl hybrid rule table.<br/><br/>Provide acl hybrid rule configuration.
-GET http://103.184.122.170/api/snmp/zxAnAclHybridRuleTable
+GET http://localhost/api/snmp/zxAnAclHybridRuleTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnAclHybridRuleTable/:id
+POST http://localhost/api/snmp/zxAnAclHybridRuleTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -134,11 +134,11 @@ Content-Type: application/json
 }
 
 ### ACL IPv6 rule table.<br/><br/>Provide ACL hybrid rule configuration.
-GET http://103.184.122.170/api/snmp/zxAnAclIpv6HybridRuleTable
+GET http://localhost/api/snmp/zxAnAclIpv6HybridRuleTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnAclIpv6HybridRuleTable/:id
+POST http://localhost/api/snmp/zxAnAclIpv6HybridRuleTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -180,11 +180,11 @@ Content-Type: application/json
 }
 
 ### ACL IPv6 extended rule table.<br/><br/>Provide ACL IPv6 extended rule configuration.
-GET http://103.184.122.170/api/snmp/zxAnAclIpv6ExtendedRuleTable
+GET http://localhost/api/snmp/zxAnAclIpv6ExtendedRuleTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnAclIpv6ExtendedRuleTable/:id
+POST http://localhost/api/snmp/zxAnAclIpv6ExtendedRuleTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -213,11 +213,11 @@ Content-Type: application/json
 }
 
 ### ACL time range table.
-GET http://103.184.122.170/api/snmp/zxAnAclTimeRangeTable
+GET http://localhost/api/snmp/zxAnAclTimeRangeTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnAclTimeRangeTable/:id
+POST http://localhost/api/snmp/zxAnAclTimeRangeTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -232,11 +232,11 @@ Content-Type: application/json
 }
 
 ### This table is to provide service that a specific Acl apply to<br/><br/>a specific inteface with direction.<br/><br/><br/><br/>Then the traffic that through this interface is managed<br/><br/>according to the acl.
-GET http://103.184.122.170/api/snmp/zxAnAclIfConfTable
+GET http://localhost/api/snmp/zxAnAclIfConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnAclIfConfTable/:id
+POST http://localhost/api/snmp/zxAnAclIfConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

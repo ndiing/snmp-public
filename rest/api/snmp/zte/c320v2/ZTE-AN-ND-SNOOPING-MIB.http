@@ -1,9 +1,9 @@
 ### This table provides the mechanism to control<br/><br/>ND snooping per VLAN.<br/><br/><br/><br/>When a VLAN is created in a device supporting this<br/><br/>table, a corresponding entry of this table will be added.<br/><br/><br/><br/>When a VLAN is destroyed in a device supporting this table,<br/><br/>a corresponding entry of this table will be deleted.
-GET http://103.184.122.170/api/snmp/zxAnNdSnoopingVlanTable
+GET http://localhost/api/snmp/zxAnNdSnoopingVlanTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnNdSnoopingVlanTable/:id
+POST http://localhost/api/snmp/zxAnNdSnoopingVlanTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -12,11 +12,11 @@ Content-Type: application/json
 }
 
 ### This table provides the ND snooping<br/><br/>bindings information learnt by the interface<br/><br/>capable of this feature.<br/><br/><br/><br/>The interfaces for which this feature must<br/><br/>be applicable are:<br/><br/>IfType = Physical Interface(1)<br/><br/>SubIfType = ONU service port sub-interface(3)
-GET http://103.184.122.170/api/snmp/zxAnNdSnoopingBindingTable
+GET http://localhost/api/snmp/zxAnNdSnoopingBindingTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnNdSnoopingBindingTable/:id
+POST http://localhost/api/snmp/zxAnNdSnoopingBindingTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -25,11 +25,11 @@ Content-Type: application/json
 }
 
 ### This table provides the nd statistics<br/><br/>information received by by the interface<br/><br/>capable of this feature.<br/><br/><br/><br/>The interfaces for which this feature must<br/><br/>be applicable are:<br/><br/>IfType = Physical Interface(1)<br/><br/>SubIfType = ONU vport sub-interface(2)
-GET http://103.184.122.170/api/snmp/zxAnNdSnoopingIfStatsTable
+GET http://localhost/api/snmp/zxAnNdSnoopingIfStatsTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnNdSnoopingIfStatsTable/:id
+POST http://localhost/api/snmp/zxAnNdSnoopingIfStatsTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

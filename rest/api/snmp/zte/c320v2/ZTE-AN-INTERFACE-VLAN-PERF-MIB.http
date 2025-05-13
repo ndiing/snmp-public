@@ -1,9 +1,9 @@
 ### Enable/disable the interface S-VID and C-VID historical<br/>performance.
-GET http://103.184.122.170/api/snmp/zxAnIfVlanHisPerfTable
+GET http://localhost/api/snmp/zxAnIfVlanHisPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnIfVlanHisPerfTable/:id
+POST http://localhost/api/snmp/zxAnIfVlanHisPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -12,11 +12,11 @@ Content-Type: application/json
 }
 
 ### The current minutes interval performance data table of the<br/>interfaces based on S-VID and C-VID.
-GET http://103.184.122.170/api/snmp/zxAnIfVlanCurrMinPerfTable
+GET http://localhost/api/snmp/zxAnIfVlanCurrMinPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnIfVlanCurrMinPerfTable/:id
+POST http://localhost/api/snmp/zxAnIfVlanCurrMinPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -25,11 +25,11 @@ Content-Type: application/json
 }
 
 ### The current 1 day interval performance data table of the interfaces<br/>based on S-VID and C-VID.
-GET http://103.184.122.170/api/snmp/zxAnIfVlanCurr1DayPerfTable
+GET http://localhost/api/snmp/zxAnIfVlanCurr1DayPerfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnIfVlanCurr1DayPerfTable/:id
+POST http://localhost/api/snmp/zxAnIfVlanCurr1DayPerfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -38,10 +38,10 @@ Content-Type: application/json
 }
 
 ### The historical minutes interval performance data table of the<br/>interfaces based on S-VID and C-VID.
-GET http://103.184.122.170/api/snmp/zxAnIfVlanHisMinPerfTable
+GET http://localhost/api/snmp/zxAnIfVlanHisMinPerfTable
 Authorization: Bearer {{token}}
 
 ### The historical 1 day interval performance data table of the<br/>interfaces based on S-VID and C-VID.
-GET http://103.184.122.170/api/snmp/zxAnIfVlanHis1DayPerfTable
+GET http://localhost/api/snmp/zxAnIfVlanHis1DayPerfTable
 Authorization: Bearer {{token}}
 

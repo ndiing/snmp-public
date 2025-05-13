@@ -1,9 +1,9 @@
 ### The (conceptual) table listing the interfaces on which<br/><br/>IGMP or MLD is enabled.
-GET http://103.184.122.170/api/snmp/mgmdHostInterfaceTable
+GET http://localhost/api/snmp/mgmdHostInterfaceTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/mgmdHostInterfaceTable/:id
+POST http://localhost/api/snmp/mgmdHostInterfaceTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -14,11 +14,11 @@ Content-Type: application/json
 }
 
 ### The (conceptual) table listing the interfaces on which<br/><br/>IGMP or MLD is enabled.
-GET http://103.184.122.170/api/snmp/mgmdRouterInterfaceTable
+GET http://localhost/api/snmp/mgmdRouterInterfaceTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/mgmdRouterInterfaceTable/:id
+POST http://localhost/api/snmp/mgmdRouterInterfaceTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -33,26 +33,26 @@ Content-Type: application/json
 }
 
 ### The (conceptual) table listing the IP multicast groups for<br/><br/>which the host is a member on a particular interface.
-GET http://103.184.122.170/api/snmp/mgmdHostCacheTable
+GET http://localhost/api/snmp/mgmdHostCacheTable
 Authorization: Bearer {{token}}
 
 ### The (conceptual) table listing the IP multicast groups for<br/><br/>which there are members on a particular router interface.
-GET http://103.184.122.170/api/snmp/mgmdRouterCacheTable
+GET http://localhost/api/snmp/mgmdRouterCacheTable
 Authorization: Bearer {{token}}
 
 ### The (conceptual) table listing the interfaces that are<br/><br/>members of a particular group.  This is an inverse lookup<br/><br/>table for entries in the mgmdHostCacheTable.
-GET http://103.184.122.170/api/snmp/mgmdInverseHostCacheTable
+GET http://localhost/api/snmp/mgmdInverseHostCacheTable
 Authorization: Bearer {{token}}
 
 ### The (conceptual) table listing the interfaces that<br/><br/>are members of a particular group.  This is an inverse<br/><br/>lookup table for entries in the mgmdRouterCacheTable.
-GET http://103.184.122.170/api/snmp/mgmdInverseRouterCacheTable
+GET http://localhost/api/snmp/mgmdInverseRouterCacheTable
 Authorization: Bearer {{token}}
 
 ### The (conceptual) table listing the Source List entries<br/><br/>corresponding to each interface and multicast group pair<br/><br/>on a host.
-GET http://103.184.122.170/api/snmp/mgmdHostSrcListTable
+GET http://localhost/api/snmp/mgmdHostSrcListTable
 Authorization: Bearer {{token}}
 
 ### The (conceptual) table listing the Source List entries<br/><br/>corresponding to each interface and multicast group pair on<br/><br/>a Router.
-GET http://103.184.122.170/api/snmp/mgmdRouterSrcListTable
+GET http://localhost/api/snmp/mgmdRouterSrcListTable
 Authorization: Bearer {{token}}
 

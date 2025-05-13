@@ -1,13 +1,13 @@
 ### CES port table.
-GET http://103.184.122.170/api/snmp/zxAnCesIfTable
+GET http://localhost/api/snmp/zxAnCesIfTable
 Authorization: Bearer {{token}}
 
 ### CES port extension table.
-GET http://103.184.122.170/api/snmp/zxAnCesIfExtTable
+GET http://localhost/api/snmp/zxAnCesIfExtTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnCesIfExtTable/:id
+POST http://localhost/api/snmp/zxAnCesIfExtTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -18,15 +18,15 @@ Content-Type: application/json
 }
 
 ### CES pseudo-wire table.
-GET http://103.184.122.170/api/snmp/zxAnCesPwTable
+GET http://localhost/api/snmp/zxAnCesPwTable
 Authorization: Bearer {{token}}
 
 ### CES MEF8 pseudo-wire table.
-GET http://103.184.122.170/api/snmp/zxAnCesMef8PwTable
+GET http://localhost/api/snmp/zxAnCesMef8PwTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnCesMef8PwTable/:id
+POST http://localhost/api/snmp/zxAnCesMef8PwTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -45,11 +45,11 @@ Content-Type: application/json
 }
 
 ### CES TDM Service table.
-GET http://103.184.122.170/api/snmp/zxAnCesTdmServiceTable
+GET http://localhost/api/snmp/zxAnCesTdmServiceTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnCesTdmServiceTable/:id
+POST http://localhost/api/snmp/zxAnCesTdmServiceTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -60,11 +60,11 @@ Content-Type: application/json
 }
 
 ### CES TDM protection table.
-GET http://103.184.122.170/api/snmp/zxAnCesTdmProtectTable
+GET http://localhost/api/snmp/zxAnCesTdmProtectTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnCesTdmProtectTable/:id
+POST http://localhost/api/snmp/zxAnCesTdmProtectTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

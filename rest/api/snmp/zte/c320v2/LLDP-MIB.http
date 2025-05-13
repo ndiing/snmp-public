@@ -1,9 +1,9 @@
 ### The table that controls LLDP frame transmission on individual<br/><br/>ports.
-GET http://103.184.122.170/api/snmp/lldpPortConfigTable
+GET http://localhost/api/snmp/lldpPortConfigTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/lldpPortConfigTable/:id
+POST http://localhost/api/snmp/lldpPortConfigTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -14,11 +14,11 @@ Content-Type: application/json
 }
 
 ### The table that controls selection of LLDP management address<br/><br/>TLV instances to be transmitted on individual ports.
-GET http://103.184.122.170/api/snmp/lldpConfigManAddrTable
+GET http://localhost/api/snmp/lldpConfigManAddrTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/lldpConfigManAddrTable/:id
+POST http://localhost/api/snmp/lldpConfigManAddrTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -27,34 +27,34 @@ Content-Type: application/json
 }
 
 ### A table containing LLDP transmission statistics for<br/><br/>individual ports.  Entries are not required to exist in<br/><br/>this table while the lldpPortConfigEntry object is equal to<br/><br/>'disabled(4)'.
-GET http://103.184.122.170/api/snmp/lldpStatsTxPortTable
+GET http://localhost/api/snmp/lldpStatsTxPortTable
 Authorization: Bearer {{token}}
 
 ### A table containing LLDP reception statistics for individual<br/><br/>ports.  Entries are not required to exist in this table while<br/><br/>the lldpPortConfigEntry object is equal to 'disabled(4)'.
-GET http://103.184.122.170/api/snmp/lldpStatsRxPortTable
+GET http://localhost/api/snmp/lldpStatsRxPortTable
 Authorization: Bearer {{token}}
 
 ### This table contains one or more rows per port information<br/><br/>associated with the local system known to this agent.
-GET http://103.184.122.170/api/snmp/lldpLocPortTable
+GET http://localhost/api/snmp/lldpLocPortTable
 Authorization: Bearer {{token}}
 
 ### This table contains management address information on the<br/><br/>local system known to this agent.
-GET http://103.184.122.170/api/snmp/lldpLocManAddrTable
+GET http://localhost/api/snmp/lldpLocManAddrTable
 Authorization: Bearer {{token}}
 
 ### This table contains one or more rows per physical network<br/><br/>connection known to this agent.  The agent may wish to ensure<br/><br/>that only one lldpRemEntry is present for each local port,<br/><br/>or it may choose to maintain multiple lldpRemEntries for<br/><br/>the same local port.<br/><br/><br/><br/>The following procedure may be used to retrieve remote<br/><br/>systems information updates from an LLDP agent:<br/><br/><br/><br/>1. NMS polls all tables associated with remote systems<br/><br/>and keeps a local copy of the information retrieved.<br/><br/>NMS polls periodically the values of the following<br/><br/>objects:<br/><br/>a. lldpStatsRemTablesInserts<br/><br/>b. lldpStatsRemTablesDeletes<br/><br/>c. lldpStatsRemTablesDrops<br/><br/>d. lldpStatsRemTablesAgeouts<br/><br/>e. lldpStatsRxPortAgeoutsTotal for all ports.<br/><br/><br/><br/>2. LLDP agent updates remote systems MIB objects, and<br/><br/>sends out notifications to a list of notification<br/><br/>destinations.<br/><br/><br/><br/>3. NMS receives the notifications and compares the new<br/><br/>values of objects listed in step 1.<br/><br/><br/><br/>Periodically, NMS should poll the object<br/><br/>lldpStatsRemTablesLastChangeTime to find out if anything<br/><br/>has changed since the last poll.  if something has<br/><br/>changed, NMS will poll the objects listed in step 1 to<br/><br/>figure out what kind of changes occurred in the tables.<br/><br/><br/><br/>if value of lldpStatsRemTablesInserts has changed,<br/><br/>then NMS will walk all tables by employing TimeFilter<br/><br/>with the last-polled time value.  This request will<br/><br/>return new objects or objects whose values are updated<br/><br/>since the last poll.<br/><br/><br/><br/>if value of lldpStatsRemTablesAgeouts has changed,<br/><br/>then NMS will walk the lldpStatsRxPortAgeoutsTotal and<br/><br/>compare the new values with previously recorded ones.<br/><br/>For ports whose lldpStatsRxPortAgeoutsTotal value is<br/><br/>greater than the recorded value, NMS will have to<br/><br/>retrieve objects associated with those ports from<br/><br/>table(s) without employing a TimeFilter (which is<br/><br/>performed by specifying 0 for the TimeFilter.)<br/><br/><br/><br/>lldpStatsRemTablesDeletes and lldpStatsRemTablesDrops<br/><br/>objects are provided for informational purposes.
-GET http://103.184.122.170/api/snmp/lldpRemTable
+GET http://localhost/api/snmp/lldpRemTable
 Authorization: Bearer {{token}}
 
 ### This table contains one or more rows per management address<br/><br/>information on the remote system learned on a particular port<br/><br/>contained in the local chassis known to this agent.
-GET http://103.184.122.170/api/snmp/lldpRemManAddrTable
+GET http://localhost/api/snmp/lldpRemManAddrTable
 Authorization: Bearer {{token}}
 
 ### This table contains information about an incoming TLV which<br/><br/>is not recognized by the receiving LLDP agent.  The TLV may<br/><br/>be from a later version of the basic management set.<br/><br/><br/><br/>This table should only contain TLVs that are found in<br/><br/>a single LLDP frame.  Entries in this table, associated<br/><br/>with an MAC service access point (MSAP, the access point<br/><br/>for MAC services provided to the LCC sublayer, defined<br/><br/>in IEEE 100, which is also identified with a particular<br/><br/>lldpRemLocalPortNum, lldpRemIndex pair) are overwritten with<br/><br/>most recently received unrecognized TLV from the same MSAP,<br/><br/>or they will naturally age out when the rxInfoTTL timer<br/><br/>(associated with the MSAP) expires.
-GET http://103.184.122.170/api/snmp/lldpRemUnknownTLVTable
+GET http://localhost/api/snmp/lldpRemUnknownTLVTable
 Authorization: Bearer {{token}}
 
 ### This table contains one or more rows per physical network<br/><br/>connection which advertises the organizationally defined<br/><br/>information.<br/><br/><br/><br/>Note that this table contains one or more rows of<br/><br/>organizationally defined information that is not recognized<br/><br/>by the local agent.<br/><br/><br/><br/>If the local system is capable of recognizing any<br/><br/>organizationally defined information, appropriate extension<br/><br/>MIBs from the organization should be used for information<br/><br/>retrieval.
-GET http://103.184.122.170/api/snmp/lldpRemOrgDefInfoTable
+GET http://localhost/api/snmp/lldpRemOrgDefInfoTable
 Authorization: Bearer {{token}}
 

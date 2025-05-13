@@ -1,9 +1,9 @@
 ### The LSP ping table.
-GET http://103.184.122.170/api/snmp/zxAnLspPingTable
+GET http://localhost/api/snmp/zxAnLspPingTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnLspPingTable/:id
+POST http://localhost/api/snmp/zxAnLspPingTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -23,6 +23,6 @@ Content-Type: application/json
 }
 
 ### The LSP Ping results table.<br/><br/><br/><br/>An entry is added to the zxAnLspPingResultTable when an<br/><br/>zxAnLspPingEntry is started by successful setting<br/><br/>zxAnLspPingActiveStatus to activate(1).
-GET http://103.184.122.170/api/snmp/zxAnLspPingResultTable
+GET http://localhost/api/snmp/zxAnLspPingResultTable
 Authorization: Bearer {{token}}
 

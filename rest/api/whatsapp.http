@@ -9,7 +9,7 @@
 
 
 ### tambahkan whatsapp
-POST http://103.184.122.170/api/whatsapp/
+POST http://localhost/api/whatsapp/
 Content-Type: application/json
 
 {
@@ -20,13 +20,13 @@ Content-Type: application/json
 
 
 ### Ambil semua data yang disimpan
-GET http://103.184.122.170/api/whatsapp/
+GET http://localhost/api/whatsapp/
 
 ### Ambil berdasarkan _id
-GET http://103.184.122.170/api/whatsapp/{{_id}}
+GET http://localhost/api/whatsapp/{{_id}}
 
 ### Ubah config yang disimpan
-PATCH http://103.184.122.170/api/whatsapp/{{_id}}
+PATCH http://localhost/api/whatsapp/{{_id}}
 Content-Type: application/json
 
 {
@@ -34,7 +34,7 @@ Content-Type: application/json
 }
 
 ### Hapus data whatsapp termasuk session
-DELETE http://103.184.122.170/api/whatsapp/{{_id}}
+DELETE http://localhost/api/whatsapp/{{_id}}
 
 
 
@@ -44,7 +44,7 @@ DELETE http://103.184.122.170/api/whatsapp/{{_id}}
 
 
 ### Mulai whatsapp
-POST http://103.184.122.170/api/whatsapp/start/{{_id}}
+POST http://localhost/api/whatsapp/start/{{_id}}
 Content-Type: application/json
 
 {
@@ -52,7 +52,7 @@ Content-Type: application/json
 
 
 ### Hentikan whatsapp
-POST http://103.184.122.170/api/whatsapp/close/{{_id}}
+POST http://localhost/api/whatsapp/close/{{_id}}
 Content-Type: application/json
 
 {
@@ -65,7 +65,7 @@ Content-Type: application/json
 
 
 ### Kirim pesan text
-POST http://103.184.122.170/api/whatsapp/send-message/{{_id}}
+POST http://localhost/api/whatsapp/send-message/{{_id}}
 Content-Type: application/json
 
 {
@@ -76,7 +76,7 @@ Content-Type: application/json
 }
 
 ### Kirim pesan text (groups)
-POST http://103.184.122.170/api/whatsapp/send-message/{{_id}}
+POST http://localhost/api/whatsapp/send-message/{{_id}}
 Content-Type: application/json
 
 {
@@ -88,46 +88,46 @@ Content-Type: application/json
 
 
 ### logout
-POST http://103.184.122.170/api/whatsapp/logout/{{_id}}
+POST http://localhost/api/whatsapp/logout/{{_id}}
 Content-Type: application/json 
 
 {}
 
 
 ### end
-POST http://103.184.122.170/api/whatsapp/end/{{_id}}
+POST http://localhost/api/whatsapp/end/{{_id}}
 Content-Type: application/json 
 
 {}
 
 
 ### get chats
-GET http://103.184.122.170/api/whatsapp/store/chats/{{_id}}
+GET http://localhost/api/whatsapp/store/chats/{{_id}}
 
 ### get contacts
-GET http://103.184.122.170/api/whatsapp/store/contacts/{{_id}}
+GET http://localhost/api/whatsapp/store/contacts/{{_id}}
 
 ### get messages
-GET http://103.184.122.170/api/whatsapp/store/messages/{{_id}}
+GET http://localhost/api/whatsapp/store/messages/{{_id}}
 
 ### get groupMetadata
-GET http://103.184.122.170/api/whatsapp/store/groupMetadata/{{_id}}
+GET http://localhost/api/whatsapp/store/groupMetadata/{{_id}}
 
 ### get state
-GET http://103.184.122.170/api/whatsapp/store/state/{{_id}}
+GET http://localhost/api/whatsapp/store/state/{{_id}}
 
 ### get presences
-GET http://103.184.122.170/api/whatsapp/store/presences/{{_id}}
+GET http://localhost/api/whatsapp/store/presences/{{_id}}
 
 ### get labels
-GET http://103.184.122.170/api/whatsapp/store/labels/{{_id}}
+GET http://localhost/api/whatsapp/store/labels/{{_id}}
 
 ### get labelAssociations
-GET http://103.184.122.170/api/whatsapp/store/labelAssociations/{{_id}}
+GET http://localhost/api/whatsapp/store/labelAssociations/{{_id}}
 
 
 ### get loadMessages
-GET http://103.184.122.170/api/whatsapp/store/loadMessages/{{_id}}
+GET http://localhost/api/whatsapp/store/loadMessages/{{_id}}
 ?jid=6281935155404@s.whatsapp.net
 &count=1
 &cursor=
@@ -135,50 +135,50 @@ GET http://103.184.122.170/api/whatsapp/store/loadMessages/{{_id}}
 
 
 ### get getLabels
-GET http://103.184.122.170/api/whatsapp/store/getLabels/{{_id}}
+GET http://localhost/api/whatsapp/store/getLabels/{{_id}}
 
 
 
 
 ### get getChatLabels
-GET http://103.184.122.170/api/whatsapp/store/getChatLabels/{{_id}}
+GET http://localhost/api/whatsapp/store/getChatLabels/{{_id}}
 &?chatId=
 
 
 
 ### get getMessageLabels
-GET http://103.184.122.170/api/whatsapp/store/getMessageLabels/{{_id}}
+GET http://localhost/api/whatsapp/store/getMessageLabels/{{_id}}
 &?messageId=
 
 
 
 ### get loadMessage
-GET http://103.184.122.170/api/whatsapp/store/loadMessage/{{_id}}
+GET http://localhost/api/whatsapp/store/loadMessage/{{_id}}
 ?jid=6281935155404@s.whatsapp.net
 &id=
 
 
 
 ### get mostRecentMessage
-GET http://103.184.122.170/api/whatsapp/store/mostRecentMessage/{{_id}}
+GET http://localhost/api/whatsapp/store/mostRecentMessage/{{_id}}
 ?jid=6281935155404@s.whatsapp.net
 
 
 
 ### get fetchImageUrl
-GET http://103.184.122.170/api/whatsapp/store/fetchImageUrl/{{_id}}
+GET http://localhost/api/whatsapp/store/fetchImageUrl/{{_id}}
 ?jid=6281935155404@s.whatsapp.net
 
 
 
 ### get fetchGroupMetadata
-GET http://103.184.122.170/api/whatsapp/store/fetchGroupMetadata/{{_id}}
+GET http://localhost/api/whatsapp/store/fetchGroupMetadata/{{_id}}
 ?jid=6281935155404@s.whatsapp.net
 
 
 
 ### get fetchMessageReceipts
-GET http://103.184.122.170/api/whatsapp/store/fetchMessageReceipts/{{_id}}
+GET http://localhost/api/whatsapp/store/fetchMessageReceipts/{{_id}}
 ?remoteJid=6281935155404@s.whatsapp.net
 &id=
 

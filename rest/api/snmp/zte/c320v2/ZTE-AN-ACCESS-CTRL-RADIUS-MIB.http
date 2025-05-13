@@ -1,9 +1,9 @@
 ### Radius authentication group table.
-GET http://103.184.122.170/api/snmp/zxAnRadiusAuthenGroupTable
+GET http://localhost/api/snmp/zxAnRadiusAuthenGroupTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnRadiusAuthenGroupTable/:id
+POST http://localhost/api/snmp/zxAnRadiusAuthenGroupTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -22,11 +22,11 @@ Content-Type: application/json
 }
 
 ### RADIUS authentication server group table.
-GET http://103.184.122.170/api/snmp/zxAnRadiusAuthenSvrGroupTable
+GET http://localhost/api/snmp/zxAnRadiusAuthenSvrGroupTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnRadiusAuthenSvrGroupTable/:id
+POST http://localhost/api/snmp/zxAnRadiusAuthenSvrGroupTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -40,11 +40,11 @@ Content-Type: application/json
 }
 
 ### RADIUS accounting group table.
-GET http://103.184.122.170/api/snmp/zxAnRadiusAccountGroupTable
+GET http://localhost/api/snmp/zxAnRadiusAccountGroupTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnRadiusAccountGroupTable/:id
+POST http://localhost/api/snmp/zxAnRadiusAccountGroupTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -64,11 +64,11 @@ Content-Type: application/json
 }
 
 ### RADIUS accounting server group table.
-GET http://103.184.122.170/api/snmp/zxAnRadiusAccountSvrGroupTable
+GET http://localhost/api/snmp/zxAnRadiusAccountSvrGroupTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnRadiusAccountSvrGroupTable/:id
+POST http://localhost/api/snmp/zxAnRadiusAccountSvrGroupTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

@@ -1,9 +1,9 @@
 ### Authentication session table.
-GET http://103.184.122.170/api/snmp/zxAnAaaAuthenSessionTable
+GET http://localhost/api/snmp/zxAnAaaAuthenSessionTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnAaaAuthenSessionTable/:id
+POST http://localhost/api/snmp/zxAnAaaAuthenSessionTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -14,11 +14,11 @@ Content-Type: application/json
 }
 
 ### Login mode authentication table.
-GET http://103.184.122.170/api/snmp/zxAnAaaAuthenLoginTable
+GET http://localhost/api/snmp/zxAnAaaAuthenLoginTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnAaaAuthenLoginTable/:id
+POST http://localhost/api/snmp/zxAnAaaAuthenLoginTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -33,11 +33,11 @@ Content-Type: application/json
 }
 
 ### Authorization session table.
-GET http://103.184.122.170/api/snmp/zxAnAaaAuthorSessionTable
+GET http://localhost/api/snmp/zxAnAaaAuthorSessionTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnAaaAuthorSessionTable/:id
+POST http://localhost/api/snmp/zxAnAaaAuthorSessionTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -47,11 +47,11 @@ Content-Type: application/json
 }
 
 ### Command authorization table.
-GET http://103.184.122.170/api/snmp/zxAnAaaCmdAuthorTable
+GET http://localhost/api/snmp/zxAnAaaCmdAuthorTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnAaaCmdAuthorTable/:id
+POST http://localhost/api/snmp/zxAnAaaCmdAuthorTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -62,11 +62,11 @@ Content-Type: application/json
 }
 
 ### Command accounting table.
-GET http://103.184.122.170/api/snmp/zxAnAaaCmdAccountTable
+GET http://localhost/api/snmp/zxAnAaaCmdAccountTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnAaaCmdAccountTable/:id
+POST http://localhost/api/snmp/zxAnAaaCmdAccountTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

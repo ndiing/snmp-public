@@ -1,21 +1,21 @@
 ### This table contains current Performance Monitoring (PM)<br/><br/>information for a GBS port.  This table contains live data from<br/><br/>the equipment and as such is NOT persistent.
-GET http://103.184.122.170/api/snmp/gBondPortPmCurTable
+GET http://localhost/api/snmp/gBondPortPmCurTable
 Authorization: Bearer {{token}}
 
 ### This table contains historical 15-minute buckets of Performance<br/><br/>Monitoring information for a GBS port (a row for each 15-minute<br/><br/>interval, up to 96 intervals).<br/><br/>Entries in this table MUST be maintained in a persistent manner.
-GET http://103.184.122.170/api/snmp/gBondPortPm15MinTable
+GET http://localhost/api/snmp/gBondPortPm15MinTable
 Authorization: Bearer {{token}}
 
 ### This table contains historical 1-day buckets of Performance<br/><br/>Monitoring information for a GBS port (a row for each 1-day<br/><br/>interval, up to 7 intervals).<br/><br/>Entries in this table MUST be maintained in a persistent manner.
-GET http://103.184.122.170/api/snmp/gBondPortPm1DayTable
+GET http://localhost/api/snmp/gBondPortPm1DayTable
 Authorization: Bearer {{token}}
 
 ### This table supports definitions of Performance Monitoring (PM)<br/><br/>Threshold Crossing Alert (TCA) configuration profiles for GBS<br/><br/>ports.<br/><br/>Entries in this table MUST be maintained in a persistent manner.
-GET http://103.184.122.170/api/snmp/gBondPortPmTcaProfileTable
+GET http://localhost/api/snmp/gBondPortPmTcaProfileTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/gBondPortPmTcaProfileTable/:id
+POST http://localhost/api/snmp/gBondPortPmTcaProfileTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -30,11 +30,11 @@ Content-Type: application/json
 }
 
 ### Table for configuration of G.Bond GBS ports.  Entries in this<br/><br/>table MUST be maintained in a persistent manner.
-GET http://103.184.122.170/api/snmp/gBondPortConfTable
+GET http://localhost/api/snmp/gBondPortConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/gBondPortConfTable/:id
+POST http://localhost/api/snmp/gBondPortConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -52,19 +52,19 @@ Content-Type: application/json
 }
 
 ### Table for capabilities of G.Bond ports.  Entries in this table<br/><br/>MUST be maintained in a persistent manner.
-GET http://103.184.122.170/api/snmp/gBondPortCapTable
+GET http://localhost/api/snmp/gBondPortCapTable
 Authorization: Bearer {{token}}
 
 ### This table provides overall status information of G.Bond<br/><br/>ports, complementing the generic status information from the<br/><br/>ifTable of the IF-MIB.  Additional status information about<br/><br/>connected BCEs is available from the relevant line MIBs.<br/><br/><br/><br/>This table contains live data from the equipment.  As such,<br/><br/>it is NOT persistent.
-GET http://103.184.122.170/api/snmp/gBondPortStatTable
+GET http://localhost/api/snmp/gBondPortStatTable
 Authorization: Bearer {{token}}
 
 ### Table for configuration of G.Bond common aspects for the<br/><br/>Bonding Channel Entity (BCE) ports (modems/channels).<br/><br/><br/><br/>Entries in this table MUST be maintained in a persistent<br/><br/>manner.
-GET http://103.184.122.170/api/snmp/gBondBceConfTable
+GET http://localhost/api/snmp/gBondBceConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/gBondBceConfTable/:id
+POST http://localhost/api/snmp/gBondBceConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

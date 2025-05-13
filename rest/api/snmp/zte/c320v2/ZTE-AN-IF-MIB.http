@@ -1,9 +1,9 @@
 ### This table includes the general interface infomation.
-GET http://103.184.122.170/api/snmp/zxAnIfTable
+GET http://localhost/api/snmp/zxAnIfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnIfTable/:id
+POST http://localhost/api/snmp/zxAnIfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

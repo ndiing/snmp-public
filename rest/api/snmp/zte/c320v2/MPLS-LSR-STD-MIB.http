@@ -1,17 +1,17 @@
 ### This table specifies per-interface MPLS capability<br/><br/>and associated information.
-GET http://103.184.122.170/api/snmp/mplsInterfaceTable
+GET http://localhost/api/snmp/mplsInterfaceTable
 Authorization: Bearer {{token}}
 
 ### This table provides MPLS performance information on<br/><br/>a per-interface basis.
-GET http://103.184.122.170/api/snmp/mplsInterfacePerfTable
+GET http://localhost/api/snmp/mplsInterfacePerfTable
 Authorization: Bearer {{token}}
 
 ### This table contains a description of the incoming MPLS<br/><br/>segments (labels) to an LSR and their associated parameters.<br/><br/>The index for this table is mplsInSegmentIndex.<br/><br/>The index structure of this table is specifically designed<br/><br/>to handle many different MPLS implementations that manage<br/><br/>their labels both in a distributed and centralized manner.<br/><br/>The table is also designed to handle existing MPLS labels<br/><br/>as defined in RFC3031 as well as longer ones that may<br/><br/>be necessary in the future.<br/><br/><br/><br/>In cases where the label cannot fit into the<br/><br/>mplsInSegmentLabel object, the mplsInSegmentLabelPtr<br/><br/>will indicate this by being set to the first accessible<br/><br/>column in the appropriate extension table's row.<br/><br/>In this case an additional table MUST<br/><br/>be provided and MUST be indexed by at least the indexes<br/><br/>used by this table. In all other cases when the label is<br/><br/>represented within the mplsInSegmentLabel object, the<br/><br/>mplsInSegmentLabelPtr MUST be set to 0.0. Due to the<br/><br/>fact that MPLS labels may not exceed 24 bits, the<br/><br/>mplsInSegmentLabelPtr object is only a provision for<br/><br/>future-proofing the MIB module. Thus, the definition<br/><br/>of any extension tables is beyond the scope of this<br/><br/>MIB module.
-GET http://103.184.122.170/api/snmp/mplsInSegmentTable
+GET http://localhost/api/snmp/mplsInSegmentTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/mplsInSegmentTable/:id
+POST http://localhost/api/snmp/mplsInSegmentTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -27,15 +27,15 @@ Content-Type: application/json
 }
 
 ### This table contains statistical information for<br/><br/>incoming MPLS segments to an LSR.
-GET http://103.184.122.170/api/snmp/mplsInSegmentPerfTable
+GET http://localhost/api/snmp/mplsInSegmentPerfTable
 Authorization: Bearer {{token}}
 
 ### This table contains a representation of the outgoing<br/><br/>segments from an LSR.
-GET http://103.184.122.170/api/snmp/mplsOutSegmentTable
+GET http://localhost/api/snmp/mplsOutSegmentTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/mplsOutSegmentTable/:id
+POST http://localhost/api/snmp/mplsOutSegmentTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -52,15 +52,15 @@ Content-Type: application/json
 }
 
 ### This table contains statistical information about<br/><br/>outgoing segments from an LSR. The counters in this<br/><br/>entry should behave in a manner similar to that of<br/><br/>the interface.
-GET http://103.184.122.170/api/snmp/mplsOutSegmentPerfTable
+GET http://localhost/api/snmp/mplsOutSegmentPerfTable
 Authorization: Bearer {{token}}
 
 ### This table specifies information for switching<br/><br/>between LSP segments.  It supports point-to-point,<br/><br/>point-to-multipoint and multipoint-to-point<br/><br/>connections.  mplsLabelStackTable specifies the<br/><br/>label stack information for a cross-connect LSR and<br/><br/>is referred to from mplsXCTable.
-GET http://103.184.122.170/api/snmp/mplsXCTable
+GET http://localhost/api/snmp/mplsXCTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/mplsXCTable/:id
+POST http://localhost/api/snmp/mplsXCTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -73,11 +73,11 @@ Content-Type: application/json
 }
 
 ### This table specifies the label stack to be pushed<br/><br/>onto a packet, beneath the top label.  Entries into<br/><br/>this table are referred to from mplsXCTable.
-GET http://103.184.122.170/api/snmp/mplsLabelStackTable
+GET http://localhost/api/snmp/mplsLabelStackTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/mplsLabelStackTable/:id
+POST http://localhost/api/snmp/mplsLabelStackTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -89,6 +89,6 @@ Content-Type: application/json
 }
 
 ### This table specifies the mapping from the<br/><br/>mplsInSegmentIndex to the corresponding<br/><br/>mplsInSegmentInterface and mplsInSegmentLabel<br/><br/>objects. The purpose of this table is to<br/><br/>provide the manager with an alternative<br/><br/>means by which to locate in-segments.
-GET http://103.184.122.170/api/snmp/mplsInSegmentMapTable
+GET http://localhost/api/snmp/mplsInSegmentMapTable
 Authorization: Bearer {{token}}
 

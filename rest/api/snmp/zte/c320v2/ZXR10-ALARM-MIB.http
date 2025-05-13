@@ -1,9 +1,9 @@
 ### A list of alarm clear entries.
-GET http://103.184.122.170/api/snmp/alarmClearTable
+GET http://localhost/api/snmp/alarmClearTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/alarmClearTable/:id
+POST http://localhost/api/snmp/alarmClearTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -12,27 +12,27 @@ Content-Type: application/json
 }
 
 ### A list of current Alarm entries.
-GET http://103.184.122.170/api/snmp/curAlarmTable
+GET http://localhost/api/snmp/curAlarmTable
 Authorization: Bearer {{token}}
 
 ### A list of history alarm entries.
-GET http://103.184.122.170/api/snmp/hisAlarmTable
+GET http://localhost/api/snmp/hisAlarmTable
 Authorization: Bearer {{token}}
 
 ### A list of notification entries.
-GET http://103.184.122.170/api/snmp/notificationTable
+GET http://localhost/api/snmp/notificationTable
 Authorization: Bearer {{token}}
 
 ### A list of global Alarm entries.
-GET http://103.184.122.170/api/snmp/globalAlarmTrapTable
+GET http://localhost/api/snmp/globalAlarmTrapTable
 Authorization: Bearer {{token}}
 
 ### A list of heart-beat entries.
-GET http://103.184.122.170/api/snmp/alarmHeartBeatTable
+GET http://localhost/api/snmp/alarmHeartBeatTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/alarmHeartBeatTable/:id
+POST http://localhost/api/snmp/alarmHeartBeatTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -42,11 +42,11 @@ Content-Type: application/json
 }
 
 ### A list of alarm level entries.
-GET http://103.184.122.170/api/snmp/alarmLevelTable
+GET http://localhost/api/snmp/alarmLevelTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/alarmLevelTable/:id
+POST http://localhost/api/snmp/alarmLevelTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -55,11 +55,11 @@ Content-Type: application/json
 }
 
 ### A list of alarm mask entries.
-GET http://103.184.122.170/api/snmp/alarmMaskTable
+GET http://localhost/api/snmp/alarmMaskTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/alarmMaskTable/:id
+POST http://localhost/api/snmp/alarmMaskTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -68,11 +68,11 @@ Content-Type: application/json
 }
 
 ### A list of alarm level entries.
-GET http://103.184.122.170/api/snmp/alarmLevelChangeTable
+GET http://localhost/api/snmp/alarmLevelChangeTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/alarmLevelChangeTable/:id
+POST http://localhost/api/snmp/alarmLevelChangeTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -82,11 +82,11 @@ Content-Type: application/json
 }
 
 ### A list of alarm shield entries.
-GET http://103.184.122.170/api/snmp/alarmShieldTable
+GET http://localhost/api/snmp/alarmShieldTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/alarmShieldTable/:id
+POST http://localhost/api/snmp/alarmShieldTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -95,11 +95,11 @@ Content-Type: application/json
 }
 
 ### A list of alarm mask entries.
-GET http://103.184.122.170/api/snmp/zxr10AlarmMaskTable
+GET http://localhost/api/snmp/zxr10AlarmMaskTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxr10AlarmMaskTable/:id
+POST http://localhost/api/snmp/zxr10AlarmMaskTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -108,11 +108,11 @@ Content-Type: application/json
 }
 
 ### A list of alarm shield profile entries.
-GET http://103.184.122.170/api/snmp/zxr10AlmShdProfTable
+GET http://localhost/api/snmp/zxr10AlmShdProfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxr10AlmShdProfTable/:id
+POST http://localhost/api/snmp/zxr10AlmShdProfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -121,11 +121,11 @@ Content-Type: application/json
 }
 
 ### A list of alarm shield profile alarm code entries.
-GET http://103.184.122.170/api/snmp/zxr10AlmShdProfCodeTable
+GET http://localhost/api/snmp/zxr10AlmShdProfCodeTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxr10AlmShdProfCodeTable/:id
+POST http://localhost/api/snmp/zxr10AlmShdProfCodeTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -135,11 +135,11 @@ Content-Type: application/json
 }
 
 ### A list of alarm shield profile apply entries.
-GET http://103.184.122.170/api/snmp/zxr10AlmShdProfApplyTable
+GET http://localhost/api/snmp/zxr10AlmShdProfApplyTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxr10AlmShdProfApplyTable/:id
+POST http://localhost/api/snmp/zxr10AlmShdProfApplyTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

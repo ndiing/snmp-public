@@ -1,9 +1,9 @@
 ### This table specifies information for configuring<br/><br/>and monitoring Virtual Private Lan Services(VPLS).
-GET http://103.184.122.170/api/snmp/vplsConfigTable
+GET http://localhost/api/snmp/vplsConfigTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/vplsConfigTable/:id
+POST http://localhost/api/snmp/vplsConfigTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -23,15 +23,15 @@ Content-Type: application/json
 }
 
 ### This table provides information for monitoring<br/><br/>Virtual Private Lan Services(VPLS).
-GET http://103.184.122.170/api/snmp/vplsStatusTable
+GET http://localhost/api/snmp/vplsStatusTable
 Authorization: Bearer {{token}}
 
 ### This table provides an association between a<br/><br/>VPLS service and the corresponding Pseudo<br/><br/>Wires. A service can have more than one Pseudo<br/><br/>Wire association. Pseudo Wires are defined in<br/><br/>the pwTable
-GET http://103.184.122.170/api/snmp/vplsPwBindTable
+GET http://localhost/api/snmp/vplsPwBindTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/vplsPwBindTable/:id
+POST http://localhost/api/snmp/vplsPwBindTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -43,11 +43,11 @@ Content-Type: application/json
 }
 
 ### This table specifies information for configuring<br/><br/>BGP Auto-discovery parameters for a given Vpls service.
-GET http://103.184.122.170/api/snmp/vplsBgpADConfigTable
+GET http://localhost/api/snmp/vplsBgpADConfigTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/vplsBgpADConfigTable/:id
+POST http://localhost/api/snmp/vplsBgpADConfigTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -59,11 +59,11 @@ Content-Type: application/json
 }
 
 ### This table specifies the list of Route Targets<br/><br/>imported or exported by BGP during auto-discovery of VPLS.
-GET http://103.184.122.170/api/snmp/vplsBgpRteTargetTable
+GET http://localhost/api/snmp/vplsBgpRteTargetTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/vplsBgpRteTargetTable/:id
+POST http://localhost/api/snmp/vplsBgpRteTargetTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 

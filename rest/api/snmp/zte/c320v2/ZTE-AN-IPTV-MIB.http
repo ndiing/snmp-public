@@ -1,9 +1,9 @@
 ### A table that contains IPTV preview profiles.
-GET http://103.184.122.170/api/snmp/zxAnIptvPrwProfileConfTable
+GET http://localhost/api/snmp/zxAnIptvPrwProfileConfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnIptvPrwProfileConfTable/:id
+POST http://localhost/api/snmp/zxAnIptvPrwProfileConfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -16,11 +16,11 @@ Content-Type: application/json
 }
 
 ### A table that contains IPTV channels.
-GET http://103.184.122.170/api/snmp/zxAnIptvChannelTable
+GET http://localhost/api/snmp/zxAnIptvChannelTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnIptvChannelTable/:id
+POST http://localhost/api/snmp/zxAnIptvChannelTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -36,11 +36,11 @@ Content-Type: application/json
 }
 
 ### A table that contains IPTV packages.
-GET http://103.184.122.170/api/snmp/zxAnIptvPkgTable
+GET http://localhost/api/snmp/zxAnIptvPkgTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnIptvPkgTable/:id
+POST http://localhost/api/snmp/zxAnIptvPkgTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -51,11 +51,11 @@ Content-Type: application/json
 }
 
 ### A table that contains list of channels in a package.
-GET http://103.184.122.170/api/snmp/zxAnIptvPkgChannelTable
+GET http://localhost/api/snmp/zxAnIptvPkgChannelTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnIptvPkgChannelTable/:id
+POST http://localhost/api/snmp/zxAnIptvPkgChannelTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -65,11 +65,11 @@ Content-Type: application/json
 }
 
 ### A table that contains IPTV information of a port.
-GET http://103.184.122.170/api/snmp/zxAnIptvIfTable
+GET http://localhost/api/snmp/zxAnIptvIfTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnIptvIfTable/:id
+POST http://localhost/api/snmp/zxAnIptvIfTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -80,11 +80,11 @@ Content-Type: application/json
 }
 
 ### A table that contains list of IPTV packages of a port.
-GET http://103.184.122.170/api/snmp/zxAnIptvIfPkgTable
+GET http://localhost/api/snmp/zxAnIptvIfPkgTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnIptvIfPkgTable/:id
+POST http://localhost/api/snmp/zxAnIptvIfPkgTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -93,15 +93,15 @@ Content-Type: application/json
 }
 
 ### A table that contains list of ports in a package.
-GET http://103.184.122.170/api/snmp/zxAnIptvPkgPortListTable
+GET http://localhost/api/snmp/zxAnIptvPkgPortListTable
 Authorization: Bearer {{token}}
 
 ### A table that contains CDR servers.
-GET http://103.184.122.170/api/snmp/zxAnIptvCdrServerTable
+GET http://localhost/api/snmp/zxAnIptvCdrServerTable
 Authorization: Bearer {{token}}
 
 ###
-POST http://103.184.122.170/api/snmp/zxAnIptvCdrServerTable/:id
+POST http://localhost/api/snmp/zxAnIptvCdrServerTable/:id
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
