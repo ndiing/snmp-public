@@ -1,0 +1,228 @@
+
+###
+GET http://localhost
+
+
+
+
+
+
+
+
+
+
+
+
+###
+GET http://localhost/api
+
+
+
+
+
+
+
+
+
+
+
+
+###
+POST http://localhost/api/auth/request
+Content-Type: application/json
+
+{
+    "username":"ndiing.inc@gmail.com"
+}
+
+###
+POST http://localhost/api/auth/verify
+Content-Type: application/json
+
+{
+    "username":"ndiing.inc@gmail.com",
+    "password":"134701"
+}
+
+###
+POST http://localhost/api/auth/refresh
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJ0eXBlIjoicmVmcmVzaF90b2tlbiIsImV4cCI6MTc0NDE3MDk2MX0.MkopM9zd-15mGKlaE3k6pvyUagxs60esYktcPMZKyFI
+Content-Type: application/json
+
+{}
+
+###
+POST http://localhost/api/auth/revoke
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYWRtaW4iLCJ0eXBlIjoiYWNjZXNzX3Rva2VuIiwiZXhwIjoxNzQ0MTMxMzYxfQ.-MqkCKRfUSvoD8RGn9MOPnxsklMX8Kw9-Ibvxhzjs_8
+Content-Type: application/json
+
+{}
+
+
+
+
+
+
+
+
+
+
+
+
+###
+POST http://localhost/api/users
+Content-Type: application/json
+
+{
+    "user":"name",
+    "pass":"word"
+}
+
+### 
+GET http://localhost/api/users
+
+###
+GET http://localhost/api/users/1
+
+###
+PATCH http://localhost/api/users/1
+Content-Type: application/json
+
+{
+    "user":"name",
+    "pass":"word"
+}
+
+###
+DELETE http://localhost/api/users/1
+
+
+
+
+
+
+
+
+
+
+###
+POST http://localhost/api/blogs
+Content-Type: application/json
+
+{
+    "user":"name",
+    "pass":"word"
+}
+
+###
+GET http://localhost/api/blogs?page=1&limit=2&name_like=buda&name_like=budi
+
+###
+GET http://localhost/api/blogs/1
+
+###
+PATCH http://localhost/api/blogs/1
+Content-Type: application/json
+
+{
+    "user":"name",
+    "pass":"word"
+}
+
+###
+DELETE http://localhost/api/blogs/1
+
+
+
+
+###
+GET http://localhost/api/test/providers
+Authorization: Basic cnMwMDAwMDE6cGFzc3dvcmQ=
+
+###
+GET http://localhost/api/test/products
+Authorization: Basic cnMwMDAwMDE6cGFzc3dvcmQ=
+
+###
+GET http://localhost/api/test/account
+Authorization: Basic cnMwMDAwMDE6cGFzc3dvcmQ=
+
+###
+GET http://localhost/api/test/balance
+Authorization: Basic cnMwMDAwMDE6cGFzc3dvcmQ=
+
+###
+POST http://localhost/api/test/topup
+Authorization: Basic cnMwMDAwMDE6cGFzc3dvcmQ=
+Content-Type: application/json
+
+{
+    "amount":1000000
+}
+
+###
+POST http://localhost/api/test/inquiry
+Authorization: Basic cnMwMDAwMDE6cGFzc3dvcmQ=
+Content-Type: application/json
+
+{
+    "transaction_id":"8df5a343-c17f-4529-ad77-3c406be5aed6",
+    "product_id":"plnc",
+    "customer_number":"0147025803690147"
+}
+
+###
+POST http://localhost/api/test/purchase
+Authorization: Basic cnMwMDAwMDE6cGFzc3dvcmQ=
+Content-Type: application/json
+
+{
+    "transaction_id":"8df5a343-c17f-4529-ad77-3c406be5aed6",
+    "product_id":"xl5",
+    "customer_number":"6281935155404"
+}
+
+###
+GET http://localhost/api/test/transactions
+Authorization: Basic cnMwMDAwMDE6cGFzc3dvcmQ=
+
+###
+GET http://localhost/api/test/transactions/8df5a343-c17f-4529-ad77-3c406be5aed6
+Authorization: Basic cnMwMDAwMDE6cGFzc3dvcmQ=
+
+
+
+
+
+
+
+###
+POST http://service.com/api/ppob/inquiry
+Content-Type: application/json
+
+{
+    "transaction_id":null,
+    "product_id":null,
+    "customer_number":null
+}
+
+###
+POST http://service.com/api/ppob/purchase
+Content-Type: application/json
+
+{
+    "inquiry_id":null,
+    "transaction_id":null,
+    "product_id":null,
+    "customer_number":null
+}
+
+###
+POST http://service.com/api/ppob/purchase
+Content-Type: application/json
+
+{
+    "transaction_id":null,
+    "product_id":null,
+    "customer_number":null
+}
